@@ -1,0 +1,32 @@
+# 渠道配置指南
+
+当前已对接精准匹配渠道有：
+
+腾讯社交广告、今日头条（巨量引擎）、百度原生信息流、360点睛广告平台、UC（阿里汇川）、优酷、广点通、微信广告平台（微信 MP）、爱奇艺、bilibili、小米亿米、个推、网易云音乐、网易有道智选、网易新闻（易效）、多盟、巨掌积分墙、知乎广告平台、美图、陌陌、微博粉丝通、新浪扶翼、作业帮、快手、趣头条 Aiclk、凤羽广告平台（凤凰网）、Mobvista、Inmobi、脉络时代、优量、Yeahmobi、Coinads、tomobi、Himobi、Vido Ads、顶当互动、AdBright
+
+当前已对接模糊匹配渠道：
+
+时趣互动、趣米、腾讯视频、Adwords、百度搜索、Admob、百度DSP、畅思、艾德思齐、Vungle、搜狐视频、力美、chartboost、点入、百度联盟、新浪视频、搜狗搜索、Tapjoy、神马搜索、Adconly、百思不得姐、勤诚互动、品友互动、小米互娱、斗鱼TV、芋儿拍
+
+GrowingIO 渠道合作方对接信息持续更新中...
+
+渠道配置参考：
+
+{% page-ref page="tencent.md" %}
+
+{% page-ref page="bytedance.md" %}
+
+{% page-ref page="baidu.md" %}
+
+{% page-ref page="weibo.md" %}
+
+{% page-ref page="iqiyi.md" %}
+
+{% page-ref page="inmobi.md" %}
+
+{% page-ref page="wechat.md" %}
+
+{% page-ref page="fengyu.md" %}
+
+{% page-ref page="bilibili.md" %}
+
