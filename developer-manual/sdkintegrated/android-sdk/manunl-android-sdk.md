@@ -4,7 +4,7 @@ description: 埋点 SDK 只自动采集用户访问事件，需要开发同学�
 
 # 埋点 SDK 集成
 
-埋点 SDK 的目标用户是使用第三方插件开发的 APP， 比如使用 Weex、APICloud 等。在这些平台中，我们无法自动采集用户的点击事件和页面浏览事件等，需要依赖调用自定义事件和变量 API来进行数据采集。 
+埋点 SDK 的目标用户是使用第三方插件开发的 APP， 比如使用 Weex、APICloud 等。在这些平台中，我们无法自动采集用户的点击事件和页面浏览事件等，需要依赖调用自定义事件和变量 API来进行数据采集。
 
 {% hint style="info" %}
 如果您的 APP 使用 Android 原生开发，并且希望自动采集用户的点击事件、页面浏览事件等无埋点事件， 请集成 Android无埋点SDK 。
@@ -92,7 +92,7 @@ dependencies {
 ```
 
 {% hint style="info" %}
-请添加一整个 intent-filter 区块，并确保其中只有一个 data 字段。 
+请添加一整个 intent-filter 区块，并确保其中只有一个 data 字段。
 {% endhint %}
 
 ### 3. SDK初始化配置
@@ -140,13 +140,13 @@ public class MyApplication extends Application {
     *;
 }
 -keep class android.support.v4.view.ViewPager$**{
-	*;
+    *;
 }
 -keep class androidx.viewpager.widget.ViewPager{
     *;
 }
 -keep class androidx.viewpager.widget.ViewPager$**{
-	*;
+    *;
 }
 ```
 
@@ -184,8 +184,6 @@ GrowingIO.startWithConfig(this, Configuration()
                 ...
                 );
 ```
-
-## 
 
 ## 2. 重要配置
 
@@ -295,13 +293,13 @@ GrowingIO.startWithConfiguration(this, new Configuration()
 ```
 
 {% hint style="info" %}
-1. 为什么不默认支持多进程？ 
+1. 为什么不默认支持多进程？
 
- 跨进程通信是一个相对较慢的过程， 默认不开启， 可以满足大部分用户的要求。
+   跨进程通信是一个相对较慢的过程， 默认不开启， 可以满足大部分用户的要求。
 
- 2. 哪些进程需要初始化SDK？
+   1. 哪些进程需要初始化SDK？
 
- 需要使用SDK功能的进程需要初始化SDK， 所有的UI进程 + 部分Service进程\(如果这些进程中涉及手动埋点\)。
+   需要使用SDK功能的进程需要初始化SDK， 所有的UI进程 + 部分Service进程\(如果这些进程中涉及手动埋点\)。
 {% endhint %}
 
 ### 5. GDPR数据采集开关
@@ -363,7 +361,7 @@ GrowingIO 提供多种 API 接口，供您上传一些自定义的数据指标�
 **添加代码之后，请先Clean项目，然后再进行编译，并在你的 Android App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
 {% endhint %}
 
- 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
+在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
 
 ## 5. 验证SDK是否正常采集数据 <a id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
 

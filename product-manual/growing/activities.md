@@ -8,33 +8,30 @@
 
 一. 在顶部导航栏选择“**获客分析 &gt; 活动分析”**，进入活动管理页面。
 
-![](../../.gitbook/assets/image%20%2840%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2840%29.png)
 
 二. 单击**创建活动分析**，进入**新建活动分析**页面。
 
-![](../../.gitbook/assets/image%20%2887%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2887%29.png)
+
+| 参数 | 说明 |
+| :--- | :--- |
+
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">&#x8F93;&#x5165;&#x9875;&#x9762;&#x7684;URL</td>
-      <td style="text-align:left">
+      <th style="text-align:left">&#x8F93;&#x5165;&#x9875;&#x9762;&#x7684;URL</th>
+      <th style="text-align:left">
         <p>&#x8F93;&#x5165;&#x6D3B;&#x52A8;&#x9875;&#x9762;&#x7684;URL&#x3002;</p>
         <p>&#x6B64;&#x65B9;&#x6CD5;&#x9002;&#x7528;&#x4E8E;&#x53EA;&#x5728;Web&#x7AEF;&#x5C55;&#x793A;&#x7684;H5&#x9875;&#x9762;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td style="text-align:left">&#x9009;&#x62E9;&#x9875;&#x9762;&#x6307;&#x6807;</td>
-      <td style="text-align:left">&#x9009;&#x62E9;&#x9875;&#x9762;&#x6D4F;&#x89C8;&#x4E8B;&#x4EF6;&#xFF0C;&#x4F5C;&#x4E3A;&#x6D3B;&#x52A8;&#x9875;&#x9762;&#x3002;</td>
-    </tr>
-  </tbody>
-</table>三. 输入参数后单击**生成活动报告**，弹出填写活动分析名称对话框。
+  </thead>
+  <tbody></tbody>
+</table>| 选择页面指标 | 选择页面浏览事件，作为活动页面。 |
+| :--- | :--- |
+
 
 四. 填写活动分析名称后单击**保存**，默认进入当前活动分析页面。
 
@@ -50,62 +47,67 @@
 
 ## **各模块介绍**
 
-![](../../.gitbook/assets/image%20%2868%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2868%29.png)
+
+| 模块 | 说明 |
+| :--- | :--- |
+
+
+| 1-活动页面展示 | 展示当前活动页。 |
+| :--- | :--- |
+
+
+| 2-时间选择 | 选择活动时间和分析页面展示的时间。 |
+| :--- | :--- |
+
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x6A21;&#x5757;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">1-&#x6D3B;&#x52A8;&#x9875;&#x9762;&#x5C55;&#x793A;</td>
-      <td style="text-align:left">&#x5C55;&#x793A;&#x5F53;&#x524D;&#x6D3B;&#x52A8;&#x9875;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2-&#x65F6;&#x95F4;&#x9009;&#x62E9;</td>
-      <td style="text-align:left">&#x9009;&#x62E9;&#x6D3B;&#x52A8;&#x65F6;&#x95F4;&#x548C;&#x5206;&#x6790;&#x9875;&#x9762;&#x5C55;&#x793A;&#x7684;&#x65F6;&#x95F4;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3-&#x5FEB;&#x901F;&#x4E0A;&#x624B;&#x5F15;&#x5BFC;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">3-&#x5FEB;&#x901F;&#x4E0A;&#x624B;&#x5F15;&#x5BFC;</th>
+      <th style="text-align:left">
         <p>&#x521B;&#x5EFA;&#x5B8C;&#x5206;&#x6790;&#x9875;&#x9762;&#x540E;&#x7684;&#x5F15;&#x5BFC;&#x4E8B;&#x9879;&#x3002;</p>
         <p>&#x64CD;&#x4F5C;&#x7B80;&#x5355;&#xFF0C;&#x8DDF;&#x7740;&#x4E00;&#x8D77;&#x505A;&#x4E00;&#x505A;&#xFF0C;&#x5FEB;&#x901F;&#x4E86;&#x89E3;&#x6D3B;&#x52A8;&#x9875;&#x57FA;&#x672C;&#x60C5;&#x51B5;&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">4-&#x4ECA;&#x65E5;&#x5B9E;&#x65F6;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">4-&#x4ECA;&#x65E5;&#x5B9E;&#x65F6;</th>
+      <th style="text-align:left">
         <ul>
           <li>&#x5C55;&#x793A;&#x5F53;&#x524D;&#x53C2;&#x4E0E;&#x6D3B;&#x52A8;&#x4EBA;&#x6570;&#xFF1B;</li>
           <li>&#x5C55;&#x793A;&#x4ECA;&#x65E5;&#x7684;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x60C5;&#x51B5;&#xFF0C;&#x4EE5;&#x53CA;&#x4ECA;&#x65E5;&#x5BF9;&#x6BD4;&#x6628;&#x65E5;&#x7684;&#x5B9E;&#x65F6;&#x8D8B;&#x52BF;&#xFF1B;</li>
         </ul>
         <p>&#x6574;5&#x5206;&#x949F;&#x5237;&#x65B0;&#x4E00;&#x6B21;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#xFF0C;&#x6BD4;&#x5982;&#x73B0;&#x5728;&#x662F;15:48&#xFF0C;&#x90A3;&#x4E48;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x662F;15:40-15:45&#x7684;&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table>| 5-概况描述 | 描述活动开始至今的概况。 |
+| :--- | :--- |
+
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left">5-&#x6982;&#x51B5;&#x63CF;&#x8FF0;</td>
-      <td style="text-align:left">&#x63CF;&#x8FF0;&#x6D3B;&#x52A8;&#x5F00;&#x59CB;&#x81F3;&#x4ECA;&#x7684;&#x6982;&#x51B5;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">6-&#x6570;&#x636E;&#x6982;&#x89C8;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">6-&#x6570;&#x636E;&#x6982;&#x89C8;</th>
+      <th style="text-align:left">
         <p>&#x67E5;&#x770B;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x5185;&#x7684;PV&#x3001;UV&#x3001;&#x65B0;&#x7528;&#x6237;&#x91CF;&#x3002;</p>
         <p>&#x53EF;&#x4EE5;&#x5728;&#x6B64;&#x6A21;&#x5757;&#x8BBE;&#x7F6E;&#x8F6C;&#x5316;&#x76EE;&#x6807;&#xFF0C;&#x8BBE;&#x7F6E;&#x540E;&#x53EF;&#x4EE5;&#x5C55;&#x793A;&#x6765;&#x5230;&#x6B64;&#x6D3B;&#x52A8;&#x9875;&#x9762;&#x540E;&#x88AB;&#x8F6C;&#x5316;&#x7684;&#x4EBA;&#x6570;&#x3001;&#x8F6C;&#x5316;&#x7387;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td style="text-align:left">7-&#x67E5;&#x770B;PV&#x3001;UV&#x8D70;&#x52BF;</td>
-      <td style="text-align:left">&#x67E5;&#x770B;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x5185;&#x7684;PV&#x3001;UV&#x8D70;&#x52BF;&#x3002;&#x5982;&#x5DF2;&#x8BBE;&#x7F6E;&#x8F6C;&#x5316;&#x76EE;&#x6807;&#xFF0C;&#x53EF;&#x5728;&#x6B64;&#x67E5;&#x770B;&#x8F6C;&#x5316;&#x4EBA;&#x6570;&#x8D70;&#x52BF;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">8-&#x6E20;&#x9053;&#x6765;&#x6E90;&#x5C55;&#x793A;</td>
-      <td style="text-align:left">&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6E20;&#x9053;&#x6765;&#x6E90;&#xFF0C;&#x5305;&#x62EC;&#x8BBF;&#x95EE;&#x6765;&#x6E90;&#x548C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x5E7F;&#x544A;&#x6765;&#x6E90;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x53C2;&#x4E0E;&#x6D3B;&#x52A8;&#x7684;&#x7528;&#x6237;&#x6240;&#x5728;&#x57CE;&#x5E02;&#x5206;&#x5E03;&#xFF0C;&#x4EE5;&#x53CA;&#x652F;&#x6301;&#x5176;&#x4ED6;&#x4E0E;&#x9875;&#x9762;&#x4E00;&#x8D77;&#x5206;&#x6790;&#x7684;&#x9884;&#x5B9A;&#x4E49;&#x7EF4;&#x5EA6;&#x6216;&#x9875;&#x9762;&#x7EA7;&#x53D8;&#x91CF;&#x3002;</td>
-    </tr>
-  </tbody>
-</table>## 常见问题
+  </thead>
+  <tbody></tbody>
+</table>| 7-查看PV、UV走势 | 查看时间范围内的PV、UV走势。如已设置转化目标，可在此查看转化人数走势。 |
+| :--- | :--- |
+
+
+| 8-渠道来源展示 | 用户可以查看渠道来源，包括访问来源和自定义的广告来源，用户可以查看参与活动的用户所在城市分布，以及支持其他与页面一起分析的预定义维度或页面级变量。 |
+| :--- | :--- |
+
 
 ### **1.什么是活动的状态未开始、进行中和已结束？**
 

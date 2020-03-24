@@ -2,19 +2,19 @@
 
 > GrowingIO 根据付费版本设定不同的埋点事件和维度的限额，通过此接口获取您项目的限额。
 
-### URL
+## URL
 
-https://www.growingio.com/v1/api/projects/{project\_uid}/vars/quotas
+[https://www.growingio.com/v1/api/projects/{project\_uid}/vars/quotas](https://www.growingio.com/v1/api/projects/{project_uid}/vars/quotas)
 
-### 请求类型
+## 请求类型
 
 GET
 
-### 请求头参数
+## 请求头参数
 
 公共头部请参考[公共请求头参数](../authenticate.md)。
 
-### 参数说明与示例
+## 参数说明与示例
 
 {% tabs %}
 {% tab title="参数说明" %}

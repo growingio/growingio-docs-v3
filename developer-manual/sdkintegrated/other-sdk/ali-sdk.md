@@ -47,7 +47,6 @@ App($global.trackApp({
 $global.GioPage({
 
 })
-
 ```
 
 方式二：
@@ -61,7 +60,6 @@ appId: '你的小程序AppID',
 version: '小程序版本'
 ...
 }
-
 ```
 
 步骤二：在根目录 app.js文件的顶部添加跟踪代码
@@ -146,7 +144,6 @@ import App from './App';
 App.mpType = 'app';
 var gio = require("utils/gio-alip.js").default;
 gio('init', '你的 GrowingIO 项目ID', '你的小程序AppID', { version: '小程序版本',vue: Vue });
-
 ```
 
 方式二：
@@ -249,7 +246,7 @@ gio('init', '你的项目ID', '你的支付宝小程序AppID', { version: '1.0',
 
 #### getLocation 参数
 
-根据微信最新的用户地理位置获取的规则，GrowingIO 小程序SDK 默认不会在小程序启动时获取用户的坐标信息。 
+根据微信最新的用户地理位置获取的规则，GrowingIO 小程序SDK 默认不会在小程序启动时获取用户的坐标信息。
 
 * 如果您的小程序在打开时就需要获取用户地理信息，就可以将这个参数配置为true。
 * 如果您的小程序在用户点击某些按钮时，才触发获取位置，则可以按照配置方式，进行用户位置的补发，从而增强用户地理位置的分析能力。
@@ -289,9 +286,9 @@ gio("identify", userid);
 
 1. 登录支付宝小程序后台，进入配置
 2. 打开小程序详情/设置/开发设置
-3. 配置httpRequest接口请求域名白名单：https://wxapi.growingio.com
+3. 配置httpRequest接口请求域名白名单：[https://wxapi.growingio.com](https://wxapi.growingio.com)
 
-![](../../../.gitbook/assets/image%20%28114%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28114%29.png)
 
 ## 3. 支付宝小程序用户属性设置
 
@@ -336,7 +333,7 @@ my.getAuthUserInfo({
 当用户在你的小程序上注册以后，你的产品应用服务端会在CRM 用户数据库里添加一条记录并且分配一个 ID，可以通过 setUserId 接口设置注册用户ID，后续在 GrowingIO 中分析登录用户这个数据。示例代码如下：
 
 ```text
-gio('setUserId', YOUR_USER_ID); 
+gio('setUserId', YOUR_USER_ID);
 ```
 
 #### 清除登录用户ID
@@ -344,7 +341,7 @@ gio('setUserId', YOUR_USER_ID);
 用户退出登录时，清除登录用户ID。
 
 ```java
-gio('clearUserId'); 
+gio('clearUserId');
 ```
 
 #### 设置登录用户属性

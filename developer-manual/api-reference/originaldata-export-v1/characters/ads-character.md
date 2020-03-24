@@ -1,11 +1,7 @@
 # 广告相关字段
 
-
-
 {% tabs %}
 {% tab title="ads\_track\_activation" %}
-
-
 | 列名 | 字段名称 | 字段格式 | 字段说明 | 值（example） |
 | :--- | :--- | :--- | :--- | :--- |
 | userId | 用户ID | string\(36\) | 针对单个用户生成的唯一id | 例如，web网站生成一个有效期三年的cookie值，App 则为机器唯一标识码 |

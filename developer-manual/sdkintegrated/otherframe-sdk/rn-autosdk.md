@@ -29,13 +29,13 @@ npm install --save react-native-autotrack-growingio
 npm install --save https://github.com/growingio/GIORNHook.git#0.0.6
 ```
 
-####  配置 package.json 文件
+#### 配置 package.json 文件
 
 考虑到了`hook.js`每次`npm install`之后都需要执行， 建议直接配在项目的`package.json`中， 在原有文件中，添加如下代码，保存后执行**`npm install`**。
 
 ```javascript
 "scripts": {
-	  "postinstall": "node node_modules/react-native-autotrack-growingio/hook.js -run"
+      "postinstall": "node node_modules/react-native-autotrack-growingio/hook.js -run"
 }
 ```
 
@@ -97,13 +97,13 @@ public class MainApplication extends Application implements ReactApplication {
     *;
 }
 -keep class android.support.v4.view.ViewPager$**{
-	*;
+    *;
 }
 -keep class androidx.viewpager.widget.ViewPager{
     *;
 }
 -keep class androidx.viewpager.widget.ViewPager$**{
-	*;
+    *;
 }
 ```
 {% endtab %}
@@ -133,7 +133,7 @@ npm install --save https://github.com/growingio/react-native-growingio.git#0.0.7
 ```
 
 ```text
-react-native link react-native-growingio 
+react-native link react-native-growingio
 ```
 
 {% hint style="danger" %}
@@ -203,7 +203,7 @@ NativeModules.GrowingIO.onPageShow("pageName");
 
 自定义数据上传其实最终是通过 NativeModules.GrowingIO 调用的原生GrowingIO 无埋点的API，以上接口使用时，对应的参数限制条件对您很重要。
 
-| 方法名 | 参数类型 | 说明                                      |
+| 方法名 | 参数类型 | 说明 |
 | :--- | :--- | :--- |
 | track | \(String eventId, Object eventLevelVariable\(optional\)\) | 自定义事件 |
 | setEvar | \(Object conversionVariables\) | 设置转化变量 |
@@ -291,7 +291,7 @@ NativeModules.GrowingIO.setPageVariable("HomePage",{ "registered": true, "fee": 
 **添加代码之后，请先Clean项目，然后再进行编译，并在你的 App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
 {% endhint %}
 
- 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
+在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
 
 ## 7. 验证SDK是否正常采集数据 <a id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
 
@@ -319,5 +319,5 @@ GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 
 （1）原则上对于react native中的tabbar控件,我们只能保证使用原生代码UITabBarController，或者不是RCT为前缀的原生控件实现的tabbar，可以正确采集tabbar上的imp
 
- （2）click event不受影响,可正确采集
+（2）click event不受影响,可正确采集
 

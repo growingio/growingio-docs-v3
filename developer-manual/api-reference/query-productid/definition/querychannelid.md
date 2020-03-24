@@ -1,18 +1,18 @@
 # 查询推广渠道ID
 
-### URL
+## URL
 
-https://www.growingio.com/api/v1/projects/{project\_uid}/meta/channels
+[https://www.growingio.com/api/v1/projects/{project\_uid}/meta/channels](https://www.growingio.com/api/v1/projects/{project_uid}/meta/channels)
 
-### 请求类型
+## 请求类型
 
 GET
 
-### 请求头参数
+## 请求头参数
 
 公共头部请参考[公共请求头参数](../../authenticate.md)。
 
-### 参数说明与示例
+## 参数说明与示例
 
 {% tabs %}
 {% tab title="请求参数" %}
@@ -43,6 +43,4 @@ GET
 ```
 {% endtab %}
 {% endtabs %}
-
-
 

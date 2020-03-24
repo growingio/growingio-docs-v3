@@ -29,7 +29,7 @@ description: 创建小程序推广所用的二维码、小程序码。
 
 在小程序码管理页面，单击**立刻新建**进入新建小程序码页面，单击页面右上角的**前往微信授权**，进入微信公众平台的授权页面，使用公众平台绑定的管理员个人微信号扫码授权。
 
-![](../../.gitbook/assets/image%20%2890%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2890%29.png)
 
 {% hint style="success" %}
 完成授权后，会显示“已授权”，接下来就可以进行推广码的创建。‌
@@ -39,7 +39,7 @@ description: 创建小程序推广所用的二维码、小程序码。
 
 一. 在已授权的小程序码管理页面，单机页面左上角的**新建小程序码**，弹出新建小程序码页面。
 
-![](../../.gitbook/assets/image%20%28167%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28167%29.png)
 
 二. 填写二维码名称、落地页链接、广告渠道，选择码的类型等必填参数后单击页面右上角的生成二维码。
 
@@ -53,7 +53,7 @@ description: 创建小程序推广所用的二维码、小程序码。
 
 在小程序码管理页面您可以
 
-![](../../.gitbook/assets/image%20%28208%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28208%29.png)
 
 下载二维码：单击单条小程序码右侧的下载按钮可下载二维码。
 

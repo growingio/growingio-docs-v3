@@ -4,13 +4,11 @@
 
 2.在 GrowingIO 后台选择【超级粉丝通】渠道，填入 company 创建监测链接。
 
-![](../../../../.gitbook/assets/image%20%2865%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2865%29.png)
 
 3.在微博超级粉丝通工具箱入口中找到应用激活监控申请入口。
 
 4.开始进行联调，在新建监控中将 company 、监测链接、联调设备信息对应填入。
-
-
 
 ![](https://docs.growingio.com/.gitbook/assets/%E8%B6%85%E7%BA%A7%E7%B2%89%E4%B8%9D%E9%80%9A1.png)
 
@@ -20,11 +18,7 @@
 
 7.在超级粉丝通后台中新建广告创意页面中填写监测链接，监测激活数据。
 
-![](../../../../.gitbook/assets/image%20%28138%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28138%29.png)
 
 注意：关于 Android 设备联调，因为微博渠道使用 IMEI 作为设备标识进行回传匹配，由于当前 Android 10 系统中已经不支持 IMEI 信息采集，在联调时请选择系统版本在 Android 10 以下的设备进行联调测试。
-
-
-
-
 

@@ -112,41 +112,40 @@ GIO 推荐广告位在 `ScrollView` 的最底部，需要用户滑动才能看�
 
 **growingImpTrack**
 
+| **参数** | 是否必填 | 说明 |
+| :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>&#x53C2;&#x6570;</b>
-      </th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x586B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">eventId</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">eventId</th>
+      <th style="text-align:left">&#x662F;</th>
+      <th style="text-align:left">
         <p><b>NSString:</b> &#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x6807;&#x8BC6;&#x7B26;&#xFF1B;</p>
         <p>&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF1B;</p>
         <p>SDK 2.4.0&#x4EE5;&#x4E0B;&#x7248;&#x672C;&#x4E0D;&#x652F;&#x6301;&#x4E2D;&#x6587;&#xFF0C;&#x4EC5;&#x652F;&#x6301;
           0 &#x5230; 9&#x3001;a &#x5230; z &#x4EE5;&#x53CA;&#x4E0B;&#x5212;&#x7EBF;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x80FD;&#x4EE5;&#x6570;&#x5B57;&#x5F00;&#x5934;&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">variable</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">variable</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p><b>NSDictionary:</b> &#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#x6240;&#x4F34;&#x968F;&#x7684;&#x7EF4;&#x5EA6;&#xFF08;&#x53D8;&#x91CF;&#xFF09;&#x4FE1;&#x606F;&#x3002;</p>
         <p>&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF08;<code>eventLevelVariable.length()&lt;=100</code>&#xFF09;&#xFF1B;</p>
         <p><code>eventLevelVariable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>JSONObject</code>&#x6216;&#x8005;<code>JSONArray&#xFF1B;</code>
         </p>
         <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>### ​停止半自动采集View的浏览事件
-
-**growingStopImpTrack**
+  </thead>
+  <tbody></tbody>
+</table>**growingStopImpTrack**
 
 已经标记的View对象，通知GIO停止标记跟踪View的可见性。通常应用于列表中的重用元素。
 
@@ -230,7 +229,7 @@ int main(int argc, char * argv[]) {
 ```java
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     TestCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"testCell" forIndexPath:indexPath];
-    
+
     if (indexPath.item == 0) {
         [cell growingImpTrack:@"您的eventId"];
     } else {
@@ -245,14 +244,10 @@ int main(int argc, char * argv[]) {
 ```java
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     TestCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"testCell" forIndexPath:indexPath];
-    
+
     [cell growingImpTrack:@"您的eventId" withVariable:@{由您来指定}];
-    
+
     return cell;
 }
 ```
-
-
-
-
 

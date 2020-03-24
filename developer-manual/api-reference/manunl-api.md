@@ -2,7 +2,7 @@
 
 ### url
 
-https://api.growingio.com/v3/{ai}/s2s/cstm?stm={sendingTime}
+[https://api.growingio.com/v3/{ai}/s2s/cstm?stm={sendingTime}](https://api.growingio.com/v3/{ai}/s2s/cstm?stm={sendingTime})
 
 ### 请求类型
 
@@ -101,6 +101,4 @@ GrowingIO建议您按照如下步骤进行埋点数据的开发联调
 #### 1. 为什么在GrowingIO中无法看到我上报的数据？
 
 答：因为服务器端埋点事件无法关联访问用户，所以需要将目标用户修改为“全部登录用户“才能看到数据
-
-
 

@@ -10,7 +10,7 @@ description: 统一管理您创建的监测链接。
 
 二. 在左侧导航栏选择“**管理 &gt; 监测链接”**，进入监测链接管理页面。
 
-![](../../../../.gitbook/assets/image%20%2869%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2869%29.png)
 
 **数据 QuickView** ：单击列表中的单条链接，右侧将展开当前监测链接的 QuickView 视图，可快速查看当前监测链接的数据 。
 
@@ -26,10 +26,10 @@ description: 统一管理您创建的监测链接。
 推广下程序监测链接：小程序监测链接无QuickView。
 {% endhint %}
 
-**获取监测链接 & 二维码**：单击单条链接右侧的 ![](../../../../.gitbook/assets/guang-gao-jian-ce-lian-jie.png) 和 ![](../../../../.gitbook/assets/guang-gao-jian-ce-er-wei-ma.png) 可直接获取单条链接的二维码和监测链接 URL 。
+**获取监测链接 & 二维码**：单击单条链接右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/guang-gao-jian-ce-lian-jie.png) 和 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/guang-gao-jian-ce-er-wei-ma.png) 可直接获取单条链接的二维码和监测链接 URL 。
 
-**编辑**：单击单条链接右侧的 ![](../../../../.gitbook/assets/guang-gao-jian-ce-bian-ji.png) 对该条链接信息进行二次修改。
+**编辑**：单击单条链接右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/guang-gao-jian-ce-bian-ji.png) 对该条链接信息进行二次修改。
 
-**删除**：单击单条链接右侧的 ![](../../../../.gitbook/assets/1.png) 可删除该条监测链接。[  
+**删除**：单击单条链接右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/1.png) 可删除该条监测链接。[    
 ](https://docs.growingio.com/docs/ads-tracking/tui-guang-guan-li)
 

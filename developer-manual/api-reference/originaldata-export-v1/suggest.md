@@ -74,21 +74,3 @@ create external table xxx
 
 上例中，数据读取依赖于commons-compress与commons-csv库，同样在python中有类似的数据处理库。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

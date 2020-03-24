@@ -24,13 +24,13 @@ _vds.push(['setCS10', 'CS10的key', 'CS10的value']);
 
 如下例子中，总计上传 5个用户属性，分别是：
 
-**CS1:** user\_id:100324 
+**CS1:** user\_id:100324
 
-**CS2:** company\_id:943123 
+**CS2:** company\_id:943123
 
-**CS3:** user\_name:张溪梦 
+**CS3:** user\_name:张溪梦
 
-**CS4:** company\_name:GrowingIO 
+**CS4:** company\_name:GrowingIO
 
 **CS5:** sales\_name:销售员小王
 
@@ -63,5 +63,5 @@ _vds.push(['setCS10', 'CS10的key', 'CS10的value']);
 CS11~CS20不支持在SDK中上传，必须通过服务器上传，具体请参考 [用户变量上传 API](../../../api-reference/customize-api/)。
 {% endhint %}
 
-**在上传成功两小时后，您需要在「项目管理-项目配置-CS 配置中」进行字段配置和激活，配置成功后便可开始使用 CS 字段进行分析。** 
+**在上传成功两小时后，您需要在「项目管理-项目配置-CS 配置中」进行字段配置和激活，配置成功后便可开始使用 CS 字段进行分析。**
 

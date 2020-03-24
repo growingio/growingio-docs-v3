@@ -49,30 +49,25 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 
 **参数说明**
 
+| 参数名称 | 类型 | 是否必须 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">userId</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">userId</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x662F;</th>
+      <th style="text-align:left">
         <p>&#x7528;&#x6237;&#x7684;<b>&#x767B;&#x5F55;&#x7528;&#x6237;ID</b>
         </p>
         <p>&#x9650;&#x5236;&#xFF1A;&#x82F1;&#x6587;&#x6570;&#x5B57;&#x7EC4;&#x5408;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x957F;&#x5EA6;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;1000&#xFF0C;&#x4E14;&#x4E0D;&#x80FD;&#x542B;&#x6709;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#xFF0C;&#x4E0D;&#x5141;&#x8BB8;&#x4F20;&#x7A7A;&#x3001;<code>&quot;&quot;</code> &#x6216;&#x8005;<code>nil</code>&#xFF0C;&#x5982;&#x6709;&#x6E05;&#x9664;&#x64CD;&#x4F5C;&#xFF0C;&#x8BF7;&#x8C03;&#x7528; <code>clearUserId</code> &#x65B9;&#x6CD5;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>**示例代码**
-
-```java
+  </thead>
+  <tbody></tbody>
+</table>```java
 // setuserId API调用示例
 [Growing setUserId:@"1234567890"];
 ```
@@ -108,50 +103,53 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 
 **参数说明**
 
+| 参数名称 | 类型 | 是否必须 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">key</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">key</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x7528;&#x6237;&#x53D8;&#x91CF;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
         <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A;nil&#x6216;&quot;&quot;&#xFF0C;&#x957F;&#x5EA6;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">value</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">value</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x7528;&#x6237;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x3002;</p>
         <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x53D8;&#x91CF;&#x4E0D;&#x4E3A;nil&#x6216;&#x8005;&quot;&quot;&#xFF0C;&#x82E5;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x5219;&#x957F;&#x5EA6;&#x5E94;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;
           1000&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">customerVariables</td>
-      <td style="text-align:left">NSDictionary</td>
-      <td style="text-align:left">
+      <th style="text-align:left">customerVariables</th>
+      <th style="text-align:left">NSDictionary</th>
+      <th style="text-align:left">
         <p>&#x7528;&#x6237;&#x53D8;&#x91CF;&#x7528;&#x4E8E;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x76F8;&#x5173;&#x7684;&#x5206;&#x6790;&#x3002;</p>
         <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A;nil&#xFF1B;<code>customerVariables</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>NSDictionary</code>&#x6216;&#x8005;<code>NSArray&#xFF1B;</code>
         </p>
         <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
-      </td>
-      <td style="text-align:left"></td>
+      </th>
+      <th style="text-align:left"></th>
     </tr>
-  </tbody>
-</table>**示例代码**
-
-```java
+  </thead>
+  <tbody></tbody>
+</table>```java
 // setPeopleVariable API调用示例一
 [Growing setPeopleVariableWithKey:@"gender" andStringValue:@"male"];
 ```
@@ -174,32 +172,26 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 
 **参数说明**
 
+| **参数名称** | 类型 | 是否必须 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>&#x53C2;&#x6570;&#x540D;&#x79F0;</b>
-      </th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">variable</td>
-      <td style="text-align:left">NSDctionary</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">variable</th>
+      <th style="text-align:left">NSDctionary</th>
+      <th style="text-align:left">&#x662F;</th>
+      <th style="text-align:left">
         <p>&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x3002;</p>
         <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A;<code>nil&#xFF1B;variable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>NSDictionary</code>&#x6216;&#x8005;<code>NSArray&#xFF1B;</code>
         </p>
         <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>代码示例
-
-```java
+  </thead>
+  <tbody></tbody>
+</table>```java
 // setVisitor API调用示例
 [Growing setVisitor:@{@"gender":@"male", @"age":@"25"}];
 ```
@@ -221,47 +213,52 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 
 **参数说明**
 
+| 参数名称 | 类型 | 是否必须 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">key</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">key</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x9875;&#x9762;&#x7EA7;&#x53D8;&#x91CF;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
         <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A; nil &#x6216;&#x8005;&quot;&quot;&#xFF0C;&#x957F;&#x5EA6;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">value</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">value</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x9875;&#x9762;&#x7EA7;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x3002;</p>
         <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A; nil &#x6216;&#x8005;&quot;&quot;&#xFF0C;&#x82E5;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x5219;&#x957F;&#x5EA6;&#x5E94;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;
           1000&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">pageLevelVariables</td>
-      <td style="text-align:left">NSDictionary</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">pageLevelVariables</th>
+      <th style="text-align:left">NSDictionary</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x9875;&#x9762;&#x7EA7;&#x522B;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
         <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A; nil&#xFF1B;<code>pageLevelVariable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>NSDictionary</code>&#x6216;&#x8005;<code>NSArray&#xFF1B;</code>
         </p>
         <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
+  </thead>
+  <tbody></tbody>
 </table>{% hint style="info" %}
 **`SDK 2.6.7`** 将页面级变量**`pageLevelVariables`**与该页面对象绑定，设置不同的值将会合并，如果想要清空，需要传 null 。
 {% endhint %}
@@ -291,50 +288,53 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 
 **参数说明**
 
+| 参数名称 | 类型 | 是否必须 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">key</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">key</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
         <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A; nil &#x6216;&#x8005;&quot;&quot;&#xFF0C;&#x957F;&#x5EA6;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">value</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">value</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x3002;</p>
         <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x53D8;&#x91CF;&#x4E0D;&#x4E3A;nil&#x6216;&#x8005;&quot;&quot;&#xFF0C;&#x82E5;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x5219;&#x957F;&#x5EA6;&#x5E94;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;
           1000&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">conversionVariables</td>
-      <td style="text-align:left">NSDictionary</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">conversionVariables</th>
+      <th style="text-align:left">NSDictionary</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x7528;&#x4E8E;&#x9AD8;&#x7EA7;&#x5F52;&#x56E0;&#x5206;&#x6790;&#x3002;</p>
         <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A;nil&#xFF1B;<code>conversinoLevelVariable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>NSDictionary</code>&#x6216;&#x8005;<code>NSArray&#xFF1B;</code>
         </p>
         <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>**代码示例**
-
-```java
+  </thead>
+  <tbody></tbody>
+</table>```java
 // setEvar API调用示例一
 [Growing setEvarWithKey:@"campaignId" andStringValue:@"1234567890"];
 ```
@@ -356,36 +356,29 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 
 **参数说明**
 
+| 参数名称 | 类型 | 是否必须 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
+| eventId | string | 是 | 事件标识符。 |
+| :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">eventId</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">&#x4E8B;&#x4EF6;&#x6807;&#x8BC6;&#x7B26;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">eventLevelVariable</td>
-      <td style="text-align:left">NSDictionary</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">eventLevelVariable</th>
+      <th style="text-align:left">NSDictionary</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#x6240;&#x4F34;&#x968F;&#x7684;&#x7EF4;&#x5EA6;&#x4FE1;&#x606F;&#x3002;</p>
         <p>&#x9650;&#x5236;&#xFF1A;&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF08;eventLevelVariable.length()&lt;=100&#xFF09;&#xFF1B;eventLevelVariable&#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>NSDictionary</code>&#x6216;&#x8005;<code>NSArray</code>&#xFF1B;
           key&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;value&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;200&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x201C;&#x201D;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>代码示例
-
-```java
+  </thead>
+  <tbody></tbody>
+</table>```java
 // track API调用示例一
 [Growing track:@"registerSuccess"];
 ```
@@ -408,14 +401,11 @@ SDK会收集SDK内部异常上报服务端，方便开发更好的追踪SDK的�
 请在 startWithAccountId: 或 startWithAccountId: withSampling: 接口之前设置 \(SDK2.8.9以后\)
 {% endhint %}
 
-+ \(**void**\)setUploadExceptionEnable:\(**BOOL**\)uploadExceptionEnable;
+* \(**void**\)setUploadExceptionEnable:\(**BOOL**\)uploadExceptionEnable;
 
 ```objectivec
 // sdk crash 收集
 [Growing setUploadExceptionEnable:YES];
 [Growing startWithAccountId:@"aaaa"];
-
 ```
-
-###  <a id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
 

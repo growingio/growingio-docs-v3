@@ -8,5 +8,3 @@
 * 如果此 `Fragment` 不是您业务上认为的页面，可以使用 `ignoreFragment` 不认为此 Fragment 可以作为页面访问事件发送。
 * 注意：`setPageVariable` 接口参数中的 Activity 或者 Fragment **必须为当前页面访问事件页面**，即可成功发送自定义页面事件。
 
-
-

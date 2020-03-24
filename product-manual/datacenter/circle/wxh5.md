@@ -63,7 +63,7 @@ URL**示意：**m.xxx.com **/** details **?** id=1&ig=2
 
 但有时，可能并不需要定义一个单独的页面，而是要定义一组页面来代表用户浏览了某个功能事件。
 
-例如，GrowingIO 博客文章内容的地址都是这样的 **https://blog.growingio.com/posts/123456** 、 **https://blog.growingio.com/posts/14562**、 **https://blog.growingio.com/posts/1264**......
+例如，GrowingIO 博客文章内容的地址都是这样的 [https://blog.growingio.com/posts/123456](https://blog.growingio.com/posts/123456) 、 [https://blog.growingio.com/posts/14562](https://blog.growingio.com/posts/14562)、 [https://blog.growingio.com/posts/1264](https://blog.growingio.com/posts/1264)......
 
 我们有几百篇播客文章，希望了解的是用户每日访问博客文章页的事件，则可以定义访问博客文章**页面组**事件。
 
@@ -73,7 +73,7 @@ URL**示意：**m.xxx.com **/** details **?** id=1&ig=2
 
 a.「路径」最右侧的开关开启时，可以通过在「路径」中使用「\*」来做通配符，达到圈选多个类似页面的目的：
 
-例如，GrowingIO 博客文章内容的地址都是这样的 **https://blog.growingio.com/posts/123456** 、 **https://blog.growingio.com/posts/14562**、 **https://blog.growingio.com/posts/1264**......
+例如，GrowingIO 博客文章内容的地址都是这样的 [https://blog.growingio.com/posts/123456](https://blog.growingio.com/posts/123456) 、 [https://blog.growingio.com/posts/14562](https://blog.growingio.com/posts/14562)、 [https://blog.growingio.com/posts/1264](https://blog.growingio.com/posts/1264)......
 
 那么我们在路径中输入 /posts/\* 就会圈选出所有的博客单篇文章的页面。
 
@@ -120,7 +120,7 @@ b.「路径」右侧的开关关闭时，意味着要圈选出所有符合域名
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LT2bQFEfyMzBSr-1hFw-LT2iCtALnfoWaSKbtioimage.png)
 
- 如果不勾选内容保存，则默认会将元素的文本作为一个维度。可以在维度选择、或者过滤功能中，使用“元素内容”。
+如果不勾选内容保存，则默认会将元素的文本作为一个维度。可以在维度选择、或者过滤功能中，使用“元素内容”。
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LT2bQFEfyMzBSr-1hFw-LT2kDLxrRtxdG_6fDbWimage.png)
 

@@ -24,68 +24,73 @@ GrowingIO会默认帮您统计转发事件（分享用户量和分享次数）�
 
 ### ​分享概览
 
-![](../../.gitbook/assets/image%20%28183%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28183%29.png)
+
+| 模块 | 说明 |
+| :--- | :--- |
+
+
+| 1-选择应用 | 在集成多个小程序应用时，用来切换小程序。 |
+| :--- | :--- |
+
+
+| 2-选择分析内容 | 选择分析概览。 |
+| :--- | :--- |
+
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x6A21;&#x5757;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">1-&#x9009;&#x62E9;&#x5E94;&#x7528;</td>
-      <td style="text-align:left">&#x5728;&#x96C6;&#x6210;&#x591A;&#x4E2A;&#x5C0F;&#x7A0B;&#x5E8F;&#x5E94;&#x7528;&#x65F6;&#xFF0C;&#x7528;&#x6765;&#x5207;&#x6362;&#x5C0F;&#x7A0B;&#x5E8F;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2-&#x9009;&#x62E9;&#x5206;&#x6790;&#x5185;&#x5BB9;</td>
-      <td style="text-align:left">&#x9009;&#x62E9;&#x5206;&#x6790;&#x6982;&#x89C8;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3-&#x9009;&#x62E9;&#x7528;&#x6237;&#x7FA4;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">3-&#x9009;&#x62E9;&#x7528;&#x6237;&#x7FA4;</th>
+      <th style="text-align:left">
         <ul>
           <li>&#x8BBF;&#x95EE;&#x7528;&#x6237;&#xFF1A;&#x5373;&#x201D;&#x8F6C;&#x53D1;&#x5206;&#x4EAB;&#x5E26;&#x6765;&#x7684;&#x7528;&#x6237;&#x91CF;&#x201C;&#xFF0C;&#x7EDF;&#x8BA1;&#x7684;&#x662F;&#x7531;&#x5206;&#x4EAB;&#x5E26;&#x6765;&#x7684;&#x5168;&#x90E8;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x91CF;&#xFF0C;&#x201D;&#x8F6C;&#x5316;&#x76EE;&#x6807;&#x201C;&#x7EDF;&#x8BA1;&#x7684;&#x662F;&#x7531;&#x5206;&#x4EAB;&#x5E26;&#x6765;&#x7684;<b>&#x5168;&#x90E8;&#x8BBF;&#x95EE;&#x7528;&#x6237;</b>&#x4E2D;&#x8F6C;&#x5316;&#x7684;&#x7528;&#x6237;&#x91CF;&#xFF0C;KOL&#x5206;&#x4EAB;&#x5E26;&#x6765;&#x7684;&#x4E09;&#x5EA6;&#x7528;&#x6237;&#x91CF;&#xFF0C;&#x4E5F;&#x5728;&#x201D;&#x5168;&#x90E8;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x201C;&#x57FA;&#x7840;&#x4E0A;&#x8BA1;&#x7B97;&#x3002;</li>
           <li>&#x65B0;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#xFF1A;&#x5373;&#x201C;&#x8F6C;&#x53D1;&#x5206;&#x4EAB;&#x5E26;&#x6765;&#x7684;&#x7528;&#x6237;&#x91CF;&#x201D;&#xFF0C;&#x7EDF;&#x8BA1;&#x7684;&#x662F;&#x7531;&#x5206;&#x4EAB;&#x5E26;&#x6765;&#x7684;&#x65B0;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x91CF;&#xFF0C;&#x201C;&#x8F6C;&#x5316;&#x76EE;&#x6807;&#x201D;&#x7EDF;&#x8BA1;&#x7684;&#x662F;&#x7531;&#x5206;&#x4EAB;&#x5E26;&#x6765;&#x7684;<b>&#x65B0;&#x8BBF;&#x95EE;&#x7528;&#x6237;</b>&#x4E2D;&#x8F6C;&#x5316;&#x7684;&#x7528;&#x6237;&#x91CF;&#xFF0C;KOL
             &#x5206;&#x4EAB;&#x5E26;&#x6765;&#x7684;&#x4E09;&#x5EA6;&#x7528;&#x6237;&#x91CF;&#xFF0C;&#x4E5F;&#x5728;&#x201C;&#x65B0;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x201D;&#x57FA;&#x7840;&#x4E0A;&#x8BA1;&#x7B97;&#x3002;</li>
         </ul>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table>| 4-选择时间 | 选择分析的时间范围，预置常用的事件范围（昨天、过去7天、过去14天、过去30天）。 |
+| :--- | :--- |
+
+
+| 5-分项数据总览 | 展示分享产生的用户数、次数，一级由转发分享带来的整体获客和拉新的用户量。 |
+| :--- | :--- |
+
+
+| 6-病毒系数变化趋势 | 计算整体的病毒系数，并且按天展示病毒系数的变化。 |
+| :--- | :--- |
+
+
+| 7-设置转化目标 | 选择您关注的行为作为转化目标，了解分享带来的用户量中，转化的用户有多少，并可以直观的查看转化率、转化金额、转化的平均金额等 |
+| :--- | :--- |
+
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left">4-&#x9009;&#x62E9;&#x65F6;&#x95F4;</td>
-      <td style="text-align:left">&#x9009;&#x62E9;&#x5206;&#x6790;&#x7684;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#xFF0C;&#x9884;&#x7F6E;&#x5E38;&#x7528;&#x7684;&#x4E8B;&#x4EF6;&#x8303;&#x56F4;&#xFF08;&#x6628;&#x5929;&#x3001;&#x8FC7;&#x53BB;7&#x5929;&#x3001;&#x8FC7;&#x53BB;14&#x5929;&#x3001;&#x8FC7;&#x53BB;30&#x5929;&#xFF09;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">5-&#x5206;&#x9879;&#x6570;&#x636E;&#x603B;&#x89C8;</td>
-      <td style="text-align:left">&#x5C55;&#x793A;&#x5206;&#x4EAB;&#x4EA7;&#x751F;&#x7684;&#x7528;&#x6237;&#x6570;&#x3001;&#x6B21;&#x6570;&#xFF0C;&#x4E00;&#x7EA7;&#x7531;&#x8F6C;&#x53D1;&#x5206;&#x4EAB;&#x5E26;&#x6765;&#x7684;&#x6574;&#x4F53;&#x83B7;&#x5BA2;&#x548C;&#x62C9;&#x65B0;&#x7684;&#x7528;&#x6237;&#x91CF;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">6-&#x75C5;&#x6BD2;&#x7CFB;&#x6570;&#x53D8;&#x5316;&#x8D8B;&#x52BF;</td>
-      <td
-      style="text-align:left">&#x8BA1;&#x7B97;&#x6574;&#x4F53;&#x7684;&#x75C5;&#x6BD2;&#x7CFB;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x6309;&#x5929;&#x5C55;&#x793A;&#x75C5;&#x6BD2;&#x7CFB;&#x6570;&#x7684;&#x53D8;&#x5316;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">7-&#x8BBE;&#x7F6E;&#x8F6C;&#x5316;&#x76EE;&#x6807;</td>
-      <td style="text-align:left">&#x9009;&#x62E9;&#x60A8;&#x5173;&#x6CE8;&#x7684;&#x884C;&#x4E3A;&#x4F5C;&#x4E3A;&#x8F6C;&#x5316;&#x76EE;&#x6807;&#xFF0C;&#x4E86;&#x89E3;&#x5206;&#x4EAB;&#x5E26;&#x6765;&#x7684;&#x7528;&#x6237;&#x91CF;&#x4E2D;&#xFF0C;&#x8F6C;&#x5316;&#x7684;&#x7528;&#x6237;&#x6709;&#x591A;&#x5C11;&#xFF0C;&#x5E76;&#x53EF;&#x4EE5;&#x76F4;&#x89C2;&#x7684;&#x67E5;&#x770B;&#x8F6C;&#x5316;&#x7387;&#x3001;&#x8F6C;&#x5316;&#x91D1;&#x989D;&#x3001;&#x8F6C;&#x5316;&#x7684;&#x5E73;&#x5747;&#x91D1;&#x989D;&#x7B49;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">8-&#x8F6C;&#x5316;&#x76EE;&#x6807;&#x7684;&#x8861;&#x91CF;&#x6307;&#x6807;&#x9009;&#x62E9;</td>
-      <td
+      <th style="text-align:left">8-&#x8F6C;&#x5316;&#x76EE;&#x6807;&#x7684;&#x8861;&#x91CF;&#x6307;&#x6807;&#x9009;&#x62E9;</th>
+      <th
       style="text-align:left">
         <p>&#x5355;&#x51FB;
-          <img src="../../.gitbook/assets/kong-xin-chi-lun.png"
+          <img src="https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/kong-xin-chi-lun.png"
           alt/>&#xFF0C;&#x9009;&#x62E9;&#x8F6C;&#x5316;&#x76EE;&#x6807;&#x7684;&#x8861;&#x91CF;&#x6307;&#x6807;&#x3002;</p>
         <ul>
           <li>&#x7528;&#x6237;&#x91CF;</li>
           <li>&#x8F6C;&#x5316;&#x7387;</li>
           <li>&#x6B21;&#x6570;</li>
         </ul>
-        </td>
+        </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">9-&#x5206;&#x4EAB;&#x6570;&#x636E;&#x4E0B;&#x94BB;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">9-&#x5206;&#x4EAB;&#x6570;&#x636E;&#x4E0B;&#x94BB;</th>
+      <th style="text-align:left">
         <ul>
           <li>&#x5141;&#x8BB8;&#x8FDB;&#x4E00;&#x6B65;&#x5BF9;&#x89E6;&#x53D1;&#x5206;&#x4EAB;&#x4E8B;&#x4EF6;&#x7684;&#x7528;&#x6237;&#x8FDB;&#x884C;&#x90E8;&#x5206;&#x7EF4;&#x5EA6;&#x5426;&#x62C6;&#x5206;&#x8BA1;&#x7B97;&#x3002;
             <ul>
@@ -97,12 +102,11 @@ GrowingIO会默认帮您统计转发事件（分享用户量和分享次数）�
           <li>&#x9009;&#x62E9;&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x6807;&#xFF0C;&#x67E5;&#x770B;&#x8F6C;&#x5316;&#x76EE;&#x6807;&#x76F8;&#x5173;&#x7684;&#x66F4;&#x591A;&#x6307;&#x6807;&#x3002;</li>
           <li>&#x7EAC;&#x5EA6;&#x503C;&#x8FC7;&#x6EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x7EF4;&#x5EA6;&#x62C6;&#x5206;&#x8BA1;&#x7B97;&#xFF0C;&#x652F;&#x6301;&#x8FDB;&#x884C;&#x591A;&#x7EF4;&#x5EA6;&#x4EA4;&#x4E92;&#x7684;&#x6DF1;&#x5165;&#x5206;&#x6790;&#x3002;</li>
         </ul>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>### 分享裂变分析
-
-对分享来说，我们最关键的，除了知道分享的ROI，针对用户颗粒度下降，需要知道谁是产品中最能带来用户的“超级用户”。
+  </thead>
+  <tbody></tbody>
+</table>对分享来说，我们最关键的，除了知道分享的ROI，针对用户颗粒度下降，需要知道谁是产品中最能带来用户的“超级用户”。
 
 通常情况下，我们一般评估一个用户直接带来的用户量有多少，但是在微信体系下，就忽略了用户可能隐藏存在的巨大的社交关系。GrowingIO分享用户分析，帮助您定位直接一度分享和三度分享下的“分享超级用户”。
 
@@ -116,19 +120,17 @@ GrowingIO会默认帮您统计转发事件（分享用户量和分享次数）�
 
 如果一个用户带来的总用户量多，但是一度用户不多，而二度用户较多，说明这个用户和有较大直接社交圈的人有联系，即一般意义上是KOL的影响人（社交关系中认识社交关系存量较大的用户）。
 
-![](../../.gitbook/assets/image%20%2850%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2850%29.png)
+
+| 模块 | 说明 |
+| :--- | :--- |
+
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x6A21;&#x5757;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">1-&#x4E8C;&#x4E09;&#x5EA6;&#x88C2;&#x53D8;&#x89C4;&#x6A21;&#x7CFB;&#x6570;</td>
-      <td
+      <th style="text-align:left">1-&#x4E8C;&#x4E09;&#x5EA6;&#x88C2;&#x53D8;&#x89C4;&#x6A21;&#x7CFB;&#x6570;</th>
+      <th
       style="text-align:left">
         <ul>
           <li>&#x4E8C;&#x5EA6;&#x88C2;&#x53D8;&#x89C4;&#x6A21;&#x7CFB;&#x6570;&#x7528;&#x6765;&#x6307;&#x793A;&#x5206;&#x4EAB;&#x83B7;&#x5BA2;&#x4E2D;&#xFF0C;&#x4E8C;&#x5EA6;&#x5230;&#x4E00;&#x5EA6;&#x7684;&#x5E73;&#x5747;&#x88C2;&#x53D8;&#x89C4;&#x6A21;&#xFF08;&#x4E8C;&#x5EA6;&#x88C2;&#x53D8;&#x89C4;&#x6A21;&#x7CFB;&#x6570;=&#x4E8C;&#x5EA6;&#x8F6C;&#x53D1;&#x5E26;&#x6765;&#x7684;&#x7528;&#x6237;&#x52A0;&#x548C;
@@ -136,23 +138,26 @@ GrowingIO会默认帮您统计转发事件（分享用户量和分享次数）�
           <li>&#x4E09;&#x5EA6;&#x88C2;&#x53D8;&#x89C4;&#x6A21;&#x7CFB;&#x6570;&#x7528;&#x6765;&#x6307;&#x793A;&#x5206;&#x4EAB;&#x83B7;&#x5BA2;&#x4E2D;&#xFF0C;&#x4E09;&#x5EA6;&#x5230;&#x4E00;&#x5EA6;&#x7684;&#x5E73;&#x5747;&#x88C2;&#x53D8;&#x89C4;&#x6A21;&#xFF08;&#x4E09;&#x5EA6;&#x88C2;&#x53D8;&#x89C4;&#x6A21;&#x7CFB;&#x6570;=&#x4E09;&#x5EA6;&#x8F6C;&#x53D1;&#x5E26;&#x6765;&#x7684;&#x7528;&#x6237;&#x52A0;&#x548C;
             / &#x4E00;&#x5EA6;&#x8F6C;&#x53D1;&#x5E26;&#x6765;&#x7684;&#x7528;&#x6237;&#x52A0;&#x548C;&#xFF09;</li>
         </ul>
-        </td>
+        </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">2-&#x8F6C;&#x53D1;&#x5206;&#x4EAB;&#x88C2;&#x53D8;Top100&#x7528;&#x6237;</td>
-      <td
+      <th style="text-align:left">2-&#x8F6C;&#x53D1;&#x5206;&#x4EAB;&#x88C2;&#x53D8;Top100&#x7528;&#x6237;</th>
+      <th
       style="text-align:left">
         <p>&#x6700;&#x6709;&#x88C2;&#x53D8;&#x80FD;&#x529B;&#x7684;&#x524D;100&#x4F4D;&#x7528;&#x6237;&#x3002;</p>
         <ul>
           <li>&#x521B;&#x5EFA;&#x5206;&#x7FA4;&#xFF1A;&#x5C06;&#x5F53;&#x524D;&#x5177;&#x6709;&#x88C2;&#x53D8;&#x80FD;&#x529B;&#x7684;&#x7528;&#x6237;&#x8FDB;&#x884C;&#x5206;&#x7FA4;&#x3002;</li>
           <li>&#x4E0B;&#x8F7D;&#x6570;&#x636E;&#xFF1A;&#x4E0B;&#x8F7D;&#x5F53;&#x524D;&#x8868;&#x683C;&#x5C55;&#x793A;&#x7684;&#x6570;&#x636E;&#x3002;</li>
         </ul>
-        </td>
+        </th>
     </tr>
-  </tbody>
-</table>### 分享内容分析
-
-![](../../.gitbook/assets/image%20%28135%29.png)
+  </thead>
+  <tbody></tbody>
+</table>![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28135%29.png)
 
 | **模块** | 说明 |
 | :--- | :--- |
@@ -166,7 +171,7 @@ GrowingIO会默认帮您统计转发事件（分享用户量和分享次数）�
 
 一. 在分享内容分析页面最下方单击”**配置内容参数**“，如已配置，则单击**映射管理**，进入**分享内容参数映射管理**页面。
 
-![](../../.gitbook/assets/image%20%2848%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2848%29.png)
 
 {% hint style="info" %}
 GrowingIO已预置3个内容参数，您需使用映射功能关联您的内容参数。

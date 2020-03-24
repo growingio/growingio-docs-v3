@@ -41,7 +41,7 @@ export default {
 ```javascript
 var gio = require("utils/gio-minp/index.js").default;
 var gioConfig = require("你的 gioConfig.js 文件地址").default;
-gio('setConfig', gioConfig);    
+gio('setConfig', gioConfig);
 ```
 {% endtab %}
 
@@ -294,7 +294,7 @@ gio('setConfig', gioConfig);
 2. 将解压后的`gio-minp`目录放在小程序目录下（比如：/src/utils目录）。
 3. 添加代码：
 
-方式1：在根目录main.js文件的顶部添加跟踪代码 
+方式1：在根目录main.js文件的顶部添加跟踪代码
 
 ```javascript
 import Vue from 'vue';
@@ -334,9 +334,8 @@ App.mpType = 'app';
 1. 下载微信小程序SDK，并解压。下载地址：[https://assets.giocdn.com/sdk/gio-minp.esm.zip](https://assets.giocdn.com/sdk/gio-minp.esm.zip)
 2. 解压后的`index.js`和`gioConfig.js`目录放在小程序目录下（比如：/src/utils目录）。
 3. 添加代码：
-
-* 第一步：更新`index.js`到最新版。
-* 第二步：添加`npm`包。
+4. 第一步：更新`index.js`到最新版。
+5. 第二步：添加`npm`包。
 
 ```text
 npm install  imports-loader --save-dev
@@ -483,7 +482,7 @@ cml: false //是否使用了chameleon框架, 取值: false | Cml
 import Vue from 'vue'
 import App from './App'
 import gio from './utils/index'
-App.mpType = 'app' 
+App.mpType = 'app'
 ```
 {% endtab %}
 
@@ -531,59 +530,47 @@ gio('setConfig', gioConfig);
 
 SDK中提供了以下几个参数可以用来进行配置。
 
+| 参数 | 类型/值 | 说明 |
+| :--- | :--- | :--- |
+
+
+| version | string | 你的小程序的版本号。 |
+| :--- | :--- | :--- |
+
+
+| getLocation autoGet | true \| false | 是否自动获取用户的地理位置信息。默认false |
+| :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;/&#x503C;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">version</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x4F60;&#x7684;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x7248;&#x672C;&#x53F7;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">getLocation autoGet</td>
-      <td style="text-align:left">true | false</td>
-      <td style="text-align:left">&#x662F;&#x5426;&#x81EA;&#x52A8;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x7684;&#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#x3002;&#x9ED8;&#x8BA4;false</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">getLocation type</td>
-      <td style="text-align:left">wgs84 | gcj02</td>
-      <td style="text-align:left">
+      <th style="text-align:left">getLocation type</th>
+      <th style="text-align:left">wgs84 | gcj02</th>
+      <th style="text-align:left">
         <ul>
           <li>wgs8&#xFF1A;&#x6807;&#x51C6;&#x5750;&#x6807;&#x7CFB;</li>
           <li>gcj02&#xFF1A;&#x706B;&#x661F;&#x5750;&#x6807;&#x7CFB;</li>
         </ul>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td style="text-align:left">followShare</td>
-      <td style="text-align:left">true | false</td>
-      <td style="text-align:left">&#x8BE6;&#x7EC6;&#x8DDF;&#x8E2A;&#x5206;&#x4EAB;&#x6570;&#x636E;&#xFF0C;&#x5F00;&#x542F;&#x540E;&#x53EF;&#x4F7F;&#x7528;&#x5206;&#x4EAB;&#x5206;&#x6790;&#x529F;&#x80FD;&#x3002;&#x9ED8;&#x8BA4;true</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">forceLogin</td>
-      <td style="text-align:left">true | false</td>
-      <td style="text-align:left">&#x4F60;&#x7684;&#x5C0F;&#x7A0B;&#x5E8F;&#x662F;&#x5426;&#x5F3A;&#x5236;&#x8981;&#x6C42;&#x7528;&#x6237;&#x767B;&#x9646;&#x5FAE;&#x4FE1;&#x83B7;&#x53D6;
-        openid&#x3002;&#x9ED8;&#x8BA4; false</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">debug</td>
-      <td style="text-align:left">true | false</td>
-      <td style="text-align:left">&#x662F;&#x5426;&#x5F00;&#x542F;&#x8C03;&#x8BD5;&#x6A21;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x91C7;&#x96C6;&#x7684;&#x6570;&#x636E;&#x3002;&#x9ED8;&#x8BA4;
-        false</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">usePlugin</td>
-      <td style="text-align:left">true | false</td>
-      <td style="text-align:left">&#x4F60;&#x7684;&#x5C0F;&#x7A0B;&#x5E8F;&#x4E2D;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x4E86;&#x7B2C;&#x4E09;&#x65B9;&#x63D2;&#x4EF6;&#x3002;&#x9ED8;&#x8BA4;false</td>
-    </tr>
-  </tbody>
-</table>#### version
+  </thead>
+  <tbody></tbody>
+</table>| followShare | true \| false | 详细跟踪分享数据，开启后可使用分享分析功能。默认true |
+| :--- | :--- | :--- |
+
+
+| forceLogin | true \| false | 你的小程序是否强制要求用户登陆微信获取 openid。默认 false |
+| :--- | :--- | :--- |
+
+
+| debug | true \| false | 是否开启调试模式，可以看到采集的数据。默认 false |
+| :--- | :--- | :--- |
+
+
+| usePlugin | true \| false | 你的小程序中是否使用了第三方插件。默认false |
+| :--- | :--- | :--- |
+
 
 每次发布小程序新版本的时候，需要更新一下版本号 version, 与线上发布小程序保持一致; 可以在 GrowingIO 平台使用 “App 版本”维度，分析不同版本的数据。
 
@@ -596,12 +583,13 @@ SDK中提供了以下几个参数可以用来进行配置。
 在 gioConfig.js 文件中将 getLocation 配置如下：
 
 ```java
+
 ```
-getLocation: {          //是否自动获取用户的地理位置信息, 并设置获取方式
-   autoGet: true,       //默认不自动获取
-   type: 'gcj02'           //支持wgs84 | gcj02为火星坐标系, 默认wgs84
-},
-```
+
+getLocation: { //是否自动获取用户的地理位置信息, 并设置获取方式 autoGet: true, //默认不自动获取 type: 'gcj02' //支持wgs84 \| gcj02为火星坐标系, 默认wgs84 },
+
+```text
+
 ```
 
 * GrowingIO SDK 默认不会在小程序启动时获取用户的坐标信息。当用户访问到某一功能时需要位置信息时，可以调用以下位置接口，补发vst，采集位置信息，提升用户地域分布的分析准确性。
@@ -704,7 +692,7 @@ wx.getUserInfo({
 当用户在你的小程序上注册以后，你的产品应用服务端会在用户数据库里添加一条记录并且分配一个 ID，可以通过 setUserId 接口设置注册用户ID，后续在 GrowingIO 中分析登录用户这个数据。示例代码如下。
 
 ```java
-gio('setUserId', YOUR_USER_ID); 
+gio('setUserId', YOUR_USER_ID);
 ```
 
 #### 清除登录用户ID
@@ -712,7 +700,7 @@ gio('setUserId', YOUR_USER_ID);
 用户退出登录时，清除登录用户ID。
 
 ```java
-gio('clearUserId'); 
+gio('clearUserId');
 ```
 
 #### 设置登录用户属性
@@ -730,9 +718,9 @@ gio('setUser', { id: user.id, name: user.name });
 
 1. 登陆微信小程序后台，进入开发。
 2. 打开开发设置，到服务器域名配置部分。
-3. 在`request合法域名`中添加：https://wxapi.growingio.com
+3. 在`request合法域名`中添加：[https://wxapi.growingio.com](https://wxapi.growingio.com)
 
-![](../../../.gitbook/assets/image%20%2844%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2844%29.png)
 
 ## 4. 无埋点采集事件逻辑和高级配置
 
@@ -912,6 +900,5 @@ GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 
 方式二：在SDK中设置了Debug模式后，在微信开发者工具中查看数据采集日志。
 
-方式三：[数据校验](../../../product-manual/datacenter/datacheck.md)  
-
+方式三：[数据校验](../../../product-manual/datacenter/datacheck.md)
 

@@ -6,39 +6,45 @@
 
 下面以查看GrowingIO官网热图为例来介绍功能使用：
 
-![](../../../.gitbook/assets/image%20%28150%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28150%29.png)
+
+| 功能项 | 说明 |
+| :--- | :--- |
+
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x529F;&#x80FD;&#x9879;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">1-&#x6A21;&#x5F0F;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">1-&#x6A21;&#x5F0F;</th>
+      <th style="text-align:left">
         <ul>
           <li>&#x6D4F;&#x89C8;&#x6A21;&#x5F0F;&#xFF1A;&#x5728;&#x6D4F;&#x89C8;&#x6A21;&#x5F0F;&#x4E0B;&#x5207;&#x6362;&#x60A8;&#x8981;&#x67E5;&#x770B;&#x7684;&#x9875;&#x9762;&#xFF0C;&#x4E5F;&#x53EF;&#x76F4;&#x63A5;&#x8F93;&#x5165;URL&#x540E;&#x8F6C;&#x8DF3;&#x3002;</li>
           <li>&#x70ED;&#x56FE;&#x6A21;&#x5F0F;&#xFF1A;&#x5728;&#x6D4F;&#x89C8;&#x6A21;&#x5F0F;&#x4E0B;&#x9009;&#x4E2D;&#x9875;&#x9762;&#x540E;&#x9009;&#x62E9;&#x70ED;&#x56FE;&#x5207;&#x6362;&#x5230;&#x70ED;&#x56FE;&#x6A21;&#x5F0F;&#xFF0C;&#x5373;&#x53EF;&#x67E5;&#x770B;&#x5F53;&#x524D;&#x9875;&#x9762;&#x7684;&#x70ED;&#x56FE;&#x3002;</li>
         </ul>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">2-&#x8BBE;&#x5907;&#x7C7B;&#x578B;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">2-&#x8BBE;&#x5907;&#x7C7B;&#x578B;</th>
+      <th style="text-align:left">
         <p>&#x5F88;&#x591A;&#x7F51;&#x7AD9;&#x4E3A;&#x4E0D;&#x540C;&#x8BBE;&#x5907;&#x505A;&#x4E86;&#x54CD;&#x5E94;&#x5F0F;&#x8BBE;&#x8BA1;&#xFF0C;&#x4E0D;&#x540C;&#x8BBE;&#x5907;&#x7AEF;&#x67E5;&#x770B;&#x5230;&#x7684;&#x9875;&#x9762;&#x7ED3;&#x6784;&#x53EF;&#x80FD;&#x4F1A;&#x4E0D;&#x540C;&#x3002;&#x5728;&#x70ED;&#x56FE;&#x5206;&#x6790;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x5207;&#x6362;&#x8BBE;&#x5907;&#x7C7B;&#x578B;&#x67E5;&#x770B;&#x4E0D;&#x540C;&#x663E;&#x793A;&#x72B6;&#x6001;&#x4E0B;&#x7684;&#x70ED;&#x56FE;&#x6570;&#x636E;&#x3002;</p>
         <ul>
           <li>&#x7535;&#x8111;</li>
           <li>&#x5E73;&#x677F;</li>
           <li>&#x624B;&#x673A;</li>
         </ul>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">3-&#x529F;&#x80FD;&#x533A;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">3-&#x529F;&#x80FD;&#x533A;</th>
+      <th style="text-align:left">
         <ul>
           <li>&#x65F6;&#x95F4;&#xFF1A;&#x9009;&#x62E9;&#x70ED;&#x56FE;&#x7684;&#x5C55;&#x73B0;&#x6570;&#x636E;&#x8303;&#x56F4;&#xFF0C;&#x6700;&#x591A;&#x53EF;&#x67E5;&#x770B;&#x8FC7;&#x53BB;30&#x5929;&#x7684;&#x6570;&#x636E;&#x3002;</li>
           <li>&#x7528;&#x6237;&#xFF1A;&#x9009;&#x62E9;&#x7528;&#x6237;&#x5206;&#x7FA4;&#xFF0C;&#x67E5;&#x770B;&#x4E0D;&#x540C;&#x4EBA;&#x7FA4;&#x5728;&#x6240;&#x9009;&#x9875;&#x9762;&#x7684;&#x70ED;&#x56FE;&#x8868;&#x73B0;&#x3002;</li>
@@ -46,14 +52,13 @@
           <li>&#x70ED;&#x56FE;&#x8BE6;&#x60C5;&#xFF1A;&#x67E5;&#x770B;&#x70ED;&#x56FE;&#x8BE6;&#x7EC6;&#x6570;&#x636E;&#xFF0C;&#x5305;&#x542B;&#x6570;&#x636E;&#x6982;&#x89C8;&#x3001;&#x70B9;&#x51FB;&#x7387;&#x6392;&#x540D;&#x3002;</li>
           <li>&#x4E0B;&#x8F7D;&#xFF1A;&#x5728;&#x70ED;&#x56FE;&#x6A21;&#x5F0F;&#x4E0B;&#x4EE5;&#x56FE;&#x7247;&#x5F62;&#x5F0F;&#x4E0B;&#x8F7D;&#x5F53;&#x524D;&#x7684;&#x70ED;&#x56FE;&#x3002;</li>
         </ul>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td style="text-align:left">4-&#x70ED;&#x56FE;&#x533A;&#x57DF;</td>
-      <td style="text-align:left">&#x9F20;&#x6807;&#x60AC;&#x505C;&#x5728;&#x9875;&#x9762;&#x5143;&#x7D20;&#x4E0A;&#x65F6;&#xFF0C;&#x53EF;&#x67E5;&#x770B;&#x5F53;&#x524D;&#x5143;&#x7D20;&#x7684;&#x70B9;&#x51FB;&#x91CF;&#xFF08;&#x4EBA;&#x548C;&#x6B21;&#xFF09;&#x3001;&#x53CA;&#x70B9;&#x51FB;&#x91CF;&#x3002;</td>
-    </tr>
-  </tbody>
-</table>## 热图规则
+  </thead>
+  <tbody></tbody>
+</table>| 4-热图区域 | 鼠标悬停在页面元素上时，可查看当前元素的点击量（人和次）、及点击量。 |
+| :--- | :--- |
+
 
 ### 绘制规则
 
@@ -94,15 +99,15 @@
 
 ## 常见问题 <a id="chang-jian-wen-ti"></a>
 
-#### **1.我的页面是瀑布流式布局的，该如何查看未加载部分的热图呢？**  <a id="1-wo-de-ye-mian-shi-pu-bu-liu-shi-bu-ju-de-gai-ru-he-cha-kan-wei-jia-zai-bu-fen-de-re-tu-ni"></a>
+#### **1.我的页面是瀑布流式布局的，该如何查看未加载部分的热图呢？** <a id="1-wo-de-ye-mian-shi-pu-bu-liu-shi-bu-ju-de-gai-ru-he-cha-kan-wei-jia-zai-bu-fen-de-re-tu-ni"></a>
 
 当页面为「瀑布流式布局」时，想要看到未加载出来的内容的热图时，请先切换至「浏览模式」，将新的内容加载出来，再切换至「热图模式」查看。
 
-#### **2. 我的页面有隐藏起来的弹窗，隐藏部分的热图该怎么显示呢？**  <a id="2-wo-de-ye-mian-you-yin-cang-qi-lai-de-dan-chuang-yin-cang-bu-fen-de-re-tu-gai-zen-mo-xian-shi-ni"></a>
+#### **2. 我的页面有隐藏起来的弹窗，隐藏部分的热图该怎么显示呢？** <a id="2-wo-de-ye-mian-you-yin-cang-qi-lai-de-dan-chuang-yin-cang-bu-fen-de-re-tu-gai-zen-mo-xian-shi-ni"></a>
 
 若该弹窗存在于当前 URL 页面下，且其内元素的点击数据在点击率前 15 名内，则在右侧可以直接看到其内部的元素点击率数据，但是当前页面内该元素不可见。若是想要查看弹窗热图，请先切换至「浏览模式」，与页面进行交互将弹窗展示出来，再切换至「热图模式」即可查看弹窗热图数据。
 
-#### **3. 绘制方式的影响范围**  <a id="4-hui-zhi-fang-shi-de-ying-xiang-fan-wei"></a>
+#### **3. 绘制方式的影响范围** <a id="4-hui-zhi-fang-shi-de-ying-xiang-fan-wei"></a>
 
 由于绘制方式的特殊性，会在不同页面结构产生以下可能发生的影响：
 

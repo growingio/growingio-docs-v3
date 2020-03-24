@@ -1,68 +1,60 @@
 # 获取原始数据下载链接
 
-### URL
+## URL
 
-https://www.growingio.com/insights/{ai}/{date}.json
+[https://www.growingio.com/insights/{ai}/{date}.json](https://www.growingio.com/insights/{ai}/{date}.json)
 
-### 请求类型
+## 请求类型
 
 GET
 
-### 请求头参数
+## 请求头参数
 
 公共头部请参考[公共请求头参数](../../authenticate.md)。
 
-### 参数说明与示例
+## 参数说明与示例
 
 {% tabs %}
 {% tab title="请求参数" %}
+| 路径参数 | 类型 | 是否必传 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
+| ai | string | 是 | 项目ID |
+| :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x8DEF;&#x5F84;&#x53C2;&#x6570;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x4F20;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">ai</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">&#x9879;&#x76EE;ID</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">date</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">date</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x662F;</th>
+      <th style="text-align:left">
         <p>&#x6570;&#x636E;&#x65E5;&#x671F;</p>
         <p>&#x5929;&#x7EA7;&#x522B;&#x793A;&#x4F8B;&#xFF1A;20160520</p>
         <p>&#x5C0F;&#x65F6;&#x7EA7;&#x522B;&#x793A;&#x4F8B;&#xFF1A;20160502008</p>
-      </td>
-    </tr>
-  </tbody>
-</table><table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x67E5;&#x8BE2;&#x53C2;&#x6570;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x4F20;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
+      </th>
     </tr>
   </thead>
-  <tbody>
+  <tbody></tbody>
+</table>| 查询参数 | 类型 | 是否必传 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left">expire</td>
-      <td style="text-align:left">integer</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">expire</th>
+      <th style="text-align:left">integer</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#xFF0C;&#x4EE5;&#x5206;&#x4E3A;&#x5355;&#x4F4D;</p>
         <p>&#x9ED8;&#x8BA4;&#x503C;&#xFF1A; 5</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
+  </thead>
+  <tbody></tbody>
 </table>
 {% endtab %}
 
@@ -82,30 +74,4 @@ GET
 使用下载链接时，可以先检查 status 字段，为 FINISHED 时才拿 downlinks 进行下载。
 {% endtab %}
 {% endtabs %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

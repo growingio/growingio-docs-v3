@@ -40,7 +40,7 @@ Web圈选模式分为浏览和圈选两个模式
 {% tab title="定义页面" %}
 1、在浏览模式下进入要定义的页面，单击圈选模式下的**定义页面**按钮，进入**定义页面**界面**。**
 
-![](../../../.gitbook/assets/image%20%2866%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2866%29.png)
 
 左侧选择区：显示与当前页面URL相同的页面（以【当前页】为标识），或包含当前页面的页面。如果页面已经被定义过，可以直接使用。
 
@@ -61,11 +61,11 @@ Web圈选模式分为浏览和圈选两个模式
 
 支持在路径中使用 \* 作为通配符，达到定义一组类似页面的功能。
 
-例如GrowingIO 博客文章内容的地址都是这样的 
+例如GrowingIO 博客文章内容的地址都是这样的
 
-* **https://blog.growingio.com/posts/123456**
-* **https://blog.growingio.com/posts/14562**
-* **https://blog.growingio.com/posts/1264**......
+* [https://blog.growingio.com/posts/123456](https://blog.growingio.com/posts/123456)
+* [https://blog.growingio.com/posts/14562](https://blog.growingio.com/posts/14562)
+* [https://blog.growingio.com/posts/1264](https://blog.growingio.com/posts/1264)......
 
 那么我们在路径中输入 /posts/\* 就会圈选出所有的博客单篇文章的页面。
 {% endhint %}
@@ -84,35 +84,32 @@ Web圈选模式分为浏览和圈选两个模式
 当需要定义需要鼠标悬浮等交互行为才能显示的元素时，您可以按住shift键，待元素出现后进行圈选定义。
 {% endhint %}
 
-![](../../../.gitbook/assets/image%20%285%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%285%29.png)
+
+| 参数 | 说明 |
+| :--- | :--- |
+
+
+| 所属页面 | 确认元素所在的页面是什么。如果这个元素出现在多个页面同样的位置，想要统计所有的数据，可以通过”定义页面“，先定义元素所在的页面组，在在这里选择该页面组。 |
+| :--- | :--- |
+
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">&#x6240;&#x5C5E;&#x9875;&#x9762;</td>
-      <td style="text-align:left">&#x786E;&#x8BA4;&#x5143;&#x7D20;&#x6240;&#x5728;&#x7684;&#x9875;&#x9762;&#x662F;&#x4EC0;&#x4E48;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x5143;&#x7D20;&#x51FA;&#x73B0;&#x5728;&#x591A;&#x4E2A;&#x9875;&#x9762;&#x540C;&#x6837;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x60F3;&#x8981;&#x7EDF;&#x8BA1;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x201D;&#x5B9A;&#x4E49;&#x9875;&#x9762;&#x201C;&#xFF0C;&#x5148;&#x5B9A;&#x4E49;&#x5143;&#x7D20;&#x6240;&#x5728;&#x7684;&#x9875;&#x9762;&#x7EC4;&#xFF0C;&#x5728;&#x5728;&#x8FD9;&#x91CC;&#x9009;&#x62E9;&#x8BE5;&#x9875;&#x9762;&#x7EC4;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x9650;&#x5B9A;&#x6761;&#x4EF6;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">&#x9650;&#x5B9A;&#x6761;&#x4EF6;</th>
+      <th style="text-align:left">
         <p>&#x8BBE;&#x7F6E;&#x5143;&#x7D20;&#x5F53;&#x524D;&#x7684;&#x6587;&#x672C;&#x3001;&#x987A;&#x5E8F;&#x3001;&#x8F6C;&#x8DF3;&#x94FE;&#x63A5;&#x7B49;&#x9650;&#x5B9A;&#x6761;&#x4EF6;&#xFF0C;&#x786E;&#x5B9A;&#x5143;&#x7D20;&#x7EDF;&#x8BA1;&#x7684;&#x89C4;&#x5219;&#x3002;</p>
         <p>&#x5185;&#x5BB9;&#xFF1A;</p>
         <p>&#x987A;&#x5E8F;&#x4F4D;&#xFF1A;</p>
         <p>&#x8F6C;&#x8DF3;&#x94FE;&#x63A5;&#xFF1A;</p>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td style="text-align:left">&#x52A8;&#x6001;&#x5C55;&#x793A;&#x533A;</td>
-      <td style="text-align:left">&#x901A;&#x8FC7;&#x52A8;&#x6001;&#x5C55;&#x793A;&#x533A;&#x786E;&#x8BA4;&#x662F;&#x4E0D;&#x662F;&#x81EA;&#x5DF1;&#x60F3;&#x8981;&#x5B9A;&#x4E49;&#x7684;&#x5143;&#x7D20;&#x548C;&#x89C4;&#x5219;&#x3002;</td>
-    </tr>
-  </tbody>
-</table>3、配置完成后单击**保存**，完成此元素的定义。
+  </thead>
+  <tbody></tbody>
+</table>| 动态展示区 | 通过动态展示区确认是不是自己想要定义的元素和规则。 |
+| :--- | :--- |
+
 
 > 对于已被定义过的元素您在修改参数后进行另存为操作。
 
@@ -130,7 +127,7 @@ Web圈选模式分为浏览和圈选两个模式
 {% tab title="将查询条件设置为页面级变量" %}
 > SDK版本支持：&gt;=2.x
 
-以https://www.growingio.com/projects/1/homepage/overview?platform=ios&channel=banner为例，“?”后面的部分我们通常叫做查询条件（Query），在这个 URL 中标记了这个页面是在哪个平台（platform）打开的，以及通过哪个渠道（channel）访问的等重要信息，不同的公司有不同的应用，这种应用非常常见，那么，我们如何把这些重要的信息利用起来呢？
+以[https://www.growingio.com/projects/1/homepage/overview?platform=ios&channel=banner为例，“?”后面的部分我们通常叫做查询条件（Query），在这个](https://www.growingio.com/projects/1/homepage/overview?platform=ios&channel=banner为例，“?”后面的部分我们通常叫做查询条件（Query），在这个) URL 中标记了这个页面是在哪个平台（platform）打开的，以及通过哪个渠道（channel）访问的等重要信息，不同的公司有不同的应用，这种应用非常常见，那么，我们如何把这些重要的信息利用起来呢？
 
 现在不需要埋点和开发，可以直接将这些查询条件设置成页面级变量，即维度；不仅如此，相比与埋点信息的延时发送，GrowingIO 将页面与查询条件中的信息同时发送、采集和计算，没时差，再也不会有那么多的空值了。
 
@@ -140,7 +137,7 @@ Web圈选模式分为浏览和圈选两个模式
 
 2、 选择需要定义的查询条件，为查询条件（标识符）命名后单击确定。
 
-![](../../../.gitbook/assets/image%20%28131%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28131%29.png)
 
 {% hint style="info" %}
 页面级变量说明
@@ -170,91 +167,95 @@ Web圈选模式分为浏览和圈选两个模式
 2.如果一个页面上，没有埋点的值，不管是因为这个页面没有埋点，还是因为发送时间导致没有发送出来，会取查询条件中取到的值。（表格中的第 3 个和第 4 个情况）
 {% endhint %}
 
+| \# | ​ | 变化 | 埋点取的值 | URL 取的值 | 之前 | 之后 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">#</th>
-      <th style="text-align:left">&#x200B;</th>
-      <th style="text-align:left">&#x53D8;&#x5316;</th>
-      <th style="text-align:left">&#x57CB;&#x70B9;&#x53D6;&#x7684;&#x503C;</th>
-      <th style="text-align:left">URL &#x53D6;&#x7684;&#x503C;</th>
-      <th style="text-align:left">&#x4E4B;&#x524D;</th>
-      <th style="text-align:left">&#x4E4B;&#x540E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">&#x7B2C; 1 &#x4E2A;&#x60C5;&#x51B5;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">&#x7B2C; 1 &#x4E2A;&#x60C5;&#x51B5;</th>
+      <th style="text-align:left">
         <p><b>&#x5546;&#x54C1;&#x8BE6;&#x60C5;&#x9875;1</b>
         </p>
         <p>&#x5546;&#x54C1;&#x9875;&#x5185;&#x5BB9;&#x4E2D;&#x7684;&#x503C; 342817</p>
         <p>www.s.com/pro?id=342817&amp;city=bj</p>
-      </td>
-      <td style="text-align:left">&#x65E0;&#x53D8;&#x5316;</td>
-      <td style="text-align:left"><b>342817</b>
-      </td>
-      <td style="text-align:left">342817</td>
-      <td style="text-align:left">342817</td>
-      <td style="text-align:left"><b>342817</b>
-      </td>
+      </th>
+      <th style="text-align:left">&#x65E0;&#x53D8;&#x5316;</th>
+      <th style="text-align:left"><b>342817</b>
+      </th>
+      <th style="text-align:left">342817</th>
+      <th style="text-align:left">342817</th>
+      <th style="text-align:left"><b>342817</b>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">&#x7B2C; 2 &#x4E2A;&#x60C5;&#x51B5;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">&#x7B2C; 2 &#x4E2A;&#x60C5;&#x51B5;</th>
+      <th style="text-align:left">
         <p><b>&#x5546;&#x54C1;&#x8BE6;&#x60C5;&#x9875;1</b>
         </p>
         <p>&#x5546;&#x54C1;&#x9875;&#x5185;&#x5BB9;&#x4E2D;&#x7684;&#x503C; ac487</p>
         <p>www.s.com/pro?id=342816&amp;city=bj</p>
-      </td>
-      <td style="text-align:left">&#x65E0;&#x53D8;&#x5316;</td>
-      <td style="text-align:left"><b>ac487</b>
-      </td>
-      <td style="text-align:left">342816</td>
-      <td style="text-align:left">ac487</td>
-      <td style="text-align:left"><b>ac487</b>
-      </td>
+      </th>
+      <th style="text-align:left">&#x65E0;&#x53D8;&#x5316;</th>
+      <th style="text-align:left"><b>ac487</b>
+      </th>
+      <th style="text-align:left">342816</th>
+      <th style="text-align:left">ac487</th>
+      <th style="text-align:left"><b>ac487</b>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">&#x7B2C; 3 &#x4E2A;&#x60C5;&#x51B5;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">&#x7B2C; 3 &#x4E2A;&#x60C5;&#x51B5;</th>
+      <th style="text-align:left">
         <p><b>&#x5546;&#x54C1;&#x8BE6;&#x60C5;&#x9875;2</b>
         </p>
         <p>&#x5546;&#x54C1;&#x9875;&#x5185;&#x5BB9;&#x4E2D;&#x7684;&#x503C; 342815
           &#xFF0C;&#x4F46;&#x662F;&#x56E0;&#x4E3A;&#x65F6;&#x95F4;&#x7684;&#x7F18;&#x6545;&#xFF0C;&#x6CA1;&#x6709;&#x53D1;&#x51FA;&#x6765;&#x8FD9;&#x4E2A;&#x503C;</p>
         <p>www.s.com/pro?id=342815&amp;city=bj</p>
-      </td>
-      <td style="text-align:left">&#x8865;&#x4E86;&#x503C;</td>
-      <td style="text-align:left">NA</td>
-      <td style="text-align:left"><b>342815</b>
-      </td>
-      <td style="text-align:left">NA</td>
-      <td style="text-align:left"><b>342815</b>
-      </td>
+      </th>
+      <th style="text-align:left">&#x8865;&#x4E86;&#x503C;</th>
+      <th style="text-align:left">NA</th>
+      <th style="text-align:left"><b>342815</b>
+      </th>
+      <th style="text-align:left">NA</th>
+      <th style="text-align:left"><b>342815</b>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">&#x7B2C; 4 &#x4E2A;&#x60C5;&#x51B5;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">&#x7B2C; 4 &#x4E2A;&#x60C5;&#x51B5;</th>
+      <th style="text-align:left">
         <p><b>&#x5546;&#x54C1;&#x8BA2;&#x5355;&#x9875;1</b>
         </p>
         <p>&#x8BA2;&#x5355;&#x9875;&#x6CA1;&#x6709;&#x6253;&#x70B9;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x6CA1;&#x6709;&#x6253;&#x70B9;&#x7684;&#x503C;</p>
         <p>www.s.com/orderform?id=53462&amp;city=bj</p>
-      </td>
-      <td style="text-align:left">&#x8865;&#x4E86;&#x503C;</td>
-      <td style="text-align:left">NA</td>
-      <td style="text-align:left">NA</td>
-      <td style="text-align:left">
+      </th>
+      <th style="text-align:left">&#x8865;&#x4E86;&#x503C;</th>
+      <th style="text-align:left">NA</th>
+      <th style="text-align:left">NA</th>
+      <th style="text-align:left">
         <p><b>53462</b>
         </p>
         <p>&#x26A0;&#xFE0F;&#xFF1A;&#x672C;&#x6765;&#x7528;&#x6237;&#x6CA1;&#x6709;&#x6253;&#x70B9;&#xFF0C;&#x62FF;&#x4E0D;&#x5230;&#x6570;&#x636E;&#xFF0C;&#x73B0;&#x5728;&#x6709;&#x4E86;&#x8BA2;&#x5355;&#x7F16;&#x53F7;&#x4E1A;&#x52A1;&#x610F;&#x4E49;&#x7684;&#x6570;&#x636E;&#x3002;&#x8FD9;&#x4E2A;&#x4E1A;&#x52A1;&#x610F;&#x4E49;&#x4E0E;&#x524D;&#x9762;&#x7684;&#x5546;&#x54C1;&#x7F16;&#x53F7;&#x4E0D;&#x540C;&#x3002;</p>
-      </td>
-      <td style="text-align:left"><b>53462</b>
-      </td>
+      </th>
+      <th style="text-align:left"><b>53462</b>
+      </th>
     </tr>
-  </tbody>
-</table>### 其他特殊情况 <a id="3-qi-ta-te-shu-qing-kuang"></a>
-
-* 取到的查询条件是b=时，则传 N/A，与现在一致；
+  </thead>
+  <tbody></tbody>
+</table>* 取到的查询条件是b=时，则传 N/A，与现在一致；
 * 查询条件里有 b=1&b=2 ，取 b 的值为 2 ；
 * URL 中存在 ?a=1\#?b=2 ，第一个?是查询条件，即查询条件为a=1，第一个\#是hash，即hash（路径中的一部分）为?b=2；
 * 解析移动端的数据；
@@ -267,7 +268,7 @@ Web圈选模式分为浏览和圈选两个模式
 单击圈选页面右上角的最近更新，查看刚刚定义的元素。
 {% endhint %}
 
-## 定义页面案例
+## 定义页面案例 <a id="3-qi-ta-te-shu-qing-kuang"></a>
 
 ### **基础步骤 \| 监控首页和全站的流量情况**
 
@@ -319,13 +320,13 @@ Web圈选模式分为浏览和圈选两个模式
 
 很多网站的页面都是有规律的，层级结构清晰：
 
-GrowingIO 解决方案首页 **https://www.growingio.com/solution/**​
+GrowingIO 解决方案首页 [https://www.growingio.com/solution/](https://www.growingio.com/solution/)​
 
-GrowingIO 在线旅游解决方案落地页 **https://www.growingio.com/solution/online-travel**
+GrowingIO 在线旅游解决方案落地页 [https://www.growingio.com/solution/online-travel](https://www.growingio.com/solution/online-travel)
 
-GrowingIO 互联网金融解决方案落地页 **https://www.growingio.com**​**/solution/internet-finance**
+GrowingIO 互联网金融解决方案落地页 [https://www.growingio.com](https://www.growingio.com)​**/solution/internet-finance**
 
-我们发现所有的解决方案落地页都是 **https://www.growingio.com/solution/xxx** ，那么如果我想统计所有解决方案页的页面情况，就可以通过通配符「\*」来定义一组页面 **https://www.growingio.com/solution/\***，即：​
+我们发现所有的解决方案落地页都是 [https://www.growingio.com/solution/xxx](https://www.growingio.com/solution/xxx) ，那么如果我想统计所有解决方案页的页面情况，就可以通过通配符「\*」来定义一组页面 [https://www.growingio.com/solution/\*](https://www.growingio.com/solution/*)，即：​
 
 ![](https://docs.growingio.com/.gitbook/assets/20_59_35__04_25_2018.jpg)
 
@@ -404,7 +405,7 @@ GrowingIO 提供支持 Web 圈选的 Chrome 扩展程序。
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LrqhnRPBooFdHnT0FSY-LrqisorSxLz_gaBjKtcimage.png)
 
-3. 将插件模式切换到圈选模式，就可以开始圈选了，插件圈选方式与页面圈选功能相同。
+1. 将插件模式切换到圈选模式，就可以开始圈选了，插件圈选方式与页面圈选功能相同。
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LrqhnRPBooFdHnT0FSY-Lrqk4QSF2CnHLdo5gu6image.png)
 
@@ -438,7 +439,7 @@ GrowingIO 提供支持 Web 圈选的 Chrome 扩展程序。
 * 密码框不支持被圈选。
 * 元素已经被圈选，因此不能被重复圈选。
 * 元素是叶子节点，无文本内容，且元素的占屏幕面积超过 50% ，因此不能被圈选。如果需要圈选该元素，请添加 data-growing-circle 属性。
-*  元素所在的 Dom 嵌套层数过多，不在倒数后两层；或者层数符合但是没有实际内容，因此不能被圈选。
+* 元素所在的 Dom 嵌套层数过多，不在倒数后两层；或者层数符合但是没有实际内容，因此不能被圈选。
 
 #### **data-growing-circle 属性的使用帮助：**
 

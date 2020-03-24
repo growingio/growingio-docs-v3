@@ -27,19 +27,19 @@ public String authToken(String projectKeyId, String secretKey, String keyArray) 
 
 ## 接口定义
 
-#### URL
+### URL
 
-https://data.growingio.com/{ai}/user/exist
+[https://data.growingio.com/{ai}/user/exist](https://data.growingio.com/{ai}/user/exist)
 
-#### 请求类型
+### 请求类型
 
 POST
 
-#### 参数说明
+### 参数说明
 
 {% tabs %}
 {% tab title="请求参数" %}
-|  请求头参数 | 类型 | 是否必传 | 说明 |
+| 请求头参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
 | Access-Token | string | 是 | Public Key，项目公钥 |
 | Content-Type | string | 是 | application/json |
@@ -59,8 +59,6 @@ POST
 {% endtab %}
 
 {% tab title="body示例" %}
-
-
 ```java
 {
   "loginUserId": ["abcdef", "bcdefg", ...],
@@ -73,6 +71,4 @@ POST
 200：OK
 {% endtab %}
 {% endtabs %}
-
-
 

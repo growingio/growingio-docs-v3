@@ -1,18 +1,18 @@
 # 查询监测链接（增加APP下载量-同时推广iOS和Android）
 
-### URL
+## URL
 
-https://www.growingio.com/api/v1/projects/{project\_uid}/meta/onelinks
+[https://www.growingio.com/api/v1/projects/{project\_uid}/meta/onelinks](https://www.growingio.com/api/v1/projects/{project_uid}/meta/onelinks)
 
-### 请求类型
+## 请求类型
 
 GET
 
-### 请求头参数
+## 请求头参数
 
 公共头部请参考[公共请求头参数](../../authenticate.md)。
 
-### 说明参数与示例
+## 说明参数与示例
 
 {% tabs %}
 {% tab title="请求参数" %}
@@ -81,6 +81,4 @@ GET
 ```
 {% endtab %}
 {% endtabs %}
-
-
 

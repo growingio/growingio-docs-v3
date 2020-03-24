@@ -16,15 +16,15 @@ GrowingIO初始化配置项均在AppDelegate.m文件中的didFinishLaunchingWith
 }
 ```
 
-### 基础配置API
+## 基础配置API
 
 | API | 默认值 | 说明 | 无埋点SDK版本支持 | 埋点SDK版本支持 |
 | :--- | :--- | :--- | :--- | :--- |
-| startWithAccountId:_**AccountId**_  | 无 | 初始化方法，_**AccountID**_为项目id，默认采样率为100%。 | ✔️ | ✔️ |
+| startWithAccountId:_**AccountId**_ | 无 | 初始化方法，_**AccountID**_为项目id，默认采样率为100%。 | ✔️ | ✔️ |
 | startWithAccountId:_**AccountId**_ withSampling:_**sampling**_ | 无 | 初始化方法，_**AccountID**_为项目id；_**sampling**_为采样率。 | ✔️ | ✔️ |
 | handleUrl | 无 | URL Scheme处理方法，通过参数不同区分圈选、MobileDebugger、DeepLink等。 | ✔️ | - |
 
-### SDK功能API
+## SDK功能API
 
 <table>
   <thead>
@@ -151,7 +151,7 @@ GrowingIO初始化配置项均在AppDelegate.m文件中的didFinishLaunchingWith
         <td style="text-align:left">-</td>
     </tr>
   </tbody>
-</table>### 数据采集发送API
+</table>\#\#\# 数据采集发送API
 
 <table>
   <thead>

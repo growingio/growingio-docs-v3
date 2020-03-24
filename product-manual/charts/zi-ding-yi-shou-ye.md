@@ -6,7 +6,7 @@
 支持通过拖动排序，定制术语您自己的首页，不会干扰到项目中的其他用户。
 {% endhint %}
 
-![](../../.gitbook/assets/image%20%28189%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28189%29.png)
 
 | 项 | 说明1- |
 | :--- | :--- |

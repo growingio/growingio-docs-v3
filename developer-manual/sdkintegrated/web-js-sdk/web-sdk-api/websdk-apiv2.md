@@ -63,7 +63,7 @@ gio('init', '1234567890', {'imp':false});
 
 ### 2. 设置登录用户ID（setUserId）
 
-当用户登录之后调用 setUserId API ，设置登录用户 ID 。 
+当用户登录之后调用 setUserId API ，设置登录用户 ID 。
 
 {% hint style="success" %}
 90% 以上的用户都会上传登录用户 ID，以便分析登录用户的数据情况。
@@ -96,7 +96,7 @@ gio('setUserId', '1234567890');
 gio('clearUserId');
 ```
 
-### 4. 设置登录用户级变量（people.set） 
+### 4. 设置登录用户级变量（people.set）
 
 发送登录用户信息用于登录用户信息相关分析，在添加代码之前必须在打点管理界面上声明登录用户变量。
 
@@ -180,7 +180,7 @@ gio('page.set', {'pageName': 'Home Page', 'author': 'Zhang San'});
 gio('page.set', 'author', 'Zhang San');
 ```
 
-### 7. 设置转化变量（evar.set） 
+### 7. 设置转化变量（evar.set）
 
 发送一个转化信息用于高级归因分析，在添加代码之前必须在打点管理界面上声明转化变量。
 
@@ -261,7 +261,7 @@ gio('sendPage'); // 在调用 window.gio('send') 之后调用
 // 停止采集数据
 window.gio('config',{"dataCollect": true}); // 全局配置, 在调用 window.gio('send') 之前调用
 // 采集数据 (默认)
-window.gio('config',{"dataCollect": false}); 
+window.gio('config',{"dataCollect": false});
 ```
 
 ### 11. 获取访问用户ID（getVisitUserId）
@@ -269,6 +269,4 @@ window.gio('config',{"dataCollect": false});
 ```javascript
 gio('getVisitUserId'); // 在调用 window.gio('send') 之后调用
 ```
-
-
 

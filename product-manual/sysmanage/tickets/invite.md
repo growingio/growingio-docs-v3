@@ -8,7 +8,7 @@
 您可以新建自定义角色，并为角色授予邀请技术支持的权限。自定义角色请参考[自定义项目角色](../projectmange/project-member.md#zi-ding-yi-xiang-mu-jiao-se)。
 {% endhint %}
 
-登录GrowingIO平台，单击界面右上角的 ![](../../../.gitbook/assets/ke-fu.png) 选择**仅邀请技术支持**直接进入工单系统提交新问题界面。
+登录GrowingIO平台，单击界面右上角的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/ke-fu.png) 选择**仅邀请技术支持**直接进入工单系统提交新问题界面。
 
 {% hint style="info" %}
 您也可以在提交问题（工单）的时候勾选**同时邀请技术支持**。

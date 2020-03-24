@@ -1,6 +1,6 @@
 # 腾讯社交广告
 
-### 腾讯社交广告—Marketing API <a id="7-teng-xun-she-jiao-guang-gao-marketing-api"></a>
+## 腾讯社交广告—Marketing API <a id="7-teng-xun-she-jiao-guang-gao-marketing-api"></a>
 
 腾讯社交广告（广点通），归因与展现方式为：‌
 

@@ -14,7 +14,7 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LhAF1Wd6YwwtwesBw8S-LhAGBMM86BaVPCAKuXKimage.png)
 
-![](../../../../.gitbook/assets/image%20%28132%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28132%29.png)
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LhAF1Wd6YwwtwesBw8S-LhAGM1o3m-Kieo72P84image.png)
 

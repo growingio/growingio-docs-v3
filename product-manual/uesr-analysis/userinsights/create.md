@@ -8,7 +8,7 @@
 在用户分群界面，单击进入设定好的某个用户分群后，最下方会列出该群体的所有用户。单击任意一个用户名，即可进入该用户的用户细查页面。
 {% endhint %}
 
-![](../../../.gitbook/assets/image%20%2824%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2824%29.png)
 
 二. 在左上方下拉框中选择需要细查用户的用户分群，下方列表展示分群内的用户群体。
 
@@ -20,7 +20,7 @@
 
 **用户细查的界面主要分为四部分：**
 
-![](../../../.gitbook/assets/image%20%28190%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28190%29.png)
 
 > 用户属性
 

@@ -1,18 +1,18 @@
 # 查询监测链接（推广网页）
 
-### URL
+## URL
 
-https://www.growingio.com/api/v1/projects/{project\_uid}/meta/weblinks
+[https://www.growingio.com/api/v1/projects/{project\_uid}/meta/weblinks](https://www.growingio.com/api/v1/projects/{project_uid}/meta/weblinks)
 
-### 请求类型
+## 请求类型
 
 GET
 
-### 请求头参数
+## 请求头参数
 
 公共头部请参考[公共请求头参数](../../authenticate.md)。
 
-### 说明参数与示例
+## 说明参数与示例
 
 {% tabs %}
 {% tab title="请求参数" %}
@@ -79,11 +79,7 @@ Response: Status Code: 200 OK
         "updatedAt": 1521642287367
     }
 ]
-
-
 ```
 {% endtab %}
 {% endtabs %}
-
-
 

@@ -2,8 +2,6 @@
 
 {% tabs %}
 {% tab title="custom\_attr" %}
-
-
 | sendTime | 发送时间 | bigint | 数据发送过来的时间 | ​示例 |
 | :--- | :--- | :--- | :--- | :--- |
 | eventname | 埋点事件名称 | string | 用户定义的埋点事件名称 | 管理平台内定义 |
@@ -11,8 +9,6 @@
 {% endtab %}
 
 {% tab title="custom\_attr内attribute字段说明" %}
-
-
 | 列名 | 字段名称 | 字段格式 | 字段说明 | 值\(example\) |
 | :--- | :--- | :--- | :--- | :--- |
 | \_userId | 用户ID | string\(36\) | 针对单个用户生成的唯一id | 例如，web网站生成一个有效期三年的cookie值，mobile则为机器唯一标识码 |

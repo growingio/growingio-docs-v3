@@ -18,5 +18,3 @@ if (data.getScheme().startsWith("growing.")){
 }
 ```
 
-
-

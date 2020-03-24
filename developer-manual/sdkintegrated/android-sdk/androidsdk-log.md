@@ -367,7 +367,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">2.6.7</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>&#x4FEE;&#x590D; <code>View</code> &#x7684; <code>Context</code> &#x662F; <code>Application</code> &#x65F6;&#xFF0C;&#x65E0;&#x6CD5;&#x91C7;&#x96C6;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#xFF1B;</li>
           <li>&#x4FEE;&#x590D; <code>Fragment</code> &#x5143;&#x7D20;&#x4E0D;&#x53EF;&#x89C1;&#x53D1;&#x9001; <code>imp</code> &#x4E8B;&#x4EF6;&#xFF1B;</li>
@@ -391,7 +390,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">2.6.5</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>&#x652F;&#x6301;&#x8FD0;&#x884C;&#x65F6;&#x5F02;&#x6B65;&#x8BBE;&#x7F6E;&#x6E20;&#x9053;&#x4FE1;&#x606F;
             (&#x63A5;&#x53E3;&#x5730;&#x5740;)&#xFF1B;</li>
@@ -406,7 +404,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">2.6.3</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>&#x590D;&#x5BA2;&#x6237;&#x8C03;&#x7528;<code>WebView</code>&#x7684;<code>setWebChromeClient</code>&#xFF0C;
             &#x4F20;&#x53C2;&#x4E3A;<code>new WebChromeClient()</code> &#x65F6;&#x5BFC;&#x81F4;&#x5185;&#x5D4C;
@@ -419,7 +416,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">2.6.2</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>&#x4FEE;&#x590D;&#x5728; WIFI &#x60C5;&#x51B5;&#x4E0B;&#xFF0C; &#x6570;&#x636E;&#x53D1;&#x9001;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x8FC7;&#x957F;&#xFF1B;</li>
           <li>&#x534E;&#x4E3A;&#x624B;&#x673A; 8.0 &#x4EE5;&#x4E0A;&#x7CFB;&#x7EDF;&#x5708;&#x9009;&#x65F6;&#xFF0C;
@@ -437,7 +433,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">2.6.0</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>&#x53D1;&#x5E03; React Native &#x65E0;&#x57CB;&#x70B9; SDK&#xFF1B;</li>
           <li>&#x53D1;&#x5E03; API Cloud&#x3001;Cordova&#x3001;Flutter&#x3001;React
@@ -454,7 +449,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">2.4.4</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>Hybrid SDK &#x652F;&#x6301;&#x8BBE;&#x7F6E;&#x767B;&#x5F55;&#x7528;&#x6237;&#x53D8;&#x91CF;</li>
           <li>&#x4FEE;&#x590D;&#x82E5;&#x5E72;&#x517C;&#x5BB9;&#x6027;&#x95EE;&#x9898;</li>
@@ -465,7 +459,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">2.4.3</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>deep link&#x529F;&#x80FD;&#x5347;&#x7EA7;</li>
           <li>&#x4FEE;&#x590D; bug</li>
@@ -481,7 +474,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">2.4.0</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>&#x7A33;&#x5B9A;&#x6027;&#x5168;&#x9762;&#x6D4B;&#x8BD5;</li>
           <li>&#x652F;&#x6301;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x53D8;&#x91CF;</li>
@@ -494,7 +486,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">2.3.3</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>&#x4F18;&#x5316;SDK&#x542F;&#x52A8;&#x65F6;&#x957F;&#xFF0C;&#x63D0;&#x901F;&#x5927;&#x7EA6;5&#x500D;</li>
           <li>&#x4FEE;&#x590D;&#x5730;&#x56FE;&#x517C;&#x5BB9;&#x6027;&#x95EE;&#x9898;.</li>
@@ -512,7 +503,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">2.3.2</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>&#x652F;&#x6301;Deeplink&#x76F4;&#x8FBE;&#x843D;&#x5730;&#x9875;</li>
           <li>&#x652F;&#x6301;GDPR&#x6B27;&#x76DF;&#x533A;&#x4E00;&#x822C;&#x6570;&#x636E;&#x4FDD;&#x62A4;&#x6761;&#x4F8B;</li>
@@ -537,7 +527,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">2.3.1</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>&#x627E;&#x56DE;trackEditText(EditText)&#x63A5;&#x53E3;&#xFF0C; &#x9ED8;&#x8BA4;&#x4E0D;&#x91C7;&#x96C6;&#x8F93;&#x5165;&#x6846;&#x7684;&#x6587;&#x672C;&#x503C;</li>
           <li>&#x4FEE;&#x590D; webView loadUrl &#x62A5;&#x9519;&#x4FEE;&#x590D;&#xFF0C;&#x89C6;&#x9891;&#x64AD;&#x653E;&#x6A2A;&#x5C4F;&#x95EE;&#x9898;&#x4FEE;&#x590D;&#xFF0C;&#x5BF9;
@@ -554,7 +543,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">2.3.0</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>&#x652F;&#x6301;Cordova&#x8DE8;&#x5E73;&#x53F0;&#x63D2;&#x4EF6;&#x57CB;&#x70B9;&#x5B9E;&#x65BD;</li>
           <li>&#x652F;&#x6301;RN&#xFF08;React Native&#xFF09;&#x8DE8;&#x5E73;&#x53F0;&#x63D2;&#x4EF6;&#x57CB;&#x70B9;&#x5B9E;&#x65BD;</li>
@@ -567,7 +555,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">1.1.9</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>&#x4FEE;&#x590D;&#x56E0;&#x52A8;&#x6001;&#x6DFB;&#x52A0;Fragment&#x5BFC;&#x81F4;&#x7684;page&#x4E8B;&#x4EF6;&#x53D1;&#x9001;&#x95EE;&#x9898;</li>
           <li>&#x4FEE;&#x590D;WebView&#x89C6;&#x9891;&#x64AD;&#x653E;&#x6A2A;&#x5C4F;&#x95EE;&#x9898;&#xFF0C;&#x5C4F;&#x853D;&#x6DD8;&#x5B9D;&#x7684;WebView
@@ -584,7 +571,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">1.1.3</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>&#x91C7;&#x96C6;&#x6838;&#x5FC3;&#x903B;&#x8F91;&#x4F18;&#x5316; Andriod
             SDK v1.1.3 &#x95EE;&#x9898;&#x4FEE;&#x590D;&#xFF1A;</li>
@@ -598,7 +584,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">1.1.1</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>&#x65B0;&#x589E;&#x663E;&#x793A;&#x5DF2;&#x5708;&#x9009;&#x7684;&#x529F;&#x80FD;</li>
           <li>&#x65B0;&#x589E; Hybrid &#x542F;&#x7528; HashTag &#x7684;&#x5F00;&#x5173;</li>
@@ -639,7 +624,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">1.0.3</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>&#x4F18;&#x5316; Hybrid &#x91C7;&#x96C6;&#xFF0C;&#x652F;&#x6301;&#x901A;&#x8FC7;
             hashtag &#x6765;&#x8DDF;&#x8E2A;&#x9875;&#x9762;&#x5207;&#x6362;&#xFF0C;&#x5E76;&#x4E0E;
@@ -661,7 +645,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">0.8.83</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>&#x652F;&#x6301;&#x65B0;&#x7248;&#x7684;Web&#x5708;&#x9009;App&#x529F;&#x80FD;&#xFF0C;&#x5728;&#x7535;&#x8111;&#x4E0A;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x5730;&#x5708;&#x9009;App&#x4E2D;&#x7684;&#x5143;&#x7D20;</li>
           <li>&#x4FEE;&#x590D;&#x4E86;&#x8BB8;&#x591A;bug</li>
@@ -672,7 +655,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">0.8.64</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>&#x5728;&#x5708;&#x9009;&#x65F6;&#x53EF;&#x4EE5;&#x9AD8;&#x4EAE;&#x51FA;&#x5DF2;&#x5708;&#x9009;&#x8FC7;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x4E00;&#x6B21;&#x5708;&#x4E0D;&#x5B8C;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x4E0B;&#x6B21;&#x63A5;&#x7740;&#x5708;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x65B9;&#x4FBF;&#x4E86;&#x591A;&#x4E2A;&#x540C;&#x4E8B;&#x4E4B;&#x95F4;&#x7684;&#x534F;&#x4F5C;&#x5708;&#x9009;</li>
           <li>&#x5F53;&#x5143;&#x7D20;&#x9762;&#x79EF;&#x8F83;&#x5C0F;&#x65F6;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x5728;&#x624B;&#x6307;&#x65C1;&#x51FA;&#x73B0;&#x653E;&#x5927;&#x955C;&#x6548;&#x679C;&#xFF0C;&#x65B9;&#x4FBF;&#x5708;&#x9009;&#x5C0F;&#x578B;&#x5143;&#x7D20;</li>
@@ -685,7 +667,6 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">0.8.52</td>
       <td style="text-align:left">
-        <p></p>
         <ol>
           <li>&#x652F;&#x6301;&#x5728;App&#x5185;&#x5708;&#x9009;H5&#x9875;&#x9762;</li>
           <li>&#x6539;&#x8FDB;App&#x5B9A;&#x4E49;&#x6807;&#x7B7E;&#x754C;&#x9762;UI&#xFF0C;&#x7F8E;&#x89C2;&#x5EA6;&#x5927;&#x5927;&#x63D0;&#x9AD8;</li>
@@ -698,6 +679,3 @@ description: Android SDK更新日志
     </tr>
   </tbody>
 </table>
-
-## 
-

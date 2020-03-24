@@ -14,7 +14,7 @@
 
 ## 3. H5怎么增加自定义事件和变量？
 
-请参考：Web JS SDK埋点文档 和 Hybrid SDK埋点文档。 
+请参考：Web JS SDK埋点文档 和 Hybrid SDK埋点文档。
 
 [Web JS SDK API](../../web-js-sdk/web-sdk-api/)
 

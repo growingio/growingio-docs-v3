@@ -67,30 +67,25 @@ GrowingIO.getInstance().setUserId(String userId);
 
 **参数说明**
 
+| 参数名称 | 类型 | 是否必须 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">userId</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">userId</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x662F;</th>
+      <th style="text-align:left">
         <p>&#x767B;&#x5F55;&#x7528;&#x6237;Id&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;1000&#xFF1B;</p>
         <p>&#x5982;&#x679C;&#x503C;&#x4E3A;&#x7A7A;&#x5219;&#x6E05;&#x7A7A;&#x4E86;&#x767B;&#x5F55;&#x7528;&#x6237;&#x53D8;&#x91CF;&#xFF0C;&#x4E0D;&#x5EFA;&#x8BAE;&#x8FD9;&#x4E48;&#x7528;&#xFF0C;</p>
         <p>&#x8BF7;&#x4F7F;&#x7528; clearUserId &#x6E05;&#x9664;&#x767B;&#x5F55;&#x7528;&#x6237;&#x53D8;&#x91CF;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>**示例代码**
-
-```java
+  </thead>
+  <tbody></tbody>
+</table>```java
 //setUserId API调用示例
 GrowingIO.getInstance().setUserId("1234567890");
 ```
@@ -123,46 +118,51 @@ gio.setPeopleVariable(String key, Boolean value);
 gio.setPeopleVariable(JSONObject peopleVariables);
 ```
 
+| 参数名称 | 类型 | 是否必须 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">key</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">key</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x7528;&#x6237;&#x53D8;&#x91CF;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
         <p>&#x9650;&#x5236;&#xFF1A;&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">value</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">value</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x7528;&#x6237;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x3002;</p>
         <p>&#x9650;&#x5236;&#xFF1A;&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;1000&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">peopleVariables</td>
-      <td style="text-align:left">JSONObject</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">peopleVariables</th>
+      <th style="text-align:left">JSONObject</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x7528;&#x6237;&#x53D8;&#x91CF;&#x7528;&#x4E8E;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x76F8;&#x5173;&#x7684;&#x5206;&#x6790;&#x3002;</p>
         <p>&#x9650;&#x5236;&#xFF1A;&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF08;<code>peopleVariables.length()&lt;=100</code>&#xFF09;&#xFF1B;</p>
         <p><code>peopleVariables</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>JSONObject</code>&#x6216;&#x8005;<code>JSONArray</code>&#xFF1B;</p>
         <p><code>key</code>&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code>&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
+  </thead>
+  <tbody></tbody>
 </table>{% hint style="info" %}
 推荐您使用[Mobile Debugger](../../../debugging/mobile-debugger.md)，我们为您列举了应用场景和验证示例，请参考：[验证埋点事件](../../../debugging/verification/)&gt;[**ppl（用户变量）事件**](../../../debugging/verification/ppl.md)。
 {% endhint %}
@@ -202,7 +202,7 @@ gio.setPeopleVariable(jsonObject);
     },
     "gesid":311,
     "esid":0
-} 
+}
 ```
 
 ### **4.** 设置访问用户变量（setVisitor）
@@ -220,30 +220,24 @@ GrowingIO.getInstance().setVisitor(JSONObject visitorVar)
 
 **参数说明**
 
+| **参数说明** | 类型 | 是否必填 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>&#x53C2;&#x6570;&#x8BF4;&#x660E;</b>
-      </th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x586B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">visitorVar</td>
-      <td style="text-align:left">JSONObject</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">visitorVar</th>
+      <th style="text-align:left">JSONObject</th>
+      <th style="text-align:left">&#x662F;</th>
+      <th style="text-align:left">
         <p>&#x4E0D;&#x53EF;&#x4F7F;&#x7528;&#x5D4C;&#x5957;&#x7684;<code>JSONObject</code>&#x5BF9;&#x8C61;&#xFF0C;&#x5373;&#x4E3A;JSONObject&#x4E2D;&#x4E0D;&#x53EF;&#x4EE5;&#x653E;&#x5165;<code>JSONObject</code>&#x6216;&#x8005;<code>JSONArray</code>&#xFF1B;</p>
         <p>key &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;value&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>**示例代码**
-
-```java
+  </thead>
+  <tbody></tbody>
+</table>```java
 //setVisitor API调用示例
 GrowingIO gio = GrowingIO.getInstance();
 jsonObject.put("gender", "male");
@@ -251,7 +245,7 @@ jsonObject.put("age", "21");
 gio.setVisitor(jsonObject);
 ```
 
- **检验数据发送日志示例**
+**检验数据发送日志示例**
 
 注意 `t` 等于`vstr`字段，表示访问用户变量发送成功，其它字段无需仔细验证**。**
 
@@ -307,58 +301,59 @@ gio.setPageVariableX(Fragment fragment, JSONObject pageLevelVariables);
 参数选择是当前被识别的页面对象，可能是 Activity 或 Fragment，可以使用 Mobile Debugger 或debug日志确认。
 {% endhint %}
 
+| 参数名称 | 类型 | 是否必须 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
+| activity | Activity | 是 | 当前页面访问事件（page事件）发送的页面 |
+| :--- | :--- | :--- | :--- |
+
+
+| fragment | Fragment | 是 | 当前页面访问事件（page事件）发送的页面 |
+| :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">activity</td>
-      <td style="text-align:left">Activity</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">&#x5F53;&#x524D;&#x9875;&#x9762;&#x8BBF;&#x95EE;&#x4E8B;&#x4EF6;&#xFF08;page&#x4E8B;&#x4EF6;&#xFF09;&#x53D1;&#x9001;&#x7684;&#x9875;&#x9762;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">fragment</td>
-      <td style="text-align:left">Fragment</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">&#x5F53;&#x524D;&#x9875;&#x9762;&#x8BBF;&#x95EE;&#x4E8B;&#x4EF6;&#xFF08;page&#x4E8B;&#x4EF6;&#xFF09;&#x53D1;&#x9001;&#x7684;&#x9875;&#x9762;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">key</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">key</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x9875;&#x9762;&#x7EA7;&#x53D8;&#x91CF;&#x7684;&#x6807;&#x8BC6;&#x7B26;</p>
         <p>&#x9650;&#x5236;&#xFF1A;&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">value</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">value</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x9875;&#x9762;&#x7EA7;&#x53D8;&#x91CF;&#x7684;&#x503C;</p>
         <p>&#x9650;&#x5236;&#xFF1A;&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;1000</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">pageLevelvariables</td>
-      <td style="text-align:left">JSONObject</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">pageLevelvariables</th>
+      <th style="text-align:left">JSONObject</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x9875;&#x9762;&#x7EA7;&#x53D8;&#x7684;&#x4FE1;&#x606F;</p>
         <p>&#x9650;&#x5236;&#xFF1A;&#x975E;null&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF08;<code>pageLevelVariable.length()&lt;=100</code>&#xFF09;&#xFF1B;</p>
         <p><code>pageLevelVariable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>JSONObject</code>&#x6216;&#x8005;<code>JSONArray</code>&#xFF1B;</p>
         <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code>&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
+  </thead>
+  <tbody></tbody>
 </table>{% hint style="info" %}
 **`SDK 2.4.0`** 以上能够在 Log 日志中查看对应报错，之下版本无提示信息。调用后请关注日志，查看数据发送是否成功，事件类型`t`为`pvar`。
 
@@ -417,46 +412,51 @@ gio.setEvar(JSONObject conversionVariables);
 
 参数说明
 
+| 参数名称 | 类型 | 是否必须 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">key</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">key</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x7684;&#x6807;&#x8BC6;&#x7B26;</p>
         <p>&#x9650;&#x5236;&#xFF1A;&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">value</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">value</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x7684;&#x503C;</p>
         <p>&#x9650;&#x5236;&#xFF1A;&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;1000</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">conversionVariables</td>
-      <td style="text-align:left">JSONObject</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">conversionVariables</th>
+      <th style="text-align:left">JSONObject</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x7528;&#x4E8E;&#x9AD8;&#x7EA7;&#x5F52;&#x56E0;&#x5206;&#x6790;</p>
         <p>&#x9650;&#x5236;&#xFF1A;&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF08;<code>conversionVariables.length()&lt;=100</code>&#xFF09;&#xFF1B;</p>
         <p><code>conversionVariables</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>JSONObject</code>&#x6216;&#x8005;<code>JSONArray</code>&#xFF1B;</p>
         <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code>&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
+  </thead>
+  <tbody></tbody>
 </table>{% hint style="info" %}
 推荐您使用[Mobile Debugger](../../../debugging/mobile-debugger.md)，我们为您列举了应用场景和验证示例，请参考：[验证埋点事件](../../../debugging/verification/)&gt;[evar（转化变量）事件](../../../debugging/verification/evar.md)。
 {% endhint %}
@@ -499,8 +499,6 @@ gio.setEvar(jsonObject);
 }
 ```
 
-
-
 ### 7. 设置自定义事件和事件级变量（track）
 
 发送一个自定义事件。在添加所需要发送的事件代码之前，需要在打点管理用户界面配置事件以及事件级变量。
@@ -512,33 +510,28 @@ gio.track(String eventId);
 gio.track(String eventId, JSONObject eventLevelVariables);
 ```
 
+| 参数名称 | 类型 | 是否必须 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
+| eventId | string | 是 | 事件标识符。 |
+| :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">eventId</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">&#x4E8B;&#x4EF6;&#x6807;&#x8BC6;&#x7B26;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">eventLevelVariable</td>
-      <td style="text-align:left">JSONObject</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">eventLevelVariable</th>
+      <th style="text-align:left">JSONObject</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#x6240;&#x4F34;&#x968F;&#x7684;&#x7EF4;&#x5EA6;&#x4FE1;&#x606F;&#x3002;</p>
         <p>&#x9650;&#x5236;&#xFF1A;&#x975E;&#x7A7A;&#xFF0C;&#x952E;&#x503C;&#x5BF9;&#x4E2A;&#x6570;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF08;eventLevelVariable.length()&lt;=100&#xFF09;&#xFF1B;eventLevelVariable&#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;JSONObject&#x6216;&#x8005;JSONArray&#xFF1B;</p>
         <p>key&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;value&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;200&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x201C;&#x201D;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
+  </thead>
+  <tbody></tbody>
 </table>{% hint style="info" %}
 SDK 2.4.0以上能够在Log日志中查看对应报错，之下版本无提示信息。调用后请关注日志，查看数据发送是否成功，事件类型t为cstm。
 

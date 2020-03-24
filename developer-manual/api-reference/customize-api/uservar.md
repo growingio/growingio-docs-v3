@@ -20,7 +20,6 @@ javapublic String authToken(String projectKeyId, String secretKey, String keyArr
 
 {% code title="Scala" %}
 ```java
-
 def authToken(projectKeyId: String, secretKey: String, keyArray: String): String = {
   val message = s"ai=$projectKeyId&loginUserId=$keyArray"
   val hmac: Mac = Mac.getInstance("HmacSHA256")
@@ -56,11 +55,11 @@ function authToken($projectKeyId, $secretKey, $keyArray)
 
 ## 接口定义
 
-#### URL
+### URL
 
-https://data.growingio.com/{ai}/loginUserId
+[https://data.growingio.com/{ai}/loginUserId](https://data.growingio.com/{ai}/loginUserId)
 
-#### 请求类型
+### 请求类型
 
 POST
 
@@ -115,10 +114,4 @@ POST
 ```
 {% endtab %}
 {% endtabs %}
-
-
-
-
-
-
 

@@ -1,18 +1,18 @@
 # 新建监测链接（推广网页）
 
-### URL
+## URL
 
-https://www.growingio.com/api/v1/projects/{project\_uid}/meta/weblinks
+[https://www.growingio.com/api/v1/projects/{project\_uid}/meta/weblinks](https://www.growingio.com/api/v1/projects/{project_uid}/meta/weblinks)
 
-### 请求类型
+## 请求类型
 
 POST
 
-### 请求头参数
+## 请求头参数
 
 公共头部请参考[公共请求头参数](../../authenticate.md)。
 
-### 参数说明与示例
+## 参数说明与示例
 
 {% tabs %}
 {% tab title="请求参数" %}
@@ -33,8 +33,6 @@ POST
 {% endtab %}
 
 {% tab title="请求示例" %}
-
-
 ```text
 {
     "redirectUrl":"http://www.www.www",
@@ -50,140 +48,111 @@ POST
 {% endtab %}
 
 {% tab title="返回参数" %}
+| 字段名 | 字段格式 | 说明 |
+| :--- | :--- | :--- |
+
+
+| linkId | string | 监测链接ID |
+| :--- | :--- | :--- |
+
+
+| id | string | 资源ID |
+| :--- | :--- | :--- |
+
+
+| name | string | 监测链接名称 |
+| :--- | :--- | :--- |
+
+
+| projectId | string | 项目UID |
+| :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x5B57;&#x6BB5;&#x540D;</th>
-      <th style="text-align:left">&#x5B57;&#x6BB5;&#x683C;&#x5F0F;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">linkId</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x76D1;&#x6D4B;&#x94FE;&#x63A5;ID</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">id</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x8D44;&#x6E90;ID</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">name</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x76D1;&#x6D4B;&#x94FE;&#x63A5;&#x540D;&#x79F0;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">projectId</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x9879;&#x76EE;UID</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">trackingUrl</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">
+      <th style="text-align:left">trackingUrl</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">
         <p>&#x76D1;&#x6D4B;&#x94FE;&#x63A5;&#x3002;</p>
         <p>GrowingIO &#x5206;&#x914D;&#x7684;&#x8FFD;&#x8E2A;&#x94FE;&#x63A5;</p>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td style="text-align:left">redirectUrl</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x8F6C;&#x8DF3;&#x94FE;&#x63A5;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">imptrackingUrl</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x66DD;&#x5149;&#x68C0;&#x6D4B;&#x94FE;&#x63A5;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">redirectUrl</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x8DF3;&#x8F6C;&#x94FE;&#x63A5;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">channelId</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x63A8;&#x5E7F;&#x6E20;&#x9053;ID</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">channelName</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x63A8;&#x5E7F;&#x6E20;&#x9053;&#x540D;&#x79F0;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">campaignId</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5E7F;&#x544A;&#x6D3B;&#x52A8;ID</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">campaignName</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5E7F;&#x544A;&#x6D3B;&#x52A8;&#x540D;&#x79F0;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">utmMedium</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5E7F;&#x544A;&#x5A92;&#x4ECB;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">utmContent</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5E7F;&#x544A;&#x5185;&#x5BB9;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">utmTerm</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5E7F;&#x544A;&#x5173;&#x952E;&#x5B57;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">comment</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5907;&#x6CE8;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">status</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x72B6;&#x6001;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">creatorId</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x521B;&#x5EFA;&#x4EBA;ID</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">creatorName</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x521B;&#x5EFA;&#x4EBA;&#x540D;&#x79F0;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">updaterId</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x6700;&#x540E;&#x66F4;&#x65B0;&#x4EBA;ID</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">updaterName</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x6700;&#x540E;&#x66F4;&#x65B0;&#x4EBA;&#x540D;&#x79F0;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">createdAt</td>
-      <td style="text-align:left">long</td>
-      <td style="text-align:left">&#x521B;&#x5EFA;&#x65F6;&#x95F4;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">updatedAt</td>
-      <td style="text-align:left">long</td>
-      <td style="text-align:left">&#x66F4;&#x65B0;&#x65F6;&#x95F4;</td>
-    </tr>
-  </tbody>
-</table>
+  </thead>
+  <tbody></tbody>
+</table>| redirectUrl | string | 转跳链接 |
+| :--- | :--- | :--- |
+
+
+| imptrackingUrl | string | 曝光检测链接 |
+| :--- | :--- | :--- |
+
+
+| redirectUrl | string | 跳转链接 |
+| :--- | :--- | :--- |
+
+
+| channelId | string | 推广渠道ID |
+| :--- | :--- | :--- |
+
+
+| channelName | string | 推广渠道名称 |
+| :--- | :--- | :--- |
+
+
+| campaignId | string | 广告活动ID |
+| :--- | :--- | :--- |
+
+
+| campaignName | string | 广告活动名称 |
+| :--- | :--- | :--- |
+
+
+| utmMedium | string | 广告媒介 |
+| :--- | :--- | :--- |
+
+
+| utmContent | string | 广告内容 |
+| :--- | :--- | :--- |
+
+
+| utmTerm | string | 广告关键字 |
+| :--- | :--- | :--- |
+
+
+| comment | string | 备注 |
+| :--- | :--- | :--- |
+
+
+| status | string | 状态 |
+| :--- | :--- | :--- |
+
+
+| creatorId | string | 创建人ID |
+| :--- | :--- | :--- |
+
+
+| creatorName | string | 创建人名称 |
+| :--- | :--- | :--- |
+
+
+| updaterId | string | 最后更新人ID |
+| :--- | :--- | :--- |
+
+
+| updaterName | string | 最后更新人名称 |
+| :--- | :--- | :--- |
+
+
+| createdAt | long | 创建时间 |
+| :--- | :--- | :--- |
+
+
+| updatedAt | long | 更新时间 |
+| :--- | :--- | :--- |
 {% endtab %}
 
 {% tab title="返回示例" %}
-
-
 ```text
 {
     "id": "xogvY0Pm",

@@ -38,6 +38,5 @@
  @return YES:是deeplink链接 NO:不是deeplink链接
 */
 + (BOOL)doDeeplinkByUrl:(NSURL *)url callback:(void(^)(NSDictionary *params, NSTimeInterval processTime, NSError *error))callback;
-
 ```
 

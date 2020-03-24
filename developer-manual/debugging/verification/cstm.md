@@ -1,6 +1,6 @@
 # cstm（事件以及关联的事件级变量）事件
 
-### 场景一：计数器类型的埋点事件（无关联事件级变量）
+## 场景一：计数器类型的埋点事件（无关联事件级变量）
 
 > 以”登录成功“这个事件为例，打点记录登录成功的次数。
 
@@ -24,13 +24,13 @@
 
 按照如下流程图进行验证：
 
-![](../../../.gitbook/assets/cstm2x%20%282%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/cstm2x%20%282%29.png)
 
 在本例中，如下图的数据请求说明打点代码生效
 
-![](../../../.gitbook/assets/ji-shu-qi-wu-bian-liang.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/ji-shu-qi-wu-bian-liang.png)
 
-### 场景二：计数器类型的埋点事件（有关联事件级变量）
+## 场景二：计数器类型的埋点事件（有关联事件级变量）
 
 > 以”登录成功“这个事件为例，打点记录登录成功的次数，同时需要区分不同登录方式对应的登录成功次数。
 >
@@ -52,44 +52,37 @@
 
 此示例中的自定义事件为”登录成功（loginSuccess）“，关联一个事件级变量为”登录方式（loginWay\_var）“。
 
+| 平台 | 原型 | 代码示例 |
+| :--- | :--- | :--- |
+
+
+| JS SDK | gio\('track', eventId, eventLevelVariables\); | gio\('track', 'loginSuccess', {loginWay\_var':'QQ'}\) |
+| :--- | :--- | :--- |
+
+
+| Android SDK | GrowingIO.getInstance\(\).track\(`String` eventId, `JSONObject` eventLevelVariables\); | GrowingIO.getInstance\(\).track\("loginSuccess", new JSONObject\(\).put\("loginWay\_var","QQ"\)\); |
+| :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x5E73;&#x53F0;</th>
-      <th style="text-align:left">&#x539F;&#x578B;</th>
-      <th style="text-align:left">&#x4EE3;&#x7801;&#x793A;&#x4F8B;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">JS SDK</td>
-      <td style="text-align:left">gio(&apos;track&apos;, eventId, eventLevelVariables);</td>
-      <td style="text-align:left">gio(&apos;track&apos;, &apos;loginSuccess&apos;, {loginWay_var&apos;:&apos;QQ&apos;})</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Android SDK</td>
-      <td style="text-align:left">GrowingIO.getInstance().track(<code>String</code> eventId, <code>JSONObject</code> eventLevelVariables);</td>
-      <td
-      style="text-align:left">GrowingIO.getInstance().track(&quot;loginSuccess&quot;, new JSONObject().put(&quot;loginWay_var&quot;,&quot;QQ&quot;));</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">iOS SDK</td>
-      <td style="text-align:left">
+      <th style="text-align:left">iOS SDK</th>
+      <th style="text-align:left">
         <p>+(void)track:(NSString *)eventId withVariable:</p>
         <p>(NSDictionary *)variable;</p>
-      </td>
-      <td style="text-align:left">[Growing track:@&quot;loginSuccess&quot; withVariable: @{@&quot;loginWay_var&quot;:@&quot;QQ&quot;}];</td>
+      </th>
+      <th style="text-align:left">[Growing track:@&quot;loginSuccess&quot; withVariable: @{@&quot;loginWay_var&quot;:@&quot;QQ&quot;}];</th>
     </tr>
-  </tbody>
-</table>**数据验证方法**
-
-在对应的应用（网站、Android 或者 iOS App）中触发登录成功事件，通过 Debugger 工具验证数据准确性。
+  </thead>
+  <tbody></tbody>
+</table>在对应的应用（网站、Android 或者 iOS App）中触发登录成功事件，通过 Debugger 工具验证数据准确性。
 
 按照如下流程图进行验证：
 
-![](../../../.gitbook/assets/cstm2x2.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/cstm2x2.png)
 
 在本例中，如下图的数据请求说明打点代码生效
 
-![](../../../.gitbook/assets/cstm-shi-jian-yan-zheng-2.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/cstm-shi-jian-yan-zheng-2.png)
 

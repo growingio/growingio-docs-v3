@@ -12,15 +12,15 @@ GrowingIO在授权后，调用的是A和C接口分别创建小程序码和二维
 调用频率限制：每秒最多10次。
 {% endhint %}
 
-### URL
+## URL
 
-https://www.growingio.com/api/v1/projects/{project\_uid}/meta/minplinks
+[https://www.growingio.com/api/v1/projects/{project\_uid}/meta/minplinks](https://www.growingio.com/api/v1/projects/{project_uid}/meta/minplinks)
 
-### 请求类型
+## 请求类型
 
 POST
 
-### 请求头参数
+## 请求头参数
 
 公共头部请参考[公共请求头参数](authenticate.md)。
 
@@ -30,7 +30,7 @@ POST
 | :--- | :--- | :--- | :--- |
 | Content | string | 是 | application/json |
 
-### 参数说明与示例
+## 参数说明与示例
 
 {% tabs %}
 {% tab title="请求参数" %}

@@ -16,7 +16,7 @@
 
 {% tabs %}
 {% tab title="QQ原生框架" %}
-#### 1.下载 gio-qq-minp.js 文件
+### 1.下载 gio-qq-minp.js 文件
 
 把文件放在QQ小程序项目里，比如 utils 目录下。
 
@@ -24,7 +24,7 @@
 curl --compressed https://assets.giocdn.com/sdk/gio-qq-minp.js -o gio-qq-minp.js
 ```
 
-#### 2、添加跟踪代码
+### 2、添加跟踪代码
 
 方式一：
 
@@ -58,7 +58,7 @@ gio('setConfig', gioConfig);
 {% endtab %}
 
 {% tab title="Taro框架" %}
-#### 1.下载 gio-qq-minp.js 文件
+### 1.下载 gio-qq-minp.js 文件
 
 把文件放在QQ小程序项目里，比如 utils 目录下。
 
@@ -66,7 +66,7 @@ gio('setConfig', gioConfig);
 curl --compressed https://assets.giocdn.com/sdk/gio-qq-minp.js -o gio-qq-minp.js
 ```
 
-#### 2、添加跟踪代码
+### 2、添加跟踪代码
 
 方式一：
 
@@ -103,7 +103,7 @@ gio('setConfig', gioConfig);
 {% endtab %}
 
 {% tab title="uni-app框架" %}
-#### 1.下载 gio-qq-minp.js 文件
+### 1.下载 gio-qq-minp.js 文件
 
 把文件放在QQ小程序项目里，比如 utils 目录下。
 
@@ -111,7 +111,7 @@ gio('setConfig', gioConfig);
 curl --compressed https://assets.giocdn.com/sdk/gio-qq-minp.esm.js -o gio-qq-minp.js
 ```
 
-#### 2、添加跟踪代码
+### 2、添加跟踪代码
 
 方式一：
 
@@ -175,7 +175,7 @@ forceLogin 是一个需要特别注意的参数。GrowingIO 默认会在小程�
 
 1. 登录QQ小程序后台，进入配置
 2. 打开开发设置，到服务器域名配置部分
-3. 在request合法域名中添加：https://wxapi.growingio.com
+3. 在request合法域名中添加：[https://wxapi.growingio.com](https://wxapi.growingio.com)
 
 ## 4. QQ小程序 用户属性设置
 
@@ -183,7 +183,7 @@ forceLogin 是一个需要特别注意的参数。GrowingIO 默认会在小程�
 
 下面是专门针对用户的接口。
 
-#### 绑定QQ用户ID
+### 绑定QQ用户ID
 
 当用户在你的小程序上登陆获取到 openid 后，可以用过 identify 接口绑定QQ用户ID，后续在 GrowingIO 中获取更准确的QQ访问用户量。示例代码如下：
 
@@ -201,7 +201,7 @@ qq.request({
 })
 ```
 
-#### 设置QQ用户信息
+### 设置QQ用户信息
 
 当用户在你的小程序上绑定QQ信息后，可以通过 setVisitor 接口设置QQ用户信息，后续在 GrowingIO 中分析这个数据。示例代码如下：
 
@@ -220,23 +220,23 @@ QQ信息包含**QQ昵称**、**QQ头像**、**性别**、**QQ所填国家**、**
 \*注：用户画像中的部分数据，只有在设置QQ用户信息后，才可以统计。
 {% endhint %}
 
-#### 设置登录用户ID
+### 设置登录用户ID
 
 当用户在你的小程序上注册以后，你的产品应用服务端会在用户数据库里添加一条记录并且分配一个 ID，可以通过 setUserId 接口设置注册用户ID，后续在 GrowingIO 中分析登录用户这个数据。示例代码如下：
 
 ```java
-gio('setUserId', YOUR_USER_ID); 
+gio('setUserId', YOUR_USER_ID);
 ```
 
-#### 清除登录用户ID
+### 清除登录用户ID
 
 用户退出登录时，清除登录用户ID。
 
 ```java
-gio('clearUserId'); 
+gio('clearUserId');
 ```
 
-#### 设置登录用户属性
+### 设置登录用户属性
 
 当用户在你的小程序上传了注册用户ID后，可以通过 setUser 接口设置注册用户信息，后续在 GrowingIO 中分析这个数据。示例代码如下：
 

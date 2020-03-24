@@ -24,7 +24,7 @@
   //custom page code end here
 ​
   gio('send');
-  
+
 </script>
 <!-- End GrowingIO Analytics code version: 2.1 -->
 ```
@@ -104,7 +104,7 @@ div作为容器标签时，以id=1的div作为容器进行圈选的代码示例�
 
 这时，采集到的li节点的内容就是“上一页”。
 
-更多的文本信息规则，请参考[第4节：What\(内容\)](https://sishen.gitbooks.io/gio-js-book/dom/4what.html)和[第1节：内容规则](https://sishen.gitbooks.io/gio-js-book/5/1.html)。 
+更多的文本信息规则，请参考[第4节：What\(内容\)](https://sishen.gitbooks.io/gio-js-book/dom/4what.html)和[第1节：内容规则](https://sishen.gitbooks.io/gio-js-book/5/1.html)。
 
 ### 3. 设置采集位置信息（data-growing-idx）
 

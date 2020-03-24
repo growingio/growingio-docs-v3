@@ -1,6 +1,6 @@
 # 自定义数据上传API
 
-### 预置自定义事件
+## 预置自定义事件
 
 GrowingIO 预置了两个小程序的标准自定义事件：分享到群聊或好友信息和程序错误，接入SDK即可以使用。
 
@@ -12,7 +12,7 @@ GrowingIO 预置了两个小程序的标准自定义事件：分享到群聊或�
 
 ![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LGNxeGABUADKiTWTaEM%2F-LH66a23TIvbEtQOPKyt%2F-LH67LAaMuVbR_KxSYVc%2Fimage.png?alt=media&token=0708739e-4cae-4315-b633-e9aeb2e25ca2)
 
-### 设置访问用户变量（setVisitor）
+## 设置访问用户变量（setVisitor）
 
 当用户未登录时，定义用户属性变量。在添加所需要发送的事件代码之前，需要在GrowingIO”**数据中心** &gt; **数据管理** &gt; **变量** &gt; **用户变量**的访问用户变量页签下置用户变量。
 
@@ -39,7 +39,7 @@ getApp().globalData.gio('setVisitor', {
 });
 ```
 
-### 设置登录用户变量（setUser）
+## 设置登录用户变量（setUser）
 
 发送登录用户的信息。在添加所需要发送的事件代码之前，需要在GrowingIO”**数据中心** &gt; **数据管理** &gt; **变量** &gt; **用户变量**的登录用户变量页签下置用户变量。
 
@@ -67,7 +67,7 @@ getApp().globalData.gio('setUser', {
 });
 ```
 
-### 设置页面级变量（setPage）
+## 设置页面级变量（setPage）
 
 发送页面级别的信息。在添加所需要发送的事件代码之前，需要在GrowingIO”**数据中心** &gt; **数据管理** &gt; **变量** &gt; **事件变量**的页面级变量页签下设置页面级变量。
 
@@ -99,7 +99,7 @@ Page({
 }
 ```
 
-### 设置转化变量（setEvar）
+## 设置转化变量（setEvar）
 
 发送一个转化变量用于高级归因分析。在添加所需要发送的事件代码之前，需要在GrowingIO”**数据中心** &gt; **数据管理** &gt; **变量** &gt; **转化变量**下配置转化变量。
 
@@ -134,7 +134,7 @@ getApp().globalData.gio('setEvar', {
 });
 ```
 
-### 设置自定义事件及事件级变量（track）
+## 设置自定义事件及事件级变量（track）
 
 手动发送一个自定义事件。在添加所需要发送的事件代码之前，需要在GrowingIO”**数据中心** &gt; **数据管理** &gt; **事件** &gt; **埋点事件“**下配置埋点事件，在**变量** &gt; **事件变量**下配置事件级变量。
 

@@ -16,9 +16,9 @@
 
 8.下载完，打开后APP点击下一步
 
-9. 联调成功
+1. 联调成功
 
-![](../../../../.gitbook/assets/image%20%28146%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28146%29.png)
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LRB7_dSMzjJ1OCU_A6G-LRB9PkkLaoMJQXZwkPeimage.png)
 

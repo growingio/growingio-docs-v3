@@ -1,18 +1,18 @@
 # 新建监测链接（吸引用户直接打开App）
 
-### URL
+## URL
 
-https://www.growingio.com/api/v1/projects/{project\_uid}/meta/deeplinks
+[https://www.growingio.com/api/v1/projects/{project\_uid}/meta/deeplinks](https://www.growingio.com/api/v1/projects/{project_uid}/meta/deeplinks)
 
-### 请求类型
+## 请求类型
 
 POST
 
-### 请求头参数
+## 请求头参数
 
 公共头部请参考[公共请求头参数](../../authenticate.md)。
 
-### 参数说明与示例
+## 参数说明与示例
 
 {% tabs %}
 {% tab title="请求参数" %}
@@ -20,95 +20,104 @@ POST
 | :--- | :--- | :--- | :--- |
 | project\_uid | string | 是 | 项目UID。 |
 
+| body参数 | 类型 | 是否必传 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
+| name | string | 是 | 监测链接名称，长度50个字符内，同一个账号下系统会进行链接的同名校验，请勿重复提交同名链接。 |
+| :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">body&#x53C2;&#x6570;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x4F20;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">name</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">&#x76D1;&#x6D4B;&#x94FE;&#x63A5;&#x540D;&#x79F0;&#xFF0C;&#x957F;&#x5EA6;50&#x4E2A;&#x5B57;&#x7B26;&#x5185;&#xFF0C;&#x540C;&#x4E00;&#x4E2A;&#x8D26;&#x53F7;&#x4E0B;&#x7CFB;&#x7EDF;&#x4F1A;&#x8FDB;&#x884C;&#x94FE;&#x63A5;&#x7684;&#x540C;&#x540D;&#x6821;&#x9A8C;&#xFF0C;&#x8BF7;&#x52FF;&#x91CD;&#x590D;&#x63D0;&#x4EA4;&#x540C;&#x540D;&#x94FE;&#x63A5;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">productIdAndroid</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">productIdAndroid</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>Android&#x4EA7;&#x54C1;ID&#x3002;</p>
         <p>&#x4ECE;<a href="https://app.gitbook.com/@help-1/s/doc/~/edit/drafts/-LpD4UbAD2BQKUq6Kf4L/untitled/api-can-kao/guang-gao-jian-ce-lian-jie-chuang-jian-fu-wu-api/jie-kou-ding-yi/cha-xun-ying-yong-id">&#x67E5;&#x8BE2;&#x5E94;&#x7528;ID</a>&#x83B7;&#x53D6;&#xFF0C;iOS&#x548C;Android&#x81F3;&#x5C11;&#x586B;&#x4E00;&#x4E2A;&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">productIdIos</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">productIdIos</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>iOS&#x4EA7;&#x54C1;ID&#x3002;</p>
         <p>&#x4ECE;<a href="https://app.gitbook.com/@help-1/s/doc/~/edit/drafts/-LpD4UbAD2BQKUq6Kf4L/untitled/api-can-kao/guang-gao-jian-ce-lian-jie-chuang-jian-fu-wu-api/jie-kou-ding-yi/cha-xun-ying-yong-id">&#x67E5;&#x8BE2;&#x5E94;&#x7528;ID</a>&#x83B7;&#x53D6;&#xFF0C;iOS&#x548C;Android&#x81F3;&#x5C11;&#x586B;&#x4E00;&#x4E2A;&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table>| channelId | string | 是 | 渠道ID。 |
+| :--- | :--- | :--- | :--- |
+
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left">channelId</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">&#x6E20;&#x9053;ID&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">campaignIdIos</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">campaignIdIos</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>Android&#x6D3B;&#x52A8;ID&#x3002;</p>
         <p>iOS&#x548C;Android&#x81F3;&#x5C11;&#x586B;&#x4E00;&#x4E2A;&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">campaignIdAndroid</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">campaignIdAndroid</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>iOS&#x6D3B;&#x52A8;ID&#x3002;</p>
         <p>iOS&#x548C;Android&#x81F3;&#x5C11;&#x586B;&#x4E00;&#x4E2A;&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table>| downloadUrlIos | string | 否 | iOS应用下载地址。 |
+| :--- | :--- | :--- | :--- |
+
+
+| downloadUrlAndroid | string | 否 | Android应用下载地址。 |
+| :--- | :--- | :--- | :--- |
+
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left">downloadUrlIos</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">iOS&#x5E94;&#x7528;&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">downloadUrlAndroid</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">Android&#x5E94;&#x7528;&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">iosParams</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">iosParams</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>iOS&#x5524;&#x9192;&#x53C2;&#x6570;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;{&quot;uri&quot;:&quot;key1:value1&amp;key2:value2&quot;}</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">androidParams</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">androidParams</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>Android&#x5524;&#x9192;&#x53C2;&#x6570;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;{&quot;uri&quot;:&quot;key1:value1&amp;key2:value2&quot;}</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
+  </thead>
+  <tbody></tbody>
 </table>
 {% endtab %}
 

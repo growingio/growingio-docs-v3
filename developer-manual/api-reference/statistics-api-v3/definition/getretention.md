@@ -1,74 +1,77 @@
 # 获取留存分析数据
 
-### URL <a id="url"></a>
+## URL <a id="url"></a>
 
-https://www.growingio.com/v3/exporter/projects/{project\_uid}/retentions/{retention\_id}
+[https://www.growingio.com/v3/exporter/projects/{project\_uid}/retentions/{retention\_id}](https://www.growingio.com/v3/exporter/projects/{project_uid}/retentions/{retention_id})
 
-### 请求类型 <a id="qing-qiu-lei-xing"></a>
+## 请求类型 <a id="qing-qiu-lei-xing"></a>
 
 GET
 
-### 结果返回方式 <a id="qing-qiu-lei-xing"></a>
+## 结果返回方式 <a id="qing-qiu-lei-xing"></a>
 
 异步：参考 [概述](../overview.md) 部分的描述
 
-### 请求头参数 <a id="qing-qiu-tou-can-shu"></a>
+## 请求头参数 <a id="qing-qiu-tou-can-shu"></a>
 
 公共头部请参考[公共请求头参数](../../authenticate.md)。
 
-### 参数说明与示例 <a id="can-shu-shuo-ming-yu-shi-li"></a>
+## 参数说明与示例 <a id="can-shu-shuo-ming-yu-shi-li"></a>
 
 {% tabs %}
 {% tab title="请求参数" %}
-
-
 | 路径参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
 | retention\_id | string | 是 | 留存分析单图ID。 |
 | project\_uid | string | 是 | 项目UID。 |
 
+| 查询参数 | 类型 | 是否必传 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x67E5;&#x8BE2;&#x53C2;&#x6570;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x4F20;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">range</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">range</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x4E8B;&#x4EF6;&#x8303;&#x56F4;&#x3002;</p>
         <ul>
           <li>day&#xFF08;&#x65E5;&#x7559;&#x5B58;&#xFF09;</li>
           <li>week&#xFF08;&#x5468;&#x7559;&#x5B58;&#xFF09;</li>
           <li>month&#xFF08;&#x6708;&#x7559;&#x5B58;&#xFF09;</li>
         </ul>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">startTime</td>
-      <td style="text-align:left">integer</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">startTime</th>
+      <th style="text-align:left">integer</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x6570;&#x636E;&#x8D77;&#x59CB;&#x65F6;&#x95F4;&#xFF0C;unix&#x6BEB;&#x79D2;&#x65F6;&#x95F4;&#x6233;&#x3002;</p>
         <p>&#x9700;&#x4E0E;endTime&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">endTime</td>
-      <td style="text-align:left">integer</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">endTime</th>
+      <th style="text-align:left">integer</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x6570;&#x636E;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#xFF0C;unix&#x6BEB;&#x79D2;&#x65F6;&#x95F4;&#x6233;&#x3002;</p>
         <p>&#x9700;&#x4E0E;startTime&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
+  </thead>
+  <tbody></tbody>
 </table>
 {% endtab %}
 
@@ -114,6 +117,4 @@ GET
 ```
 {% endtab %}
 {% endtabs %}
-
-
 

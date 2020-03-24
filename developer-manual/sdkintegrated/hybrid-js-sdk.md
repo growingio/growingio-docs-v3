@@ -36,10 +36,10 @@ Hybrid 支持基于 touch 事件实现的点击数据采集, 如果用户使用�
 
 ```javascript
 (function(){
-	window["gio"] = window["gio"] || function(){
-		(window["gio"].q = window["gio"].q || []).push(arguments);
-	}
-	gio('init', 'fakeAccountID');
+    window["gio"] = window["gio"] || function(){
+        (window["gio"].q = window["gio"].q || []).push(arguments);
+    }
+    gio('init', 'fakeAccountID');
 })()
 ```
 
@@ -50,9 +50,9 @@ Hybrid 支持基于 touch 事件实现的点击数据采集, 如果用户使用�
 {% hint style="warning" %}
 在H5页面与原生应用无法进行联调的情况下，可手动在head标签中加入以下代码，上线时删除即可
 
- &lt;script 
+&lt;script
 
-src="https://assets.giocdn.com/sdk/hybrid/2.0/gio\_hybrid.min.js" &gt;
+src="[https://assets.giocdn.com/sdk/hybrid/2.0/gio\_hybrid.min.js](https://assets.giocdn.com/sdk/hybrid/2.0/gio_hybrid.min.js)" &gt;
 
 &lt;/script&gt;
 {% endhint %}
@@ -63,7 +63,7 @@ src="https://assets.giocdn.com/sdk/hybrid/2.0/gio\_hybrid.min.js" &gt;
 
 在添加所需要发送的事件代码之前，需要在打点管理用户界面配置事件以及事件级变量。
 
-| 参数名称 |  参数类型 | 是否必须 | 说明 |
+| 参数名称 | 参数类型 | 是否必须 | 说明 |
 | :--- | :--- | :--- | :--- |
 | eventId | String | 是 | 事件标识符 |
 | eventLevelVariables | JSON Object | 否 | 包含事件级变量的JSON对象，暨事件发生时所伴随的维度信息。 |
@@ -119,7 +119,7 @@ gio('evar.set', {'campaignId': '1234567890', 'campaignOwner':'lisi'});
 
 发送用户信息用于用户信息相关分析，在添加代码之前必须在打点管理界面上声明转化变量。
 
-| 参数名称 | 参数类型 | 是否必须 |  说明 |
+| 参数名称 | 参数类型 | 是否必须 | 说明 |
 | :--- | :--- | :--- | :--- |
 | key | String | 否 | 用户变量的标识符 |
 | value | String | 否 | 用户变量的值 |

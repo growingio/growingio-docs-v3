@@ -15,38 +15,32 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LeHja1phuKvd8Myv00g-LeHmONcAo6FRSGpEbJLimage.png)
 
+| 项 | 说明 |
+| :--- | :--- |
+
+
+| 时间 | 可通过时间控件设定当前报表数据统计时间段，时间范围设定后将应用在报表全局。（上图位置 1 所示） |
+| :--- | :--- |
+
+
+| 添加业务转化目标 | 可以添加您关注的业务转化指标，该业务指标在下方图表中将作为基本的分析数据指标。（上图位置 2 所示 ） |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x9879;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">&#x65F6;&#x95F4;</td>
-      <td style="text-align:left">&#x53EF;&#x901A;&#x8FC7;&#x65F6;&#x95F4;&#x63A7;&#x4EF6;&#x8BBE;&#x5B9A;&#x5F53;&#x524D;&#x62A5;&#x8868;&#x6570;&#x636E;&#x7EDF;&#x8BA1;&#x65F6;&#x95F4;&#x6BB5;&#xFF0C;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x8BBE;&#x5B9A;&#x540E;&#x5C06;&#x5E94;&#x7528;&#x5728;&#x62A5;&#x8868;&#x5168;&#x5C40;&#x3002;&#xFF08;&#x4E0A;&#x56FE;&#x4F4D;&#x7F6E;
-        1 &#x6240;&#x793A;&#xFF09;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x6DFB;&#x52A0;&#x4E1A;&#x52A1;&#x8F6C;&#x5316;&#x76EE;&#x6807;</td>
-      <td
-      style="text-align:left">&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x60A8;&#x5173;&#x6CE8;&#x7684;&#x4E1A;&#x52A1;&#x8F6C;&#x5316;&#x6307;&#x6807;&#xFF0C;&#x8BE5;&#x4E1A;&#x52A1;&#x6307;&#x6807;&#x5728;&#x4E0B;&#x65B9;&#x56FE;&#x8868;&#x4E2D;&#x5C06;&#x4F5C;&#x4E3A;&#x57FA;&#x672C;&#x7684;&#x5206;&#x6790;&#x6570;&#x636E;&#x6307;&#x6807;&#x3002;&#xFF08;&#x4E0A;&#x56FE;&#x4F4D;&#x7F6E;
-        2 &#x6240;&#x793A; &#xFF09;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x5168;&#x5C40;&#x6570;&#x636E;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">&#x5168;&#x5C40;&#x6570;&#x636E;</th>
+      <th style="text-align:left">
         <p>&#x5C55;&#x793A;&#x5F53;&#x524D;&#x79FB;&#x52A8;&#x7AEF;&#x5E7F;&#x544A;&#x6295;&#x653E;&#x73AF;&#x8282;&#x7684;&#x57FA;&#x672C;&#x76D1;&#x63A7;&#x6307;&#x6807;&#x6570;&#x636E;&#x3002;&#xFF08;&#x4E0A;&#x56FE;&#x4F4D;&#x7F6E;
           3 &#x6240;&#x793A; &#xFF09;</p>
         <p>&#x5468;&#x671F;&#x5BF9;&#x6BD4;&#xFF1A;&#x6839;&#x636E;&#x5F53;&#x524D;&#x9009;&#x62E9;&#x7684;&#x65F6;&#x6BB5;&#xFF0C;&#x8BA1;&#x7B97;&#x5468;&#x671F;&#x5BF9;&#x6BD4;&#xFF0C;&#x5F53;&#x524D;&#x4E3A;&#x5468;&#x5BF9;&#x6BD4;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x8BF4;&#x660E;&#x672C;&#x5468;&#x671F;&#x4E0E;&#x4E0A;&#x5468;&#x671F;&#x65F6;&#x95F4;&#x8BA1;&#x7B97;&#x533A;&#x95F4;&#x3002;</p>
         <p>&#x5168;&#x5C40;&#x6570;&#x636E;&#x4E2D;&#x5404;&#x6307;&#x6807;&#x95F4;&#x6570;&#x636E;&#x65E0;&#x53D1;&#x751F;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x903B;&#x8F91;&#x5173;&#x8054;&#xFF0C;&#x5404;&#x6307;&#x6807;&#x6570;&#x636E;&#x4E3A;&#x5355;&#x6307;&#x6807;&#x72EC;&#x7ACB;&#x7EDF;&#x8BA1;&#x7684;&#x52A0;&#x548C;&#x6570;&#x636E;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>### 激活设备数据
-
-展示当前 App 下的激活数据，以线图方式展示数据变化情况，结合右侧提供圆环图，可快速了解当前推广激活占整体激活的比例，以及推广新激活在推广激活中的占比分布，方便衡量活动推广效率及活动推广质量。
+  </thead>
+  <tbody></tbody>
+</table>展示当前 App 下的激活数据，以线图方式展示数据变化情况，结合右侧提供圆环图，可快速了解当前推广激活占整体激活的比例，以及推广新激活在推广激活中的占比分布，方便衡量活动推广效率及活动推广质量。
 
 此图表支持数据导出，通过右上角下载按钮即可导出当前表格数据。
 
@@ -99,41 +93,40 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LeHgAxqElp3IcWMpkcp-LeHgZ2zvDAGpbCgAnyRE59BBEE78987.png)
 
+| **项** | 说明 |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>&#x9879;</b>
-      </th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">&#x65F6;&#x95F4;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">&#x65F6;&#x95F4;</th>
+      <th style="text-align:left">
         <p>&#x53EF;&#x901A;&#x8FC7;&#x65F6;&#x95F4;&#x63A7;&#x4EF6;&#x8BBE;&#x5B9A;&#x5F53;&#x524D;&#x62A5;&#x8868;&#x6570;&#x636E;&#x7EDF;&#x8BA1;&#x65F6;&#x95F4;&#x6BB5;&#xFF0C;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x8BBE;&#x5B9A;&#x540E;&#x5C06;&#x5E94;&#x7528;&#x5728;&#x62A5;&#x8868;&#x5168;&#x5C40;&#x3002;&#xFF08;&#x4E0A;&#x56FE;&#x4F4D;&#x7F6E;
           1 &#x6240;&#x793A;&#xFF09;</p>
         <p>&lt;b&gt;&lt;/b&gt;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table>| 业务转化目标 | 可以添加您关注的业务转化指标，该业务指标在下方图表中将作为基本的分析数据指标。（上图位置 2 所示 ） |
+| :--- | :--- |
+
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left">&#x4E1A;&#x52A1;&#x8F6C;&#x5316;&#x76EE;&#x6807;</td>
-      <td style="text-align:left">&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x60A8;&#x5173;&#x6CE8;&#x7684;&#x4E1A;&#x52A1;&#x8F6C;&#x5316;&#x6307;&#x6807;&#xFF0C;&#x8BE5;&#x4E1A;&#x52A1;&#x6307;&#x6807;&#x5728;&#x4E0B;&#x65B9;&#x56FE;&#x8868;&#x4E2D;&#x5C06;&#x4F5C;&#x4E3A;&#x57FA;&#x672C;&#x7684;&#x5206;&#x6790;&#x6570;&#x636E;&#x6307;&#x6807;&#x3002;&#xFF08;&#x4E0A;&#x56FE;&#x4F4D;&#x7F6E;
-        2 &#x6240;&#x793A; &#xFF09;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x5168;&#x5C40;&#x6570;&#x636E;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">&#x5168;&#x5C40;&#x6570;&#x636E;</th>
+      <th style="text-align:left">
         <p>&#x5C55;&#x793A;&#x5F53;&#x524D; Web &#x7AEF;&#x5E7F;&#x544A;&#x6295;&#x653E;&#x73AF;&#x8282;&#x7684;&#x57FA;&#x672C;&#x76D1;&#x63A7;&#x6307;&#x6807;&#x6570;&#x636E;&#x3002;&#xFF08;&#x4E0A;&#x56FE;&#x4F4D;&#x7F6E;
           3 &#x6240;&#x793A; &#xFF09;</p>
         <p>&#x5468;&#x671F;&#x5BF9;&#x6BD4;&#xFF1A;&#x6839;&#x636E;&#x5F53;&#x524D;&#x9009;&#x62E9;&#x7684;&#x65F6;&#x6BB5;&#xFF0C;&#x8BA1;&#x7B97;&#x5468;&#x671F;&#x5BF9;&#x6BD4;&#xFF0C;&#x5F53;&#x524D;&#x4E3A;&#x5468;&#x5BF9;&#x6BD4;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x8BF4;&#x660E;&#x672C;&#x5468;&#x671F;&#x4E0E;&#x4E0A;&#x5468;&#x671F;&#x65F6;&#x95F4;&#x8BA1;&#x7B97;&#x533A;&#x95F4;&#x3002;</p>
         <p>&#x5168;&#x5C40;&#x6570;&#x636E;&#x4E2D;&#x5404;&#x6307;&#x6807;&#x95F4;&#x6570;&#x636E;&#x65E0;&#x53D1;&#x751F;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x903B;&#x8F91;&#x5173;&#x8054;&#xFF0C;&#x5404;&#x6307;&#x6807;&#x6570;&#x636E;&#x4E3A;&#x5355;&#x6307;&#x6807;&#x72EC;&#x7ACB;&#x7EDF;&#x8BA1;&#x7684;&#x52A0;&#x548C;&#x6570;&#x636E;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>### 广告活动和渠道效果分析
-
-以线图、柱图的方式展示当前选择的时段下，广告活动和广告渠道的数据情况，并在图表右侧提供简单洞察，可快速发现执行效果最优的广告活动以及广告渠道。
+  </thead>
+  <tbody></tbody>
+</table>以线图、柱图的方式展示当前选择的时段下，广告活动和广告渠道的数据情况，并在图表右侧提供简单洞察，可快速发现执行效果最优的广告活动以及广告渠道。
 
 ### 活动效果对比
 
@@ -165,43 +158,40 @@
 
 ### 全局设定
 
-![](../../../../.gitbook/assets/image%20%28108%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28108%29.png)
 
+| **项** | 说明 |
+| :--- | :--- |
 
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>&#x9879;</b>
-      </th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">&#x65F6;&#x95F4;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">&#x65F6;&#x95F4;</th>
+      <th style="text-align:left">
         <p>&#x53EF;&#x901A;&#x8FC7;&#x65F6;&#x95F4;&#x63A7;&#x4EF6;&#x8BBE;&#x5B9A;&#x5F53;&#x524D;&#x62A5;&#x8868;&#x6570;&#x636E;&#x7EDF;&#x8BA1;&#x65F6;&#x95F4;&#x6BB5;&#xFF0C;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x8BBE;&#x5B9A;&#x540E;&#x5C06;&#x5E94;&#x7528;&#x5728;&#x62A5;&#x8868;&#x5168;&#x5C40;&#x3002;&#xFF08;&#x4E0A;&#x56FE;&#x4F4D;&#x7F6E;
           1 &#x6240;&#x793A;&#xFF09;</p>
         <p>&lt;b&gt;&lt;/b&gt;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table>| 业务转化目标 | 可以添加您关注的业务转化指标，该业务指标在下方图表中将作为基本的分析数据指标。（上图位置 2 所示 ） |
+| :--- | :--- |
+
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left">&#x4E1A;&#x52A1;&#x8F6C;&#x5316;&#x76EE;&#x6807;</td>
-      <td style="text-align:left">&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x60A8;&#x5173;&#x6CE8;&#x7684;&#x4E1A;&#x52A1;&#x8F6C;&#x5316;&#x6307;&#x6807;&#xFF0C;&#x8BE5;&#x4E1A;&#x52A1;&#x6307;&#x6807;&#x5728;&#x4E0B;&#x65B9;&#x56FE;&#x8868;&#x4E2D;&#x5C06;&#x4F5C;&#x4E3A;&#x57FA;&#x672C;&#x7684;&#x5206;&#x6790;&#x6570;&#x636E;&#x6307;&#x6807;&#x3002;&#xFF08;&#x4E0A;&#x56FE;&#x4F4D;&#x7F6E;
-        2 &#x6240;&#x793A; &#xFF09;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x5168;&#x5C40;&#x6570;&#x636E;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">&#x5168;&#x5C40;&#x6570;&#x636E;</th>
+      <th style="text-align:left">
         <p>&#x5C55;&#x793A;&#x5F53;&#x524D; Web &#x7AEF;&#x5E7F;&#x544A;&#x6295;&#x653E;&#x73AF;&#x8282;&#x7684;&#x57FA;&#x672C;&#x76D1;&#x63A7;&#x6307;&#x6807;&#x6570;&#x636E;&#x3002;&#xFF08;&#x4E0A;&#x56FE;&#x4F4D;&#x7F6E;
           3 &#x6240;&#x793A; &#xFF09;</p>
         <p>&#x5468;&#x671F;&#x5BF9;&#x6BD4;&#xFF1A;&#x6839;&#x636E;&#x5F53;&#x524D;&#x9009;&#x62E9;&#x7684;&#x65F6;&#x6BB5;&#xFF0C;&#x8BA1;&#x7B97;&#x5468;&#x671F;&#x5BF9;&#x6BD4;&#xFF0C;&#x5F53;&#x524D;&#x4E3A;&#x5468;&#x5BF9;&#x6BD4;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x8BF4;&#x660E;&#x672C;&#x5468;&#x671F;&#x4E0E;&#x4E0A;&#x5468;&#x671F;&#x65F6;&#x95F4;&#x8BA1;&#x7B97;&#x533A;&#x95F4;&#x3002;</p>
         <p>&#x5168;&#x5C40;&#x6570;&#x636E;&#x4E2D;&#x5404;&#x6307;&#x6807;&#x95F4;&#x6570;&#x636E;&#x65E0;&#x53D1;&#x751F;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x903B;&#x8F91;&#x5173;&#x8054;&#xFF0C;&#x5404;&#x6307;&#x6807;&#x6570;&#x636E;&#x4E3A;&#x5355;&#x6307;&#x6807;&#x72EC;&#x7ACB;&#x7EDF;&#x8BA1;&#x7684;&#x52A0;&#x548C;&#x6570;&#x636E;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>### 广告活动和渠道效果分析
-
-以线图、柱图的方式展示当前选择的时段下，广告活动和广告渠道的数据情况，并在图表右侧提供简单洞察，可快速发现执行效果最优的广告活动以及广告渠道。
+  </thead>
+  <tbody></tbody>
+</table>以线图、柱图的方式展示当前选择的时段下，广告活动和广告渠道的数据情况，并在图表右侧提供简单洞察，可快速发现执行效果最优的广告活动以及广告渠道。
 

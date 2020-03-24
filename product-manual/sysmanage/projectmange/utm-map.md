@@ -4,7 +4,7 @@ description: 在复杂的跨部门/跨渠道/跨场景获客，渠道参数值�
 
 # UTM映射管理
 
-### 概述
+## 概述
 
 在复杂的广告投放场景中，可能会遇到以下场景：
 
@@ -28,12 +28,12 @@ description: 在复杂的跨部门/跨渠道/跨场景获客，渠道参数值�
 * 各产品不能使用相同的标识表示不同的UTM参数，即A部门使用ChannelID=A，B部门使用ResourceID =A.
 {% endhint %}
 
-### 操作步骤
+## 操作步骤
 
-1. 在界面右上角单击 ![](../../../.gitbook/assets/2019-10-10_18-59-32%20%281%29.png) 选择项目配置，打开项目配置界面。选择**UTM映射管理**页签。
+1. 在界面右上角单击 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/2019-10-10_18-59-32%20%281%29.png) 选择项目配置，打开项目配置界面。选择**UTM映射管理**页签。
 2. 单击**新建UTM映射**来创建映射关系。
 
-![](../../../.gitbook/assets/image%20%28192%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28192%29.png)
 
 | UTM参数 | GrowingIO中的维度 | 说明 |
 | :--- | :--- | :--- |
@@ -42,6 +42,4 @@ description: 在复杂的跨部门/跨渠道/跨场景获客，渠道参数值�
 | utm\_campaign | 广告名称 | 这个活动是什么，例如“618大促”、“双11促销”、“新手注册红包”等。 |
 | utm\_content | 广告内容 | 具体内容是什么，例如痛仰是新手注册红包活动，部门是“100元红包”，部分是“300元红包”。 |
 | utm\_term | 广告关键词 | 这个广告的关键词。 |
-
-
 

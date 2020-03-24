@@ -110,7 +110,7 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-Ll0ACUYgbwb2UH8p7yx-Ll0BN22Mzvt9UZW87snE59BBE9-E6A188E4BE8B3.png)
 
-#### 情况2：一个元素有独立的“点击”动作，常见于菜单按钮等  <a id="qing-kuang-2-yi-ge-yuan-su-you-du-li-de-dian-ji-dong-zuo-chang-jian-yu-cai-dan-an-niu-deng"></a>
+#### 情况2：一个元素有独立的“点击”动作，常见于菜单按钮等 <a id="qing-kuang-2-yi-ge-yuan-su-you-du-li-de-dian-ji-dong-zuo-chang-jian-yu-cai-dan-an-niu-deng"></a>
 
 这种情况是因为在这个 app 开发的时候，给每个元素单独设置了“点击”的动作，需要单独圈选。
 

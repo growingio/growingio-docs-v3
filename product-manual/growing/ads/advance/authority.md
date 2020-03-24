@@ -16,7 +16,7 @@ description: 配置广告监测模块中资源的可见权限。
 
 二. 在左侧导航栏选择“**高级设置 &gt; 权限配置”**，进入新建页面。
 
-![](../../../../.gitbook/assets/image%20%2829%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2829%29.png)
 
 三. 选择角色下的成员，通过复选框选择该成员的资源可见范围，完成后单击右上角确定。
 

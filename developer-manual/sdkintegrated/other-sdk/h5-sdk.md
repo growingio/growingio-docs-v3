@@ -230,9 +230,3 @@ gio('track', 'testImp', { foo: 'bar', baz: 'qux'})
 
 方式三：[数据校验](../../../product-manual/datacenter/datacheck.md)
 
-
-
-
-
-
-

@@ -39,7 +39,7 @@
 
 ## 配置Java SDK
 
-在Java SDK的jar包中，包含了一个默认的配置文件。 
+在Java SDK的jar包中，包含了一个默认的配置文件。
 
 {% code title="gio\_default.properties" %}
 ```javascript
@@ -133,6 +133,4 @@ GrowingIO建议您按照如下步骤进行埋点数据的开发联调
 {% hint style="success" %}
 如有问题，请您随时联系您的客户成功经理！
 {% endhint %}
-
-
 

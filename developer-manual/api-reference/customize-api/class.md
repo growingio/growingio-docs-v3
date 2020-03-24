@@ -18,11 +18,11 @@ public String authToken(String projectKeyId, String variableName, String secretK
 
 ## 接口定义
 
-#### URL
+### URL
 
-https://data.growingio.com/{ai}/classification/{variable\_name}
+[https://data.growingio.com/{ai}/classification/{variable\_name}](https://data.growingio.com/{ai}/classification/{variable_name})
 
-#### 请求类型
+### 请求类型
 
 POST
 
@@ -57,6 +57,4 @@ body内的variable\_name、userProperty1-N为您在GrowingIO系统内定义的�
 200：OK
 {% endtab %}
 {% endtabs %}
-
-
 

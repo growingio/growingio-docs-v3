@@ -56,8 +56,6 @@ object Test extends App {
 {% endtab %}
 
 {% tab title="Python处理建议示例" %}
-
-
 ```text
 import csv
 ​
@@ -104,10 +102,10 @@ tblproperties ("skip.header.line.count"="1", "quote.delim"="\"", "escape.delim"=
 
 ```text
 val df = spark.read
-	.option("header","true")
-	.option("escape", "\\")
-	.option("quote", "\"")
-	.csv("filePath")
+    .option("header","true")
+    .option("escape", "\\")
+    .option("quote", "\"")
+    .csv("filePath")
 ```
 {% endtab %}
 {% endtabs %}
@@ -120,7 +118,7 @@ eg: Headers信息如下
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LfTS0t4L9N-sPU92Tqn-LfUKiffTSE26b4GhHkaimage.png)
 
- md5校验结果
+md5校验结果
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LfTS0t4L9N-sPU92Tqn-LfULNTbINi97T-Rha_Uimage.png)
 

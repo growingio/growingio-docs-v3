@@ -6,18 +6,15 @@ Android 无埋点 SDK 支持 `com.android.tools.build:gradle` **2.3.3** 及其�
 
 无埋点 SDK 随着 gradle 的升级也在逐步兼容，请参考以下表格更新 SDK：
 
+| 无埋点SDK版本 | 说明 |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x65E0;&#x57CB;&#x70B9;SDK&#x7248;&#x672C;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">2.8.4+</td>
-      <td style="text-align:left">
-        <p></p>
+      <th style="text-align:left">2.8.4+</th>
+      <th style="text-align:left">
         <ul>
           <li>SDK 2.8.4 &#x53CA;&#x5176;&#x4EE5;&#x4E0A;&#x7248;&#x672C;&#x652F;&#x6301;
             gradle 3.5.0&#xFF1B;</li>
@@ -25,20 +22,23 @@ Android 无埋点 SDK 支持 `com.android.tools.build:gradle` **2.3.3** 及其�
             SDK &#x662F;&#x5426;&#x4E3A;&#x7A33;&#x5B9A; SDK &#x7248;&#x672C;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x6709;&#x95EE;&#x9898;&#x7684;&#x7248;&#x672C;&#x5C06;&#x4E3B;&#x52A8;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x63D0;&#x793A;&#x7528;&#x6237;&#x5347;&#x7EA7;
             SDK&#xFF0C;&#x5E76;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x63D0;&#x793A;&#xFF0C;&#x62D2;&#x7EDD;&#x7F16;&#x8BD1;&#x3002;</li>
         </ul>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">2.7.8</td>
-      <td style="text-align:left">
+      <th style="text-align:left">2.7.8</th>
+      <th style="text-align:left">
         <p>&#x589E;&#x52A0;&#x63A5;&#x53E3; <code>setAndroidIdEnable</code> , <code>setImeiEnable</code>, <code>setGoogleAdIdEnable</code> &#x4E3A;&#x6D77;&#x5916;&#x4E0A;&#x67B6;&#x5E94;&#x7528;&#x6D89;&#x53CA;&#x91C7;&#x96C6;&#x7528;&#x6237; <code>androidId</code>, <code>imei</code>, <code>googleAdId</code> &#x9690;&#x79C1;&#x6570;&#x636E;&#x7684;&#x5F00;&#x5173;&#x652F;&#x6301;&#x3002;</p>
         <p><b>&#x8BE6;&#x89C1;</b><a href="../android-sdk-api/gradle-api.md"><b>Gradle&#x7F16;&#x8BD1;&#x65F6;&#x914D;&#x7F6E;API</b></a>&lt;b&gt;&lt;/b&gt;</p>
         <p><b>&#x6CE8;&#x610F;&#xFF0C;&#x4EE5;&#x4E0A;&#x63A5;&#x53E3;&#x4E0D;&#x652F;&#x6301; gradle 3.0.x &#x4EE5;&#x4E0B;&#x7248;&#x672C;</b>&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>## **2. 升级 2.8.4 编译报错**
-
-升级无埋点 SDK 2.8.4如果报错如下：
+  </thead>
+  <tbody></tbody>
+</table>升级无埋点 SDK 2.8.4如果报错如下：
 
 > Unable to load class **'org.apache.http.impl.client.CloseableHttpClient'**. Possible causes for this unexpected error include: Gradle's dependency cache may be corrupt \(this sometimes occurs after a network connection timeout.\) Re-download dependencies and sync project \(requires network\)
 >

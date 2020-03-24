@@ -12,31 +12,29 @@ description: 在GrowingIO平台对转化变量进行声明和管理。
 
 二. 在左侧导航栏选择“**变量 &gt; 转化变量”**，进入转化变量管理页面。
 
-![](../../../../.gitbook/assets/image%20%28164%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28164%29.png)
 
 三. 单击变量列表上方的创建转化变量，弹出新建转化变量页面。
 
-![](../../../../.gitbook/assets/image%20%28148%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28148%29.png)
+
+| 参数 | 说明 |
+| :--- | :--- |
+
+
+| 名称 | GrowingIO平台上变量的名称。 |
+| :--- | :--- |
+
+
+| 标识符 | 此变量在代码中的标识，仅允许大小写英文、数字、下划线，并且不能以数字开头。 |
+| :--- | :--- |
+
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">&#x540D;&#x79F0;</td>
-      <td style="text-align:left">GrowingIO&#x5E73;&#x53F0;&#x4E0A;&#x53D8;&#x91CF;&#x7684;&#x540D;&#x79F0;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x6807;&#x8BC6;&#x7B26;</td>
-      <td style="text-align:left">&#x6B64;&#x53D8;&#x91CF;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x6807;&#x8BC6;&#xFF0C;&#x4EC5;&#x5141;&#x8BB8;&#x5927;&#x5C0F;&#x5199;&#x82F1;&#x6587;&#x3001;&#x6570;&#x5B57;&#x3001;&#x4E0B;&#x5212;&#x7EBF;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x80FD;&#x4EE5;&#x6570;&#x5B57;&#x5F00;&#x5934;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x5F52;&#x56E0;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">&#x5F52;&#x56E0;</th>
+      <th style="text-align:left">
         <p>&#x5F53;&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x65F6;&#xFF0C;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#x4F1A;&#x7B97;&#x5728;&#x6B64;&#x53D8;&#x91CF;&#x7684;&#x54EA;&#x4E2A;&#x6709;&#x6548;&#x503C;&#x4E0A;&#x3002;&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x76EE;&#x524D;&#x652F;&#x6301;&#x4EE5;&#x4E0B;&#x4E09;&#x79CD;&#x5F52;&#x56E0;&#x6A21;&#x578B;&#xFF1A;</p>
         <ol>
           <li><b>&#x6700;&#x8FD1;</b>&#xFF1A;&#x5F53;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#xFF0C;&#x5F80;&#x524D;&#x770B;&#xFF0C;&#x4E8B;&#x4EF6;&#x6240;&#x6709;&#x7684;&#x6743;&#x91CD;&#x5C06;&#x5168;&#x90E8;&#x5206;&#x914D;&#x7ED9;&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x4E2D;&#x8FD8;&#x5728;&#x6301;&#x4E45;&#x6027;&#x8303;&#x56F4;&#x4E4B;&#x5185;&#x5E76;&#x4E14;&#x79BB;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x7684;&#x65F6;&#x95F4;&#x70B9;&#x6700;&#x8FD1;&#x7684;&#x503C;&#x4E0A;&#x3002;</li>
@@ -44,11 +42,15 @@ description: 在GrowingIO平台对转化变量进行声明和管理。
           <li><b>&#x6700;&#x521D;</b>&#xFF1A;&#x5F53;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#xFF0C;&#x5F80;&#x524D;&#x770B;&#xFF0C;&#x4E8B;&#x4EF6;&#x6240;&#x6709;&#x7684;&#x6743;&#x91CD;&#x5168;&#x90E8;&#x5206;&#x914D;&#x7ED9;&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x4E2D;&#x8FD8;&#x5728;&#x6301;&#x4E45;&#x6027;&#x8303;&#x56F4;&#x4E4B;&#x5185;&#x5E76;&#x4E14;&#x79BB;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#x95F4;&#x70B9;&#x6700;&#x8FDC;&#x7684;&#x90A3;&#x4E2A;&#x503C;&#x4E0A;&#x3002;&#x4ECE;&#x7528;&#x6237;&#x7684;&#x89D2;&#x5EA6;&#x6765;&#x8BF4;&#x4E5F;&#x5C31;&#x662F;&#x8FD8;&#x5728;&#x6301;&#x4E45;&#x6027;&#x8303;&#x56F4;&#x4E4B;&#x5185;&#x7684;&#x6700;&#x521D;&#x7684;&#x90A3;&#x4E2A;&#x503C;&#x83B7;&#x5F97;&#x53D1;&#x751F;&#x4E8B;&#x4EF6;&#x7684;&#x6240;&#x6709;&#x6743;&#x91CD;&#x3002;</li>
         </ol>
         <p>&#x4E3E;&#x4F8B;&#xFF1A;&#x7528;&#x6237;&#x4F9D;&#x6B21;&#x70B9;&#x51FB;&#x4E86;&#x4E09;&#x4E2A;&#x5185;&#x90E8;&#x6D3B;&#x52A8;&#xFF0C;&#x5185;&#x90E8;&#x6D3B;&#x52A8;&#x4EE3;&#x7801;&#x5206;&#x522B;&#x4E3A;&#xFF1A;abc001&#x3001;abc002&#x3001;abc003&#xFF0C;&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x5F52;&#x56E0;&#x4E3A;&#x6700;&#x8FD1;&#x65F6;&#xFF0C;&#x90A3;&#x4E48;&#x5F53;&#x7528;&#x6237;&#x53D1;&#x751F;&#x8D2D;&#x4E70;&#x4E8B;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E2A;&#x8D2D;&#x4E70;&#x4E8B;&#x4EF6;&#x6240;&#x6709;&#x7684;&#x6743;&#x91CD;&#x5C06;&#x5206;&#x914D;&#x7ED9;abc003&#x8FD9;&#x4E2A;&#x5185;&#x90E8;&#x6D3B;&#x52A8;&#xFF1B;&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x5F52;&#x56E0;&#x4E3A;&#x7EBF;&#x6027;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x8D2D;&#x4E70;&#x4E8B;&#x4EF6;&#x6240;&#x6709;&#x7684;&#x6743;&#x91CD;&#x5C06;&#x5E73;&#x5747;&#x5206;&#x914D;&#x7ED9;&#x4E09;&#x4E2A;&#x5185;&#x90E8;&#x6D3B;&#x52A8;&#xFF1B;&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x5F52;&#x56E0;&#x4E3A;&#x6700;&#x521D;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x8D2D;&#x4E70;&#x4E8B;&#x4EF6;&#x6240;&#x6709;&#x7684;&#x6743;&#x91CD;&#x5C06;&#x5206;&#x914D;&#x7ED9;abc001&#x8FD9;&#x4E2A;&#x5185;&#x90E8;&#x6D3B;&#x52A8;&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">&#x5931;&#x6548;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">&#x5931;&#x6548;</th>
+      <th style="text-align:left">
         <p>&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x7684;&#x751F;&#x6548;&#x8303;&#x56F4;&#xFF0C;&#x76EE;&#x524D;&#x5728;&#x652F;&#x6301;&#x8BBF;&#x95EE;&#x3001;&#x4E00;&#x5929;&#x3001;&#x4E00;&#x5468;&#x3001;&#x4E00;&#x6708;&#x56DB;&#x79CD;&#x5931;&#x6548;&#x7684;&#x914D;&#x7F6E;&#x3002;</p>
         <ol>
           <li><b>&#x8BBF;&#x95EE;</b>&#xFF1A;&#x968F;&#x7740;&#x7528;&#x6237;&#x5728;&#x4E00;&#x4E2A;&#x8BBF;&#x95EE;&#x4E2D;&#x4E0D;&#x65AD;&#x7684;&#x4EA4;&#x4E92;&#x64CD;&#x4F5C;&#xFF0C;&#x4E00;&#x4E9B;&#x503C;&#x4F1A;&#x4FDD;&#x5B58;&#x5728;&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x7684;&#x5931;&#x6548;&#x8BBE;&#x7F6E;&#x4E3A;&#x8BBF;&#x95EE;&#x3002;&#x90A3;&#x4E48;&#x5F53;&#x8BBF;&#x95EE;&#x7ED3;&#x675F;&#x65F6;&#x4FDD;&#x5B58;&#x5728;&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x4E2D;&#x7684;&#x503C;&#x4F1A;&#x5931;&#x6548;&#xFF0C;&#x5728;&#x4E4B;&#x540E;&#x53D1;&#x751F;&#x7684;&#x4E8B;&#x4EF6;&#x4E0D;&#x4F1A;&#x5F52;&#x5230;&#x8FD9;&#x4E9B;&#x5931;&#x6548;&#x7684;&#x503C;&#x4E0A;&#x3002;</li>
@@ -63,14 +65,13 @@ description: 在GrowingIO平台对转化变量进行声明和管理。
           <li>&#x5982;&#x679C;&#x5931;&#x6548;&#x662F;&#x4E00;&#x5468;&#xFF0C;&#x4FDD;&#x5B58;&#x5728;&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x4E2D;&#x7684;&#x7AD9;&#x5185;&#x641C;&#x7D22;&#x8BCD;&#x201C;&#x624B;&#x673A;&#x201D;&#x5728;&#x4E0B;&#x5468;&#x4E00;&#x65E9;&#x4E0A;&#x7684;&#x4E03;&#x70B9;&#x5341;&#x4E94;&#x5206;&#x5931;&#x6548;&#x3002;</li>
           <li>&#x5982;&#x679C;&#x5931;&#x6548;&#x662F;&#x4E00;&#x6708;&#xFF0C;&#x4FDD;&#x5B58;&#x5728;&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x4E2D;&#x7684;&#x7AD9;&#x5185;&#x641C;&#x7D22;&#x8BCD;&#x201C;&#x624B;&#x673A;&#x201D;&#x5C06;&#x5728;&#x4E09;&#x5341;&#x5929;&#x4E4B;&#x540E;&#x7684;&#x65E9;&#x4E0A;&#x4E03;&#x70B9;&#x5341;&#x4E94;&#x5206;&#x5931;&#x6548;&#x3002;</li>
         </ul>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td style="text-align:left">&#x63CF;&#x8FF0;</td>
-      <td style="text-align:left">&#x53D8;&#x91CF;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x53EF;&#x586B;&#x5199;&#x5BF9;&#x5E94;&#x89E6;&#x53D1;&#x65F6;&#x673A;&#x548C;&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF0C;&#x540C;&#x65F6;&#x5BF9;&#x53D8;&#x91CF;&#x503C;&#x8FDB;&#x884C;&#x4E3E;&#x4F8B;&#x3002;</td>
-    </tr>
-  </tbody>
-</table>四. 填写完成后，单击确定，完成一个转化变量的创建。
+  </thead>
+  <tbody></tbody>
+</table>| 描述 | 变量的描述，可填写对应触发时机和应用场景，同时对变量值进行举例。 |
+| :--- | :--- |
+
 
 ## 管理转化变量
 
@@ -84,9 +85,9 @@ description: 在GrowingIO平台对转化变量进行声明和管理。
 
 **编辑：**在QuickView界面单击变量的参数进行修改，修改后单击**保存**。
 
-**列定制**：单击列表表头右侧的 ![](../../../../.gitbook/assets/lie-ding-zhi.png) 可选择列表展示项。
+**列定制**：单击列表表头右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/lie-ding-zhi.png) 可选择列表展示项。
 
-**删除**：单击单条转化变量右侧的 ![](../../../../.gitbook/assets/dian-dian-dian.png) 选择删除，可删除不需要的转化变量。
+**删除**：单击单条转化变量右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/dian-dian-dian.png) 选择删除，可删除不需要的转化变量。
 
 **批量操作**：在列表中使用复选框选择多个转化变量，可以进行批量删除。
 

@@ -36,7 +36,7 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LD4kKkCTHNxUGbu1QWO-LFCqNxsL3IBFp-oAtuG-LFD2JJj8RC0hIy797uZE5B08FE7A88BE5BA8FE8A18CE4B8BAE59C88E98089.png)
 
- 从上图的样例可以看到，GrowingIO 小程序在榜单页面自动采集到 2 个行为，每个行为的具体点击趋势显示在列表内。如果要定义某个行为为指标用于后续分析，点击“**定义行为**“按钮，然后可以看到弹出框，如下图。
+从上图的样例可以看到，GrowingIO 小程序在榜单页面自动采集到 2 个行为，每个行为的具体点击趋势显示在列表内。如果要定义某个行为为指标用于后续分析，点击“**定义行为**“按钮，然后可以看到弹出框，如下图。
 
 ![](https://docs.growingio.com/.gitbook/assets/-LD4kKkCTHNxUGbu1QWO-LFCqNxsL3IBFp-oAtuG-LFD59ZE5It-ZMFZ3yJsE59C88E98089E8A18CE4B8BAE7BB86E88A82.png)
 
@@ -50,7 +50,7 @@
 
 ## 交互式数据定义 <a id="interactive-tagging-define-data"></a>
 
- 交互式数据定义，主要帮助产品、运营、市场等非技术人员，来根据业务含义定义页面浏览和元素点击事件。
+交互式数据定义，主要帮助产品、运营、市场等非技术人员，来根据业务含义定义页面浏览和元素点击事件。
 
 ### 交互式数据定义功能使用 <a id="jiao-hu-shi-shu-ju-ding-yi-gong-neng-shi-yong"></a>
 

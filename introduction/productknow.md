@@ -2,7 +2,7 @@
 
 GrowingIO平台的界面主要分为4个区域，如下图所示。
 
-![](../.gitbook/assets/image%20%28235%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28235%29.png)
 
 <table>
   <thead>
@@ -32,16 +32,21 @@ GrowingIO平台的界面主要分为4个区域，如下图所示。
       <td style="text-align:left">3-&#x7CFB;&#x7EDF;&#x529F;&#x80FD;&#x533A;</td>
       <td style="text-align:left">
         <p>
-          <img src="../.gitbook/assets/tong-zhi (1).png" alt/>&#xFF1A;&#x901A;&#x77E5;&#x4E2D;&#x5FC3;</p>
+          <img src="https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/tong-zhi%20(1).png"
+          alt/>&#xFF1A;&#x901A;&#x77E5;&#x4E2D;&#x5FC3;</p>
         <p>
-          <img src="../.gitbook/assets/bang-zhu-wen-dang.png" alt/>&#xFF1A;&#x5E2E;&#x52A9;&#x6587;&#x6863;&#xFF0C;&#x60A8;&#x53EF;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x529F;&#x80FD;&#x533A;&#x5355;&#x51FB;&#x6B64;&#x56FE;&#x6807;&#xFF0C;&#x53EF;&#x76F4;&#x63A5;&#x8FDB;&#x5165;&#x76F8;&#x5E94;&#x529F;&#x80FD;&#x7684;&#x6587;&#x6863;&#x8BF4;&#x660E;&#x3002;</p>
+          <img src="https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/bang-zhu-wen-dang.png"
+          alt/>&#xFF1A;&#x5E2E;&#x52A9;&#x6587;&#x6863;&#xFF0C;&#x60A8;&#x53EF;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x529F;&#x80FD;&#x533A;&#x5355;&#x51FB;&#x6B64;&#x56FE;&#x6807;&#xFF0C;&#x53EF;&#x76F4;&#x63A5;&#x8FDB;&#x5165;&#x76F8;&#x5E94;&#x529F;&#x80FD;&#x7684;&#x6587;&#x6863;&#x8BF4;&#x660E;&#x3002;</p>
         <p>
-          <img src="../.gitbook/assets/ke-fu (1).png" alt/>&#xFF1A;&#x5DE5;&#x5355;&#x7CFB;&#x7EDF;&#x3001;&#x9080;&#x8BF7;&#x6280;&#x672F;&#x652F;&#x6301;</p>
+          <img src="https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/ke-fu%20(1).png"
+          alt/>&#xFF1A;&#x5DE5;&#x5355;&#x7CFB;&#x7EDF;&#x3001;&#x9080;&#x8BF7;&#x6280;&#x672F;&#x652F;&#x6301;</p>
         <p>
-          <img src="../.gitbook/assets/she-zhi.png" alt/>&#xFF1A;&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;&#xFF1A;&#x5305;&#x62EC;&#x7EC4;&#x7EC7;&#x3001;&#x5E94;&#x7528;&#x3001;&#x7528;&#x6237;&#x7BA1;&#x7406;&#x548C;Mobile
+          <img src="https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/she-zhi.png"
+          alt/>&#xFF1A;&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;&#xFF1A;&#x5305;&#x62EC;&#x7EC4;&#x7EC7;&#x3001;&#x5E94;&#x7528;&#x3001;&#x7528;&#x6237;&#x7BA1;&#x7406;&#x548C;Mobile
           Debugger</p>
         <p>
-          <img src="../.gitbook/assets/kan-shu-zhu-shou (1).png" alt/>&#xFF1A;&#x770B;&#x6570;&#x52A9;&#x624B;</p>
+          <img src="https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/kan-shu-zhu-shou%20(1).png"
+          alt/>&#xFF1A;&#x770B;&#x6570;&#x52A9;&#x624B;</p>
         <p>&#x4E2A;&#x4EBA;&#x5934;&#x50CF;&#xFF1A;&#x5B66;&#x4E60;&#x4E2D;&#x5FC3;&#x3001;&#x4E2A;&#x4EBA;&#x4FE1;&#x606F;&#x3001;&#x5B89;&#x5168;&#x914D;&#x7F6E;&#x7B49;</p>
       </td>
     </tr>
@@ -51,8 +56,3 @@ GrowingIO平台的界面主要分为4个区域，如下图所示。
     </tr>
   </tbody>
 </table>
-
-
-
-
-

@@ -16,15 +16,15 @@ public String authToken(String projectKeyId, String secretKey, String keyArray) 
 
 ## 接口定义
 
-#### URL
+### URL
 
-https://data.growingio.com/saas/{ai}/company
+[https://data.growingio.com/saas/{ai}/company](https://data.growingio.com/saas/{ai}/company)
 
-#### 请求类型
+### 请求类型
 
 POST
 
-#### 参数说明
+### 参数说明
 
 {% tabs %}
 {% tab title="请求参数" %}

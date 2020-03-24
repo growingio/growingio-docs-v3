@@ -97,7 +97,7 @@
 
 ### GrowingIO后台配置
 
-您需要在 **“数据中心 &gt; 数据管理 &gt; 事件变量 ”**  的页面级变量中进行配置。配置方式请参考[创建页面级变量](../../api-reference/project-manage/create-pvar.md)。
+您需要在 **“数据中心 &gt; 数据管理 &gt; 事件变量 ”** 的页面级变量中进行配置。配置方式请参考[创建页面级变量](../../api-reference/project-manage/create-pvar.md)。
 
 ## 4. 迁移自定义事件（埋点事件）
 

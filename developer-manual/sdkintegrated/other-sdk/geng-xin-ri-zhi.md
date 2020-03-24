@@ -16,7 +16,6 @@
     <tr>
       <td style="text-align:left">H5&#x5185;&#x5D4C;&#x9875;SDK 2.0.7</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li>&#x4FEE;&#x590D;&#x5C0F;&#x7A0B;&#x5E8F;&#x5185;&#x5D4C;webview&#x60C5;&#x51B5;&#x4E0B;&#x53EF;&#x80FD;&#x4F1A;&#x9020;&#x6210;
             &#x81EA;&#x5B9A;&#x4E49;App&#x6E20;&#x9053; &#x4E3A;&#x4E0D;&#x9002;&#x5E94;&#x7684;&#x60C5;&#x51B5;</li>
@@ -30,7 +29,6 @@
     <tr>
       <td style="text-align:left">&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;SDK 3.0</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li>&#x66F4;&#x65B0;&#x4E86;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#xFF0C;sdk &#x521D;&#x59CB;&#x5316;&#x65B9;&#x5F0F;&#x53D8;&#x52A8;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x6237;&#x81EA;&#x5DF1;&#x624B;&#x52A8;setConfig&#xFF1B;</li>
           <li>gio-webview &#x7EC4;&#x4EF6;&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#xFF0C;&#x4F7F;&#x7528;&#x65B0;
@@ -58,7 +56,6 @@
     <tr>
       <td style="text-align:left">&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;SDK 1.9.1</td>
       <td style="text-align:left">
-        <p></p>
         <ul>
           <li>minp.js</li>
           <li>minp.esm.js</li>

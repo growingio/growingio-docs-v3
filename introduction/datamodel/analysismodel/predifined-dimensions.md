@@ -4,7 +4,7 @@
 {% tab title="用户来源维度" %}
 > 用户来源维度：通过用户来源了解用户是怎样来到你的网站上的。
 
-### 1.访问来源（Web）‌
+## 1.访问来源（Web）‌
 
 网站的流量来源，可以是百度，谷歌，优酷等站外渠道，也可能是直接访问该网站。可以通过设置 UTM 参数来确定流量具体是哪个广告带来的。‌
 
@@ -33,7 +33,7 @@
 App的访问来源只有一种：直接访问
 {% endhint %}
 
-### 2.一级访问来源（Web）
+## 2.一级访问来源（Web）
 
 为便于分析使用，我们将访问来源进行了以下归类：直接访问、搜索引擎、社交媒体、视频媒体、新闻媒体、外部链接，六大分类。‌
 
@@ -49,9 +49,9 @@ d.通过点击由原 url 生成的短链接访问网站；‌
 
 e.通过 App 点击链接访问网站（比如今日头条、微博中的链接）（对微信做过识别，故此场景不适用微信）；‌
 
-f.通过点击一个 https 类型的 url 访问一个 http 类型的 url（比如如果点击 https://example.com/1 转到 http://example.com/2, 对于 example.com/2 的分析会认为是直接访问）；‌
+f.通过点击一个 https 类型的 url 访问一个 http 类型的 url（比如如果点击 [https://example.com/1](https://example.com/1) 转到 [http://example.com/2](http://example.com/2), 对于 example.com/2 的分析会认为是直接访问）；‌
 
- g.部分浏览器（特别是移动端浏览器）会把搜索跳转当成直接访问。‌
+g.部分浏览器（特别是移动端浏览器）会把搜索跳转当成直接访问。‌
 
 **搜索引擎**
 
@@ -60,7 +60,7 @@ f.通过点击一个 https 类型的 url 访问一个 http 类型的 url（比�
 | google.xx.xx | Google |
 | yahoo.com | 雅虎 |
 | bing.com | 必应 |
-|  www.baidu.com、m.baidu.com、bzclk.baidu.com | 百度 |
+| www.baidu.com、m.baidu.com、bzclk.baidu.com | 百度 |
 | so.com | 360 搜索 |
 | sogou.com | 搜狗 |
 | sm.cn | 神马 |
@@ -69,55 +69,52 @@ f.通过点击一个 https 类型的 url 访问一个 http 类型的 url（比�
 
 **社交媒体**
 
+| 域名 | 来源方 |
+| :--- | :--- |
+
+
+| facebook.com | Facebook |
+| :--- | :--- |
+
+
+| twitter.com、t.co | Twitter |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x57DF;&#x540D;</th>
-      <th style="text-align:left">&#x6765;&#x6E90;&#x65B9;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">facebook.com</td>
-      <td style="text-align:left">Facebook</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">twitter.com&#x3001;t.co</td>
-      <td style="text-align:left">Twitter</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
+      <th style="text-align:left">
         <p>web.telegram.org&#x3001;org.telegram.plus&#x3001;org.telegram.multi&#x3001;</p>
         <p>org.telegram.messenger</p>
-      </td>
-      <td style="text-align:left">Telegram</td>
+      </th>
+      <th style="text-align:left">Telegram</th>
     </tr>
-    <tr>
-      <td style="text-align:left">linkedin.com</td>
-      <td style="text-align:left">Linkedin</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">instagram.com</td>
-      <td style="text-align:left">Instagram</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">weibo.com&#x3001;t.cn&#x3001;weibo.cn</td>
-      <td style="text-align:left">&#x5FAE;&#x535A;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">zhihu.com</td>
-      <td style="text-align:left">&#x77E5;&#x4E4E;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">renren.com</td>
-      <td style="text-align:left">&#x4EBA;&#x4EBA;&#x7F51;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">mp.weixin.qq.com</td>
-      <td style="text-align:left">&#x5FAE;&#x4FE1;</td>
-    </tr>
-  </tbody>
-</table>由于目前微信已经作为一个较重要的访问来源，所以 GrowingIO 目前专门针对微信环境做了判定：如果 PC 网页或 H5 的访问是发生在 wechat 环境中，也会被归入社交媒体，而根据不同的微信后置参数，进一步区分访问来源，详情请看访问来源中微信来源的维度解释。‌
+  </thead>
+  <tbody></tbody>
+</table>| linkedin.com | Linkedin |
+| :--- | :--- |
+
+
+| instagram.com | Instagram |
+| :--- | :--- |
+
+
+| weibo.com、t.cn、weibo.cn | 微博 |
+| :--- | :--- |
+
+
+| zhihu.com | 知乎 |
+| :--- | :--- |
+
+
+| renren.com | 人人网 |
+| :--- | :--- |
+
+
+| mp.weixin.qq.com | 微信 |
+| :--- | :--- |
+
 
 **视频媒体**
 
@@ -150,17 +147,17 @@ f.通过点击一个 https 类型的 url 访问一个 http 类型的 url（比�
 外部链接：从其他小程序转跳
 {% endhint %}
 
-### 3.搜索词（web）
+## 3.搜索词（web）
 
 用户从搜索引擎进入网站所使用的搜索词，一般情况下付费搜索的搜索词可以被解析，百度、谷歌、搜狗和360渠道只有付费搜索词，其他渠道既有付费搜索词也有自然搜索词。‌
 
 如果在值中出现 N/A ，意为这部分流量不是通过搜索词访问的。‌
 
-### 4.App 版本（app/小程序）
+## 4.App 版本（app/小程序）
 
 App 和小程序 的版本号‌
 
-### 5.自定义 App 渠道（app/小程序）
+## 5.自定义 App 渠道（app/小程序）
 
 自定义 App 渠道：‌
 
@@ -174,7 +171,7 @@ App 和小程序 的版本号‌
 
 ![](http://growing.cn-bj.ufileos.com/ccc10.png)
 
-### 6. 广告监测
+## 6. 广告监测
 
 > **通过「广告监测」设置 App 推广的维度值**
 
@@ -210,59 +207,54 @@ UTM 渠道归因模式为非直接访问的最后一次访问。‌
 {% tab title="地域信息维度" %}
 > 地域信息维度：了解用户在哪里访问你的网站。
 
+| 维度 | 说明 |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x7EF4;&#x5EA6;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">&#x57CE;&#x5E02;&#x540D;&#x79F0;&#xFF08;Web/App/&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</td>
-      <td
+      <th style="text-align:left">&#x57CE;&#x5E02;&#x540D;&#x79F0;&#xFF08;Web/App/&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</th>
+      <th
       style="text-align:left">
         <p>Web &#x57FA;&#x4E8E; IP &#x5730;&#x5740;&#xFF0C;&#x4EE5;&#x57CE;&#x5E02;&#x4F5C;&#x4E3A;&#x7EF4;&#x5EA6;&#x503C;&#xFF0C;&#x76EE;&#x524D;&#x53EA;&#x652F;&#x6301;&#x56FD;&#x5185;&#x57CE;&#x5E02;&#x3002;</p>
         <p>App &#x548C;&#x5C0F;&#x7A0B;&#x5E8F; &#x57FA;&#x4E8E; IP &#x5730;&#x5740;&#x548C;
           GPS &#x3002;&#x4F18;&#x5148;&#x5224;&#x65AD;GPS&#x503C;&#xFF0C;GPS&#x503C;&#x7F3A;&#x5931;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;IP&#x5730;&#x5740;&#x3002;</p>
-        </td>
+        </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">&#x5730;&#x533A;&#x540D;&#x79F0;&#xFF08;Web/App/&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</td>
-      <td
+      <th style="text-align:left">&#x5730;&#x533A;&#x540D;&#x79F0;&#xFF08;Web/App/&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</th>
+      <th
       style="text-align:left">
         <p>Web &#x57FA;&#x4E8E;IP&#x5730;&#x5740;&#xFF0C;&#x8BE5;&#x7EF4;&#x5EA6;&#x5305;&#x542B;&#x56FD;&#x5185;&#x7701;&#x7EA7;&#x4EE5;&#x4E0A;&#x884C;&#x653F;&#x533A;&#xFF0C;&#x4EE5;&#x53CA;&#x56FD;&#x5916;&#x5730;&#x533A;&#x3002;</p>
         <p>app &#x548C;&#x5C0F;&#x7A0B;&#x5E8F; &#x57FA;&#x4E8E; IP &#x5730;&#x5740;&#x548C;
           GPS &#x3002;&#x4F18;&#x5148;&#x5224;&#x65AD;GPS&#x503C;&#xFF0C;GPS&#x503C;&#x7F3A;&#x5931;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;IP&#x5730;&#x5740;&#x3002;</p>
-        </td>
+        </th>
     </tr>
-    <tr>
-      <td style="text-align:left">&#x56FD;&#x5BB6;&#x4EE3;&#x7801;&#xFF08;Web/App/&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</td>
-      <td
-      style="text-align:left">&#x7528;&#x6237;&#x6240;&#x5728;&#x7684;&#x56FD;&#x5BB6;&#x7684;&#x82F1;&#x6587;&#x7F29;&#x5199;&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x7EF4;&#x5EA6;&#x503C;&#x6709;&#xFF1A;CN&#xFF0C;US&#xFF0C;JP&#xFF0C;SG&#x7B49;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x56FD;&#x5BB6;&#x540D;&#x79F0;&#xFF08;Web/App/&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</td>
-      <td
-      style="text-align:left">&#x7528;&#x6237;&#x6240;&#x5728;&#x7684;&#x56FD;&#x5BB6;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x6709;&#xFF1A;&#x4E2D;&#x56FD;&#xFF0C;&#x7F8E;&#x56FD;&#xFF0C;&#x82F1;&#x56FD;&#xFF0C;&#x65B0;&#x52A0;&#x5761;&#x7B49;&#x3002;&#x6280;&#x672F;&#x8BF4;&#x660E;&#xFF1A;&#x7EF4;&#x5EA6;&#x6307;&#x4E3A;&#x201C;&#x672A;&#x77E5;&#x201D;&#x7684;&#x539F;&#x56E0;&#x53EF;&#x80FD;&#x662F;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x79FB;&#x52A8;&#x7F51;&#x7EDC;&#xFF0C;&#x6216;&#x5F00;&#x4E86;&#x4EE3;&#x7406;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x5FAE;&#x4FE1;&#x7528;&#x6237;&#x6240;&#x5728;&#x57CE;&#x5E02;&#xFF08;&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</td>
-      <td
-      style="text-align:left">&#x5C0F;&#x7A0B;&#x5E8F;&#x7279;&#x6709;&#x7EF4;&#x5EA6;&#x3002;&#x8868;&#x793A;&#x7528;&#x6237;&#x5728;&#x5FAE;&#x4FE1;&#x7AEF;&#x8BBE;&#x7F6E;&#x7684;&#x6240;&#x5728;&#x57CE;&#x5E02;&#x3002;&#x4F7F;&#x7528;&#x524D;&#x63D0;&#x662F;&#x5C0F;&#x7A0B;&#x5E8F;SDK&#x83B7;&#x53D6;&#x5230;&#x5FAE;&#x4FE1;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x5C5E;&#x6027;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x5FAE;&#x4FE1;&#x7528;&#x6237;&#x6240;&#x5728;&#x7701;&#xFF08;&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</td>
-      <td
-      style="text-align:left">&#x5C0F;&#x7A0B;&#x5E8F;&#x7279;&#x6709;&#x7EF4;&#x5EA6;&#x3002;&#x8868;&#x793A;&#x7528;&#x6237;&#x5728;&#x5FAE;&#x4FE1;&#x7AEF;&#x8BBE;&#x7F6E;&#x7684;&#x6240;&#x5728;&#x7701;&#x3002;&#x4F7F;&#x7528;&#x524D;&#x63D0;&#x662F;&#x5C0F;&#x7A0B;&#x5E8F;SDK&#x83B7;&#x53D6;&#x5230;&#x5FAE;&#x4FE1;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x5C5E;&#x6027;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x5FAE;&#x4FE1;&#x7528;&#x6237;&#x6240;&#x5728;&#x56FD;&#x5BB6;&#xFF08;&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</td>
-      <td
-      style="text-align:left">&#x5C0F;&#x7A0B;&#x5E8F;&#x7279;&#x6709;&#x7EF4;&#x5EA6;&#x3002;&#x8868;&#x793A;&#x7528;&#x6237;&#x5728;&#x5FAE;&#x4FE1;&#x7AEF;&#x8BBE;&#x7F6E;&#x7684;&#x6240;&#x5728;&#x56FD;&#x5BB6;&#x3002;&#x4F7F;&#x7528;&#x524D;&#x63D0;&#x662F;&#x5C0F;&#x7A0B;&#x5E8F;SDK&#x83B7;&#x53D6;&#x5230;&#x5FAE;&#x4FE1;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x5C5E;&#x6027;&#x3002;</td>
-    </tr>
-  </tbody>
-</table>
+  </thead>
+  <tbody></tbody>
+</table>| 国家代码（Web/App/小程序） | 用户所在的国家的英文缩写，常见的维度值有：CN，US，JP，SG等。 |
+| :--- | :--- |
+
+
+| 国家名称（Web/App/小程序） | 用户所在的国家的名称，常见的有：中国，美国，英国，新加坡等。技术说明：维度指为“未知”的原因可能是用户使用的是移动网络，或开了代理。 |
+| :--- | :--- |
+
+
+| 微信用户所在城市（小程序） | 小程序特有维度。表示用户在微信端设置的所在城市。使用前提是小程序SDK获取到微信访问用户属性。 |
+| :--- | :--- |
+
+
+| 微信用户所在省（小程序） | 小程序特有维度。表示用户在微信端设置的所在省。使用前提是小程序SDK获取到微信访问用户属性。 |
+| :--- | :--- |
+
+
+| 微信用户所在国家（小程序） | 小程序特有维度。表示用户在微信端设置的所在国家。使用前提是小程序SDK获取到微信访问用户属性。 |
+| :--- | :--- |
 {% endtab %}
 
 {% tab title="设备信息维度" %}
@@ -283,43 +275,41 @@ UTM 渠道归因模式为非直接访问的最后一次访问。‌
 {% endtab %}
 
 {% tab title="其他维度" %}
-
-
 > **页面级维度**
 
-对于 web 端可以这样理解： 用户先访问了 https://www.growingio.com/ 再访问了 https://www.growingio.com/circle
+对于 web 端可以这样理解： 用户先访问了 [https://www.growingio.com/](https://www.growingio.com/) 再访问了 [https://www.growingio.com/circle](https://www.growingio.com/circle)
 
-#### 1.域名（web/小程序） <a id="41"></a>
+### 1.域名（web/小程序） <a id="41"></a>
 
 www.growingio.com 是这两个页面的域名。
 
 小程序为appID.
 
-#### 2.页面（web/app/小程序） <a id="42"></a>
+### 2.页面（web/app/小程序） <a id="42"></a>
 
-对于 web 端可以这样理解： / 是 https://www.growingio.com**/** 的页面。 /circle 是 https://www.growingio.com**/circle** 的页面。
+对于 web 端可以这样理解： / 是 [https://www.growingio.com\*\*/\*\*](https://www.growingio.com**/**) 的页面。 /circle 是 [https://www.growingio.com\*\*/circle\*\*](https://www.growingio.com**/circle**) 的页面。
 
 对于 app 端可以这样理解： android : activity + fragment iOS : UIViewController
 
 小程序：页面URL（不包括query）
 
-#### 3.页面来源（web/app/小程序） <a id="43"></a>
+### 3.页面来源（web/app/小程序） <a id="43"></a>
 
-这次访问中 https://www.growingio.com/circle 这个页面的页面来源是 https://www.growingio.com/ 。
+这次访问中 [https://www.growingio.com/circle](https://www.growingio.com/circle) 这个页面的页面来源是 [https://www.growingio.com/](https://www.growingio.com/) 。
 
 > **事件级维度：当次事件发生时，对应的维度**
 
-#### 4.设备方向（app） <a id="44"></a>
+### 4.设备方向（app） <a id="44"></a>
 
 可以理解为用户的手机时横屏还是竖屏。
 
-#### 5.元素内容（web/app/小程序） <a id="45"></a>
+### 5.元素内容（web/app/小程序） <a id="45"></a>
 
 通过圈选可定义的维度包括“元素内容“ 和 “元素位置“。
 
 圈选某个元素时，如果该元素本身有 "内容"信息，即可用 "元素内容" 来统计该元素对应的指标。
 
-#### 6.元素位置（web/app/小程序） <a id="46"></a>
+### 6.元素位置（web/app/小程序） <a id="46"></a>
 
 如果该元素本身有 "位置"信息，即可用 "元素位置"来统计该元素对应的指标。
 
@@ -331,19 +321,15 @@ www.growingio.com 是这两个页面的域名。
 
 如果想看这个位置上不同内容的点击情况，可以在「事件分析」中，选择「柱图」，用「元素内容」作为维度，来进行分析。使用「元素位置」作为维度来分析时，可以看到「元素位置」的值都是 2（因为在圈选时限定了元素的位置）。
 
-#### 7.时间（web/app/小程序） <a id="47"></a>
+### 7.时间（web/app/小程序） <a id="47"></a>
 
 以「小时」粒度切分时，代表当前小时的开始到结束； 以「天」粒度切分时，代表北京时间的 0:00-24:00。
 {% endtab %}
 
 {% tab title="用户性别" %}
-#### 微信用户性别 （小程序） <a id="1-wei-xin-yong-hu-xing-bie-xiao-cheng-xu"></a>
+### 微信用户性别 （小程序） <a id="1-wei-xin-yong-hu-xing-bie-xiao-cheng-xu"></a>
 
 小程序特有维度。表示用户在微信端设置的性别。通常为男、女、未知（表示未设置性别信息）。使用前提是小程序SDK获取到微信访问用户属性。
 {% endtab %}
 {% endtabs %}
-
-
-
-
 

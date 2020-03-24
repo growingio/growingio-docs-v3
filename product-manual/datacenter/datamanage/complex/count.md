@@ -22,40 +22,39 @@ description: 对产品内所有的计算指标进行统一的维护与管理。
 
 二. 在左侧导航栏选择“**自定义 &gt; 计算指标”**，进入计算指标管理页面。
 
-![](../../../../.gitbook/assets/image%20%2899%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2899%29.png)
 
 三. 单击计算指标列表界面左上角的创建计算指标，弹出创建计算指标界面。
 
-![](../../../../.gitbook/assets/image%20%2873%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2873%29.png)
+
+| 参数 | 说明 |
+| :--- | :--- |
+
+
+| 分子计算区 | 创建计算指标弹框左侧上方部分为分子计算区域，点击【添加事件或指标】，选择您想要进行计算的事件或指标进入此处进行加法运算。 |
+| :--- | :--- |
+
+
+| 分母计算区 | 创建计算指标弹框左侧下方部分为分母计算区域，若您想要创建点击率、转化率、渗透率等涉及除法计算的指标，您可以通过在此处选择您想要进行计算的事件或指标作为分母进行指标计算。 |
+| :--- | :--- |
+
+
+| 选择度量单位 | 在选定事件后，您可以选择统计事件的度量单位为「人」，或是「次」，举例说，如果您想要创建注册按钮人均点击率指标，您可以定义分子为注册按钮点击次数，分母为注册按钮点击人数。 |
+| :--- | :--- |
+
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">&#x5206;&#x5B50;&#x8BA1;&#x7B97;&#x533A;</td>
-      <td style="text-align:left">&#x521B;&#x5EFA;&#x8BA1;&#x7B97;&#x6307;&#x6807;&#x5F39;&#x6846;&#x5DE6;&#x4FA7;&#x4E0A;&#x65B9;&#x90E8;&#x5206;&#x4E3A;&#x5206;&#x5B50;&#x8BA1;&#x7B97;&#x533A;&#x57DF;&#xFF0C;&#x70B9;&#x51FB;&#x3010;&#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#x6216;&#x6307;&#x6807;&#x3011;&#xFF0C;&#x9009;&#x62E9;&#x60A8;&#x60F3;&#x8981;&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#x7684;&#x4E8B;&#x4EF6;&#x6216;&#x6307;&#x6807;&#x8FDB;&#x5165;&#x6B64;&#x5904;&#x8FDB;&#x884C;&#x52A0;&#x6CD5;&#x8FD0;&#x7B97;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x5206;&#x6BCD;&#x8BA1;&#x7B97;&#x533A;</td>
-      <td style="text-align:left">&#x521B;&#x5EFA;&#x8BA1;&#x7B97;&#x6307;&#x6807;&#x5F39;&#x6846;&#x5DE6;&#x4FA7;&#x4E0B;&#x65B9;&#x90E8;&#x5206;&#x4E3A;&#x5206;&#x6BCD;&#x8BA1;&#x7B97;&#x533A;&#x57DF;&#xFF0C;&#x82E5;&#x60A8;&#x60F3;&#x8981;&#x521B;&#x5EFA;&#x70B9;&#x51FB;&#x7387;&#x3001;&#x8F6C;&#x5316;&#x7387;&#x3001;&#x6E17;&#x900F;&#x7387;&#x7B49;&#x6D89;&#x53CA;&#x9664;&#x6CD5;&#x8BA1;&#x7B97;&#x7684;&#x6307;&#x6807;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x6B64;&#x5904;&#x9009;&#x62E9;&#x60A8;&#x60F3;&#x8981;&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#x7684;&#x4E8B;&#x4EF6;&#x6216;&#x6307;&#x6807;&#x4F5C;&#x4E3A;&#x5206;&#x6BCD;&#x8FDB;&#x884C;&#x6307;&#x6807;&#x8BA1;&#x7B97;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x9009;&#x62E9;&#x5EA6;&#x91CF;&#x5355;&#x4F4D;</td>
-      <td style="text-align:left">&#x5728;&#x9009;&#x5B9A;&#x4E8B;&#x4EF6;&#x540E;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x7EDF;&#x8BA1;&#x4E8B;&#x4EF6;&#x7684;&#x5EA6;&#x91CF;&#x5355;&#x4F4D;&#x4E3A;&#x300C;&#x4EBA;&#x300D;&#xFF0C;&#x6216;&#x662F;&#x300C;&#x6B21;&#x300D;&#xFF0C;&#x4E3E;&#x4F8B;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x60F3;&#x8981;&#x521B;&#x5EFA;&#x6CE8;&#x518C;&#x6309;&#x94AE;&#x4EBA;&#x5747;&#x70B9;&#x51FB;&#x7387;&#x6307;&#x6807;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x5206;&#x5B50;&#x4E3A;&#x6CE8;&#x518C;&#x6309;&#x94AE;&#x70B9;&#x51FB;&#x6B21;&#x6570;&#xFF0C;&#x5206;&#x6BCD;&#x4E3A;&#x6CE8;&#x518C;&#x6309;&#x94AE;&#x70B9;&#x51FB;&#x4EBA;&#x6570;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x8BBE;&#x7F6E;&#x6743;&#x91CD;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">&#x8BBE;&#x7F6E;&#x6743;&#x91CD;</th>
+      <th style="text-align:left">
         <p>&#x5982;&#x679C;&#x60A8;&#x60F3;&#x8981;&#x521B;&#x5EFA;&#x5E26;&#x6709;&#x6743;&#x91CD;&#x6BD4;&#x7387;&#x8BBE;&#x7F6E;&#x7684;&#x8BA1;&#x7B97;&#x6307;&#x6807;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x6743;&#x91CD;&#x6765;&#x4E3A;&#x6240;&#x9009;&#x4E8B;&#x4EF6;&#x81EA;&#x7531;&#x5206;&#x914D;&#x6743;&#x91CD;&#x3002;&#x6BD4;&#x5982;&#x5F53;&#x6211;&#x4EEC;&#x8861;&#x91CF;&#x4EA7;&#x54C1;&#x6D3B;&#x8DC3;&#x5EA6;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x9488;&#x5BF9;&#x6838;&#x5FC3;&#x4EA7;&#x54C1;&#x6A21;&#x5757;&#x7684;&#x6307;&#x6807;&#x5206;&#x914D;&#x66F4;&#x9AD8;&#x7684;&#x6743;&#x91CD;&#xFF0C;&#x5BF9;&#x4E8E;&#x975E;&#x6838;&#x5FC3;&#x4EA7;&#x54C1;&#x6A21;&#x5757;&#x5206;&#x914D;&#x8F83;&#x4F4E;&#x7684;&#x6743;&#x91CD;&#x3002;</p>
         <p>&#x2B50; &#x5982;&#x679C;&#x60F3;&#x8981;&#x5B9E;&#x73B0;&#x4E24;&#x4E2A;&#x6307;&#x6807;&#x7684;&#x76F8;&#x51CF;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x7B2C;&#x4E8C;&#x4E2A;&#x6307;&#x6807;&#x7684;&#x6743;&#x91CD;&#x8BBE;&#x7F6E;&#x4E3A;-1&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
+  </thead>
+  <tbody></tbody>
 </table>{% hint style="success" %}
 计算指标说明
 
@@ -80,15 +79,15 @@ description: 对产品内所有的计算指标进行统一的维护与管理。
 
 **权限设置**：新创建的计算指标资源权限默认【所有人可见，不可编辑】，所有人都能够看到以及使用该计算指标，但只有该计算指标的创建者和项目的超级管理员拥有权限对该指标进行编辑。您可以在QuickView中的【其他信息】中更改计算指标的资源权限。
 
-**添加业务标签**：单击单条计算指标右侧业务标签列的 ![](../../../../.gitbook/assets/tian-jia-biao-qian.png) 添加业务标签。
+**添加业务标签**：单击单条计算指标右侧业务标签列的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/tian-jia-biao-qian.png) 添加业务标签。
 
-**列定制**：单击列表表头右侧的 ![](../../../../.gitbook/assets/lie-ding-zhi.png) 可选择列表展示项。
+**列定制**：单击列表表头右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/lie-ding-zhi.png) 可选择列表展示项。
 
-**编辑**：单击单条计算指标右侧的 ![](../../../../.gitbook/assets/dian-dian-dian.png) 选择编辑，可修改计算指标的定义条件、名称、描述等。
+**编辑**：单击单条计算指标右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/dian-dian-dian.png) 选择编辑，可修改计算指标的定义条件、名称、描述等。
 
-**删除**：单击单条计算指标右侧的 ![](../../../../.gitbook/assets/dian-dian-dian.png) 选择删除，可删除不需要的计算指标。
+**删除**：单击单条计算指标右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/dian-dian-dian.png) 选择删除，可删除不需要的计算指标。
 
-**收藏**：单击单条计算指标左侧的 ![](../../../../.gitbook/assets/shi-jian-shou-cang.png) 可收藏此计算指标，在其他情况进行快速选择。
+**收藏**：单击单条计算指标左侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/shi-jian-shou-cang.png) 可收藏此计算指标，在其他情况进行快速选择。
 
 **批量操作**：在列表中使用复选框选择多个计算指标，可以进行批量添加标签、创建时间分析、删除。
 

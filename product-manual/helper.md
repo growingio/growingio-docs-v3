@@ -15,7 +15,7 @@ GIO 小程序看数助手，在 GrowingIO 网页端产品的基础上，提供�
 
 ## 绑定账号 <a id="bang-ding-zhang-hao"></a>
 
-1. 在GrowingIO平台，单击主界面右上角的 ![](../.gitbook/assets/kan-shu-zhu-shou%20%281%29.png) 。
+1. 在GrowingIO平台，单击主界面右上角的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/kan-shu-zhu-shou%20%281%29.png) 。
 2. 打开微信，扫描小程序码，打开GIO看数助手。
 3. 点击“绑定”，登录账号。或者直接打开小程序，输入账号、密码，登录即可。
 
@@ -63,8 +63,6 @@ GIO 看数助手，显示看板中的前 20 张数据图。
 
 ![GIO &#x770B;&#x6570;&#x52A9;&#x624B; &#x56FE;&#x8868;&#x8BE6;&#x60C5;&#x9875;](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LYW3GBiAS5vqvCelRtd-LYW_vClzzAwqiWJ9wsdimage.png)
 
-
-
 ### 分享 <a id="fen-xiang"></a>
 
 小程序看数助手，支持进入图片详情页后，可以直接分享给他人。
@@ -98,6 +96,4 @@ GIO 看数助手，显示看板中的前 20 张数据图。如果您需要查看
 ​**5、可以支持对看板、单图进行筛选过滤、编辑的操作吗？**
 
 移动端对精细化筛选、编辑的体验支持相对较弱，故 GIO 看数助手 不支持进行单图筛选过滤、编辑等操作，仅支持对已保存的图标进行数据查看。但是**支持选择不同的时间范围**，查看数据。
-
-
 

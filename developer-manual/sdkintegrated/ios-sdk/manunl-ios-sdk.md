@@ -42,7 +42,7 @@ GrowingIO iOS SDK 2.8.12 包含以下组件SDK:
 提醒：记得勾选”Copy item if needed“
 {% endhint %}
 
-3. 在工程项目中添加以下库文件
+1. 在工程项目中添加以下库文件
 
 > 添加项目依赖库的位置在项目设置target -&gt; 选项卡General -&gt; Linked Frameworks and Libraries
 
@@ -59,9 +59,9 @@ GrowingIO iOS SDK 2.8.12 包含以下组件SDK:
 | JavaScriptCore.framework | Web圈App交互 |
 | WebKit.framework | Web圈选 |
 
-4. 添加编译参数，并注意大小写。
+1. 添加编译参数，并注意大小写。
 
-![](../../../.gitbook/assets/image%20%2897%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2897%29.png)
 {% endtab %}
 {% endtabs %}
 
@@ -69,7 +69,7 @@ GrowingIO iOS SDK 2.8.12 包含以下组件SDK:
 
 添加URL Scheme 到项目中，以便唤醒您的程序进行圈选。
 
-![](../../../.gitbook/assets/image%20%2885%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2885%29.png)
 
 ### 3. 初始化配置
 
@@ -149,7 +149,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 **添加代码之后，请先Clean项目，然后再进行编译，并在你的 Android App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
 
- 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
+在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
 
 ## 6. 验证SDK是否正常采集数据 <a id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
 

@@ -11,7 +11,7 @@
 
 如果您需要跟踪 App（ iOS & Android）由推广带来的 App 下载，可以使用此功能。使用之前请确保您的 App 中加载了GrowingIO 的 SDK1.0.3 及以上版本。
 
-#### DeepLink 唤起 App
+### DeepLink 唤起 App
 
 | DeepLink功能 | App SDK版本 |
 | :--- | :--- |
@@ -30,89 +30,59 @@
 
 二. 单击左上角的**新建监测链接**，默认进入推广App的新建监测链接页面。
 
-![](../../../../.gitbook/assets/image%20%2858%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2858%29.png)
+
+| 参数 | 说明 | 增加App下载量 | 吸引用户直接打开App |
+| :--- | :--- | :--- | :--- |
+
+
+| 监测链接名称 | 监测链接名称，由中文、英文、短横线（-）、下划线（\_）、斜杠（/）组成，长度小于50个字符。 | ✔️ | ✔️ |
+| :--- | :--- | :--- | :--- |
+
+
+| 推广App | 选择您要推广的App，如果您需要在一条链接中同时推广您的 iOS 与 Android App，请勾选“一个链接同时推广iOS和Android App”。然后各自选择App。 | ✔️ | ✔️ |
+| :--- | :--- | :--- | :--- |
+
+
+| 应用下载地址 | 应用下载地址。 | - | ✔️ |
+| :--- | :--- | :--- | :--- |
+
+
+| 直达App内落地页 | 添加该参数后可实现直达 App 内的某一页面。 | - | ✔️ |
+| :--- | :--- | :--- | :--- |
+
+
+| 推广活动 | 选择该链接所属的推广活动。 | ✔️ | ✔️ |
+| :--- | :--- | :--- | :--- |
+
+
+| 推广渠道 | 选择该链接所属的推广渠道。 | ✔️ | ✔️ |
+| :--- | :--- | :--- | :--- |
+
+
+| 推广目标页地址 | 根据实际活动推广情况，填入目标页URL地址。 | ✔️ | - |
+| :--- | :--- | :--- | :--- |
+
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-      <th style="text-align:left">&#x589E;&#x52A0;App&#x4E0B;&#x8F7D;&#x91CF;</th>
-      <th style="text-align:left">&#x5438;&#x5F15;&#x7528;&#x6237;&#x76F4;&#x63A5;&#x6253;&#x5F00;App</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">&#x76D1;&#x6D4B;&#x94FE;&#x63A5;&#x540D;&#x79F0;</td>
-      <td style="text-align:left">&#x76D1;&#x6D4B;&#x94FE;&#x63A5;&#x540D;&#x79F0;&#xFF0C;&#x7531;&#x4E2D;&#x6587;&#x3001;&#x82F1;&#x6587;&#x3001;&#x77ED;&#x6A2A;&#x7EBF;&#xFF08;-&#xFF09;&#x3001;&#x4E0B;&#x5212;&#x7EBF;&#xFF08;_&#xFF09;&#x3001;&#x659C;&#x6760;&#xFF08;/&#xFF09;&#x7EC4;&#x6210;&#xFF0C;&#x957F;&#x5EA6;&#x5C0F;&#x4E8E;50&#x4E2A;&#x5B57;&#x7B26;&#x3002;</td>
-      <td
-      style="text-align:left">&#x2714;&#xFE0F;</td>
-        <td style="text-align:left">&#x2714;&#xFE0F;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x63A8;&#x5E7F;App</td>
-      <td style="text-align:left">&#x9009;&#x62E9;&#x60A8;&#x8981;&#x63A8;&#x5E7F;&#x7684;App&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x9700;&#x8981;&#x5728;&#x4E00;&#x6761;&#x94FE;&#x63A5;&#x4E2D;&#x540C;&#x65F6;&#x63A8;&#x5E7F;&#x60A8;&#x7684;
-        iOS &#x4E0E; Android App&#xFF0C;&#x8BF7;&#x52FE;&#x9009;&#x201C;&#x4E00;&#x4E2A;&#x94FE;&#x63A5;&#x540C;&#x65F6;&#x63A8;&#x5E7F;iOS&#x548C;Android
-        App&#x201D;&#x3002;&#x7136;&#x540E;&#x5404;&#x81EA;&#x9009;&#x62E9;App&#x3002;</td>
-      <td
-      style="text-align:left">&#x2714;&#xFE0F;</td>
-        <td style="text-align:left">&#x2714;&#xFE0F;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x5E94;&#x7528;&#x4E0B;&#x8F7D;&#x5730;&#x5740;</td>
-      <td style="text-align:left">&#x5E94;&#x7528;&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#x3002;</td>
-      <td style="text-align:left">-</td>
-      <td style="text-align:left">&#x2714;&#xFE0F;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x76F4;&#x8FBE;App&#x5185;&#x843D;&#x5730;&#x9875;</td>
-      <td style="text-align:left">&#x6DFB;&#x52A0;&#x8BE5;&#x53C2;&#x6570;&#x540E;&#x53EF;&#x5B9E;&#x73B0;&#x76F4;&#x8FBE;
-        App &#x5185;&#x7684;&#x67D0;&#x4E00;&#x9875;&#x9762;&#x3002;</td>
-      <td style="text-align:left">-</td>
-      <td style="text-align:left">&#x2714;&#xFE0F;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x63A8;&#x5E7F;&#x6D3B;&#x52A8;</td>
-      <td style="text-align:left">&#x9009;&#x62E9;&#x8BE5;&#x94FE;&#x63A5;&#x6240;&#x5C5E;&#x7684;&#x63A8;&#x5E7F;&#x6D3B;&#x52A8;&#x3002;</td>
-      <td
-      style="text-align:left">&#x2714;&#xFE0F;</td>
-        <td style="text-align:left">&#x2714;&#xFE0F;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x63A8;&#x5E7F;&#x6E20;&#x9053;</td>
-      <td style="text-align:left">&#x9009;&#x62E9;&#x8BE5;&#x94FE;&#x63A5;&#x6240;&#x5C5E;&#x7684;&#x63A8;&#x5E7F;&#x6E20;&#x9053;&#x3002;</td>
-      <td
-      style="text-align:left">&#x2714;&#xFE0F;</td>
-        <td style="text-align:left">&#x2714;&#xFE0F;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x63A8;&#x5E7F;&#x76EE;&#x6807;&#x9875;&#x5730;&#x5740;</td>
-      <td style="text-align:left">&#x6839;&#x636E;&#x5B9E;&#x9645;&#x6D3B;&#x52A8;&#x63A8;&#x5E7F;&#x60C5;&#x51B5;&#xFF0C;&#x586B;&#x5165;&#x76EE;&#x6807;&#x9875;URL&#x5730;&#x5740;&#x3002;</td>
-      <td
-      style="text-align:left">&#x2714;&#xFE0F;</td>
-        <td style="text-align:left">-</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x521B;&#x5EFA;&#x7C7B;&#x578B;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">&#x521B;&#x5EFA;&#x7C7B;&#x578B;</th>
+      <th style="text-align:left">
         <ul>
           <li>&#x5355;&#x4E2A;&#x521B;&#x5EFA;</li>
           <li>&#x6279;&#x91CF;&#x521B;&#x5EFA;</li>
         </ul>
         <p>&#x5728;&#x4E00;&#x6761;&#x94FE;&#x63A5;&#x63A8;&#x5E7F;&#x4E00;&#x4E2A;&#x5E73;&#x53F0;App&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x652F;&#x6301;&#x6279;&#x91CF;&#x521B;&#x5EFA;&#x3002;</p>
-      </td>
-      <td style="text-align:left">&#x2714;&#xFE0F;</td>
-      <td style="text-align:left">-</td>
+      </th>
+      <th style="text-align:left">&#x2714;&#xFE0F;</th>
+      <th style="text-align:left">-</th>
     </tr>
-    <tr>
-      <td style="text-align:left">&#x6279;&#x91CF;&#x521B;&#x5EFA;&#x6570;&#x91CF;</td>
-      <td style="text-align:left">&#x521B;&#x5EFA;&#x7C7B;&#x578B;&#x9009;&#x62E9;&#x6279;&#x91CF;&#x521B;&#x5EFA;&#x65F6;&#x53EF;&#x9009;&#xFF0C;&#x652F;&#x6301;2-100&#x4E4B;&#x524D;&#x7684;&#x6B63;&#x6574;&#x6570;&#x3002;</td>
-      <td
-      style="text-align:left">&#x2714;&#xFE0F;</td>
-        <td style="text-align:left">-</td>
-    </tr>
-  </tbody>
-</table>三. 配置参数后单击确定，展示创建好的监测链接或二维码。
+  </thead>
+  <tbody></tbody>
+</table>| 批量创建数量 | 创建类型选择批量创建时可选，支持2-100之前的正整数。 | ✔️ | - |
+| :--- | :--- | :--- | :--- |
+
 
 {% hint style="success" %}
 **直达 App 内落地页的技术原理：**
@@ -152,7 +122,7 @@ App Links 配置：[配置方法](../advance/deeplink.md#32-applinks-pei-zhi)
 
 延迟深度链接技术由此推出，通过“延迟”技术，使得新用户在首次安装App时，同样可以到达您设定的指定页面，在App内还原活动场景，促使用户完成转化。
 
-#### 查看数据指标
+### 查看数据指标
 
 您可以查看有多少新用户通过延迟深度链接在App中到达了您设定的活动场景。
 
@@ -162,5 +132,5 @@ App Links 配置：[配置方法](../advance/deeplink.md#32-applinks-pei-zhi)
 
 三. 在下方的推广日报模块单击自定义指标，勾选延迟场景还原即可查看延迟深度链接的数据。
 
-![](../../../../.gitbook/assets/image%20%284%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%284%29.png)
 

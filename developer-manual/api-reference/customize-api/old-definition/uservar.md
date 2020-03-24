@@ -18,15 +18,15 @@ public String authToken(String projectKeyId, String secretKey, String keyArray) 
 
 ## 接口定义
 
-#### URL
+### URL
 
-https://data.growingio.com/saas/{ai}/user
+[https://data.growingio.com/saas/{ai}/user](https://data.growingio.com/saas/{ai}/user)
 
-#### 请求类型
+### 请求类型
 
 POST
 
-#### 参数说明
+### 参数说明
 
 {% tabs %}
 {% tab title="请求参数" %}
@@ -42,32 +42,27 @@ POST
 | :--- | :--- | :--- | :--- |
 | auth | string | 是 | 针对每条数据独立生成的认证，详细见本页面的获取认证码页签。 |
 
+| body参数 | 类型 | 是否必传 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
+| cs1 | string | 是 | 登录用户ID。 |
+| :--- | :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">body&#x53C2;&#x6570;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x4F20;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">cs1</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">&#x767B;&#x5F55;&#x7528;&#x6237;ID&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">cs2</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">cs2</th>
+      <th style="text-align:left">string</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p>&#x7528;&#x6237;&#x5C5E;&#x6027;2&#x3002;</p>
         <p>&#x65E7;&#x7248;&#x672C;&#x4E0A;&#x4F20;&#x63A5;&#x53E3;&#x4F7F;&#x7528;cs1-cs20&#x7684;&#x5B57;&#x6BB5;&#x4E0A;&#x4F20;&#x7528;&#x6237;&#x5C5E;&#x6027;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
+  </thead>
+  <tbody></tbody>
 </table>
 {% endtab %}
 {% endtabs %}

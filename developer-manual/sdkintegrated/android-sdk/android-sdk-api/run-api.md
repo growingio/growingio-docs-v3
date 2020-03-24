@@ -13,10 +13,10 @@ gio.setUserId("张溪梦");
 ```
 
 {% hint style="danger" %}
-GrowingIO所有API都需要在主线程调用。 
+GrowingIO所有API都需要在主线程调用。
 {% endhint %}
 
-### 基础配置API
+## 基础配置API
 
 <table>
   <thead>
@@ -96,7 +96,7 @@ GrowingIO所有API都需要在主线程调用。
       <td style="text-align:left">-</td>
     </tr>
   </tbody>
-</table>### 数据采集API
+</table>\#\#\# 数据采集API
 
 <table>
   <thead>
@@ -336,4 +336,3 @@ GrowingIO所有API都需要在主线程调用。
     </tr>
   </tbody>
 </table>
-

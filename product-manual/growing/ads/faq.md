@@ -54,7 +54,7 @@
 
 目前小米手机 MIUI 系统最新版本中，对某些 URL 链接识别存在误判，导致对 URL 识别为文本，而不能识别为链接，该误判情况不仅限于 GrowingIO 短链接。对于该情况，GrowingIO 提以下备选方案：
 
-* 使用 GrowingIO 备用域名 t.growingio.com 代替 gio.ren ，替换后即可正常识别。例如短链为：https://gio.ren/x1234，替换后为：https://t.growingio.com/x1234。
+* 使用 GrowingIO 备用域名 t.growingio.com 代替 gio.ren ，替换后即可正常识别。例如短链为：[https://gio.ren/x1234，替换后为：https://t.growingio.com/x1234。](https://gio.ren/x1234，替换后为：https://t.growingio.com/x1234。)
 * 使用域名映射服务，将 GrowingIO 短链映射为自己的域名，直接投放映射后的域名，详细配置参考默认渠道来源跟踪 &gt; [公司域名与GrowingIO短链建立映射关系](info/default-channel-tracking.md#4)。
 
 {% hint style="info" %}

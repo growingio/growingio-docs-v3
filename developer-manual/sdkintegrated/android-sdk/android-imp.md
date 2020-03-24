@@ -116,77 +116,72 @@ GIO 推荐广告位在 `ScrollView` 的最底部，需要用户滑动才能看�
 
 #### **markImpression\(ImpressionMark mark\)** <a id="markimpression-impressionmark-mark"></a>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><b>&#x53C2;&#x6570;</b>
-      </th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">mark</td>
-      <td style="text-align:left">
-        <p><b>ImpressionMark:</b> &#x6807;&#x8BB0; view &#x7684;&#x914D;&#x7F6E;&#x7C7B;&#xFF1B;</p>
-        <p><b>&#x6CE8;&#x610F;&#xFF1A;</b>&#x8FD0;&#x884C;&#x65F6;&#x6807;&#x8BB0;
-          view &#x5BF9;&#x8C61;&#xFF0C;SDK &#x4E0D;&#x5B58;&#x50A8;&#x6807;&#x8BB0;&#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x5B58;&#x5728;&#x6807;&#x8BB0;&#x4E00;&#x6B21;&#xFF0C;&#x6C38;&#x8FDC;&#x8BB0;&#x5F55;&#x5E76;&#x91C7;&#x96C6;&#x7684;&#x73B0;&#x8C61;&#x3002;</p>
-      </td>
-    </tr>
-  </tbody>
-</table>**ImpressionMark 对象说明**
+| **参数** | 说明 |
+| :--- | :--- |
+
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;</th>
-      <th style="text-align:left">&#x4F20;&#x53C2;&#x65B9;&#x5F0F;</th>
-      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x586B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
+      <th style="text-align:left">mark</th>
+      <th style="text-align:left">
+        <p><b>ImpressionMark:</b> &#x6807;&#x8BB0; view &#x7684;&#x914D;&#x7F6E;&#x7C7B;&#xFF1B;</p>
+        <p><b>&#x6CE8;&#x610F;&#xFF1A;</b>&#x8FD0;&#x884C;&#x65F6;&#x6807;&#x8BB0;
+          view &#x5BF9;&#x8C61;&#xFF0C;SDK &#x4E0D;&#x5B58;&#x50A8;&#x6807;&#x8BB0;&#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x5B58;&#x5728;&#x6807;&#x8BB0;&#x4E00;&#x6B21;&#xFF0C;&#x6C38;&#x8FDC;&#x8BB0;&#x5F55;&#x5E76;&#x91C7;&#x96C6;&#x7684;&#x73B0;&#x8C61;&#x3002;</p>
+      </th>
     </tr>
   </thead>
-  <tbody>
+  <tbody></tbody>
+</table>| 参数 | 传参方式 | 是否必填 | 说明 |
+| :--- | :--- | :--- | :--- |
+
+
+| view | 构造函数传参 | 是 | **View：**需要标记采集 imp 的 view |
+| :--- | :--- | :--- | :--- |
+
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left">view</td>
-      <td style="text-align:left">&#x6784;&#x9020;&#x51FD;&#x6570;&#x4F20;&#x53C2;</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left"><b>View&#xFF1A;</b>&#x9700;&#x8981;&#x6807;&#x8BB0;&#x91C7;&#x96C6; imp
-        &#x7684; view</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">eventId</td>
-      <td style="text-align:left">&#x6784;&#x9020;&#x51FD;&#x6570;&#x4F20;&#x53C2;</td>
-      <td style="text-align:left">&#x662F;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">eventId</th>
+      <th style="text-align:left">&#x6784;&#x9020;&#x51FD;&#x6570;&#x4F20;&#x53C2;</th>
+      <th style="text-align:left">&#x662F;</th>
+      <th style="text-align:left">
         <p><b>String&#xFF1A;</b>&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x6807;&#x8BC6;&#x7B26;&#xFF1B;</p>
         <p>&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF1B;</p>
         <p>SDK 2.4.0&#x4EE5;&#x4E0B;&#x7248;&#x672C;&#x4E0D;&#x652F;&#x6301;&#x4E2D;&#x6587;&#xFF0C;&#x4EC5;&#x652F;&#x6301;
           0 &#x5230; 9&#x3001;a &#x5230; z &#x4EE5;&#x53CA;&#x4E0B;&#x5212;&#x7EBF;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x80FD;&#x4EE5;&#x6570;&#x5B57;&#x5F00;&#x5934;&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">setVariable</td>
-      <td style="text-align:left">set &#x65B9;&#x6CD5;&#x4F20;&#x53C2;</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">setVariable</th>
+      <th style="text-align:left">set &#x65B9;&#x6CD5;&#x4F20;&#x53C2;</th>
+      <th style="text-align:left">&#x5426;</th>
+      <th style="text-align:left">
         <p><b>JSONObject&#xFF1A;</b>&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#x6240;&#x4F34;&#x968F;&#x7684;&#x7EF4;&#x5EA6;&#xFF08;&#x53D8;&#x91CF;&#xFF09;&#x4FE1;&#x606F;&#x3002;</p>
         <p>&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF08;<code>eventLevelVariable.length()&lt;=100</code>&#xFF09;&#xFF1B;</p>
         <p><code>eventLevelVariable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>JSONObject</code>&#x6216;&#x8005;<code>JSONArray&#xFF1B;</code>
         </p>
         <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table>| setGlobalId | set 方法传参 | 否 | **String**：用于在Activity范围内唯一标记View，下文有详细解释改字段的用法与原因。 |
+| :--- | :--- | :--- | :--- |
+
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left">setGlobalId</td>
-      <td style="text-align:left">set &#x65B9;&#x6CD5;&#x4F20;&#x53C2;</td>
-      <td style="text-align:left">&#x5426;</td>
-      <td style="text-align:left"><b>String</b>&#xFF1A;&#x7528;&#x4E8E;&#x5728;Activity&#x8303;&#x56F4;&#x5185;&#x552F;&#x4E00;&#x6807;&#x8BB0;View&#xFF0C;&#x4E0B;&#x6587;&#x6709;&#x8BE6;&#x7EC6;&#x89E3;&#x91CA;&#x6539;&#x5B57;&#x6BB5;&#x7684;&#x7528;&#x6CD5;&#x4E0E;&#x539F;&#x56E0;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">setDelayTimeMills</td>
-      <td style="text-align:left">set &#x65B9;&#x6CD5;&#x4F20;&#x53C2;</td>
-      <td style="text-align:left">&#x5426;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0</td>
-      <td style="text-align:left">
+      <th style="text-align:left">setDelayTimeMills</th>
+      <th style="text-align:left">set &#x65B9;&#x6CD5;&#x4F20;&#x53C2;</th>
+      <th style="text-align:left">&#x5426;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0</th>
+      <th style="text-align:left">
         <p><b>long &#xFF1A;</b>&#x68C0;&#x6D4B;Impression&#x7684;&#x5EF6;&#x8FDF;&#x65F6;&#x95F4;(ms)&#xFF0C;
           &#x9ED8;&#x8BA4;&#x4E0D;&#x5EF6;&#x65F6;&#xFF1B;</p>
         <p>&#x662F;&#x4E00;&#x4E2A;&#x6027;&#x80FD;&#x8C03;&#x4F18;&#x5B57;&#x6BB5;,
@@ -196,12 +191,11 @@ GIO 推荐广告位在 `ScrollView` 的最底部，需要用户滑动才能看�
           &#x76F8;&#x4FE1;&#x80FD;&#x591F;&#x6EE1;&#x8DB3;&#x5927;&#x90E8;&#x5206;&#x573A;&#x666F;&#x7684;&#x6027;&#x80FD;&#x8981;&#x6C42;&#x3002;
           &#x53EF;&#x4EE5;&#x5C06;&#x6B64;&#x503C;&#x8BBE;&#x4E3A; 200, 300, 400,
           500&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>**GlobalId 字段说明:**
-
-GlobalId 字段的提供主要是为了适配 RecyclerView 这类的可复用 View 对浏览定义的影响。 GIO对View的可见性跟踪默认是对象级别的跟踪，所以默认情况下用户notifyDataSetChange时\(即使内容并没有改变\)， 由于所有View被重新Bind， 而且由于RecyclerView的复用机制， 并不能保证复用顺序有序, 可能触发多条浏览事件发出， 这显然是不符合预期的。
+  </thead>
+  <tbody></tbody>
+</table>GlobalId 字段的提供主要是为了适配 RecyclerView 这类的可复用 View 对浏览定义的影响。 GIO对View的可见性跟踪默认是对象级别的跟踪，所以默认情况下用户notifyDataSetChange时\(即使内容并没有改变\)， 由于所有View被重新Bind， 而且由于RecyclerView的复用机制， 并不能保证复用顺序有序, 可能触发多条浏览事件发出， 这显然是不符合预期的。
 
 例如：用户下拉刷新页面，新增了一条 item ，但是列表顺序变了和未刷新前不一致，此时可能会有多条浏览事件发出，不符合预期，所以提供 globalId 方案解决使得只发送列表中可见新出现的元素。
 
@@ -239,7 +233,7 @@ public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
                     .setGlobalId(String.valueOf(position))
                     .setVariable(jsonObject)
     );
-} 
+}
 ```
 
 ### 停止半自动采集View的浏览事件
@@ -283,28 +277,25 @@ Android 无埋点 **SDK 2.8.4** 及以上支持。
 
 自动采集元素内容，事件变量为 `gio_v`。
 
+| 参数 | 说明 |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">collectV</td>
-      <td style="text-align:left">
+      <th style="text-align:left">collectV</th>
+      <th style="text-align:left">
         <p>boolean: &#x662F;&#x5426;&#x81EA;&#x52A8;&#x91C7;&#x96C6;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; <b>true</b>&#xFF1B;</p>
         <ul>
           <li>true &#x91C7;&#x96C6;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#xFF1B;</li>
           <li>false &#x4E0D;&#x91C7;&#x96C6;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#x3002;</li>
         </ul>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>代码示例
-
-```javascript
+  </thead>
+  <tbody></tbody>
+</table>```javascript
 //自动采集元素内容并发送埋点事件，默认值为 true 采集元素内容。
 GrowingIO.getInstance().markViewImpression(        
                 new ImpressionMark(findViewById(R.id.tv_imp_without_v), "btn_buy")
@@ -322,29 +313,26 @@ Android 无埋点 **SDK 2.8.5** 及以上支持。
 
 设置 View 的可见比例，当可见的比例大于等于 visiableScale 则自动触发埋点事件。
 
+| 参数 | 说明 |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">visibleScale</td>
-      <td style="text-align:left">
+      <th style="text-align:left">visibleScale</th>
+      <th style="text-align:left">
         <p><b>float:</b> &#x53C2;&#x6570;&#x8303;&#x56F4;&#x5728; 0-1&#xFF1B;</p>
         <ul>
           <li>&#x5F53;&#x4E3A; 0 &#x65F6;&#x4E3A;&#x53EF;&#x89C1;&#x4EFB;&#x610F;&#x50CF;&#x7D20;&#x5219;&#x89E6;&#x53D1;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;&#xFF1B;</li>
           <li>&#x5F53;&#x4E3A; 1 &#x65F6;&#x4E3A; View &#x5B8C;&#x5168;&#x53EF;&#x89C1;&#x5219;&#x89E6;&#x53D1;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;&#x3002;</li>
         </ul>
         <p><b>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;0&#xFF0C;&#x5143;&#x7D20;&#x4EFB;&#x610F;&#x50CF;&#x7D20;&#x53EF;&#x89C1;&#x53D1;&#x9001;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;</b>&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>**代码示例**
-
-```javascript
+  </thead>
+  <tbody></tbody>
+</table>```javascript
 //当元素大于等于一半可见时，自动采集元素内容并发送埋点事件。
 GrowingIO.getInstance().markViewImpression(        
             new ImpressionMark(findViewById(R.id.tv_imp_without_v), "btn_buy")           
@@ -405,14 +393,6 @@ class MyAdapter extends PagerAdapter {
 
 #### **3.当元素内容发生改变，会发送事件么？**
 
-例如 TextView，当元素内容发生变化，不会再次发送事件。[  
+例如 TextView，当元素内容发生变化，不会再次发送事件。[    
 ](https://docs.growingio.com/docs/sdk-integration/android-sdk/api)
-
-
-
-
-
-
-
-
 

@@ -4,7 +4,7 @@
 
 一. 在顶部导航栏选择"**看板** &gt; **分析看板**"，进入看板列表下的分析看板列表。
 
-![](../../.gitbook/assets/image%20%28191%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28191%29.png)
 
 二. 单击列表上方的**新建看板**，弹出新建分析看板界面。
 
@@ -16,56 +16,57 @@
 
 在看板列表：
 
-![](../../.gitbook/assets/image%20%2859%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2859%29.png)
+
+| 项 | 说明 |
+| :--- | :--- |
+
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x9879;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">1-&#x770B;&#x677F;&#x5F52;&#x5C5E;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">1-&#x770B;&#x677F;&#x5F52;&#x5C5E;</th>
+      <th style="text-align:left">
         <p>&#x770B;&#x677F;&#x5F52;&#x5C5E;&#x5206;&#x4E3A;&#xFF1A;&#x6211;&#x7684;&#x3001;&#x8BA2;&#x9605;&#x3001;&#x7CFB;&#x7EDF;&#x9884;&#x7F6E;&#x3001;&#x5168;&#x90E8;&#x3002;</p>
         <p>&#x7CFB;&#x7EDF;&#x9884;&#x7F6E;&#x770B;&#x677F;&#x4E0D;&#x53EF;&#x88AB;&#x8BA2;&#x9605;&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table>| 2-看板列表排序 | 可按最近更新时间、查看次数、看板名称首字母排序。 |
+| :--- | :--- |
+
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left">2-&#x770B;&#x677F;&#x5217;&#x8868;&#x6392;&#x5E8F;</td>
-      <td style="text-align:left">&#x53EF;&#x6309;&#x6700;&#x8FD1;&#x66F4;&#x65B0;&#x65F6;&#x95F4;&#x3001;&#x67E5;&#x770B;&#x6B21;&#x6570;&#x3001;&#x770B;&#x677F;&#x540D;&#x79F0;&#x9996;&#x5B57;&#x6BCD;&#x6392;&#x5E8F;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3-&#x770B;&#x677F;&#x5C55;&#x793A;&#x6837;&#x5F0F;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">3-&#x770B;&#x677F;&#x5C55;&#x793A;&#x6837;&#x5F0F;</th>
+      <th style="text-align:left">
         <ul>
           <li>&#x7F51;&#x683C;</li>
           <li>&#x5217;&#x8868;</li>
         </ul>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td style="text-align:left">4-&#x641C;&#x7D22;&#x770B;&#x677F;</td>
-      <td style="text-align:left">&#x53EF;&#x901A;&#x8FC7;&#x641C;&#x7D22;&#x521B;&#x5EFA;&#x4EBA;&#x6216;&#x8005;&#x770B;&#x677F;&#x540D;&#x79F0;&#x6765;&#x5B9A;&#x4F4D;&#x770B;&#x677F;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">5-&#x6D4F;&#x89C8;&#x91CF;</td>
-      <td style="text-align:left">&#x6700;&#x8FD1;30&#x5929;&#x88AB;&#x67E5;&#x770B;&#x6B21;&#x6570;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">6-&#x8BA2;&#x9605;&#x53CA;&#x8BA2;&#x9605;&#x91CF;</td>
-      <td style="text-align:left">&#x5C55;&#x793A;&#x8BA2;&#x9605;&#x91CF;&#xFF0C;&#x5355;&#x51FB;&#x53EF;&#x8BA2;&#x9605;&#x770B;&#x677F;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">7-&#x7BA1;&#x7406;</td>
-      <td style="text-align:left">&#x7F16;&#x8F91;&#x3001;&#x5206;&#x4EAB;&#x94FE;&#x63A5;&#x3001;&#x8BBE;&#x7F6E;&#x6743;&#x9650;&#x3001;&#x5220;&#x9664;&#x3002;</td>
-    </tr>
-  </tbody>
-</table>在看板列表单击某个看板进入看板。
+  </thead>
+  <tbody></tbody>
+</table>| 4-搜索看板 | 可通过搜索创建人或者看板名称来定位看板。 |
+| :--- | :--- |
 
-![](../../.gitbook/assets/image%20%28118%29.png)
+
+| 5-浏览量 | 最近30天被查看次数 |
+| :--- | :--- |
+
+
+| 6-订阅及订阅量 | 展示订阅量，单击可订阅看板。 |
+| :--- | :--- |
+
+
+| 7-管理 | 编辑、分享链接、设置权限、删除。 |
+| :--- | :--- |
+
+
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28118%29.png)
 
 {% hint style="success" %}
 **个性化看板**
@@ -76,67 +77,68 @@
 * 将鼠标悬浮至图表边缘，可对操作图表进行拖拽实现放大、缩小、移位。
 {% endhint %}
 
+| 参数 | 说明 |
+| :--- | :--- |
+
+
+| 1-添加单图 | 将已创建保存的分析图表添加到当前看板。 |
+| :--- | :--- |
+
+
+| 2-添加描述 | 在看板中添加模块样式的描述去分割图表，个性化展示看板，可创建多个，会以红色数字标识。 |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">1-&#x6DFB;&#x52A0;&#x5355;&#x56FE;</td>
-      <td style="text-align:left">&#x5C06;&#x5DF2;&#x521B;&#x5EFA;&#x4FDD;&#x5B58;&#x7684;&#x5206;&#x6790;&#x56FE;&#x8868;&#x6DFB;&#x52A0;&#x5230;&#x5F53;&#x524D;&#x770B;&#x677F;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2-&#x6DFB;&#x52A0;&#x63CF;&#x8FF0;</td>
-      <td style="text-align:left">&#x5728;&#x770B;&#x677F;&#x4E2D;&#x6DFB;&#x52A0;&#x6A21;&#x5757;&#x6837;&#x5F0F;&#x7684;&#x63CF;&#x8FF0;&#x53BB;&#x5206;&#x5272;&#x56FE;&#x8868;&#xFF0C;&#x4E2A;&#x6027;&#x5316;&#x5C55;&#x793A;&#x770B;&#x677F;&#xFF0C;&#x53EF;&#x521B;&#x5EFA;&#x591A;&#x4E2A;&#xFF0C;&#x4F1A;&#x4EE5;&#x7EA2;&#x8272;&#x6570;&#x5B57;&#x6807;&#x8BC6;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3-&#x5168;&#x5C40;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">3-&#x5168;&#x5C40;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;</th>
+      <th style="text-align:left">
         <p>&#x5B9E;&#x65F6;&#x4E3A;&#x5F53;&#x524D;&#x770B;&#x677F;&#x8BBE;&#x7F6E;&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;&#xFF0C;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x5355;&#x4E2A;&#x56FE;&#x8868;&#x7684;&#x89C4;&#x5219;&#x3002;&#x53EF;&#x8BBE;&#x7F6E;</p>
         <p>&#x8FC7;&#x6EE4;&#x6761;&#x4EF6;&#xFF1A;&#x9009;&#x62E9;&#x7EF4;&#x5EA6;&#x8FDB;&#x884C;&#x5168;&#x5C40;&#x8FC7;&#x6EE4;&#x3002;</p>
         <p>&#x65F6;&#x95F4;&#x8303;&#x56F4;&#xFF1A;&#x9009;&#x62E9;&#x5206;&#x6790;&#x9875;&#x9762;&#x5C55;&#x793A;&#x7684;&#x65F6;&#x95F4;&#x3002;</p>
         <p>&#x76EE;&#x6807;&#x7528;&#x6237;&#xFF1A;&#x9009;&#x62E9;&#x8981;&#x5206;&#x6790;&#x7684;&#x76EE;&#x6807;&#x7528;&#x6237;&#x4EBA;&#x7FA4;&#x3002;</p>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table>| 4-看板权限 | 单击可修改。 |
+| :--- | :--- |
+
+
+| 5-更新记录 | 单击可查看看板修改记录。 |
+| :--- | :--- |
+
+
+| 6-添加到首页 | 添加到首页或从首页移除。 |
+| :--- | :--- |
+
+
+| 7-订阅 | 订阅当前看板。 |
+| :--- | :--- |
+
+
+| 8-另存看板 | 可将当前看板进行另存。 |
+| :--- | :--- |
+
+
+| 9-分享链接 | 单击直接复制分享链接。 |
+| :--- | :--- |
+
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left">4-&#x770B;&#x677F;&#x6743;&#x9650;</td>
-      <td style="text-align:left">&#x5355;&#x51FB;&#x53EF;&#x4FEE;&#x6539;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">5-&#x66F4;&#x65B0;&#x8BB0;&#x5F55;</td>
-      <td style="text-align:left">&#x5355;&#x51FB;&#x53EF;&#x67E5;&#x770B;&#x770B;&#x677F;&#x4FEE;&#x6539;&#x8BB0;&#x5F55;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">6-&#x6DFB;&#x52A0;&#x5230;&#x9996;&#x9875;</td>
-      <td style="text-align:left">&#x6DFB;&#x52A0;&#x5230;&#x9996;&#x9875;&#x6216;&#x4ECE;&#x9996;&#x9875;&#x79FB;&#x9664;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">7-&#x8BA2;&#x9605;</td>
-      <td style="text-align:left">&#x8BA2;&#x9605;&#x5F53;&#x524D;&#x770B;&#x677F;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">8-&#x53E6;&#x5B58;&#x770B;&#x677F;</td>
-      <td style="text-align:left">&#x53EF;&#x5C06;&#x5F53;&#x524D;&#x770B;&#x677F;&#x8FDB;&#x884C;&#x53E6;&#x5B58;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">9-&#x5206;&#x4EAB;&#x94FE;&#x63A5;</td>
-      <td style="text-align:left">&#x5355;&#x51FB;&#x76F4;&#x63A5;&#x590D;&#x5236;&#x5206;&#x4EAB;&#x94FE;&#x63A5;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">10-&#x7BA1;&#x7406;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">10-&#x7BA1;&#x7406;</th>
+      <th style="text-align:left">
         <p>&#x5168;&#x5C4F;&#xFF1A;&#x5168;&#x5C4F;&#x5C55;&#x793A;&#x5F53;&#x524D;&#x770B;&#x677F;&#x3002;</p>
         <p>&#x4E0B;&#x8F7D;&#xFF1A;&#x5C06;&#x770B;&#x677F;&#x4E2D;&#x5F53;&#x524D;&#x7684;&#x5C55;&#x793A;&#x5F62;&#x5F0F;&#x4E0B;&#x8F7D;&#x4E3A;&#x56FE;&#x7247;&#x6216;&#x8005;PDF&#x6587;&#x4EF6;&#x3002;</p>
         <p>&#x5220;&#x9664;&#xFF1A;&#x5220;&#x9664;&#x5F53;&#x524D;&#x770B;&#x677F;&#x3002;</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>## 常见问题 <a id="3-chang-jian-wen-ti"></a>
-
-#### **1.为什么我 hover 到图表上时没有出现角标？** <a id="1-wei-shi-mo-wo-hover-dao-tu-biao-shang-shi-mei-you-chu-xian-jiao-biao"></a>
+  </thead>
+  <tbody></tbody>
+</table>### **1.为什么我 hover 到图表上时没有出现角标？** <a id="1-wei-shi-mo-wo-hover-dao-tu-biao-shang-shi-mei-you-chu-xian-jiao-biao"></a>
 
 因为您没有修改当前看板的权限。同样地，修改名称，添加和移除图表都收到编辑权限的控制。
 

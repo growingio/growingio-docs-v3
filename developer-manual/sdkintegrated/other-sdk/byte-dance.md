@@ -16,7 +16,7 @@
 
 {% tabs %}
 {% tab title="原生框架" %}
-#### 1. 下载 gio-bytedance-minp.js 文件
+### 1. 下载 gio-bytedance-minp.js 文件
 
 把文件放在字节跳动小程序项目里，比如 utils 目录下。
 
@@ -58,7 +58,7 @@ gio('setConfig', gioConfig);
 {% endtab %}
 
 {% tab title="Taro框架" %}
-#### 1.下载 gio-bytedance-minp.js 文件
+### 1.下载 gio-bytedance-minp.js 文件
 
 把文件放在字节跳动小程序项目里，比如 utils 目录下。
 
@@ -66,7 +66,7 @@ gio('setConfig', gioConfig);
 curl --compressed https://assets.giocdn.com/sdk/gio-bytedance-minp.js -o gio-bytedance-minp.js
 ```
 
-#### 2、添加跟踪代码
+### 2、添加跟踪代码
 
 方式一：
 
@@ -103,7 +103,7 @@ gio('setConfig', gioConfig);
 {% endtab %}
 
 {% tab title="mpvue框架/uni-app框架" %}
-#### 1.下载 gio-bytedance-minp.js 文件
+### 1.下载 gio-bytedance-minp.js 文件
 
 把文件放在字节跳动小程序项目里，比如 utils 目录下。
 
@@ -111,7 +111,7 @@ gio('setConfig', gioConfig);
 curl --compressed https://assets.giocdn.com/sdk/gio-bytedance-minp.esm.js -o gio-bytedance-minp.j
 ```
 
-#### 2、添加跟踪代码
+### 2、添加跟踪代码
 
 方式一：
 
@@ -178,7 +178,7 @@ gio("identify", userid);
 
 1. 登录字节跳动小程序后台，进入配置
 2. 打开开发设置，到服务器域名配置部分
-3. 在request合法域名中添加：https://wxapi.growingio.com
+3. 在request合法域名中添加：[https://wxapi.growingio.com](https://wxapi.growingio.com)
 
 ## 4. 字节跳动小程序 用户属性设置
 
@@ -186,7 +186,7 @@ gio("identify", userid);
 
 下面是专门针对用户的接口。
 
-#### 绑定字节跳动用户ID <a id="bang-ding-zi-jie-tiao-dong-yong-hu-id"></a>
+### 绑定字节跳动用户ID <a id="bang-ding-zi-jie-tiao-dong-yong-hu-id"></a>
 
 当用户在你的小程序上登陆获取到 openid 后，可以用过 identify 接口绑定字节跳动用户ID，后续在 GrowingIO 中获取更准确的字节跳动访问用户量。示例代码如下：
 
@@ -204,7 +204,7 @@ tt.request({
 })
 ```
 
-#### 设置字节跳动用户信息 <a id="she-zhi-zi-jie-tiao-dong-yong-hu-xin-xi"></a>
+### 设置字节跳动用户信息 <a id="she-zhi-zi-jie-tiao-dong-yong-hu-xin-xi"></a>
 
 当用户在你的小程序上绑定字节跳动信息后，可以通过 setVisitor 接口设置字节跳动用户信息，后续在 GrowingIO 中分析这个数据。示例代码如下：
 
@@ -225,23 +225,23 @@ QQ信息包含**QQ昵称**、**QQ头像**、**性别**、**QQ所填国家**、**
 \*注：用户画像中的部分数据，只有在设置字节跳动用户信息后，才可以统计。
 {% endhint %}
 
-#### 设置登录用户ID <a id="she-zhi-zhu-ce-yong-hu-id"></a>
+### 设置登录用户ID <a id="she-zhi-zhu-ce-yong-hu-id"></a>
 
 当用户在你的小程序上注册以后，你的产品应用服务端会在用户数据库里添加一条记录并且分配一个 ID，可以通过 setUserId 接口设置注册用户ID，后续在 GrowingIO 中分析登录用户这个数据。示例代码如下：
 
 ```javascript
-gio('setUserId', YOUR_USER_ID); 
+gio('setUserId', YOUR_USER_ID);
 ```
 
-#### 清除登录用户ID
+### 清除登录用户ID
 
 用户退出登录时，清除登录用户ID。
 
 ```javascript
-gio('clearUserId'); 
+gio('clearUserId');
 ```
 
-#### 设置登录用户属性 <a id="she-zhi-zhu-ce-yong-hu-xin-xi"></a>
+### 设置登录用户属性 <a id="she-zhi-zhu-ce-yong-hu-xin-xi"></a>
 
 当用户在你的小程序上传了注册用户ID后，可以通过 setUser 接口设置注册用户信息，后续在 GrowingIO 中分析这个数据。示例代码如下：
 
@@ -266,6 +266,4 @@ gio('setUserId', user.id); gio('setUser', { id: user.id, name: user.name });
 方式二：在SDK中设置了Debug模式后，在开发者工具中查看数据采集日志。
 
 方式三：[数据校验](../../../product-manual/datacenter/datacheck.md)
-
-
 

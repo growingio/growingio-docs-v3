@@ -49,17 +49,17 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LdcHnyydbwd8ffjF6xO-LdcHsS-7oBMfs2OLNZRimage.png)
 
-2. 在微信广告页面，新功能模块，选择 “小程序落地页”
+1. 在微信广告页面，新功能模块，选择 “小程序落地页”
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LdcHnyydbwd8ffjF6xO-LdcHu_9dCkuWf228_hXimage.png)
 
-3. 进入创意设置，选择 "常规广告" 样式或 “卡片广告” 样式；当选用 “卡片广告” 样式时，卡片类型选择 “基础式卡片” ，点击跳转选择 “微信小程序” ； 当选用 “常规广告” 样式时，文字链跳转选择 “微信小程序” 。
+1. 进入创意设置，选择 "常规广告" 样式或 “卡片广告” 样式；当选用 “卡片广告” 样式时，卡片类型选择 “基础式卡片” ，点击跳转选择 “微信小程序” ； 当选用 “常规广告” 样式时，文字链跳转选择 “微信小程序” 。
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LdcHnyydbwd8ffjF6xO-LdcHyxsUhxU0cxv8q-Rimage.png)
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LdcHnyydbwd8ffjF6xO-LdcI1ArXlAtcYMyml1Vimage.png)
 
-4. 绑定广告投放的小程序及具体页面
+1. 绑定广告投放的小程序及具体页面
 
 4.1 输入已关联公众号的小程序，或者小程序的原始ID （注：原始ID是以 “gh” 开头的，如果不知道原始ID，可以咨询小程序开发者）；
 
@@ -67,11 +67,11 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LdcHnyydbwd8ffjF6xO-LdcI4SzF8PBelO6-lQJimage.png)
 
-5. 完成小程序设置，点击下一步，进入预览
+1. 完成小程序设置，点击下一步，进入预览
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LdcHnyydbwd8ffjF6xO-LdcIHQrb0a285mRtce6image.png)
 
-6. 确认无误后，即可以提交审核了。
+1. 确认无误后，即可以提交审核了。
 
 ### **公众号广告**
 
@@ -94,7 +94,7 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LdcIswKtEOW6Kxz5PZ1-LdcIywj35DeHtmQNIKuimage.png)
 
-2. 在创意页面，绑定广告投放的小程序及具体页面
+1. 在创意页面，绑定广告投放的小程序及具体页面
 
 2.1 输入已关联公众号的小程序，或者小程序的原始ID （注：原始ID是以 “gh” 开头的，如果不知道原始ID，可以咨询小程序开发者）；
 
@@ -123,7 +123,7 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LdcIswKtEOW6Kxz5PZ1-LdcJ5Vk6BVraDTXZDCJimage.png)
 
-2. 在创意页面，绑定广告投放的小程序及具体页面
+1. 在创意页面，绑定广告投放的小程序及具体页面
 
 2.1 输入已关联公众号的小程序，或者小程序的原始ID （注：原始ID是以 “gh” 开头的，如果不知道原始ID，可以咨询小程序开发者）；
 

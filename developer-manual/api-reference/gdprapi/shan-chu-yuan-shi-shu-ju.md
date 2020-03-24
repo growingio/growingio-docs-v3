@@ -14,7 +14,6 @@
 
 {% code title="Java" %}
 ```java
-
 public String authToken(String projectKeyId, String secretKey, String keyArray) throws Exception {
     String message = "projectId="+projectKeyId+"&visitUserId="+keyArray;
     Mac hmac = Mac.getInstance("HmacSHA256");
@@ -29,15 +28,15 @@ public String authToken(String projectKeyId, String secretKey, String keyArray) 
 
 删除用户原始数据。
 
-#### URL
+### URL
 
-https://data.growingio.com/{ai}/deleteVisitor?auth={auth\_token}
+[https://data.growingio.com/{ai}/deleteVisitor?auth={auth\_token}](https://data.growingio.com/{ai}/deleteVisitor?auth={auth_token})
 
-#### 请求类型
+### 请求类型
 
 POST
 
-#### 参数说明
+### 参数说明
 
 {% tabs %}
 {% tab title="参数说明" %}
@@ -60,8 +59,6 @@ POST
 {% endtab %}
 
 {% tab title="body示例" %}
-
-
 ```text
 {
   "visitUserId":["abcdef","bcdefg",...]
@@ -69,6 +66,4 @@ POST
 ```
 {% endtab %}
 {% endtabs %}
-
-
 

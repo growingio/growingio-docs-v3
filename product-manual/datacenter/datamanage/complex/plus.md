@@ -21,11 +21,11 @@ description: 对产品内所有的合并事件进行统一的维护与管理。
 
 二. 在左侧导航栏选择“**自定义 &gt; 合并事件”**，进入合并事件管理页面。
 
-![](../../../../.gitbook/assets/image%20%2860%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2860%29.png)
 
 三. 单击合并事件管理界面左上角**创建合并事件**，弹出创建合并事件界面。
 
-![](../../../../.gitbook/assets/image%20%2880%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2880%29.png)
 
 {% hint style="info" %}
 **合并事件说明**
@@ -53,15 +53,15 @@ description: 对产品内所有的合并事件进行统一的维护与管理。
 
 **权限设置**：新创建的合并事件资源权限默认【所有人可见，不可编辑】，所有人都能够看到以及使用该事件，但只有该事件的创建者和项目的超级管理员拥有权限对该事件进行编辑。您可以在QuickView中的【其他信息】中更改合并事件的资源权限。
 
-**添加业务标签**：单击单条合并事件右侧业务标签列的 ![](../../../../.gitbook/assets/tian-jia-biao-qian.png) 添加业务标签。
+**添加业务标签**：单击单条合并事件右侧业务标签列的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/tian-jia-biao-qian.png) 添加业务标签。
 
-**列定制**：单击列表表头右侧的 ![](../../../../.gitbook/assets/lie-ding-zhi.png) 可选择列表展示项。
+**列定制**：单击列表表头右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/lie-ding-zhi.png) 可选择列表展示项。
 
-**编辑**：单击单条合并事件右侧的 ![](../../../../.gitbook/assets/dian-dian-dian.png) 选择编辑，可修改合并事件的定义条件、名称、描述等。
+**编辑**：单击单条合并事件右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/dian-dian-dian.png) 选择编辑，可修改合并事件的定义条件、名称、描述等。
 
-**删除**：单击单条合并事件右侧的 ![](../../../../.gitbook/assets/dian-dian-dian.png) 选择删除，可删除不需要的合并事件。
+**删除**：单击单条合并事件右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/dian-dian-dian.png) 选择删除，可删除不需要的合并事件。
 
-**收藏**：单击单条合并事件左侧的 ![](../../../../.gitbook/assets/shi-jian-shou-cang.png) 可收藏此合并事件，在其他情况进行快速选择。
+**收藏**：单击单条合并事件左侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/shi-jian-shou-cang.png) 可收藏此合并事件，在其他情况进行快速选择。
 
 **批量操作**：在列表中使用复选框选择多个合并事件，可以进行批量添加标签、创建时间分析、删除。
 

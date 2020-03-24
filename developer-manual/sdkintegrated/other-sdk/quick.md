@@ -6,7 +6,7 @@
 
 ## 1. 添加跟踪代码
 
-#### 1.下载 gio-quickapp.js 文件
+### 1.下载 gio-quickapp.js 文件
 
 把文件放在快应用应用项目里，比如 utils 目录下。
 
@@ -14,7 +14,7 @@
 curl --compressed https://assets.giocdn.com/sdk/gio-quickapp.js -o gio-quickapp.js
 ```
 
-#### 2、在根目录 app.ux文件的顶部添加跟踪代码
+### 2、在根目录 app.ux文件的顶部添加跟踪代码
 
 ```java
 var gio = require("utils/gio-quickapp").default;
@@ -68,7 +68,7 @@ export default trackPage({
 
 ## 4. 快应用 用户属性设置
 
-#### 绑定快应用用户ID <a id="bang-ding-kuai-ying-yong-yong-hu-id"></a>
+### 绑定快应用用户ID <a id="bang-ding-kuai-ying-yong-yong-hu-id"></a>
 
 当用户在你的应用上登陆获取到 用户唯一id 后，可以用过 identify 接口绑定快应用用户ID，后续在 GrowingIO 中获取更准确的快应用访问用户量。示例代码如下：
 
@@ -82,29 +82,29 @@ device.getUserId({
 })
 ```
 
-#### 设置快应用用户信息 <a id="she-zhi-zhu-ce-yong-hu-id"></a>
+### 设置快应用用户信息 <a id="she-zhi-zhu-ce-yong-hu-id"></a>
 
 ```java
 gio（'setVisitor', res.userInfo）;
 ```
 
-#### 设置登录用户ID <a id="she-zhi-zhu-ce-yong-hu-id"></a>
+### 设置登录用户ID <a id="she-zhi-zhu-ce-yong-hu-id"></a>
 
 当用户在你的快应用上注册以后，你的产品应用服务端会在用户数据库里添加一条记录并且分配一个 ID，可以通过 setUserId 接口设置注册用户ID，后续在 GrowingIO 中分析登录用户这个数据。示例代码如下：
 
 ```java
-gio('setUserId', YOUR_USER_ID); 
+gio('setUserId', YOUR_USER_ID);
 ```
 
-#### 清除登录用户ID
+### 清除登录用户ID
 
 用户退出登录时，清除登录用户ID。
 
 ```java
-gio('clearUserId'); 
+gio('clearUserId');
 ```
 
-#### 设置登录用户属性 <a id="she-zhi-zhu-ce-yong-hu-xin-xi"></a>
+### 设置登录用户属性 <a id="she-zhi-zhu-ce-yong-hu-xin-xi"></a>
 
 当用户在你的快应用上传了注册用户ID后，可以通过 setUser 接口设置注册用户信息，后续在 GrowingIO 中分析这个数据。示例代码如下：
 
@@ -129,6 +129,4 @@ gio('setUser', { id: user.id, name: user.name });
 方式二：在SDK中设置了Debug模式后，在开发者工具中查看数据采集日志。
 
 方式三：[数据校验](../../../product-manual/datacenter/datacheck.md)
-
-##  
 

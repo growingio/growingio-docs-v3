@@ -44,7 +44,7 @@ GrowingIO 提供的是数据分析的产品，方法论和最佳实践，不做�
 初始化配置中关闭数据采集：
 
 ```text
-disableDataCollect() 
+disableDataCollect()
 ```
 
 关闭或开启全局数据采集：
@@ -59,7 +59,7 @@ GrowingIO.getInstance().enableDataCollect();
 获取访问用户ID：
 
 ```text
-GrowingIO.getInstance().getVisitUserId(); 
+GrowingIO.getInstance().getVisitUserId();
 ```
 
 样例：
@@ -74,7 +74,7 @@ GrowingIO.getInstance().disableDataCollect();
 // 采集数据 
 GrowingIO.getInstance().enableDataCollect(); 
 // 获取访问用户ID 
-GrowingIO.getInstance().getVisitUserId(); 
+GrowingIO.getInstance().getVisitUserId();
 ```
 {% endtab %}
 
@@ -87,13 +87,13 @@ GrowingIO.getInstance().getVisitUserId();
 // 停止采集数据
 disableDataCollect  
 // 开始采集数据 
-enableDataCollect 
+enableDataCollect
 ```
 
 获取访问用户ID：
 
 ```text
-getVisitUserId 
+getVisitUserId
 ```
 
 样例：
@@ -104,7 +104,7 @@ getVisitUserId
 // 开始采集数据 （默认）
 [Growing enableDataCollect]; 
 // 获取设备ID 
-NSString *viId = [Growing getVisitUserId]; 
+NSString *viId = [Growing getVisitUserId];
 ```
 {% endtab %}
 
@@ -117,7 +117,7 @@ NSString *viId = [Growing getVisitUserId];
 // 停止采集数据，全局配置, 可以放到send之后
 window.gio('config',{"dataCollect": true}); 
 // 采集数据 (默认)，全局配置, 可以放到send之后
-window.gio('config',{"dataCollect": false}); 
+window.gio('config',{"dataCollect": false});
 ```
 
 获取访问用ID：

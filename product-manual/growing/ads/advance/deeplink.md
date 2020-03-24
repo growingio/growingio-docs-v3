@@ -2,8 +2,7 @@
 
 深度链接（DeepLink）是通过链接启动应用的方法。更详细地说是通过映射预定义行为到唯一的链接上，让用户通过点击链接无缝跳转到特定的内容页面。
 
-对于支持深度链接功能的移动应用，用户可以在其他处点击应用提供的深度打开应用，也可跳转到应用内指定页面，如首页、产品详情页面等。  
-
+对于支持深度链接功能的移动应用，用户可以在其他处点击应用提供的深度打开应用，也可跳转到应用内指定页面，如首页、产品详情页面等。
 
 ## 1 进入深度链接配置模块
 
@@ -11,7 +10,7 @@
 
 二. 在左侧导航栏选择“**高级设置 &gt; 深度链接配置”**，进入深度链接配置页面。
 
-![](../../../../.gitbook/assets/image%20%286%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%286%29.png)
 
 ## 2 iOS 应用配置
 
@@ -39,11 +38,11 @@ Universal Links 适用于 iOS 9 及以上的版本，当用户设备系统版本
 
 1、在您的 Xcode 中勾选 **Associated Domains** 功能。
 
-![](../../../../.gitbook/assets/image%20%2892%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2892%29.png)
 
-2. 添加 GrowingIO域名到 Xcode。
+1. 添加 GrowingIO域名到 Xcode。
 
-![](../../../../.gitbook/assets/image%20%2814%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2814%29.png)
 
 {% hint style="info" %}
 GrowingIO的域名：
@@ -53,9 +52,9 @@ GrowingIO的域名：
 `applinks:datayi.cn`
 {% endhint %}
 
-3. 在苹果开发者网站中找到 Team ID 与 Bundle ID，如下图。
+1. 在苹果开发者网站中找到 Team ID 与 Bundle ID，如下图。
 
-![](../../../../.gitbook/assets/image%20%28206%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28206%29.png)
 
 #### **2.2.2 将 Team ID 配置到 GrowingIO 后台。**
 
@@ -69,11 +68,7 @@ GrowingIO的域名：
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtP41qSBliAk88VA3Xe-LtPKKsn2R69VKrS_DHfimage.png)
 
-![](../../../../.gitbook/assets/image%20%28125%29.png)
-
-
-
-
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28125%29.png)
 
 ## 3 Android 应用配置
 
@@ -101,22 +96,20 @@ App Links 适用于 Android 6.0 及以上的版本，当用户设备系统版本
 
 1.使用命令行进入你的证书目录，一般签名分为 debug keystore 和 release keystore ，开发期间建议先配置为 debug keystore ，上线前一定要更新为 release keystore 。如果担心忘记，建议新建应用。
 
-2.  执行以下命令 ：
+1. 执行以下命令 ：
 
 ```text
 keytool -list -v -keystore my-release-key.keystore
 ```
 
-3. 执行后你将看到类似下面这样的结果，请复制下来并填写进 GrowingIO 对应的应用配置中。
+1. 执行后你将看到类似下面这样的结果，请复制下来并填写进 GrowingIO 对应的应用配置中。
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtPeya7y9j-Tf-SYwGB-LtPfGzEMvdZaL6PZwtk-LGNxeGABUADKiTWTaEM-Lqj1ayCSvZ98vlMMoj_-LqjDzowsF3cf7B2QR5gimage.png)
 
 #### **3.2.2 在 Manifest.xml 中配置 Intent Filter**
 
 1. 点击「复制代码片段」
-
 2. 进入您的安卓应用源码中的 manifest.xml 文件中，找到您的主页面，建议复制在主页，即为 Launcher Activity 中。
-
 3. 复制完成后，您的 manifest.xml 文件将**类似**这样：
 
 ```markup
@@ -129,7 +122,7 @@ keytool -list -v -keystore my-release-key.keystore
 ​
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            
+
             <!-- GIO 集成配置，使用圈选和 Debugger 等功能用作唤醒 APP-->
             <intent-filter>
                 <data android:scheme="growing.xxxxxxxxxxxxxx" />
@@ -139,7 +132,7 @@ keytool -list -v -keystore my-release-key.keystore
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
-            
+
             <!-- GIO APPLinks 配置，广告监测用途，APP 用户点击广告监测短链直接跳转 APP-->
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
@@ -182,17 +175,16 @@ keytool -list -v -keystore my-release-key.keystore
 * **Android 集成步骤中添加的 growing.xxxxxx 的 Intent Filter 不能与此处合并，请将两个 Intent Filter  分开写在 Launcher Activity 下。**
 {% endhint %}
 
-**3.2.3 验证您的 App Links** 
+**3.2.3 验证您的 App Links**
 
 1. 完成上述配置后，安装在手机上
-
 2. 执行以下命令：
 
 ```text
 adb shell dumpsys package d
 ```
 
-3. 上述命令执行后的结果中，查找您应用的包名，当 Domains 已经出现 datayi.cn/ gio.ren 说明您的 Intent Filter 配置正确，示例如下：
+1. 上述命令执行后的结果中，查找您应用的包名，当 Domains 已经出现 datayi.cn/ gio.ren 说明您的 Intent Filter 配置正确，示例如下：
 
 ```text
   Package: com.growingio.android.test    
@@ -220,7 +212,7 @@ domains 为 manifest.xml 文件中配置 Intent filter 中的 host ，GIO 可能
 
 对于 Status 状态的说明：
 
-| Status 状态          | 描述 |
+| Status 状态 | 描述 |
 | :--- | :--- |
 | ask | Applink校验失败, 每次打开连接跳转时会弹出一个对话框， 提示选择打开短链的App |
 | always | 校验成功，理想状态 |
@@ -232,7 +224,7 @@ domains 为 manifest.xml 文件中配置 Intent filter 中的 host ，GIO 可能
 
 **1.多数客户可能会在验证环节得到的 Status 为 ask，这是为什么呢？**
 
-App ****Links 的合法性是由系统校验，不同的手机系统使用不同的校验组件，即使是一个厂商的不同型号手机都可能使用不同的校验组件。
+App _\*\*_Links 的合法性是由系统校验，不同的手机系统使用不同的校验组件，即使是一个厂商的不同型号手机都可能使用不同的校验组件。
 
 如果系统使用 com.android.statementservice 进行 AppLinks 的校验，在网络正常的情况下基本都能顺利通过， 如果系统使用 com.google.android.gms 组件校验，在手机能够科学上网的情况，也就是能够正常访问 Google 时，校验才能通过。常见华为 mate 系列，P 系列使用的都是 gms，也就是 Status 会为 ask。
 
@@ -255,7 +247,7 @@ Status 状态为 ask 不代表唤起流程有问题，当用户操作允许后�
 
 在上文中，建议各位开发者将 GIO Intent Filter 代码块配置在 Launcher Activity 下，在用户点击短链后打开 App ，系统将自动跳转到 Launcher Activity ，此时 GIO DeepLink Callback 则会返回您在 GIO 官网广告监测中配置的自定义参数，此时您需要接收您的自定义参数，跳转到指定页面。
 
-详见 [Android DeepLink CallBack 接收参数](../../../../developer-manual/sdkintegrated/android-sdk/auto-android-sdk.md#16-deep-link-hui-tiao-can-shu-huo-qu)文档。 
+详见 [Android DeepLink CallBack 接收参数](../../../../developer-manual/sdkintegrated/android-sdk/auto-android-sdk.md#16-deep-link-hui-tiao-can-shu-huo-qu)文档。
 
 ### 3.3 配置应用宝微下载
 
@@ -271,7 +263,7 @@ GrowingIO 提供跳转到应用宝微下载的功能，应用宝微下载为腾�
 
 ## 4 引导中间页配置
 
-![](../../../../.gitbook/assets/image%20%2872%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2872%29.png)
 
 当您认为 GrowingIO 提供的默认下载引导页风格无法满足您的需求时，您可以对 DeepLink 中的下载引导页面进行定制，使其更符合您产品的风格，其中将提供两种方式对下载页面进行定制，简易布局和自由布局。
 
@@ -282,6 +274,4 @@ GrowingIO 提供跳转到应用宝微下载的功能，应用宝微下载为腾�
 **自由布局**
 
 在此布局中，页面将只保留必要的操作按钮在页面底部，其余空间全部开放，您可以通过对背景图的自由设计，来实现任何您想要的关键元素或页面风格设计。
-
-
 

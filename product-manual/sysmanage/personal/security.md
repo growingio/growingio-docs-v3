@@ -4,13 +4,13 @@
 
 登录GrowingIO，单击界面右上角的用户头像选择**个人信息**，进入个人信息设置页面。
 
-![](../../../.gitbook/assets/image%20%2886%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2886%29.png)
 
-### 修改登录密码
+## 修改登录密码
 
 单击密码右侧的修改，输入原密码及新密码完成密码修改。
 
-### 开启二次验证
+## 开启二次验证
 
 二次验证是GrowingIO 为了保护企业账号的安全，在用户输入密码登录GrowingIO 后，仍需通过身份验证器、或者一次性备用验证码等对用户进行的第二次身份校验，只有通过第二次身份校验才能继续进行GrowingIO产品的操作。
 

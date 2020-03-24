@@ -10,11 +10,11 @@ description: 在GrowingIO平台上对无埋点事件进行可视化及管理。
 
 ## 创建无埋点事件 <a id="1-jian-jie"></a>
 
-#### 前提条件
+### 前提条件
 
 已完成无埋点SDK的集成。
 
-#### 操作步骤
+### 操作步骤
 
 创建无埋点事件即无埋点事件定义（圈选），请参考[无埋点事件定义（圈选）](../../circle/)。
 
@@ -34,15 +34,15 @@ description: 在GrowingIO平台上对无埋点事件进行可视化及管理。
 
 **权限设置**：新创建的无埋点事件资源权限默认【所有人可见，不可编辑】，所有人都能够看到以及使用该事件，但只有该事件的创建者和项目的超级管理员拥有权限对该事件进行编辑。您可以在QuickView中的【其他信息】中更改无埋点事件的资源权限。
 
-**添加业务标签**：单击单条无埋点事件右侧业务标签列的 ![](../../../../.gitbook/assets/tian-jia-biao-qian.png) 添加业务标签。
+**添加业务标签**：单击单条无埋点事件右侧业务标签列的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/tian-jia-biao-qian.png) 添加业务标签。
 
-**列定制**：单击列表表头右侧的 ![](../../../../.gitbook/assets/lie-ding-zhi.png) 可选择列表展示项。
+**列定制**：单击列表表头右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/lie-ding-zhi.png) 可选择列表展示项。
 
-**删除**：单击单条无埋点事件右侧的 ![](../../../../.gitbook/assets/dian-dian-dian.png) 选择删除，可删除不需要的无埋点事件。
+**删除**：单击单条无埋点事件右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/dian-dian-dian.png) 选择删除，可删除不需要的无埋点事件。
 
-**收藏**：单击单条无埋点事件左侧的 ![](../../../../.gitbook/assets/shi-jian-shou-cang.png) 可收藏此无埋点事件，在其他情况进行快速选择。
+**收藏**：单击单条无埋点事件左侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/shi-jian-shou-cang.png) 可收藏此无埋点事件，在其他情况进行快速选择。
 
-**导出**：单击列表右上方的 ![](../../../../.gitbook/assets/xia-zai.png) 可将无埋点事件列表以.xlsx形式下载到本地。
+**导出**：单击列表右上方的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/xia-zai.png) 可将无埋点事件列表以.xlsx形式下载到本地。
 
 **批量操作**：在列表中使用复选框选择多个无埋点事件，可以进行批量添加标签、创建时间分析、删除。
 

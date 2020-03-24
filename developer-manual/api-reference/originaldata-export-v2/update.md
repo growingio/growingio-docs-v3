@@ -61,7 +61,7 @@ https://www.growingio.com/insights/{ai}/{date}.json
 {% endtab %}
 
 {% tab title="数据文件导出形式" %}
- 2.0 提供的事件类型：
+2.0 提供的事件类型：
 
 visit、page、action、action\_tag、custom\_event（原custom\_attr）、ads\_track\_click、ads\_track\_activation、pvar（新增）、evar（新增）、vstr（新增）一共10种类型的事件
 
@@ -74,8 +74,4 @@ visit、page、action、action\_tag、custom\_attr、ads\_track\_click、ads\_tr
 数据格式变化请参考各个版本的字段说明章节。
 {% endtab %}
 {% endtabs %}
-
-
-
-
 

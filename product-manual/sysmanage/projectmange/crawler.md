@@ -6,23 +6,21 @@
 
 ## 开启预定义爬虫规则
 
-在界面右上角单击 ![](../../../.gitbook/assets/2019-10-10_18-59-32%20%281%29.png) 选择项目配置，打开项目配置界面。选择**爬虫规则**页签。
+在界面右上角单击 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/2019-10-10_18-59-32%20%281%29.png) 选择项目配置，打开项目配置界面。选择**爬虫规则**页签。
 
 打开开关。
 
-![](../../../.gitbook/assets/image%20%28180%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28180%29.png)
 
 单击开关右侧的**查看预定义爬虫规则详情**，查看系统预定义的爬虫规则。
 
-![](../../../.gitbook/assets/image%20%2842%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2842%29.png)
 
 ## 对数据分析的影响
 
-
-
 GrowingIO 爬虫规则会过滤事件分析、漏斗分析、分群、细查等数据分析工具中的数据。
 
-![](../../../.gitbook/assets/pa-chong-gui-ze-sheng-xiao-tu.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/pa-chong-gui-ze-sheng-xiao-tu.png)
 
 {% hint style="info" %}
 **出于性能等方面的考虑，目前爬虫规则并没有过回溯功能中的数据。**

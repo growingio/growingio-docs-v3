@@ -16,7 +16,7 @@
 // 停止采集数据，全局配置, 请在调用gio('send')之前调用
 window.gio('config',{"dataCollect": true}); 
 // 采集数据 (默认)，全局配置, 请在调用gio('send')之前调用
-window.gio('config',{"dataCollect": false}); 
+window.gio('config',{"dataCollect": false});
 ```
 
 获取访问用ID：
@@ -33,7 +33,7 @@ window.gio('config',{"dataCollect": true});
 // 采集数据 (默认)
 window.gio('config',{"dataCollect": false}); 
 // 获取访问用户ID 
-window.gio('getVisitUserId'); 
+window.gio('getVisitUserId');
 ```
 {% endtab %}
 
@@ -41,7 +41,7 @@ window.gio('getVisitUserId');
 初始化配置项中关闭数据采集：
 
 ```text
-disableDataCollect() 
+disableDataCollect()
 ```
 
 关闭或开启全局数据采集：
@@ -56,7 +56,7 @@ GrowingIO.getInstance().enableDataCollect();
 获取访问用户ID：
 
 ```text
-GrowingIO.getInstance().getVisitUserId(); 
+GrowingIO.getInstance().getVisitUserId();
 ```
 
 样例：
@@ -71,7 +71,7 @@ GrowingIO.getInstance().disableDataCollect();
 // 采集数据 
 GrowingIO.getInstance().enableDataCollect(); 
 // 获取访问用户ID 
-GrowingIO.getInstance().getVisitUserId(); 
+GrowingIO.getInstance().getVisitUserId();
 ```
 {% endtab %}
 
@@ -84,13 +84,13 @@ GrowingIO.getInstance().getVisitUserId();
 // 停止采集数据 
 disableDataCollect 
 // 开始采集数据 
-enableDataCollect 
+enableDataCollect
 ```
 
 获取访问用户ID：
 
 ```text
-getVisitUserId 
+getVisitUserId
 ```
 
 样例：
@@ -101,7 +101,7 @@ getVisitUserId
 // 采集数据 （默认）
 [Growing enableDataCollect]; 
 // 获取设备ID 
-NSString *viId = [Growing getVisitUserId]; 
+NSString *viId = [Growing getVisitUserId];
 ```
 {% endtab %}
 

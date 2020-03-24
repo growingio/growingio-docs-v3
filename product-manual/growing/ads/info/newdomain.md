@@ -4,25 +4,25 @@ GrowingIO 的 DeepLink 产品目前已经支持系统原生方案，如您需要
 
 请先确认您的 DeepLink 服务的配置情况，如果您从未对 GrowingIO 的提供的 DeepLink 做过配置，请先在产品中以及 SDK 中完成基本配置，再进行 datayi.cn 域名的启用。
 
-### 一、DeepLink 基础配置 <a id="yi-deeplink-ji-chu-pei-zhi"></a>
+## 一、DeepLink 基础配置 <a id="yi-deeplink-ji-chu-pei-zhi"></a>
 
-#### 1.1 SDK 配置 <a id="11-sdk-pei-zhi"></a>
+### 1.1 SDK 配置 <a id="11-sdk-pei-zhi"></a>
 
 SDK 端配置：[iOS 端](../../../../developer-manual/sdkintegrated/ios-sdk/auto-ios-sdk.md#7-deeplink-and-universal-link)、[Android 端​](../../../../developer-manual/sdkintegrated/android-sdk/auto-android-sdk.md#15-deep-link-hui-tiao-can-shu-huo-qu)
 
-#### 1.2 GrowingIO 产品配置 <a id="12-growingio-chan-pin-pei-zhi"></a>
+### 1.2 GrowingIO 产品配置 <a id="12-growingio-chan-pin-pei-zhi"></a>
 
 Universal Links 配置：[配置方法​](../advance/deeplink.md#universal-links-pei-zhi)
 
 App Links 配置：[配置方法](../advance/deeplink.md#applinks-pei-zhi)
 
-### 二、添加新域名支持 <a id="er-tian-jia-xin-yu-ming-zhi-chi"></a>
+## 二、添加新域名支持 <a id="er-tian-jia-xin-yu-ming-zhi-chi"></a>
 
-#### 2.1 SDK 版本升级 <a id="21-sdk-ban-ben-sheng-ji"></a>
+### 2.1 SDK 版本升级 <a id="21-sdk-ban-ben-sheng-ji"></a>
 
 确认您的 SDK 版本已经集成至 2.8.5 或更高版本。
 
-#### 2.2 在 SDK 中添加对应支持项 <a id="22-zai-sdk-zhong-tian-jia-dui-ying-zhi-chi-xiang"></a>
+### 2.2 在 SDK 中添加对应支持项 <a id="22-zai-sdk-zhong-tian-jia-dui-ying-zhi-chi-xiang"></a>
 
 如果您是首次使用 GrowingIO DeepLink 的新用户，请按照上方 DeepLink 基础配置完成所有配置即可，最新文档中已包含新域名支持，无需再额外操作，可跳过该环节。
 
@@ -61,7 +61,7 @@ Domains: datayi.cn gio.ren
 Status: always
 ```
 
-### 三、使用新域名创建 DeepLink <a id="san-shi-yong-xin-yu-ming-chuang-jian-deeplink"></a>
+## 三、使用新域名创建 DeepLink <a id="san-shi-yong-xin-yu-ming-chuang-jian-deeplink"></a>
 
 如果您的应用之前创建过 DeepLink 类型链接，DeepLink 创建流程中会出现该提示，如果提示中的应用已经完成了开启新域名所需的配置工作，请选择【已完成】，后续将会使用新域名创建链接。
 

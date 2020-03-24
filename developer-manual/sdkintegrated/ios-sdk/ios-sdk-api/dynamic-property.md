@@ -4,7 +4,7 @@
 SDK版本要求：iOS 无埋点SDK &gt;=2.x
 {% endhint %}
 
-### 1. UIView 增加属性
+## 1. UIView 增加属性
 
 ```java
 // 手动标识该view不要追踪
@@ -23,16 +23,16 @@ SDK版本要求：iOS 无埋点SDK &gt;=2.x
 @property (nonatomic, strong)  NSArray<NSString *> *growingSDCycleBannerIds;
 ​
  // 手动标识该view的附加属性  该值可被子节点继承
-@property (nonatomic, copy)   NSString* growingAttributesInfo; 
+@property (nonatomic, copy)   NSString* growingAttributesInfo;
 ```
 
-### 2. UIViewController 增加属性
+## 2. UIViewController 增加属性
 
 ```java
 // 手动标识该vc的附加属性  该值可被子节点继承
 @property (nonatomic, copy)   NSString* growingAttributesInfo; 
 ​
 // 手动标识该页面的标题，必须在该UIViewController显示之前设置
-@property (nonatomic, copy)   NSString* growingAttributesPageName; 
+@property (nonatomic, copy)   NSString* growingAttributesPageName;
 ```
 

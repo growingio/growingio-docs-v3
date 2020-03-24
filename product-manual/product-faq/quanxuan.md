@@ -132,7 +132,7 @@ Content-Security-Policy: frame-ancestors 'self' http://www.growingio.com https:/
 
 说明这个页面中加载的JS代码中的项目ID与当前圈选所在项目的ID不一致，您需要现在GrowingIO平台将项目切换至集成此应用的项目下再进行圈选。
 
-![](../../.gitbook/assets/image%20%2820%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2820%29.png)
 
 ## 移动端圈选 <a id="yi-dong-duan-quan-xuan"></a>
 
@@ -174,11 +174,11 @@ URL Scheme 填写错误， 请检查您的 manifest.xml 文件中 Url Scheme 是
 
 （2）请找开发确认以下事项：
 
- i. 是否将`<intent-filter/>` 代码块配置在了 “闪屏页面”，并且在短时间内`finish`了这个 Activity ？
+i. 是否将`<intent-filter/>` 代码块配置在了 “闪屏页面”，并且在短时间内`finish`了这个 Activity ？
 
 解答： 请将闪屏页面停留时间稍微延长，Gio 会在唤醒页面中检测是否登录了圈选，这时被 finish 将无法正常唤醒圈选。或者如果您不需要圈选闪屏页面， 请将`<intent-filter/>` 代码块放在主页的 `Activity` 中。
 
- ii. 是否在配置 `<intent-filter/>` 代码块中的 Activity 中使用了 `getIntent` 呢？
+ii. 是否在配置 `<intent-filter/>` 代码块中的 Activity 中使用了 `getIntent` 呢？
 
 解答： 请在您的逻辑中过滤掉 Gio 的 Intent ，我们的 Intent 大致格式是这样：
 

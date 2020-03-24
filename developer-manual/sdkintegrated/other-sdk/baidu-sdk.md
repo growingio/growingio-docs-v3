@@ -57,7 +57,7 @@ gio('setConfig', gioConfig);
 {% endtab %}
 
 {% tab title="Taro" %}
-### 1. 下载 gio-baidup.js 
+### 1. 下载 gio-baidup.js
 
 文件把文件放在百度小程序项目里，比如 utils 目录下。
 
@@ -196,8 +196,6 @@ gio('setConfig', gioConfig);
 建议每次发布小程序新版本的时候，更新一下版本号 version，可以在 GrowingIO 分析不同版本的数据。除了 version 之外，还有以下额外参数可以使用。
 {% endhint %}
 
-
-
 | 参数 | 值 | 解释 |
 | :--- | :--- | :--- |
 | forceLogin | true \| false | 您的小程序是否强制要求用户登陆百度获取 swanid，默认 false |
@@ -220,12 +218,11 @@ gio("identify", swanid);
 
 1. 登陆百度小程序后台，进入配置
 2. 打开开发设置，到服务器域名配置部分
-3. 在request合法域名中添加：https://wxapi.growingio.com
+3. 在request合法域名中添加：[https://wxapi.growingio.com](https://wxapi.growingio.com)
 
 ## 4. 添加分享参数
 
-转发分享小程序是小程序获客的重要场景，想要详细的进行转发分享的统计，需要在SDK参数中，设置如下参数，值为true  
-
+转发分享小程序是小程序获客的重要场景，想要详细的进行转发分享的统计，需要在SDK参数中，设置如下参数，值为true
 
 | 参数 | 值 | 解释 |
 | :--- | :--- | :--- |
@@ -280,7 +277,7 @@ gio('setUserId', YOUR_USER_ID);
 用户退出登录时，清除登录用户ID。
 
 ```javascript
-gio('clearUserId'); 
+gio('clearUserId');
 ```
 
 #### 设置登录用户属性

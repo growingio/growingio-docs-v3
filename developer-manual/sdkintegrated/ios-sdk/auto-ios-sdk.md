@@ -68,13 +68,13 @@ GrowingIO iOS SDK 包含以下2个组件SDK:
 
 添加编译参数，并注意大小写。
 
-![](../../../.gitbook/assets/image%20%2897%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2897%29.png)
 
 ### 2. 添加 URL Scheme
 
 添加URL Scheme 到项目中，以便唤醒您的程序进行圈选。
 
-![](../../../.gitbook/assets/image%20%2885%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2885%29.png)
 
 ### 3. 初始化配置
 
@@ -97,7 +97,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 请确保将代码添加在上述位置，添加到其他方法或异步block中可能导致数据不准确。
 {% endhint %}
 
-### 4.添加激活圈选的代码 
+### 4.添加激活圈选的代码
 
 > 在 AppDelegate 中添加激活圈选的代码
 
@@ -241,8 +241,8 @@ SDK会自动采集H5页面的数据，不需要特殊配置。
 {% hint style="info" %}
 SDK 2.8.6及以上版本支持手动关闭采集GPS数据。
 
-`//设置为NO，将关闭GPS采集     
- +(void)setEnableLocationTrack:(BOOL)enable;`
+`//设置为NO，将关闭GPS采集    
++(void)setEnableLocationTrack:(BOOL)enable;`
 {% endhint %}
 
 ### 8. 启用Hashtag识别
@@ -265,14 +265,14 @@ GrowingIO SDK 针对欧盟区的一般数据保护法（GDPR）提供了以下�
 ```text
 // 开启GDPR，不采集数据
 [Growing disableDataCollect];
- 
+
 // 关闭GDPR，采集数据
 [Growing enableDataCollect];
 ```
 
 ### 10. DeepLink & Universal Link
 
-| DeepLink功能  | SDK版本 |
+| DeepLink功能 | SDK版本 |
 | :--- | :--- |
 | 基础DeepLink功能（Scheme打开App至首页） | &gt;=2.3.0 |
 | 直达落地页（Scheme打开至活动页） | &gt;=2.3.2 |
@@ -319,11 +319,11 @@ GrowingIO SDK 针对欧盟区的一般数据保护法（GDPR）提供了以下�
 ```java
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler{
     [Growing handleUrl:userActivity.webpageURL];
-	return YES;
+    return YES;
 }
 ```
 
-3. 添加Universal Link参数解析回调方法，此方法与DeepLink方法一致。
+1. 添加Universal Link参数解析回调方法，此方法与DeepLink方法一致。
 
 ### 11. App Store提交应用注意事项
 
@@ -335,7 +335,7 @@ GrowingIO SDK 针对欧盟区的一般数据保护法（GDPR）提供了以下�
 
 > **为什么 GrowingIO 使用 IDFA?**
 >
->  GrowingIO 使用 IDFA 来做来源管理激活设备的精确匹配，让你更好的衡量广告效果。如您不希望启用IDFA，可以选择不引入 AdSupport.framework
+> GrowingIO 使用 IDFA 来做来源管理激活设备的精确匹配，让你更好的衡量广告效果。如您不希望启用IDFA，可以选择不引入 AdSupport.framework
 
 ### 12. 采集推送
 
@@ -373,7 +373,7 @@ iOS SDK 不支持通知展现的事件采集，但是 Android SDK 支持。
 * 浏览事件关联自定义事件和变量，减少研发埋点工作量
 {% endhint %}
 
-## 3.自定义数据上传 
+## 3.自定义数据上传
 
 除上述的用户行为数据（无埋点数据）之外，GrowingIO 还提供了多种 API 接口，供您上传一些自定义的数据指标及维度 ，请参考iOS SDK API &gt; [自定义数据上传API](ios-sdk-api/customize-api.md) 。
 
@@ -383,7 +383,7 @@ iOS SDK 不支持通知展现的事件采集，但是 Android SDK 支持。
 **添加代码之后，请先Clean项目，然后再进行编译，并在你的 iOS App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
 {% endhint %}
 
- 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
+在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
 
 ## 5. 验证SDK是否正常采集数据
 

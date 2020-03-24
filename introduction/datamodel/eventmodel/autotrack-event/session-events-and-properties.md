@@ -27,10 +27,7 @@ GrowingIO 从 SDK 生成和发送的访问事件中提取了很多信息，我�
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">
-        <p></p>
-        <p>&#x7528;&#x6237;&#x8BBE;&#x5907;&#x4FE1;&#x606F;</p>
-      </td>
+      <td style="text-align:left">&#x7528;&#x6237;&#x8BBE;&#x5907;&#x4FE1;&#x606F;</td>
       <td style="text-align:left">
         <ul>
           <li>&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x53CA;&#x7248;&#x672C;</li>
@@ -46,10 +43,7 @@ GrowingIO 从 SDK 生成和发送的访问事件中提取了很多信息，我�
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p></p>
-        <p>&#x7528;&#x6237;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;</p>
-      </td>
+      <td style="text-align:left">&#x7528;&#x6237;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;</td>
       <td style="text-align:left">
         <ul>
           <li>&#x56FD;&#x5BB6;&#x3001;&#x5730;&#x533A;&#x3001;&#x57CE;&#x5E02;&#x540D;&#x79F0;</li>

@@ -10,19 +10,19 @@ SDK安卓大于等于 0.9.96，iOS 大于等于 0.9.37 为新版。新版 与旧
 
 ## 2.开始圈选 <a id="2-kai-shi-quan-xuan"></a>
 
-#### **2.1 登录状态下进入圈选，选择嵌有SDK的目标应用（安卓/iOS）， 开始圈选。** <a id="21-deng-lu-zhuang-tai-xia-jin-ru-quan-xuan-xuan-ze-qian-you-sdk-de-mu-biao-ying-yong-an-zhuo-ios-kai-shi-quan-xuan"></a>
+### **2.1 登录状态下进入圈选，选择嵌有SDK的目标应用（安卓/iOS）， 开始圈选。** <a id="21-deng-lu-zhuang-tai-xia-jin-ru-quan-xuan-xuan-ze-qian-you-sdk-de-mu-biao-ying-yong-an-zhuo-ios-kai-shi-quan-xuan"></a>
 
 ![](https://docs.growingio.com/.gitbook/assets/quan-xuan-1.png)
 
-#### **2.2 手机扫码（确保安装了嵌有SDK的目标应用）， 微信扫码需要在浏览器中打开，浏览器扫码后打开以下页面，点击在手机上圈选可直接唤起应用。** <a id="22-shou-ji-sao-ma-que-bao-an-zhuang-le-qian-you-sdk-de-mu-biao-ying-yong-wei-xin-sao-ma-xu-yao-zai-liu-lan-qi-zhong-da-kai-liu-lan-qi-sao-ma-hou-da-kai-yi-xia-ye-mian-dian-ji-zai-shou-ji-shang-quan-xuan-ke-zhi-jie-huan-qi-ying-yong"></a>
+### **2.2 手机扫码（确保安装了嵌有SDK的目标应用）， 微信扫码需要在浏览器中打开，浏览器扫码后打开以下页面，点击在手机上圈选可直接唤起应用。** <a id="22-shou-ji-sao-ma-que-bao-an-zhuang-le-qian-you-sdk-de-mu-biao-ying-yong-wei-xin-sao-ma-xu-yao-zai-liu-lan-qi-zhong-da-kai-liu-lan-qi-sao-ma-hou-da-kai-yi-xia-ye-mian-dian-ji-zai-shou-ji-shang-quan-xuan-ke-zhi-jie-huan-qi-ying-yong"></a>
 
 ![](https://docs.growingio.com/.gitbook/assets/app-quan-app-qi-dong-jie-mian-1.png)
 
-#### **2.3 初始界面 ：启动圈选后，会看到如下界面，将红点拖动到任一界面元素， 松开即对该元素进行圈选。** <a id="23-chu-shi-jie-mian-qi-dong-quan-xuan-hou-hui-kan-dao-ru-xia-jie-mian-jiang-hong-dian-tuo-dong-dao-ren-yi-jie-mian-yuan-su-song-kai-ji-dui-gai-yuan-su-jin-hang-quan-xuan"></a>
+### **2.3 初始界面 ：启动圈选后，会看到如下界面，将红点拖动到任一界面元素， 松开即对该元素进行圈选。** <a id="23-chu-shi-jie-mian-qi-dong-quan-xuan-hou-hui-kan-dao-ru-xia-jie-mian-jiang-hong-dian-tuo-dong-dao-ren-yi-jie-mian-yuan-su-song-kai-ji-dui-gai-yuan-su-jin-hang-quan-xuan"></a>
 
 ![](https://docs.growingio.com/.gitbook/assets/yi-dong-xin-quan-xuan-di-yi-bu.png)
 
-#### **2.4 把页面定义为指标** <a id="24-ba-ye-mian-ding-yi-wei-zhi-biao"></a>
+### **2.4 把页面定义为指标** <a id="24-ba-ye-mian-ding-yi-wei-zhi-biao"></a>
 
 拖动红点到指定位置并松开后，进入”选择内容”界面 。中间的蓝色区域，上方代表当前整个页面，下方是刚才红点儿覆盖的元素， 被标记为“按钮”。他们都带有对应内容的截图。
 
@@ -42,7 +42,7 @@ SDK安卓大于等于 0.9.96，iOS 大于等于 0.9.37 为新版。新版 与旧
 
 （5）点击“保存”按钮，就会把当前页面保存成指标，然后您可以在GrowingIO网站中创建图表时引用它。
 
-#### **2.5 把界面元素定义为指标（整个按钮/按钮中的文字）** <a id="25-ba-jie-mian-yuan-su-ding-yi-wei-zhi-biao-zheng-ge-an-niu-an-niu-zhong-de-wen-zi"></a>
+### **2.5 把界面元素定义为指标（整个按钮/按钮中的文字）** <a id="25-ba-jie-mian-yuan-su-ding-yi-wei-zhi-biao-zheng-ge-an-niu-an-niu-zhong-de-wen-zi"></a>
 
 在圈选调出的蓝色区域中，下方代表按钮的部分，也包含了按钮中所有文字。点击下拉箭头可以看到如下界面。
 
@@ -70,7 +70,7 @@ b.如果选择“当前位置”的Tab，定义了指标。那么只有红点覆
 
 c.如果选择“同类元素”，定义了指标。那么整个列表中每个按钮里那个文字都会被统计下来。这样的指标在横向柱状图中使用，会自动把每个文字作为一项列出来。如果运营人员要查看发布的内容哪个最受欢迎，可以选择按钮中的标题文字，然后使用“同类元素”定义指标。这样，就能做出每个标题对应点击量的横向柱状图。
 
-#### **2.6 旧版SDK圈选操作** <a id="26-jiu-ban-sdk-quan-xuan-cao-zuo"></a>
+### **2.6 旧版SDK圈选操作** <a id="26-jiu-ban-sdk-quan-xuan-cao-zuo"></a>
 
 ![](https://docs.growingio.com/.gitbook/assets/yi-dong-quan-xuan-jiu-ban-1.png)
 

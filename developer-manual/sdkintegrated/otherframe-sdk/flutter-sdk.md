@@ -20,11 +20,11 @@ Flutter插件运行在Android手机上时依赖于GrowingIO Android SDK \(可以
 
 Android SDK &gt; [无埋点 SDK集成](../android-sdk/auto-android-sdk.md)
 
-Android SDK &gt; [埋点 SDK集成](../android-sdk/manunl-android-sdk.md) 
+Android SDK &gt; [埋点 SDK集成](../android-sdk/manunl-android-sdk.md)
 {% endtab %}
 
 {% tab title="iOS（Native部分）" %}
-Flutter 埋点插件是在iOS原生SDK上的扩展，请参考 iOS SDK &gt; [埋点 SDK集成](../ios-sdk/manunl-ios-sdk.md)。 
+Flutter 埋点插件是在iOS原生SDK上的扩展，请参考 iOS SDK &gt; [埋点 SDK集成](../ios-sdk/manunl-ios-sdk.md)。
 {% endtab %}
 {% endtabs %}
 
@@ -54,7 +54,7 @@ GrowingIO.track('eventId', variable: {'testkey': 'testValue', 'testNumKey': 2333
 
 > 发送转化变量, 对应于evar事件
 
-   函数原型为: setEvar\(Map&lt;String, dynamic&gt; variable\), 调用示例:
+函数原型为: setEvar\(Map&lt;String, dynamic&gt; variable\), 调用示例:
 
 ```dart
 import 'package:growingioflutter/growingio_track.dart';
@@ -64,16 +64,15 @@ import 'package:growingioflutter/growingio_track.dart';
 GrowingIO.setEvar({
   'testKey': 'testValue', 'testNumKey': 2333.0
 });
-
 ```
 
 ### 3. setPeopleVariable
 
 > 发送用户变量, 对应于ppl事件
 
-  函数原型为: setPeopleVariable\(Map&lt;String, dynamic&gt; variable\)
+函数原型为: setPeopleVariable\(Map&lt;String, dynamic&gt; variable\)
 
-  调用示例:
+调用示例:
 
 ```dart
 import 'package:growingioflutter/growingio_track.dart';
@@ -83,7 +82,6 @@ import 'package:growingioflutter/growingio_track.dart';
 GrowingIO.setPeopleVariable({
   'testKey': 'testValue', 'testNumKey': 2333.0
 });
-
 ```
 
 ### 4. setUserId
@@ -136,7 +134,7 @@ import 'package:growingioflutter/growingio_track.dart';
 
 ```dart
 GrowingIO.setVisitor({
-	  "visitorKey": 'key', "visitorValue": 34
+      "visitorKey": 'key', "visitorValue": 34
 });
 ```
 
@@ -146,7 +144,7 @@ GrowingIO.setVisitor({
 **添加代码之后，请先Clean项目，然后再进行编译，并在你的 App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
 {% endhint %}
 
- 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
+在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
 
 ## 4. 验证SDK是否正常采集数据 <a id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
 
@@ -176,7 +174,7 @@ GrowingIO 使用IDFA 来做来源管理激活设备的精确匹配，让你更�
 
 ### 3. 初始化Android SDK时，GrowingIO类可能会报红色怎么处理？
 
-这个应该是Flutter项目结构的问题，并不影响运行，可以放心编译. 不过需要手动import。 
+这个应该是Flutter项目结构的问题，并不影响运行，可以放心编译. 不过需要手动import。
 
 ```java
 import 'package:growingioflutter/growingio_track.dart';
@@ -186,6 +184,4 @@ import 'package:growingioflutter/growingio_track.dart';
 
 * 因为GrowingIO需要获取Android的Activity生命周期，为了数据的准确性，需要在Activity出现前就初始化完成
 * 开发者相信很多用户都会使用flutter + native形式的进行开发，为了同时服务flutter于native
-
-####   <a id="43-android-chu-shi-hua-android-sdk-shi-growingio-lei-ke-neng-hui-bao-hong-se"></a>
 

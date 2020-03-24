@@ -84,28 +84,24 @@ SDK中提供了以下几个参数可以用来进行配置。
 
 转发分享小游戏是小游戏获客的重要场景，想要详细的进行转发分享的统计，需要在SDK参数中设置如下参数，默认值为false
 
+| 参数 | 开启值 | 说明 |
+| :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x53C2;&#x6570;</th>
-      <th style="text-align:left">&#x5F00;&#x542F;&#x503C;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">followShare</td>
-      <td style="text-align:left">true</td>
-      <td style="text-align:left">
+      <th style="text-align:left">followShare</th>
+      <th style="text-align:left">true</th>
+      <th style="text-align:left">
         <p>&#x8BE6;&#x7EC6;&#x8DDF;&#x8E2A;&#x5FAE;&#x4FE1;&#x7EC4;&#x4EF6;&#x4E2D;&#x7684;wx.
           shareAppMessage&#x4E8B;&#x4EF6;&#x7684;&#x8F6C;&#x53D1;&#x5206;&#x4EAB;&#x6570;&#x636E;&#xFF0C;&#x5F00;&#x542F;&#x540E;&#x53EF;&#x4F7F;&#x7528;&#x5206;&#x4EAB;&#x5206;&#x6790;&#x529F;&#x80FD;&#x3002;</p>
         <p>&#x9ED8;&#x8BA4;&#x4E3A;&#x5173;&#x95ED;false</p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>即微信小游戏项目根目录的 game.js 文件设置参数如下：
-
-```java
+  </thead>
+  <tbody></tbody>
+</table>```java
 var gio = require("utils/gio-ming.js");
 // version 是你的小游戏的版本号，发版时请调整
 gio('init', '9c76fe4756c3404d', 'wx87c6f4a3a6cf31e7', { version: '1.0', followShare: true });
@@ -221,7 +217,7 @@ wx.getUserInfo({
 当用户在你的小游戏上注册以后，你的产品应用服务端会在用户数据库里添加一条记录并且分配一个 ID，可以通过 setUserId 接口设置注册用户ID，后续在 GrowingIO 中分析登录用户这个数据。示例代码如下。设置了注册用户ID后，才可以使用**登录用户变量**。
 
 ```java
-gio('setUserId', YOUR_USER_ID); 
+gio('setUserId', YOUR_USER_ID);
 ```
 
 #### 清除登录用户ID
@@ -229,7 +225,7 @@ gio('setUserId', YOUR_USER_ID);
 用户退出登录时，清除登录用户ID。
 
 ```java
-gio('clearUserId'); 
+gio('clearUserId');
 ```
 
 #### 设置登录用户属性
@@ -247,9 +243,9 @@ gio('setUser', { id: user.id, name: user.name });
 
 1. 登陆微信小程序后台，进入开发。
 2. 打开开发设置，到服务器域名配置部分。
-3. 在`request合法域名`中添加：https://wxapi.growingio.com
+3. 在`request合法域名`中添加：[https://wxapi.growingio.com](https://wxapi.growingio.com)
 
-![](../../../.gitbook/assets/image%20%2837%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2837%29.png)
 
 ## 4. 自定义数据上传API
 
@@ -272,6 +268,4 @@ gio('setUser', { id: user.id, name: user.name });
 方式二：在SDK中设置了Debug模式后，在开发者工具中查看数据采集日志。
 
 方式三：[数据校验](../../../product-manual/datacenter/datacheck.md)
-
-
 

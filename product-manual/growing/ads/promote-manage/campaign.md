@@ -10,11 +10,11 @@ description: 统一管理您的广告活动。
 
 二. 在左侧导航栏选择“**管理 &gt; 广告活动”**，进入广告活动管理页面。
 
-![](../../../../.gitbook/assets/image%20%28239%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28239%29.png)
 
 **创建活动**：单击页面上方的新建活动，输入活动名称后单击确定。
 
-**删除活动**：单击单条活动右侧的 ![](../../../../.gitbook/assets/1.png) 删除不需要的、未被监测链接使用的活动。
+**删除活动**：单击单条活动右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/1.png) 删除不需要的、未被监测链接使用的活动。
 
 {% hint style="success" %}
 **删除提示**

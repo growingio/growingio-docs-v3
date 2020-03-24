@@ -12,8 +12,6 @@
 
 3.使用[Mobile Debugger](../../../debugging/mobile-debugger.md) 查看`page`事件的`p`。
 
-
-
 ## 2. 点击事件采集逻辑是什么？
 
 设置以下点击事件的控件会被采集点击事件，如果您自定义了点击事件，不在下方列举之内，将无法采集点击事件，影响数据分析。
@@ -47,9 +45,9 @@ onChildClick(android/widget/ExpandableListView;android/view/View)
 
 ```java
 public void onCustomClick(View view){
-	// 您的业务
-	...	
-	// 为了 GrowingIO 能够采集自定义点击事件，调用 android.view.OnClickListener
+    // 您的业务
+    ...    
+    // 为了 GrowingIO 能够采集自定义点击事件，调用 android.view.OnClickListener
     new View.OnClickListener() {
         @Override
         public void onClick(View view) {}
@@ -126,7 +124,5 @@ TabHost.OnTabChangeListener listener = new TabHost.OnTabChangeListener() {
 </activity>
 ```
 
-多个  Intent Filter 不建议合并，强烈建议不要合并，除非经过严谨的测试，[Google 官方解释](https://developer.android.com/training/app-links/deep-linking#adding-filters)。
-
-
+多个 Intent Filter 不建议合并，强烈建议不要合并，除非经过严谨的测试，[Google 官方解释](https://developer.android.com/training/app-links/deep-linking#adding-filters)。
 

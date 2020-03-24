@@ -1,6 +1,6 @@
 # 默认的渠道来源跟踪
 
-### 1. 访问来源 <a id="1"></a>
+## 1. 访问来源 <a id="1"></a>
 
 GrowingIO 会根据一次访问中的第一个页面的 referrer 判断访问来源，将referrer\_domain 作为访问来源；同时，GrowingIO 默认启用了「最终非直接点击」归因模型，回溯周期是 30 天（2016 年 1 月 30 日以前，回溯周期是 7 天）。 以「今天的访问来源」举例：
 
@@ -19,7 +19,7 @@ GrowingIO 会根据一次访问中的第一个页面的 referrer 判断访问来
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LjZF_asP7Kx1pJcKhtb-LjZGFT9XtRs2C3fmtlOE5B8AEE58AA9E69687E6A1A32.jpg)
 
-### 2. 搜索词  <a id="2-sou-suo-ci"></a>
+## 2. 搜索词 <a id="2-sou-suo-ci"></a>
 
 您的用户群体使用搜索引擎在搜索框中输入搜索词，通过此搜索词的返回结果访问您的网站，我们会记录用户在搜索框中输入的「搜索词」。
 
@@ -30,7 +30,7 @@ GrowingIO会针对百度、搜狗、谷歌、360这4个搜索引擎的搜索词�
 * 未付费的搜索词对于不同的浏览器存在不同限制，当在不同的浏览器上使用上述搜索引擎搜索，能解析到的关键词会被收集，不能解析的归为“\[搜索引擎\]自然流量”。
 * N/A表示，这部分流量不是通过搜索词访问的。
 
-### 3. 自主投放追踪 <a id="3"></a>
+## 3. 自主投放追踪 <a id="3"></a>
 
 我们提供UTM参数和自定义参数的方式跟踪您网站的自主投放渠道 具体请参照：[自主投放URL构建工具](https://assets.growingio.com/help/doc/%E8%AF%A5%E6%96%87%E6%A1%A3%E7%94%A8%E6%9D%A5%E7%94%9F%E6%88%90%E6%8A%95%E6%94%BEURL_V2.0.xlsm)​
 
@@ -58,31 +58,31 @@ GrowingIO直接支持百度统计的参数解析；如果您的自主投放追�
 
 如果url中有中文字符，建议使用utf-8 encode中文字符，但请保留utm关键词。
 
-### 4. 公司域名与GIO短链建立映射关系 <a id="4"></a>
+## 4. 公司域名与GIO短链建立映射关系 <a id="4"></a>
 
-#### 4.1 需求背景： <a id="41"></a>
+### 4.1 需求背景： <a id="41"></a>
 
 场景一：针对诸如百度SEM等投放渠道，要求落地页链接为帐户注册主域名
 
 场景二： 客户有品牌强化需求，希望用自己域名代替 GIO 短链域名
 
-#### 4.2 解决方案： <a id="42-jie-jue-fang-an"></a>
+### 4.2 解决方案： <a id="42-jie-jue-fang-an"></a>
 
 贵司SRE运维人员或其他有权限解析域名的管理员新建一个子域名进行CNAME解析，替换GrowingIO后台监测域名，并且使用http协议。
 
-#### 4.3 流程示例： <a id="43-liu-cheng-shi-li"></a>
+### 4.3 流程示例： <a id="43-liu-cheng-shi-li"></a>
 
 1、以百度后台为例，假设百度后台申请账号时，填写的主域名为 domain.com；
 
-2、GrowingIO后台，生成的监测链接为 https://gio.ren/w/rABC；
+2、GrowingIO后台，生成的监测链接为 [https://gio.ren/w/rABC；](https://gio.ren/w/rABC；)
 
 3、域名管理员，新建子域名 tc.domain.com，使用 CNAME 解析到 gio.ren；
 
-4、在投放使用时，将监测链接，gio.ren替换为子域名tc.domain.com：http://tc.domain.com/w/rABC。
+4、在投放使用时，将监测链接，gio.ren替换为子域名tc.domain.com：[http://tc.domain.com/w/rABC。](http://tc.domain.com/w/rABC。)
 
 （以上 tc.domain.com 仅为示例，具体看贵司的二级域名使用情况。）
 
-#### 4.4 特殊说明： <a id="44-te-shu-shuo-ming"></a>
+### 4.4 特殊说明： <a id="44-te-shu-shuo-ming"></a>
 
 目前 GrowingIO 监测链接生成使用了 s.growingio.com 及 gio.ren ，如两域名都在投放使用，在映射时需对二者分别进行配置。
 
@@ -92,7 +92,7 @@ GrowingIO直接支持百度统计的参数解析；如果您的自主投放追�
 
 2、gio.ren 使用 tc.domain.com 替换。
 
-### 5. 自主调用 API 接口创建链接 <a id="5"></a>
+## 5. 自主调用 API 接口创建链接 <a id="5"></a>
 
 {% hint style="warning" %}
 下线通知：网页推广监测链接创建 API 已合并至广告监测链接创建服务 API 下，此 API 接口计划于 19 年 12 月 1 日下线，请您尽快切换至新版 API 接口，文档位置：[推广网页创建 API](../../../../developer-manual/api-reference/query-productid/definition/create-weblinks.md) 。
@@ -100,13 +100,13 @@ GrowingIO直接支持百度统计的参数解析；如果您的自主投放追�
 
 下线通知：网页推广监测链接创建 API 已合并至广告监测链接创建服务 API 下，此 API 接口计划于 19 年 12 月 1 日下线，请您尽快切换至新版 API 接口，文档位置：[推广网页创建 API](../../../../developer-manual/api-reference/query-productid/definition/create-weblinks.md) 。
 
-POST **https://gta.growingio.com/api/v1/projects/project\_uid/activities**
+POST [https://gta.growingio.com/api/v1/projects/project\_uid/activities](https://gta.growingio.com/api/v1/projects/project_uid/activities)
 
 上述地址中的 project\_uid 取值请参考[获取项目UID](../../../sysmanage/projectmange/get-uid.md)。
 
 将以下内容作为JSON Body，POST到上述链接。
 
-#### 请求参数 <a id="51"></a>
+### 请求参数 <a id="51"></a>
 
 | 字段名称\(\*为必填\) | 填写示例 | 中文含义 |
 | :--- | :--- | :--- |
@@ -123,7 +123,7 @@ POST **https://gta.growingio.com/api/v1/projects/project\_uid/activities**
 | packageName | com.growingio.android.growingio.app | 安卓包名 |
 | comment | 推广预算两万 | 备注 |
 
-#### 返回参数
+### 返回参数
 
 | 字段名称 | 示例 | 中文含义 |
 | :--- | :--- | :--- |
@@ -141,9 +141,9 @@ POST **https://gta.growingio.com/api/v1/projects/project\_uid/activities**
 | projectId | 5138bdb96 | 项目ID |
 | creatorName | Jacky | 创建人 |
 | createdAt | 1484397370856 | 创建时间 |
-| shortUrl | **https://s.growingio.com/6XNmKl** | 用于投放的短链 |
+| shortUrl | [https://s.growingio.com/6XNmKl](https://s.growingio.com/6XNmKl) | 用于投放的短链 |
 
-#### 接口请求示例 <a id="53"></a>
+### 接口请求示例 <a id="53"></a>
 
 ```text
 POST /api/v1/projects/nxog09md/activities HTTP/1.1

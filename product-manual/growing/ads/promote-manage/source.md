@@ -12,15 +12,15 @@ description: 统一管理广告监测的渠道。
 
 二. 在左侧导航栏选择“**管理 &gt; 推广渠道”**，进入渠道管理页面。
 
-![](../../../../.gitbook/assets/image%20%2854%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2854%29.png)
 
 **新建渠道**：单击页面上方的新建渠道，输入渠道名称，选择渠道类型（广告平台、其他）后单击**确定**。
 
 **渠道信息QuickView**：单击列表中的单条渠道，右侧将展开当前渠道的QuickView视图。
 
-**编辑渠道**：单击单条私有渠道右侧的 ![](../../../../.gitbook/assets/guang-gao-jian-ce-bian-ji.png) 对该条渠道信息进行二次修改，公有渠道不支持修改。
+**编辑渠道**：单击单条私有渠道右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/guang-gao-jian-ce-bian-ji.png) 对该条渠道信息进行二次修改，公有渠道不支持修改。
 
-**删除渠道**：单击单条私有渠道右侧的 ![](../../../../.gitbook/assets/1.png) 可删除该条不需要的、未被监测链接使用的、私有渠道。
+**删除渠道**：单击单条私有渠道右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/1.png) 可删除该条不需要的、未被监测链接使用的、私有渠道。
 
 {% hint style="success" %}
 **删除提示**

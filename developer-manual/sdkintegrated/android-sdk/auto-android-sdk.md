@@ -61,7 +61,7 @@ dependencies {
 }
 ```
 
-### 2. 添加 URL Scheme 和应用权限 
+### 2. 添加 URL Scheme 和应用权限
 
 URL Scheme 是您在 GrowingIO 平台创建应用时生成的该应用的唯一标识。把 URL Scheme 添加到您的项目，以便我们唤醒您的应用。
 
@@ -73,7 +73,7 @@ URL Scheme 是您在 GrowingIO 平台创建应用时生成的该应用的唯一�
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.growingio.testdemo">
-    
+
     <!-- GIO 需要的权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -81,7 +81,7 @@ URL Scheme 是您在 GrowingIO 平台创建应用时生成的该应用的唯一�
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- GIO 需要的权限 -->
-    
+
     <!--请注意<application/>标签中的name属性值（这里为android:name=".MyApplication"）必须为您的Application类-->
     <application
         android:name=".MyApplication"
@@ -145,7 +145,7 @@ public class MyApplication extends Application {
 {% hint style="danger" %}
 **注意事项**
 
-`trackAllFragments`方法如果在初始化时调用，APP  内部的 Fragment 将代替 Activity 作为页面，一个 Activity 中包含多个 Fragment 时大概率会是面积最大的 Fragment 作为当前的页面事件\( Page \)。
+`trackAllFragments`方法如果在初始化时调用，APP 内部的 Fragment 将代替 Activity 作为页面，一个 Activity 中包含多个 Fragment 时大概率会是面积最大的 Fragment 作为当前的页面事件\( Page \)。
 {% endhint %}
 
 ### 4. 代码混淆
@@ -169,13 +169,13 @@ public class MyApplication extends Application {
     *;
 }
 -keep class android.support.v4.view.ViewPager$**{
-	  *;
+      *;
 }
 -keep class androidx.viewpager.widget.ViewPager{
     *;
 }
 -keep class androidx.viewpager.widget.ViewPager$**{
-	  *;
+      *;
 }
 ```
 
@@ -344,7 +344,7 @@ setDebugMode(boolean debugMode);
 
 **参数说明**
 
-| **参数** | 类型 | 是否必填    | 说明 |
+| **参数** | 类型 | 是否必填 | 说明 |
 | :--- | :--- | :--- | :--- |
 | debugMode | boolean | 是 | 开启GrowingIO日志，true开始，默认false |
 
@@ -392,7 +392,7 @@ GrowingIO.getInstance().trackBanner(View banner,List<String> bannerDescriptions)
 
 **参数说明**
 
-| 参数 | 类型 | 是否必填                     | 说明 |
+| 参数 | 类型 | 是否必填 | 说明 |
 | :--- | :--- | :--- | :--- |
 | banner | view | 是 | ViewPager、AdapterView、RecyclerView 实现的 View |
 | bannerDescriptions | List&lt;string&gt; | 是 | 广告内容描述，顺序需要跟 banner view 顺序一致 |
@@ -508,9 +508,9 @@ GrowingIO.startWithConfiguration(this, new Configuration().setHashTagEnable(true
 
 举例：
 
-点击 APP `WebView` 中代码混淆的锚点链接，URL 中`#`号后面为锚点，设置后 SDK 会发送页面浏览事件，它的链接为：​https://docs.growingio.com/docs/sdk-integration/android-sdk\#4-dai-ma-hun-xiao
+点击 APP `WebView` 中代码混淆的锚点链接，URL 中`#`号后面为锚点，设置后 SDK 会发送页面浏览事件，它的链接为：​[https://docs.growingio.com/docs/sdk-integration/android-sdk\#4-dai-ma-hun-xiao](https://docs.growingio.com/docs/sdk-integration/android-sdk#4-dai-ma-hun-xiao)
 
-![](../../../.gitbook/assets/image%20%282%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%282%29.png)
 
 SDK发送对应采集数据：
 
@@ -564,13 +564,13 @@ GrowingIO.startWithConfiguration(this, new Configuration()
 ```
 
 {% hint style="info" %}
-1. 为什么不默认支持多进程？ 
+1. 为什么不默认支持多进程？
 
- 跨进程通信是一个相对较慢的过程， 默认不开启， 可以满足大部分用户的要求。
+   跨进程通信是一个相对较慢的过程， 默认不开启， 可以满足大部分用户的要求。
 
- 2. 哪些进程需要初始化SDK？
+   1. 哪些进程需要初始化SDK？
 
- 需要使用SDK功能的进程需要初始化SDK， 所有的UI进程 + 部分Service进程\(如果这些进程中涉及手动打点\)。
+   需要使用SDK功能的进程需要初始化SDK， 所有的UI进程 + 部分Service进程\(如果这些进程中涉及手动打点\)。
 {% endhint %}
 
 ### 15. GDPR数据采集开关
@@ -622,42 +622,33 @@ GrowingIO.startWithConfiguration(this, new Configuration()
 
 返回值说明
 
+| 返回值名称 | 类型 | 说明 |
+| :--- | :--- | :--- |
+
+
+| params | Map&lt;string,string&gt; | 自定义参数，您自定义的键值对 |
+| :--- | :--- | :--- |
+
+
+| status | int | DeeplinkCallback.SUCCESS ：自定义参数获取成功； DeeplinkCallback.PARSE\_ERROR ：解析异常；DeeplinkCallback.ILLEGAL\_URI ：非法URI； DeeplinkCallback.NO\_QUERY : 自定义参数为空。DeeplinkCallback.APPLINK\_GET\_PARAMS\_FAILED : （SDK 2.8.4新增）AppLink 由于网络原因获取自定义参数失败。 |
+| :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x8FD4;&#x56DE;&#x503C;&#x540D;&#x79F0;</th>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">params</td>
-      <td style="text-align:left">Map&lt;string,string&gt;</td>
-      <td style="text-align:left">&#x81EA;&#x5B9A;&#x4E49;&#x53C2;&#x6570;&#xFF0C;&#x60A8;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x952E;&#x503C;&#x5BF9;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">status</td>
-      <td style="text-align:left">int</td>
-      <td style="text-align:left">DeeplinkCallback.SUCCESS &#xFF1A;&#x81EA;&#x5B9A;&#x4E49;&#x53C2;&#x6570;&#x83B7;&#x53D6;&#x6210;&#x529F;&#xFF1B;
-        DeeplinkCallback.PARSE_ERROR &#xFF1A;&#x89E3;&#x6790;&#x5F02;&#x5E38;&#xFF1B;DeeplinkCallback.ILLEGAL_URI
-        &#xFF1A;&#x975E;&#x6CD5;URI&#xFF1B; DeeplinkCallback.NO_QUERY : &#x81EA;&#x5B9A;&#x4E49;&#x53C2;&#x6570;&#x4E3A;&#x7A7A;&#x3002;DeeplinkCallback.APPLINK_GET_PARAMS_FAILED
-        : &#xFF08;SDK 2.8.4&#x65B0;&#x589E;&#xFF09;AppLink &#x7531;&#x4E8E;&#x7F51;&#x7EDC;&#x539F;&#x56E0;&#x83B7;&#x53D6;&#x81EA;&#x5B9A;&#x4E49;&#x53C2;&#x6570;&#x5931;&#x8D25;&#x3002;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">appAwakePassedTime</td>
-      <td style="text-align:left">long</td>
-      <td style="text-align:left">
+      <th style="text-align:left">appAwakePassedTime</th>
+      <th style="text-align:left">long</th>
+      <th style="text-align:left">
         <p>&#xFF08;SDK 2.8.4&#x65B0;&#x589E;&#xFF09;App &#x5524;&#x9192;&#x5230;&#x6536;&#x5230;
           GIO callback &#x7684;&#x65F6;&#x95F4;&#xFF0C;<b>&#x5355;&#x4F4D;&#x6BEB;&#x79D2;</b>&#x3002;&#x7528;&#x4EE5;&#x5224;&#x65AD;&#x7F51;&#x7EDC;&#x72B6;&#x6001;&#x4E0D;&#x597D;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5E94;&#x7528;&#x5DF2;&#x7ECF;&#x6253;&#x5F00;&#x5F88;&#x4E45;&#xFF0C;&#x624D;&#x6536;&#x5230;&#x56DE;&#x8C03;&#xFF0C;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x6536;&#x5230;&#x53C2;&#x6570;&#x540E;&#x4ECD;&#x7136;&#x8DF3;&#x8F6C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6307;&#x5B9A;&#x9875;&#x9762;&#x3002;</p>
         <p><b>&#x5F53;&#x8FD4;&#x56DE;&#x503C;&#x4E3A; 0 &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E3A; DeepLink &#x65B9;&#x5F0F;&#x6253;&#x5F00;&#x3002;</b>
         </p>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>示例代码
-
-```java
+  </thead>
+  <tbody></tbody>
+</table>```java
 //sdk >= 2.3.2 && sdk < 2.8.4
 GrowingIO.startWithConfiguration(this, new Configuration()
     .setDeeplinkCallback(new DeeplinkCallback() {
@@ -710,64 +701,67 @@ SDK对通知的采集仅支持 4.4 及以上机型。
 
 注意：
 
+| 支持推送平台 | 注意事项 |
+| :--- | :--- |
+
+
+| Notification | 全部支持 |
+| :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x652F;&#x6301;&#x63A8;&#x9001;&#x5E73;&#x53F0;</th>
-      <th style="text-align:left">&#x6CE8;&#x610F;&#x4E8B;&#x9879;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">Notification</td>
-      <td style="text-align:left">&#x5168;&#x90E8;&#x652F;&#x6301;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x6781;&#x5149;&#x63A8;&#x9001;</td>
-      <td style="text-align:left">
+      <th style="text-align:left">&#x6781;&#x5149;&#x63A8;&#x9001;</th>
+      <th style="text-align:left">
         <ol>
           <li>&#x521D;&#x59CB;&#x5316;&#x65F6;&#xFF0C;&#x6781;&#x5149;&#x8FDB;&#x7A0B;&#x4E5F;&#x9700;&#x8981;&#x521D;&#x59CB;&#x5316;</li>
           <li>&#x5982;&#x679C;&#x591A;&#x8FDB;&#x7A0B;&#x5E94;&#x7528;&#xFF0C;&#x9700;&#x8981;&#x5F00;&#x542F;GrowingIO&#x591A;&#x8FDB;&#x7A0B;</li>
         </ol>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">&#x534E;&#x4E3A;&#x63A8;&#x9001;</td>
-      <td style="text-align:left">
-        <p></p>
+      <th style="text-align:left">&#x534E;&#x4E3A;&#x63A8;&#x9001;</th>
+      <th style="text-align:left">
         <ol>
           <li>&#x521D;&#x59CB;&#x5316;&#x65F6;&#xFF0C;&#x63A8;&#x9001;&#x8FDB;&#x7A0B;&#x4E5F;&#x9700;&#x8981;&#x521D;&#x59CB;&#x5316;</li>
           <li>NC(Notification Center)&#x6D88;&#x606F;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x6237;&#x8BBE;&#x7F6E;&#x81EA;&#x5B9A;&#x4E49;&#x5B57;&#x6BB5;:
             notification_title&#x8868;&#x793A;title&#xFF0C; &#x4E0E;notification_content&#x8868;&#x793A;&#x5185;&#x5BB9;&#xFF0C;&#x8BF7;&#x89C1;&#x8868;&#x683C;&#x4E0B;&#x65B9;&#x56FE;&#x7247;&#x3002;</li>
         </ol>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">&#x5C0F;&#x7C73;&#x63A8;&#x9001;</td>
-      <td style="text-align:left">
-        <p></p>
+      <th style="text-align:left">&#x5C0F;&#x7C73;&#x63A8;&#x9001;</th>
+      <th style="text-align:left">
         <ol>
           <li>&#x521D;&#x59CB;&#x5316;&#x65F6;&#xFF0C;&#x63A8;&#x9001;&#x8FDB;&#x7A0B;&#x4E5F;&#x9700;&#x8981;&#x521D;&#x59CB;&#x5316;</li>
           <li>SDK hook&#x4E86;PushMessageReceiver&#x7684;onNotificationMessageArrived&#x4E0E;onNotificationMessageClicked&#x51FD;&#x6570;,
             &#x4F1A;&#x89E6;&#x53D1;SDK&#x53D1;&#x9001;&#x4E24;&#x6761;&#x6D88;&#x606F;.
             &#x5176;&#x4E2D;onNotificationMessageArrived&#x9700;&#x8981;&#x7CFB;&#x7EDF;&#x652F;&#x6301;&#x3002;</li>
         </ol>
-      </td>
+      </th>
     </tr>
-  </tbody>
-</table>![&#x534E;&#x4E3A;&#x5E73;&#x53F0;&#x63A8;&#x9001;&#x65F6;&#xFF0C;&#x8BBE;&#x7F6E;&#x81EA;&#x5B9A;&#x4E49;&#x5B57;&#x6BB5;](../../../.gitbook/assets/hua-wei.png)
-
-查看通知采集数据
+  </thead>
+  <tbody></tbody>
+</table>查看通知采集数据
 
 支持对于通知的展现和点击事件的采集，GrowingIO 并未增加新的采集事件类型，而是使用了自定义事件发送，所以需要您创建自定义事件和事件级变量，事件级变量标识符为**`notification_title`**，**`notification_content`**，自定义事件的标识符为**`notification_show`**，**`notification_click`**如图：
 
-![&#x521B;&#x5EFA;&#x901A;&#x77E5;&#x7684;&#x4E8B;&#x4EF6;&#x7EA7;&#x53D8;&#x91CF;](../../../.gitbook/assets/image%20%2823%29.png)
+![&#x521B;&#x5EFA;&#x901A;&#x77E5;&#x7684;&#x4E8B;&#x4EF6;&#x7EA7;&#x53D8;&#x91CF;](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2823%29.png)
 
-![&#x521B;&#x5EFA;&#x63A8;&#x9001;&#x4E8B;&#x4EF6;&#x5206;&#x6790;](../../../.gitbook/assets/image%20%28154%29.png)
+![&#x521B;&#x5EFA;&#x63A8;&#x9001;&#x4E8B;&#x4EF6;&#x5206;&#x6790;](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28154%29.png)
 
 创建事件分析，等候片刻即可看到数据。
 
-![](../../../.gitbook/assets/image%20%28102%29.png)
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28102%29.png)
 
 ### 18. 采集OAID
 
@@ -784,14 +778,12 @@ SDK对通知的采集仅支持 4.4 及以上机型。
 {% hint style="danger" %}
 注意:
 
- OAID 为可选字段，在客户集成 MSA SDK 情况下根据配置可选采集。GrowingIO SDK不会初始化 MSA SDK，我们仅调用其接口获取 OAID 值， 需要客户自行初始化 MSA的 SDK。
+OAID 为可选字段，在客户集成 MSA SDK 情况下根据配置可选采集。GrowingIO SDK不会初始化 MSA SDK，我们仅调用其接口获取 OAID 值， 需要客户自行初始化 MSA的 SDK。
 
 [点击查看 MSA 集成步骤](http://www.msa-alliance.cn/col.jsp?id=120)。
 {% endhint %}
 
 与 IMEI、AndroidId、Google AD ID 配置相同， GrowingIO SDK 对OAID 提供了编译期，初始化前， 初始化后三种配置 OAID 是否采集的选项，点击查看[ API 文档](android-sdk-api/)。
-
-
 
 ## 3. 自定义数据上传
 
@@ -807,7 +799,7 @@ SDK对通知的采集仅支持 4.4 及以上机型。
 **添加代码之后，请先Clean项目，然后再进行编译，并在你的 Android App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
 {% endhint %}
 
- 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
+在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
 
 ## 5. 验证SDK是否正常采集数据
 
@@ -821,7 +813,5 @@ GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 
 方式二：在SDK中设置了Debug模式后，在IDE编译器控制台查看数据采集日志。
 
-方式三：（**推荐**）[数据校验](../../../product-manual/datacenter/datacheck.md)  
-
-
+方式三：（**推荐**）[数据校验](../../../product-manual/datacenter/datacheck.md)
 
