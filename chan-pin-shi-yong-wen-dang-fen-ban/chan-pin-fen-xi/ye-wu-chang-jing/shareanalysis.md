@@ -2,7 +2,7 @@
 description: 深入了解小程序分享的病毒系数和KOL。
 ---
 
-# 分享分析
+# 分享分析-done
 
 ## 什么是分享分析
 
@@ -12,7 +12,7 @@ description: 深入了解小程序分享的病毒系数和KOL。
 
 ## 前提条件 <a id="fen-xiang-fen-xi-sdk-dai-ma-pei-zhi"></a>
 
-GrowingIO会默认帮您统计转发事件（分享用户量和分享次数）。如果想统计到”转发分享带来的用户“，则需要在集成小程序SDK时开启分析分享功能。 详细请参考”微信小程序SDK &gt; [SDK参数配置](../../developer-manual/sdkintegrated/other-sdk/minp-sdk.md#sdk-can-shu-pei-zhi)“。
+GrowingIO会默认帮您统计转发事件（分享用户量和分享次数）。如果想统计到”转发分享带来的用户“，则需要在集成小程序SDK时开启分析分享功能。 详细请参考”微信小程序SDK &gt; [SDK参数配置](../../../developer-manual/sdkintegrated/other-sdk/minp-sdk.md#sdk-can-shu-pei-zhi)“。
 
 ## 使用分享分析 <a id="fen-xiang-fen-xi-gong-neng-shi-yong"></a>
 

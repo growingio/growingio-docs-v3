@@ -1,4 +1,4 @@
-# KPI看板（企业版）
+# KPI看板-done
 
 ## 简介 <a id="kpi-kan-ban-ke-yi-zuo-shi-mo"></a>
 
@@ -171,5 +171,5 @@ KPI详情页构成：
 
 ## 管理KPI看板
 
-KPI看板与分析看板的管理方式相同，请参考[看板管理](manage.md#2-gong-neng-shuo-ming)。
+KPI看板与分析看板的管理方式相同，请参考[看板管理](../../../product-manual/charts/manage.md#2-gong-neng-shuo-ming)。
 
