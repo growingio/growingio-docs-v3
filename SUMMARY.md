@@ -456,5 +456,9 @@
   * [应用管理](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/ying-yong-guan-li.md)
   * [成员管理](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/cheng-yuan-guan-li.md)
   * [角色管理](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/jiao-se-guan-li.md)
+  * [小组管理](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/xiao-zu-guan-li.md)
+  * [资源权限](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/zi-yuan-quan-xian.md)
+  * [数据权限](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/shu-ju-quan-xian.md)
+  * [项目配置](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/xiang-mu-pei-zhi.md)
 * [组织管理](chan-pin-shi-yong-wen-dang-fen-ban/zu-zhi-guan-li.md)
 
