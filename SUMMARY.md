@@ -451,6 +451,7 @@
     * [漏斗分析数据 API 导出](chan-pin-shi-yong-wen-dang-fen-ban/shu-ju-zhong-xin/api-zhong-xin/lou-dou-fen-xi-shu-ju-api-dao-chu.md)
     * [留存分析数据 API 导出](chan-pin-shi-yong-wen-dang-fen-ban/shu-ju-zhong-xin/api-zhong-xin/liu-cun-fen-xi-shu-ju-api-dao-chu.md)
     * [用户分群数据 API 导出](chan-pin-shi-yong-wen-dang-fen-ban/shu-ju-zhong-xin/api-zhong-xin/yong-hu-fen-qun-shu-ju-api-dao-chu.md)
-* [项目管理](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li.md)
+* [项目管理](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/README.md)
+  * [项目概览](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/xiang-mu-gai-lan.md)
 * [组织管理](chan-pin-shi-yong-wen-dang-fen-ban/zu-zhi-guan-li.md)
 
