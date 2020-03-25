@@ -102,14 +102,14 @@ SDK 端配置：[iOS 端](../../../../developer-manual/sdkintegrated/ios-sdk/aut
 
 为获得更好的用户使用体验，GrowingIO 同时建议您在 iOS 下开启 Universal Links 、在 Android 下开启 App Links ，该两项技术为 Apple 与 Google 提供的原生方案，使用该技术将在其系统生态中将获得更流畅的跳转体验。
 
-Universal Links 配置：[配置方法​](../advance/deeplink.md#22-universal-links-pei-zhi)
+Universal Links 配置：[配置方法​](../../chan-pin-pei-zhi/deeplink.md#22-universal-links-pei-zhi)
 
-App Links 配置：[配置方法](../advance/deeplink.md#32-applinks-pei-zhi)
+App Links 配置：[配置方法](../../chan-pin-pei-zhi/deeplink.md#32-applinks-pei-zhi)
 
 ## 延迟深度链接（Deferred DeepLink）
 
 {% hint style="info" %}
-延迟深度链接为深度链接的升级功能，平台基础版在完成延迟深度链接功能增购后可在深度链接配置的基础上直接实现功能使用，请参考[深度链接配置](../advance/deeplink.md)。
+延迟深度链接为深度链接的升级功能，平台基础版在完成延迟深度链接功能增购后可在深度链接配置的基础上直接实现功能使用，请参考[深度链接配置](../../chan-pin-pei-zhi/deeplink.md)。
 
 如果您需要试用升级或了解其他信息，请联系您的客户成功经理。
 {% endhint %}

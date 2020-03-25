@@ -1,4 +1,4 @@
-# 深度链接配置
+# 深度链接配置（Deferred DeepLink）-done
 
 深度链接（DeepLink）是通过链接启动应用的方法。更详细地说是通过映射预定义行为到唯一的链接上，让用户通过点击链接无缝跳转到特定的内容页面。
 
@@ -20,7 +20,7 @@
 
 其中包含当前应用的基本信息配置，如果您需要更改此处信息，请单击「前往应用管理」进行更改。
 
-也可直接在应用管理中心修改，请参考[修改应用信息](../../../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/application-manage.md#xiu-gai-shan-chu-ying-yong)。
+也可直接在应用管理中心修改，请参考[修改应用信息](../../xiang-mu-guan-li/application-manage.md#xiu-gai-shan-chu-ying-yong)。
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtP41qSBliAk88VA3Xe-LtPJ9y2NR46v9RUT5xLimage.png)
 
@@ -78,7 +78,7 @@ GrowingIO的域名：
 
 其中包含当前应用的基本信息配置，如果您需要更改此处信息，请单击「前往应用管理」进行更改。
 
-也可直接在应用管理中心修改，请参考[修改应用信息](../../../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/application-manage.md#xiu-gai-shan-chu-ying-yong)。
+也可直接在应用管理中心修改，请参考[修改应用信息](../../xiang-mu-guan-li/application-manage.md#xiu-gai-shan-chu-ying-yong)。
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtPeN51XOz8pL5J28rs-LtPetuUHeUEFwBh_438image.png)
 
@@ -247,7 +247,7 @@ Status 状态为 ask 不代表唤起流程有问题，当用户操作允许后�
 
 在上文中，建议各位开发者将 GIO Intent Filter 代码块配置在 Launcher Activity 下，在用户点击短链后打开 App ，系统将自动跳转到 Launcher Activity ，此时 GIO DeepLink Callback 则会返回您在 GIO 官网广告监测中配置的自定义参数，此时您需要接收您的自定义参数，跳转到指定页面。
 
-详见 [Android DeepLink CallBack 接收参数](../../../../developer-manual/sdkintegrated/android-sdk/auto-android-sdk.md#16-deep-link-hui-tiao-can-shu-huo-qu)文档。
+详见 [Android DeepLink CallBack 接收参数](../../../developer-manual/sdkintegrated/android-sdk/auto-android-sdk.md#16-deep-link-hui-tiao-can-shu-huo-qu)文档。
 
 ### 3.3 配置应用宝微下载
 

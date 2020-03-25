@@ -2,7 +2,7 @@
 description: 创建小程序推广所用的二维码、小程序码。
 ---
 
-# 小程序码管理
+# 小程序码管理-done
 
 ## 常见场景介绍 <a id="chang-jian-chang-jing-jie-shao"></a>
 

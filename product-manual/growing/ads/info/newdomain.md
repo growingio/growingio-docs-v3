@@ -12,9 +12,9 @@ SDK 端配置：[iOS 端](../../../../developer-manual/sdkintegrated/ios-sdk/aut
 
 ### 1.2 GrowingIO 产品配置 <a id="12-growingio-chan-pin-pei-zhi"></a>
 
-Universal Links 配置：[配置方法​](../advance/deeplink.md#universal-links-pei-zhi)
+Universal Links 配置：[配置方法​](../../../../chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/chan-pin-pei-zhi/deeplink.md#universal-links-pei-zhi)
 
-App Links 配置：[配置方法](../advance/deeplink.md#applinks-pei-zhi)
+App Links 配置：[配置方法](../../../../chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/chan-pin-pei-zhi/deeplink.md#applinks-pei-zhi)
 
 ## 二、添加新域名支持 <a id="er-tian-jia-xin-yu-ming-zhi-chi"></a>
 

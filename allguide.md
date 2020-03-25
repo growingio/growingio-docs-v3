@@ -20,7 +20,7 @@
 
 | 获客分析 |  |  |  |
 | :--- | :--- | :--- | :--- |
-| [广告监测](product-manual/growing/ads/) | [活动分析](product-manual/growing/activities.md) | [落地页分析](product-manual/growing/landing.md) | [分享分析](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/ye-wu-chang-jing/shareanalysis.md) |
+| [广告监测](product-manual/growing/ads/) | [活动分析](chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/fen-xi/activities.md) | [落地页分析](chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/fen-xi/landing.md) | [分享分析](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/ye-wu-chang-jing/shareanalysis.md) |
 
 ## 内容精确搜索
 

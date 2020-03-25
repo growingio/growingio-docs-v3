@@ -6,13 +6,13 @@ GrowingIO 提供一系列功能帮助客户跟踪不同场景推广产品的投�
 
 链接创建及相关数据：
 
-{% page-ref page="create/" %}
+{% page-ref page="../../../chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/huo-ke-zhui-zong/create/" %}
 
 {% page-ref page="report/" %}
 
 {% page-ref page="promote-manage/" %}
 
-{% page-ref page="advance/" %}
+{% page-ref page="advance.md" %}
 
 {% page-ref page="info/" %}
 
