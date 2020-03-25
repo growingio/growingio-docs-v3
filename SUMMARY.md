@@ -311,6 +311,7 @@
     * [数据统计差异](product-manual/product-faq/diffinfo.md)
     * [无效指标清理说明](product-manual/product-faq/cleandata.md)
 * [术语解释](term.md)
+* [What's new](whats-new.md)
 
 ## 产品简介
 
@@ -463,5 +464,5 @@
 
 ## 常见问题与解决
 
-* [Untitled](chang-jian-wen-ti-yu-jie-jue/untitled.md)
+* [小客户运营写作模板](chang-jian-wen-ti-yu-jie-jue/untitled.md)
 
