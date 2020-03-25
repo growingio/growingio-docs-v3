@@ -460,5 +460,9 @@
   * [资源权限](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/zi-yuan-quan-xian.md)
   * [数据权限](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/shu-ju-quan-xian.md)
   * [项目配置](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/xiang-mu-pei-zhi.md)
-* [组织管理](chan-pin-shi-yong-wen-dang-fen-ban/zu-zhi-guan-li.md)
+* [组织管理](chan-pin-shi-yong-wen-dang-fen-ban/zu-zhi-guan-li/README.md)
+  * [组织概览](chan-pin-shi-yong-wen-dang-fen-ban/zu-zhi-guan-li/zu-zhi-gai-lan.md)
+  * [组织项目](chan-pin-shi-yong-wen-dang-fen-ban/zu-zhi-guan-li/zu-zhi-xiang-mu.md)
+  * [组织成员](chan-pin-shi-yong-wen-dang-fen-ban/zu-zhi-guan-li/zu-zhi-cheng-yuan.md)
+  * [费用中心（计费方案）](chan-pin-shi-yong-wen-dang-fen-ban/zu-zhi-guan-li/fei-yong-zhong-xin-ji-fei-fang-an.md)
 
