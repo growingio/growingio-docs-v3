@@ -12,8 +12,8 @@ description: 埋点 SDK 只自动采集用户访问事件，需要开发同学�
 
 前提条件
 
-* 获取项目ID，获取方法请参考"项目管理 &gt; 项目概览 &gt; [查看项目基本信息](../../../product-manual/sysmanage/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
-* 获取URL Scheme，在GrowingIO平台创建对应的应用时会生成URL Scheme。请参考[创建应用](../../../product-manual/sysmanage/projectmange/application-manage.md#chuang-jian-ying-yong)。
+* 获取项目ID，获取方法请参考"项目管理 &gt; 项目概览 &gt; [查看项目基本信息](../../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
+* 获取URL Scheme，在GrowingIO平台创建对应的应用时会生成URL Scheme。请参考[创建应用](../../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/application-manage.md#chuang-jian-ying-yong)。
 
 ## 1. 添加跟踪代码
 

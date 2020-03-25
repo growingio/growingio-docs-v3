@@ -65,5 +65,5 @@ GrowingIO 平台使用组织角色和项目角色两套重叠的角色体系，�
 |  | 转化回传 | （新建、编辑、删除）/查看 | 查看 |
 |  | 高级设置 | 维度配置、反作弊规则 | - |
 
-您可以创建自定义角色并将之与成员关联来进行多样化的权限配置，请参考[自定义角色](../product-manual/sysmanage/projectmange/project-member.md#zi-ding-yi-xiang-mu-jiao-se)。
+您可以创建自定义角色并将之与成员关联来进行多样化的权限配置，请参考[自定义角色](../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/project-member.md#zi-ding-yi-xiang-mu-jiao-se)。
 

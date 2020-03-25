@@ -1,4 +1,4 @@
-# 组织下成员管理
+# 组织成员-done
 
 在界面右上角单击 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/2019-10-10_18-59-32%20%281%29.png) 选择**组织管理**，默认进入组织管理界面。选择**组织成员**页签。
 
@@ -27,7 +27,7 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 项目角色 | 项目成员的角色权限链接。项目角色详细信息参考 [角色权限说明](../../../introduction/role-and-permission.md)。 |
+</table>| 项目角色 | 项目成员的角色权限链接。项目角色详细信息参考 [角色权限说明](../../introduction/role-and-permission.md)。 |
 | :--- | :--- |
 
 
