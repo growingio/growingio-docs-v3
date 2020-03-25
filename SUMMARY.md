@@ -453,5 +453,8 @@
     * [用户分群数据 API 导出](chan-pin-shi-yong-wen-dang-fen-ban/shu-ju-zhong-xin/api-zhong-xin/yong-hu-fen-qun-shu-ju-api-dao-chu.md)
 * [项目管理](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/README.md)
   * [项目概览](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/xiang-mu-gai-lan.md)
+  * [应用管理](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/ying-yong-guan-li.md)
+  * [成员管理](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/cheng-yuan-guan-li.md)
+  * [角色管理](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/jiao-se-guan-li.md)
 * [组织管理](chan-pin-shi-yong-wen-dang-fen-ban/zu-zhi-guan-li.md)
 
