@@ -311,7 +311,6 @@
     * [数据统计差异](product-manual/product-faq/diffinfo.md)
     * [无效指标清理说明](product-manual/product-faq/cleandata.md)
 * [术语解释](term.md)
-* [What's new](whats-new.md)
 
 ## 产品简介
 
