@@ -54,5 +54,5 @@
 
 点击「去授权」，会直接跳转到微信公众平台；请**公众号的管理员**扫码授权后，展示授权成功，跳转回 GrowingIO。
 
-完成集成后，等待一段时间（一般是1~2个小时左右）即可进行[微信应用用户分析](../uesr-analysis/wx-user.md)。
+完成集成后，等待一段时间（一般是1~2个小时左右）即可进行[微信应用用户分析](../../chan-pin-shi-yong-wen-dang-fen-ban/yong-hu-ku/ye-wu-chang-jing/wx-user.md)。
 

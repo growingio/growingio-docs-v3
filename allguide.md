@@ -16,7 +16,7 @@
 
 | 用户分析 |  |  |  |
 | :--- | :--- | :--- | :--- |
-| [用户分群](product-manual/uesr-analysis/segmentations/) | [用户细查](product-manual/uesr-analysis/userinsights/) | [活跃用户](product-manual/uesr-analysis/active-users/) | [微信用户](product-manual/uesr-analysis/wx-user.md) |
+| [用户分群](chan-pin-shi-yong-wen-dang-fen-ban/yong-hu-ku/yong-hu-fen-qun/segmentations/) | [用户细查](chan-pin-shi-yong-wen-dang-fen-ban/yong-hu-ku/yong-hu-fen-qun/userinsights/) | [活跃用户](chan-pin-shi-yong-wen-dang-fen-ban/yong-hu-ku/yong-hu-fen-xi/active-users/) | [微信用户](chan-pin-shi-yong-wen-dang-fen-ban/yong-hu-ku/ye-wu-chang-jing/wx-user.md) |
 
 | 获客分析 |  |  |  |
 | :--- | :--- | :--- | :--- |
