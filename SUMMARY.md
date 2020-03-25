@@ -382,8 +382,6 @@
     * [推广详细数据](chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/shou-ye/tui-guang-xiang-xi-shu-ju.md)
     * [反作弊数据报表](chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/shou-ye/fan-zuo-bi-shu-ju-bao-biao.md)
   * [分析](chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/fen-xi/README.md)
-    * [渠道价值分析](chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/fen-xi/qu-dao-jia-zhi-fen-xi.md)
-    * [渠道归因分析](chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/fen-xi/qu-dao-gui-yin-fen-xi.md)
     * [落地页分析](chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/fen-xi/luo-di-ye-fen-xi.md)
     * [活动页分析](chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/fen-xi/huo-dong-ye-fen-xi.md)
   * [获客追踪](chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/huo-ke-zhui-zong/README.md)
