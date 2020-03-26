@@ -427,7 +427,6 @@
 
 ## 常见问题与解决
 
-* [小客户运营写作模板](chang-jian-wen-ti-yu-jie-jue/untitled.md)
 * [基本问题](chang-jian-wen-ti-yu-jie-jue/basic.md)
 * [SDK集成](chang-jian-wen-ti-yu-jie-jue/sdk.md)
 * [圈选问题](chang-jian-wen-ti-yu-jie-jue/quanxuan.md)
