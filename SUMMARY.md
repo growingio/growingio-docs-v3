@@ -303,15 +303,14 @@
   * [数据管理API（GDPR）](kai-fa-zhe-wen-dang/api-reference/gdprapi/README.md)
     * [数据保护](kai-fa-zhe-wen-dang/api-reference/gdprapi/shu-ju-bao-hu.md)
     * [删除原始数据](kai-fa-zhe-wen-dang/api-reference/gdprapi/shan-chu-yuan-shi-shu-ju.md)
+* [Untitled](kai-fa-zhe-wen-dang/untitled.md)
 
 ## 产品使用文档-分版
 
 * [基本概念](chan-pin-shi-yong-wen-dang-fen-ban/ji-ben-gai-nian.md)
 * [产品功能关系介绍 \(待定\)](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-gong-neng-guan-xi-jie-shao-dai-ding.md)
 * [产品分析](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/README.md)
-  * [简介](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/jian-jie.md)
-  * [首页概览](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/shou-ye-gai-lan.md)
-  * [数据监控](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/shu-ju-jian-kong/README.md)
+  * [数据监测](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/shu-ju-jian-kong/README.md)
     * [概览](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/shu-ju-jian-kong/gai-lan.md)
     * [实时](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/shu-ju-jian-kong/shi-shi.md)
     * [分析看板](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/shu-ju-jian-kong/fen-xi-kan-ban.md)
@@ -339,9 +338,11 @@
       * [使用场景](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/fen-xi-gong-ju/frequency/scenes.md)
       * [创建分布分析](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/fen-xi-gong-ju/frequency/create.md)
     * [热图分析-done](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/fen-xi-gong-ju/heatmap/README.md)
+      * [Untitled](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/fen-xi-gong-ju/heatmap/untitled.md)
       * [什么是热图分析](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/fen-xi-gong-ju/heatmap/what.md)
       * [Web端热图](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/fen-xi-gong-ju/heatmap/webpart.md)
       * [App热图](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/fen-xi-gong-ju/heatmap/apppart.md)
+    * [事件流分析](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/fen-xi-gong-ju/shi-jian-liu-fen-xi.md)
     * [智能路径-done](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/fen-xi-gong-ju/smart-path.md)
   * [业务场景](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/ye-wu-chang-jing/README.md)
     * [分享分析-done](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/ye-wu-chang-jing/shareanalysis.md)
@@ -459,6 +460,7 @@
   * [组织项目-done](chan-pin-shi-yong-wen-dang-fen-ban/zu-zhi-guan-li/project-manage.md)
   * [组织成员-done](chan-pin-shi-yong-wen-dang-fen-ban/zu-zhi-guan-li/org-member.md)
   * [费用中心（计费方案）-done](chan-pin-shi-yong-wen-dang-fen-ban/zu-zhi-guan-li/billing.md)
+* [功能分类](gong-neng-fen-lei.md)
 
 ## 常见问题与解决
 
