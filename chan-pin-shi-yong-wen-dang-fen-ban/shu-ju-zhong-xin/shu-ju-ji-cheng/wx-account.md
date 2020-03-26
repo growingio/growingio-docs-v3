@@ -1,4 +1,4 @@
-# 微信公众号数据集成
+# 微信公众号集成-done
 
 ## 第一步：了解和检查你的小程序和公众号的信息 <a id="di-yi-bu-le-jie-he-jian-cha-ni-de-xiao-cheng-xu-he-gong-zhong-hao-de-xin-xi"></a>
 
@@ -39,8 +39,8 @@
 
 如果您即将集成小程序或者内嵌页，请参照以下文档，确认小程序/微信内嵌页的 openid 和 unionid 在SDK 中已上报。
 
-* ​[微信小程序SDK 上报微信 OpenID、UnionID](../../kai-fa-zhe-wen-dang/sdkintegrated/other-sdk/minp-sdk.md#4-wei-xin-yong-hu-xin-xi-de-pei-zhi)；
-* ​[内嵌页 SDK 上报微信 OpenID、UnionID](../../kai-fa-zhe-wen-dang/sdkintegrated/other-sdk/h5-sdk.md#wei-xin-yong-hu-xin-xi-de-pei-zhi)；​
+* ​[微信小程序SDK 上报微信 OpenID、UnionID](../../../kai-fa-zhe-wen-dang/sdkintegrated/other-sdk/minp-sdk.md#4-wei-xin-yong-hu-xin-xi-de-pei-zhi)；
+* ​[内嵌页 SDK 上报微信 OpenID、UnionID](../../../kai-fa-zhe-wen-dang/sdkintegrated/other-sdk/h5-sdk.md#wei-xin-yong-hu-xin-xi-de-pei-zhi)；​
 
 如果您项目中已经集成了 GrowingIO 小程序或者微信内嵌页应用，请麻烦工程师参照文档检查一下是否上报了微信 openid 和 unionid；或者可以在「用户分析」- 「用户细查」列表中查看是否有 openid 、unionid上报。测试数据示例
 
@@ -54,5 +54,5 @@
 
 点击「去授权」，会直接跳转到微信公众平台；请**公众号的管理员**扫码授权后，展示授权成功，跳转回 GrowingIO。
 
-完成集成后，等待一段时间（一般是1~2个小时左右）即可进行[微信应用用户分析](../../chan-pin-shi-yong-wen-dang-fen-ban/yong-hu-ku/ye-wu-chang-jing/wx-user.md)。
+完成集成后，等待一段时间（一般是1~2个小时左右）即可进行[微信应用用户分析](../../yong-hu-ku/ye-wu-chang-jing/wx-user.md)。
 
