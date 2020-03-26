@@ -58,7 +58,7 @@ GrowingIO 推荐设置一个页面级变量来保存页面的类型信息。我�
 
 参考上述场景示例，配合梳理业务需求并完成“指标+维度”的设计，确认需要将哪些变量设置为页面级变量，请勿直接开始代码的部署，需要先到 GrowingIO 要求先在打点管理的界面上进行变量的声明操作。
 
-配置方式参考[事件变量](../../product-manual/datacenter/datamanage/variable/event.md)。
+配置方式参考[事件变量](../../chan-pin-shi-yong-wen-dang-fen-ban/shu-ju-zhong-xin/shu-ju-guan-li/event.md)。
 
 ### **第二步：代码部署** <a id="di-er-bu-dai-ma-bu-shu"></a>
 

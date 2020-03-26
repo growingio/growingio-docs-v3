@@ -20,7 +20,7 @@
 
 * CS1字段，会强制命名为“登陆用户ID”，并且上传接口与其他变量不同。
 * CS2-10字段，会迁移至“应用级变量”，应用级变量与CS字段的使用方式无任何区别。
-* CS11-20字段，会迁移至“[用户变量](../../../product-manual/datacenter/datamanage/variable/user.md)”。两者的区别主要在于：用户变量支持自定义的归因方式。
+* CS11-20字段，会迁移至“[用户变量](../../../chan-pin-shi-yong-wen-dang-fen-ban/shu-ju-zhong-xin/shu-ju-guan-li/user.md)”。两者的区别主要在于：用户变量支持自定义的归因方式。
 
 ### 上传接口
 
@@ -66,7 +66,7 @@
 
 2.x版本取消了应用级变量的配置，但如果您在1.x中已配置，且进行了数据迁移操作，2.x将为您保留此部分迁移数据在维度选择时使用。
 
-如需新增用户变量字段请在“**数据中心 &gt; 数据管理 &gt; 变量 &gt; 用户变量**”，下的**登录用户变量**页签下配置。配置方式请参考[用户变量](../../../product-manual/datacenter/datamanage/variable/user.md)。
+如需新增用户变量字段请在“**数据中心 &gt; 数据管理 &gt; 变量 &gt; 用户变量**”，下的**登录用户变量**页签下配置。配置方式请参考[用户变量](../../../chan-pin-shi-yong-wen-dang-fen-ban/shu-ju-zhong-xin/shu-ju-guan-li/user.md)。
 
 ## 3. 迁移页面属性字段（PS字段）
 
