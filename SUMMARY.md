@@ -109,15 +109,6 @@
       * [学习中心](product-manual/sysmanage/personal/learncenter.md)
       * [个人信息](product-manual/sysmanage/personal/myinfo.md)
       * [安全设置](product-manual/sysmanage/personal/security.md)
-  * [常见问题](product-manual/product-faq/README.md)
-    * [基本问题](product-manual/product-faq/basic.md)
-    * [SDK集成](product-manual/product-faq/sdk.md)
-    * [圈选问题](product-manual/product-faq/quanxuan.md)
-    * [指标和维度](product-manual/product-faq/metrics.md)
-    * [数据安全](product-manual/product-faq/data-security.md)
-    * [产品使用](product-manual/product-faq/produceuse.md)
-    * [数据统计差异](product-manual/product-faq/diffinfo.md)
-    * [无效指标清理说明](product-manual/product-faq/cleandata.md)
 * [术语解释](term.md)
 
 ## 产品简介
@@ -457,8 +448,17 @@
   * [组织成员-done](chan-pin-shi-yong-wen-dang-fen-ban/zu-zhi-guan-li/org-member.md)
   * [费用中心（计费方案）-done](chan-pin-shi-yong-wen-dang-fen-ban/zu-zhi-guan-li/billing.md)
 * [功能分类](gong-neng-fen-lei.md)
+* [常见问题](product-faq/README.md)
+  * [SDK集成](product-faq/sdk.md)
+  * [圈选问题](product-faq/quanxuan.md)
+  * [指标和维度](product-faq/metrics.md)
+  * [数据安全](product-faq/data-security.md)
+  * [产品使用](product-faq/produceuse.md)
+  * [数据统计差异](product-faq/diffinfo.md)
+  * [无效指标清理说明](product-faq/cleandata.md)
 
 ## 常见问题与解决
 
 * [小客户运营写作模板](chang-jian-wen-ti-yu-jie-jue/untitled.md)
+* [基本问题](chang-jian-wen-ti-yu-jie-jue/basic.md)
 
