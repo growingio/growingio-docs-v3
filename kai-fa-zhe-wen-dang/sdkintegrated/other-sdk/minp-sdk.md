@@ -900,5 +900,5 @@ GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 
 方式二：在SDK中设置了Debug模式后，在微信开发者工具中查看数据采集日志。
 
-方式三：[数据校验](../../../product-manual/datacenter/datacheck.md)
+方式三：[数据校验](../../../chan-pin-shi-yong-wen-dang-fen-ban/shu-ju-zhong-xin/shu-ju-xiao-yan/datacheck.md)
 
