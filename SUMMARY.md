@@ -109,7 +109,6 @@
       * [学习中心](product-manual/sysmanage/personal/learncenter.md)
       * [个人信息](product-manual/sysmanage/personal/myinfo.md)
       * [安全设置](product-manual/sysmanage/personal/security.md)
-* [术语解释](term.md)
 
 ## 产品简介
 
@@ -447,6 +446,7 @@
   * [组织项目-done](chan-pin-shi-yong-wen-dang-fen-ban/zu-zhi-guan-li/project-manage.md)
   * [组织成员-done](chan-pin-shi-yong-wen-dang-fen-ban/zu-zhi-guan-li/org-member.md)
   * [费用中心（计费方案）-done](chan-pin-shi-yong-wen-dang-fen-ban/zu-zhi-guan-li/billing.md)
+* [术语解释](chan-pin-shi-yong-wen-dang-fen-ban/term.md)
 
 ## 常见问题与解决
 
