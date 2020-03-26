@@ -27,7 +27,7 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 项目角色 | 项目成员的角色权限链接。项目角色详细信息参考 [角色权限说明](../../introduction/role-and-permission.md)。 |
+</table>| 项目角色 | 项目成员的角色权限链接。项目角色详细信息参考 [角色权限说明](../../chan-pin-jian-jie/role-and-permission.md)。 |
 | :--- | :--- |
 
 

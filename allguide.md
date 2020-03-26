@@ -4,11 +4,11 @@
 
 | 产品熟悉 |  |  |  |
 | :--- | :--- | :--- | :--- |
-| [数据模型](introduction/datamodel/) | [界面熟悉](introduction/productknow.md) | [角色权限](introduction/role-and-permission.md) | [工单管理](product-manual/sysmanage/tickets/) |
+| [数据模型](introduction/datamodel/) | [界面熟悉](introduction/productknow.md) | [角色权限](chan-pin-jian-jie/role-and-permission.md) | [工单管理](product-manual/sysmanage/tickets/) |
 
 | 开发者使用 |  |  |  |
 | :--- | :--- | :--- | :--- |
-| [SDK集成](developer-manual/sdkintegrated/) | [SDK调试](developer-manual/debugging/) | [API参考](developer-manual/api-reference/) |  |
+| [SDK集成](kai-fa-zhe-wen-dang/sdkintegrated/) | [SDK调试](kai-fa-zhe-wen-dang/debugging/) | [API参考](kai-fa-zhe-wen-dang/api-reference/) |  |
 
 | 产品分析 |  |  |  |
 | :--- | :--- | :--- | :--- |

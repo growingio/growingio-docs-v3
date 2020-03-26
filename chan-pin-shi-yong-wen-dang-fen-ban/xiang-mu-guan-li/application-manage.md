@@ -16,7 +16,7 @@ description: 应用即区分不同软件行为数据存储的单元，一个应�
 
 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28161%29.png)
 
-1. 添加跟踪代码：请参考[SDK接入](../../developer-manual/sdkintegrated/)
+1. 添加跟踪代码：请参考[SDK接入](../../kai-fa-zhe-wen-dang/sdkintegrated/)
 2. 检测数据：完成SDK接入后，单击检测数据，成功后生成应用。
 
 ## 修改/删除应用

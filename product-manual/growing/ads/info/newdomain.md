@@ -8,7 +8,7 @@ GrowingIO 的 DeepLink 产品目前已经支持系统原生方案，如您需要
 
 ### 1.1 SDK 配置 <a id="11-sdk-pei-zhi"></a>
 
-SDK 端配置：[iOS 端](../../../../developer-manual/sdkintegrated/ios-sdk/auto-ios-sdk.md#7-deeplink-and-universal-link)、[Android 端​](../../../../developer-manual/sdkintegrated/android-sdk/auto-android-sdk.md#15-deep-link-hui-tiao-can-shu-huo-qu)
+SDK 端配置：[iOS 端](../../../../kai-fa-zhe-wen-dang/sdkintegrated/ios-sdk/auto-ios-sdk.md#7-deeplink-and-universal-link)、[Android 端​](../../../../kai-fa-zhe-wen-dang/sdkintegrated/android-sdk/auto-android-sdk.md#15-deep-link-hui-tiao-can-shu-huo-qu)
 
 ### 1.2 GrowingIO 产品配置 <a id="12-growingio-chan-pin-pei-zhi"></a>
 

@@ -1,4 +1,4 @@
-# SDK集成
+# SDK集成（主语：开发者）
 
 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2877%29.png)
 

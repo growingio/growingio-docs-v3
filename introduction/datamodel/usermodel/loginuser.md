@@ -6,7 +6,7 @@
 
 登录用户ID是当前用户在您业务系统中唯一的身份ID
 
-GrowingIO在各个平台的SDK中都提供了上传登录用户ID的 API 接口，具体接口定义请参考：[SDK文档](../../../developer-manual/sdkintegrated/)
+GrowingIO在各个平台的SDK中都提供了上传登录用户ID的 API 接口，具体接口定义请参考：[SDK文档](../../../kai-fa-zhe-wen-dang/sdkintegrated/)
 
 ## 登录用户的常见使用场景举例
 
@@ -30,5 +30,5 @@ GrowingIO在各个平台的SDK中都提供了上传登录用户ID的 API 接口�
 
 2. 如何上传登录用户ID与登录用户属性
 
-   您需要在集成SDK时传输您的登录ID，具体接口定义请参考：[SDK接入](../../../developer-manual/sdkintegrated/)
+   您需要在集成SDK时传输您的登录ID，具体接口定义请参考：[SDK接入](../../../kai-fa-zhe-wen-dang/sdkintegrated/)
 

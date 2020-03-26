@@ -49,10 +49,10 @@ Android、iOS 以及 Web 端三端不需要区分：对于这三端，可以只�
 
 在GrowingIO平台对事件和事件级变量进行声明配置后，即可在代码中完成以上设计的 “事件和事件级变量” 的部署。具体的说，就是调用 GrowingIO 提供的 API 接口，上传数据。
 
-* ​[JS 接口文档​](../../../developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/)
-* ​[Android 接口文档​](../../../developer-manual/sdkintegrated/android-sdk/android-sdk-api/)
-* ​[iOS 接口文档​](../../../developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/)
-* [​小程序、小游戏以及内嵌页 SDK​](../../../developer-manual/sdkintegrated/other-sdk/customize-api.md)
+* ​[JS 接口文档​](../../../kai-fa-zhe-wen-dang/sdkintegrated/web-js-sdk/web-sdk-api/)
+* ​[Android 接口文档​](../../../kai-fa-zhe-wen-dang/sdkintegrated/android-sdk/android-sdk-api/)
+* ​[iOS 接口文档​](../../../kai-fa-zhe-wen-dang/sdkintegrated/ios-sdk/ios-sdk-api/)
+* [​小程序、小游戏以及内嵌页 SDK​](../../../kai-fa-zhe-wen-dang/sdkintegrated/other-sdk/customize-api.md)
 
 API 中给出了埋点事件和事件级变量的上传方式。
 
@@ -64,7 +64,7 @@ API 中给出了埋点事件和事件级变量的上传方式。
 
 以原生Android 无埋点 SDK为例：
 
-在SDK中开启Debug：Android 无埋点 SDK &gt; [设置Debug模式](../../../developer-manual/sdkintegrated/android-sdk/auto-android-sdk.md#8-she-zhi-debug-mo-shi)。
+在SDK中开启Debug：Android 无埋点 SDK &gt; [设置Debug模式](../../../kai-fa-zhe-wen-dang/sdkintegrated/android-sdk/auto-android-sdk.md#8-she-zhi-debug-mo-shi)。
 
 在开发者工具中查看日志，如下图：
 
@@ -73,7 +73,7 @@ API 中给出了埋点事件和事件级变量的上传方式。
 {% hint style="info" %}
 其他数据校验方式
 
-* 使用debug 工具，来帮助您进行数据的校验。具体请参考[SDK调试](../../../developer-manual/debugging/)。
+* 使用debug 工具，来帮助您进行数据的校验。具体请参考[SDK调试](../../../kai-fa-zhe-wen-dang/debugging/)。
 * App及小程序可以使用数据校验功能校验进行[数据校验](../../../product-manual/datacenter/datacheck.md)。
 {% endhint %}
 
