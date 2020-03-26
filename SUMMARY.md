@@ -127,10 +127,10 @@
 ## 产品简介
 
 * [什么是XXXX（本章节无操作）](chan-pin-jian-jie/untitled.md)
-* [产品优势](chan-pin-jian-jie/chan-pin-you-shi.md)
-* [应用场景](chan-pin-jian-jie/ying-yong-chang-jing.md)
+* [产品优势-缺失](chan-pin-jian-jie/chan-pin-you-shi.md)
+* [应用场景-缺失](chan-pin-jian-jie/ying-yong-chang-jing.md)
 * [权限说明-Done](chan-pin-jian-jie/role-and-permission.md)
-* [定价策略](chan-pin-jian-jie/ding-jia-ce-lve.md)
+* [定价策略-缺失](chan-pin-jian-jie/ding-jia-ce-lve.md)
 
 ## 开发者文档
 
