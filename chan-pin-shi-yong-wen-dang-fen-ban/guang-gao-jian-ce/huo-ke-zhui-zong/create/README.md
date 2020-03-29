@@ -10,5 +10,3 @@ GrowingIO 监测链接支持 APP 推广（包括：iOS、Android 端）、网页
 
 {% page-ref page="wx/" %}
 
-{% page-ref page="wx/advise.md" %}
-

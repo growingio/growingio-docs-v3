@@ -8,8 +8,6 @@ GrowingIO 提供一系列功能帮助客户跟踪不同场景推广产品的投�
 
 {% page-ref page="../../../chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/huo-ke-zhui-zong/create/" %}
 
-{% page-ref page="../../../chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/shou-ye/report/" %}
-
 {% page-ref page="promote-manage/" %}
 
 {% page-ref page="advance.md" %}

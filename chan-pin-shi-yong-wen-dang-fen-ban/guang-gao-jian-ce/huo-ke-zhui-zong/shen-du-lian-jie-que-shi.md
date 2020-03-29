@@ -32,7 +32,22 @@ Universal Links 配置：[配置方法​](https://docs.growingio.com/docs/produ
 
 App Links 配置：[配置方法](https://docs.growingio.com/docs/product-manual/growing/ads/advance/deeplink#32-applinks-pei-zhi)
 
-## 创建深度链接
+## 新建监测链接
+
+一. 在顶部导航栏选择“**获客追踪&gt;深度链接”**，进入深度链接列表。
+
+二. 单击左上角的**新建深度链接**，进入新建深度链接页面。
+
+三. 配置参数后单击确定，展示创建好的深度链接或二维码。
+
+| 参数 | 说明 |
+| :--- | :--- |
+| 深度链接名称 | 深度链接名称，由中文、英文、短横线（-）、下划线（\_）、斜杠（/）组成，长度小于50个字符。 |
+| 推广App | 选择您要推广的App，如果您需要在一条链接中同时推广您的 iOS 与 Android App，请勾选“一个链接同时推广iOS和Android App”。然后各自选择App。 |
+| 应用下载地址 | 应用下载地址。 |
+| 直达App内落地页 | 添加该参数后可实现直达 App 内的某一页面。 |
+| 推广活动 | 选择该链接所属的推广活动。 |
+| 推广渠道 | 选择该链接所属的推广渠道。 |
 
 ## 直达 App 内落地页
 
@@ -43,10 +58,6 @@ App Links 配置：[配置方法](https://docs.growingio.com/docs/product-manual
 
 例如：在 App 中我们要定位某个功能页面 ID 为 1234 的某个具体页面，就可以通过 [myapp://com.gio.function?page=1234](myapp://com.gio.function?page=1234) 这样的 URI Scheme 来实现。其中，page=1234 即为当前活动页的 URI ，其中 key=page ，value=1234 。
 {% endhint %}
-
-**使用固定参数**
-
-**使用动态参数**
 
 ## 延迟深度链接（Deferred DeepLink）
 
