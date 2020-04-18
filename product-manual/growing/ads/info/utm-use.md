@@ -86,7 +86,7 @@ GrowingIO 提供的 UTM 参数和自定义参数的方式采用的是目前市�
 
 ## UTM参数映射
 
-如果你有自定义的参数没办法进行调整，你可以使用UTM映射功能进行参数映射和配置。请参考[UTM映射管理](../../../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/projectmange/utm-map.md)。
+如果你有自定义的参数没办法进行调整，你可以使用UTM映射功能进行参数映射和配置。请参考[UTM映射管理]()。
 
 ## 使用案例
 

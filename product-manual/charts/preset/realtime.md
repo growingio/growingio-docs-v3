@@ -42,7 +42,7 @@
 
 ### 2. GrowingIO 爬虫规则会过滤实时看板中的数据？
 
-会的，详情请见[爬虫预防](../../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/projectmange/crawler.md)。
+会的，详情请见[爬虫预防]()。
 
 ### 3. 添加新实时单图的时候，为什么创建的新图暂无数据？
 

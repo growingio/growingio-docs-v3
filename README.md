@@ -3,7 +3,7 @@
 ## 新功能介绍
 
 {% hint style="success" %}
-GrowingIO全新上线自动获取Token值功能，详情请参考[API Token管理](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/projectmange/api-token.md)。
+GrowingIO全新上线自动获取Token值功能，详情请参考[API Token管理]()。
 {% endhint %}
 
 {% hint style="success" %}

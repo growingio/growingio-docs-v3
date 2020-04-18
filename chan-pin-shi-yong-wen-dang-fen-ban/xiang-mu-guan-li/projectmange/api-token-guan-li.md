@@ -2,6 +2,8 @@
 
 API Token管理功能可直接由系统利用项目的公钥和私钥自动生成Token，省去了您频繁计算导致的错误、失效等问题。
 
+![](../../../.gitbook/assets/ying-mu-jie-tu-20200418-xia-wu-3.43.07.png)
+
 
 
 {% hint style="warning" %}

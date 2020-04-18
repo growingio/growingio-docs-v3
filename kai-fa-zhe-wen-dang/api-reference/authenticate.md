@@ -6,7 +6,7 @@
 
 | 参数 | 类型 | 说明 |
 | :--- | :--- | :--- |
-| Authorization | string | 接口请求所需的认证码，即Token，您可以在GrowingIO平台的项目配置中获取一个长期有效的Token，获取方法请参考[API Token管理](../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/projectmange/api-token.md)。 |
+| Authorization | string | 接口请求所需的认证码，即Token，您可以在GrowingIO平台的项目配置中获取一个长期有效的Token，获取方法请参考[API Token管理]()。 |
 
 ## 其他常用参数
 
