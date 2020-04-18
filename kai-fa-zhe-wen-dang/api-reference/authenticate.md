@@ -6,7 +6,7 @@
 
 | 参数 | 类型 | 说明 |
 | :--- | :--- | :--- |
-| Authorization | string | 接口请求所需的认证码，即Token，您可以在GrowingIO平台的项目配置中获取一个长期有效的Token，获取方法请参考[API Token管理](../../product-manual/sysmanage/projectmange/api-token.md)。 |
+| Authorization | string | 接口请求所需的认证码，即Token，您可以在GrowingIO平台的项目配置中获取一个长期有效的Token，获取方法请参考[API Token管理](../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/projectmange/api-token.md)。 |
 
 ## 其他常用参数
 
@@ -31,7 +31,7 @@
         <p><b>&#x83B7;&#x53D6;&#x793A;&#x4F8B;</b>&#xFF1A;</p>
         <p>&#x9009;&#x62E9;&#x9879;&#x76EE;&#x540E;&#x9875;&#x9762;URL&#x4E3A;<code>https://www.growingio.com/admin/projects/nxog09md/dashboard</code>&#x5F53;&#x524D;&#x9879;&#x76EE;&#x7684;UID&#x4E3A;<code>nxog09md</code>&#x3002;&#x8BE6;&#x7EC6;&#x8BF7;&#x53C2;&#x8003;
           <a
-          href="../../product-manual/sysmanage/projectmange/get-uid.md">&#x83B7;&#x53D6;&#x9879;&#x76EE;UID</a>&#x3002;</p>
+          href="../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/projectmange/get-uid.md">&#x83B7;&#x53D6;&#x9879;&#x76EE;UID</a>&#x3002;</p>
       </td>
     </tr>
     <tr>

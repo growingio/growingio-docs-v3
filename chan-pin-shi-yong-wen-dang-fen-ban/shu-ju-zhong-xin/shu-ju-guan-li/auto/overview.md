@@ -6,7 +6,7 @@
 
 GrowingIO提供了丰富的数据定义方式，您可以对您的网页、iOS App、Android App、小程序进行圈选。进入圈选模式后，需要点击相应的元素并根据界面提示做相应的选择进行保存，就能在GrowingIO后台 “指标管理“ 中看到圈选的事件。
 
-无埋点事件管理请参考[无埋点事件管理](../../../chan-pin-shi-yong-wen-dang-fen-ban/shu-ju-zhong-xin/shu-ju-guan-li/auto.md)。
+无埋点事件管理请参考[无埋点事件管理](./)。
 
 ## 圈选命名规范 <a id="quan-xuan-ming-ming-gui-fan"></a>
 

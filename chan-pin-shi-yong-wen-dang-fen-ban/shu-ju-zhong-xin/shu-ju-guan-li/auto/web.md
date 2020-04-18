@@ -9,7 +9,7 @@ GrowingIO 全量采集用户行为数据，你可以通过「圈选」来定义�
 {% hint style="info" %}
 Hashtag使用说明
 
-如果您的Web页面URL使用了Hashtag，请在加载SDK进行预先配置，请参考[Web JS SDK](../../../kai-fa-zhe-wen-dang/sdkintegrated/web-js-sdk/)。
+如果您的Web页面URL使用了Hashtag，请在加载SDK进行预先配置，请参考[Web JS SDK](../../../../kai-fa-zhe-wen-dang/sdkintegrated/web-js-sdk/)。
 {% endhint %}
 
 {% hint style="success" %}

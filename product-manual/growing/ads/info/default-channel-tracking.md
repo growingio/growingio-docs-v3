@@ -102,7 +102,7 @@ GrowingIO直接支持百度统计的参数解析；如果您的自主投放追�
 
 POST [https://gta.growingio.com/api/v1/projects/project\_uid/activities](https://gta.growingio.com/api/v1/projects/project_uid/activities)
 
-上述地址中的 project\_uid 取值请参考[获取项目UID](../../../sysmanage/projectmange/get-uid.md)。
+上述地址中的 project\_uid 取值请参考[获取项目UID](../../../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/projectmange/get-uid.md)。
 
 将以下内容作为JSON Body，POST到上述链接。
 
