@@ -6,8 +6,6 @@
 2. 单击界面右上角的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/ke-fu.png) 选择**提交问题**直接进入工单系统提交新问题界面，或者在工单管理界面单击**提交新问题。**
 3. 填写工单，并单击**提交。**
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28142%29.png)
-
 | **参数** | 说明 |
 | :--- | :--- |
 
