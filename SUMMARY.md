@@ -375,7 +375,7 @@
 * [项目管理](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/README.md)
   * [项目概览-done](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/details.md)
   * [应用管理-done](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/application-manage.md)
-  * [成员管理](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/project-member.md)
+  * [成员管理-done](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/project-member.md)
   * [角色管理 - done](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/jiao-se-guan-li/README.md)
     * [系统角色功能权限列表](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/jiao-se-guan-li/xi-tong-jiao-se-gong-neng-quan-xian-lie-biao.md)
     * [典型角色应用场景](chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/jiao-se-guan-li/example.md)
