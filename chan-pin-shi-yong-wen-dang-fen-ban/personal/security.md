@@ -1,14 +1,10 @@
 # 安全设置
 
-安全设置供您修改个人账号密码及开启或关闭账号二次验证。
-
-登录GrowingIO，单击界面右上角的用户头像选择**个人信息**，进入个人信息设置页面。
-
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2886%29.png)
-
 ## 修改登录密码
 
 单击密码右侧的修改，输入原密码及新密码完成密码修改。
+
+![](../../.gitbook/assets/ying-mu-jie-tu-20200418-xia-wu-5.07.05.png)
 
 ## 开启二次验证
 
