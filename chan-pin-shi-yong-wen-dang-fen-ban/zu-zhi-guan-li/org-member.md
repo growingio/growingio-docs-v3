@@ -1,55 +1,76 @@
 # 组织成员-done
 
-在界面右上角单击 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/2019-10-10_18-59-32%20%281%29.png) 选择**组织管理**，默认进入组织管理界面。选择**组织成员**页签。
+进入组织管理界面，选择**组织成员**页签。·
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28104%29.png)
+![](../../.gitbook/assets/ying-mu-jie-tu-20200418-xia-wu-5.25.38.png)
 
-## 邀请成员（组织外）至项目
+
+
+## 邀请成员
 
 1. 单击**邀请成员**，打开**邀请成员**页面。
-2. 填写一个或多个带邀请用户的邮箱，选择组织角色、所属项目、项目角色后单击**邀请**。被邀请人将收到邀请邮件。
+2. 填写一个或多个带邀请用户的邮箱，选择组织角色、所属项目、项目角色后，单击**邀请**。
+3. 被邀请人将收到邀请邮件。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2825%29.png)
-
-| 参数 | 说明 |
-| :--- | :--- |
+![](../../.gitbook/assets/ying-mu-jie-tu-20200418-xia-wu-5.28.05.png)
 
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x7EC4;&#x7EC7;&#x89D2;&#x8272;</th>
-      <th style="text-align:left">
-        <p>&#x7EC4;&#x7EC7;&#x89D2;&#x8272;&#x7684;&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x5728;&#x4E0E;&#x7EC4;&#x7EC7;&#x7BA1;&#x7406;&#x3002;</p>
-        <p>&#x7BA1;&#x7406;&#x5458;&#xFF1A;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x9664;&#x4FEE;&#x6539;&#x7EC4;&#x7EC7;&#x540D;&#x79F0;&#x3001;&#x66F4;&#x6362;&#x7EC4;&#x7EC7;&#x62E5;&#x6709;&#x8005;&#x4E4B;&#x5916;&#x7684;&#x6240;&#x6709;&#x7EC4;&#x7EC7;&#x7BA1;&#x7406;&#x3002;</p>
-        <p>&#x666E;&#x901A;&#x6210;&#x5458;&#xFF1A;&#x4E0D;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x7EC4;&#x7EC7;&#x7BA1;&#x7406;&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>| 项目角色 | 项目成员的角色权限链接。项目角色详细信息参考 [角色权限说明]()。 |
-| :--- | :--- |
+
+## 邀请成员至项目
+
+1. 点击，操作- 邀请成员至项目 
+2. 选择该成员要加入的项目，以及项目角色
+3. 单击**邀请**。被邀请人将收到邀请邮件。
+
+![](../../.gitbook/assets/ying-mu-jie-tu-20200418-xia-wu-5.58.22.png)
 
 
-1. 在组织成员列表页面单击组织成员右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/dian-dian-dian.png) 选择**邀请至项目**打开邀请加入项目页面。
-2. 选择项目和项目角色后单击**邀请**。被邀请人将收到邀请邮件。
-
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28242%29.png)
 
 ## 调整成员组织角色
 
+{% hint style="danger" %}
+仅组织拥有者可调整其他组织成员组织角色
+{% endhint %}
+
+组织角色的主要功能在与决定该成员在组织管理，拥有哪些权限 
+
+组织擁有者： 拥有所有操作权限
+
+组织管理员：可以进行除修改组织名称、更换组织拥有者之外的，所有组织管理操作权限。 
+
+组织普通成员：不可以进行组织管理。
+
+{% hint style="info" %}
 组织拥有者能将组织管理员角色分配给组织成员。
 
-在组织成员列表页面，单击待调整成员右侧的组织角色，可以修改变更组织角色。
+在组织成员列表页面，单击待调整成员右侧的组织角色，可以修改变更组织角色
+{% endhint %}
 
-## 禁用/启用/移除成员
 
-组织拥有者和组织管理员可以禁用、启用、移除组织内成员。
 
-在组织成员列表页面，单击组织成员右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/dian-dian-dian.png) 选择**禁用成员**/**解除禁用/移除成员。**
+## 禁用/启用
+
+1. 点击，操作- 禁用/启用
+2. 单击禁用
+
+![](../../.gitbook/assets/ying-mu-jie-tu-20200418-xia-wu-6.08.53.png)
 
 {% hint style="warning" %}
-* 禁用后该成员仍会保留在组织内，但将无法访问组织内的任一项目。
-* 移除后该成员将无法进入本组织内的任一项目，且与组织内部所有项目的关联关系都将会被解除，无法恢复。
+**1.**组织拥有者和组织管理员可以禁用、启用、移除组织内成员
+
+2.禁用后该成员仍会保留在组织内，但将无法访问组织内的任一项目。
+{% endhint %}
+
+
+
+## 移除成员
+
+1. 点击，移除成员
+2. 单击移除
+
+![](../../.gitbook/assets/ying-mu-jie-tu-20200418-xia-wu-6.10.46.png)
+
+{% hint style="warning" %}
+移除后该成员将无法进入本组织内的任一项目，且与组织内部所有项目的关联关系都将会被解除，无法恢复。
 {% endhint %}
 

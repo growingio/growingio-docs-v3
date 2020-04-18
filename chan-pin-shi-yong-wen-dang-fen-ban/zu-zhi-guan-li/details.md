@@ -1,10 +1,8 @@
 # 组织概览-done
 
-。
-
-在界面右上角单击 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/2019-10-10_18-59-32%20%281%29.png) 选择组织管理，默认进入组织管理界面。默认进入第一个页签**组织概览**。
-
 ## 查看组织基本信息
+
+选进入组织管理界面，选择顶部导航栏组织概览页签。
 
 ![](../../.gitbook/assets/ying-mu-jie-tu-20200418-xia-wu-4.50.53.png)
 
@@ -16,7 +14,7 @@
 
 ## 修改组织名称
 
-单击基本信息右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/dian-dian-dian.png) 选择**修改组织名称**。
+单击基本信息右侧的  选择**修改组织名称**。
 
 {% hint style="success" %}
 组织名称修改后不会改变默认生成的项目名称。
@@ -26,9 +24,9 @@
 
 单击基本信息右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/dian-dian-dian.png) 选择**更换组织拥有者**。通过身份验证后选择组织内其他成员成为组织新的拥有者。
 
-{% hint style="success" %}
+{% hint style="warning" %}
 * 组织只能转让给组织内成员。
 * 转让组织后该成员成为组织拥有者，同时您的组织角色将变为组织管理员。
-* 转让组织前如果您是项目的超级管理员，转让组织后您的项目角色将变为项目点管理员。
+* 转让组织前如果您是项目的超级管理员，转让组织后您的项目角色将变为项目管理员。
 {% endhint %}
 

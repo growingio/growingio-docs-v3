@@ -1,8 +1,18 @@
 # 组织项目-done
 
+## 用途
+
 组织拥有者和组织管理员可以为组织创建多个项目，您可以在组织项目列表处管理组织下的项目。
 
-在界面右上角单击 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/2019-10-10_18-59-32%20%281%29.png) 选择**组织管理**，默认进入组织管理界面。选择**组织项目**页签。
+{% hint style="info" %}
+一个组织中的项目数项上限，依据购买版本所决定。
+{% endhint %}
+
+## 介面說明
+
+1.选进入组织管理界面，选择顶部导航栏组织項目页签。
+
+![](../../.gitbook/assets/ying-mu-jie-tu-20200418-xia-wu-5.21.14.png)
 
 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28157%29.png)
 
