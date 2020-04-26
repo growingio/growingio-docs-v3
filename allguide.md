@@ -12,7 +12,7 @@
 
 | 产品分析 |  |  |  |
 | :--- | :--- | :--- | :--- |
-| [事件分析](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/fen-xi-gong-ju/event-analysis/) | [漏斗分析](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/fen-xi-gong-ju/funnel/) | [留存分析](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/fen-xi-gong-ju/retention/) | [分布分析](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/fen-xi-gong-ju/frequency/) |
+| [事件分析](chan-pin-shi-yong-wen-dang-fen-ban/product-analysis/fen-xi-gong-ju/event-analysis/) | [漏斗分析](chan-pin-shi-yong-wen-dang-fen-ban/product-analysis/fen-xi-gong-ju/funnel/) | [留存分析](chan-pin-shi-yong-wen-dang-fen-ban/product-analysis/fen-xi-gong-ju/retention/) | [分布分析](chan-pin-shi-yong-wen-dang-fen-ban/product-analysis/fen-xi-gong-ju/frequency/) |
 
 | 用户分析 |  |  |  |
 | :--- | :--- | :--- | :--- |
@@ -20,7 +20,7 @@
 
 | 获客分析 |  |  |  |
 | :--- | :--- | :--- | :--- |
-| [广告监测](product-manual/growing/ads/) | [活动分析](chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/fen-xi/activities.md) | [落地页分析](chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/fen-xi/landing.md) | [分享分析](chan-pin-shi-yong-wen-dang-fen-ban/chan-pin-fen-xi/ye-wu-chang-jing/shareanalysis.md) |
+| [广告监测](product-manual/growing/ads/) | [活动分析](chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/fen-xi/activities.md) | [落地页分析](chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/fen-xi/landing.md) | [分享分析](chan-pin-shi-yong-wen-dang-fen-ban/product-analysis/ye-wu-chang-jing/shareanalysis.md) |
 
 ## 内容精确搜索
 
