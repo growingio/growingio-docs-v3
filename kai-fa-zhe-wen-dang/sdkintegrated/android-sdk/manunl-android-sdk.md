@@ -12,8 +12,8 @@ description: 埋点 SDK 只自动采集用户访问事件，需要开发同学�
 
 前提条件
 
-* 获取项目ID，获取方法请参考"项目管理 &gt; 项目概览 &gt; [查看项目基本信息](../../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
-* 获取URL Scheme，在GrowingIO平台创建对应的应用时会生成URL Scheme。请参考[创建应用](../../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/application-manage.md#chuang-jian-ying-yong)。
+* 获取项目ID，获取方法请参考"项目管理 &gt; 项目概览 &gt; [查看项目基本信息](../../../product-manual/xiang-mu-guan-li/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
+* 获取URL Scheme，在GrowingIO平台创建对应的应用时会生成URL Scheme。请参考[创建应用](../../../product-manual/xiang-mu-guan-li/application-manage.md#chuang-jian-ying-yong)。
 
 ## 1. 添加跟踪代码
 
@@ -373,5 +373,5 @@ GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 
 方式二：在SDK中设置了Debug模式后，在IDE编译器控制台查看数据采集日志。
 
-方式三：[数据校验](../../../chan-pin-shi-yong-wen-dang-fen-ban/shu-ju-zhong-xin/shu-ju-xiao-yan/datacheck.md)
+方式三：[数据校验](../../../product-manual/shu-ju-zhong-xin/shu-ju-xiao-yan/datacheck.md)
 

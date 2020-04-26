@@ -2,7 +2,7 @@
 
 ## 准备条件
 
-获取项目ID，获取方法请参考"项目管理 &gt; 项目概览 &gt; [查看项目基本信息](../../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
+获取项目ID，获取方法请参考"项目管理 &gt; 项目概览 &gt; [查看项目基本信息](../../../product-manual/xiang-mu-guan-li/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
 
 ## 1. 添加跟踪代码
 
@@ -888,7 +888,7 @@ Page({
 
 ## 7. 创建应用
 
-在GrowingIO平台的创建微信小程序应用。创建应用请参考查看[创建应用](../../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/application-manage.md#chuang-jian-ying-yong)。
+在GrowingIO平台的创建微信小程序应用。创建应用请参考查看[创建应用](../../../product-manual/xiang-mu-guan-li/application-manage.md#chuang-jian-ying-yong)。
 
 ## 8. 验证SDK是否正常采集数据
 
@@ -900,5 +900,5 @@ GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 
 方式二：在SDK中设置了Debug模式后，在微信开发者工具中查看数据采集日志。
 
-方式三：[数据校验](../../../chan-pin-shi-yong-wen-dang-fen-ban/shu-ju-zhong-xin/shu-ju-xiao-yan/datacheck.md)
+方式三：[数据校验](../../../product-manual/shu-ju-zhong-xin/shu-ju-xiao-yan/datacheck.md)
 

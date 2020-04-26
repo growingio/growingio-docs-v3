@@ -2,9 +2,9 @@
 
 ## 准备条件
 
-获取项目ID，请参考[查看项目基本信息](../../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/details.md)。
+获取项目ID，请参考[查看项目基本信息](../../../product-manual/xiang-mu-guan-li/details.md)。
 
-获取URL Scheme，在GrowingIO平台创建对应的应用时会生成URL Scheme。请参考[创建应用](../../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/application-manage.md#chuang-jian-ying-yong)。
+获取URL Scheme，在GrowingIO平台创建对应的应用时会生成URL Scheme。请参考[创建应用](../../../product-manual/xiang-mu-guan-li/application-manage.md#chuang-jian-ying-yong)。
 
 {% hint style="info" %}
 使用GrowingIO平台创建相应的应用，平台在应用创建界面自动为您生成已加载当前项目ID、URL Scheme的跟踪代码。
@@ -313,7 +313,7 @@ GrowingIO SDK 针对欧盟区的一般数据保护法（GDPR）提供了以下�
 
 使用Universal Link唤醒App，步骤如下：
 
-1. 配置链接：[配置Universal Link、应用宝微下载（可选项）](../../../chan-pin-shi-yong-wen-dang-fen-ban/guang-gao-jian-ce/chan-pin-pei-zhi/deeplink.md#ios-ying-yong-pei-zhi)。 
+1. 配置链接：[配置Universal Link、应用宝微下载（可选项）](../../../product-manual/guang-gao-jian-ce/chan-pin-pei-zhi/deeplink.md#ios-ying-yong-pei-zhi)。 
 2. 请在AppDelegate.m添加以下代码：
 
 ```java
@@ -397,5 +397,5 @@ GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 
 方式二：在SDK中设置了Debug模式后，在IDE编译器控制台查看数据采集日志。
 
-方式三：[数据校验](../../../chan-pin-shi-yong-wen-dang-fen-ban/shu-ju-zhong-xin/shu-ju-xiao-yan/datacheck.md)
+方式三：[数据校验](../../../product-manual/shu-ju-zhong-xin/shu-ju-xiao-yan/datacheck.md)
 

@@ -4,5 +4,5 @@
 
 ## 调用频率限制：每秒最多10次。
 
-广告监测相关概念请参见[产品使用文档](../../../product-manual/)&gt;[广告监测](../../../product-manual/growing/ads/)。
+广告监测相关概念请参见[产品使用文档](../../../product-manual-old/)&gt;[广告监测](../../../product-manual-old/growing/ads/)。
 

@@ -2,7 +2,7 @@
 
 ## 准备条件
 
-获取项目ID，获取方法请参考"项目管理 &gt; 项目概览 &gt; [查看项目基本信息](../../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
+获取项目ID，获取方法请参考"项目管理 &gt; 项目概览 &gt; [查看项目基本信息](../../../product-manual/xiang-mu-guan-li/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
 
 ## 1. 添加跟踪代码
 
@@ -259,7 +259,7 @@ gio('setUser', { id: user.id, name: user.name });
 
 当集成成功后，需要回到 GrowingIO SDK 集成页面检测数据。请在添加了跟踪代码的小游戏重新启动几次，发送数据给 GrowingIO。
 
-在GrowingIO平台的创建微信小游戏应用。创建应用请参考查看[创建应用](../../../chan-pin-shi-yong-wen-dang-fen-ban/xiang-mu-guan-li/application-manage.md#chuang-jian-ying-yong)。
+在GrowingIO平台的创建微信小游戏应用。创建应用请参考查看[创建应用](../../../product-manual/xiang-mu-guan-li/application-manage.md#chuang-jian-ying-yong)。
 
 ## 6. 验证SDK是否正常采集数据
 
@@ -267,5 +267,5 @@ gio('setUser', { id: user.id, name: user.name });
 
 方式二：在SDK中设置了Debug模式后，在开发者工具中查看数据采集日志。
 
-方式三：[数据校验](../../../chan-pin-shi-yong-wen-dang-fen-ban/shu-ju-zhong-xin/shu-ju-xiao-yan/datacheck.md)
+方式三：[数据校验](../../../product-manual/shu-ju-zhong-xin/shu-ju-xiao-yan/datacheck.md)
 

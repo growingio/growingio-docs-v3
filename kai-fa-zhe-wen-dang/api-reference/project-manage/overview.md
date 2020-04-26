@@ -6,7 +6,7 @@
 
 相关功能您可以在GrowingIO平台上完成，请参考：
 
-产品使用文档 &gt; 数据中心 &gt; [数据管理](../../../product-manual/datacenter/datamanage/)
+产品使用文档 &gt; 数据中心 &gt; [数据管理](../../../product-manual-old/datacenter/datamanage/)
 
 产品使用文档 &gt; [系统管理]()
 

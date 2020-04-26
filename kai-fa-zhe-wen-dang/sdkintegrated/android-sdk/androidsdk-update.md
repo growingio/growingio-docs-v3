@@ -74,7 +74,7 @@ GrowingIO growingIO = GrowingIO.getInstance();
 
 2.x版本取消了应用级变量的配置，但如果您在1.x中已配置，且进行了数据迁移操作，2.x将为您保留此部分迁移数据在维度选择时使用。
 
-如需新增用户变量字段请在“**数据中心 &gt; 数据管理 &gt; 变量 &gt; 用户变量**”，下的**登录用户变量**页签下配置。配置方式请参考[用户变量](../../../chan-pin-shi-yong-wen-dang-fen-ban/shu-ju-zhong-xin/shu-ju-guan-li/user.md)。
+如需新增用户变量字段请在“**数据中心 &gt; 数据管理 &gt; 变量 &gt; 用户变量**”，下的**登录用户变量**页签下配置。配置方式请参考[用户变量](../../../product-manual/shu-ju-zhong-xin/shu-ju-guan-li/user.md)。
 
 ## 3. 迁移页面属性字段（PS字段）
 
@@ -143,7 +143,7 @@ public class GrowingIO {
 
 ### GrowingIO后台配置
 
-自定义事件的配置，您需要在 **“数据中心 &gt; 数据管理 &gt; 埋点事件 ”** 中进行配置。配置方式请参考[埋点事件管理](../../../chan-pin-shi-yong-wen-dang-fen-ban/shu-ju-zhong-xin/shu-ju-guan-li/manual.md)。
+自定义事件的配置，您需要在 **“数据中心 &gt; 数据管理 &gt; 埋点事件 ”** 中进行配置。配置方式请参考[埋点事件管理](../../../product-manual/shu-ju-zhong-xin/shu-ju-guan-li/manual.md)。
 
 也是在**“管理” - “自定义事件和变量”** 页面中的 **“自定义事件” Tab 页**。但您会发现，除了 “自定义事件” Tab 页外，现在还提供了 “事件级变量” Tab 页来专门管理事件级变量的配置。您只需在 “事件级变量” Tab 页完成事件级变量的配置，然后在新建自定义事件时，从已经建好的事件级变量中选择即可。
 

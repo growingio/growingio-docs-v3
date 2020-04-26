@@ -57,7 +57,7 @@ GET
           </li>
           <li>&#x5728;GrowingIO&#x5E73;&#x53F0;&#x83B7;&#x53D6;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;
             <a
-            href="../../../../chan-pin-shi-yong-wen-dang-fen-ban/shu-ju-zhong-xin/shu-ju-guan-li/user.md">&#x7528;&#x6237;&#x53D8;&#x91CF;</a>
+            href="../../../../product-manual/shu-ju-zhong-xin/shu-ju-guan-li/user.md">&#x7528;&#x6237;&#x53D8;&#x91CF;</a>
           </li>
         </ol>
         <p>&#x4F20;&#x53C2;&#x683C;&#x5F0F;&#xFF1A;<b>&#x591A;&#x4E2A;&#x53C2;&#x6570;&#x9700;&#x7528;&#x82F1;&#x6587;&#x9017;&#x53F7;&#x94FE;&#x63A5;</b>

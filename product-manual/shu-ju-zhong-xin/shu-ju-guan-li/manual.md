@@ -1,0 +1,67 @@
+---
+description: 对无埋点事件进行统一维护与管理。
+---
+
+# 前端、服务端埋点事件-done
+
+完成事件+变量的事件模型设置、在开始代码的部署前，需要先在事件管理处将事件及其变量配置到GrowingIO平台。
+
+## **埋点事件配置**
+
+### **前提条件**
+
+已完成事件级变量的配置，参考[事件变量](event.md)。
+
+### 操作步骤
+
+一. 在顶部导航栏选择“**数据中心 &gt; 数据管理”**，进入数据管理模块。
+
+二. 在左侧导航栏选择“**事件 &gt; 埋点事件”**，进入埋点事件管理页面。
+
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28158%29.png)
+
+三. 单击埋点事件管理界面左上角**创建埋点事件**，进入新建埋点事件页面。
+
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28237%29.png)
+
+| 参数 | 说明 |
+| :--- | :--- |
+| 名称 | GrowingIO平台上变量的名称。 |
+| 标识符 | 此变量在代码中的标识，仅允许大小写英文、数字、下划线，并且不能以数字开头。 |
+| 类型 | 当前只支持计数器类型。 |
+| 标签 | 选择业务标签。 |
+| 描述 | 事件的描述，可填写事件的触发时机和应用场景。 |
+| 关联事件级变量 | 选择当前埋点事件关联的事件级变量。 |
+
+四. 填写完成后，单击确定，完成一个埋点事件的创建。
+
+{% hint style="success" %}
+在完成了配置，以及正确的代码实施后。我们即可开始在GrowingIO 使用埋点事件。
+{% endhint %}
+
+## **埋点事件管理**
+
+在埋点事件列表可以查看埋点事件的名称、描述、标识符、类型、关联事件级变量、创建人、创建时间、最后更新人、最后更新时间、业务标签、状态。
+
+您也可以对埋点事件进行已下操作：
+
+**搜索**：您可以在列表上方的搜索框中按事件名称或标识符来搜索埋点事件。
+
+**QuickView：**单击任一埋点事件，您可以在右侧弹出的埋点事件详情中，查看埋点事件的基本信息与统计趋势。
+
+**编辑**：在QuickView界面单击事件的参数进行修改，修改后单击**保存**。
+
+**快速创建事件分析**：在QuickView见面，可单击**创建事件分析**，快速进入当前事件分析。
+
+**添加业务标签**：单击单条埋点事件右侧业务标签列的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/tian-jia-biao-qian.png) 添加业务标签。
+
+**列定制**：单击列表表头右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/lie-ding-zhi.png) 可选择列表展示项。
+
+**删除**：单击单条埋点事件右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/dian-dian-dian.png) 选择删除，可删除不需要的埋点事件。
+
+**收藏**：单击单条埋点事件左侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/shi-jian-shou-cang.png) 可收藏此埋点事件，在其他情况进行快速选择。
+
+**导出**：单击列表右上方的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/xia-zai.png) 可将埋点事件列表以.xlsx形式下载到本地。
+
+**批量操作**：在列表中使用复选框选择多个埋点事件，可以进行批量添加标签、创建时间分析、删除。
+
