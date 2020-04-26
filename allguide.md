@@ -12,7 +12,7 @@
 
 | 产品分析 |  |  |  |
 | :--- | :--- | :--- | :--- |
-| [事件分析](product-manual/product-analysis/fen-xi-gong-ju/event-analysis/) | [漏斗分析](product-manual/product-analysis/fen-xi-gong-ju/funnel/) | [留存分析](product-manual/product-analysis/fen-xi-gong-ju/retention/) | [分布分析](product-manual/product-analysis/fen-xi-gong-ju/frequency/) |
+| [事件分析](product-manual/product-analysis/analysis-tool/event-analysis/) | [漏斗分析](product-manual/product-analysis/analysis-tool/funnel/) | [留存分析](product-manual/product-analysis/analysis-tool/retention/) | [分布分析](product-manual/product-analysis/analysis-tool/frequency/) |
 
 | 用户分析 |  |  |  |
 | :--- | :--- | :--- | :--- |

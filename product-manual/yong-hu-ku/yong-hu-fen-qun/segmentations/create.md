@@ -110,9 +110,9 @@
 
 ## 方式三： 漏斗/留存/分布分析一键创建分群
 
-[漏斗分析一键创建分群](../../../product-analysis/fen-xi-gong-ju/funnel/create.md#yi-jian-chuang-jian-fen-qun)
+[漏斗分析一键创建分群](../../../product-analysis/analysis-tool/funnel/create.md#yi-jian-chuang-jian-fen-qun)
 
-[留存分析一键创建分群](../../../product-analysis/fen-xi-gong-ju/retention/create.md#yi-jian-chuang-jian-fen-qun)
+[留存分析一键创建分群](../../../product-analysis/analysis-tool/retention/create.md#yi-jian-chuang-jian-fen-qun)
 
-[分布分析一键创建分群](../../../product-analysis/fen-xi-gong-ju/frequency/create.md#yi-jian-chuang-jian-fen-qun)
+[分布分析一键创建分群](../../../product-analysis/analysis-tool/frequency/create.md#yi-jian-chuang-jian-fen-qun)
 
