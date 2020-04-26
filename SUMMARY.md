@@ -363,7 +363,7 @@
     * [SDK 1应用級变量](product-manual/data-center/data-management/sdk-1-ying-yong-ji-bian-liang.md)
     * [SDK 1登录用户变量](product-manual/data-center/data-management/sdk-1-deng-lu-yong-hu-bian-liang.md)
   * [数据规划](product-manual/data-center/dataplan/README.md)
-    * [电商指标体系-缺失](product-manual/data-center/dataplan/dian-shang-zhi-biao-ti-xi-que-shi.md)
+    * [电商指标体系-缺失](product-manual/data-center/dataplan/ecommerce.md)
   * [数据校验](product-manual/data-center/shu-ju-xiao-yan/README.md)
     * [App端&小程序端数据校验](product-manual/data-center/shu-ju-xiao-yan/datacheck.md)
     * [移动端数据校验](product-manual/data-center/shu-ju-xiao-yan/yi-dong-duan-shu-ju-xiao-yan.md)
