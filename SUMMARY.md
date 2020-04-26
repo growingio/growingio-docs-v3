@@ -353,7 +353,7 @@
     * [页面级变量](product-manual/data-center/data-management/page.md)
     * [用户变量-？？](product-manual/data-center/data-management/user.md)
     * [登录用户变量](product-manual/data-center/data-management/logged-in.md)
-    * [访问用戶变量](product-manual/data-center/data-management/fang-wen-yong-hu-bian-liang.md)
+    * [访问用戶变量](product-manual/data-center/data-management/access.md)
     * [转化变量-done](product-manual/data-center/data-management/conversion.md)
     * [业务标签管理](product-manual/data-center/data-management/tag.md)
     * [预定义指标](product-manual/data-center/data-management/yu-ding-yi-zhi-biao.md)
