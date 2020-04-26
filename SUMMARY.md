@@ -357,7 +357,7 @@
     * [转化变量-done](product-manual/data-center/data-management/conversion.md)
     * [业务标签管理](product-manual/data-center/data-management/tag.md)
     * [预定义指标](product-manual/data-center/data-management/indicators.md)
-    * [预定义维度](product-manual/data-center/data-management/yu-ding-yi-wei-du.md)
+    * [预定义维度](product-manual/data-center/data-management/dimension.md)
     * [合并事件-done](product-manual/data-center/data-management/plus.md)
     * [计算指标-done](product-manual/data-center/data-management/count.md)
     * [SDK 1应用級变量](product-manual/data-center/data-management/sdk-1-ying-yong-ji-bian-liang.md)
