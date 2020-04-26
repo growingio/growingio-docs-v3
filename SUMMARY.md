@@ -366,7 +366,7 @@
     * [电商指标体系-缺失](product-manual/data-center/dataplan/ecommerce.md)
   * [数据校验](product-manual/data-center/datacheck/README.md)
     * [App端&小程序端数据校验](product-manual/data-center/datacheck/datacheck.md)
-    * [移动端数据校验](product-manual/data-center/datacheck/yi-dong-duan-shu-ju-xiao-yan.md)
+    * [移动端数据校验](product-manual/data-center/datacheck/app.md)
     * [小程序数据校验](product-manual/data-center/datacheck/xiao-cheng-xu-shu-ju-xiao-yan.md)
     * [Mobile Debugger-缺失](product-manual/data-center/datacheck/mobile-debugger.md)
     * [Web Debugger-缺失](product-manual/data-center/datacheck/web-debugger.md)
