@@ -88,7 +88,7 @@
 
 参考开始讲到的使用场景，配合梳理业务需求并完成“指标 + 维度”的设计，确认需要将哪些变量设置为页转化变量，请勿直接开始代码的部署,需要先到 GrowingIO 后台找到 数据管理 功能，在界面中完成对应的配置。
 
-配置方式请参考[转化变量](../../../product-manual/shu-ju-zhong-xin/shu-ju-guan-li/conversion.md)。
+配置方式请参考[转化变量](../../../product-manual/data-center/shu-ju-guan-li/conversion.md)。
 
 ### **第二步：代码部署** <a id="di-er-bu-dai-ma-bu-shu"></a>
 

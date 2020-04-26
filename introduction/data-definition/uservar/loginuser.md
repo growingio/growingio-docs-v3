@@ -30,7 +30,7 @@
 
 具体的将自定义变量添加到网站或者移动应用上之前，GrowingIO 要求先在打点管理的界面上进行变量的声明操作，然后再开展具体的添加自定义变量的操作。
 
-配置方式参考[用户变量](../../../product-manual/shu-ju-zhong-xin/shu-ju-guan-li/user.md)。
+配置方式参考[用户变量](../../../product-manual/data-center/shu-ju-guan-li/user.md)。
 
 ### **第二步：代码部署** <a id="di-er-bu-dai-ma-bu-shu"></a>
 

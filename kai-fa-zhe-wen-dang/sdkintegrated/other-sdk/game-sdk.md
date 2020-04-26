@@ -267,5 +267,5 @@ gio('setUser', { id: user.id, name: user.name });
 
 方式二：在SDK中设置了Debug模式后，在开发者工具中查看数据采集日志。
 
-方式三：[数据校验](../../../product-manual/shu-ju-zhong-xin/shu-ju-xiao-yan/datacheck.md)
+方式三：[数据校验](../../../product-manual/data-center/shu-ju-xiao-yan/datacheck.md)
 
