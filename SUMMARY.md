@@ -65,9 +65,9 @@
       * [变量管理](product-manual/datacenter/datamanage/variable.md)
       * [自定义指标管理](product-manual/datacenter/datamanage/complex.md)
 
-## 产品简介
+## 产品简介 <a id="introduction-1"></a>
 
-* [产品概述](chan-pin-jian-jie/overview.md)
+* [产品概述](introduction-1/overview.md)
 
 ## 开发者文档
 
