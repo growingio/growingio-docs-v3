@@ -248,7 +248,7 @@
 * [产品分析](product-manual/product-analysis/README.md)
   * [数据监测](product-manual/product-analysis/data-monitoring/README.md)
     * [概览-缺失](product-manual/product-analysis/data-monitoring/overview.md)
-    * [实时-缺失](product-manual/product-analysis/data-monitoring/real-time.md)
+    * [实时-缺失](product-manual/product-analysis/data-monitoring/realtime.md)
     * [分析看板-缺失](product-manual/product-analysis/data-monitoring/fen-xi-kan-ban.md)
     * [KPI看板-done](product-manual/product-analysis/data-monitoring/kpi.md)
     * [小程序看数助手-？？](product-manual/product-analysis/data-monitoring/helper.md)
