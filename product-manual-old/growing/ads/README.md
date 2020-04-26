@@ -6,7 +6,7 @@ GrowingIO 提供一系列功能帮助客户跟踪不同场景推广产品的投�
 
 链接创建及相关数据：
 
-{% page-ref page="../../../product-manual/growing/huo-ke-zhui-zong/create/" %}
+{% page-ref page="../../../product-manual/growing/acquisition/create/" %}
 
 {% page-ref page="promote-manage/" %}
 
