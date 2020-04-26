@@ -16,7 +16,7 @@
 
 | 用户分析 |  |  |  |
 | :--- | :--- | :--- | :--- |
-| [用户分群](product-manual/yong-hu-ku/yong-hu-fen-qun/segmentations/) | [用户细查](product-manual/yong-hu-ku/yong-hu-fen-qun/userinsights/) | [活跃用户](product-manual/yong-hu-ku/yong-hu-fen-xi/active-users/) | [微信用户](product-manual/yong-hu-ku/ye-wu-chang-jing/wx-user.md) |
+| [用户分群](product-manual/yong-hu-ku/segmentations/segmentations/) | [用户细查](product-manual/yong-hu-ku/segmentations/userinsights/) | [活跃用户](product-manual/yong-hu-ku/uesr-analysis/active-users/) | [微信用户](product-manual/yong-hu-ku/scenario/wx-user.md) |
 
 | 获客分析 |  |  |  |
 | :--- | :--- | :--- | :--- |
