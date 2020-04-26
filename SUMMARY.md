@@ -356,7 +356,7 @@
     * [访问用戶变量](product-manual/data-center/data-management/access.md)
     * [转化变量-done](product-manual/data-center/data-management/conversion.md)
     * [业务标签管理](product-manual/data-center/data-management/tag.md)
-    * [预定义指标](product-manual/data-center/data-management/yu-ding-yi-zhi-biao.md)
+    * [预定义指标](product-manual/data-center/data-management/indicators.md)
     * [预定义维度](product-manual/data-center/data-management/yu-ding-yi-wei-du.md)
     * [合并事件-done](product-manual/data-center/data-management/plus.md)
     * [计算指标-done](product-manual/data-center/data-management/count.md)
