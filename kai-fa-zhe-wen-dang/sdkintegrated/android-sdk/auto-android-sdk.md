@@ -6,9 +6,9 @@ description: 无埋点 SDK 具备自动采集基本的用户行为事件，比�
 
 ## 准备条件
 
-获取项目ID，请参考[查看项目基本信息](../../../product-manual/xiang-mu-guan-li/details.md)。
+获取项目ID，请参考[查看项目基本信息](../../../product-manual/projectmange/details.md)。
 
-获取URL Scheme，在GrowingIO平台创建对应的应用时会生成URL Scheme。请参考[创建应用](../../../product-manual/xiang-mu-guan-li/application-manage.md#chuang-jian-ying-yong)。
+获取URL Scheme，在GrowingIO平台创建对应的应用时会生成URL Scheme。请参考[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
 
 {% hint style="info" %}
 使用GrowingIO平台创建相应的应用，平台在应用创建界面自动为您生成已加载当前项目ID、URL Scheme的跟踪代码。

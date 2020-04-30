@@ -20,7 +20,7 @@
 
 其中包含当前应用的基本信息配置，如果您需要更改此处信息，请单击「前往应用管理」进行更改。
 
-也可直接在应用管理中心修改，请参考[修改应用信息](../../xiang-mu-guan-li/application-manage.md#xiu-gai-shan-chu-ying-yong)。
+也可直接在应用管理中心修改，请参考[修改应用信息](../../projectmange/application-manage.md#xiu-gai-shan-chu-ying-yong)。
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtP41qSBliAk88VA3Xe-LtPJ9y2NR46v9RUT5xLimage.png)
 
@@ -78,7 +78,7 @@ GrowingIO的域名：
 
 其中包含当前应用的基本信息配置，如果您需要更改此处信息，请单击「前往应用管理」进行更改。
 
-也可直接在应用管理中心修改，请参考[修改应用信息](../../xiang-mu-guan-li/application-manage.md#xiu-gai-shan-chu-ying-yong)。
+也可直接在应用管理中心修改，请参考[修改应用信息](../../projectmange/application-manage.md#xiu-gai-shan-chu-ying-yong)。
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtPeN51XOz8pL5J28rs-LtPetuUHeUEFwBh_438image.png)
 
