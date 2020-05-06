@@ -8,9 +8,7 @@ description: 统一管理广告监测的渠道。
 
 ## 渠道管理
 
-一. 在顶部导航栏选择“**获客分析 &gt; 广告监测”**，进入广告监测模块。
-
-二. 在左侧导航栏选择“**管理 &gt; 推广渠道”**，进入渠道管理页面。
+在顶部导航栏选择“**获客分析 &gt; 产品配置 &gt; 推广渠道 ”**，进入推广渠道管理页面。
 
 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2854%29.png)
 

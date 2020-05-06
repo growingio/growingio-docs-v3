@@ -4,13 +4,11 @@ description: 导出移动端应用监测链接的日志。
 
 # 日志数据导出-done
 
-一. 在顶部导航栏选择“**获客分析 &gt; 广告监测”**，进入广告监测模块。
-
-二. 在左侧导航栏选择“**高级设置 &gt; 日志导出”**，进入日志导出任务列表页面。
+一. 在顶部导航栏选择“**获客分析 &gt; 产品配置 &gt; 日志导出 ”**，进入日志导出功能。
 
 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28214%29.png)
 
-三. 单击页面上方的新建导出任务，弹出新建导出界面。
+二. 单击页面上方的新建导出任务，弹出新建导出界面。
 
 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28182%29.png)
 
