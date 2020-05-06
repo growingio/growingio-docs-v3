@@ -8,13 +8,11 @@
 
 ## 新增链接参数
 
-一. 在顶部导航栏选择“**获客分析 &gt; 广告监测”**，进入广告监测模块。
-
-二. 在左侧导航栏选择“**高级设置 &gt; 维度配置”**，进入监测链接维度信息页面。
+一. 在顶部导航栏选择“**获客分析 &gt; 产品配置 &gt; 维度配置”**，进入维度配置功能。
 
 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28106%29.png)
 
-三. 单击页面上方的新增链接参数，弹出新增链接参数对话框。
+二. 单击页面上方的新增链接参数，弹出新增链接参数对话框。
 
 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2864%29.png)
 

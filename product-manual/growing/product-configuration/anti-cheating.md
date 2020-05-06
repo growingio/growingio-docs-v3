@@ -18,13 +18,11 @@ description: 在移动端 App 推广中，提供异常数据标识功能。
 
 ## 自定义规则 <a id="gui-ze-ding-yi"></a>
 
-一. 在顶部导航栏选择“**获客分析 &gt; 广告监测”**，进入广告监测模块。
-
-二. 在左侧导航栏选择“**高级设置 &gt; 反作弊规则”**，进入反作弊规则管理页面。
+一. 在顶部导航栏选择“**获客分析 &gt; 产品配置 &gt; 反作弊规则 ”**，进入反作弊规则配置页面。
 
 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28194%29.png)
 
-三. 单击页面上方的新建规则，弹出自定义反作弊配置页面。
+二. 单击页面上方的新建规则，弹出自定义反作弊配置页面。
 
 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2821%29.png)
 
