@@ -1,18 +1,18 @@
 # 活动页分析
 
-## **什么是活动分析**
+## **什么是活动页分析**
 
-活动分析是对您线上活动页面的用户访问情况的分析，只需要输入线上投放活动网页的 URL（Web）或页面圈选指标（App） ，就可以获得基本的活动数据，节约处理数据的时间，直接获得洞察 ，帮助你提高活动效果，高效汇报，开心工作。
+活动页分析是对您线上活动页面的用户访问情况的分析，只需要输入线上投放活动网页的 URL（Web）或页面圈选指标（App） ，就可以获得基本的活动数据，节约处理数据的时间，直接获得洞察 ，帮助你提高活动效果，高效汇报，开心工作。
 
-## 创建活动分析
+## 创建活动页分析
 
-一. 在顶部导航栏选择“**获客分析 &gt; 分析 &gt; 活动分析”**，进入活动管理页面。
+一. 在顶部导航栏选择“**获客分析 &gt; 分析 &gt; 活动页分析”**，进入活动管理页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2840%29.png)
+![](../../../.gitbook/assets/huo-dong-ye-fen-xi-ru-kou.png)
 
-二. 单击**创建活动分析**，进入**新建活动分析**页面。
+二. 单击**创建活动分析**，进入**新建活动也分析**页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2887%29.png)
+![](../../../.gitbook/assets/xin-jian-huo-dong-ye-fen-xi.png)
 
 | 参数 | 说明 |
 | :--- | :--- |
@@ -47,7 +47,7 @@
 
 ## **各模块介绍**
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2868%29.png)
+![](../../../.gitbook/assets/huo-dong-ye-fen-xi-nei-rong-jie-shao.png)
 
 | 模块 | 说明 |
 | :--- | :--- |

@@ -20,11 +20,11 @@ description: 在移动端 App 推广中，提供异常数据标识功能。
 
 一. 在顶部导航栏选择“**获客分析 &gt; 产品配置 &gt; 反作弊规则 ”**，进入反作弊规则配置页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28194%29.png)
+![](../../../.gitbook/assets/fan-zuo-bi-ru-kou.png)
 
 二. 单击页面上方的新建规则，弹出自定义反作弊配置页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2821%29.png)
+![](../../../.gitbook/assets/fan-zuo-bi-pei-zhi.png)
 
 异常点击/激活：可定义【时间窗】在多少小时内，当前【IP 点击上限】超过多少次时，该数据将标记为异常点击/激活。
 

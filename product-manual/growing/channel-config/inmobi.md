@@ -6,5 +6,7 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-Lj0JGmvkDChuggEtLGx-Lj0Kzk0RreUCGZ5yVGBA6439143-82DB-467E-A66F-7DA32F17746D.png)
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2889%29.png)
+![](../../../.gitbook/assets/ai-qi-yi-zhuan-hua-hui-chuan.png)
+
+
 

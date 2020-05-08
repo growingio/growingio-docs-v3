@@ -10,11 +10,11 @@
 
 一. 在顶部导航栏选择“**获客分析 &gt; 产品配置 &gt; 维度配置”**，进入维度配置功能。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28106%29.png)
+![](../../../.gitbook/assets/wei-du-pei-zhi-ru-kou.png)
 
 二. 单击页面上方的新增链接参数，弹出新增链接参数对话框。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2864%29.png)
+![](../../../.gitbook/assets/xin-zeng-lian-jie-can-shu.png)
 
 | 参数 | 说明 |
 | :--- | :--- |

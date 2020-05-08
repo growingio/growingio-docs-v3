@@ -15,11 +15,11 @@
 
 一. 在顶部导航栏选择“**获客分析 &gt; 分析 &gt; 落地页分析”**，进入落地页管理页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2888%29.png)
+![](../../../.gitbook/assets/la-di-ye-fen-xi-ru-kou.png)
 
 二. 单击**创建落地页分析**，进入**新建落地页分析**页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28166%29.png)
+![](../../../.gitbook/assets/xin-jian-la-di-ye-fen-xi.png)
 
 | 参数 | 说明 |
 | :--- | :--- |
@@ -50,7 +50,7 @@
 
 ## 各模块介绍
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28171%29.png)
+![](../../../.gitbook/assets/la-di-ye-fen-xi-nei-rong-jie-shao.png)
 
 <table>
   <thead>

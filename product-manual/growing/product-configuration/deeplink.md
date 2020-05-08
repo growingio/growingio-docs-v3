@@ -8,7 +8,7 @@
 
 在顶部导航栏选择“**获客分析 &gt; 产品配置 &gt; 深度链接配置 ”**，进入深度链接配置页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%286%29.png)
+![](../../../.gitbook/assets/shen-du-lian-jie-pei-zhi-ru-kou.png)
 
 ## 2 iOS 应用配置
 
@@ -36,11 +36,11 @@ Universal Links 适用于 iOS 9 及以上的版本，当用户设备系统版本
 
 1、在您的 Xcode 中勾选 **Associated Domains** 功能。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2892%29.png)
+![](../../../.gitbook/assets/huo-qu-teamid.png)
 
 1. 添加 GrowingIO域名到 Xcode。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2814%29.png)
+![](../../../.gitbook/assets/xcode.png)
 
 {% hint style="info" %}
 GrowingIO的域名：
@@ -52,7 +52,7 @@ GrowingIO的域名：
 
 1. 在苹果开发者网站中找到 Team ID 与 Bundle ID，如下图。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28206%29.png)
+![](../../../.gitbook/assets/ping-guo-kai-fa-zhe-wang-zhan.png)
 
 #### **2.2.2 将 Team ID 配置到 GrowingIO 后台。**
 
@@ -66,7 +66,7 @@ GrowingIO的域名：
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtP41qSBliAk88VA3Xe-LtPKKsn2R69VKrS_DHfimage.png)
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28125%29.png)
+![](../../../.gitbook/assets/pei-zhi-universallink.png)
 
 ## 3 Android 应用配置
 
@@ -261,7 +261,7 @@ GrowingIO 提供跳转到应用宝微下载的功能，应用宝微下载为腾�
 
 ## 4 引导中间页配置
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2872%29.png)
+![](../../../.gitbook/assets/zhong-jian-ye-pei-zhi.png)
 
 当您认为 GrowingIO 提供的默认下载引导页风格无法满足您的需求时，您可以对 DeepLink 中的下载引导页面进行定制，使其更符合您产品的风格，其中将提供两种方式对下载页面进行定制，简易布局和自由布局。
 

@@ -18,11 +18,13 @@ GrowingIO的小程序推广广告链接，可以支持如上的投放形式。
 
 ## 创建监测链接 <a id="gong-neng-shi-yong"></a>
 
-一. 在顶部导航栏选择“**获客分析 &gt; 广告监测”**，进入广告监测模块。
+一. 在顶部导航栏选择“**获客分析 &gt; 获客追踪 &gt; 监测链接”**，进入监测链接管理模块。
+
+![](../../../../../.gitbook/assets/xiao-cheng-xu-tui-guang-ru-kou.png)
 
 二. 单击左上角的**新建监测链接**，选择推广小程序。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2831%29.png)
+![](../../../../../.gitbook/assets/chuang-jian-xiao-cheng-xu-jian-ce-lian-jie.png)
 
 | 参数 | 说明 |
 | :--- | :--- |

@@ -10,11 +10,15 @@ description: 统一管理广告监测的渠道。
 
 在顶部导航栏选择“**获客分析 &gt; 产品配置 &gt; 推广渠道 ”**，进入推广渠道管理页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2854%29.png)
+![](../../../.gitbook/assets/tui-guang-qu-dao-guan-li.png)
 
 **新建渠道**：单击页面上方的新建渠道，输入渠道名称，选择渠道类型（广告平台、其他）后单击**确定**。
 
+![](../../../.gitbook/assets/xin-jian-tui-guang-qu-dao.png)
+
 **渠道信息QuickView**：单击列表中的单条渠道，右侧将展开当前渠道的QuickView视图。
+
+![](../../../.gitbook/assets/tui-guang-qu-dao-quickview.png)
 
 **编辑渠道**：单击单条私有渠道右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/guang-gao-jian-ce-bian-ji.png) 对该条渠道信息进行二次修改，公有渠道不支持修改。
 

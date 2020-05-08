@@ -6,11 +6,11 @@ description: 导出移动端应用监测链接的日志。
 
 一. 在顶部导航栏选择“**获客分析 &gt; 产品配置 &gt; 日志导出 ”**，进入日志导出功能。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28214%29.png)
+![](../../../.gitbook/assets/ri-zhi-dao-chu-ru-kou.png)
 
 二. 单击页面上方的新建导出任务，弹出新建导出界面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28182%29.png)
+![](../../../.gitbook/assets/ri-zhi-dao-chu-ye-mian.png)
 
 | 参数 | 说明 |
 | :--- | :--- |
