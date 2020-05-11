@@ -228,5 +228,5 @@ gio('track', 'testImp', { foo: 'bar', baz: 'qux'})
 
 方式二：在SDK中设置了Debug模式后，在开发者工具中查看数据采集日志。
 
-方式三：[数据校验](../../../product-manual/data-center/datacheck/datacheck.md)
+方式三：[数据校验]()
 

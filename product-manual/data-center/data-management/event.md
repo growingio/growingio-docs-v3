@@ -2,7 +2,7 @@
 description: 在GrowingIO平台对埋点事件变量进行声明和管理。
 ---
 
-# 事件级变量-done
+# 事件级变量
 
 完成事件+变量的事件模型设计、在开始代码的部署前，需要先在变量管理处将事件的变量配置到GrowingIO平台。
 
@@ -16,11 +16,11 @@ description: 在GrowingIO平台对埋点事件变量进行声明和管理。
 事件变量分为事件级变量和页面级变量，需在各自页签进行配置。
 {% endhint %}
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28156%29.png)
+![](../../../.gitbook/assets/image%20%2831%29.png)
 
 三. 单击变量列表上方的**创建事件/页面级变量**，弹出新建事件/页面级变量页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28124%29.png)
+![](../../../.gitbook/assets/image%20%2824%29.png)
 
 | 参数 | 说明 | 事件级变量 | 页面级变量 |
 | :--- | :--- | :--- | :--- |

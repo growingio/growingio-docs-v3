@@ -2,7 +2,7 @@
 description: 在GrowingIO平台对转化变量进行声明和管理。
 ---
 
-# 转化变量-done
+# 转化变量
 
 转化变量是一种强大的变量类型，可以根据不同的业务需求去配置一个转化变量的归因方式和持久性范围。**随着归因模型的不同，持久性范围的不同，用户发生的事件将会归到或者不归到一个转化变量的值上**。
 
@@ -12,11 +12,11 @@ description: 在GrowingIO平台对转化变量进行声明和管理。
 
 二. 在左侧导航栏选择“**变量 &gt; 转化变量”**，进入转化变量管理页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28164%29.png)
+![](../../../.gitbook/assets/image%20%2821%29.png)
 
 三. 单击变量列表上方的创建转化变量，弹出新建转化变量页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28148%29.png)
+![](../../../.gitbook/assets/image%20%2830%29.png)
 
 | 参数 | 说明 |
 | :--- | :--- |
@@ -85,9 +85,9 @@ description: 在GrowingIO平台对转化变量进行声明和管理。
 
 **编辑：**在QuickView界面单击变量的参数进行修改，修改后单击**保存**。
 
-**列定制**：单击列表表头右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/lie-ding-zhi.png) 可选择列表展示项。
+**列定制**：单击列表表头右侧的 ![](../../../.gitbook/assets/image%20%2810%29.png) 可选择列表展示项。
 
-**删除**：单击单条转化变量右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/dian-dian-dian.png) 选择删除，可删除不需要的转化变量。
+**删除**：单击单条转化变量右侧的 ![](../../../.gitbook/assets/image%20%2811%29.png) 选择删除，可删除不需要的转化变量。
 
 **批量操作**：在列表中使用复选框选择多个转化变量，可以进行批量删除。
 

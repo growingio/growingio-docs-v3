@@ -2,7 +2,7 @@
 description: 对产品内所有的计算指标进行统一的维护与管理。
 ---
 
-# 计算指标-done
+# 计算指标
 
 ## **简介** <a id="1-jian-jie"></a>
 
@@ -22,11 +22,11 @@ description: 对产品内所有的计算指标进行统一的维护与管理。
 
 二. 在左侧导航栏选择“**自定义 &gt; 计算指标”**，进入计算指标管理页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2899%29.png)
+![](../../../../.gitbook/assets/image%20%2828%29.png)
 
 三. 单击计算指标列表界面左上角的创建计算指标，弹出创建计算指标界面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2873%29.png)
+![](../../../../.gitbook/assets/image%20%2816%29.png)
 
 | 参数 | 说明 |
 | :--- | :--- |

@@ -2,7 +2,7 @@
 description: 对产品内所有的合并事件进行统一的维护与管理。
 ---
 
-# 合并事件-done
+# 合并事件
 
 ## **简介** <a id="1-jian-jie"></a>
 
@@ -21,11 +21,11 @@ description: 对产品内所有的合并事件进行统一的维护与管理。
 
 二. 在左侧导航栏选择“**自定义 &gt; 合并事件”**，进入合并事件管理页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2860%29.png)
+![](../../../../.gitbook/assets/image%20%2823%29.png)
 
 三. 单击合并事件管理界面左上角**创建合并事件**，弹出创建合并事件界面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2880%29.png)
+![](../../../../.gitbook/assets/image%20%288%29.png)
 
 {% hint style="info" %}
 **合并事件说明**
