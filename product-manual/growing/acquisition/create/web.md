@@ -8,6 +8,8 @@
 
 二. 单击左上角的**新建监测链接**，选择推广网页。
 
+（网页）
+
 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2882%29.png)
 
 | 参数 | 说明 |
