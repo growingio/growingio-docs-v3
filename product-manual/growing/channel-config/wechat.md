@@ -6,7 +6,7 @@
 
 2、添加投放账号信息，开始授权
 
-![](../../../.gitbook/assets/image%20%284%29.png)
+![](../../../.gitbook/assets/image%20%285%29.png)
 
 {% hint style="info" %}
  iOS 应用，此处应用 ID 请填写 Apple Store ID
@@ -16,7 +16,7 @@ Android 应用，此处应用 ID 请填写腾讯应用宝分配的 ID
 
 3、前往腾讯进行授权，注意请使用公众号管理员账号扫码授权
 
-![](../../../.gitbook/assets/image%20%2812%29.png)
+![](../../../.gitbook/assets/image%20%2814%29.png)
 
 4、授权成功，下一步请添加监测链接至媒体。
 

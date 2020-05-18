@@ -91,7 +91,7 @@ App Links 配置：[配置方法](https://docs.growingio.com/docs/product-manual
 
 三. 在下方的推广日报模块单击自定义指标，勾选延迟场景还原即可查看延迟深度链接的数据。
 
-![](../../../.gitbook/assets/image%20%2813%29.png)
+![](../../../.gitbook/assets/image%20%2816%29.png)
 
-![](../../../.gitbook/assets/image%20%2817%29.png)
+![](../../../.gitbook/assets/image%20%2820%29.png)
 

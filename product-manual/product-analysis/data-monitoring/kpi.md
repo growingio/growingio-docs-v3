@@ -1,4 +1,4 @@
-# KPI看板-done
+# KPI看板
 
 ## 简介 <a id="kpi-kan-ban-ke-yi-zuo-shi-mo"></a>
 
