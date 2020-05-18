@@ -374,7 +374,7 @@
   * [角色管理 - done](product-manual/projectmange/role-manage/README.md)
     * [典型角色应用场景](product-manual/projectmange/role-manage/example.md)
     * [系统角色功能权限列表](product-manual/projectmange/role-manage/limit.md)
-  * [小組管理-done](product-manual/projectmange/resources-limit.md)
+  * [小组管理-done](product-manual/projectmange/resources-limit.md)
   * [数据权限-done](product-manual/projectmange/data-limit.md)
   * [项目配置-done](product-manual/projectmange/projectmange/README.md)
     * [IP及域名数据过滤](product-manual/projectmange/projectmange/ip-ji-yu-ming-shu-ju-guo-lv.md)
