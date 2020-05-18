@@ -12,11 +12,15 @@
 
  一. 在顶部导航栏选择“**获客分析 &gt; 获客追踪 &gt; 监测链接”**，进入监测链接列表。
 
+![](../../../../.gitbook/assets/jian-ce-lian-jie-ru-kou.png)
+
 二. 单击左上角的**新建监测链接**，进入新建监测链接页面。
+
+![](../../../../.gitbook/assets/chuang-jian-jian-ce-lian-jie.png)
 
 三. 配置参数后单击确定，展示创建好的监测链接或二维码。
 
-（配图）
+![](../../../../.gitbook/assets/jian-ce-lian-jie-chuang-jian-cheng-gong.png)
 
 | 参数 | 说明 |
 | :--- | :--- |

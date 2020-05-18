@@ -20,9 +20,9 @@ description: 统一管理广告监测的渠道。
 
 ![](../../../.gitbook/assets/tui-guang-qu-dao-quickview.png)
 
-**编辑渠道**：单击单条私有渠道右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/guang-gao-jian-ce-bian-ji.png) 对该条渠道信息进行二次修改，公有渠道不支持修改。
+**编辑渠道**：单击单条私有渠道右侧的 ![](../../../.gitbook/assets/bian-ji-icon.png) 对该条渠道信息进行二次修改，公有渠道不支持修改。
 
-**删除渠道**：单击单条私有渠道右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/1.png) 可删除该条不需要的、未被监测链接使用的、私有渠道。
+**删除渠道**：单击单条私有渠道右侧的 ![](../../../.gitbook/assets/shan-chu-icon.png) 可删除该条不需要的、未被监测链接使用的、私有渠道。
 
 {% hint style="success" %}
 **删除提示**

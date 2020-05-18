@@ -6,11 +6,11 @@
 
 一. 在顶部导航栏选择“**获客分析 &gt; 获客追踪 &gt; 监测链接”**，进入广告监测模块。
 
+![](../../../../.gitbook/assets/jian-ce-lian-jie-ru-kou%20%281%29.png)
+
 二. 单击左上角的**新建监测链接**，选择推广网页。
 
-（网页）
-
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2882%29.png)
+![](../../../../.gitbook/assets/chuang-jian-wang-ye-jian-ce-lian-jie.png)
 
 | 参数 | 说明 |
 | :--- | :--- |

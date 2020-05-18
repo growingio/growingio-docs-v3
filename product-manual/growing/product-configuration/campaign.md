@@ -14,7 +14,7 @@ description: 统一管理您的广告活动。
 
 ![](../../../.gitbook/assets/xin-jian-guang-gao-huo-dong.png)
 
-**删除活动**：单击单条活动右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/1.png) 删除不需要的、未被监测链接使用的活动。
+**删除活动**：单击单条活动右侧的 ![](../../../.gitbook/assets/shan-chu-icon%20%281%29.png) 删除不需要的、未被监测链接使用的活动。
 
 {% hint style="success" %}
 **删除提示**
