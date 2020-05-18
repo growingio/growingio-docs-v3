@@ -8,13 +8,11 @@
 一个组织中的项目数项上限，依据购买版本所决定。
 {% endhint %}
 
-## 介面說明
+## 界面说明
 
-1.选进入组织管理界面，选择顶部导航栏组织項目页签。
+1.进入组织管理界面，选择顶部导航栏 **组织项目** 页签。
 
 ![](../../.gitbook/assets/ying-mu-jie-tu-20200418-xia-wu-5.21.14.png)
-
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28157%29.png)
 
 ## 新建项目
 
