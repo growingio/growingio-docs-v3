@@ -39,16 +39,16 @@ GrowingIO在多年的用户行为分析中发现，很多场景下，我们的�
 
 GrowingIO在所有平台的SDK中都提供了对应的API来实现应用运行时上传用户属性。
 
-* [Web JS SDK](../../../kai-fa-zhe-wen-dang/sdkintegrated/web-js-sdk/)
-* [iOS SDK](../../../kai-fa-zhe-wen-dang/sdkintegrated/ios-sdk/ios-sdk-api/)
-* [Android SDK](../../../kai-fa-zhe-wen-dang/sdkintegrated/android-sdk/android-sdk-api/)
-* [微信小程序 SDK](../../../kai-fa-zhe-wen-dang/sdkintegrated/other-sdk/customize-api.md)
+* [Web JS SDK](../../../developer-manual/sdkintegrated/web-js-sdk/)
+* [iOS SDK](../../../developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/)
+* [Android SDK](../../../developer-manual/sdkintegrated/android-sdk/android-sdk-api/)
+* [微信小程序 SDK](../../../developer-manual/sdkintegrated/other-sdk/customize-api.md)
 
 ### 通过用户属性上传API上传用户属性（登录用户属性Only）
 
 GrowingIO提供了一个基于HTTP的 用户属性上传接口，您可以通过调用这个接口来实现从服务器批量上传用户属性。
 
-参考：[用户属性上传API ](../../../kai-fa-zhe-wen-dang/api-reference/customize-api/)
+参考：[用户属性上传API ](../../../developer-manual/api-reference/customize-api/)
 
 ## 常见问题
 

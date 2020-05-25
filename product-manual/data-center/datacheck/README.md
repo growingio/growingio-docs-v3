@@ -6,7 +6,7 @@
 
 {% page-ref page="mobile-debugger.md" %}
 
-{% page-ref page="../../../kai-fa-zhe-wen-dang/debugging/web-debugger.md" %}
+{% page-ref page="../../../developer-manual/debugging/web-debugger.md" %}
 
 
 

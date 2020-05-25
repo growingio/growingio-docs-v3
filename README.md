@@ -15,7 +15,7 @@ GrowingIO全新上线自动获取Token值功能，详情请参考[API Token管�
 
 详情请参考 &gt;
 
-* [Android 半自动采集浏览事件](kai-fa-zhe-wen-dang/sdkintegrated/android-sdk/android-imp.md)   
-* [iOS 半自动采集浏览事件](kai-fa-zhe-wen-dang/sdkintegrated/ios-sdk/ios-imp.md)
+* [Android 半自动采集浏览事件](developer-manual/sdkintegrated/android-sdk/android-imp.md)   
+* [iOS 半自动采集浏览事件](developer-manual/sdkintegrated/ios-sdk/ios-imp.md)
 {% endhint %}
 

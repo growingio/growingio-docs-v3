@@ -8,7 +8,7 @@
 
 | 开发者使用 |  |  |  |
 | :--- | :--- | :--- | :--- |
-| [SDK集成](kai-fa-zhe-wen-dang/sdkintegrated/) | [SDK调试](kai-fa-zhe-wen-dang/debugging/) | [API参考](kai-fa-zhe-wen-dang/api-reference/) |  |
+| [SDK集成](developer-manual/sdkintegrated/) | [SDK调试](developer-manual/debugging/) | [API参考](developer-manual/api-reference/) |  |
 
 | 产品分析 |  |  |  |
 | :--- | :--- | :--- | :--- |
@@ -16,11 +16,11 @@
 
 | 用户分析 |  |  |  |
 | :--- | :--- | :--- | :--- |
-| [用户分群](product-manual/yong-hu-ku/segmentations/segmentations/) | [用户细查](product-manual/yong-hu-ku/segmentations/userinsights/) | [活跃用户](product-manual/yong-hu-ku/uesr-analysis/active-users/) | [微信用户](product-manual/yong-hu-ku/scenario/wx-user.md) |
+| [用户分群](product-manual/user-warehouse/segmentations/segmentations/) | [用户细查](product-manual/user-warehouse/segmentations/userinsights/) | [活跃用户](product-manual/user-warehouse/uesr-analysis/active-users/) | [微信用户](product-manual/user-warehouse/business-scenario/wx-user.md) |
 
 | 获客分析 |  |  |  |
 | :--- | :--- | :--- | :--- |
-| [广告监测](product-manual-old/growing/ads/) | [活动分析](product-manual/growing/analysis/activities.md) | [落地页分析](product-manual/growing/analysis/landing.md) | [分享分析](product-manual/product-analysis/ye-wu-chang-jing/shareanalysis.md) |
+| [广告监测](product-manual-old/growing/ads/) | [活动分析](product-manual/growing/analysis/activities.md) | [落地页分析](product-manual/growing/analysis/landing.md) | [分享分析](product-manual/product-analysis/business-scenario/shareanalysis.md) |
 
 ## 内容精确搜索
 

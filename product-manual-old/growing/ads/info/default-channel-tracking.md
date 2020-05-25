@@ -95,10 +95,10 @@ GrowingIO直接支持百度统计的参数解析；如果您的自主投放追�
 ## 5. 自主调用 API 接口创建链接 <a id="5"></a>
 
 {% hint style="warning" %}
-下线通知：网页推广监测链接创建 API 已合并至广告监测链接创建服务 API 下，此 API 接口计划于 19 年 12 月 1 日下线，请您尽快切换至新版 API 接口，文档位置：[推广网页创建 API](../../../../kai-fa-zhe-wen-dang/api-reference/query-productid/definition/create-weblinks.md) 。
+下线通知：网页推广监测链接创建 API 已合并至广告监测链接创建服务 API 下，此 API 接口计划于 19 年 12 月 1 日下线，请您尽快切换至新版 API 接口，文档位置：[推广网页创建 API](../../../../developer-manual/api-reference/query-productid/definition/create-weblinks.md) 。
 {% endhint %}
 
-下线通知：网页推广监测链接创建 API 已合并至广告监测链接创建服务 API 下，此 API 接口计划于 19 年 12 月 1 日下线，请您尽快切换至新版 API 接口，文档位置：[推广网页创建 API](../../../../kai-fa-zhe-wen-dang/api-reference/query-productid/definition/create-weblinks.md) 。
+下线通知：网页推广监测链接创建 API 已合并至广告监测链接创建服务 API 下，此 API 接口计划于 19 年 12 月 1 日下线，请您尽快切换至新版 API 接口，文档位置：[推广网页创建 API](../../../../developer-manual/api-reference/query-productid/definition/create-weblinks.md) 。
 
 POST [https://gta.growingio.com/api/v1/projects/project\_uid/activities](https://gta.growingio.com/api/v1/projects/project_uid/activities)
 

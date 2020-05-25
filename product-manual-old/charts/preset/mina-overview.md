@@ -183,7 +183,7 @@ GrowingIO 小程序 SDK 会默认监测用户在页面点击转发按钮，调�
 
 如果在 SDK 集成的时候设置了微信用户变量，那么可以在图中得到过去 7 天的使用用户的性别分布；微信用户变量中，常见的值为：男性、女性、未知（表示用户没有设置性别值）。
 
-如果出现大量的N/A，表示GrowingIO没有获取到用户设置的微信性别属性。常见的情况有这么几种：1没有设置用户；请参考[SDK微信用户属性设置](../../../kai-fa-zhe-wen-dang/sdkintegrated/other-sdk/minp-sdk.md#sdk-wei-xin-yong-hu-shu-xing-she-zhi)，来设置微信用户的变量；2小程序不强制读取微信用户设置的信息，用户未授权小程序读自己的内容设置。
+如果出现大量的N/A，表示GrowingIO没有获取到用户设置的微信性别属性。常见的情况有这么几种：1没有设置用户；请参考[SDK微信用户属性设置](../../../developer-manual/sdkintegrated/other-sdk/minp-sdk.md#sdk-wei-xin-yong-hu-shu-xing-she-zhi)，来设置微信用户的变量；2小程序不强制读取微信用户设置的信息，用户未授权小程序读自己的内容设置。
 
 ## 用户城市 <a id="yong-hu-cheng-shi"></a>
 
@@ -191,7 +191,7 @@ GrowingIO 小程序 SDK 会默认监测用户在页面点击转发按钮，调�
 
 **微信所属城市**：即用户设置的微信用户信息中标记的地理位置所属的城市。不按照实际地点变化进行变化。
 
-如果出现大量的N/A，表示GrowingIO没有获取到用户设置的微信性别属性。常见的情况有这么几种：1没有设置用户；请参考[微信小程序 SDK](../../../kai-fa-zhe-wen-dang/sdkintegrated/other-sdk/minp-sdk.md#4-wei-xin-yong-hu-xin-xi-de-pei-zhi)，来设置微信用户的变量；2小程序不强制读取微信用户设置的信息，用户未授权小程序读自己的内容设置。
+如果出现大量的N/A，表示GrowingIO没有获取到用户设置的微信性别属性。常见的情况有这么几种：1没有设置用户；请参考[微信小程序 SDK](../../../developer-manual/sdkintegrated/other-sdk/minp-sdk.md#4-wei-xin-yong-hu-xin-xi-de-pei-zhi)，来设置微信用户的变量；2小程序不强制读取微信用户设置的信息，用户未授权小程序读自己的内容设置。
 
 **实际访问城市：**GrowingIO会获取用户访问时的实际IP，根据实际IP，对照商业IP库，来识别用户所在地区。如果标记为未知，即为商业IP库未收录，多常见于移动网络IP、较为偏远的地区、或网络代理。
 

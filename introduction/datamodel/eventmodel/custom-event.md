@@ -18,10 +18,10 @@
 
 客户可以通过在自己的应用中通过调用 SDK 的 API 来发送埋点事件，对应的 API 文档参考：
 
-* [WEB JS SDK](../../../kai-fa-zhe-wen-dang/sdkintegrated/web-js-sdk/web-sdk-api/)
-* [iOS](../../../kai-fa-zhe-wen-dang/sdkintegrated/ios-sdk/ios-sdk-api/customize-api.md)
-* [Android](../../../kai-fa-zhe-wen-dang/sdkintegrated/android-sdk/android-sdk-api/customize-api.md)
-* [小程序](../../../kai-fa-zhe-wen-dang/sdkintegrated/other-sdk/customize-api.md)
+* [WEB JS SDK](../../../developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/)
+* [iOS](../../../developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/customize-api.md)
+* [Android](../../../developer-manual/sdkintegrated/android-sdk/android-sdk-api/customize-api.md)
+* [小程序](../../../developer-manual/sdkintegrated/other-sdk/customize-api.md)
 
 ### 服务端埋点
 

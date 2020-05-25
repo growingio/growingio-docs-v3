@@ -1,4 +1,4 @@
-# App端数据定义（Web圈选）
+# App端数据定义
 
 ## 一、介绍 <a id="yi-jie-shao"></a>
 
