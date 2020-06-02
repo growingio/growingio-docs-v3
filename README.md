@@ -3,7 +3,7 @@
 ## 新功能介绍
 
 {% hint style="success" %}
-GrowingIO全新上线自动获取Token值功能，详情请参考[API Token管理]()。
+GrowingIO全新上线自动获取Token值功能，详情请参考[API Token管理](https://app.gitbook.com/@growingio/s/v3/~/drafts/-M8neoJOtFjKmzSqH7ZX/product-manual/projectmange/projectmange/api-token)。
 {% endhint %}
 
 {% hint style="success" %}
