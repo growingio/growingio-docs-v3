@@ -132,7 +132,9 @@ GIO 推荐广告位在 `ScrollView` 的最底部，需要用户滑动才能看�
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 参数 | 传参方式 | 是否必填 | 说明 |
+</table>
+
+| 参数 | 传参方式 | 是否必填 | 说明 |
 | :--- | :--- | :--- | :--- |
 
 
@@ -155,7 +157,9 @@ GIO 推荐广告位在 `ScrollView` 的最底部，需要用户滑动才能看�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">setVariable</th>
@@ -171,7 +175,9 @@ GIO 推荐广告位在 `ScrollView` 的最底部，需要用户滑动才能看�
     </tr>
   </thead>
   <tbody></tbody>
-</table>| setGlobalId | set 方法传参 | 否 | **String**：用于在Activity范围内唯一标记View，下文有详细解释改字段的用法与原因。 |
+</table>
+
+| setGlobalId | set 方法传参 | 否 | **String**：用于在Activity范围内唯一标记View，下文有详细解释改字段的用法与原因。 |
 | :--- | :--- | :--- | :--- |
 
 
@@ -195,7 +201,9 @@ GIO 推荐广告位在 `ScrollView` 的最底部，需要用户滑动才能看�
     </tr>
   </thead>
   <tbody></tbody>
-</table>GlobalId 字段的提供主要是为了适配 RecyclerView 这类的可复用 View 对浏览定义的影响。 GIO对View的可见性跟踪默认是对象级别的跟踪，所以默认情况下用户notifyDataSetChange时\(即使内容并没有改变\)， 由于所有View被重新Bind， 而且由于RecyclerView的复用机制， 并不能保证复用顺序有序, 可能触发多条浏览事件发出， 这显然是不符合预期的。
+</table>
+
+GlobalId 字段的提供主要是为了适配 RecyclerView 这类的可复用 View 对浏览定义的影响。 GIO对View的可见性跟踪默认是对象级别的跟踪，所以默认情况下用户notifyDataSetChange时\(即使内容并没有改变\)， 由于所有View被重新Bind， 而且由于RecyclerView的复用机制， 并不能保证复用顺序有序, 可能触发多条浏览事件发出， 这显然是不符合预期的。
 
 例如：用户下拉刷新页面，新增了一条 item ，但是列表顺序变了和未刷新前不一致，此时可能会有多条浏览事件发出，不符合预期，所以提供 globalId 方案解决使得只发送列表中可见新出现的元素。
 
@@ -295,7 +303,9 @@ Android 无埋点 **SDK 2.8.4** 及以上支持。
     </tr>
   </thead>
   <tbody></tbody>
-</table>```javascript
+</table>
+
+```javascript
 //自动采集元素内容并发送埋点事件，默认值为 true 采集元素内容。
 GrowingIO.getInstance().markViewImpression(        
                 new ImpressionMark(findViewById(R.id.tv_imp_without_v), "btn_buy")
@@ -332,7 +342,9 @@ Android 无埋点 **SDK 2.8.5** 及以上支持。
     </tr>
   </thead>
   <tbody></tbody>
-</table>```javascript
+</table>
+
+```javascript
 //当元素大于等于一半可见时，自动采集元素内容并发送埋点事件。
 GrowingIO.getInstance().markViewImpression(        
             new ImpressionMark(findViewById(R.id.tv_imp_without_v), "btn_buy")           

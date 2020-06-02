@@ -43,7 +43,9 @@ description: 验证“页面级变量”数据。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">iOS SDK</th>
@@ -59,7 +61,9 @@ description: 验证“页面级变量”数据。
     </tr>
   </thead>
   <tbody></tbody>
-</table>在对应的应用（网站、Android 或者 iOS App）中打开设置了页面级变量的商品详情页，通过 Debugger 工具验证数据准确性
+</table>
+
+在对应的应用（网站、Android 或者 iOS App）中打开设置了页面级变量的商品详情页，通过 Debugger 工具验证数据准确性
 
 按照如下流程图验证
 

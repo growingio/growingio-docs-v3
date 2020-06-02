@@ -4,11 +4,11 @@
 
 一. 在顶部导航栏选择“**用户分析 &gt; 用户分群”**，进入用户分群列表页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28212%29.png)
+![](../../../../.gitbook/assets/image%20%2862%29.png)
 
 二. 单击**新建分群**，打开新建分群页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28123%29.png)
+![](../../../../.gitbook/assets/image%20%2866%29.png)
 
 三. 选择用户类型（登录用户/访问用户），添加一条或多条分群规则。
 
@@ -35,7 +35,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2</th>
@@ -60,7 +62,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 3 | 时间 | 起始时间最早为项目的接入日期，结束日期最晚为昨日，最长不超过365天。 |
+</table>
+
+| 3 | 时间 | 起始时间最早为项目的接入日期，结束日期最晚为昨日，最长不超过365天。 |
 | :--- | :--- | :--- |
 
 
@@ -95,7 +99,7 @@
 
 一. 在顶部导航栏选择“**用户分析 &gt; 用户分群”**，进入用户分群列表页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28212%29.png)
+![](../../../../.gitbook/assets/image%20%2861%29.png)
 
 二. 单击**上传用户ID**，打开**批量上传登录用户ID**页面。
 

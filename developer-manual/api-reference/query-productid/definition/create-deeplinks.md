@@ -41,7 +41,9 @@ POST
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">productIdIos</th>
@@ -54,7 +56,9 @@ POST
     </tr>
   </thead>
   <tbody></tbody>
-</table>| channelId | string | 是 | 渠道ID。 |
+</table>
+
+| channelId | string | 是 | 渠道ID。 |
 | :--- | :--- | :--- | :--- |
 
 
@@ -71,7 +75,9 @@ POST
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">campaignIdAndroid</th>
@@ -84,7 +90,9 @@ POST
     </tr>
   </thead>
   <tbody></tbody>
-</table>| downloadUrlIos | string | 否 | iOS应用下载地址。 |
+</table>
+
+| downloadUrlIos | string | 否 | iOS应用下载地址。 |
 | :--- | :--- | :--- | :--- |
 
 
@@ -105,7 +113,9 @@ POST
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">androidParams</th>

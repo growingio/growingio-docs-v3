@@ -51,7 +51,9 @@ description: 使用标签进行更好的分类整理。
     </tr>
   </thead>
   <tbody></tbody>
-</table>**标签搜索**：您可以在列表上方的搜索框中按标签名称来搜索指标。
+</table>
+
+**标签搜索**：您可以在列表上方的搜索框中按标签名称来搜索指标。
 
 **编辑**：单击单条标签右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/dian-dian-dian.png) 选择编辑，可修改标签名称与描述。
 

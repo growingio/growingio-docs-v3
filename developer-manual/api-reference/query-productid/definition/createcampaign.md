@@ -37,7 +37,9 @@ POST
     </tr>
   </thead>
   <tbody></tbody>
-</table>| productId | string | 否 | 对应的App的ID。 |
+</table>
+
+| productId | string | 否 | 对应的App的ID。 |
 | :--- | :--- | :--- | :--- |
 {% endtab %}
 

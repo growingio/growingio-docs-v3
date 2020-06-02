@@ -92,7 +92,9 @@ track(eventId, eventLevelVariable, onSuccess, onFail)
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 var gio = window.cordova.require('cordova-plugin-growingio.GrowingIO');
 var onSucc = function(msg) {
     alert(msg);
@@ -177,7 +179,9 @@ setEvar(conversionVariables, onSuccess, onFail)
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 gio.setEvar({ "evarTest":111,
         "campaignId":"1234567890",
         "campaignOwner":"Li Si" },onSucc,onFail);
@@ -246,7 +250,9 @@ setPeopleVariable(peopleVariables, onSuccess, onFail)
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 gio.setPeopleVariable({ 'name': '玎玎', 'email': 'dingding@growingio.com' })
 ```
 
@@ -304,7 +310,9 @@ setUserId(userId, onSuccess, onFail)
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 gio.setUserId('xiaoming');
 ```
 
@@ -359,7 +367,9 @@ setVisitor(visitorVar,onSucc,onFail)
     </tr>
   </thead>
   <tbody></tbody>
-</table>| `onSucc` | Function | 否 | 设置成功后触发的回调函数 |
+</table>
+
+| `onSucc` | Function | 否 | 设置成功后触发的回调函数 |
 | :--- | :--- | :--- | :--- |
 
 

@@ -40,7 +40,7 @@ Web圈选模式分为浏览和圈选两个模式
 {% tab title="定义页面" %}
 1、在浏览模式下进入要定义的页面，单击圈选模式下的**定义页面**按钮，进入**定义页面**界面**。**
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2866%29.png)
+![](../../../../.gitbook/assets/image%20%2859%29.png)
 
 左侧选择区：显示与当前页面URL相同的页面（以【当前页】为标识），或包含当前页面的页面。如果页面已经被定义过，可以直接使用。
 
@@ -107,7 +107,9 @@ Web圈选模式分为浏览和圈选两个模式
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 动态展示区 | 通过动态展示区确认是不是自己想要定义的元素和规则。 |
+</table>
+
+| 动态展示区 | 通过动态展示区确认是不是自己想要定义的元素和规则。 |
 | :--- | :--- |
 
 
@@ -191,7 +193,9 @@ Web圈选模式分为浏览和圈选两个模式
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x7B2C; 2 &#x4E2A;&#x60C5;&#x51B5;</th>
@@ -211,7 +215,9 @@ Web圈选模式分为浏览和圈选两个模式
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x7B2C; 3 &#x4E2A;&#x60C5;&#x51B5;</th>
@@ -232,7 +238,9 @@ Web圈选模式分为浏览和圈选两个模式
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x7B2C; 4 &#x4E2A;&#x60C5;&#x51B5;</th>
@@ -255,7 +263,9 @@ Web圈选模式分为浏览和圈选两个模式
     </tr>
   </thead>
   <tbody></tbody>
-</table>* 取到的查询条件是b=时，则传 N/A，与现在一致；
+</table>
+
+* 取到的查询条件是b=时，则传 N/A，与现在一致；
 * 查询条件里有 b=1&b=2 ，取 b 的值为 2 ；
 * URL 中存在 ?a=1\#?b=2 ，第一个?是查询条件，即查询条件为a=1，第一个\#是hash，即hash（路径中的一部分）为?b=2；
 * 解析移动端的数据；

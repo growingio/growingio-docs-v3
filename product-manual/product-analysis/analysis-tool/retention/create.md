@@ -31,7 +31,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2-&#x7559;&#x5B58;&#x884C;&#x4E3A;</th>
@@ -46,7 +48,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">3-&#x76EE;&#x6807;&#x7528;&#x6237;</th>
@@ -58,7 +62,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">4-&#x65F6;&#x95F4;</th>
@@ -75,7 +81,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">5-&#x7559;&#x5B58;&#x9897;&#x7C92;&#x5EA6;</th>
@@ -91,7 +99,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">6-&#x7EF4;&#x5EA6;&#x5BF9;&#x6BD4;</th>
@@ -102,7 +112,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">7-&#x7528;&#x6237;&#x5BF9;&#x6BD4;</th>
@@ -113,7 +125,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">8-&#x884C;&#x4E3A;&#x5BF9;&#x6BD4;</th>
@@ -124,7 +138,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">9-&#x884C;&#x4E3A;&#x5BF9;&#x6BD4;&#x7C7B;&#x578B;&#x9009;&#x62E9;</th>
@@ -137,7 +153,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 10-留存图 | 留存图中默认给出的是留存曲线，跟留存表中的第一行数据对应，切换留存颗粒度时，展示的留存数据会随之变化。留存率曲线会看到随着时间推移的用户留存衰减情况；理想情况是，留存曲线会最终稳定在某个值，这些用户就是我们最终真正获取到的稳定用户。 |
+</table>
+
+| 10-留存图 | 留存图中默认给出的是留存曲线，跟留存表中的第一行数据对应，切换留存颗粒度时，展示的留存数据会随之变化。留存率曲线会看到随着时间推移的用户留存衰减情况；理想情况是，留存曲线会最终稳定在某个值，这些用户就是我们最终真正获取到的稳定用户。 |
 | :--- | :--- |
 
 

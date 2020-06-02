@@ -556,7 +556,9 @@ SDK中提供了以下几个参数可以用来进行配置。
     </tr>
   </thead>
   <tbody></tbody>
-</table>| followShare | true \| false | 详细跟踪分享数据，开启后可使用分享分析功能。默认true |
+</table>
+
+| followShare | true \| false | 详细跟踪分享数据，开启后可使用分享分析功能。默认true |
 | :--- | :--- | :--- |
 
 

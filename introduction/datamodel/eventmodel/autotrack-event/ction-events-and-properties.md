@@ -46,7 +46,9 @@
       </td>
     </tr>
   </tbody>
-</table>\#\# 动作事件的变量 GrowingIO 从 SDK 生成和发送的动作事件中提取的信息包括：
+</table>
+
+\#\# 动作事件的变量 GrowingIO 从 SDK 生成和发送的动作事件中提取的信息包括：
 
 <table>
   <thead>
@@ -80,3 +82,4 @@
     </tr>
   </tbody>
 </table>
+

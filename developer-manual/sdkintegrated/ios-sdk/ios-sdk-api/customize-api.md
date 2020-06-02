@@ -67,7 +67,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 // setuserId API调用示例
 [Growing setUserId:@"1234567890"];
 ```
@@ -120,7 +122,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">value</th>
@@ -134,7 +138,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">customerVariables</th>
@@ -149,7 +155,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 // setPeopleVariable API调用示例一
 [Growing setPeopleVariableWithKey:@"gender" andStringValue:@"male"];
 ```
@@ -191,7 +199,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 // setVisitor API调用示例
 [Growing setVisitor:@{@"gender":@"male", @"age":@"25"}];
 ```
@@ -230,7 +240,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">value</th>
@@ -244,7 +256,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">pageLevelVariables</th>
@@ -259,7 +273,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
     </tr>
   </thead>
   <tbody></tbody>
-</table>{% hint style="info" %}
+</table>
+
+{% hint style="info" %}
 **`SDK 2.6.7`** 将页面级变量**`pageLevelVariables`**与该页面对象绑定，设置不同的值将会合并，如果想要清空，需要传 null 。
 {% endhint %}
 
@@ -305,7 +321,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">value</th>
@@ -319,7 +337,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">conversionVariables</th>
@@ -334,7 +354,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 // setEvar API调用示例一
 [Growing setEvarWithKey:@"campaignId" andStringValue:@"1234567890"];
 ```
@@ -378,7 +400,9 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 // track API调用示例一
 [Growing track:@"registerSuccess"];
 ```

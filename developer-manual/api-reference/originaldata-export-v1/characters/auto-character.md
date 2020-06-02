@@ -21,7 +21,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">sessionId</th>
@@ -38,7 +40,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| sendTime | bigint | 发送时间。 |
+</table>
+
+| sendTime | bigint | 发送时间。 |
 | :--- | :--- | :--- |
 
 
@@ -66,7 +70,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">region</th>
@@ -78,7 +84,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">city</th>
@@ -90,7 +98,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">domain</th>
@@ -102,7 +112,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">path</th>
@@ -114,7 +126,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| refer | string（1024） | 来源链接 |
+</table>
+
+| refer | string（1024） | 来源链接 |
 | :--- | :--- | :--- |
 
 
@@ -142,7 +156,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">channel</th>
@@ -154,7 +170,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">language</th>
@@ -166,7 +184,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">osVersion</th>
@@ -178,7 +198,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">resolution</th>
@@ -190,7 +212,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">platform</th>
@@ -203,7 +227,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">id</th>
@@ -215,7 +241,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">query</th>
@@ -227,7 +255,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">lat</th>
@@ -239,7 +269,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| lng | double | gps经度mobile平台独有的子弹，紧缺到小数点后5位。 |
+</table>
+
+| lng | double | gps经度mobile平台独有的子弹，紧缺到小数点后5位。 |
 | :--- | :--- | :--- |
 {% endtab %}
 
@@ -262,7 +294,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| sessionId | string\(36\) |  |
+</table>
+
+| sessionId | string\(36\) |  |
 | :--- | :--- | :--- |
 
 
@@ -286,7 +320,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| domain | string\(100\) | 用户访问的网站域名 |
+</table>
+
+| domain | string\(100\) | 用户访问的网站域名 |
 | :--- | :--- | :--- |
 
 
@@ -306,7 +342,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| refer | string\(1024\) | 该用户从refer所在地址跳转过来 |
+</table>
+
+| refer | string\(1024\) | 该用户从refer所在地址跳转过来 |
 | :--- | :--- | :--- |
 
 
@@ -322,7 +360,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| platform | string\(10\) | 区分该数据属于哪个平台：web, android, ios |
+</table>
+
+| platform | string\(10\) | 区分该数据属于哪个平台：web, android, ios |
 | :--- | :--- | :--- |
 
 
@@ -338,7 +378,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| cs2 | string\(200\) | 客户平台的项目id：cs2 |
+</table>
+
+| cs2 | string\(200\) | 客户平台的项目id：cs2 |
 | :--- | :--- | :--- |
 
 
@@ -387,7 +429,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">visit_id</th>
@@ -400,7 +444,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">pagegroup</th>
@@ -413,7 +459,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| ps1 | string\(200\) | sdk配置的页面信息字段1 |
+</table>
+
+| ps1 | string\(200\) | sdk配置的页面信息字段1 |
 | :--- | :--- | :--- |
 
 
@@ -487,7 +535,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">eventValue</th>
@@ -500,7 +550,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">domain</th>
@@ -513,7 +565,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">path</th>
@@ -526,7 +580,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">href</th>
@@ -539,7 +595,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">page_id</th>
@@ -552,7 +610,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">action_id</th>
@@ -566,7 +626,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">index</th>
@@ -580,7 +642,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">info</th>
@@ -627,7 +691,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">action_id</th>
@@ -639,7 +705,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">rule_id</th>
@@ -672,7 +740,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">name</th>
@@ -684,7 +754,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">ruleType</th>

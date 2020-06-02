@@ -55,7 +55,9 @@ KPI看板可以帮助业务负责人在 GrowingIO 平台上监控 KPI 数据，�
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 目标用户 | 设置目标人群，以便于了解特殊人群的KPI表现，如重新购买，新注册等。 |
+</table>
+
+| 目标用户 | 设置目标人群，以便于了解特殊人群的KPI表现，如重新购买，新注册等。 |
 | :--- | :--- |
 
 
@@ -79,7 +81,9 @@ KPI看板可以帮助业务负责人在 GrowingIO 平台上监控 KPI 数据，�
     </tr>
   </thead>
   <tbody></tbody>
-</table>## 设置KPI目标
+</table>
+
+## 设置KPI目标
 
 您可以对KPI设置目标，即使观察目标进度是否符合预期。
 
@@ -112,7 +116,9 @@ KPI看板可以帮助业务负责人在 GrowingIO 平台上监控 KPI 数据，�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x540C;&#x6BD4;</th>
@@ -124,7 +130,9 @@ KPI看板可以帮助业务负责人在 GrowingIO 平台上监控 KPI 数据，�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x73AF;&#x6BD4;</th>
@@ -135,7 +143,9 @@ KPI看板可以帮助业务负责人在 GrowingIO 平台上监控 KPI 数据，�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x76EE;&#x6807;</th>
@@ -146,7 +156,9 @@ KPI看板可以帮助业务负责人在 GrowingIO 平台上监控 KPI 数据，�
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 目标完成率 | 实际KPI表现/目标值，您可以借助目标完成率来追踪进程是否符合预期。 |
+</table>
+
+| 目标完成率 | 实际KPI表现/目标值，您可以借助目标完成率来追踪进程是否符合预期。 |
 | :--- | :--- |
 
 

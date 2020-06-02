@@ -52,7 +52,9 @@ POST
     </tr>
   </thead>
   <tbody></tbody>
-</table>| description | string | 否 | 变量描述，最大长度150。 |
+</table>
+
+| description | string | 否 | 变量描述，最大长度150。 |
 | :--- | :--- | :--- | :--- |
 {% endtab %}
 

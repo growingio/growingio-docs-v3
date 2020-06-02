@@ -43,7 +43,9 @@ description: 验证“转化变量”数据。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">iOS SDK</th>
@@ -60,7 +62,9 @@ description: 验证“转化变量”数据。
     </tr>
   </thead>
   <tbody></tbody>
-</table>在对应的应用（网站、Android 或者 iOS App）中触发设置了转化变量的时机，通过 Debugger 工具验证数据准确性
+</table>
+
+在对应的应用（网站、Android 或者 iOS App）中触发设置了转化变量的时机，通过 Debugger 工具验证数据准确性
 
 按照如下流程图验证
 

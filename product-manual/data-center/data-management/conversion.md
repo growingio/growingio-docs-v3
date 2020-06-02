@@ -46,7 +46,9 @@ description: 在GrowingIO平台对转化变量进行声明和管理。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x5931;&#x6548;</th>
@@ -69,7 +71,9 @@ description: 在GrowingIO平台对转化变量进行声明和管理。
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 描述 | 变量的描述，可填写对应触发时机和应用场景，同时对变量值进行举例。 |
+</table>
+
+| 描述 | 变量的描述，可填写对应触发时机和应用场景，同时对变量值进行举例。 |
 | :--- | :--- |
 
 

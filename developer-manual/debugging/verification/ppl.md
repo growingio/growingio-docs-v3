@@ -41,7 +41,9 @@ description: 验证“用户变量”数据
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">Android SDK</th>
@@ -60,7 +62,9 @@ description: 验证“用户变量”数据
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">iOS SDK</th>
@@ -79,7 +83,9 @@ description: 验证“用户变量”数据
     </tr>
   </thead>
   <tbody></tbody>
-</table>在对应的应用（网站、Android 或者 iOS App）中的进行登录、退出登录、切换账号登录的操作，通过 Debugger 工具验证数据准确性
+</table>
+
+在对应的应用（网站、Android 或者 iOS App）中的进行登录、退出登录、切换账号登录的操作，通过 Debugger 工具验证数据准确性
 
 按照如下流程图验证
 
@@ -138,7 +144,9 @@ description: 验证“用户变量”数据
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">iOS SDK</th>
@@ -154,7 +162,9 @@ description: 验证“用户变量”数据
     </tr>
   </thead>
   <tbody></tbody>
-</table>在对应的应用（网站、Android 或者 iOS App）中触发对应的用户变量，通过 Debugger 工具验证数据准确性
+</table>
+
+在对应的应用（网站、Android 或者 iOS App）中触发对应的用户变量，通过 Debugger 工具验证数据准确性
 
 按照如下流程图验证
 

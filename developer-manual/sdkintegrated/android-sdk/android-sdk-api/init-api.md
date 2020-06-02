@@ -78,7 +78,9 @@ public class TestApplication extends Application {
     </tr>
   </thead>
   <tbody></tbody>
-</table>| setChannel | 无 | 设置App下载渠道 | ALL | ALL |
+</table>
+
+| setChannel | 无 | 设置App下载渠道 | ALL | ALL |
 | :--- | :--- | :--- | :--- | :--- |
 
 

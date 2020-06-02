@@ -92,7 +92,9 @@ g.部分浏览器（特别是移动端浏览器）会把搜索跳转当成直接
     </tr>
   </thead>
   <tbody></tbody>
-</table>| linkedin.com | Linkedin |
+</table>
+
+| linkedin.com | Linkedin |
 | :--- | :--- |
 
 
@@ -224,7 +226,9 @@ UTM 渠道归因模式为非直接访问的最后一次访问。‌
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x5730;&#x533A;&#x540D;&#x79F0;&#xFF08;Web/App/&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</th>
@@ -237,7 +241,9 @@ UTM 渠道归因模式为非直接访问的最后一次访问。‌
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 国家代码（Web/App/小程序） | 用户所在的国家的英文缩写，常见的维度值有：CN，US，JP，SG等。 |
+</table>
+
+| 国家代码（Web/App/小程序） | 用户所在的国家的英文缩写，常见的维度值有：CN，US，JP，SG等。 |
 | :--- | :--- |
 
 

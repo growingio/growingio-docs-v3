@@ -52,7 +52,9 @@ GrowingIO会默认帮您统计转发事件（分享用户量和分享次数）�
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 4-选择时间 | 选择分析的时间范围，预置常用的事件范围（昨天、过去7天、过去14天、过去30天）。 |
+</table>
+
+| 4-选择时间 | 选择分析的时间范围，预置常用的事件范围（昨天、过去7天、过去14天、过去30天）。 |
 | :--- | :--- |
 
 
@@ -86,7 +88,9 @@ GrowingIO会默认帮您统计转发事件（分享用户量和分享次数）�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">9-&#x5206;&#x4EAB;&#x6570;&#x636E;&#x4E0B;&#x94BB;</th>
@@ -106,7 +110,9 @@ GrowingIO会默认帮您统计转发事件（分享用户量和分享次数）�
     </tr>
   </thead>
   <tbody></tbody>
-</table>对分享来说，我们最关键的，除了知道分享的ROI，针对用户颗粒度下降，需要知道谁是产品中最能带来用户的“超级用户”。
+</table>
+
+对分享来说，我们最关键的，除了知道分享的ROI，针对用户颗粒度下降，需要知道谁是产品中最能带来用户的“超级用户”。
 
 通常情况下，我们一般评估一个用户直接带来的用户量有多少，但是在微信体系下，就忽略了用户可能隐藏存在的巨大的社交关系。GrowingIO分享用户分析，帮助您定位直接一度分享和三度分享下的“分享超级用户”。
 
@@ -142,7 +148,9 @@ GrowingIO会默认帮您统计转发事件（分享用户量和分享次数）�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2-&#x8F6C;&#x53D1;&#x5206;&#x4EAB;&#x88C2;&#x53D8;Top100&#x7528;&#x6237;</th>
@@ -157,7 +165,9 @@ GrowingIO会默认帮您统计转发事件（分享用户量和分享次数）�
     </tr>
   </thead>
   <tbody></tbody>
-</table>![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28135%29.png)
+</table>
+
+![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28135%29.png)
 
 | **模块** | 说明 |
 | :--- | :--- |

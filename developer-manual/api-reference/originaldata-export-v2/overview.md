@@ -30,7 +30,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>{% hint style="info" %}
+</table>
+
+{% hint style="info" %}
 * 导出数据会有延迟，接口返回值status字段为FINISHED后，才会生成下载链接。
 * 数据导出后表中所有时间相关字段都为[UTC](http://baike.baidu.com/link?url=T9ER87o8wd_ABq-oRrn839-Q2hxrV5WvIeQX2bJCOAWgne8C8BCw8yRWrISceZJEoR83GuIhdu0vSZFwzl4ngFrD7vUITsrlcY6U3Fj6lWCx7x0xWRTNDFOHkhJmnUW05hrb5df7vvz12EayMr_4b5QJZ1UcTs17ffae3wI18LNeF8j_4WpMZ_srcJHSXhpk)时间。
 * 由于凌晨会出现大量计算任务，建议数据导出任务在早上六点后进行。

@@ -29,7 +29,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">idfa</th>
@@ -42,7 +44,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">IMEI</th>
@@ -55,7 +59,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">uuid</th>
@@ -68,7 +74,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">androidId</th>
@@ -80,7 +88,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">ip</th>
@@ -92,7 +102,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">userAgent</th>
@@ -107,7 +119,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">platform</th>
@@ -120,7 +134,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">operatingSystemVersion</th>
@@ -132,7 +148,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">sendTime</th>
@@ -145,7 +163,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">linkId</th>
@@ -158,7 +178,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">campaignId</th>
@@ -170,7 +192,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">channelID</th>
@@ -182,7 +206,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">linkName</th>
@@ -195,7 +221,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">campaignName</th>
@@ -208,7 +236,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">channelName</th>
@@ -221,7 +251,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">adsVariable</th>
@@ -234,7 +266,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table>| OAID | string（64） | &lt;匿名设备标识符&gt;Android平台用于广告监测的ID。2020/01/07 开始生效。 |
+</table>
+
+| OAID | string（64） | &lt;匿名设备标识符&gt;Android平台用于广告监测的ID。2020/01/07 开始生效。 |
 | :--- | :--- | :--- |
 {% endtab %}
 
@@ -256,7 +290,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">IMEI</th>
@@ -268,7 +304,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">uuid</th>
@@ -281,7 +319,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">androidId</th>
@@ -294,7 +334,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">ip</th>
@@ -306,7 +348,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">userAgent</th>
@@ -321,7 +365,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">platform</th>
@@ -334,7 +380,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">operatingSystemVersion</th>
@@ -346,7 +394,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">eventTime</th>
@@ -359,7 +409,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">linkId</th>
@@ -371,7 +423,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">campaignId</th>
@@ -383,7 +437,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">channelId</th>
@@ -395,7 +451,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">linkName</th>
@@ -408,7 +466,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">campaignName</th>
@@ -421,7 +481,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">channelName</th>
@@ -434,7 +496,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">adsVariable</th>
@@ -447,7 +511,9 @@ description: 广告相关事件字段共分为2个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table>| OAID | string（64） | &lt;匿名设备标识符&gt;Android平台用于广告监测的ID。2020/01/07 开始生效。 |
+</table>
+
+| OAID | string（64） | &lt;匿名设备标识符&gt;Android平台用于广告监测的ID。2020/01/07 开始生效。 |
 | :--- | :--- | :--- |
 {% endtab %}
 {% endtabs %}

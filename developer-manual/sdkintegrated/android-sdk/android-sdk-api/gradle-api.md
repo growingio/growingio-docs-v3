@@ -44,7 +44,9 @@ SDK支持限制：只支持**Android 无埋点 SDK**
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 android {    ···}
 // 须位于 android 代码块下
 growingio {

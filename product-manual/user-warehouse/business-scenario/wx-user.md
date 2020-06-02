@@ -56,7 +56,9 @@ GrowingIO 微信应用用户分析，基于目前企业多微信场景应用的�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x8F6C;&#x5316;</th>
@@ -68,7 +70,9 @@ GrowingIO 微信应用用户分析，基于目前企业多微信场景应用的�
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 留存 | 展示各应用次日、7日、30日留存率。 |
+</table>
+
+| 留存 | 展示各应用次日、7日、30日留存率。 |
 | :--- | :--- |
 
 

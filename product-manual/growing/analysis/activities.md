@@ -29,7 +29,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 选择页面指标 | 选择页面浏览事件，作为活动页面。 |
+</table>
+
+| 选择页面指标 | 选择页面浏览事件，作为活动页面。 |
 | :--- | :--- |
 
 
@@ -72,7 +74,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">4-&#x4ECA;&#x65E5;&#x5B9E;&#x65F6;</th>
@@ -86,7 +90,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 5-概况描述 | 描述活动开始至今的概况。 |
+</table>
+
+| 5-概况描述 | 描述活动开始至今的概况。 |
 | :--- | :--- |
 
 
@@ -101,7 +107,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 7-查看PV、UV走势 | 查看时间范围内的PV、UV走势。如已设置转化目标，可在此查看转化人数走势。 |
+</table>
+
+| 7-查看PV、UV走势 | 查看时间范围内的PV、UV走势。如已设置转化目标，可在此查看转化人数走势。 |
 | :--- | :--- |
 
 

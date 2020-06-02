@@ -23,7 +23,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">sessionId</th>
@@ -36,7 +38,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">accountVersion</th>
@@ -48,7 +52,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">platform</th>
@@ -62,7 +68,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">domain</th>
@@ -76,7 +84,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">page</th>
@@ -89,7 +99,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">queryParameters</th>
@@ -102,7 +114,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">referrer</th>
@@ -115,7 +129,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">language</th>
@@ -128,7 +144,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">screenHeight</th>
@@ -140,7 +158,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">screenWidth</th>
@@ -152,7 +172,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">time</th>
@@ -165,7 +187,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">sendTime</th>
@@ -178,7 +202,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">ip</th>
@@ -190,7 +216,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">userAgent</th>
@@ -205,7 +233,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">operatingSystem</th>
@@ -217,7 +247,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">operatingSystemVersion</th>
@@ -229,7 +261,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">clientVersion</th>
@@ -242,7 +276,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">channel</th>
@@ -255,7 +291,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">deviceBrand</th>
@@ -267,7 +305,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">deviceModel</th>
@@ -279,7 +319,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">deviceType</th>
@@ -296,7 +338,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">deviceOrientation</th>
@@ -309,7 +353,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">latitude</th>
@@ -322,7 +368,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">longitude</th>
@@ -335,7 +383,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">vstRequestId</th>
@@ -349,7 +399,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">idfa</th>
@@ -362,7 +414,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">androidId</th>
@@ -374,7 +428,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">IMEI</th>
@@ -407,7 +463,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">sessionId</th>
@@ -420,7 +478,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">platform</th>
@@ -433,7 +493,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">domain</th>
@@ -447,7 +509,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">page</th>
@@ -460,7 +524,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">queryParameters</th>
@@ -473,7 +539,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">referrer</th>
@@ -486,7 +554,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">referrerPage</th>
@@ -499,7 +569,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">title</th>
@@ -511,7 +583,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">time</th>
@@ -524,7 +598,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">sendTime</th>
@@ -537,7 +613,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">deviceOrientation</th>
@@ -549,7 +627,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">loginUserId</th>
@@ -563,7 +643,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">pageGroup</th>
@@ -575,7 +657,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">appVariable</th>
@@ -587,7 +671,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table>| customerAttributes2 | string（200） | 用户属性2 |
+</table>
+
+| customerAttributes2 | string（200） | 用户属性2 |
 | :--- | :--- | :--- |
 
 
@@ -677,7 +763,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">vstRequestId</th>
@@ -712,7 +800,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">sessionId</th>
@@ -725,7 +815,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">requestType</th>
@@ -739,7 +831,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">domain</th>
@@ -753,7 +847,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">page</th>
@@ -766,7 +862,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">sendTime</th>
@@ -779,7 +877,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">time</th>
@@ -792,7 +892,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">href</th>
@@ -805,7 +907,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">requestValue</th>
@@ -818,7 +922,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">index</th>
@@ -830,7 +936,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">info</th>
@@ -842,7 +950,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">pageRequestId</th>
@@ -856,7 +966,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">actionRequestId</th>
@@ -893,7 +1005,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">actionRequestId</th>
@@ -909,7 +1023,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">ruleId</th>
@@ -922,7 +1038,9 @@ description: 无埋点事件字段共分为4个事件类型。
     </tr>
   </thead>
   <tbody></tbody>
-</table>{% hint style="info" %}
+</table>
+
+{% hint style="info" %}
 您可以通过[获取圈选元素定义](../../statistics-api/definition/get-auto.md)接口得到以下rules（圈选元素定义）字段表。
 {% endhint %}
 

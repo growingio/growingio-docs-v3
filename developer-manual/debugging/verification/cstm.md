@@ -76,7 +76,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>在对应的应用（网站、Android 或者 iOS App）中触发登录成功事件，通过 Debugger 工具验证数据准确性。
+</table>
+
+在对应的应用（网站、Android 或者 iOS App）中触发登录成功事件，通过 Debugger 工具验证数据准确性。
 
 按照如下流程图进行验证：
 

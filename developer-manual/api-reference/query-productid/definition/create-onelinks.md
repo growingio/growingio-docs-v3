@@ -80,7 +80,9 @@ POST
     </tr>
   </thead>
   <tbody></tbody>
-</table>| redirectUrl | String | 目标链接 |
+</table>
+
+| redirectUrl | String | 目标链接 |
 | :--- | :--- | :--- |
 
 

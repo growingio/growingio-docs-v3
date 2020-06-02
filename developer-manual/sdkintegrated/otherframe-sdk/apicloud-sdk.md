@@ -143,7 +143,9 @@ gio.track(event, callback);
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">callback</th>
@@ -158,7 +160,9 @@ gio.track(event, callback);
     </tr>
   </thead>
   <tbody></tbody>
-</table>```javascript
+</table>
+
+```javascript
 var gio = api.require('GrowingIO');  //引用模块
 gio.track({
         eventId: 'GIOKey'
@@ -194,7 +198,9 @@ gio.setEvar(conversionVariables,callback);
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">callback</th>
@@ -209,7 +215,9 @@ gio.setEvar(conversionVariables,callback);
     </tr>
   </thead>
   <tbody></tbody>
-</table>```javascript
+</table>
+
+```javascript
 var gio = api.require('GrowingIO');  //引用模块
 gio.setEvar({
            "ekey":"evalue","Date":"2018-07-02"
@@ -245,7 +253,9 @@ gio.setPeopleVariable(peopleVariables,callback);
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">callback</th>
@@ -260,7 +270,9 @@ gio.setPeopleVariable(peopleVariables,callback);
     </tr>
   </thead>
   <tbody></tbody>
-</table>```javascript
+</table>
+
+```javascript
 var gio = api.require('GrowingIO');  //引用模块
 gio.setPeopleVariable({
            "ekey":"evalue","Date":"2018-07-02"
@@ -300,7 +312,9 @@ gio.setUserId(userIdObject,callback);
     </tr>
   </thead>
   <tbody></tbody>
-</table>```javascript
+</table>
+
+```javascript
 var gio = api.require('GrowingIO');  //引用模块
   gio.setUserId({
              "userId":"GIO"
@@ -334,7 +348,9 @@ gio.clearUserId(callback);
     </tr>
   </thead>
   <tbody></tbody>
-</table>```javascript
+</table>
+
+```javascript
 var gio = api.require('GrowingIO');  //引用模块
 gio.clearUserId(function(ret, err){
              //回调函数事件处理
@@ -366,7 +382,9 @@ gio.setVisitor(visitorVar);
     </tr>
   </thead>
   <tbody></tbody>
-</table>```javascript
+</table>
+
+```javascript
 var gio = api.require('GrowingIO');  //引用模块
 gio.setVisitor({"gender":"male","age":21});
 ```

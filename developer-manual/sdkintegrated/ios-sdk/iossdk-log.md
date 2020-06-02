@@ -20,7 +20,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.8.11</th>
@@ -32,7 +34,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.8.10</th>
@@ -49,7 +53,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.8.9</th>
@@ -64,7 +70,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.8.8</th>
@@ -79,7 +87,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.8.7</th>
@@ -95,7 +105,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.8.6</th>
@@ -114,7 +126,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.8.5</th>
@@ -134,7 +148,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.8.4</th>
@@ -157,7 +173,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.8.3</th>
@@ -171,7 +189,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.8.2</th>
@@ -185,7 +205,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.8.1</th>
@@ -207,7 +229,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.8.0</th>
@@ -227,7 +251,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.7.8</th>
@@ -242,7 +268,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.7.7</th>
@@ -270,7 +298,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.7.6</th>
@@ -289,7 +319,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.7.5</th>
@@ -307,7 +339,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.7.4</th>
@@ -326,7 +360,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.7.3</th>
@@ -340,7 +376,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.7.2</th>
@@ -352,7 +390,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.7.1</th>
@@ -367,7 +407,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.7.0</th>
@@ -384,7 +426,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.6.7</th>
@@ -403,7 +447,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 2.6.5 | 增加app close事件上报,将最后一个页面的浏览时长计算入用户进入总时长。 | 2018-12-12 |
+</table>
+
+| 2.6.5 | 增加app close事件上报,将最后一个页面的浏览时长计算入用户进入总时长。 | 2018-12-12 |
 | :--- | :--- | :--- |
 
 
@@ -421,7 +467,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 2.4.5 | 修复vstr发送地址错误 | 2018-10-23 |
+</table>
+
+| 2.4.5 | 修复vstr发送地址错误 | 2018-10-23 |
 | :--- | :--- | :--- |
 
 
@@ -439,7 +487,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 2.4.3 | deep link功能升级 | 2018-08-21 |
+</table>
+
+| 2.4.3 | deep link功能升级 | 2018-08-21 |
 | :--- | :--- | :--- |
 
 
@@ -467,7 +517,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.3.3</th>
@@ -485,7 +537,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.3.2</th>
@@ -499,7 +553,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.3.1</th>
@@ -516,7 +572,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.3.0</th>
@@ -532,7 +590,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">1.4.2</th>
@@ -548,7 +608,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">1.4.0</th>
@@ -562,7 +624,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">1.2.0</th>
@@ -581,7 +645,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">1.0.3</th>
@@ -604,7 +670,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">0.9.12</th>
@@ -621,7 +689,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">0.9.8.7</th>
@@ -636,7 +706,9 @@ description: iOS SDK更新日志
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">0.9.8.1</th>
@@ -652,3 +724,4 @@ description: iOS SDK更新日志
   </thead>
   <tbody></tbody>
 </table>
+

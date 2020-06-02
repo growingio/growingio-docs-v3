@@ -50,7 +50,9 @@ GrowingIO的小程序推广广告链接，可以支持如上的投放形式。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x63A8;&#x5E7F;&#x6E20;&#x9053;</th>
@@ -61,7 +63,9 @@ GrowingIO的小程序推广广告链接，可以支持如上的投放形式。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x63A8;&#x5E7F;&#x6D3B;&#x52A8;</th>
@@ -72,7 +76,9 @@ GrowingIO的小程序推广广告链接，可以支持如上的投放形式。
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 广告媒介 | 按照投放广告的计算方式，建议填写“_**公众号推文**_” |
+</table>
+
+| 广告媒介 | 按照投放广告的计算方式，建议填写“_**公众号推文**_” |
 | :--- | :--- |
 
 

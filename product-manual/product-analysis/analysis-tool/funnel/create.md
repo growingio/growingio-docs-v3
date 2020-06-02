@@ -46,7 +46,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x65F6;&#x95F4;</th>
@@ -57,7 +59,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x8F6C;&#x5316;&#x5468;&#x671F;</th>
@@ -70,7 +74,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 漏斗图 | 按筛选条件展示每一步骤的整体转化率。 |
+</table>
+
+| 漏斗图 | 按筛选条件展示每一步骤的整体转化率。 |
 | :--- | :--- |
 
 
@@ -92,7 +98,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x7528;&#x6237;&#x5BF9;&#x6BD4;</th>
@@ -109,7 +117,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>五. 单击**保存**后弹出**添加到看板**，选择合适的看板后单击确定。
+</table>
+
+五. 单击**保存**后弹出**添加到看板**，选择合适的看板后单击确定。
 
 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28119%29.png)
 

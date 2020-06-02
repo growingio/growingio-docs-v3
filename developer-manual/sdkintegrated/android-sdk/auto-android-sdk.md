@@ -648,7 +648,9 @@ GrowingIO.startWithConfiguration(this, new Configuration()
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 //sdk >= 2.3.2 && sdk < 2.8.4
 GrowingIO.startWithConfiguration(this, new Configuration()
     .setDeeplinkCallback(new DeeplinkCallback() {
@@ -722,7 +724,9 @@ SDK对通知的采集仅支持 4.4 及以上机型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x534E;&#x4E3A;&#x63A8;&#x9001;</th>
@@ -736,7 +740,9 @@ SDK对通知的采集仅支持 4.4 及以上机型。
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x5C0F;&#x7C73;&#x63A8;&#x9001;</th>
@@ -751,7 +757,9 @@ SDK对通知的采集仅支持 4.4 及以上机型。
     </tr>
   </thead>
   <tbody></tbody>
-</table>查看通知采集数据
+</table>
+
+查看通知采集数据
 
 支持对于通知的展现和点击事件的采集，GrowingIO 并未增加新的采集事件类型，而是使用了自定义事件发送，所以需要您创建自定义事件和事件级变量，事件级变量标识符为**`notification_title`**，**`notification_content`**，自定义事件的标识符为**`notification_show`**，**`notification_click`**如图：
 

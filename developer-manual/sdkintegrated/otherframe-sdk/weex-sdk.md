@@ -128,7 +128,9 @@ track(event);
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 //获取 gio
 var gio = weex.requireModule('GrowingIO');
 
@@ -201,7 +203,9 @@ setEvar(conversionVariables);
     </tr>
   </thead>
   <tbody></tbody>
-</table>```javascript
+</table>
+
+```javascript
 //获取 gio
 var gio = weex.requireModule('GrowingIO');
 
@@ -271,7 +275,9 @@ setPeopleVariable(peopleVariables);
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 //获取 gio
 var gio = weex.requireModule('GrowingIO');
 gio.setPeopleVariable({ 'name': '玎玎', 'email': 'dingding@growingio.com' })
@@ -327,7 +333,9 @@ setUserId(userId);
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 //获取 gio
 var gio = weex.requireModule('GrowingIO');
 gio.setUserId('xiaoming');
@@ -379,7 +387,9 @@ setVisitor(visitorVar);
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 //获取 gio
 var gio = weex.requireModule('GrowingIO');
 gio.setVisitor({"gender":"male","age":21});

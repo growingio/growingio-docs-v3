@@ -54,7 +54,9 @@ GET
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">appId</th>
@@ -66,7 +68,9 @@ GET
     </tr>
   </thead>
   <tbody></tbody>
-</table>| trackingUrl | String | 监测链接 |
+</table>
+
+| trackingUrl | String | 监测链接 |
 | :--- | :--- | :--- |
 
 
@@ -126,7 +130,9 @@ GET
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">updatedAt</th>
@@ -138,7 +144,9 @@ GET
     </tr>
   </thead>
   <tbody></tbody>
-</table>| params | String | 腾讯社交广告参数 |
+</table>
+
+| params | String | 腾讯社交广告参数 |
 | :--- | :--- | :--- |
 {% endtab %}
 

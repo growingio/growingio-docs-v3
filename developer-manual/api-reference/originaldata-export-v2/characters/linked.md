@@ -37,7 +37,9 @@ ads\_track\_click和ads\_track\_activation两张表分别代表GIO定义的2种�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x65E0;&#x57CB;&#x70B9;-&#x57CB;&#x70B9;</th>
@@ -54,7 +56,9 @@ ads\_track\_click和ads\_track\_activation两张表分别代表GIO定义的2种�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x5E7F;&#x544A;&#x76D1;&#x6D4B;-&#x5E7F;&#x544A;&#x76D1;&#x6D4B;</th>
@@ -79,7 +83,9 @@ ads\_track\_click和ads\_track\_activation两张表分别代表GIO定义的2种�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x5E7F;&#x544A;&#x76D1;&#x6D4B;-&#x65E0;&#x57CB;&#x70B9;</th>
@@ -95,7 +101,9 @@ ads\_track\_click和ads\_track\_activation两张表分别代表GIO定义的2种�
     </tr>
   </thead>
   <tbody></tbody>
-</table>{% tabs %}
+</table>
+
+{% tabs %}
 {% tab title="时间字段" %}
 所有原始数据导出接口中的时间字段，一般情况会包含下面两类：
 

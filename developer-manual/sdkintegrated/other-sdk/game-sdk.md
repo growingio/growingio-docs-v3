@@ -101,7 +101,9 @@ SDK中提供了以下几个参数可以用来进行配置。
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 var gio = require("utils/gio-ming.js");
 // version 是你的小游戏的版本号，发版时请调整
 gio('init', '9c76fe4756c3404d', 'wx87c6f4a3a6cf31e7', { version: '1.0', followShare: true });

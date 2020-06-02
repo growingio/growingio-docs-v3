@@ -35,7 +35,9 @@ V3接口目前还在持续补充，很快会覆盖现有的 [统计数据导出A
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 漏斗分析下载 | [​获取漏斗分析数据​](definition/getfunnel.md) | 单图下载每秒限速2次 |
+</table>
+
+| 漏斗分析下载 | [​获取漏斗分析数据​](definition/getfunnel.md) | 单图下载每秒限速2次 |
 | :--- | :--- | :--- |
 
 

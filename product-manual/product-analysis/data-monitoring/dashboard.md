@@ -62,7 +62,9 @@
       </td>
     </tr>
   </tbody>
-</table>## 创建看板
+</table>
+
+## 创建看板
 
 一. 在顶部导航栏选择"**数据监测&gt; 全部看板** 入看板列表下的分析看板列表。
 
@@ -159,7 +161,9 @@
       </td>
     </tr>
   </tbody>
-</table>## 常见问题 <a id="3-chang-jian-wen-ti"></a>
+</table>
+
+## 常见问题 <a id="3-chang-jian-wen-ti"></a>
 
 #### **1.为什么我 hover 到图表上时没有出现角标？** <a id="1-wei-shi-mo-wo-hover-dao-tu-biao-shang-shi-mei-you-chu-xian-jiao-biao"></a>
 

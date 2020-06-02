@@ -50,7 +50,9 @@ POST
     </tr>
   </thead>
   <tbody></tbody>
-</table>| description | string | 否 | 变量描述，最大长度为150 |
+</table>
+
+| description | string | 否 | 变量描述，最大长度为150 |
 | :--- | :--- | :--- | :--- |
 {% endtab %}
 

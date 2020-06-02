@@ -70,7 +70,9 @@ POST
     </tr>
   </thead>
   <tbody></tbody>
-</table>| redirectUrl | string | 跳转链接 |
+</table>
+
+| redirectUrl | string | 跳转链接 |
 | :--- | :--- | :--- |
 
 

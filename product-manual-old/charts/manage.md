@@ -33,7 +33,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 2-看板列表排序 | 可按最近更新时间、查看次数、看板名称首字母排序。 |
+</table>
+
+| 2-看板列表排序 | 可按最近更新时间、查看次数、看板名称首字母排序。 |
 | :--- | :--- |
 
 
@@ -50,7 +52,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 4-搜索看板 | 可通过搜索创建人或者看板名称来定位看板。 |
+</table>
+
+| 4-搜索看板 | 可通过搜索创建人或者看板名称来定位看板。 |
 | :--- | :--- |
 
 
@@ -102,7 +106,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 4-看板权限 | 单击可修改。 |
+</table>
+
+| 4-看板权限 | 单击可修改。 |
 | :--- | :--- |
 
 
@@ -138,7 +144,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>### **1.为什么我 hover 到图表上时没有出现角标？** <a id="1-wei-shi-mo-wo-hover-dao-tu-biao-shang-shi-mei-you-chu-xian-jiao-biao"></a>
+</table>
+
+### **1.为什么我 hover 到图表上时没有出现角标？** <a id="1-wei-shi-mo-wo-hover-dao-tu-biao-shang-shi-mei-you-chu-xian-jiao-biao"></a>
 
 因为您没有修改当前看板的权限。同样地，修改名称，添加和移除图表都收到编辑权限的控制。
 

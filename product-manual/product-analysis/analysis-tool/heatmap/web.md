@@ -25,7 +25,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2-&#x8BBE;&#x5907;&#x7C7B;&#x578B;</th>
@@ -40,7 +42,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">3-&#x529F;&#x80FD;&#x533A;</th>
@@ -56,7 +60,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 4-热图区域 | 鼠标悬停在页面元素上时，可查看当前元素的点击量（人和次）、及点击量。 |
+</table>
+
+| 4-热图区域 | 鼠标悬停在页面元素上时，可查看当前元素的点击量（人和次）、及点击量。 |
 | :--- | :--- |
 
 

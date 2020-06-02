@@ -130,7 +130,9 @@ GIO 推荐广告位在 `ScrollView` 的最底部，需要用户滑动才能看�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">variable</th>
@@ -145,7 +147,9 @@ GIO 推荐广告位在 `ScrollView` 的最底部，需要用户滑动才能看�
     </tr>
   </thead>
   <tbody></tbody>
-</table>**growingStopImpTrack**
+</table>
+
+**growingStopImpTrack**
 
 已经标记的View对象，通知GIO停止标记跟踪View的可见性。通常应用于列表中的重用元素。
 

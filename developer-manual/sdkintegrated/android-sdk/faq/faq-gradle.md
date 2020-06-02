@@ -26,7 +26,9 @@ Android 无埋点 SDK 支持 `com.android.tools.build:gradle` **2.3.3** 及其�
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">2.7.8</th>
@@ -38,7 +40,9 @@ Android 无埋点 SDK 支持 `com.android.tools.build:gradle` **2.3.3** 及其�
     </tr>
   </thead>
   <tbody></tbody>
-</table>升级无埋点 SDK 2.8.4如果报错如下：
+</table>
+
+升级无埋点 SDK 2.8.4如果报错如下：
 
 > Unable to load class **'org.apache.http.impl.client.CloseableHttpClient'**. Possible causes for this unexpected error include: Gradle's dependency cache may be corrupt \(this sometimes occurs after a network connection timeout.\) Re-download dependencies and sync project \(requires network\)
 >

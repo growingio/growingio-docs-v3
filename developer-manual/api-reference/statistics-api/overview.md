@@ -20,7 +20,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">&#x4E8B;&#x4EF6;&#x5206;&#x6790;&#x4E0B;&#x8F7D;</th>
@@ -35,7 +37,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 漏斗分析下载 | [获取漏斗分析数据](definition/getfunnel.md) | 单图下载每秒限速2次 |
+</table>
+
+| 漏斗分析下载 | [获取漏斗分析数据](definition/getfunnel.md) | 单图下载每秒限速2次 |
 | :--- | :--- | :--- |
 
 
@@ -63,7 +67,9 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 规则逻辑 | [获取圈选元素定义](definition/get-auto.md) | 无 |
+</table>
+
+| 规则逻辑 | [获取圈选元素定义](definition/get-auto.md) | 无 |
 | :--- | :--- | :--- |
 
 

@@ -48,7 +48,9 @@ GET
     </tr>
   </thead>
   <tbody></tbody>
-</table>| ai | string | 是 | 项目ID。 |
+</table>
+
+| ai | string | 是 | 项目ID。 |
 | :--- | :--- | :--- | :--- |
 
 
@@ -71,7 +73,9 @@ GET
     </tr>
   </thead>
   <tbody></tbody>
-</table>| 查询参数 | 类型 | 是否必传 | 说明 |
+</table>
+
+| 查询参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
 
 
@@ -113,7 +117,9 @@ GET
     </tr>
   </thead>
   <tbody></tbody>
-</table><table>
+</table>
+
+<table>
   <thead>
     <tr>
       <th style="text-align:left">downloadLinks</th>
@@ -124,7 +130,9 @@ GET
     </tr>
   </thead>
   <tbody></tbody>
-</table>| exportType | 表示导出任务类型，由用户传入，服务器原样返回。 |
+</table>
+
+| exportType | 表示导出任务类型，由用户传入，服务器原样返回。 |
 | :--- | :--- |
 
 

@@ -161,7 +161,9 @@ uexGrowingIO.track(eventId, eventLevelVariable)
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 // track API调用示例一
 uexGrowingIO.track("registerSuccess");
 // track API调用示例二
@@ -234,7 +236,9 @@ uexGrowingIO.setEvar(conversionVariables)
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 uexGrowingIO.setEvar({ "evarTest":111,"campaignId":"1234567890","campaignOwner":"Li Si" });
 ```
 
@@ -299,7 +303,9 @@ uexGrowingIO.setPeopleVariable(peopleVariables)
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 uexGrowingIO.setPeopleVariable({ 'name': '玎玎', 'email': 'dingding@growingio.com' })
 ```
 
@@ -357,7 +363,9 @@ uexGrowingIO.setUserId(userId);
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 uexGrowingIO.setUserId('xiaoming');
 ```
 
@@ -405,7 +413,9 @@ uexGrowingIO.setVisitor(visitorVar)
     </tr>
   </thead>
   <tbody></tbody>
-</table>```java
+</table>
+
+```java
 uexGrowingIO.setVisitor({"gender":"male","age":21});
 ```
 
