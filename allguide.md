@@ -4,7 +4,7 @@
 
 | 产品熟悉 |  |  |  |
 | :--- | :--- | :--- | :--- |
-| [数据模型](introduction/datamodel/) | [界面熟悉](introduction/productknow.md) | [角色权限]() | [工单管理](product-manual/tickets/) |
+| [数据模型](introduction/datamodel/) | [界面熟悉](introduction/productknow.md) | [角色权限](https://app.gitbook.com/@growingio/s/v3/~/drafts/-M8nmI2LUpiLsolyacUV/product-manual/projectmange/role-manage) | [工单管理](product-manual/tickets/) |
 
 | 开发者使用 |  |  |  |
 | :--- | :--- | :--- | :--- |
