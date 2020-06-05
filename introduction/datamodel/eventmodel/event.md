@@ -42,9 +42,5 @@
 
 | 事件名称 | 发送时机 | t 字段值 | var 字段值 | 其它字段 |
 | :--- | :--- | :--- | :--- | :--- |
-| cstm 事件 | 调用 track 类型的接口时 | cstm | 若您设置了事件级变量 | n 为事件标识符 |
-| pvar 事件 | 调用 setPageVariable 接口时 | pvar | 若您设置了页面级变量 | 无 |
-| evar 事件 | 调用 setEvar 类型接口时 | evar | 若您设置了转化变量 | 无 |
-| ppl 事件 | 调用 setPeopleVariable 类型的接口时 | ppl | 若您设置了用户变量 | 无 |
-| vstr 事件 | 调用 setVisitor 类型接口时 | vstr | 若您设置了访问用户变量 | 无 |
+| 自定义事件 | 调用 track 类型的接口时 | cstm | 若您设置了事件级变量 | n 为事件标识符 |
 
