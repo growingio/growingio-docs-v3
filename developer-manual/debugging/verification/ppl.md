@@ -2,7 +2,7 @@
 description: 验证“用户变量”数据
 ---
 
-# ppl（用户变量）事件
+# 对 ppl（用户变量）上报验证
 
 ## 场景一：用户变量之登录用户ID
 
@@ -12,7 +12,7 @@ description: 验证“用户变量”数据
 
 登录GrowingIO平台，在主菜单中选择**数据中心**&gt;**数据管理**&gt;**变量**&gt;**用户变量**，在用户变量下的**登录用户变量**页签下，打开登录用户ID的启动状态，即完成配置。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28202%29.png)
+![](../../../.gitbook/assets/deng-lu-yong-hu-id-pei-zhi-.png)
 
 **对应的代码**
 
@@ -89,17 +89,19 @@ description: 验证“用户变量”数据
 
 按照如下流程图验证
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/ppl1x2.png)
+![](../../../.gitbook/assets/liu-cheng-1-.png)
 
 在本例中，如下图的数据请求说明打点代码生效
 
 * 未登录
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/ppl-wei-deng-lu.png)
+![](../../../.gitbook/assets/liu-cheng-2.png)
+
+
 
 * 已登录
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/ppl-deng-lu.png)
+![](../../../.gitbook/assets/liu-cheng-3.png)
 
 ## 场景二：其他用户变量
 
@@ -168,9 +170,9 @@ description: 验证“用户变量”数据
 
 按照如下流程图验证
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/ppl2x2.png)
+![](../../../.gitbook/assets/ppl-xiao-yan-.png)
 
 在本例中，如下图的数据请求说明打点代码生效
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/ppl2.png)
+![](../../../.gitbook/assets/ppl-xiao-yan-2.png)
 

@@ -5,7 +5,7 @@ description: iOS SDK更新日志
 # 更新日志
 
 | SDK版本 | 更新点 | 时间 |
-| :--- | :--- | :--- |
+| :--- | :--- | ---: |
 
 
 <table>
@@ -16,7 +16,7 @@ description: iOS SDK更新日志
         <p>&#x4F18;&#x5316;:</p>
         <p>&#x53BB;&#x9664;&#x5BF9;UIWebView&#x7684;&#x652F;&#x6301;</p>
       </th>
-      <th style="text-align:left">2020-03-18</th>
+      <th style="text-align:right">2020-03-18</th>
     </tr>
   </thead>
   <tbody></tbody>
@@ -30,7 +30,7 @@ description: iOS SDK更新日志
         <p>&#x4F18;&#x5316;:</p>
         <p>&#x9ED8;&#x8BA4;&#x5173;&#x95ED;imp&#x4E8B;&#x4EF6;&#x7684;&#x91C7;&#x96C6;</p>
       </th>
-      <th style="text-align:left">2020-03-03</th>
+      <th style="text-align:right">2020-03-03</th>
     </tr>
   </thead>
   <tbody></tbody>
@@ -49,7 +49,7 @@ description: iOS SDK更新日志
         <p>&#x4F18;&#x5316;:
           <br />&#x51B7;&#x542F;&#x52A8;app,sessionId&#x4E00;&#x5B9A;&#x53D8;&#x66F4;</p>
       </th>
-      <th style="text-align:left">2020-02-25</th>
+      <th style="text-align:right">2020-02-25</th>
     </tr>
   </thead>
   <tbody></tbody>

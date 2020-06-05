@@ -3,6 +3,7 @@
 * [What's new](README.md)
 * [文档使用指南](allguide.md)
 * [产品简介](introduction/README.md)
+  * [产品概述](introduction/overview.md)
   * [数据模型](introduction/datamodel/README.md)
     * [用户模型](introduction/datamodel/usermodel/README.md)
       * [访问用户](introduction/datamodel/usermodel/visituser.md)
@@ -60,10 +61,6 @@
       * [事件管理](product-manual-old/datacenter/datamanage/event-manage.md)
       * [变量管理](product-manual-old/datacenter/datamanage/variable.md)
       * [自定义指标管理](product-manual-old/datacenter/datamanage/complex.md)
-
-## 产品简介 <a id="introduction-1"></a>
-
-* [产品概述](introduction-1/overview.md)
 
 ## 开发者文档 <a id="developer-manual"></a>
 
@@ -149,10 +146,10 @@
   * [小程序&内嵌页Debugger](developer-manual/debugging/minpdebugger.md)
   * [验证埋点事件](developer-manual/debugging/verification/README.md)
     * [概述](developer-manual/debugging/verification/overview.md)
-    * [cstm（事件以及关联的事件级变量）事件](developer-manual/debugging/verification/cstm.md)
-    * [pvar（页面级变量）事件](developer-manual/debugging/verification/pvar.md)
-    * [evar（转化变量）事件](developer-manual/debugging/verification/evar.md)
-    * [ppl（用户变量）事件](developer-manual/debugging/verification/ppl.md)
+    * [对 cstm（事件以及关联的事件级变量）上报进行验证](developer-manual/debugging/verification/cstm.md)
+    * [对 pvar（页面级变量）进行验证](developer-manual/debugging/verification/pvar.md)
+    * [对 evar（转化变量）进行验证](developer-manual/debugging/verification/evar.md)
+    * [对 ppl（用户变量）上报验证](developer-manual/debugging/verification/ppl.md)
 * [API参考](developer-manual/api-reference/README.md)
   * [公共请求参数](developer-manual/api-reference/authenticate.md)
   * [原始数据导出API V2](developer-manual/api-reference/originaldata-export-v2/README.md)
