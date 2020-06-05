@@ -30,7 +30,6 @@
       * [埋点事件和事件级变量](introduction/data-definition/ustom-event/event.md)
       * [转化变量](introduction/data-definition/ustom-event/convert-variable.md)
   * [数据安全](introduction/data-security.md)
-  * [产品界面熟悉](introduction/productknow.md)
 * [产品使用文档-旧](product-manual-old/README.md)
   * [看板](product-manual-old/charts/README.md)
     * [看板简介](product-manual-old/charts/overview.md)

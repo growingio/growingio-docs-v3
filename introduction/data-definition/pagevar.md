@@ -23,6 +23,8 @@
 ![](../../.gitbook/assets/ye-mian-ji-bian-liang-.png)
 
 在按上图所示，为所有商品详情页打上页面级变量的标签后，在 GrowingIO 后台，上述 5 个页面级变量均会成为“维度”，可在各分析图表、工具中选用。例如在事件分析中，即可按商品 ID 来分解页面浏览量：
+
+![](../../.gitbook/assets/id-chai-fen-.png)
 {% endtab %}
 
 {% tab title="例二：页面级变量作为页面标签" %}

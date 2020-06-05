@@ -68,7 +68,7 @@ API 中给出了埋点事件和事件级变量的上传方式。
 
 在开发者工具中查看日志，如下图：
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2815%29.png)
+![](../../../.gitbook/assets/debug-mo-shi-.png)
 
 {% hint style="info" %}
 其他数据校验方式
