@@ -8,7 +8,7 @@
 
 GrowingIO系统中，根据多种用户行为之间存在的层级关系，将无埋点事件分为如下几类：
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28169%29.png)
+![](../../../../.gitbook/assets/image%20%2867%29.png)
 
 在实际用户浏览网站或使用 App 时：
 
