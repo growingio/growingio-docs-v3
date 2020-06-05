@@ -28,13 +28,13 @@
 
 | 事件名称 | 发送时机 | t 字段值 |
 | :--- | :--- | :--- |
-| page 事件 | 每当进入一个页面时会发送一个page事件 | page |
-| vst 事件 | 每当产生一个新的访问时 | vst |
-| activate 事件 | 当 App 首次激活打开时 | activate |
-| reengage 事件 | 由 GrowingIO Deep Link 唤醒App时 | reengage |
-| clck 事件 | 当用户对 App 上的可点击元素有点击行为时 | clck |
-| imp 事件 | 当有元素展现时 | imp |
-| chng 事件 | 当用户对 App 上的输入元素有改变的行为时 | chng |
+| 页面事件 | 每当进入一个页面时会发送一个page事件 | page |
+| 访问事件 | 每当产生一个新的访问时 | vst |
+| 激活事件 | 当 App 首次激活打开时 | activate |
+| 唤醒事件 | 由 GrowingIO Deep Link 唤醒App时 | reengage |
+| 点击事件 | 当用户对 App 上的可点击元素有点击行为时 | clck |
+| 曝光事件 | 当有元素展现时 | imp |
+| 输入事件 | 当用户对 App 上的输入元素有改变的行为时 | chng |
 
 ### 埋点事件 <a id="mai-dian-shi-jian"></a>
 
