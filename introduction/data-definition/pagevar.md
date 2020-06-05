@@ -20,11 +20,9 @@
 {% tab title="例一：页面级变量作为维度" %}
 常用于商品详情页、搜索结果页等由同一个模板\(类\)填充的多个页面，以便区分这些页面间不同的业务含义。例如商品详情页可用页面级变量来标记：商品名称、商品 ID、品类、价格等信息。如图示：
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28223%29.png)
+![](../../.gitbook/assets/ye-mian-ji-bian-liang-.png)
 
 在按上图所示，为所有商品详情页打上页面级变量的标签后，在 GrowingIO 后台，上述 5 个页面级变量均会成为“维度”，可在各分析图表、工具中选用。例如在事件分析中，即可按商品 ID 来分解页面浏览量：
-
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28129%29.png)
 {% endtab %}
 
 {% tab title="例二：页面级变量作为页面标签" %}
@@ -51,6 +49,8 @@ GrowingIO 推荐设置一个页面级变量来保存页面的类型信息。我�
 `[Growing setPageVariableWithKey:@"channel" andStringValue:@"新闻" toViewController:myViewController];`
 {% endtab %}
 {% endtabs %}
+
+
 
 ## 页面变量的配置和上传 <a id="zi-ding-yi-bian-liang-de-pei-zhi-he-shang-chuan"></a>
 
