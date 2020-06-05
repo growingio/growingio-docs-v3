@@ -10,3 +10,9 @@ GrowingIO 帮助客户提升数据驱动能力，实现更好的增长。
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LIEN5IgjD_lm1zFG-YX-LIEN8O7RZ9ipiI48vpk45_4_conversion_1_.gif)
 
+![&#x589E;&#x957F;&#x5E73;&#x53F0;&#x7684;&#x843D;&#x5730;&#x9875;&#xFF1A;&#x8FD9;&#x4E2A;&#x9875;&#x9762;&#x662F;&#x8FDB;&#x5165; &#x4EA7;&#x54C1;&#x5206;&#x6790;&#xFF0C;&#x667A;&#x80FD;&#x8FD0;&#x8425;&#xFF0C;&#x83B7;&#x5BA2;&#x5206;&#x6790;&#xFF0C;&#x7528;&#x6237;&#x5E93;&#xFF0C;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#xFF0C;&#x9879;&#x76EE;&#x7BA1;&#x7406;&#x7684;&#x5165;&#x53E3;](../.gitbook/assets/image%20%2868%29.png)
+
+
+
+
+
