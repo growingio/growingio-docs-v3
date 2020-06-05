@@ -240,8 +240,6 @@
 
 ## 产品使用文档 <a id="product-manual"></a>
 
-* [基本概念-缺失](product-manual/ji-ben-gai-nian.md)
-* [产品功能关系介绍 \(待定\)](product-manual/chan-pin-gong-neng-guan-xi-jie-shao-dai-ding.md)
 * [产品分析](product-manual/product-analysis/README.md)
   * [数据监测](product-manual/product-analysis/data-monitoring/README.md)
     * [概览](product-manual/product-analysis/data-monitoring/overview.md)
