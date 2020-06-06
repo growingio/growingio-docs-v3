@@ -147,8 +147,7 @@ A、B、C、D、E 表示用户在发生转化前接触到广告所对应的渠�
         <p>&#x7528;&#x6237;&#x76F4;&#x63A5;&#x5728;&#x6295;&#x653E;&#x843D;&#x5730;&#x9875;&#x4E2D;&#x6DFB;&#x52A0;
           utm &#x53C2;&#x6570;&#xFF0C;</p>
         <p>&#x8FDB;&#x884C;&#x6295;&#x653E;</p>
-        <p><a href="https://www.growingio.com/?utm_source=weixin">https://www.growingio.com/?utm_source=weixin</a>
-        </p>
+        <p>https://www.growingio.com/?utm_source=weixin</p>
         <p>&amp;utm_medium=article1</p>
         <p>&amp;utm_campaign=product</p>
         <p>&amp;utm_content=0811-tool</p>
@@ -176,10 +175,9 @@ A、B、C、D、E 表示用户在发生转化前接触到广告所对应的渠�
         <p>&#x7528;&#x6237;&#x76F4;&#x63A5;&#x5728;&#x6295;&#x653E;&#x843D;&#x5730;&#x9875;&#x4E2D;&#x6DFB;&#x52A0;
           utm &#x53C2;&#x6570;&#xFF0C;</p>
         <p>&#x8FDB;&#x884C;&#x6295;&#x653E;</p>
-        <p><a href="https://www.growingio.com/?">https://www.growingio.com/?</a>
-        </p>
-        <p>utm_campaign=produc</p>
-        <p>t&amp;utm_xxx=yyy</p>
+        <p>https://www.growingio.com/?</p>
+        <p>utm_campaign=product</p>
+        <p>&amp;utm_xxx=yyy</p>
       </td>
       <td style="text-align:left">
         <p>utm_campaign=product</p>
@@ -194,8 +192,7 @@ A、B、C、D、E 表示用户在发生转化前接触到广告所对应的渠�
       <td style="text-align:left">&#x641C;&#x7D22;&#x8BCD;</td>
       <td style="text-align:left">
         <p>&#x901A;&#x8FC7;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x76F4;&#x63A5;&#x76F4;&#x63A5;&#x8DF3;&#x8F6C;&#x5230;&#x7F51;&#x9875;</p>
-        <p>&#x901A;&#x8FC7;&#x767E;&#x5EA6;&#x641C;&#x7D22;&#x8DF3;&#x8F6C; <a href="https://www.growingio.com/?">https://www.growingio.com/</a>
-        </p>
+        <p>&#x901A;&#x8FC7;&#x767E;&#x5EA6;&#x641C;&#x7D22;&#x8DF3;&#x8F6C; https://www.growingio.com/</p>
       </td>
       <td style="text-align:left">
         <p>&#x5982;&#x679C;&#x53EF;&#x4EE5;&#x6210;&#x529F;&#x89E3;&#x6790;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x7684;&#x641C;&#x7D22;&#x8BCD;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x5C55;&#x793A;&#x5177;&#x4F53;&#x7684;&#x641C;&#x7D22;&#x8BCD;&#xFF1B;</p>
