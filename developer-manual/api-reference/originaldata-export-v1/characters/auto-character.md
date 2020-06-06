@@ -13,7 +13,7 @@
     <tr>
       <th style="text-align:left">userId</th>
       <th style="text-align:left">string&#xFF08;36&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&#x7528;&#x6237;ID&#x3002;</p>
         <p>&#x6B63;&#x5BF9;&#x5355;&#x4E2A;&#x7528;&#x6237;&#x751F;&#x6210;&#x7684;&#x552F;&#x4E00;ID&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;Web&#x7F51;&#x7AD9;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x671F;3&#x5E74;&#x7684;cookie&#x503C;&#xFF0C;App&#x5219;&#x4E3A;&#x673A;&#x5668;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7801;&#x3002;</p>
@@ -28,7 +28,7 @@
     <tr>
       <th style="text-align:left">sessionId</th>
       <th style="text-align:left">string&#xFF08;36&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&#x8BBF;&#x95EE;ID&#x3002;</p>
         <ul>
           <li>Web: 30&#x5206;&#x949F;&#x8FC7;&#x671F;&#x7684;session&#x503C;&#xFF0C;&#x4EE3;&#x8868;&#x4E00;&#x6B21;&#x8BBF;&#x95EE;&#x3002;</li>
@@ -43,15 +43,15 @@
 </table>
 
 | sendTime | bigint | 发送时间。 |
-| :--- | :--- | :--- |
+| :--- | :--- | ---: |
 
 
 | eventTime | bigint | 事件发生事件 |
-| :--- | :--- | :--- |
+| :--- | :--- | ---: |
 
 
 | eventType | string（10） | 事件类型 |
-| :--- | :--- | :--- |
+| :--- | :--- | ---: |
 
 
 | ip | string（64） |  |
@@ -63,7 +63,7 @@
     <tr>
       <th style="text-align:left">countryName</th>
       <th style="text-align:left">string&#xFF08;30&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&#x56FD;&#x5BB6;&#x540D;&#x79F0;&#x3002;</p>
         <p>&#x7528;&#x6237;&#x6240;&#x5728;&#x7684;&#x56FD;&#x5BB6;&#x3002;</p>
       </th>
@@ -77,7 +77,7 @@
     <tr>
       <th style="text-align:left">region</th>
       <th style="text-align:left">string&#xFF08;30&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&#x7701;&#x4EFD;&#x3002;</p>
         <p>&#x7528;&#x6237;&#x6240;&#x5728;&#x7684;&#x7701;&#x4EFD;&#x3002;</p>
       </th>
@@ -91,7 +91,7 @@
     <tr>
       <th style="text-align:left">city</th>
       <th style="text-align:left">string&#xFF08;30&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&#x57CE;&#x5E02;&#x3002;</p>
         <p>&#x7528;&#x6237;&#x6240;&#x5728;&#x7684;&#x57CE;&#x5E02;&#x3002;</p>
       </th>
@@ -105,7 +105,7 @@
     <tr>
       <th style="text-align:left">domain</th>
       <th style="text-align:left">string&#xFF08;100&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&#x57DF;&#x540D;&#x3002;</p>
         <p>&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x7684;&#x7F51;&#x7AD9;&#x57DF;&#x540D;&#x3002;</p>
       </th>
@@ -119,7 +119,7 @@
     <tr>
       <th style="text-align:left">path</th>
       <th style="text-align:left">string&#xFF08;512&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&#x8DEF;&#x5F84;&#x3002;</p>
         <p>&#x7F51;&#x7AD9;&#x8DEF;&#x5F84;&#x3002;</p>
       </th>
@@ -129,7 +129,7 @@
 </table>
 
 | refer | string（1024） | 来源链接 |
-| :--- | :--- | :--- |
+| :--- | :--- | ---: |
 
 
 | userAgent | string（1024） |  |
@@ -137,11 +137,11 @@
 
 
 | appVersion | string（10） | 客户的产品版本，仅限App端。 |
-| :--- | :--- | :--- |
+| :--- | :--- | ---: |
 
 
 | model | string（50） | 用户的设备型号 |
-| :--- | :--- | :--- |
+| :--- | :--- | ---: |
 
 
 <table>
@@ -149,7 +149,7 @@
     <tr>
       <th style="text-align:left">manufacturer</th>
       <th style="text-align:left">string&#xFF08;50&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&#x7528;&#x6237;&#x7684;&#x8BBE;&#x5907;&#x751F;&#x4EA7;&#x4EA7;&#x5546;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;&#x5C0F;&#x7C73;</p>
       </th>
@@ -163,7 +163,7 @@
     <tr>
       <th style="text-align:left">channel</th>
       <th style="text-align:left">string&#xFF08;40&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&#x4E0B;&#x8F7D;&#x6E20;&#x9053;&#x3002;</p>
         <p>App&#x7684;&#x4E0B;&#x8F7D;&#x6E20;&#x9053;&#xFF0C;&#x4EC5;&#x9650;&#x79FB;&#x52A8;&#x7AEF;&#x3002;</p>
       </th>

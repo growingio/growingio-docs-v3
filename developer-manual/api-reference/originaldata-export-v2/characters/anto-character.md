@@ -15,7 +15,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">visitUserId</th>
       <th style="text-align:left">string&#xFF08;64&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x8BBF;&#x95EE;&#x7528;&#x6237;ID&gt;</p>
         <p>&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#xFF0C;&#x7531;GrowingIo&#x81EA;&#x52A8;&#x751F;&#x6210;&#x3002;
           &#x793A;&#x4F8B;&#xFF1A;fc55728b-41ab-42ff-8b1f-714e44c65fd6</p>
@@ -30,7 +30,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">sessionId</th>
       <th style="text-align:left">string&#xFF08;50&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x8BBF;&#x95EE;ID&gt;</p>
         <p>&#x5F53;&#x524D;&#x8BBF;&#x95EE;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x3002;
           &#x793A;&#x4F8B;&#xFF1A;6b5099c7-6006-422d-92ac-4f3bf4ddd37c</p>
@@ -45,7 +45,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">accountVersion</th>
       <th style="text-align:left">string&#xFF08;20&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;SDK&#x7248;&#x672C;&gt;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;2.3.0</p>
       </th>
@@ -59,7 +59,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">platform</th>
       <th style="text-align:left">string&#xFF08;64&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x5E73;&#x53F0;&gt;</p>
         <p>&#x8BBF;&#x95EE;&#x6240;&#x5C5E;&#x5E73;&#x53F0;&#xFF0C;&#x53EF;&#x80FD;&#x503C;&#x4E3A;
           iOS / Android / Web &#x7B49;&#x3002;</p>
@@ -75,7 +75,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">domain</th>
       <th style="text-align:left">string&#xFF08;100&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x57DF;&#x540D;&gt;</p>
         <p>&#x8BBF;&#x95EE;&#x7684;&#x57DF;&#x540D;&#xFF0C;&#x5F53;&#x4E3A; iOS /
           Android &#x65F6;&#xFF0C;&#x4E3A; app &#x5305;&#x540D;&#x3002;</p>
@@ -91,7 +91,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">page</th>
       <th style="text-align:left">string&#xFF08;1024&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x9875;&#x9762;&gt;</p>
         <p>&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x7684;&#x5F53;&#x524D;&#x9875;&#x9762;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;pages/index</p>
@@ -106,7 +106,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">queryParameters</th>
       <th style="text-align:left">string&#xFF08;1024&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x67E5;&#x8BE2;&#x53C2;&#x6570;&gt;</p>
         <p>&#x5F53;&#x524D;&#x7F51;&#x7AD9;&#x9875;&#x9762;URL&#x4E2D;&#x7684;&#x67E5;&#x8BE2;&#x53C2;&#x6570;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;cid=1234567</p>
@@ -121,7 +121,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">referrer</th>
       <th style="text-align:left">string&#xFF08;1024&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x9875;&#x9762;&#x6765;&#x6E90;&gt;</p>
         <p>&#x5F53;&#x524D;&#x9875;&#x9762;&#x6D4F;&#x89C8;&#x7684;&#x5F15;&#x8350;&#x6765;&#x6E90;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;https://www.growingio.com?cid=1234567</p>
@@ -136,7 +136,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">language</th>
       <th style="text-align:left">string&#xFF08;10&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x8BED;&#x8A00;&gt;</p>
         <p>&#x7CFB;&#x7EDF;&#x4F7F;&#x7528;&#x7684;&#x8BED;&#x8A00;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;zh-cn</p>
@@ -151,7 +151,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">screenHeight</th>
       <th style="text-align:left">string&#xFF08;10&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x5C4F;&#x5E55;&#x9AD8;&#x5EA6;&gt;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;1242</p>
       </th>
@@ -165,7 +165,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">screenWidth</th>
       <th style="text-align:left">string&#xFF08;10&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x5C4F;&#x5E55;&#x5BBD;&#x5EA6;&gt;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;2016</p>
       </th>
@@ -179,7 +179,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">time</th>
       <th style="text-align:left">bigint</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x65F6;&#x95F4;&#x6233;&gt;</p>
         <p>&#x8BF7;&#x6C42;&#x5728;&#x7528;&#x6237;&#x7AEF;&#x53D1;&#x751F;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;1520899220665</p>
@@ -194,7 +194,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">sendTime</th>
       <th style="text-align:left">bigint</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x53D1;&#x9001;&#x65F6;&#x95F4;&gt;</p>
         <p>&#x8BF7;&#x6C42;&#x5728;SDK&#x53D1;&#x9001;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;1520899221211</p>
@@ -209,7 +209,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">ip</th>
       <th style="text-align:left">string&#xFF08;15&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;IP&#x5730;&#x5740;&gt;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;127.0.0.1</p>
       </th>
@@ -223,7 +223,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">userAgent</th>
       <th style="text-align:left">string&#xFF08;512&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x7528;&#x6237;&#x4EE3;&#x7406;&gt;</p>
         <p>&#x7B80;&#x79F0; UA&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x4E32;&#x5934;&#xFF0C;&#x4F7F;&#x5F97;&#x670D;&#x52A1;&#x5668;&#x80FD;&#x591F;&#x8BC6;&#x522B;&#x5BA2;&#x6237;&#x4F7F;&#x7528;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x53CA;&#x7248;&#x672C;&#x3001;CPU
           &#x7C7B;&#x578B;&#x3001;&#x6D4F;&#x89C8;&#x5668;&#x53CA;&#x7248;&#x672C;&#x3001;&#x6D4F;&#x89C8;&#x5668;&#x6E32;&#x67D3;&#x5F15;&#x64CE;&#x3001;&#x6D4F;&#x89C8;&#x5668;&#x8BED;&#x8A00;&#x3001;&#x6D4F;&#x89C8;&#x5668;&#x63D2;&#x4EF6;&#x7B49;&#x3002;</p>
@@ -240,7 +240,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">operatingSystem</th>
       <th style="text-align:left">string&#xFF08;30&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&gt;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;iOS/Android</p>
       </th>
@@ -254,7 +254,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">operatingSystemVersion</th>
       <th style="text-align:left">string&#xFF08;50&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7248;&#x672C;&gt;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;iOS 11.0.1 /Android 6.0.1</p>
       </th>
@@ -268,7 +268,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">clientVersion</th>
       <th style="text-align:left">string&#xFF08;50&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x5BA2;&#x6237;&#x7684;&#x4EA7;&#x54C1;&#x7248;&#x672C;&gt;</p>
         <p>&#x4EC5;&#x9650;&#x79FB;&#x52A8;&#x7AEF;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;1.0</p>
@@ -283,7 +283,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">channel</th>
       <th style="text-align:left">string&#xFF08;40&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;App&#x7684;&#x4E0B;&#x8F7D;&#x6E20;&#x9053;&gt;</p>
         <p>&#x4EC5;&#x9650;&#x79FB;&#x52A8;&#x7AEF;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;App tore</p>
@@ -298,7 +298,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">deviceBrand</th>
       <th style="text-align:left">string&#xFF08;20&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x8BBE;&#x5907;&#x54C1;&#x724C;&gt;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;google</p>
       </th>
@@ -312,7 +312,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">deviceModel</th>
       <th style="text-align:left">string&#xFF08;50&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x8BBE;&#x5907;&#x578B;&#x53F7;&gt;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;Nexus 5</p>
       </th>
@@ -326,7 +326,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">deviceType</th>
       <th style="text-align:left">string&#xFF08;50&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x8BBE;&#x5907;&#x7C7B;&#x578B;&gt;</p>
         <p>&#x8BBE;&#x5907;&#x7C7B;&#x578B;&#xFF1A;</p>
         <ul>
@@ -345,7 +345,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">deviceOrientation</th>
       <th style="text-align:left">string&#xFF08;10&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x8BBE;&#x5907;&#x65B9;&#x5411;&gt;</p>
         <p>&#x8BF7;&#x6C42;&#x4EA7;&#x751F;&#x65F6;&#x8BBE;&#x5907;&#x65B9;&#x5411;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;PORTRAIT</p>
@@ -360,7 +360,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">latitude</th>
       <th style="text-align:left">double</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x7EAC;&#x5EA6;&gt;</p>
         <p>&#x7CBE;&#x786E;&#x5230;&#x5C0F;&#x6570;&#x70B9;&#x540E;5&#x4F4D;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;29.43982</p>
@@ -375,7 +375,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">longitude</th>
       <th style="text-align:left">double</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x7CBE;&#x5EA6;&gt;</p>
         <p>&#x7CBE;&#x786E;&#x5230;&#x5C0F;&#x6570;&#x70B9;&#x540E;5&#x4F4D;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;29.43982</p>
@@ -390,7 +390,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">vstRequestId</th>
       <th style="text-align:left">string&#xFF08;16&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x8BBF;&#x95EE;&#x8BF7;&#x6C42;&#x5185;&#x90E8;ID&gt;</p>
         <p>GrowingIO&#x7CFB;&#x7EDF;&#x5185;&#x90E8;&#x7528;&#x4E8E;&#x6807;&#x8BC6;&#x4E00;&#x4E2A;&#x8BBF;&#x95EE;&#x8BF7;&#x6C42;&#x7684;ID&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5173;&#x8054;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;c7db72a5841506bd</p>
@@ -406,7 +406,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">idfa</th>
       <th style="text-align:left">string&#xFF08;40&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;iOS&#x72EC;&#x6709;&#x7684;&#x5E7F;&#x544A;&#x6807;&#x8BC6;&#x7B26;&gt;</p>
         <p>&#x82F9;&#x679C;&#x7CFB;&#x7EDF;&#x7528;&#x4E8E;&#x76D1;&#x6D4B;&#x5E7F;&#x544A;&#x7684;ID&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;A075A0F9-32D2-4671-A78D-144B6B7D2920</p>
@@ -421,7 +421,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">androidId</th>
       <th style="text-align:left">string&#xFF08;16&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x5B89;&#x5353;&#x7CFB;&#x7EDF;&#x7684;&#x4E00;&#x4E2A;ID&gt;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;6284760c2926bcd5</p>
       </th>
@@ -435,7 +435,7 @@ description: 无埋点事件字段共分为4个事件类型。
     <tr>
       <th style="text-align:left">IMEI</th>
       <th style="text-align:left">string&#xFF08;16&#xFF09;</th>
-      <th style="text-align:left">
+      <th style="text-align:right">
         <p>&lt;&#x56FD;&#x9645;&#x79FB;&#x52A8;&#x8BBE;&#x5907;&#x8BC6;&#x522B;&#x7801;&gt;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;867459000000000</p>
       </th>

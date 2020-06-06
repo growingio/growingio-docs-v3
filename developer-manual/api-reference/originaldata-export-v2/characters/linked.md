@@ -16,7 +16,7 @@ ads\_track\_click和ads\_track\_activation两张表分别代表GIO定义的2种�
 
 ## **常用关联场景**
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/yuan-shi-shu-ju-guan-lian-guan-xi-tu%20%284%29.png)
+![](../../../../.gitbook/assets/yuan-shi-shu-ju-guan-lian-guan-xi-tu-.png)
 
 | 关联 | 关联场景 |
 | :--- | :--- |

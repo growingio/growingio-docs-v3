@@ -183,5 +183,5 @@ KPI详情页构成：
 
 ## 管理KPI看板
 
-KPI看板与分析看板的管理方式相同，请参考[看板管理](../../../product-manual-old/charts/manage.md#2-gong-neng-shuo-ming)。
+KPI看板与分析看板的管理方式相同，请参考[看板管理]()。
 
