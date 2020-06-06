@@ -31,6 +31,7 @@
       * [埋点事件和事件级变量](introduction/data-definition/ustom-event/event.md)
       * [转化变量](introduction/data-definition/ustom-event/convert-variable.md)
   * [数据安全](introduction/data-security.md)
+* [GrowingIO  增长平台全景图](growingio-zeng-chang-ping-tai-quan-jing-tu.md)
 
 ## 开发者文档 <a id="developer-manual"></a>
 
