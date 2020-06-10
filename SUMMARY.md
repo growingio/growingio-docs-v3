@@ -1,7 +1,7 @@
 # Table of contents
 
 * [What's new](README.md)
-* [增长平台全景图](introduction-1-overview.md)
+* [增长平台全景图](new-growingio-platform.md)
 * [文档使用指南](allguide.md)
 * [产品简介](introduction/README.md)
   * [产品概述](introduction/overview.md)
