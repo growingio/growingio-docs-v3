@@ -24,9 +24,9 @@
 * 用户库： 助力用户数据沉淀，构建以用户为中心的数据应用，让您前所未有的看清用户。
 * 数据中心：数据采集、规划、定义、管理、校验一体的数据中心，构建**即拿即用**的数据立方体。 
 
+![](.gitbook/assets/growingio-zeng-chang-ping-tai-%20%286%29.png)
 
 
-![](.gitbook/assets/growingio-zeng-chang-ping-tai-%20%283%29.png)
 
 
 
