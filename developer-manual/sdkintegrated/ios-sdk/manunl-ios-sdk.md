@@ -17,7 +17,7 @@ App适配最低系统版本：iOS 8及以上
 
 **组件化SDK**
 
-GrowingIO iOS SDK 2.8.12 包含以下组件SDK:
+GrowingIO iOS SDK  包含以下组件SDK:
 
 • GrowingCoreKit \(组件基础库,具备分析功能\)
 
