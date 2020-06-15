@@ -4,11 +4,11 @@
 
 一. 在顶部导航栏选择“**产品分析 &gt; 分布分析”**，进入单图列表的分布分析模块。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28240%29.png)
+![](../../../../.gitbook/assets/fen-bu-fen-xi-1.png)
 
 二. 单击**新建分布分析**，进入**新建分布分析**页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2817%29.png)
+
 
 三. 选择**事件或指标**、**目标用户**等条件后，生成分布分析图。
 
@@ -75,5 +75,5 @@
 
 在分布分析的分布图中，单击用户量所在列的单元格即可出现以下效果，选择创建分群快速创建当前区间的用户分群。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2851%29.png)
+![](../../../../.gitbook/assets/fen-bu-fen-xi-3.png)
 
