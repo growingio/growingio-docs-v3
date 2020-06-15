@@ -16,7 +16,7 @@ description: 在GrowingIO平台上对无埋点事件进行可视化及管理。
 
 ### 操作步骤
 
-创建无埋点事件即无埋点事件定义（圈选），请参考[无埋点事件定义（圈选）]()。
+创建无埋点事件即无埋点事件定义（圈选），请参考[无埋点事件定义](https://app.gitbook.com/@growingio/s/v3/~/drafts/-M9qteolP7taHwEo0w1a/product-manual/data-center/data-management/auto/web)。
 
 ## 管理无埋点事件
 
@@ -56,5 +56,5 @@ description: 在GrowingIO平台上对无埋点事件进行可视化及管理。
 
 在新的数据管理上线后，我们将原先的「复合指标」功能升级为「计算指标」，将原先的「合并指标」功能调整为「合并事件」。新的合并事件与计算指标功能支持使用埋点事件，以及不同类型事件的合并与计算，不再仅限使用无埋点事件。
 
-您可以通过进入[自定义指标管理]()，体验全新的计算指标与合并事件功能。
+您可以通过进入[自定义指标管理](https://app.gitbook.com/@growingio/s/v3/~/drafts/-M9qteolP7taHwEo0w1a/product-manual/data-center/data-management/custom-metric)，体验全新的计算指标与合并事件功能。
 
