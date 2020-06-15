@@ -24,11 +24,11 @@
 
 按照如下流程图进行验证：
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/cstm2x%20%282%29.png)
+![](../../../.gitbook/assets/shu-ju-yan-zheng-1.png)
 
 在本例中，如下图的数据请求说明打点代码生效
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/ji-shu-qi-wu-bian-liang.png)
+![](../../../.gitbook/assets/shu-ju-yan-zheng-2.png)
 
 ## 场景二：计数器类型的埋点事件（有关联事件级变量）
 
@@ -82,9 +82,9 @@
 
 按照如下流程图进行验证：
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/cstm2x2.png)
+![](../../../.gitbook/assets/shu-ju-yan-zheng-3.png)
 
 在本例中，如下图的数据请求说明打点代码生效
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/cstm-shi-jian-yan-zheng-2.png)
+![](../../../.gitbook/assets/shu-ju-yan-zheng-4.png)
 
