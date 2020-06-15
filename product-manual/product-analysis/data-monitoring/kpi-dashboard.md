@@ -28,11 +28,11 @@ KPI看板可以帮助业务负责人在 GrowingIO 平台上监控 KPI 数据，�
 
 二. 单击列表上方的**创建看板**，新建一个KPI看板并进入看板内。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2881%29.png)
+![](../../../.gitbook/assets/kpi1.png)
 
 三. 单击**添加KPI**，弹出**创建KPI指标**页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28221%29.png)
+![](../../../.gitbook/assets/kpi2.png)
 
 | 参数 | 说明 |
 | :--- | :--- |
@@ -89,13 +89,31 @@ KPI看板可以帮助业务负责人在 GrowingIO 平台上监控 KPI 数据，�
 
 在KPI看板内部，单击单个KPI指标框右上角的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/kpi-kan-ban-dian-dian-dian.png) 选择编辑，在编辑页面设置目标值。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28155%29.png)
+![](../../../.gitbook/assets/kpi3.png)
 
 设置完成后即可在单个KPI框右下角查看目标完成度。
 
-| 未设置目标值 | 已设置目标值 |
-| :--- | :--- |
-| ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/wu-kpi-mu-biao.png) | ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/you-kpi-mu-biao%20%281%29.png) |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x672A;&#x8BBE;&#x7F6E;&#x76EE;&#x6807;&#x503C;</th>
+      <th style="text-align:left">
+        <p>&#x5DF2;</p>
+        <p>&#x8BBE;&#x7F6E;&#x76EE;&#x6807;&#x503C;</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../.gitbook/assets/wu-kpi-mu-biao-.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <img src="../../../.gitbook/assets/kpi4.png" alt/>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 | 参数 | 说明 |
 | :--- | :--- |
@@ -166,7 +184,7 @@ KPI看板可以帮助业务负责人在 GrowingIO 平台上监控 KPI 数据，�
 
 KPI详情页构成：
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2835%29.png)
+![](../../../.gitbook/assets/kpi5.png)
 
 | 项 | 说明 |
 | :--- | :--- |
@@ -175,13 +193,11 @@ KPI详情页构成：
 | 3-趋势图 | 趋势线图，帮助您监测 KPI 趋势与波动状况。 |
 | 4-趋势图洞察 | 基于您关注的业务维度，直接呈现 KPI 变化的主要影响因子。快速理解导致数据波动的核心原因。 |
 | 5-维度拆解 | 您可以按照业务维度对您的KPI进行拆解，找到 KPI 变化的影响因子。同时提供不同业务维度下的数据变化量与变化率。 |
-| 6-选择下钻维度 | 单击维度列单元格可以对维度进行下钻。可以根据您的业务思路，不断拆解下钻找到最小粒度的原因。 |
+| 6-选择下钻维度 | 单击维度列单元格可以对维度进行下钻。可以根据您的业务思路，不断拆解下钻找到最小粒度的原因 |
 
 下钻示例：
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28179%29.png)
+![](../../../.gitbook/assets/kpi6.png)
 
-## 管理KPI看板
-
-KPI看板与分析看板的管理方式相同，请参考[看板管理]()。
+## 
 
