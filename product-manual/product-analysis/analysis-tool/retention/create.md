@@ -4,13 +4,13 @@
 
 一. 在顶部导航栏选择“**产品分析 &gt; 留存分析”**，进入单图列表的留存分析模块。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2878%29.png)
+![](../../../../.gitbook/assets/liu-cun-1.png)
 
 二. 单击**新建留存分析**，进入**新建留存分析**页面，页面默认展示过去14天“全部访问用户”在“任意行为”（回访网站/App）的留存情况。
 
 直白来说就是过去14天访问过网站/App的用户，在后面的每天再回来访问网站/App的用户就是留存用户，这些留存用户占初始用户的比例就是留存率。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28140%29.png)
+![](../../../../.gitbook/assets/liu-cun-2.png)
 
 | 参数 | 说明 |
 | :--- | :--- |
@@ -173,5 +173,5 @@
 限制条件：快速创建分群受到用户分群模块权限限制，如果您没有用户分群权限，将无法从漏斗分析趋势图中快速创建分群。
 {% endhint %}
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28210%29.png)
+![](../../../../.gitbook/assets/liu-cun-3.png)
 
