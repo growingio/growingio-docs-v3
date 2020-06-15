@@ -16,7 +16,7 @@
         * [概述](introduction/datamodel/eventmodel/autotrack-event/overview.md)
         * [访问事件及变量](introduction/datamodel/eventmodel/autotrack-event/session-events-and-properties.md)
         * [页面事件及变量](introduction/datamodel/eventmodel/autotrack-event/page-events-and-properties.md)
-        * [动作事件及变量](introduction/datamodel/eventmodel/autotrack-event/ction-events-and-properties.md)
+        * [元素事件及变量](introduction/datamodel/eventmodel/autotrack-event/element-events-and-properties.md)
       * [埋点事件](introduction/datamodel/eventmodel/custom-event.md)
     * [统计模型](introduction/datamodel/analysismodel/README.md)
       * [指标-事件的度量](introduction/datamodel/analysismodel/metric.md)

@@ -44,7 +44,7 @@ description: 借助实时监控模板，您可以实时监控你的业务进程�
 
 #### 2. GrowingIO 爬虫规则会过滤实时看板中的数据？
 
-会的，详情请见[爬虫预防](https://app.gitbook.com/@growingio/s/v3/product-manual/projectmange/projectmange/spider-rules)。
+会的，详情请见[爬虫预防](https://app.gitbook.com/@growingio/s/v3/~/drafts/-M7u--XnEgbv-C9H_nFa/product-manual/projectmange/projectmange/pa-chong-yu-fang)。
 
 #### 3. 添加新实时单图的时候，为什么创建的新图暂无数据？
 
