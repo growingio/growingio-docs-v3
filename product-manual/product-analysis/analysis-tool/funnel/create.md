@@ -4,11 +4,11 @@
 
 一. 在顶部导航栏选择“**产品分析 &gt; 漏斗分析”**，进入单图列表的漏斗分析模块。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28137%29.png)
+![](../../../../.gitbook/assets/lou-dou-1.png)
 
 二. 单击**新建漏斗分析**，进入**新建漏斗分析**页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28152%29.png)
+![](../../../../.gitbook/assets/lou-dou-2.png)
 
 三. 单击**选择漏斗步骤，**至少选择2个步骤，单击确定后展示漏斗视图。
 
@@ -17,7 +17,7 @@
 * 选择漏斗步骤时，鼠标**悬停**在某个事件时，可以看到该事件的定义和过去 7 天的数据预览。
 {% endhint %}
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28241%29.png)
+![](../../../../.gitbook/assets/lou-dou-3.png)
 
 > 图例解读：过去7天（时间）内用户在任意时间完成第一步，并在1天（转化周期）内完成了第二步的占比为0.514%（第一步的转化率）。
 
@@ -121,7 +121,7 @@
 
 五. 单击**保存**后弹出**添加到看板**，选择合适的看板后单击确定。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28119%29.png)
+![](../../../../.gitbook/assets/lou-dou-4.png)
 
 ## 一键创建分群
 
@@ -131,7 +131,7 @@
 限制条件：快速创建分群受到用户分群模块权限限制，如果您没有用户分群权限，将无法从漏斗分析趋势图中快速创建分群。
 {% endhint %}
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28147%29.png)
+![](../../../../.gitbook/assets/lou-dou-5.png)
 
 ## **漏斗可选步骤的分类**
 
@@ -141,5 +141,5 @@
 * 埋点事件，在“类型” 中选择“埋点事件”即可。
 * 复合指标包括：合并事件、计算指标。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2893%29.png)
+![](../../../../.gitbook/assets/lou-dou-6.png)
 
