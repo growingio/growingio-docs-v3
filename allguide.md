@@ -4,7 +4,7 @@
 
 | 产品熟悉 |  |  |  |
 | :--- | :--- | :--- | :--- |
-| [数据模型](introduction/datamodel/) | [界面熟悉]() | [角色权限](https://app.gitbook.com/@growingio/s/v3/~/drafts/-M8nmI2LUpiLsolyacUV/product-manual/projectmange/role-manage) | [工单管理](product-manual/tickets/) |
+| [数据模型](introduction/datamodel/) | [角色权限](https://app.gitbook.com/@growingio/s/v3/~/drafts/-M8nmI2LUpiLsolyacUV/product-manual/projectmange/role-manage) | [工单管理](product-manual/tickets/) |  |
 
 | 开发者使用 |  |  |  |
 | :--- | :--- | :--- | :--- |
@@ -14,13 +14,13 @@
 | :--- | :--- | :--- | :--- |
 | [事件分析](product-manual/product-analysis/analysis-tool/event-analysis/) | [漏斗分析](product-manual/product-analysis/analysis-tool/funnel/) | [留存分析](product-manual/product-analysis/analysis-tool/retention/) | [分布分析](product-manual/product-analysis/analysis-tool/frequency/) |
 
-| 用户分析 |  |  |  |
+| 用户庫 |  |  |  |
 | :--- | :--- | :--- | :--- |
 | [用户分群](product-manual/user-warehouse/segmentations/segmentations/) | [用户细查](product-manual/user-warehouse/segmentations/userinsights/) | [活跃用户](product-manual/user-warehouse/uesr-analysis/active-users/) | [微信用户](product-manual/user-warehouse/business-scenario/wx-user.md) |
 
 | 获客分析 |  |  |  |
 | :--- | :--- | :--- | :--- |
-| [广告监测]() | [活动分析](product-manual/growing/analysis/activities.md) | [落地页分析](product-manual/growing/analysis/landing.md) | [分享分析](product-manual/product-analysis/business-scenario/shareanalysis.md) |
+| [活动分析](product-manual/growing/analysis/activities.md) | [落地页分析](product-manual/growing/analysis/landing.md) | [分享分析](product-manual/product-analysis/business-scenario/shareanalysis.md) | [分享分析](product-manual/product-analysis/business-scenario/shareanalysis.md) |
 
 ## 内容精确搜索
 
