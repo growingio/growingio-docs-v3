@@ -68,9 +68,9 @@ description: 验证“转化变量”数据。
 
 按照如下流程图验证
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/evar1x2.png)
+![](../../../.gitbook/assets/shu-ju-yan-zheng-7.png)
 
 在本例中，如下图的数据请求说明打点代码生效
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/evar.png)
+![](../../../.gitbook/assets/shu-ju-yan-zheng-8.png)
 
