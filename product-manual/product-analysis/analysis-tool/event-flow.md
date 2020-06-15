@@ -18,7 +18,7 @@
 
 创建事件流的操作解释：
 
-![](https://uploader.shimo.im/f/sS4xiWFYdc80qFcP.png!thumbnail)
+![](../../../.gitbook/assets/shi-jian-liu-1.png)
 
 1 代表选择起始事件或者终点事件类型：
 
@@ -42,7 +42,7 @@
 
 特别指出天是自然天的意思。举个例子：如果一个用户在晚上 11：30 做了事件A，第二天凌晨00：01 做了事件B，窗口设置是 1 小时，我们会认为事件A之后用户流失。
 
-![](https://uploader.shimo.im/f/e3zlUVKayOCnfcKc.png!thumbnail)
+![](../../../.gitbook/assets/shi-jian-liu-2.png)
 
 ####  
 
