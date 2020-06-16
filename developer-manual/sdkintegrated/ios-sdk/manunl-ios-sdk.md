@@ -61,7 +61,7 @@ GrowingIO iOS SDK  包含以下组件SDK:
 
 1. 添加编译参数，并注意大小写。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2897%29.png)
+![](../../../.gitbook/assets/image%20%2878%29.png)
 {% endtab %}
 {% endtabs %}
 
@@ -69,7 +69,7 @@ GrowingIO iOS SDK  包含以下组件SDK:
 
 添加URL Scheme 到项目中，以便唤醒您的程序进行圈选。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2885%29.png)
+![](../../../.gitbook/assets/image%20%2875%29.png)
 
 ### 3. 初始化配置
 
@@ -147,7 +147,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 ## 5. 创建应用 <a id="4-chuang-jian-ying-yong"></a>
 
-**添加代码之后，请先Clean项目，然后再进行编译，并在你的 Android App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
+**添加代码之后，请先Clean项目，然后再进行编译，并在你的  App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
 
 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
 

@@ -68,13 +68,13 @@ GrowingIO iOS SDK 包含以下2个组件SDK:
 
 添加编译参数，并注意大小写。
 
-![](../../../.gitbook/assets/image%20%2876%29.png)
+![](../../../.gitbook/assets/image%20%2877%29.png)
 
 ### 2. 添加 URL Scheme
 
 添加URL Scheme 到项目中，以便唤醒您的程序进行圈选。
 
-![](../../../.gitbook/assets/image%20%2877%29.png)
+![](../../../.gitbook/assets/image%20%2879%29.png)
 
 ### 3. 初始化配置
 

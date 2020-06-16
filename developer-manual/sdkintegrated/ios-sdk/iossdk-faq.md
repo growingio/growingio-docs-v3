@@ -84,7 +84,7 @@ Swift：修改AppDelegate.swift，并手动创建main.swift文件。
 
 ![](../../../.gitbook/assets/image%20%2874%29.png)
 
-![](../../../.gitbook/assets/image%20%2875%29.png)
+![](../../../.gitbook/assets/image%20%2876%29.png)
 
 ## 13. 关于苹果隐私政策相关事宜的公告
 
