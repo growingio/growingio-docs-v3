@@ -10,7 +10,7 @@ description: 此功能可以方便查看移动端 SDK 上传的数据信息。
 
 登录GrowingIO平台，在任意界面单机右上角 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/2019-10-10_18-59-32.png) 选择**Mobile Debugger**进入Mobile Debugger启动页。
 
-![Mobile Debugger&#x542F;&#x52A8;&#x9875;](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28205%29.png)
+![](../../.gitbook/assets/image%20%2881%29.png)
 
 第二步、扫码唤起App
 
@@ -21,7 +21,7 @@ description: 此功能可以方便查看移动端 SDK 上传的数据信息。
 
 在唤起Debug的APP后，该APP采集的行为数据以及当前页面截图就会出现在网页上，测试同学可以根据数据看数据的采集以及发送情况，对数据进行测试。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28233%29.png)
+![](../../.gitbook/assets/image%20%2882%29.png)
 
 在此概览中可能出现的数据日志含义分别有：
 

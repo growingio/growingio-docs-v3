@@ -6,7 +6,7 @@
 
 二. 单击**新建事件分析**，进入**新建事件分析**页面。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2874%29.png)
+![](../../../../.gitbook/assets/shi-jian-fen-xi-1.png)
 
 | 项 | 说明 |
 | :--- | :--- |
