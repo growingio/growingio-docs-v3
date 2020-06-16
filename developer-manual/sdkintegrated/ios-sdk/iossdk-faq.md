@@ -48,7 +48,23 @@ SDK 依赖 subviews 里面的元素次序。如果有动态的需求，建议在
 
 ## 11. App做了Button防重复点击，集成SDK后发现按钮无法点击？
 
-请使用GrowingIO提供的防重复点击解决方式：[DJRepeatClickFilter](https://github.com/sishen/DJRepeatClickFilter/blob/master/TestClickQuickly/UIView%2BDJRepeatClickFilter.m)。
+如果您的UIButton 防重复方案中， hook了 UIControl 的 originalSelector：`@selector(sendAction:to:forEvent:)` 方法，请确保在您的 swizzledSelector：`@selector(your_swizzled_sendAction:to:forEvent:)` 方法**前面**执行 如下代码:  
+
+
+```java
+- (void)your_swizzled_sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event {
+     
+      //  Called before your  extra work
+       if ([NSStringFromClass([target class]) isEqualToString:@"GrowingUIControlObserver"]) { 
+              [self your_swizzled_sendAction:action to:target forEvent:event]; // call origin
+              return;
+       }
+
+       // Do your extra work. such as judge click interval....
+
+       [self your_swizzled_sendAction:action to:target forEvent:event]; // call origin
+}
+```
 
 ## 12. 如果项目中使用了Firebase SDK，需要注意什么？
 
