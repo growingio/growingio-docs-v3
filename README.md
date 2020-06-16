@@ -3,9 +3,9 @@
 ## 新功能介绍
 
 {% hint style="success" %}
-GrowingIO全新上线自动获取Token值功能，详情请参考[API Token管理](https://app.gitbook.com/@growingio/s/v3/~/drafts/-M8neoJOtFjKmzSqH7ZX/product-manual/projectmange/projectmange/api-token)。
+GrowingIO全新上线自动获取Token值功能，详情请参考 [API Token管理](product-manual/projectmange/projectmange/api-token.md)。
 
-GrowingIO 全新上线渠道归因分析，详情参考 [渠道归因分析](https://app.gitbook.com/@growingio/s/v3/~/drafts/-M8nmI2LUpiLsolyacUV/product-manual/growing/analysis/channel-detail)。
+GrowingIO 全新上线渠道归因分析，详情参考 [渠道归因分析](product-manual/growing/analysis/attribution-analysis.md)。
 {% endhint %}
 
 {% hint style="success" %}
