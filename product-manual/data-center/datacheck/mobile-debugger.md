@@ -1,6 +1,6 @@
 # Mobile Debugger
 
-详情请见 SDK调试 mobile debugger：
+详情请见 SDK调试 [mobile debugger](../../../developer-manual/debugging/mobile-debugger.md)：
 
-[https://growingio.gitbook.io/docs/developer-manual/debugging/mobile-debugger](https://growingio.gitbook.io/docs/developer-manual/debugging/mobile-debugger)
+
 
