@@ -169,7 +169,7 @@ iOS 无埋点 **SDK 2.8.5** 及以上支持。
 
 对单独元素设置可见比例
 
-```text
+```objectivec
 @interface UIView(GrowingImpression)
 
 // 设置该节点被认定为可见的比例
@@ -183,7 +183,7 @@ iOS 无埋点 **SDK 2.8.5** 及以上支持。
 
 全局设置可见比例
 
-```text
+```objectivec
 @interface Growing(AutoTrackKit)
 /**
  imp半自动打点scale全局配置项
