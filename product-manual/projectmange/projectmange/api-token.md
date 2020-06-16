@@ -2,10 +2,8 @@
 
 API Token管理功能可直接由系统利用项目的公钥和私钥自动生成Token，省去了您频繁计算导致的错误、失效等问题。
 
-![](../../../.gitbook/assets/ying-mu-jie-tu-20200418-xia-wu-3.43.07.png)
-
 {% hint style="warning" %}
-为了您的数据安全，GrowingIO 即将禁止使用代码创建 Token，请您使用GrowingIO平台生成的 Token。
+为了您的数据安全，GrowingIO 以取消利用项目公钥，使用代码创建 Token，请您使用GrowingIO平台生成的 Token。
 {% endhint %}
 
 一**. 进入页面：**选择项目配置，在项目配置界面选择 **API token管理** 页签。
