@@ -4,9 +4,68 @@ description: iOS SDK更新日志
 
 # 更新日志
 
-| SDK版本 | 更新点 | 时间 |
-| :--- | :--- | ---: |
-
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">SDK&#x7248;&#x672C;</th>
+      <th style="text-align:left">&#x66F4;&#x65B0;&#x70B9;</th>
+      <th style="text-align:left">&#x65F6;&#x95F4;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">2.8.19</td>
+      <td style="text-align:left">
+        <p>1. &#x4F18;&#x5316;&#x65E5;&#x5FD7;&#x6027;&#x80FD;</p>
+        <p>2. &#x89E3;&#x51B3;&#x4E2A;&#x522B;&#x7528;&#x6237;&#x7B26;&#x53F7;&#x91CD;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;</p>
+        <p>&#x1F4D4;&#x5982;&#x679C;&#x60A8;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E86;&#x57CB;&#x70B9;SDK&#x548C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#xFF0C;&#x5F53;&#x60A8;&#x5347;&#x7EA7;&#x5230;&#x6B64;&#x7248;&#x672C;&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#x7248;&#x672C;&#x9700;&#x8981;&#x5BF9;&#x5E94;&#x5347;&#x7EA7;&#x5230;1.4.0&#x53CA;&#x4EE5;&#x4E0A;</p>
+      </td>
+      <td style="text-align:left">2020-06-05</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">2.8.17</td>
+      <td style="text-align:left">
+        <p>&#x4F18;&#x5316;</p>
+        <p>1.WKWebView&#x517C;&#x5BB9;&#x6027;&#x63D0;&#x5347;
+          <br />2.&#x505A;&#x4E86;&#x4E00;&#x4E9B;&#x5C0F;&#x4F18;&#x5316;</p>
+      </td>
+      <td style="text-align:left">2020-05-27</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">2.8.16</td>
+      <td style="text-align:left">
+        <p>&#x4F18;&#x5316;:</p>
+        <p>&#x63D0;&#x5347;&#x7A33;&#x5B9A;&#x6027;</p>
+      </td>
+      <td style="text-align:left">2020-05-12</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">2.8.15</td>
+      <td style="text-align:left">
+        <p>&#x4F18;&#x5316;&#xFF1A;
+          <br />1. &#x65B0;&#x589E; setSessionInterval:(NSTimeInterval)interval &#x63A5;&#x53E3;</p>
+        <p>2. &#x4F18;&#x5316;&#x4EE3;&#x7801;&#x6027;&#x80FD;</p>
+      </td>
+      <td style="text-align:left">2020-04-28</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">2.8.14</td>
+      <td style="text-align:left">
+        <p>&#x4F18;&#x5316;:</p>
+        <p>&#x5BF9;&#x5E7F;&#x544A;&#x91C7;&#x96C6;&#x654F;&#x611F;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x52A0;&#x5F3A;&#x6570;&#x636E;&#x5B89;&#x5168;</p>
+      </td>
+      <td style="text-align:left">2020-04-15</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">2.8.13</td>
+      <td style="text-align:left">
+        <p>&#x4FEE;&#x590D;:</p>
+        <p>&#x4F18;&#x5316;&#x57CB;&#x70B9;SDK&#x5728;&#x6781;&#x7AEF;&#x60C5;&#x51B5;&#x4E0B;&#x7528;&#x6237;&#x91CF;&#x3001;&#x8BBF;&#x95EE;&#x91CF;&#x3001;&#x8FDB;&#x5165;&#x6B21;&#x6570;&#x9884;&#x5B9A;&#x4E49;&#x6307;&#x6807;&#x4E0D;&#x51C6;&#x786E;&#x7684;&#x95EE;&#x9898;</p>
+      </td>
+      <td style="text-align:left">2020-04-01</td>
+    </tr>
+  </tbody>
+</table>
 
 <table>
   <thead>
