@@ -16,7 +16,7 @@
 
 进入个人信息设置页面。
 
-![](../../.gitbook/assets/ying-mu-jie-tu-20200418-xia-wu-5.01.56.png)
+![](../../.gitbook/assets/ying-mu-jie-tu-20200617-xia-wu-7.54.15.png)
 
 
 
