@@ -370,5 +370,6 @@
 * [数据安全](product-faq/data-security.md)
 * [产品使用](product-faq/produceuse.md)
 * [数据统计差异](product-faq/diffinfo.md)
+* [如何刪除不要的項目？](product-faq/ru-he-shan-chu-bu-yao-de-xiang-mu.md)
 * [无效指标清理说明](product-faq/cleandata.md)
 
