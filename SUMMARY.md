@@ -332,6 +332,7 @@
   * [数据集成](product-manual/data-center/data_source_integration/README.md)
     * [微信公众号集成](product-manual/data-center/data_source_integration/wx-account.md)
 * [项目管理](product-manual/projectmange/README.md)
+  * [如何进入项目管理？](product-manual/projectmange/ru-he-jin-ru-xiang-mu-guan-li.md)
   * [项目概览](product-manual/projectmange/details.md)
   * [应用管理](product-manual/projectmange/application-manage.md)
   * [成员管理](product-manual/projectmange/project-member.md)
