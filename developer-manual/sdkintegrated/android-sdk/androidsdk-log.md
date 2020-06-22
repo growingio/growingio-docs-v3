@@ -4,10 +4,9 @@ description: Android SDK更新日志
 
 # 更新日志
 
-{% hint style="warning" %}
-
-
-升级到2.8.7及以上版本，集成SDK中添加依赖时，需将module级别的GrowingIO SDK的引用后缀 @aar 去除。
+{% hint style="danger" %}
+升级到2.8.7及以上版本，集成SDK中添加依赖时，需将module级别的GrowingIO SDK的引用后缀 @aar 去除
+{% endhint %}
 
 <table>
   <thead>
@@ -750,7 +749,4 @@ description: Android SDK更新日志
 </table>
 
 
-
-## 
-{% endhint %}
 
