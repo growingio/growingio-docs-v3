@@ -216,13 +216,15 @@ UTM 渠道归因模式为非直接访问的最后一次访问。‌
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x57CE;&#x5E02;&#x540D;&#x79F0;&#xFF08;Web/App/&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</th>
-      <th
-      style="text-align:left">
+      <th style="text-align:left">
+        <p>&#x57CE;&#x5E02;&#x540D;&#x79F0;</p>
+        <p>&#xFF08;Web/App/&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</p>
+      </th>
+      <th style="text-align:left">
         <p>Web &#x57FA;&#x4E8E; IP &#x5730;&#x5740;&#xFF0C;&#x4EE5;&#x57CE;&#x5E02;&#x4F5C;&#x4E3A;&#x7EF4;&#x5EA6;&#x503C;&#xFF0C;&#x76EE;&#x524D;&#x53EA;&#x652F;&#x6301;&#x56FD;&#x5185;&#x57CE;&#x5E02;&#x3002;</p>
         <p>App &#x548C;&#x5C0F;&#x7A0B;&#x5E8F; &#x57FA;&#x4E8E; IP &#x5730;&#x5740;&#x548C;
           GPS &#x3002;&#x4F18;&#x5148;&#x5224;&#x65AD;GPS&#x503C;&#xFF0C;GPS&#x503C;&#x7F3A;&#x5931;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;IP&#x5730;&#x5740;&#x3002;</p>
-        </th>
+      </th>
     </tr>
   </thead>
   <tbody></tbody>
@@ -231,25 +233,56 @@ UTM 渠道归因模式为非直接访问的最后一次访问。‌
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#x5730;&#x533A;&#x540D;&#x79F0;&#xFF08;Web/App/&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</th>
-      <th
-      style="text-align:left">
+      <th style="text-align:left">
+        <p>&#x5730;&#x533A;&#x540D;&#x79F0;</p>
+        <p>&#xFF08;Web/App/&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</p>
+      </th>
+      <th style="text-align:left">
         <p>Web &#x57FA;&#x4E8E;IP&#x5730;&#x5740;&#xFF0C;&#x8BE5;&#x7EF4;&#x5EA6;&#x5305;&#x542B;&#x56FD;&#x5185;&#x7701;&#x7EA7;&#x4EE5;&#x4E0A;&#x884C;&#x653F;&#x533A;&#xFF0C;&#x4EE5;&#x53CA;&#x56FD;&#x5916;&#x5730;&#x533A;&#x3002;</p>
         <p>app &#x548C;&#x5C0F;&#x7A0B;&#x5E8F; &#x57FA;&#x4E8E; IP &#x5730;&#x5740;&#x548C;
-          GPS &#x3002;&#x4F18;&#x5148;&#x5224;&#x65AD;GPS&#x503C;&#xFF0C;GPS&#x503C;&#x7F3A;&#x5931;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;IP&#x5730;&#x5740;&#x3002;</p>
-        </th>
+          GPS &#x3002;</p>
+        <p>&#x4F18;&#x5148;&#x5224;&#x65AD;GPS&#x503C;&#xFF0C;GPS&#x503C;&#x7F3A;&#x5931;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;IP&#x5730;&#x5740;&#x3002;</p>
+      </th>
     </tr>
   </thead>
   <tbody></tbody>
 </table>
 
-| 国家代码（Web/App/小程序） | 用户所在的国家的英文缩写，常见的维度值有：CN，US，JP，SG等。 |
-| :--- | :--- |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">
+        <p>&#x56FD;&#x5BB6;&#x4EE3;&#x7801;</p>
+        <p>&#xFF08;Web/App/&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</p>
+      </th>
+      <th style="text-align:left">
+        <p>&#x7528;&#x6237;&#x6240;&#x5728;&#x7684;&#x56FD;&#x5BB6;&#x7684;&#x82F1;&#x6587;&#x7F29;&#x5199;</p>
+        <p>&#x5E38;&#x89C1;&#x7684;&#x7EF4;&#x5EA6;&#x503C;&#x6709;&#xFF1A;CN&#xFF0C;US&#xFF0C;JP&#xFF0C;SG&#x7B49;&#x3002;</p>
+        <p>&#x57FA;&#x4E8E; IP &#x5730;&#x5740;&#x548C; GPS &#x3002;&#x4F18;&#x5148;&#x5224;&#x65AD;GPS&#x503C;&#xFF0C;GPS&#x503C;&#x7F3A;&#x5931;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;IP&#x5730;&#x5740;&#x3002;</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
 
-
-| 国家名称（Web/App/小程序） | 用户所在的国家的名称，常见的有：中国，美国，英国，新加坡等。技术说明：维度指为“未知”的原因可能是用户使用的是移动网络，或开了代理。 |
-| :--- | :--- |
-
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">
+        <p>&#x56FD;&#x5BB6;&#x540D;&#x79F0;</p>
+        <p>&#xFF08;Web/App/&#x5C0F;&#x7A0B;&#x5E8F;&#xFF09;</p>
+      </th>
+      <th style="text-align:left">
+        <p>&#x7528;&#x6237;&#x6240;&#x5728;&#x7684;&#x56FD;&#x5BB6;&#x7684;&#x540D;&#x79F0;</p>
+        <p>&#x5E38;&#x89C1;&#x7684;&#x6709;&#xFF1A;&#x4E2D;&#x56FD;&#xFF0C;&#x7F8E;&#x56FD;&#xFF0C;&#x82F1;&#x56FD;&#xFF0C;&#x65B0;&#x52A0;&#x5761;&#x7B49;&#x3002;&#x57FA;&#x4E8E;
+          IP &#x5730;&#x5740;&#x548C; GPS &#x3002;</p>
+        <p>&#x4F18;&#x5148;&#x5224;&#x65AD;GPS&#x503C;&#xFF0C;GPS&#x503C;&#x7F3A;&#x5931;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;IP&#x5730;&#x5740;&#x3002;</p>
+        <p>&#x6280;&#x672F;&#x8BF4;&#x660E;&#xFF1A;&#x7EF4;&#x5EA6;&#x6307;&#x4E3A;&#x201C;&#x672A;&#x77E5;&#x201D;&#x7684;&#x539F;&#x56E0;&#x53EF;&#x80FD;&#x662F;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x79FB;&#x52A8;&#x7F51;&#x7EDC;&#xFF0C;&#x6216;&#x5F00;&#x4E86;&#x4EE3;&#x7406;&#x3002;</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
 
 | 微信用户所在城市（小程序） | 小程序特有维度。表示用户在微信端设置的所在城市。使用前提是小程序SDK获取到微信访问用户属性。 |
 | :--- | :--- |
