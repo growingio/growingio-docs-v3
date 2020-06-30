@@ -245,9 +245,9 @@ gio('setUser', { id: user.id, name: user.name });
 
 1. 登陆微信小程序后台，进入开发。
 2. 打开开发设置，到服务器域名配置部分。
-3. 在`request合法域名`中添加：[https://wxapi.growingio.com](https://wxapi.growingio.com)
+3. 在**request合法域名**中添加：https://wxapi.growingio.com
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2837%29.png)
+![request &#x5408;&#x6CD5;&#x57DF;&#x540D;](../../../.gitbook/assets/image%20%2885%29.png)
 
 ## 4. 自定义数据上传API
 

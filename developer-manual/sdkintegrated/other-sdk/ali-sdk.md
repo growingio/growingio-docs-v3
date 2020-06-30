@@ -286,9 +286,9 @@ gio("identify", userid);
 
 1. 登录支付宝小程序后台，进入配置
 2. 打开小程序详情/设置/开发设置
-3. 配置httpRequest接口请求域名白名单：[https://wxapi.growingio.com](https://wxapi.growingio.com)
+3. 配置 **httpRequest接口请求域名白名单**：https://wxapi.growingio.com
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28114%29.png)
+![httpRequest &#x63A5;&#x53E3;&#x8BF7;&#x6C42;&#x57DF;&#x540D;&#x767D;&#x540D;&#x5355;](../../../.gitbook/assets/image%20%2887%29.png)
 
 ## 3. 支付宝小程序用户属性设置
 

@@ -720,9 +720,9 @@ gio('setUser', { id: user.id, name: user.name });
 
 1. 登陆微信小程序后台，进入开发。
 2. 打开开发设置，到服务器域名配置部分。
-3. 在`request合法域名`中添加：https://wxapi.growingio.com
+3. 在 **request 合法域名**中添加：https://wxapi.growingio.com
 
-![](../../../.gitbook/assets/image%20%2884%29.png)
+![request &#x5408;&#x6CD5;&#x57DF;&#x540D;](../../../.gitbook/assets/image%20%2888%29.png)
 
 ## 4. 无埋点采集事件逻辑和高级配置
 
