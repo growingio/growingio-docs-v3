@@ -175,7 +175,7 @@ forceLogin 是一个需要特别注意的参数。GrowingIO 默认会在小程�
 
 1. 登录QQ小程序后台，进入配置
 2. 打开开发设置，到服务器域名配置部分
-3. 在request合法域名中添加：[https://wxapi.growingio.com](https://wxapi.growingio.com)
+3. 在request合法域名中添加：`https://wxapi.growingio.com`
 
 ## 4. QQ小程序 用户属性设置
 
