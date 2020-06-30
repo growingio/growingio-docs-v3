@@ -58,7 +58,7 @@ App Links 配置：[配置方法](https://docs.growingio.com/docs/product-manual
 {% hint style="success" %}
 在移动端 App 中我们使用 URI Scheme 来定位一个应用甚至应用里的某个具体的功能或页面，就像定位一个网页一样。
 
-例如：在 App 中我们要定位某个功能页面 ID 为 1234 的某个具体页面，就可以通过 [myapp://com.gio.function?page=1234](myapp://com.gio.function?page=1234) 这样的 URI Scheme 来实现。其中，page=1234 即为当前活动页的 URI ，其中 key=page ，value=1234 。
+例如：在 App 中我们要定位某个功能页面 ID 为 1234 的某个具体页面，就可以通过 **myapp://com.gio.function?page=1234** 这样的 URI Scheme 来实现。其中，page=1234 即为当前活动页的 URI ，其中 **key=page, value=1234** 。
 {% endhint %}
 
 ## 延迟深度链接（Deferred DeepLink）

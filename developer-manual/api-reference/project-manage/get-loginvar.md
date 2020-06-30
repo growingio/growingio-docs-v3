@@ -4,7 +4,7 @@
 
 ## URL
 
-[https://www.growingio.com/v1/api/projects/{project\_uid}/vars/peoples](https://www.growingio.com/v1/api/projects/{project_uid}/vars/peoples)
+`https://www.growingio.com/v1/api/projects/{project_uid}/vars/peoples`
 
 ## 请求类型
 

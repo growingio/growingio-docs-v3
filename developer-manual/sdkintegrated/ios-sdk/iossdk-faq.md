@@ -20,7 +20,7 @@ SDK 依赖 subviews 里面的元素次序。如果有动态的需求，建议在
 
 ## 4. 子线程操作UI引起的问题如何处理？
 
-答：GIO SDK 会在主线程中遍历找寻某个subView，如果此时在子线程中删除了该subView，就会造成错乱甚至 crash。此外，Apple 不建议用户在子线程更新 UI。建议客户在 Xcode 中打开 "Main Thread Checker" 检测线程使用是否合理。参考：[Main Thread Checker](https://developer.apple.com/documentation/code_diagnostics/main_thread_checker?language=objc)
+答：GIO SDK 会在主线程中遍历找寻某个subView，如果此时在子线程中删除了该subView，就会造成错乱甚至 crash。此外，Apple 不建议用户在子线程更新 UI。建议客户在 Xcode 中打开 "Main Thread Checker" 检测线程使用是否合理。参考：[Main Thread Checker](https://developer.apple.com/documentation/xcode/diagnosing_memory_thread_and_crash_issues_early)
 
 ## 5. 圈选时，来自不同VC的元素显示的VC名称相同？
 

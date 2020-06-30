@@ -4,7 +4,7 @@
 
 ## URl
 
-[https://www.growingio.com/v1/api/projects/{project\_uid}/dim/events](https://www.growingio.com/v1/api/projects/{project_uid}/dim/events)
+`https://www.growingio.com/v1/api/projects/{project_uid}/dim/events`
 
 ## 请求类型
 

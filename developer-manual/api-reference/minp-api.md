@@ -3,7 +3,7 @@
 {% hint style="success" %}
 微信小程序二维码，是调用腾讯微信小程序接口生成的。微信提供A、B两个接口创建小程序码；提供C接口创建二维码。
 
-GrowingIO在授权后，调用的是A和C接口分别创建小程序码和二维码。具体详情请参见微信开发者文档：[https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/qr-code.htm](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/qr-code.htm)
+GrowingIO在授权后，调用的是A和C接口分别创建小程序码和二维码。具体详情请参见微信开发者文档：[https://developers.weixin.qq.com/minigame/dev/guide/open-ability/qr-code.html](https://developers.weixin.qq.com/minigame/dev/guide/open-ability/qr-code.html)
 {% endhint %}
 
 {% hint style="info" %}
@@ -14,7 +14,7 @@ GrowingIO在授权后，调用的是A和C接口分别创建小程序码和二维
 
 ## URL
 
-[https://www.growingio.com/api/v1/projects/{project\_uid}/meta/minplinks](https://www.growingio.com/api/v1/projects/{project_uid}/meta/minplinks)
+https://www.growingio.com/api/v1/projects/:project\_uid/meta/minplinks
 
 ## 请求类型
 

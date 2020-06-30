@@ -57,7 +57,7 @@ function authToken($projectKeyId, $secretKey, $keyArray)
 
 ### URL
 
-[https://data.growingio.com/{ai}/loginUserId](https://data.growingio.com/{ai}/loginUserId)
+`https://data.growingio.com/{ai}/loginUserId`
 
 ### 请求类型
 

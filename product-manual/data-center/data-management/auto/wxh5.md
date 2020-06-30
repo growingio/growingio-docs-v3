@@ -73,7 +73,7 @@ URL**示意：**m.xxx.com **/** details **?** id=1&ig=2
 
 a.「路径」最右侧的开关开启时，可以通过在「路径」中使用「\*」来做通配符，达到圈选多个类似页面的目的：
 
-例如，GrowingIO 博客文章内容的地址都是这样的 [https://blog.growingio.com/posts/123456](https://blog.growingio.com/posts/123456) 、 [https://blog.growingio.com/posts/14562](https://blog.growingio.com/posts/14562)、 [https://blog.growingio.com/posts/1264](https://blog.growingio.com/posts/1264)......
+例如，GrowingIO 博客文章内容的地址都是这样的 `https://blog.growingio.com/posts/123456` 、 `https://blog.growingio.com/posts/14562`、 `https://blog.growingio.com/posts/1264`......
 
 那么我们在路径中输入 /posts/\* 就会圈选出所有的博客单篇文章的页面。
 

@@ -4,7 +4,7 @@
 
 ## URL
 
-[https://www.growingio.com/v1/api/projects/{project\_uid}/vars/quotas](https://www.growingio.com/v1/api/projects/{project_uid}/vars/quotas)
+`https://www.growingio.com/v1/api/projects/{project_uid}/vars/quotas`
 
 ## 请求类型
 

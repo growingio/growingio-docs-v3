@@ -4,7 +4,7 @@
 
 ## URL
 
-[https://www.growingio.com/api/v1/projects/{project\_uid}/accounts/delete](https://www.growingio.com/api/v1/projects/{project_uid}/accounts/delete)
+`https://www.growingio.com/api/v1/projects/{project_uid}/accounts/delete`
 
 ## 请求类型
 

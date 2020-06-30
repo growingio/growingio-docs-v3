@@ -49,7 +49,7 @@ d.通过点击由原 url 生成的短链接访问网站；‌
 
 e.通过 App 点击链接访问网站（比如今日头条、微博中的链接）（对微信做过识别，故此场景不适用微信）；‌
 
-f.通过点击一个 https 类型的 url 访问一个 http 类型的 url（比如如果点击 [https://example.com/1](https://example.com/1) 转到 [http://example.com/2](http://example.com/2), 对于 example.com/2 的分析会认为是直接访问）；‌
+f.通过点击一个 https 类型的 url 访问一个 http 类型的 url（比如如果点击 `https://example.com/1` 转到 `http://example.com/2,` 对于 `example.com/2` 的分析会认为是直接访问）；‌
 
 g.部分浏览器（特别是移动端浏览器）会把搜索跳转当成直接访问。‌
 
@@ -316,25 +316,25 @@ UTM 渠道归因模式为非直接访问的最后一次访问。‌
 {% tab title="其他维度" %}
 > **页面级维度**
 
-对于 web 端可以这样理解： 用户先访问了 [https://www.growingio.com/](https://www.growingio.com/) 再访问了 [https://www.growingio.com/circle](https://www.growingio.com/circle)
+对于 web 端可以这样理解： 用户先访问了 `https://www.growingio.com/` 再访问了 `https://www.growingio.com/circle`
 
 ### 1.域名（web/小程序） <a id="41"></a>
 
-www.growingio.com 是这两个页面的域名。
+`www.growingio.com` 是这两个页面的域名。
 
-小程序为appID.
+小程序为 AppID.
 
 ### 2.页面（web/app/小程序） <a id="42"></a>
 
-对于 web 端可以这样理解： / 是 [https://www.growingio.com\*\*/\*\*](https://www.growingio.com**/**) 的页面。 /circle 是 [https://www.growingio.com\*\*/circle\*\*](https://www.growingio.com**/circle**) 的页面。
+对于 web 端可以这样理解：`/` 是 `https://www.growingio.com/**` 的页面。 `/circle` 是 `https://www.growingio.com/circle**` 的页面。
 
-对于 app 端可以这样理解： android : activity + fragment iOS : UIViewController
+对于 App 端可以这样理解：Android : `Activity + Fragment` iOS : `UIViewController`
 
 小程序：页面URL（不包括query）
 
 ### 3.页面来源（web/app/小程序） <a id="43"></a>
 
-这次访问中 [https://www.growingio.com/circle](https://www.growingio.com/circle) 这个页面的页面来源是 [https://www.growingio.com/](https://www.growingio.com/) 。
+这次访问中 `https://www.growingio.com/circle` 这个页面的页面来源是 `https://www.growingio.com/`。
 
 > **事件级维度：当次事件发生时，对应的维度**
 

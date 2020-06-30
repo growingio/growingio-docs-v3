@@ -30,7 +30,7 @@ public String authToken(String projectKeyId, String secretKey, String keyArray) 
 
 ### URL
 
-[https://data.growingio.com/{ai}/deleteVisitor?auth={auth\_token}](https://data.growingio.com/{ai}/deleteVisitor?auth={auth_token})
+`https://data.growingio.com/{ai}/deleteVisitor?auth={auth_token}`
 
 ### 请求类型
 
@@ -51,7 +51,7 @@ POST
 
 | 查询参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
-| auth | string | 是 | 针对每条数据独立生成的认证。 |
+| auth | string | 是 | 针对每条数据独立生成的认证。参考[获取验证码](../customize-api/uservar.md#huo-qu-ren-zheng-ma) |
 
 | body参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |

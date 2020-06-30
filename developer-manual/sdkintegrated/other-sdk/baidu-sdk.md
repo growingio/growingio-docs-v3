@@ -218,7 +218,7 @@ gio("identify", swanid);
 
 1. 登陆百度小程序后台，进入配置
 2. 打开开发设置，到服务器域名配置部分
-3. 在request合法域名中添加：[https://wxapi.growingio.com](https://wxapi.growingio.com)
+3. 在request合法域名中添加：`https://wxapi.growingio.com`
 
 ## 4. 添加分享参数
 
