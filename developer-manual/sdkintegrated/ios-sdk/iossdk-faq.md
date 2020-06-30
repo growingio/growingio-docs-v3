@@ -94,11 +94,11 @@ Swift：修改AppDelegate.swift，并手动创建main.swift文件。
 
 从2018年10月3日开始，App Store Connect将要求所有新应用和应用更新版本时提供**隐私政策**，添加后才可以在App Store上提交或通过TestFlight外部测试进行分发。
 
-【苹果通知：As a reminder, in June the App Store Review Guidelines were updated to require a privacy policy for all new apps and app updates as part of the app review process. Starting October 3, 2018, App Store Connect will require a privacy policy for all new apps and app updates before they can be submitted for distribution on the App Store or through TestFlight external testing. In addition, your app’s privacy policy link or text will only be editable when you submit a new version of your app.（详情可参见：[https://developer.apple.com/news/?id=08312018a](https://developer.apple.com/news/?id=08312018a%EF%BC%89%E3%80%82) ）
+【苹果通知：As a reminder, in June the App Store Review Guidelines were updated to require a privacy policy for all new apps and app updates as part of the app review process. Starting October 3, 2018, App Store Connect will require a privacy policy for all new apps and app updates before they can be submitted for distribution on the App Store or through TestFlight external testing. In addition, your app’s privacy policy link or text will only be editable when you submit a new version of your app.（详情可参见：[https://developer.apple.com/news/?id=08312018a](https://developer.apple.com/news/?id=08312018a) ）。
 
 所以，在此提醒各位开发者：**提交App Store 审核前一定要准备自己的隐私权政策，并在app SafariViewContoller中弹出，否则会无法通过审核哦！如需要专业的法律意见，还请各位开发者小伙伴咨询您的律师或法律顾问哦！**
 
-## **14. Webview crash**
+## **14. Webwiew crash**
 
 **如果遇到此类崩溃:`Cannot form weak reference to instance (xxxxx) of class xxxxxx. It is possible that this object was over-released, or is in the process of deallocation`** **或者程序卡死通过 bt 打印出的堆栈含有`weak_register_no_lock`并且错误是关于`UIWebView+Growing`的。** 解释如下: 由于业务需要我们会 hook `UIWebView` 的 `setDelegate` 方法 拿到传入的对象从而进行对`UIWebViewDelegate` 一系列方法的监听，并且对传入的对象实现 `weak` 处理,这样做是为了保证不影响客户对象的引用计数； 由于苹果 api 的不完善 `UIWebViewDelegate` 的声明至今为`assign，`所以`delegate`对象在释放后不会被置为`nil`;由此可能会造成的后果是`setDelegate`方法调用时，如果传入的是一个`over-released`, or is in the process of deallocation 的对象而我们 SDK 又对此对象进行了 `weak` 处理,从而导致崩溃；
 

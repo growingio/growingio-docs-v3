@@ -19,7 +19,7 @@
 
 ## 修改项目名称
 
-1. 单击基本信息右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/dian-dian-dian.png) 选择 **修改项目名称**。
+1. 单击基本信息右侧的 ![](../../.gitbook/assets/image%20%2893%29.png) 选择 **修改项目名称**。
 
 ![](../../.gitbook/assets/ying-mu-jie-tu-20200418-xia-wu-4.47.33.png)
 
@@ -29,7 +29,7 @@
 
 ## 更换超级管理员
 
-1. 单击基本信息右侧的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/dian-dian-dian.png) 选择 **更换超级管理员。**
+1. 单击基本信息右侧的 ![](../../.gitbook/assets/image%20%2893%29.png) 选择 **更换超级管理员。**
 2. 通过身份验证后选择项目内其他成员成为项目新的超级管理员。
 
 {% hint style="info" %}

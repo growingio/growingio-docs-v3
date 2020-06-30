@@ -3,11 +3,8 @@
 ## 操作步骤
 
 1. 登录GrowingIO平台。
-2. 单击界面右上角的 ![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/ke-fu.png) 选择**提交问题**直接进入工单系统提交新问题界面，
-
-
-
-1. 填写工单，并单击**提交。**
+2. 单击界面右上角的 ![](../../.gitbook/assets/image%20%2895%29.png) 选择**提交问题**直接进入工单系统提交新问题界面，
+3. 填写工单，并单击**提交。**
 
 ![](../../.gitbook/assets/ying-mu-jie-tu-20200418-xia-wu-6.45.58.png)
 
