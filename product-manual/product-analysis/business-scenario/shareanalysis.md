@@ -77,8 +77,7 @@ GrowingIO会默认帮您统计转发事件（分享用户量和分享次数）�
       <th
       style="text-align:left">
         <p>&#x5355;&#x51FB;
-          <img src="https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/kong-xin-chi-lun.png"
-          alt/>&#xFF0C;&#x9009;&#x62E9;&#x8F6C;&#x5316;&#x76EE;&#x6807;&#x7684;&#x8861;&#x91CF;&#x6307;&#x6807;&#x3002;</p>
+          <img src="../../../.gitbook/assets/image (93).png" alt/>&#xFF0C;&#x9009;&#x62E9;&#x8F6C;&#x5316;&#x76EE;&#x6807;&#x7684;&#x8861;&#x91CF;&#x6307;&#x6807;&#x3002;</p>
         <ul>
           <li>&#x7528;&#x6237;&#x91CF;</li>
           <li>&#x8F6C;&#x5316;&#x7387;</li>

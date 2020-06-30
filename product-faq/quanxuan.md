@@ -132,7 +132,7 @@ Content-Security-Policy: frame-ancestors 'self' http://www.growingio.com https:/
 
 说明这个页面中加载的JS代码中的项目ID与当前圈选所在项目的ID不一致，您需要现在GrowingIO平台将项目切换至集成此应用的项目下再进行圈选。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2820%29.png)
+![](../.gitbook/assets/image%20%2891%29.png)
 
 ## 移动端圈选 <a id="yi-dong-duan-quan-xuan"></a>
 
