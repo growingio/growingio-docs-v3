@@ -76,6 +76,6 @@ API 中给出了埋点事件和事件级变量的上传方式。
 其他数据校验方式
 
 * 使用debug 工具，来帮助您进行数据的校验。具体请参考[SDK调试](../../../developer-manual/debugging/)。
-* App及小程序可以使用数据校验功能校验进行[数据校验]()。
+* App及小程序可以使用数据校验功能校验进行[数据校验](https://docs.growingio.com/v3/product-manual/data-center/datacheck/)。
 {% endhint %}
 
