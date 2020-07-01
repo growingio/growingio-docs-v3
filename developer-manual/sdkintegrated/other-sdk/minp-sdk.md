@@ -585,13 +585,12 @@ SDK中提供了以下几个参数可以用来进行配置。
 在 gioConfig.js 文件中将 getLocation 配置如下：
 
 ```java
-
 ```
-
-getLocation: { //是否自动获取用户的地理位置信息, 并设置获取方式 autoGet: true, //默认不自动获取 type: 'gcj02' //支持wgs84 \| gcj02为火星坐标系, 默认wgs84 },
-
-```text
-
+getLocation: {          //是否自动获取用户的地理位置信息, 并设置获取方式
+   autoGet: true,       //默认不自动获取
+   type: 'gcj02'           //支持wgs84 | gcj02为火星坐标系, 默认wgs84
+},
+```
 ```
 
 * GrowingIO SDK 默认不会在小程序启动时获取用户的坐标信息。当用户访问到某一功能时需要位置信息时，可以调用以下位置接口，补发vst，采集位置信息，提升用户地域分布的分析准确性。
