@@ -4,7 +4,7 @@
 
 **1. 选择监测链接，创建新建链接**
 
-![](../../../.gitbook/assets/image%20%28108%29.png)
+![](../../../.gitbook/assets/image%20%28109%29.png)
 
 **2. 选择渠道为“快手\_服务器对接“**
 
@@ -22,7 +22,7 @@
 
 **1. 上一步完成创建后，会跳转至转化详情页，按照提示的2个步骤完成准备工作后，点击“去激活”进入检测流程**
 
-![](../../../.gitbook/assets/image%20%28109%29.png)
+![](../../../.gitbook/assets/image%20%28110%29.png)
 
 **2. 填写快手ID/快手号，将给您的快手APP发现页信息流里发送一条联调广告**![](blob:https://growingio.atlassian.net/1ea7b7bd-0414-4b1d-b2d9-05214726ec33#media-blob-url=true&id=9b2a97da-a580-4ca4-b3b0-fb174af810c6&collection=contentId-1402077227&contextId=1402077227&mimeType=image%2Fpng&name=1579660255408.png&size=801569&width=1716&height=1524)
 
