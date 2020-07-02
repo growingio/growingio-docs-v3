@@ -1,14 +1,14 @@
-# 腾讯社交广告
+# 腾讯社交广告（Marking API）
 
-## 腾讯社交广告—Marketing API <a id="7-teng-xun-she-jiao-guang-gao-marketing-api"></a>
+#### 一、广告归因与数据展示
 
-腾讯社交广告（广点通），归因与展现方式为：‌
+1、在 GrowingIO 后台，创建“腾讯社交广告”监测链接，并绑定广点通账号，并进行相应的授权；‌
 
-1\)在GrowingIO后台，创建“腾讯社交广告”监测链接，并绑定广点通账号，并进行相应的授权；‌
+2、GroiwngIO 实时将激活数据发送给广点通，广点通返回激活信息，点击时间，广告名称等信息；‌
 
-2\)GroiwngIO实时将激活数据发送给广点通，广点通返回激活信息，点击时间，广告名称等信息；‌
+3、GrowingIO 会根据用户的广告点击数据与激活数据做归因匹配，并将归因的结果展示在 GrowingIO 后台数据中。‌
 
-3\)GrowingIO会根据用户的广告点击数据与激活数据做归因匹配，并将归因的结果展示在GrowingIO后台数据中。‌
+#### **二、创建监测链接与媒体授权**
 
 1、在GIO后台创建 App 推广链接，目标渠道选择“腾讯社交广告”，然后点击保存‌
 
@@ -42,23 +42,36 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LRQkXUuEuD5xER41iwA-LRQkcMxpIjuQnlj6LnPimage.png)
 
-4、进入腾讯社交广告后台开始联调，在工具箱里面选择“转化跟踪”。‌
+#### **三、转化回传联调**
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LRQkXUuEuD5xER41iwA-LRQkaShjg8W52eL9L-bimage.png)
+1、进入腾讯广告 DMP 数据管理平台，找到以下入口![](blob:https://growingio.atlassian.net/d509f1de-cd04-4468-a2c3-c534ab4d925f#media-blob-url=true&id=8a9d65ca-6610-4e62-9598-61db53abf99b&collection=contentId-1350140247&contextId=1350140247&mimeType=image%2Fpng&name=image-20200526-090500.png&size=61589&width=1009&height=182)
 
-5、点击“获取点击数据”，按照图示在移动应用上填写应用ID，在feedback URL上填写GIO生成的监测链接。‌
+![](../../../.gitbook/assets/image%20%28102%29.png)
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LRQjWfPi27_KI29rnuM-LRQjb-aikyoOQAZ1HaPimage.png)
+2、找到需要联调的应用
 
-6、开始联调。‌
+![](blob:https://growingio.atlassian.net/f71957e3-1501-42a1-b1da-c7061c73ec9f#media-blob-url=true&id=780c972c-f9ba-4dd4-895a-5b1feeadaf01&collection=contentId-1350140247&contextId=1350140247&mimeType=image%2Fpng&name=image-20200526-090720.png&size=53700&width=933&height=274)
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LRQjWfPi27_KI29rnuM-LRQj_IlBBNx-6cRsNSCimage.png)
+![](../../../.gitbook/assets/image%20%2898%29.png)
 
-7、填写对应的设备号。‌
+3、找到联调功能入口![](blob:https://growingio.atlassian.net/a7fc8d99-82fb-4dd2-bfa4-76c9194dcce7#media-blob-url=true&id=1489f277-74d6-4af5-8844-486a7726ce80&collection=contentId-1350140247&contextId=1350140247&mimeType=image%2Fpng&name=image-20200526-091011.png&size=94672&width=1542&height=301)
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LRQid00mZKBhPNo-Go3-LRQj827zov8vmhfTJHeimage.png)
+![](../../../.gitbook/assets/image%20%28103%29.png)
 
-8、联调成功，去Appstore或者应用宝下载您的APP。
+4、选择要联调的行为和渠道包![](blob:https://growingio.atlassian.net/99671bfd-8b48-44c2-a9b1-f6d690f21355#media-blob-url=true&id=34224b94-311e-42bc-8808-77c17dc77413&collection=contentId-1350140247&contextId=1350140247&mimeType=image%2Fpng&name=image-20200526-091052.png&size=30714&width=605&height=391)
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LRQid00mZKBhPNo-Go3-LRQixJgnlvkJ8zfqNdAimage.png)
+![](../../../.gitbook/assets/image%20%28104%29.png)
+
+5、进入联调流程按步骤进行操作![](blob:https://growingio.atlassian.net/4dfb4440-3ddd-4247-82f0-a8f01b819ce6#media-blob-url=true&id=a3cbc210-9c7c-4c85-9e20-73f974dd4e59&collection=contentId-1350140247&contextId=1350140247&mimeType=image%2Fpng&name=image-20200526-091212.png&size=158029&width=788&height=764)
+
+![](../../../.gitbook/assets/image%20%28107%29.png)
+
+#### 附录
+
+腾讯联调工具帮助文档：
+
+[https://e.qq.com/ads/adfaq/delivery/special/17/](https://e.qq.com/ads/adfaq/delivery/special/17/)  
+
+
+\*\*\*\*
 
