@@ -14,6 +14,15 @@ description: iOS SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.8.20</td>
+      <td style="text-align:left">
+        <p>1.&#x534A;&#x81EA;&#x52A8;&#x57CB;&#x70B9;&#x4F18;&#x5316;</p>
+        <p>2. &#x66F4;&#x65B0;&#x65B0;&#x7248;&#x5E2E;&#x52A9;&#x6587;&#x6863;</p>
+        <p>&#x1F4D4;&#x5982;&#x679C;&#x60A8;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E86;&#x57CB;&#x70B9;SDK&#x548C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#xFF0C;&#x5F53;&#x60A8;&#x5347;&#x7EA7;&#x5230;&#x6B64;&#x7248;&#x672C;&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#x7248;&#x672C;&#x9700;&#x8981;&#x5BF9;&#x5E94;&#x5347;&#x7EA7;&#x5230;1.4.0&#x53CA;&#x4EE5;&#x4E0A;</p>
+      </td>
+      <td style="text-align:left">2020-07-07</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.8.19</td>
       <td style="text-align:left">
         <p>1. &#x4F18;&#x5316;&#x65E5;&#x5FD7;&#x6027;&#x80FD;</p>
