@@ -22,7 +22,7 @@
 
 ## 调整成员组织角色
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 仅组织拥有者、组织管理员 ，可调整其他组织成员组织角色。
 {% endhint %}
 

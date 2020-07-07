@@ -16,7 +16,7 @@
 
 单击基本信息右侧的  选择 **修改组织名称**。
 
-{% hint style="success" %}
+{% hint style="warning" %}
 组织名称修改后不会改变默认生成的项目名称。
 {% endhint %}
 

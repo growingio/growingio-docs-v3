@@ -6,6 +6,8 @@
 
 {% hint style="info" %}
 一个组织中的项目数项上限，依据购买版本所决定。
+
+什么是项目？ [点击查看](https://app.gitbook.com/@growingio/s/v3/~/drafts/-MBcwXbYNkFvkWTAXo-d/product-manual/projectmange)
 {% endhint %}
 
 ## 界面说明
@@ -34,7 +36,7 @@
 
 ## 删除项目
 
-单击需要删除项目右侧的  **操作** 选择**删除项目**，通过身份验证后单击**删除**。
+单击需要删除项目右侧的  **操作** 选择 **删除项目**，通过身份验证后单击**删除**。
 
 {% hint style="warning" %}
 删除项目是高度危险的操作，为了保证数据安全。  
