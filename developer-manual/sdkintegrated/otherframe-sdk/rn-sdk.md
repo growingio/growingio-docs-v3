@@ -20,7 +20,7 @@ React Native 埋点 SDK 仅自动采集设备信息和埋点数据，如果想�
 React Native埋点SDK是在Android 原生SDK上的扩展，请参照Android SDK &gt; [埋点SDK](../android-sdk/manunl-android-sdk.md)，完成添加跟踪代码配置。
 
 {% hint style="warning" %}
-添加跟踪代码时注意将SDK版本号换成RN版本： `RN-track-2.8.7`
+添加跟踪代码时注意将SDK版本号换成RN版本： `RN-track-2.8.20`
 {% endhint %}
 
 集成步骤中，只有版本号不同，适配RN与原生混合开发场景。
@@ -37,7 +37,7 @@ android {
 }
 dependencies {
     //GrowingIO RN 埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:RN-track-2.8.2@aar'
+    implementation 'com.growingio.android:vds-android-agent:RN-track-2.8.20'
 }
 ```
 

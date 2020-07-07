@@ -18,6 +18,20 @@ description: Android SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.8.20</td>
+      <td style="text-align:left">
+        <p>&#x4FEE;&#x590D;Bugs:</p>
+        <ul>
+          <li>&#x4FEE;&#x590D;lambda&#x4F7F;&#x7528;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x7684;crash</li>
+        </ul>
+        <p>&#x4F18;&#x5316;&#xFF1A;</p>
+        <ul>
+          <li>&#x66F4;&#x65B0;&#x5E2E;&#x52A9;&#x6587;&#x6863;&#x94FE;&#x63A5;</li>
+        </ul>
+      </td>
+      <td style="text-align:left">2020-07-07</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.8.19</td>
       <td style="text-align:left">
         <p>&#x4F18;&#x5316;&#xFF1A;</p>
