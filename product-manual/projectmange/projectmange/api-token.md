@@ -1,5 +1,7 @@
 # API Token管理
 
+## 功能介紹
+
 API Token管理功能可直接由系统利用项目的公钥和私钥自动生成Token，省去了您频繁计算导致的错误、失效等问题。
 
 {% hint style="warning" %}
@@ -32,7 +34,7 @@ API Token管理功能可直接由系统利用项目的公钥和私钥自动生�
 * 您可以创建多个Token分给不同的应用或人员使用。
 {% endhint %}
 
-### 管理Token
+## 管理Token
 
 修改描述：单击  ，可修改当前Token的描述。
 
