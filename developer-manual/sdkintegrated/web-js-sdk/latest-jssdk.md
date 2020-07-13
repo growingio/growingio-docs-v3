@@ -43,23 +43,6 @@ gio('config', {'hashtag':true}); //放在init和send之间
 
 以此监听 hashtag 的变化，并采集不同页面的数据。每次 hashtag 的改变都会触发一次PV，hashtag 的信息也会记录在页面URL中。
 
-### 2. imp系统变量
-
-除点击、修改、提交等用户行为数据的采集，GrowingIO 还默认开启元素浏览量\(简称imp\)的无埋点采集。对于内容基本固定的网站，可以直接禁用元素浏览量采集。
-
-```javascript
-gio('config', {'imp':false}); //放在init和send之间
-```
-
-> 系统变量也可以在init进行配置，代码示例：
-
-```text
-gio('init', 'your projectId', {
-  'imp':false，
-  'hashtag':true
-});
-```
-
 ## 3. 高级设置
 
 高级设置可以帮助你更自如地进行圈选操作，请将高级设置插入你Web应用的HTML代码中。
