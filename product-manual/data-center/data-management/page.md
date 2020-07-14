@@ -58,16 +58,16 @@ GrowingIO 推荐设置一个页面级变量来保存页面的类型信息。我�
 
 参考上述场景示例，配合梳理业务需求并完成“指标+维度”的设计，确认需要将哪些变量设置为页面级变量，请勿直接开始代码的部署，需要先到 GrowingIO 要求先在打点管理的界面上进行变量的声明操作。
 
-配置方式参考[事件变量](https://app.gitbook.com/@growingio/s/-3/~/drafts/-M70KAJPAtokRTojs-2m/product-manual/data-center/data-management/event)。
+配置方式参考[事件变量](event.md)。
 
 ### **第二步：代码部署** <a id="di-er-bu-dai-ma-bu-shu"></a>
 
 完成了配置后，即可在代码中完成以上设计的 “自定义事件和变量” 的部署。具体的说，就是调用 GrowingIO 提供的 API 接口，上传数据。
 
-* [JS 接口文档​](https://growingio.gitbook.io/docs/developer-manual/sdkintegrated/web-js-sdk/web-sdk-api)
-* ​[Android 接口文档​](https://growingio.gitbook.io/docs/developer-manual/sdkintegrated/android-sdk/android-sdk-api)
-* ​[iOS 接口文档​](https://growingio.gitbook.io/docs/developer-manual/sdkintegrated/ios-sdk/ios-sdk-api)
-* [​小程序、小游戏以及内嵌页 SDK​](https://growingio.gitbook.io/docs/developer-manual/sdkintegrated/other-sdk/customize-api)
+* [JS 接口文档​](../../../developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/)
+* ​[Android 接口文档​](../../../developer-manual/sdkintegrated/android-sdk/android-sdk-api/)
+* [​iOS 接口文档​](../../../developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/)
+* ​[小程序、小游戏以及内嵌页 SDK​](../../../developer-manual/sdkintegrated/other-sdk/)
 
 API中给出了页面级变量的上传方式。
 
