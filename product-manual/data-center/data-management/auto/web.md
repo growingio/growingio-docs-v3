@@ -84,7 +84,7 @@ Web圈选模式分为浏览和圈选两个模式
 当需要定义需要鼠标悬浮等交互行为才能显示的元素时，您可以按住shift键，待元素出现后进行圈选定义。
 {% endhint %}
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%285%29.png)
+![](../../../../.gitbook/assets/image%20%28116%29.png)
 
 | 参数 | 说明 |
 | :--- | :--- |
@@ -139,7 +139,7 @@ Web圈选模式分为浏览和圈选两个模式
 
 2、 选择需要定义的查询条件，为查询条件（标识符）命名后单击确定。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28131%29.png)
+![](../../../../.gitbook/assets/image%20%28114%29.png)
 
 {% hint style="info" %}
 页面级变量说明
