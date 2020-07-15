@@ -22,7 +22,7 @@ GrowingIO初始化配置项均在AppDelegate.m文件中的didFinishLaunchingWith
 | :--- | :--- | :--- | :--- | :--- |
 | startWithAccountId:_**AccountId**_ | 无 | 初始化方法，_**AccountID**_为项目id，默认采样率为100%。 | ✔️ | ✔️ |
 | startWithAccountId:_**AccountId**_ withSampling:_**sampling**_ | 无 | 初始化方法，_**AccountID**_为项目id；_**sampling**_为采样率。 | ✔️ | ✔️ |
-| handleUrl | 无 | URL Scheme处理方法，通过参数不同区分圈选、MobileDebugger、DeepLink等。 | ✔️ | - |
+| handleUrl | 无 | URL Scheme处理方法，通过参数不同区分圈选、MobileDebugger、DeepLink、用户运营预览弹窗等。 | ✔️ | ✔️ |
 
 ## SDK功能API
 
