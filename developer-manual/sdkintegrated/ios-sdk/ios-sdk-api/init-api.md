@@ -196,10 +196,10 @@ GrowingIO初始化配置项均在AppDelegate.m文件中的didFinishLaunchingWith
     <tr>
       <td style="text-align:left">enableAllWebViews</td>
       <td style="text-align:left">enable</td>
-      <td style="text-align:left">&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x91C7;&#x96C6; UIWebView / WKWebView
-        &#x4FE1;&#x606F;</td>
-      <td style="text-align:left">&#x2714;&#xFE0F;</td>
-      <td style="text-align:left">-</td>
+      <td style="text-align:left">&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x91C7;&#x96C6;WKWebView &#x4FE1;&#x606F;</td>
+      <td
+      style="text-align:left">&#x2714;&#xFE0F;</td>
+        <td style="text-align:left">-</td>
     </tr>
     <tr>
       <td style="text-align:left">enableHybridHashTag</td>
