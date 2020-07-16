@@ -363,7 +363,7 @@
 * [个人中心](product-manual/personal/README.md)
   * [个人信息](product-manual/personal/myinfo.md)
   * [安全设置](product-manual/personal/security.md)
-* [学习中心](product-manual/learncenter.md)
+* [学习平台](product-manual/learncenter.md)
 * [工单管理](product-manual/tickets/README.md)
   * [提交工单](product-manual/tickets/submit.md)
   * [查看进度](product-manual/tickets/progress.md)
