@@ -14,7 +14,7 @@ Chrome网上应用店一键安装（自动更新）：[https://chrome.google.com
 
 3、进入到扩展程序管理界面后，勾选开发者模式选项框，然后点击加载已解压的扩展程序按钮，并在弹出的对话框中找到GrowingIO Web Debugger解压后的地址，点击确定。GrowingIO Web Debugger将会作为Chrome的扩展程序安装完毕。如下图
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28195%29.png)
+![](../../.gitbook/assets/image%20%28117%29.png)
 
 4、 注意观察浏览器右上角的扩展程序图标如果出现如下图所示的图标，则表示GrowingIO Web Debugger安装成功!
 
@@ -22,7 +22,7 @@ Chrome网上应用店一键安装（自动更新）：[https://chrome.google.com
 
 在添加了GrowingIO Web SDK的页面上，在空白处点击**右键** &gt; **检查，**打开Chrome浏览器的Dev Tool，可以看到出现了一个新的Tab为：GIO Web Debugger。实施技术顾问就可以在这个Tab页面上进行添加代码后的质量验证工作了。如下图
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%2852%29.png)
+![](../../.gitbook/assets/image%20%28118%29.png)
 
 在此概览中可能出现的数据日志含义分别有：
 
