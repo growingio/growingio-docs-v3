@@ -65,7 +65,7 @@ GrowingIO iOS SDK  包含以下组件SDK:
 {% endtab %}
 {% endtabs %}
 
-### 2. 添加 URL Scheme
+### 2. 添加 URL Scheme <a id="urlscheme"></a>
 
 添加URL Scheme 到项目中，以便唤醒您的程序进行圈选。
 
