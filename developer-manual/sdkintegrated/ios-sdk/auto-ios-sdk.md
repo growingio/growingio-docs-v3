@@ -70,7 +70,7 @@ GrowingIO iOS SDK 包含以下2个组件SDK:
 
 ![](../../../.gitbook/assets/image%20%2877%29.png)
 
-### 2. 添加 URL Scheme
+### 2. 添加 URL Scheme <a id="urlscheme"></a>
 
 添加URL Scheme 到项目中，以便唤醒您的程序进行圈选。
 
