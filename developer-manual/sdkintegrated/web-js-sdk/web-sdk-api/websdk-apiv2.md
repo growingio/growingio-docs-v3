@@ -234,11 +234,6 @@ gio('track', 'registerSuccess');
 gio('track', 'registerSuccess', {'gender':'male', 'age':21});
 ```
 
-```javascript
-// track API调用示例三
-gio('track', 'loanAmount', 800000, {'loanType':'houseMortgage','province':'Zhejiang'});
-```
-
 ### 9. 手动发送页面浏览事件\(sendPage\)
 
 在默认情况下，由于用户浏览网站的交互行为导致当前页面的 URL 产生变化时，GrowingIO 的 Web JS SDK 会发送一个 page 类型的请求。在一些特殊的情况下，例如用户在访问单页应用（Single Page Application）类型的网站时，用户的操作会导致业务上面理解的页面产生了变化，但是当前的 URL 可能并没有改变。
