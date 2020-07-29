@@ -55,20 +55,20 @@ gio(‘init’, ‘您的 GrowingIO 项目ID’, ‘您的 AppID’, {
 <script type='text/javascript'>
 !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.giocdn.com/2.0/gio-wxwv.js","gio");
 gio('init', '你的 GrowingIO 项目ID', '你的支付宝小程序的 AppID', {
-platform: 'alip'
+    platform: 'alip'
 });
 gio('send');
 </script>
 ```
 
-在小程序里面 WebView 加载时，URL添加额外属性 gio\('getGioInfo'\) 获取用户会话信息。
+在小程序里面 WebView 加载时，URL添加额外属性 gio\('getGioInfo'\) 获取用户会话信息。注意使用`?`或`&`拼接。
 
 ```javascript
 举例：
 # webview.js
 Page({
 data: {
-webUrl: `https://example.org/demo.html?${gio('getGioInfo')}`
+    webUrl: `https://example.org/demo.html?yours=params&${gio('getGioInfo')}`
 }
 });
 # webview.wxml
