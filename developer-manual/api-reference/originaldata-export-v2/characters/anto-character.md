@@ -1029,7 +1029,7 @@ description: 无埋点事件字段共分为4个事件类型。
   <thead>
     <tr>
       <th style="text-align:left">ruleId</th>
-      <th style="text-align:left">string&#xFF08;8&#xFF09;</th>
+      <th style="text-align:left">string&#xFF08;12&#xFF09;</th>
       <th style="text-align:left">
         <p>&lt;Rule&#x5185;&#x90E8;ID&gt;</p>
         <p>&#x7528;&#x4E8E;&#x6807;&#x8BC6;<b>&#x5143;&#x7D20;&#x5708;&#x9009;</b>&#x65E0;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;&#x7684;&#x552F;&#x4E00;ID&#xFF0C;&#x7531;&#x5B57;&#x6BCD;&#x548C;&#x6570;&#x5B57;&#x7EC4;&#x6210;&#x3002;</p>
@@ -1046,7 +1046,7 @@ description: 无埋点事件字段共分为4个事件类型。
 
 | 名称 | 类型 | 说明 |
 | :--- | :--- | :--- |
-| rule\_id | string\(8\) | 规则ID，匹配事件的规则ID，该ID为GrowingIO平台圈选的标签的唯一ID。该值有字母与数字组成，例如'1ba052a9'。 |
+| rule\_id | string\(12\) | 规则ID，匹配事件的规则ID，该ID为GrowingIO平台圈选的标签的唯一ID。该值有字母与数字组成，例如'1ba052a9'。 |
 | name | string\(200） | 规则名称，圈选的标签名称。该名称不可以作为唯一主键，只是便于使用区分。 |
 | ruleType | string\(10\) | 规则类型，规则在定义时可能有不同的类型，例如按钮clck。值包括page、clck、chng、sbmt。 |
 
