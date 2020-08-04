@@ -225,17 +225,17 @@ GrowingIO初始化配置项均在AppDelegate.m文件中的didFinishLaunchingWith
     </tr>
     <tr>
       <td style="text-align:left">setFlushInterval</td>
-      <td style="text-align:left">30s</td>
-      <td style="text-align:left">&#x8BBE;&#x7F6E;&#x3001;&#x83B7;&#x53D6;&#x53D1;&#x9001;&#x6570;&#x636E;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;30&#x79D2;</td>
+      <td style="text-align:left">15s</td>
+      <td style="text-align:left">&#x8BBE;&#x7F6E;&#x3001;&#x83B7;&#x53D6;&#x53D1;&#x9001;&#x6570;&#x636E;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;15&#x79D2;</td>
       <td
       style="text-align:left">&#x2714;&#xFE0F;</td>
         <td style="text-align:left">&#x2714;&#xFE0F;</td>
     </tr>
     <tr>
       <td style="text-align:left">setDailyDataLimit</td>
-      <td style="text-align:left">3M</td>
+      <td style="text-align:left">10M</td>
       <td style="text-align:left">&#x8BBE;&#x7F6E;&#x6BCF;&#x5929;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x7F51;&#x7EDC;&#xFF08;2G&#x3001;3G&#x3001;4G&#xFF09;&#x4E0A;&#x4F20;&#x7684;&#x6570;&#x636E;&#x91CF;&#x7684;&#x4E0A;&#x9650;&#xFF08;&#x5355;&#x4F4D;&#x662F;
-        KB&#xFF09;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; 3 MB</td>
+        KB&#xFF09;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; 10 MB</td>
       <td style="text-align:left">&#x2714;&#xFE0F;</td>
       <td style="text-align:left">&#x2714;&#xFE0F;</td>
     </tr>
@@ -243,7 +243,7 @@ GrowingIO初始化配置项均在AppDelegate.m文件中的didFinishLaunchingWith
       <td style="text-align:left">getDailyDataLimit</td>
       <td style="text-align:left">&#x65E0;</td>
       <td style="text-align:left">&#x83B7;&#x53D6;&#x6BCF;&#x5929;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x7F51;&#x7EDC;&#xFF08;2G&#x3001;3G&#x3001;4G&#xFF09;&#x4E0A;&#x4F20;&#x7684;&#x6570;&#x636E;&#x91CF;&#x7684;&#x4E0A;&#x9650;&#xFF08;&#x5355;&#x4F4D;&#x662F;
-        KB&#xFF09;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;3 MB</td>
+        KB&#xFF09;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;10 MB</td>
       <td style="text-align:left">&#x2714;&#xFE0F;</td>
       <td style="text-align:left">&#x2714;&#xFE0F;</td>
     </tr>
