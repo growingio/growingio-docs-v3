@@ -325,6 +325,7 @@
       * [访问用戶变量](product-manual/data-center/data-management/user/access.md)
     * [转化变量](product-manual/data-center/data-management/conversion.md)
     * [业务标签管理](product-manual/data-center/data-management/tag.md)
+    * [批量操作](product-manual/data-center/data-management/batch-creat.md)
     * [自定义指标管理](product-manual/data-center/data-management/custom-metric/README.md)
       * [计算指标](product-manual/data-center/data-management/custom-metric/count.md)
       * [合并事件](product-manual/data-center/data-management/custom-metric/plus.md)
