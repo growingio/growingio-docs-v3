@@ -154,7 +154,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 {% hint style="info" %}
 1. 必须在该UIViewController显示之前设置。
 2. 页面别名建议设置为汉字、字母、数字、下划线的组合。
-3. 未查看数据方便，请尽量对不同端、不同页面的取不同的名称。
+3. 为了查看数据方便，请尽量对不同端、不同页面的取不同的名称。
 {% endhint %}
 
 ### 2. 设置界面元素ID
