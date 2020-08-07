@@ -36,5 +36,5 @@ SDK 2.7.4及以下版本不支持Instant Run，请开发者开发期间配置gio
 
 ## 2. SDK 数据发送的策略是什么？
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/sdk-shu-ju-fa-song-ce-lve.png)
+![](../../../../.gitbook/assets/image%20%28122%29.png)
 
