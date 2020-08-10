@@ -461,7 +461,7 @@ GrowingIO.getInstance().setGeoLocation(39.9046900000,116.4071700000);
 ```
 
 {% hint style="info" %}
-对应的清楚地理位置的方法为 clearGeoLocation（）；
+对应的清除地理位置的方法为 clearGeoLocation\(\);
 {% endhint %}
 
 ### 12. 采集输入框数据
@@ -510,7 +510,7 @@ GrowingIO.startWithConfiguration(this, new Configuration().setHashTagEnable(true
 
 点击 APP `WebView` 中代码混淆的锚点链接，URL 中`#`号后面为锚点，设置后 SDK 会发送页面浏览事件，它的链接为：​[https://docs.growingio.com/docs/sdk-integration/android-sdk\#4-dai-ma-hun-xiao](https://docs.growingio.com/docs/sdk-integration/android-sdk#4-dai-ma-hun-xiao)
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%282%29.png)
+![](../../../.gitbook/assets/image%20%28123%29.png)
 
 SDK发送对应采集数据：
 
