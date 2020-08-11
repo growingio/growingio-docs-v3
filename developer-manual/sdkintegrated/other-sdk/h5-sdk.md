@@ -30,7 +30,7 @@ description: 为小程序（包括微信、支付宝、百度小程序等）内 
 ```javascript
 gio(‘init’, ‘您的 GrowingIO 项目ID’, ‘您的 AppID’, { 
     platform：支持传入一个判断函数或者一个字符串
- });
+});
 ```
 
 | 应用场景 | 统计平台 |
@@ -67,9 +67,10 @@ gio('send');
 举例：
 # webview.js
 Page({
-data: {
-    webUrl: `https://example.org/demo.html?yours=params&${gio('getGioInfo')}`
-}
+  data: {
+    // 当内嵌页URL存在参数时，需带上&符号
+    webUrl: `https://example.org/demo.html?key=val&${gio('getGioInfo')}`
+  }
 });
 # webview.wxml
 <web-view src="{{ webUrl }}"></web-view>
