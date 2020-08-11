@@ -1,6 +1,12 @@
-# 百度搜索
+---
+description: 渠道更新 2020.08.15 后上线
+---
 
-1.联系百度搜索SEM\(百度推广账户管理员\)索要API数据回传需要的代码Token。
+# 百度搜索\(新\)
+
+1.此渠道更新 2020.08.15 后上线。
+
+2. 联系百度搜索SEM\(百度推广账户管理员\)索要API数据回传需要的代码Token。
 
 参考Token获取地址[http://ocpc.baidu.com/developer/d/guide?iurl=api%2Fapi-faq%2Faccount.html](http://ocpc.baidu.com/developer/d/guide?iurl=api%2Fapi-faq%2Faccount.html)
 

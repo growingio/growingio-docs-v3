@@ -276,7 +276,7 @@
     * [腾讯社交广告（Marking API）](product-manual/growing/channel-config/tencent.md)
     * [今日头条](product-manual/growing/channel-config/bytedance.md)
     * [百度原生信息流](product-manual/growing/channel-config/baidu.md)
-    * [百度搜索](product-manual/growing/channel-config/bai-du-sou-suo.md)
+    * [百度搜索\(新\)](product-manual/growing/channel-config/bai-du-sou-suo.md)
     * [微信广告平台](product-manual/growing/channel-config/wechat.md)
     * [微博超级粉丝通](product-manual/growing/channel-config/weibo.md)
     * [爱奇艺](product-manual/growing/channel-config/iqiyi.md)
