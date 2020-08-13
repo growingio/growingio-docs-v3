@@ -11,7 +11,7 @@
 | androidid | androidid | string\(32\) | 安卓系统中的设备唯一标志 | 9774d56d682e549c |
 | ip | ip | string\(64\) | 用户IP地址 | 10.10.0.21 |
 | useragent | 用户客户端UA信息 | string\(1024\) | 简称ua，例如浏览器信息或者移动设备信息 | 略 |
-| platform | 数据来源平台 | string\(10\) | 区分该数据属于哪个平台 | web, android, ios |
+| platform | 访问所属平台 | string\(10\) | 访问所属平台，可能值为 iOS / Android  等。  |  Android, iOS |
 | osversion | 系统版本 | string\(50\) | 用户使用的设备系统版本 | ios 9.1.3 |
 | sendTime | 发送时间 | bigint | 数据发送过来的时间 | 略 |
 | link\_id | 监测链接ID | string\(10\) | 监测链接ID | o3ox2dV |
@@ -31,7 +31,7 @@
 | androidid | androidid | string\(32\) | 安卓系统中的设备唯一标志 | 9774d56d682e549c |
 | ip | ip | string\(64\) | 用户IP地址 | 10.10.0.21 |
 | useragent | 用户客户端UA信息 | string\(1024\) | 简称ua，例如浏览器信息或者移动设备信息 | 略 |
-| platform | 数据来源平台 | string\(10\) | 区分该数据属于哪个平台 | web, android, ios |
+| platform | 数据来源操作系统 | string\(10\) | 区分该数据来源的操作系统 |  Android, iOS |
 | eventTime | 事件发生时间 | bigint | 事件实际发生的时间 | ​ |
 | link\_id | 监测链接ID | string\(10\) | 监测链接ID | o3ox2dV |
 | campaign\_id | 推广活动ID | string\(10\) | 推广活动ID | 略 |

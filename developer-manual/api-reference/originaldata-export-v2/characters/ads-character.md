@@ -129,7 +129,7 @@ description: 广告相关事件字段共分为2个事件类型。
       <th style="text-align:right">
         <p>&lt;&#x5E73;&#x53F0;&gt;</p>
         <p>&#x8BBF;&#x95EE;&#x6240;&#x5C5E;&#x5E73;&#x53F0;&#xFF0C;&#x53EF;&#x80FD;&#x503C;&#x4E3A;
-          iOS / Android / Web &#x7B49;&#x3002; &#x793A;&#x4F8B;&#xFF1A;Web</p>
+          iOS / Android &#x7B49;&#x3002; &#x793A;&#x4F8B;&#xFF1A;Android</p>
       </th>
     </tr>
   </thead>
@@ -374,8 +374,8 @@ description: 广告相关事件字段共分为2个事件类型。
       <th style="text-align:left">string&#xFF08;20&#xFF09;</th>
       <th style="text-align:left">
         <p>&lt;&#x5E73;&#x53F0;&gt;</p>
-        <p>&#x8BBF;&#x95EE;&#x6240;&#x5C5E;&#x5E73;&#x53F0;&#xFF0C;&#x53EF;&#x80FD;&#x503C;&#x4E3A;
-          iOS / Android / Web &#x7B49;&#x3002; &#x793A;&#x4F8B;&#xFF1A;Web</p>
+        <p>&#x8BBF;&#x95EE;&#x6240;&#x5C5E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EF;&#x80FD;&#x503C;&#x4E3A;
+          iOS / Android &#x7B49;&#x3002; &#x793A;&#x4F8B;&#xFF1A;Android</p>
       </th>
     </tr>
   </thead>
