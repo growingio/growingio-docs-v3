@@ -2,7 +2,7 @@
 
 ## URL <a id="url"></a>
 
-[https://www.growingio.com/v3/exporter/projects/{project\_uid}/funnels/{chart\_id}](https://www.growingio.com/v3/exporter/projects/{project_uid}/funnels/{chart_id})
+[https://www.growingio.com/v3/exporter/projects/{project\_uid}/funnels/{funnel\_id}](https://www.growingio.com/v3/exporter/projects/{project_uid}/funnels/{funnel_id})
 
 ## 请求类型 <a id="qing-qiu-lei-xing"></a>
 
