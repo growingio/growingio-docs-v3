@@ -1,16 +1,27 @@
 # 创建标签
 
-提供4种用户标签的创建方式，您可以根据自己的标签含义，选择相对应的方式进行标签的创建。
+{% hint style="warning" %}
+灰度beta功能 ，如需体验试用，请联系客户经理 。
+{% endhint %}
+
+提供 4 种用户标签的创建方式，您可以根据自己的标签含义，选择相对应的方式进行标签的创建。
+
+不同标签的模型 ，有不同的使用场景 ，详请可见 以下说明： 
+
+* [基础指标值  标签 ](https://app.gitbook.com/@growingio/s/v3/~/drafts/-MEWSCS5iLxkCJzygg8h/product-manual/user-warehouse/yong-hu-biao-qian/biao-qian-mo-xing-shi-yong/ji-chu-zhi-biao-zhi) 
+* [最大/ 最小  标签 ](https://app.gitbook.com/@growingio/s/v3/~/drafts/-MEWSCS5iLxkCJzygg8h/product-manual/user-warehouse/yong-hu-biao-qian/biao-qian-mo-xing-shi-yong/zui-da-zhi-zui-xiao-zhi-de-shi-jian-shu-xing)
+* [最初 / 最终 标签 ](https://app.gitbook.com/@growingio/s/v3/~/drafts/-MEWSCS5iLxkCJzygg8h/product-manual/user-warehouse/yong-hu-biao-qian/biao-qian-mo-xing-shi-yong/zui-chu-zui-zhong-de-shi-jian-shu-xing)
+* [分层标签  ](https://app.gitbook.com/@growingio/s/v3/~/drafts/-MEWSCS5iLxkCJzygg8h/product-manual/user-warehouse/yong-hu-biao-qian/biao-qian-mo-xing-shi-yong/fen-ceng-biao-qian)
 
 
 
-### 一、在顶部导航栏选择“ **用戶标签 "**，进入标签管理页面。
+## 创建流程：
 
-### 二、单击右上角 **新建用户标签**，进入**新建标签** 页面。
+### 一、在导航栏选择 **"用戶标签 "**，进入标签管理页面。
+
+### 二、单击左上角 "**新建用户标签"**，进入**新建标签**页面。
 
 ![](../../../.gitbook/assets/ying-mu-jie-tu-20200813-xia-wu-4.24.18.png)
-
-
 
 ### 三、选择标签的创建方式 。
 

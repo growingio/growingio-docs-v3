@@ -303,7 +303,7 @@
       * [细查用户](product-manual/user-warehouse/segmentations/userinsights/create.md)
       * [应用场景](product-manual/user-warehouse/segmentations/userinsights/scenario.md)
       * [常见问题](product-manual/user-warehouse/segmentations/userinsights/faq.md)
-  * [用户标签](product-manual/user-warehouse/yong-hu-biao-qian/README.md)
+  * [用户标签 - Beta](product-manual/user-warehouse/yong-hu-biao-qian/README.md)
     * [创建标签](product-manual/user-warehouse/yong-hu-biao-qian/chuang-jian-biao-qian.md)
     * [标签模型使用](product-manual/user-warehouse/yong-hu-biao-qian/biao-qian-mo-xing-shi-yong/README.md)
       * [基础指标值](product-manual/user-warehouse/yong-hu-biao-qian/biao-qian-mo-xing-shi-yong/ji-chu-zhi-biao-zhi.md)
