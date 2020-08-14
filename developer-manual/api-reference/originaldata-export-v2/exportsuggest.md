@@ -89,7 +89,7 @@ eventNumber DOUBLE,
 eventVariable map<string, string>,
 loginUserId STRING
 )
-ROW FORMAT SERDE EATE EXTE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 STORED AS TEXTFILE
 location '/tmp/test_export'
 tblproperties ("skip.header.line.count"="1", "quote.delim"="\"", "escape.delim"="\\")
