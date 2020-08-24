@@ -66,3 +66,9 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LmsBDO4OyOVHF-1m4UY-LmsC6kA7hgkiEiAhGZM3.png)
 
+
+
+## GrowingIO 社区讨论入口
+
+[https://growingio.kf5.com/hc/community/topic/](https://growingio.kf5.com/hc/community/topic/)
+
