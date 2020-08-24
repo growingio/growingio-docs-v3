@@ -50,7 +50,9 @@ gio('setConfig', gioConfig);
 2. 将解压后的`gio-minp`目录放在小程序目录下（比如：/src/utils目录）。
 3. 添加代码：
 
-方式1：
+#### 安装 SDK
+
+**安装方式 1：**
 
 在根目录app.js文件的顶部添加跟踪代码
 
@@ -60,16 +62,9 @@ gio('init', '你的 GrowingIO 项目ID', '你的小程序AppID', { version: '小
 const App = global.GioApp;
 ```
 
-在每个page页面（新增页面也需要添加）的 .js 文件顶部添加如下代码
+**安装方式 2：**
 
-```javascript
-// 在每个Page页面的 .js 文件顶部（其他代码之前）添加如下代码。（请注意是每个页面都要引入）
-const Page = global.GioPage;
-```
-
-方式2：
-
-新建一个gioConfig.js文件，并且配置gioConfig.js文件中的必要配置参数：
+新建一个 gioConfig.js 文件，并且配置 gioConfig.js 文件中的必要配置参数：
 
 ```javascript
 export default {
@@ -81,7 +76,7 @@ export default {
 }
 ```
 
-在根目录app.js文件的顶部添加跟踪代码：
+在根目录 app.js 文件的顶部添加跟踪代码：
 
 ```javascript
 var gio = require("utils/gio-minp/index.js").default;
@@ -91,11 +86,30 @@ gio('setConfig', gioConfig);
 const App = global.GioApp
 ```
 
-在每个page页面（新增页面也需要添加）的.js文件顶部添加如下代码
+#### 修改页面及自定义组件定义
+
+在每个page页面（新增页面也需要添加）的 .js 文件顶部添加如下代码：
 
 ```javascript
-// 在每个Page页面的 .js 文件顶部（其他代码之前）添加如下代码。（请注意是每个页面都要引入）
+// 在每个 Page 页面的 .js 文件顶部（其他代码之前）添加如下代码。
+// 请注意是每个 Page 都要引入
 const Page = global.GioPage;
+```
+
+如果使用了自定义组件（Component ）在每个 Component 的 .js 文件顶部添加如下代码：
+
+```javascript
+// 在每个 Component 的 .js 文件顶部（其他代码之前）添加如下代码。
+// 请注意是每个自定义 Component  都要引入
+const Component = global.GioComponent;
+```
+
+如果使用了自定义组件（Behavior）在每个 Behavior 的 .js 文件顶部添加如下代码：
+
+```javascript
+// 在每个 Behavior 的 .js 文件顶部（其他代码之前）添加如下代码。
+// 请注意是每个自定义 Behavior 都要引入
+const Behavior = global.GioBehavior;
 ```
 {% endtab %}
 
@@ -585,12 +599,10 @@ SDK中提供了以下几个参数可以用来进行配置。
 在 gioConfig.js 文件中将 getLocation 配置如下：
 
 ```java
-```
 getLocation: {          //是否自动获取用户的地理位置信息, 并设置获取方式
    autoGet: true,       //默认不自动获取
    type: 'gcj02'           //支持wgs84 | gcj02为火星坐标系, 默认wgs84
 },
-```
 ```
 
 * GrowingIO SDK 默认不会在小程序启动时获取用户的坐标信息。当用户访问到某一功能时需要位置信息时，可以调用以下位置接口，补发vst，采集位置信息，提升用户地域分布的分析准确性。
