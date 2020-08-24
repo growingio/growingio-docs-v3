@@ -31,3 +31,7 @@
 Tips：GrowingIO产品Web界面中的功能名称、页面标题都是定位内容的搜索词。
 {% endhint %}
 
+## GrowingIO 社区讨论和交流入口
+
+[https://growingio.kf5.com/hc/community/topic/](https://growingio.kf5.com/hc/community/topic/)
+
