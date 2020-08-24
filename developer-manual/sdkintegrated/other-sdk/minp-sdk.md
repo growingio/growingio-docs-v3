@@ -50,7 +50,7 @@ gio('setConfig', gioConfig);
 2. 将解压后的`gio-minp`目录放在小程序目录下（比如：/src/utils目录）。
 3. 添加代码：
 
-#### 安装 SDK
+#### 一、安装 SDK
 
 **安装方式 1：**
 
@@ -86,7 +86,7 @@ gio('setConfig', gioConfig);
 const App = global.GioApp
 ```
 
-#### 修改页面及自定义组件定义
+#### 二、修改页面及自定义组件定义
 
 在每个page页面（新增页面也需要添加）的 .js 文件顶部添加如下代码：
 
