@@ -12,7 +12,7 @@ V3接口目前还在持续补充，很快会覆盖现有的 [统计数据导出A
 
 ## V3接口交互方式 <a id="tong-ji-shu-ju-dao-chu-fen-lei"></a>
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28127%29.png)
+![](../../../.gitbook/assets/image%20%28126%29.png)
 
 ## 统计数据V3接口导出分类 <a id="tong-ji-shu-ju-dao-chu-fen-lei"></a>
 
