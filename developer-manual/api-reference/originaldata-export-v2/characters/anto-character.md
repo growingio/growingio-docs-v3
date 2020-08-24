@@ -122,8 +122,8 @@ description: 无埋点事件字段共分为4个事件类型。
       <th style="text-align:left">referrer</th>
       <th style="text-align:left">string&#xFF08;1024&#xFF09;</th>
       <th style="text-align:right">
-        <p>&lt;&#x9875;&#x9762;&#x6765;&#x6E90;&gt;</p>
-        <p>&#x5F53;&#x524D;&#x9875;&#x9762;&#x6D4F;&#x89C8;&#x7684;&#x5F15;&#x8350;&#x6765;&#x6E90;&#x3002;</p>
+        <p>&lt;&#x6765;&#x6E90;&#x9875;&#x9762;URL&gt;</p>
+        <p>&#x5F53;&#x524D;&#x9875;&#x9762;&#x6D4F;&#x89C8;&#x7684;&#x4E0A;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x5B8C;&#x6574;url&#x3002;</p>
         <p>&#x793A;&#x4F8B;&#xFF1A;https://www.growingio.com?cid=1234567</p>
       </th>
     </tr>
