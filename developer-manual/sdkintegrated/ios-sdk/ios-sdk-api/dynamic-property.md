@@ -41,7 +41,7 @@ SDK版本要求：iOS 无埋点SDK &gt;=2.x
 ```java
 // SDK版本2.8.22 开始支持
 
-// 手动标识该WKWebView可以被采集
+// 手动标识该WKWebView可以被采集，默认值NO
 @property (nonatomic, assign) BOOL growingAttributesIsTracked;
 ```
 
