@@ -52,7 +52,7 @@ Android、iOS 以及 Web 端三端不需要区分：对于这三端，可以只�
 * ​[JS 接口文档​](../../../developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/)
 * ​[Android 接口文档​](../../../developer-manual/sdkintegrated/android-sdk/android-sdk-api/)
 * ​[iOS 接口文档​](../../../developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/)
-* [​小程序、小游戏以及内嵌页 SDK​](../../../developer-manual/sdkintegrated/other-sdk/customize-api.md)
+* [​小程序、小游戏以及内嵌页 SDK​](../../../developer-manual/sdkintegrated/mini-program-sdk/customize-api.md)
 
 API 中给出了埋点事件和事件级变量的上传方式。
 

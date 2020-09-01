@@ -67,7 +67,7 @@ GrowingIO 推荐设置一个页面级变量来保存页面的类型信息。我�
 * [JS 接口文档​](../../../developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/)
 * ​[Android 接口文档​](../../../developer-manual/sdkintegrated/android-sdk/android-sdk-api/)
 * [​iOS 接口文档​](../../../developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/)
-* ​[小程序、小游戏以及内嵌页 SDK​](../../../developer-manual/sdkintegrated/other-sdk/)
+* ​[小程序、小游戏以及内嵌页 SDK​](../../../developer-manual/sdkintegrated/mini-program-sdk/)
 
 API中给出了页面级变量的上传方式。
 

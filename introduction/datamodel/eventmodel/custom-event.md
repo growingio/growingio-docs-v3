@@ -21,7 +21,7 @@
 * [WEB JS SDK](../../../developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/)
 * [iOS](../../../developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/customize-api.md)
 * [Android](../../../developer-manual/sdkintegrated/android-sdk/android-sdk-api/customize-api.md)
-* [小程序](../../../developer-manual/sdkintegrated/other-sdk/customize-api.md)
+* [小程序](../../../developer-manual/sdkintegrated/mini-program-sdk/customize-api.md)
 
 ### 服务端埋点
 

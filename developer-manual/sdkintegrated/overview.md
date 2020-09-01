@@ -2,9 +2,9 @@
 description: 介绍SDK工作方式
 ---
 
-# SDK简介
+# SDK 简介
 
-## SDK工作方式
+## SDK 工作方式
 
 ### JS SDK
 
