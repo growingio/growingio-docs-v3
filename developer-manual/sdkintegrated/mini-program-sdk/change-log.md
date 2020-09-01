@@ -97,6 +97,34 @@
       <td style="text-align:left">2020-05-18</td>
     </tr>
     <tr>
+      <td style="text-align:left">3.4.2</td>
+      <td style="text-align:left">
+        <ul>
+          <li>&#x652F;&#x6301;&#x5C0F;&#x7A0B;&#x5E8F;&#x9875;&#x9762;&#x5207;&#x6362;&#x4E8B;&#x4EF6;&#x91C7;&#x96C6;</li>
+        </ul>
+      </td>
+      <td style="text-align:left">2020-05-18</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">3.4.1</td>
+      <td style="text-align:left">
+        <ul>
+          <li>&#x589E;&#x52A0;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;&#x4E8B;&#x4EF6;&#x540D;&#x79F0;&#x547D;&#x540D;&#x89C4;&#x8303;&#x68C0;&#x67E5;</li>
+          <li>&#x517C;&#x5BB9;&#x767E;&#x5EA6;&#x5C0F;&#x7A0B;&#x5E8F; errorEvent</li>
+        </ul>
+      </td>
+      <td style="text-align:left">2020-03-14</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">3.4.0</td>
+      <td style="text-align:left">
+        <ul>
+          <li>&#x652F;&#x4ED8;&#x5B9D;&#x5C0F;&#x7A0B;&#x5E8F;&#x652F;&#x6301;&#x5F39;&#x7A97;&#x9884;&#x89C8;&#x53CA;&#x5C55;&#x793A;</li>
+        </ul>
+      </td>
+      <td style="text-align:left">2020-03-10</td>
+    </tr>
+    <tr>
       <td style="text-align:left">3.0.0</td>
       <td style="text-align:left">
         <ul>
