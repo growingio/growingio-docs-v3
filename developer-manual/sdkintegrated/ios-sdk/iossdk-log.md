@@ -14,6 +14,15 @@ description: iOS SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.8.22</td>
+      <td style="text-align:left">
+        <p>1. &#x9002;&#x914D;iOS14</p>
+        <p>2.&#x5E7F;&#x544A;&#x76D1;&#x6D4B;&#x4F18;&#x5316;</p>
+        <p>3.&#x65B0;&#x589E;&#x5C5E;&#x6027;growingAttributesIsTracked &#x652F;&#x6301;&#x5168;&#x5C40;&#x4E0D;&#x91C7;&#x96C6;webview&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x91C7;&#x96C6;&#x5355;&#x4E2A;webview</p>
+      </td>
+      <td style="text-align:left">2020-09-01</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.8.20</td>
       <td style="text-align:left">
         <p>1.&#x534A;&#x81EA;&#x52A8;&#x57CB;&#x70B9;&#x4F18;&#x5316;</p>
