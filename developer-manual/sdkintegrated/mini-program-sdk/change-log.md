@@ -128,6 +128,7 @@
       <td style="text-align:left">3.0.0</td>
       <td style="text-align:left">
         <ul>
+          <li>&#x91CD;&#x6784;&#x5C0F;&#x7A0B;&#x5E8F; SDK &#x589E;&#x5F3A;&#x53EF;&#x7EF4;&#x62A4;&#x6027;&#x548C;&#x6613;&#x7528;&#x6027;</li>
           <li>&#x652F;&#x6301; SDK &#x521D;&#x59CB;&#x5316;&#x81EA;&#x5B9A;&#x4E49;&#x914D;&#x7F6E;
             setConfig</li>
           <li>&#x5E9F;&#x5F03; gio-webview &#x7EC4;&#x4EF6;&#xFF0C;&#x63D0;&#x4F9B;
