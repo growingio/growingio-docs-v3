@@ -36,3 +36,12 @@ SDK版本要求：iOS 无埋点SDK &gt;=2.x
 @property (nonatomic, copy)   NSString* growingAttributesPageName;
 ```
 
+## 3. WKWebView 增加属性
+
+```java
+// SDK版本2.8.22 开始支持
+
+// 手动标识该WKWebView可以被采集
+@property (nonatomic, assign) BOOL growingAttributesIsTracked;
+```
+
