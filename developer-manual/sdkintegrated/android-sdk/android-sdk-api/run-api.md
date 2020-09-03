@@ -290,7 +290,7 @@ GrowingIO所有API都需要在主线程调用。
       <td style="text-align:left">trackWebView</td>
       <td style="text-align:left">&#x91C7;&#x96C6; <code>WebView</code> &#x4E8B;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x91C7;&#x96C6;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x5168;&#x91CF;&#x91C7;&#x96C6;<code>WebView</code>&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5B9A;&#x5236;&#x91C7;&#x96C6;&#x67D0;&#x4E2A;<code>WebView</code>
       </td>
-      <td style="text-align:left">&lt;2.6.0</td>
+      <td style="text-align:left">&gt;=2.8.22</td>
       <td style="text-align:left">-</td>
     </tr>
     <tr>
