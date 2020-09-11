@@ -10,6 +10,25 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">3.5.4</td>
+      <td style="text-align:left">
+        <ul>
+          <li>&#x517C;&#x5BB9; Taro 3.x &#x6846;&#x67B6;&#x4E8B;&#x4EF6;&#x673A;&#x5236;</li>
+        </ul>
+      </td>
+      <td style="text-align:left">2020-09-11</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">3.5.3</td>
+      <td style="text-align:left">
+        <ul>
+          <li>&#x4FEE;&#x590D; Taro 3.x &#x6846;&#x67B6; hook &#x914D;&#x7F6E;&#x53EA;&#x8BFB;&#x65B9;&#x6CD5;&#x62A5;&#x9519;</li>
+          <li>&#x4FEE;&#x590D;&#x540C;&#x540D;&#x4E8B;&#x4EF6;&#x540C;&#x65F6;&#x89E6;&#x53D1;&#x591A;&#x6B21;&#x65F6;&#xFF0C;&#x91CD;&#x590D;&#x5F39;&#x7A97;&#x7684;&#x95EE;&#x9898;</li>
+        </ul>
+      </td>
+      <td style="text-align:left">2020-09-04</td>
+    </tr>
+    <tr>
       <td style="text-align:left">3.5.2</td>
       <td style="text-align:left">
         <p></p>
