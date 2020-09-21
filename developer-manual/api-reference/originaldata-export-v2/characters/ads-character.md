@@ -513,8 +513,29 @@ description: 广告相关事件字段共分为2个事件类型。
   <tbody></tbody>
 </table>
 
-| OAID | string（64） | &lt;匿名设备标识符&gt;Android平台用于广告监测的ID。2020/01/07 开始生效。 |
-| :--- | :--- | :--- |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">OAID</th>
+      <th style="text-align:left">string&#xFF08;64&#xFF09;</th>
+      <th style="text-align:left">&lt;&#x533F;&#x540D;&#x8BBE;&#x5907;&#x6807;&#x8BC6;&#x7B26;&gt;Android&#x5E73;&#x53F0;&#x7528;&#x4E8E;&#x5E7F;&#x544A;&#x76D1;&#x6D4B;&#x7684;ID&#x3002;2020/01/07
+        &#x5F00;&#x59CB;&#x751F;&#x6548;&#x3002;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">clickUrl</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">
+        <p>&lt;&#x94FE;&#x63A5;&#x70B9;&#x51FB;url&gt; &#x76D1;&#x6D4B;&#x94FE;&#x63A5;&#x7684;&#x70B9;&#x51FB;url&#x4FE1;&#x606F;&#x3002;2020/09/20
+          &#x5F00;&#x59CB;&#x751F;&#x6548;&#x3002;</p>
+        <p>&#x793A;&#x4F8B;:
+          <br />https://datayi.cn/rABC?idfa=IDFAXX</p>
+        <p></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 {% endtab %}
 {% endtabs %}
 
