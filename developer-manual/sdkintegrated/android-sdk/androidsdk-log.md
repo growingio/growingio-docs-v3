@@ -30,7 +30,7 @@ description: Android SDK更新日志
           <li>&#x652F;&#x6301;&#x5728;&#x5173;&#x95ED;webview&#x6570;&#x636E;&#x91C7;&#x96C6;&#x529F;&#x80FD;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x91C7;&#x96C6;&#x5355;&#x4E2A;webview&#x7684;&#x6570;&#x636E;</li>
         </ul>
       </td>
-      <td style="text-align:left">2020--09-02</td>
+      <td style="text-align:left">2020-09-02</td>
     </tr>
     <tr>
       <td style="text-align:left">2.8.21</td>
