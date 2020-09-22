@@ -18,6 +18,11 @@ description: Android SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.8.23</td>
+      <td style="text-align:left">&#x652F;&#x6301;msa1.0.22&#x7248;&#x672C;</td>
+      <td style="text-align:left">2020-09-22</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.8.22</td>
       <td style="text-align:left">
         <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
