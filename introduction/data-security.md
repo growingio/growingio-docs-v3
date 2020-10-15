@@ -153,7 +153,7 @@ gio('setConfig',{"dataCollect": true});
 获取访问用ID：
 
 ```java
-window.gio('getVisitUserId'); // 放在send之后
+window.gio('getVisitorId'); // 放在send之后
 ```
 {% endtab %}
 {% endtabs %}
