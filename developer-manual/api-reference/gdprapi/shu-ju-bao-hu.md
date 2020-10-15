@@ -120,7 +120,7 @@ gio('setConfig',{"dataCollect": true});
 获取访问用ID：
 
 ```java
-window.gio('getVisitUserId'); // 在gio('init')之后调用
+window.gio('getVisitorId'); // 在gio('init')之后调用
 ```
 {% endtab %}
 
