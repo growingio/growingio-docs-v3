@@ -8,6 +8,9 @@ GrowingIO提供此接口来定义某一些登录用户ID为既有用户，并不
 
 auth的计算需要将`loginUserId`的值拼接成`keyArray，`多条使用`逗号`分隔，如上述示例中的keyArray为`abcdef,bcdefg`。Java代码示例如下：
 
+注意此处使用 **projectId**  
+
+
 {% code title="java" %}
 ```java
 /**
@@ -54,8 +57,8 @@ POST
 
 | body参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
-| loginUserId | array | 是 | 登录用户ID字符串数组 |
-| register | number | 否 | 上传用户注册的时间戳 |
+| loginUserId | array | 是 | 登录用户ID**字符串**数组 |
+| registerTime | number | 否 | 上传用户注册的时间戳 |
 {% endtab %}
 
 {% tab title="body示例" %}
