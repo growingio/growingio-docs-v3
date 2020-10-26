@@ -147,7 +147,7 @@
       * [广告相关字段](developer-manual/api-reference/originaldata-export-v1/characters/ads-character.md)
     * [接口定义](developer-manual/api-reference/originaldata-export-v1/definition/README.md)
       * [获取原始数据下载链接](developer-manual/api-reference/originaldata-export-v1/definition/uploaddata.md)
-      * [来源管理数据导出](developer-manual/api-reference/originaldata-export-v1/definition/sourceupload.md)
+      * [来源管理数据导出 -- \[接口下线 2020.11.02\]](developer-manual/api-reference/originaldata-export-v1/definition/sourceupload.md)
     * [导出数据处理建议](developer-manual/api-reference/originaldata-export-v1/suggest.md)
   * [统计数据导出API V3](developer-manual/api-reference/statistics-api-v3/README.md)
     * [V3接口概述](developer-manual/api-reference/statistics-api-v3/overview.md)
