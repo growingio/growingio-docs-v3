@@ -15,11 +15,11 @@
 
 在功能页面上，会展示目前进入实时数据验证实时传输数据的微信应用用户，以及部分用户微信信息、设备、操作系统的信息。但是部分信息的展示，例如用户微信名称、头像、国家、省份、城市，需要在SDK中设置微信用户属性设置。详情请见[小程序SDK 微信用户属性设置](../sdkintegrated/mini-program-sdk/minp-sdk.md#2-wei-xin-yong-hu-xin-xi-de-pei-zhi)或者[微信内嵌页微信用户信息设置](../sdkintegrated/h5-sdk/#2-gao-ji-pei-zhi)。
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LHMsQM2mk2Metktnmys-LHMt1kIZ4TPP-NCoZTPfanfan1.png)
+![](../../.gitbook/assets/xiao-cheng-xu-debugger1.jpg)
 
 选择自己的用户头像，点击“下一步”，进入用户行为记录页面。
 
 和小程序/内嵌页产生交互（访问、页面浏览、点击等），以及上报的所有自定义埋点事件、变量、用户变量等，都在此页面可以看到数据实时上报的记录。
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LH602fV2SBd8iyo5ERs-LH60Y3K9SNeQwmQjLGO2018-07-102023.04.19.gif)
+![](../../.gitbook/assets/xiao-cheng-xu-debugger2.jpg)
 
