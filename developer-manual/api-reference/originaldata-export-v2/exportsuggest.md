@@ -116,7 +116,3 @@ val df = spark.read
 
 用户如果对文件完整性有担心，可以对[原始数据导出 API](./)第三步下载时response的headers中的value值**Content-Length**和下载文件的大小进行校验。若校验未通过，可重启第三步，轮询获取，若校验通过，可以解压缩，如果解压出现异常，可重启第三步，轮询获取。
 
-
-
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LfTS0t4L9N-sPU92Tqn-LfULNTbINi97T-Rha_Uimage.png)
-
