@@ -13,7 +13,7 @@
       <dependency>
         <groupId>io.growing.sdk.java</groupId>
         <artifactId>growingio-java-sdk</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.4</version>
       </dependency>
     </dependencies>
 ```
@@ -28,7 +28,7 @@
       <dependency>
         <groupId>io.growing.sdk.java</groupId>
         <artifactId>growingio-java-sdk</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.4</version>
         <classifier>standalone</classifier>
       </dependency>
     </dependencies>
