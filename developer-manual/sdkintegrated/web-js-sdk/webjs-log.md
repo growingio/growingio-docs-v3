@@ -12,6 +12,25 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.1.39</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x4FEE;&#x590D;&#x52A8;&#x6001;&#x63D2;&#x5165;&#x5D4C;&#x5957;&#x5143;&#x7D20;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x4E2D;&#x5305;&#x542B;&#x58F0;&#x660E;&#x8BD5;&#x57CB;&#x70B9;&#x65F6;&#x4E0D;&#x53D1;&#x9001;&#x4E8B;&#x4EF6;&#x7684;&#x95EE;&#x9898;&#x3002;</li>
+        </ol>
+      </td>
+      <td style="text-align:left">2020-11-12</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">2.1.38</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x589E;&#x5F3A;&#x7A33;&#x5B9A;&#x6027;&#x3002;&#x89E3;&#x51B3;&#x6781;&#x7AEF;&#x60C5;&#x51B5;&#x4E0B;
+            tagName &#x4E3A; false &#x5BFC;&#x81F4;&#x62A5;&#x9519;&#x95EE;&#x9898;</li>
+        </ol>
+      </td>
+      <td style="text-align:left">2020-11-02</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.1.37</td>
       <td style="text-align:left">
         <ol>
