@@ -12,7 +12,7 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">3.1.37</td>
+      <td style="text-align:left">2.1.37</td>
       <td style="text-align:left">
         <ol>
           <li>&#x4FEE;&#x590D; localhost &#x4E0B;&#x4E0D;&#x80FD;&#x6B63;&#x786E;&#x8BB0;&#x5F55;
@@ -22,7 +22,7 @@
       <td style="text-align:left">2020-09-11</td>
     </tr>
     <tr>
-      <td style="text-align:left">3.1.36</td>
+      <td style="text-align:left">2.1.36</td>
       <td style="text-align:left">
         <ol>
           <li>&#x8BBF;&#x95EE;&#x4E8B;&#x4EF6;&#xFF08;vst&#xFF09;&#x4E0A;&#x62A5;&#x7F51;&#x7AD9;&#x534F;&#x8BAE;
