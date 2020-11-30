@@ -66,6 +66,7 @@
       * [自定义数据上传API](developer-manual/sdkintegrated/android-sdk/android-sdk-api/customize-api.md)
     * [Android半自动采集浏览事件](developer-manual/sdkintegrated/android-sdk/android-imp.md)
     * [1.x Android SDK 升级指导](developer-manual/sdkintegrated/android-sdk/androidsdk-update.md)
+    * [SDK合规说明](developer-manual/sdkintegrated/android-sdk/sdk-he-gui-shuo-ming.md)
     * [常见问题](developer-manual/sdkintegrated/android-sdk/faq/README.md)
       * [无埋点数据采集问题](developer-manual/sdkintegrated/android-sdk/faq/class1.md)
       * [无埋点下埋点API使用问题](developer-manual/sdkintegrated/android-sdk/faq/class2.md)
