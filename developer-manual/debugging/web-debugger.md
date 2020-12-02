@@ -8,7 +8,7 @@ Chrome网上应用店一键安装（自动更新）：[https://chrome.google.com
 
 推荐使用一键安装，可以跳过以下第1至第3步，直接进入第4步。
 
-1、下载 [growingio\_web\_debugger.zip](http://assets.growingio.com/growingio_web_debugger.zip) 到本地磁盘，并完成解压缩到一个目录下。
+1、下载 [growingio\_web\_debugger.zip](https://assets.growingio.com/growingio_web_debugger.zip) 到本地磁盘，并完成解压缩到一个目录下。
 
 2、打开Chrome浏览器，点击右侧的**自定义及控制Google Chrome** &gt; **更多工具** &gt; **扩展程序**。
 
