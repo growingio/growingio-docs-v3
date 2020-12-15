@@ -12,6 +12,25 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.1.41</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x652F;&#x6301;&#x9A7C;&#x5CF0;&#x547D;&#x540D;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;&#x53D8;&#x91CF;&#xFF0C;&#x5982;&#x4E8B;&#x4EF6;&#x53D8;&#x91CF;&#x4E3A;
+            fooBar &#x57CB;&#x70B9;&#x65F6;&#x4E3A; data-gio-track-foo-bar</li>
+        </ol>
+      </td>
+      <td style="text-align:left">2020-12-15</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">2.1.40</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x907F;&#x514D;&#x4FEE;&#x6539; document.referrer &#x539F;&#x59CB;&#x503C;&#xFF0C;&#x4ECE;&#x800C;&#x5F71;&#x54CD;&#x5BA2;&#x6237;&#x4E1A;&#x52A1;&#x903B;&#x8F91;</li>
+        </ol>
+      </td>
+      <td style="text-align:left">2020-12-15</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.1.39</td>
       <td style="text-align:left">
         <ol>
