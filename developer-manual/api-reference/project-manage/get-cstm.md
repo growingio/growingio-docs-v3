@@ -20,7 +20,7 @@ GET
 {% tab title="请求参数" %}
 | 路径参数类型 | 类型 | 是否必传 | 书名 |
 | :--- | :--- | :--- | :--- |
-| peojext\_uid | string | 是 | 项目UID。 |
+| peoject\_uid | string | 是 | 项目UID。 |
 {% endtab %}
 
 {% tab title="返回示例" %}
