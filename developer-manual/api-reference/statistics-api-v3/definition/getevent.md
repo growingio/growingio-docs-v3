@@ -54,7 +54,7 @@ GET
   <thead>
     <tr>
       <th style="text-align:left">startTime</th>
-      <th style="text-align:left">integer</th>
+      <th style="text-align:left">long</th>
       <th style="text-align:left">&#x5426;</th>
       <th style="text-align:left">
         <p>&#x6570;&#x636E;&#x8D77;&#x59CB;&#x65F6;&#x95F4;&#xFF0C;unix&#x6BEB;&#x79D2;&#x65F6;&#x95F4;&#x6233;&#x3002;</p>
@@ -69,7 +69,7 @@ GET
   <thead>
     <tr>
       <th style="text-align:left">endTime</th>
-      <th style="text-align:left">integer</th>
+      <th style="text-align:left">long</th>
       <th style="text-align:left">&#x5426;</th>
       <th style="text-align:left">
         <p>&#x6570;&#x636E;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#xFF0C;unix&#x6BEB;&#x79D2;&#x65F6;&#x95F4;&#x6233;&#x3002;</p>
