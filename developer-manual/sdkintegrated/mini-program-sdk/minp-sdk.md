@@ -781,7 +781,7 @@ longpress 事件是手指触摸后，超过350ms再离开时触发的事件。�
 示例代码
 
 ```java
-<view data-title='复仇者联盟3' data-index='1' bindtap='clickMovie'>
+<view data-title='复仇者联盟3' data-index='1' bindlongpress='clickMovie'>
   <image src='IMAGE—URL' mode='aspectFill'/>
   <text>复仇者联盟3</text>
 </view>
