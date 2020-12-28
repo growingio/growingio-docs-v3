@@ -10,6 +10,16 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">3.5.8</td>
+      <td style="text-align:left">
+        <ul>
+          <li>&#x5F00;&#x542F; forceLogin &#x4F46;&#x662F;&#x662F;&#x672A;&#x8C03;&#x7528;
+            identity &#x65F6;&#x6253;&#x5370;&#x544A;&#x8B66;&#x65E5;&#x5FD7;</li>
+        </ul>
+      </td>
+      <td style="text-align:left">2020-12-28</td>
+    </tr>
+    <tr>
       <td style="text-align:left">3.5.7</td>
       <td style="text-align:left">
         <ul>
