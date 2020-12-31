@@ -298,7 +298,7 @@
     * [用户分群](product-manual/user-warehouse/segmentations/segmentations/README.md)
       * [什么是用户分群](product-manual/user-warehouse/segmentations/segmentations/what.md)
       * [创建用户分群](product-manual/user-warehouse/segmentations/segmentations/create/README.md)
-        * [规则分群](product-manual/user-warehouse/segmentations/segmentations/create/use.md)
+        * [规则分群](product-manual/user-warehouse/segmentations/segmentations/create/rule-segemt.md)
       * [查看分群详情页](product-manual/user-warehouse/segmentations/segmentations/details.md)
       * [常见问题](product-manual/user-warehouse/segmentations/segmentations/faq.md)
     * [用户细查](product-manual/user-warehouse/segmentations/userinsights/README.md)
