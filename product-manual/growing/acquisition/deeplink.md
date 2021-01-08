@@ -30,7 +30,7 @@ SDK 端配置：[iOS 端](https://docs.growingio.com/docs/developer-manual/sdkin
 
 Universal Links 配置：[配置方法​](https://docs.growingio.com/v3/product-manual/growing/product-configuration/deeplink#22-universal-links-pei-zhi)​
 
-App Links 配置：[配置方法](https://docs.growingio.com/docs/product-manual/growing/ads/advance/deeplink#32-applinks-pei-zhi)
+App Links 配置：[配置方法](https://docs.growingio.com/v3/product-manual/growing/product-configuration/deeplink#32-applinks-pei-zhi)
 
 ## 新建监测链接
 
