@@ -28,7 +28,7 @@ SDK 端配置：[iOS 端](https://docs.growingio.com/docs/developer-manual/sdkin
 
 为获得更好的用户使用体验，GrowingIO 同时建议您在 iOS 下开启 Universal Links 、在 Android 下开启 App Links ，该两项技术为 Apple 与 Google 提供的原生方案，使用该技术将在其系统生态中将获得更流畅的跳转体验。
 
-Universal Links 配置：[配置方法​](https://docs.growingio.com/docs/product-manual/growing/ads/advance/deeplink#22-universal-links-pei-zhi)​
+Universal Links 配置：[配置方法​](https://docs.growingio.com/v3/product-manual/growing/product-configuration/deeplink#22-universal-links-pei-zhi)​
 
 App Links 配置：[配置方法](https://docs.growingio.com/docs/product-manual/growing/ads/advance/deeplink#32-applinks-pei-zhi)
 
