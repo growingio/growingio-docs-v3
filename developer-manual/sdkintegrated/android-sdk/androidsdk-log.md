@@ -18,6 +18,12 @@ description: Android SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.8.25</td>
+      <td style="text-align:left">&#x7531;&#x4E8E;&#x9690;&#x79C1;&#x534F;&#x8BAE;&#x5EF6;&#x8FDF;&#x6253;&#x5F00;&#x6570;&#x636E;&#x91C7;&#x96C6;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x6FC0;&#x6D3B;&#x7B49;&#x4E8B;&#x4EF6;&#x7684;&#x91C7;&#x96C6;</td>
+      <td
+      style="text-align:left">2021-01-12</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.8.24</td>
       <td style="text-align:left">&#x4F18;&#x5316;&#x591A;&#x7EBF;&#x7A0B;&#x95EE;&#x9898;</td>
       <td style="text-align:left">2020-12-08</td>
