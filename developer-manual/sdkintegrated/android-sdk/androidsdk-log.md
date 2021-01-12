@@ -19,9 +19,11 @@ description: Android SDK更新日志
   <tbody>
     <tr>
       <td style="text-align:left">2.8.25</td>
-      <td style="text-align:left">&#x7531;&#x4E8E;&#x9690;&#x79C1;&#x534F;&#x8BAE;&#x5EF6;&#x8FDF;&#x6253;&#x5F00;&#x6570;&#x636E;&#x91C7;&#x96C6;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x6FC0;&#x6D3B;&#x7B49;&#x4E8B;&#x4EF6;&#x7684;&#x91C7;&#x96C6;</td>
-      <td
-      style="text-align:left">2021-01-12</td>
+      <td style="text-align:left">
+        <p>1.&#x7531;&#x4E8E;&#x9690;&#x79C1;&#x534F;&#x8BAE;&#x5EF6;&#x8FDF;&#x6253;&#x5F00;&#x6570;&#x636E;&#x91C7;&#x96C6;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x6FC0;&#x6D3B;&#x7B49;&#x4E8B;&#x4EF6;&#x7684;&#x91C7;&#x96C6;</p>
+        <p>2.&#x4FEE;&#x590D;&#x6781;&#x7AEF;&#x60C5;&#x51B5;&#x4E0B;&#x5207;&#x6362;&#x7528;&#x6237;&#x540E;&#x65E0;&#x6CD5;&#x66F4;&#x65B0;session</p>
+      </td>
+      <td style="text-align:left">2021-01-12</td>
     </tr>
     <tr>
       <td style="text-align:left">2.8.24</td>
