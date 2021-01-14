@@ -12,6 +12,15 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.1.42</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x89E3;&#x51B3; IE &#x4E0B; Select &#x7EC4;&#x4EF6;&#x517C;&#x5BB9;&#x95EE;&#x9898;</li>
+        </ol>
+      </td>
+      <td style="text-align:left">2021-01-14</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.1.41</td>
       <td style="text-align:left">
         <ol>
