@@ -10,6 +10,17 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">3.6.1</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x65B0;&#x589E; comAsPage &#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x6539;&#x914D;&#x7F6E;&#x9879;&#x4E3A;
+            true &#x5C06; component &#x5F53;&#x505A; page &#x5904;&#x7406;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;
+            false&#xFF0C;&#x4EC5;&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#x751F;&#x6548;&#x3002;</li>
+        </ol>
+      </td>
+      <td style="text-align:left">2021-01-20</td>
+    </tr>
+    <tr>
       <td style="text-align:left">3.5.9</td>
       <td style="text-align:left">
         <p></p>
