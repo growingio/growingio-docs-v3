@@ -12,6 +12,16 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.1.43</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x534A;&#x81EA;&#x52A8;&#x57CB;&#x70B9;&#x589E;&#x52A0; data-gio-imp-attrs
+            &#x914D;&#x7F6E;&#xFF0C;&#x652F;&#x6301;&#x66F4;&#x4E30;&#x5BCC;&#x7684;&#x4E8B;&#x4EF6;&#x53D8;&#x91CF;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#x3002;</li>
+        </ol>
+      </td>
+      <td style="text-align:left">2021-01-29</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.1.42</td>
       <td style="text-align:left">
         <ol>

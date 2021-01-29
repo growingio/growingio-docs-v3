@@ -6,6 +6,7 @@
 
 | 无埋点SDK版本 | 特性 |
 | :--- | :--- |
+| 2.1.43 及以上 | 新增  data-gio-imp-attrs 属性支持 KV 和 json 格式的事件变量配置 |
 | 2.1.41 及以上 | 支持驼峰命名埋点事件变量，如事件变量为 fooBar 埋点时为 data-gio-track-foo-bar |
 | 2.1.40 及以上 | 支持半自动埋点，仅支持全小写埋点事件变量 |
 
@@ -84,12 +85,15 @@ GIO 推荐广告位在DOM的最底部，需要用户滑动才能看到，但是�
 
 ### 标记半自动化采集元素
 
-使用此方法标记元素的浏览时，请使用WebDebugger插件验证cstm事件。
+使用此方法标记元素的浏览时，请使用 WebDebugger 插件验证 cstm 事件。
 
 ```markup
 <body>
     <div>
-        <h2 data-gio-imp-track='testImp' data-gio-track-foo='bar' data-gio-track-baz='qux'>标记元素并带上两个事件变量</h2>
+        <h2 data-gio-imp-track='testImp' 
+        data-gio-track-foo='bar' 
+        data-gio-track-Baz='QUX'
+        >标记元素并带上两个事件变量</h2>
     </div>
  </body>
 ```
@@ -97,7 +101,69 @@ GIO 推荐广告位在DOM的最底部，需要用户滑动才能看到，但是�
 以上示例相当于在用户元素出现在可视区域时，我们会对应的执行以下对应的API调用。
 
 ```markup
-gio('track', 'testImp', { foo: 'bar', baz: 'qux'})
+gio('track', 'testImp', { foo: 'bar', baz: 'QUX'})
+```
+
+### 通过 data-gio-imp-attrs 配置事件属性
+
+原来利用 **data-gio-track-xxx** 的方式配置的埋点事件变量会被统一转化为小写，与定义的事件变量的大小写不同，导致数据无法统计。为解决这一问题，增加了 **data-gio-imp-attrs** 配置方式，支持更复杂的配置规则。
+
+{% hint style="warning" %}
+注意两种事件变量配置方式不能同时使用。
+{% endhint %}
+
+其用法如下：
+
+```markup
+<body>
+    <div>
+        <h2 data-gio-imp-track='testImp' 
+        data-gio-imp-attrs='foo:bar,BAZ:QUX,Empty:'>
+        标记元素并带上三个事件变量</h2>
+    </div>
+ </body>
+```
+
+以上示例相当于在用户元素出现在可视区域时，我们会对应的执行以下对应的API调用。
+
+```markup
+// 大小写被原样保留
+gio('track', 'testImp', { foo: 'bar', BAZ: 'QUX', Empty:''}) 
+```
+
+{% hint style="info" %}
+**data-gio-imp-attrs** 的配置格式为 'Key1:Value1,Key2:Value2'  的字符串，即通过英文冒号\(:\) 分割键和值，通过英文逗号\(,\) 分割不同的键值对。
+
+直通在初始化 SDK 的时候通过配置项 **`impAttrSeparator`**，指定其他分割符，请注意分隔符不要指定为英文冒号\(:\)，这是键和值的分隔符。
+
+```markup
+window.gio('init','your projectID', {
+    manualImp: true,
+    impAttrSeparator: ';'
+ })
+// 或者
+window.gio('config', {
+    manualImp: true,
+    impAttrSeparator: '|'
+})
+```
+{% endhint %}
+
+data-gio-imp-attrs 还支持指定 JSON 字符串来配置事件变量，当 value 中包含英文冒号`:` 时可以使用着各种方式，其格式如下：
+
+```markup
+<body>
+    <div>
+        <h2 data-gio-imp-track='testImp' 
+        data-gio-imp-attrs='{"foo":"bar:Bar:BAR","BAZ":"QUX,ABC","Empty":""}'>
+        标记元素并带上三个事件变量</h2>
+    </div>
+ </body>
+```
+
+```markup
+// 大小写被原样保留
+gio('track', 'testImp', { foo: 'bar:Bar:BAR', BAZ: 'QUX,ABC', Empty:''}) 
 ```
 
 ### 配置采集开关
