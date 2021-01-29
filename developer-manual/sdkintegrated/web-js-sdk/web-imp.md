@@ -134,7 +134,7 @@ gio('track', 'testImp', { foo: 'bar', BAZ: 'QUX', Empty:''})
 {% hint style="info" %}
 **data-gio-imp-attrs** 的配置格式为 'Key1:Value1,Key2:Value2'  的字符串，即通过英文冒号\(:\) 分割键和值，通过英文逗号\(,\) 分割不同的键值对。
 
-直通在初始化 SDK 的时候通过配置项 **`impAttrSeparator`**，指定其他分割符，请注意分隔符不要指定为英文冒号\(:\)，这是键和值的分隔符。
+可以在初始化 SDK 的时候通过配置项 **`impAttrSeparator`**指定其他分割符。请注意分隔符不要指定为英文冒号\(:\)，因为这是键和值的分隔符。
 
 ```markup
 window.gio('init','your projectID', {
