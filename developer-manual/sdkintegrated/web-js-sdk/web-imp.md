@@ -149,7 +149,7 @@ window.gio('config', {
 ```
 {% endhint %}
 
-data-gio-imp-attrs 还支持指定 JSON 字符串来配置事件变量，当 value 中包含英文冒号`:` 时可以使用着各种方式，其格式如下：
+data-gio-imp-attrs 还支持指定 JSON 字符串来配置事件变量，当 value 中包含英文冒号`:` 时可以使用着这种方式，其格式如下：
 
 ```markup
 <body>
