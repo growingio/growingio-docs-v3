@@ -106,10 +106,10 @@ gio('track', 'testImp', { foo: 'bar', baz: 'QUX'})
 
 ### 通过 data-gio-imp-attrs 配置事件属性
 
-原来利用 **data-gio-track-xxx** 的方式配置的埋点事件变量会被统一转化为小写，与定义的事件变量的大小写不同，导致数据无法统计。为解决这一问题，增加了 **data-gio-imp-attrs** 配置方式，支持更复杂的配置规则。
+原来利用 **data-gio-track-xxx** 的方式配置的埋点事件变量会被统一转化为小写，与定义的事件变量的大小写不同，导致数据无法统计。为解决这一问题，增加了 **data-gio-imp-attrs** 配置方式，支持更加丰富灵活的配置规则。
 
 {% hint style="warning" %}
-注意两种事件变量配置方式不能同时使用。
+注意这两种事件变量配置方式不能同时使用。
 {% endhint %}
 
 其用法如下：
@@ -121,7 +121,7 @@ gio('track', 'testImp', { foo: 'bar', baz: 'QUX'})
         data-gio-imp-attrs='foo:bar,BAZ:QUX,Empty:'>
         标记元素并带上三个事件变量</h2>
     </div>
- </body>
+</body>
 ```
 
 以上示例相当于在用户元素出现在可视区域时，我们会对应的执行以下对应的API调用。
