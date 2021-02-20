@@ -81,7 +81,7 @@ POST
 | userproperty2 | string | 否 | 在GrowingIO系统内定义的用户属性（如user\_name） |
 
 {% hint style="success" %}
-**body内的userProperty1-N为您在GrowingIO系统内定义的用户属性的key，如gender、user\_name等。支持使用数组的方式一次上传多条数据，一次性最多上传100条，body大小的最大限制为2M。**
+**body内的userProperty1-N为您在GrowingIO系统内定义的用户属性的key，如gender、user\_name等。支持使用数组的方式一次上传多条数据（建议单次上报条数小于100条），body大小的最大限制为2M。**
 {% endhint %}
 {% endtab %}
 
