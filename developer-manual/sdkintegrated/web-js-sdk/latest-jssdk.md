@@ -116,24 +116,24 @@ data-growing-idx属性需要赋值，建议传不为0的纯数字。
 
 更多的位置信息规则，请参考[第2节：位置规则](https://sishen.gitbooks.io/gio-js-book/5/2.html)。
 
-### 4. 设置数据采集黑名单（growing-ignore）
+### 4. 设置数据采集黑名单（data-growing-ignore）
 
 如果你希望过滤一些内容，可以在网站 DOM 结点上设置 growing-ignore 属性，这样这个容器里所有的元素的浏览量和点击量都不会被采集。
 
 代码示例：
 
 ```aspnet
-<div growing-ignore='true'>
+<div data-growing-ignore='true'>
  …
 </div>
 ```
 
-### 5. 开启输入文本框内容采集（growing-track）
+### 5. 开启输入文本框内容采集（data-growing-track）
 
 由于输入文本框可能涉及一些隐私信息，比如账号、密码等，GrowingIO在采集数据的时候默认不采集输入文本框的数据。如果你希望采集某些文本框输入内容，比如搜索词，可以在input标签中设置growing-track属性，这样该文本框中的输入内容就会被采集到。如果input类型是password，即使开启内容采集，也不会采集该文本框的输入内容。
 
 ```aspnet
-<input type='text' growing-track='true' />
+<input type='text' data-growing-track='true' />
 ```
 
 ## 4. 自定义数据上传
