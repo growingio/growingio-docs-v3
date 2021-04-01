@@ -12,6 +12,27 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.1.46</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x652F;&#x6301; file:// &#x534F;&#x8BAE;&#x3002;&#x9700;&#x8981;&#x5148;&#x8BBE;&#x7F6E;
+            window._gr_ignore_local_rule=true;</li>
+        </ol>
+      </td>
+      <td style="text-align:left">2021-04-01</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">2.1.45</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x4FEE;&#x590D; touch &#x63A5;&#x53E3;&#x5BFC;&#x81F4; vst &#x4E8B;&#x4EF6;&#x591A;&#x53D1;&#x95EE;&#x9898;&#xFF1B;</li>
+          <li>&#x4FEE;&#x590D;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B; vst &#x548C;
+            page &#x5C11;&#x53D1;&#x95EE;&#x9898;</li>
+        </ol>
+      </td>
+      <td style="text-align:left">2021-03-03</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.1.43</td>
       <td style="text-align:left">
         <ol>
