@@ -25,6 +25,12 @@
 <!-- End GrowingIO Analytics code version: 2.1 -->
 ```
 
+{% hint style="warning" %}
+ Web JS SDK 默认是不会采集本地页面（域名为 **localhost** 或者 **file://** 协议），如果您希望 SDK 采集本地页面，需要在集成 SDK 代码之前添加如下代码：
+
+`window._gr_ignore_local_rule=true; //开启本地页面采集`
+{% endhint %}
+
 ## 2. 配置系统变量
 
 设置系统变量的代码请插入上述追踪代码的 custom page code 部分，在 init 和 send 中间。
