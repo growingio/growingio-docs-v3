@@ -5,7 +5,7 @@
 API Token管理功能可直接由系统利用项目的公钥和私钥自动生成Token，省去了您频繁计算导致的错误、失效等问题。
 
 {% hint style="warning" %}
-为了您的数据安全，GrowingIO 以取消利用项目公钥，使用代码创建 Token，请您使用GrowingIO平台生成的 Token。
+为了您的数据安全，GrowingIO 已取消利用项目公钥，使用代码创建 Token，请您使用GrowingIO平台生成的 Token。
 {% endhint %}
 
 一**. 进入页面：**选择项目配置，在项目配置界面选择 **API token管理** 页签。
@@ -36,7 +36,7 @@ API Token管理功能可直接由系统利用项目的公钥和私钥自动生�
 
 ## 管理Token
 
-修改描述：单击  ，可修改当前Token的描述。
+修改描述：单击 ![](../../../.gitbook/assets/bian-ji-icon.png) ，可修改当前Token的描述。
 
-删除：单击  ，可以删除当前Token，删除后该Token即失效。
+删除：单击 ![](../../../.gitbook/assets/shan-chu-icon.png) ，可以删除当前Token，删除后该Token即失效。
 
