@@ -99,7 +99,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 {% tab title="Swift" %}
 ```swift
 import UIKit
-import GrowingCoreKit
+import GrowingAutoTrackKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
