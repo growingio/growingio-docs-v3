@@ -162,17 +162,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 若您在 AppDelegate 中实现了以下一个或多个方法，请在已实现的函数中，调用`[Growing handleUrl:]`
 
-```swift
+{% tabs %}
+{% tab title="Objective-C" %}
+```objectivec
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options
 ```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool
+func application(_ application: UIApplication, handleOpen url: URL) -> Bool
+func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Boolw
+```
+{% endtab %}
+{% endtabs %}
 
 若以上所有方法均未实现，请实现以下方法并调用`[Growing handleUrl:]`
 
+{% tabs %}
+{% tab title="Objective-C" %}
 ```swift
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotatio
 ```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool
+```
+{% endtab %}
+{% endtabs %}
 
 ## 2. 重要配置
 
