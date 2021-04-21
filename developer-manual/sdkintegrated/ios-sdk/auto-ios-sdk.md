@@ -80,6 +80,8 @@ GrowingIO iOS SDK 包含以下2个组件SDK:
 
 > 在 AppDelegate 中引入`#import "Growing.h"`并添加初始化方法。
 
+{% tabs %}
+{% tab title="Objective-C" %}
 ```swift
 #import "Growing.h"
 - (BOOL)application:(UIApplication *)application
@@ -92,6 +94,28 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
       // 开启Growing调试日志 可以开启日志
       // [Growing setEnableLog:YES];
 ```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+import UIKit
+import GrowingCoreKit
+
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
+        Growing.start(withAccountId: "您的项目ID")
+        return true
+    }
+    
+    ...
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="warning" %}
 请确保将代码添加在上述位置，添加到其他方法或异步block中可能导致数据不准确。
