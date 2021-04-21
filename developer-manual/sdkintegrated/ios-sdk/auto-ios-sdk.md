@@ -129,6 +129,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 因为您代码的复杂程度以及iOS SDK的版本差异，有时候 \[Growing handleUrl:url\] 并没有被调用。请在各个平台上调试这段代码，确保当App被URL scheme唤醒之后，该函数能被调用到。
 {% endhint %}
 
+{% tabs %}
+{% tab title="Objective-C" %}
 ```swift
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
@@ -141,6 +143,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
  ...
 }
 ```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        if (Growing.handle(url)) {
+            return true
+        } else {
+            return false
+        }
+    }
+```
+{% endtab %}
+{% endtabs %}
 
 常用示例：
 
