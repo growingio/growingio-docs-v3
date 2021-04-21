@@ -116,6 +116,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 请确保将代码添加在上述位置，添加到其他方法或异步block中可能导致数据不准确。
 {% endhint %}
 
+{% hint style="info" %}
+手动集成或者三方框架集成
+
+对于手动集成，或者Flutter，Cordova创建的工程，swift调用OC需要设置一个bridge header，首先创建一个头文件，例如叫做 `BridgingHeader.h`
+
+```text
+#ifndef BridgingHeader_h
+#define BridgingHeader_h
+#import <GrowingCoreKit/GrowingCoreKit.h>
+#endif /* BridgingHeader_h */
+```
+
+然后选择 `target->build settings->Objective-c Bridging Header` 添加此头文件的 `相对路径`，即可在`AppDelegate.swift`中引入`import GrowingCoreKit`
+{% endhint %}
+
 ### 4.添加代码
 
 {% hint style="warning" %}
