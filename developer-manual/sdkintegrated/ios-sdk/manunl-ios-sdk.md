@@ -155,13 +155,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 {% tab title="Swift" %}
 ```swift
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        if (Growing.handle(url)) {
-            return true
-        } else {
-            return false
-        }
+func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+    ...
+    if (Growing.handle(url)) {
+        return true
     }
+    return false
+    ...
+}
 ```
 {% endtab %}
 {% endtabs %}
