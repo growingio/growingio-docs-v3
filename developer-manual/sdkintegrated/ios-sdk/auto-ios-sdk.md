@@ -337,6 +337,45 @@ GrowingIO SDK 针对欧盟区的一般数据保护法（GDPR）提供了以下�
 >
 > GrowingIO 使用 IDFA 来做来源管理激活设备的精确匹配，让你更好的衡量广告效果。如您不希望启用IDFA，可以选择不引入 AdSupport.framework
 
+#### 关于权限获取
+
+* 对于iOS 14之前，你无需主动获取 `广告标识IDFA` 的权限
+* 对于iOS 14之后，你需要使用如下方法来开启你的 `广告标识IDFA` 的权限
+
+1. Plist 文件中添加 `NSUserTrackingUsageDescription`
+
+   ```text
+   <key>NSUserTrackingUsageDescription</key>
+   <string>GrowingIO测试demo 需要使用你的广告标识信息以用于数据追踪分析</string> //描述内容请根据App修改
+   ```
+
+2. 导入框架 `#import <AppTrackingTransparency/AppTrackingTransparency.h>`
+3. 调用获取权限代码
+
+   ```text
+       if (@available(iOS 14, *)) {
+           // iOS14及以上版本需要先请求权限
+           [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+               switch (status) {
+                   case ATTrackingManagerAuthorizationStatusDenied:
+                       //用户拒绝向App授权
+                       break;
+                   case ATTrackingManagerAuthorizationStatusAuthorized:
+                       //用户同意向App授权
+                       break;
+                   case ATTrackingManagerAuthorizationStatusNotDetermined:
+                       //用户未做选择或未弹窗
+                       break;
+                   case ATTrackingManagerAuthorizationStatusRestricted:
+                       //用户在系统级别开启了限制广告追踪
+                       break;
+                   default:
+                       break;
+               }
+           }];
+       }
+   ```
+
 ### 12. 采集推送
 
 在**IOS SDK 2.6.3** 版本， 支持采集用户**点击**本应用的通知的题和内容。此功能默认关闭，如需开启，请在 Application 初始化 GrowingIO 中设置，例如：
