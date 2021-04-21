@@ -85,6 +85,7 @@
       * [自定义数据上传API](developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/customize-api.md)
     * [iOS半自动采集浏览事件](developer-manual/sdkintegrated/ios-sdk/ios-imp.md)
     * [iOS SDK升级指导](developer-manual/sdkintegrated/ios-sdk/ios-sdk-update.md)
+    * [iOS SDK合规说明](developer-manual/sdkintegrated/ios-sdk/ios-sdk-he-gui-shuo-ming.md)
     * [常见问题](developer-manual/sdkintegrated/ios-sdk/iossdk-faq.md)
     * [更新日志](developer-manual/sdkintegrated/ios-sdk/iossdk-log.md)
     * [用户运营iOS SDK地址](developer-manual/sdkintegrated/ios-sdk/yong-hu-yun-ying-ios-sdk-di-zhi.md)
