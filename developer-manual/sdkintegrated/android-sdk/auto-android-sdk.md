@@ -26,10 +26,16 @@ App适配最低系统版本：Android 4.2 及以上
 
 在project级别的build.gradle文件中添加`vds-gradle-plugin`依赖。
 
+{% hint style="info" %}
+2.9.0版本后仓库从JCenter迁移到了Maven Central, 请使用mavenCentral\(\)替换jcenter\(\)
+{% endhint %}
+
 ```javascript
 buildscript {
     repositories {
         jcenter()
+        // sdk2.9.0版本开始迁移到了Maven Central
+        mavenCentral()
         google()
     }
     dependencies {

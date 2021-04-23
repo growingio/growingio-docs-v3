@@ -336,6 +336,20 @@ GrowingIO所有API都需要在主线程调用。
       style="text-align:left">&gt;=2.8.5</td>
         <td style="text-align:left">-</td>
     </tr>
+    <tr>
+      <td style="text-align:left">bridgeForWebView</td>
+      <td style="text-align:left">&#x63D0;&#x4F9B;&#x539F;&#x751F;&#x7684; WebView bridge&#x4F9B;hybrid&#x8C03;&#x7528;,
+        &#x652F;&#x6301;hybrid&#x4E8B;&#x4EF6;&#x53D1;&#x9001;</td>
+      <td style="text-align:left">-</td>
+      <td style="text-align:left">&gt;=2.9.0</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">bridgeForX5WebView</td>
+      <td style="text-align:left">&#x63D0;&#x4F9B;&#x817E;&#x8BAF;X5&#x5185;&#x6838;&#x7684;WebView bridge&#x4F9B;hybrid&#x8C03;&#x7528;,
+        &#x652F;&#x6301;hybrid&#x4E8B;&#x4EF6;&#x53D1;&#x9001;</td>
+      <td style="text-align:left">-</td>
+      <td style="text-align:left">&gt;=2.9.0</td>
+    </tr>
   </tbody>
 </table>
 

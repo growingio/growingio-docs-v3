@@ -18,6 +18,18 @@ description: Android SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.9.0</td>
+      <td style="text-align:left">
+        <p></p>
+        <ol>
+          <li>&#x4E3A;&#x4EC5;&#x96C6;&#x6210;&#x57CB;&#x70B9;SDK&#x7528;&#x6237;&#x63D0;&#x4F9B;hybrid&#x63A5;&#x53E3;,&#x5BF9;&#x5E94;hybrid&#x9875;&#x9762;&#x9700;&#x96C6;&#x6210;gio_hybrid_track.js</li>
+          <li>&#x4ED3;&#x5E93;&#x4ECE;JCenter&#x8FC1;&#x79FB;&#x5230;MavenCentral</li>
+          <li>&#x63D0;&#x9AD8;sdk&#x7A33;&#x5B9A;&#x6027;</li>
+        </ol>
+      </td>
+      <td style="text-align:left">2021-04-23</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.8.25</td>
       <td style="text-align:left">
         <p>1.&#x7531;&#x4E8E;&#x9690;&#x79C1;&#x534F;&#x8BAE;&#x5EF6;&#x8FDF;&#x6253;&#x5F00;&#x6570;&#x636E;&#x91C7;&#x96C6;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x6FC0;&#x6D3B;&#x7B49;&#x4E8B;&#x4EF6;&#x7684;&#x91C7;&#x96C6;</p>

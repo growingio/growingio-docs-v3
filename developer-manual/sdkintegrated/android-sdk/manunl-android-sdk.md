@@ -25,6 +25,10 @@ App适配最低系统版本：Android 4.2 及以上
 
 ### 1. 添加依赖
 
+{% hint style="info" %}
+2.9.0版本后仓库从JCenter迁移到了Maven Central, 请使用mavenCentral\(\)替换jcenter\(\)
+{% endhint %}
+
 **在module级别的build.gradle文件中添加`vds-android-agent`依赖、项目ID和URL Scheme。**
 
 代码示例：
