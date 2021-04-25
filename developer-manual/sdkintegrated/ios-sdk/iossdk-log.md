@@ -14,6 +14,17 @@ description: iOS SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.9.0</td>
+      <td style="text-align:left">
+        <p>1. &#x4E3A;&#x4EC5;&#x96C6;&#x6210;&#x57CB;&#x70B9;SDK&#x7528;&#x6237;&#x63D0;&#x4F9B;hybrid&#x63A5;&#x53E3;,&#x5BF9;&#x5E94;hybrid&#x9875;&#x9762;&#x9700;&#x96C6;&#x6210;
+          <a
+          href="https://assets.giocdn.com/sdk/hybrid/2.0/gio_hybrid_track.js">gio_hybrid_track.js</a>
+        </p>
+        <p>2. &#x4FEE;&#x590D;&#x5728;iOS 14&#x4EE5;&#x4E0A;IDFA&#x53EF;&#x80FD;&#x83B7;&#x5F97;0000&#x5B57;&#x7B26;&#x95EE;&#x9898;</p>
+      </td>
+      <td style="text-align:left">2021-04-23</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.8.24</td>
       <td style="text-align:left">
         <p>&#x65B0;&#x529F;&#x80FD;:</p>
