@@ -82,11 +82,37 @@ gio('track', 'registerSuccess', {'gender':'male', 'age':21});
 | Value | String | 否 | 转化变量的值 |
 | conversionVariables | JSON Object | 否 | 包含转化变量的JSON对象 |
 
-```text
-// evar.set API原型gio('evar.set', key, value);gio('evar.set', conversionVariables);// evar.set API调用示例一gio('evar.set', 'campaignId'，'1234567890');// evar.set API调用示例二gio('evar.set', {'campaignId': '1234567890', 'campaignOwner':'lisi'});
+```javascript
+// evar.set API原型
+gio('evar.set', key, value);gio('evar.set', conversionVariables);
+// evar.set API调用示例一
+gio('evar.set', 'campaignId'，'1234567890');
+// evar.set API调用示例二
+gio('evar.set', {'campaignId': '1234567890', 'campaignOwner':'lisi'});
 ```
 
-### 4. 设置用户级变量（people.set） <a id="4-she-zhi-yong-hu-ji-bian-liang-peopleset"></a>
+
+
+### 3. 设置访问用户变量 <a id="4-she-zhi-yong-hu-ji-bian-liang-peopleset"></a>
+
+| 参数名称 | 参数类型 | 是否必须 | 说明 |
+| :--- | :--- | :--- | :--- |
+| key | String | 否 | 用户变量的标识符 |
+| value | String | 否 | 用户变量的值 |
+| customerVariables | JSON Object | 否 | 包含用户变量的JSON对象 |
+
+```javascript
+// visitor.set API原型
+gio('visitor.set', key, value);gio('visitor.set', customerVariables);
+// people.set API调用示例一
+gio('visitor.set', 'gender', 'male');
+//people.set API调用示例二
+gio('visitor.set', {'gender':'male', 'age':'25'});
+```
+
+
+
+### 4. 设置登录用户变量（people.set） <a id="4-she-zhi-yong-hu-ji-bian-liang-peopleset"></a>
 
 发送用户信息用于用户信息相关分析，在添加代码之前必须在打点管理界面上声明转化变量。
 
@@ -96,7 +122,24 @@ gio('track', 'registerSuccess', {'gender':'male', 'age':21});
 | value | String | 否 | 用户变量的值 |
 | customerVariables | JSON Object | 否 | 包含用户变量的JSON对象 |
 
-```text
-// people.set API原型gio('people.set', key, value);gio('people.set', customerVariables);// people.set API调用示例一gio('people.set', 'gender', 'male');//people.set API调用示例二gio('people.set', {'gender':'male', 'age':'25'});
+```javascript
+// people.set API原型
+gio('people.set', key, value);gio('people.set', customerVariables);
+// people.set API调用示例一
+gio('people.set', 'gender', 'male');
+//people.set API调用示例二
+gio('people.set', {'gender':'male', 'age':'25'});
+```
+
+### 5. 设置登录用户ID
+
+```javascript
+gio('setUserId', 'zhangsan'); 
+```
+
+### 6. 清除登录用户ID
+
+```javascript
+gio('clearUserId');
 ```
 
