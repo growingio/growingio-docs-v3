@@ -38,5 +38,15 @@
  @return YES:是deeplink链接 NO:不是deeplink链接
 */
 + (BOOL)doDeeplinkByUrl:(NSURL *)url callback:(void(^)(NSDictionary *params, NSTimeInterval processTime, NSError *error))callback;
+
+8, /**
+ 埋点bridge，SDK2.9.0开始支持
+ 代码示例
+   WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.frame];
+   [Growing bridgeForWKWebView:webView];
+   需要在 webview 初始化后调用
+*/
++ (void)bridgeForWKWebView:(WKWebView *)webView;
+
 ```
 
