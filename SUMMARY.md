@@ -115,6 +115,7 @@
     * [Java埋点SDK](developer-manual/sdkintegrated/server-sdk/java-sdk.md)
     * [PHP埋点SDK](developer-manual/sdkintegrated/server-sdk/php-sdk.md)
     * [常见问题](developer-manual/sdkintegrated/server-sdk/server-faq.md)
+  * [仅集成埋点SDK的Hybrid JS SDK](developer-manual/sdkintegrated/jin-ji-cheng-mai-dian-sdk-de-hybrid-js-sdk.md)
 * [SDK调试](developer-manual/debugging/README.md)
   * [概述](developer-manual/debugging/overview.md)
   * [Web Debugger](developer-manual/debugging/web-debugger.md)
