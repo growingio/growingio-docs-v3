@@ -72,7 +72,7 @@ gio('track', 'registerSuccess');
 gio('track', 'registerSuccess', {'gender':'male', 'age':21});
 ```
 
-### 3. 设置转化变量（evar.set） <a id="3-she-zhi-zhuan-hua-bian-liang-evarset"></a>
+### 2. 设置转化变量（evar.set） <a id="3-she-zhi-zhuan-hua-bian-liang-evarset"></a>
 
 发送一个转化信息用于高级归因分析，在添加代码之前必须在打点管理界面上声明转化变量。
 
