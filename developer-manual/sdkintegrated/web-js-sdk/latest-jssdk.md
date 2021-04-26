@@ -77,7 +77,7 @@ div作为容器标签时，以id=1的div作为容器进行圈选的代码示例�
 
 ### 2. 设置采集文本信息（data-growing-title）
 
-对于一些图片或者区块，可以通过设置title或者data-growing-title属性来设置采集点文本，其中title的优先级高于data-growing-title。
+对于一些图片或者区块，可以通过设置data-growing-title属性来设置采集点文本
 
 代码示例：
 
