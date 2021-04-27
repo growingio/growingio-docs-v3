@@ -12,7 +12,7 @@
 
 {% page-ref page="query-productid/" %}
 
-{% page-ref page="minp-api.md" %}
+{% page-ref page="query-productid/definition/minp-api.md" %}
 
 {% page-ref page="manunl-api.md" %}
 

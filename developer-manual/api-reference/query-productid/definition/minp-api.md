@@ -1,4 +1,4 @@
-# 微信小程序码&小程序监测链接创建服务API
+# 新建监测链接（微信小程序）
 
 {% hint style="success" %}
 微信小程序二维码，是调用腾讯微信小程序接口生成的。微信提供A、B两个接口创建小程序码；提供C接口创建二维码。
@@ -22,7 +22,7 @@ POST
 
 ## 请求头参数
 
-公共头部请参考[公共请求头参数](authenticate.md)。
+公共头部请参考[公共请求头参数](../../authenticate.md)。
 
 名称
 
@@ -40,11 +40,11 @@ POST
 
 | body参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
-| productId | string | 是 | 对应微信小程序应用ID，在[查询应用ID](query-productid/definition/cha-xun-ying-yong-id.md)中获取。 |
+| productId | string | 是 | 对应微信小程序应用ID，在[查询应用ID](cha-xun-ying-yong-id.md)中获取。 |
 | buildQrCode | boolean | 是 | 是否创建二维码 |
 | redirectUrl | string | 是 | 跳转链接 |
-| campaignId | string | 是 | 广告活动ID，在[查询推广活动I](query-productid/definition/querycampaignid.md) 中获取。 |
-| channelId | string | 是 | 推广渠道ID，在[查询推广渠道ID](query-productid/definition/querychannelid.md) 中获取。 |
+| campaignId | string | 是 | 广告活动ID，在[查询推广活动I](querycampaignid.md) 中获取。 |
+| channelId | string | 是 | 推广渠道ID，在[查询推广渠道ID](querychannelid.md) 中获取。 |
 | utmMedium | string | 否 | utm medium 参数 |
 | utmContent | string | 否 | utm content 参数 |
 | utmTerm | string | 否 | utm term 参数 |
@@ -68,9 +68,9 @@ POST
 | channelId | string | 推广渠道ID |
 | channelName | string | 推广渠道名称 |
 | utmMedium | string | utm medium 参数 |
-| utmContent | null | utm content 参数 |
-| utmTerm | null | utm term 参数 |
-| comments | null | 备注 |
+| utmContent | string | utm content 参数 |
+| utmTerm | string | utm term 参数 |
+| comments | string | 备注 |
 | status | string | 状态 |
 | creatorId | string | 创建人ID |
 | creatorName | string | 创建人名称 |
