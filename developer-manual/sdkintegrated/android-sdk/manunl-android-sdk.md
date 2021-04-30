@@ -42,7 +42,7 @@ android {
 }
 dependencies {
     //GrowingIO 埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:track-2.8.23'
+    implementation 'com.growingio.android:vds-android-agent:track-2.9.0'
 }
 ```
 
@@ -105,7 +105,9 @@ dependencies {
 
 代码示例
 
-```javascript
+{% tabs %}
+{% tab title="Java" %}
+```java
 public class MyApplication extends Application {
     @Override
     public void onCreate() {
@@ -116,6 +118,22 @@ public class MyApplication extends Application {
     }
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+class MyApplication : Application() {
+    override fun onCreate() {
+        super.onCreate()
+        GrowingIO.startWithConfiguration(
+            this, Configuration()
+                .setChannel("XXX应用商店")
+        )
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 1. 请确保将代码添加在`Application`的`onCreate`方法中，添加到其他方法中可能导致数据不准确。
@@ -182,12 +200,23 @@ setUploadExceptionEnable(boolean uploadExceptionEnable)
 
 #### 5.3 代码示例 <a id="53-dai-ma-shi-li"></a>
 
-```text
-GrowingIO.startWithConfig(this, Configuration()
-                .setUploadExceptionEnable(true)
-                ...
-                );
+{% tabs %}
+{% tab title="Java" %}
+```java
+GrowingIO.startWithConfiguration(this, Configuration()
+         .setUploadExceptionEnable(true)
+);
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+GrowingIO.startWithConfiguration(this, Configuration()
+    .setUploadExceptionEnable(true)
+)
+```
+{% endtab %}
+{% endtabs %}
 
 ## 2. 重要配置
 
@@ -209,6 +238,8 @@ setDebugMode(boolean debugMode);
 
 **示例代码**
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 GrowingIO.startWithConfiguration(this,new Configuration()
     //BuildConfig.DEBUG 这样配置就不会上线忘记关闭
@@ -216,6 +247,17 @@ GrowingIO.startWithConfiguration(this,new Configuration()
     ...
     );
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+GrowingIO.startWithConfiguration(
+    this, Configuration() //BuildConfig.DEBUG 这样配置就不会上线忘记关闭
+        .setDebugMode(BuildConfig.DEBUG)
+)
+```
+{% endtab %}
+{% endtabs %}
 
 ### 2. 设置Test模式（setTestMode）
 
@@ -235,6 +277,8 @@ setTestMode(boolean testMode);
 
 **示例代码**
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 GrowingIO.startWithConfiguration(this,new Configuration()
     //BuildConfig.DEBUG 这样配置就不会上线忘记关闭
@@ -242,6 +286,17 @@ GrowingIO.startWithConfiguration(this,new Configuration()
     ...
     );
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+GrowingIO.startWithConfiguration(
+    this, Configuration() //BuildConfig.DEBUG 这样配置就不会上线忘记关闭
+        .setTestMode(BuildConfig.DEBUG)
+)
+```
+{% endtab %}
+{% endtabs %}
 
 ### 3. 采集GPS数据（setGeoLocation）
 
@@ -290,11 +345,24 @@ setMutiprocess(boolean setMutiprocess);
 
 示例代码：
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 GrowingIO.startWithConfiguration(this, new Configuration()
                   .setMutiprocess(true)
                   );
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+GrowingIO.startWithConfiguration(
+    this, Configuration()
+        .setMutiprocess(true)
+)
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 1. 为什么不默认支持多进程？
@@ -321,16 +389,34 @@ GrowingIO.startWithConfiguration(this, new Configuration()
 
 在 GrowingIO SDK 代码初始化部分配置。
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 GrowingIO.startWithConfiguration(this, new Configuration()
                 .setDeeplinkCallback(new DeeplinkCallback() {
                             @Override
-                            public void onReceive(Map<String, String> params, int status) { 
+                            public void onReceive(Map<String, String> params, int status, long time) { 
                             // 这里接收您的参数，匹配键值对，跳转指定 APP 内页面
                             }
                         })
             );
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+GrowingIO.startWithConfiguration(
+    this, Configuration()
+        .setDeeplinkCallback(object : DeeplinkCallback {
+
+            override fun onReceive(params: MutableMap<String, String>?, status: Int, longTime: Long) {
+                // 这里接收您的参数，匹配键值对，跳转指定 APP 内页面
+            }
+        })
+)
+```
+{% endtab %}
+{% endtabs %}
 
 **返回值说明**
 
@@ -341,11 +427,13 @@ GrowingIO.startWithConfiguration(this, new Configuration()
 
 **示例代码**
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 GrowingIO.startWithConfiguration(this, new Configuration()
     .setDeeplinkCallback(new DeeplinkCallback() {
                 @Override
-                public void onReceive(Map<String, String> params, int status) {
+                public void onReceive(Map<String, String> params, int status,long time) {
                      if (status == DeeplinkCallback.SUCCESS) {
                         //获得您的自定义参数，处理您的相关逻辑
                         Log.d("TestApplication", "DeepLink 参数获取成功，params" + params.toString());
@@ -354,6 +442,21 @@ GrowingIO.startWithConfiguration(this, new Configuration()
             })
 );
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+GrowingIO.startWithConfiguration(this, Configuration()
+    .setDeeplinkCallback { params, status, time ->
+        if (status == DeeplinkCallback.SUCCESS) {
+            //获得您的自定义参数，处理您的相关逻辑
+            Log.d("TestApplication", "DeepLink 参数获取成功，params$params")
+        }
+    }
+)
+```
+{% endtab %}
+{% endtabs %}
 
 ## 3. 自定义数据上传
 

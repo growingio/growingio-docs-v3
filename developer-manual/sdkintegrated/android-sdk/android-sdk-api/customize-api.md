@@ -247,6 +247,8 @@ GrowingIO.getInstance().setVisitor(JSONObject visitorVar)
   <tbody></tbody>
 </table>
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 //setVisitor API调用示例
 GrowingIO gio = GrowingIO.getInstance();
@@ -254,6 +256,18 @@ jsonObject.put("gender", "male");
 jsonObject.put("age", "21");
 gio.setVisitor(jsonObject);
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+//setVisitor API调用示例
+val gio = GrowingIO.getInstance()
+jsonObject.put("gender", "male")
+jsonObject.put("age", "21")
+gio.setVisitor(jsonObject)
+```
+{% endtab %}
+{% endtabs %}
 
 **检验数据发送日志示例**
 
@@ -380,6 +394,8 @@ gio.setPageVariableX(Fragment fragment, JSONObject pageLevelVariables);
 
 **示例代码**
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 // setPageVariable API调用示例
 GrowingIO gio = GrowingIO.getInstance();
@@ -388,6 +404,19 @@ jsonObject.put("gender", "male");
 jsonObject.put("age", "21");
 gio.setPageVariable(myActivity, jsonObject);
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+// setPageVariable API调用示例
+val gio = GrowingIO.getInstance()
+val jsonObject = JSONObject()
+jsonObject.put("gender", "male")
+jsonObject.put("age", "21")
+gio.setPageVariable(myActivity, jsonObject)
+```
+{% endtab %}
+{% endtabs %}
 
 **检验数据发送日志示例：**
 
@@ -483,12 +512,26 @@ gio.setEvar(JSONObject conversionVariables);
 推荐您使用[Mobile Debugger](../../../debugging/mobile-debugger.md)，我们为您列举了应用场景和验证示例，请参考：[验证埋点事件](../../../debugging/verification/)&gt;[evar（转化变量）事件](../../../debugging/verification/evar.md)。
 {% endhint %}
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 // setEvar API调用示例一
 GrowingIO gio = GrowingIO.getInstance();
 gio.setEvar("campaignId", "1234567890");
 ```
+{% endtab %}
 
+{% tab title="Kotlin" %}
+```kotlin
+// setEvar API调用示例一
+val gio = GrowingIO.getInstance()
+gio.setEvar("campaignId", "1234567890")
+```
+{% endtab %}
+{% endtabs %}
+
+{% tabs %}
+{% tab title="Java" %}
 ```java
 // setEvar API调用示例二
 GrowingIO gio = GrowingIO.getInstance();
@@ -497,6 +540,19 @@ jsonObject.put("campaignId", "1234567890");
 jsonObject.put("campaignOwner", "Li Si");
 gio.setEvar(jsonObject);
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+// setEvar API调用示例二
+val gio = GrowingIO.getInstance()
+val jsonObject = JSONObject()
+jsonObject.put("campaignId", "1234567890")
+jsonObject.put("campaignOwner", "Li Si")
+gio.setEvar(jsonObject)
+```
+{% endtab %}
+{% endtabs %}
 
 **检验数据发送日志示例：**
 
@@ -564,12 +620,26 @@ SDK 2.4.0以上能够在Log日志中查看对应报错，之下版本无提示�
 
 **示例代码**
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 // track API调用示例一
 GrowingIO gio = GrowingIO.getInstance();
 gio.track("registerSuccess");
 ```
+{% endtab %}
 
+{% tab title="Kotlin" %}
+```kotlin
+// track API调用示例一
+val gio = GrowingIO.getInstance()
+gio.track("registerSuccess")
+```
+{% endtab %}
+{% endtabs %}
+
+{% tabs %}
+{% tab title="Java" %}
 ```java
 // track API调用示例二
 GrowingIO gio = GrowingIO.getInstance();
@@ -578,6 +648,18 @@ jsonObject.put("gender", "male");
 jsonObject.put("age", "21");
 gio.track("registerSuccess", jsonObject);
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+val gio = GrowingIO.getInstance()
+val jsonObject = JSONObject()
+jsonObject.put("gender", "male")
+jsonObject.put("age", "21")
+gio.track("registerSuccess", jsonObject)
+```
+{% endtab %}
+{% endtabs %}
 
 **检验数据发送日志示例**
 

@@ -42,7 +42,7 @@ buildscript {
         //gradle 建议版本
         classpath 'com.android.tools.build:gradle:3.2.1'
         //GrowingIO 无埋点 SDK
-        classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.8.23'
+        classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.9.0'
     }
 }
 ```
@@ -63,7 +63,7 @@ android {
 }
 dependencies {
     //GrowingIO 无埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:autotrack-2.8.23'
+    implementation 'com.growingio.android:vds-android-agent:autotrack-2.9.0'
 }
 ```
 
@@ -127,6 +127,8 @@ SDK的初始化时机必须在 Application 的 onCreate 方法中进行。
 
 请将 GrowingIO.startWithConfiguration 加在您的 Application 的 onCreate 方法中
 
+{% tabs %}
+{% tab title="Java" %}
 ```javascript
 public class MyApplication extends Application {
     @Override
@@ -140,6 +142,23 @@ public class MyApplication extends Application {
     }
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+class MyApplication : Application() {
+    override fun onCreate() {
+        super.onCreate()
+        GrowingIO.startWithConfiguration(
+            this, Configuration()
+                .trackAllFragments() // 建议使用 BuildConfig 设置
+                .setChannel("XXX应用商店")
+        )
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 1. 请确保将代码添加在`Application`的`onCreate`方法中，添加到其他方法中可能导致数据不准确。
@@ -228,12 +247,24 @@ setUploadExceptionEnable(boolean uploadExceptionEnable)
 
 #### 6.3 代码示例 <a id="53-dai-ma-shi-li"></a>
 
-```text
-GrowingIO.startWithConfig(this, new GTouchConfig()
-                .setUploadExceptionEnable(true)
-                ...
-                );
+{% tabs %}
+{% tab title="Java" %}
+```java
+GrowingIO.startWithConfiguration(this, new GTouchConfig()
+    .setUploadExceptionEnable(true)
+    ...
+);
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+GrowingIO.startWithConfiguration(this, Configuration()
+    .setUploadExceptionEnable(true)
+)
+```
+{% endtab %}
+{% endtabs %}
 
 ## 2. 重要配置
 
@@ -262,6 +293,8 @@ GrowingIO.setPageName(Activity activity, String name)
 1. 某个应用的商品列表页是用`FeedActivity`实现的，所以默认的页面名称都是`FeedActivity`。
 2. 现在我们想区分衣物类商品列表和食品类商品列表，分别看它们的浏览量，可以在`onCreate`方法中添加如下代码：
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 public class FeedActivity extends Activity {     
     @Override     
@@ -271,6 +304,19 @@ public class FeedActivity extends Activity {
      }
  }
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+class FeedActivity : Activity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        GrowingIO.getInstance().setPageName(this, "Clothing")
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 1. 必须在该`Activity`的`onCreate`方法中完成该属性的赋值操作。
@@ -356,11 +402,24 @@ setDebugMode(boolean debugMode);
 
 **示例代码**
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 GrowingIO.startWithConfiguration(this,new Configuration()
     //BuildConfig.DEBUG 这样配置就不会上线忘记关闭
     .setDebugMode(BuildConfig.DEBUG));
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+GrowingIO.startWithConfiguration(
+    this, Configuration() //BuildConfig.DEBUG 这样配置就不会上线忘记关闭
+        .setDebugMode(BuildConfig.DEBUG)
+)
+```
+{% endtab %}
+{% endtabs %}
 
 ### 9. 设置Test模式
 
@@ -380,11 +439,24 @@ setTestMode(boolean testMode);
 
 **示例代码**
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 GrowingIO.startWithConfiguration(this,new Configuration()
     //BuildConfig.DEBUG 这样配置就不会上线忘记关闭
     .setTestMode(BuildConfig.DEBUG));
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+GrowingIO.startWithConfiguration(
+    this, Configuration() //BuildConfig.DEBUG 这样配置就不会上线忘记关闭
+        .setTestMode(BuildConfig.DEBUG)
+)
+```
+{% endtab %}
+{% endtabs %}
 
 ### 10. 采集广告Banner数据
 
@@ -405,13 +477,27 @@ GrowingIO.getInstance().trackBanner(View banner,List<String> bannerDescriptions)
 
 **示例代码**
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
  //Banner 初始化代码
- ViewPager banner = (ViewPager)findViewById(R.id.banner);
+ ViewPager bannerViewPager = (ViewPager)findViewById(R.id.banner);
  ...
  //GrowingIO 采集 Banner 数据
- GrowingIO.trackBanner(banner.getViewPager(), Arrays.asList("banner 1", "banner 2", "banner 3"));
+ GrowingIO.trackBanner(bannerViewPager, Arrays.asList("banner 1", "banner 2", "banner 3"));
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+//Banner 初始化代码
+val bannerViewPager = findViewById(R.id.banner) as ViewPager
+...
+//GrowingIO 采集 Banner 数据
+GrowingIO.trackBanner(bannerViewPager, Arrays.asList("banner 1", "banner 2", "banner 3"))
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 Banner 描述和广告出现的顺序一致，通过 Log 查看或者MobileDebugger 的方式检查配置是否正确。查看 Banner clck 事件 `e` 字段中的 `v` 字段是否为您设置的 banner description。
@@ -492,10 +578,21 @@ GrowingIO.getInstance().trackEditText(EditText editText);
 
 **示例代码**
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 EditText editText = (EditText) findViewById(R.id.edit_text);
 GrowingIO.getInstance().trackEditText(editText);
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+val editText = findViewById(R.id.edit_text) as EditText
+GrowingIO.getInstance().trackEditText(editText)
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="success" %}
 * 对于密码输入框，即便标记为需要采集，SDK也会忽略不进行采集。
@@ -508,9 +605,19 @@ GrowingIO.getInstance().trackEditText(editText);
 
 GrowingIO 默认不会把`HashTag`识别成页面 URL 的一部分，对于使用`HashTag`进行页面跳转的单页面网站应用来说，可以启用它来标识页面，`HashTag`的值也会记录在页面URL中。
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 GrowingIO.startWithConfiguration(this, new Configuration().setHashTagEnable(true));
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+GrowingIO.startWithConfiguration(this, Configuration().setHashTagEnable(true))
+```
+{% endtab %}
+{% endtabs %}
 
 举例：
 
@@ -562,12 +669,26 @@ supportMultiProcessCircle(boolean smpc);
 
 示例代码：
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 GrowingIO.startWithConfiguration(this, new Configuration()
                   .supportMultiProcessCircle(true)
                   .setMutiprocess(true)
                   );
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+GrowingIO.startWithConfiguration(
+    this, Configuration()
+        .supportMultiProcessCircle(true)
+        .setMutiprocess(true)
+)
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 1. 为什么不默认支持多进程？
@@ -604,6 +725,8 @@ GrowingIO.startWithConfiguration(this, new Configuration()
 
 在 GrowingIO SDK 代码初始化部分配置。
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 //sdk >= 2.3.2 && sdk < 2.8.19
 GrowingIO.startWithConfiguration(this, new Configuration()
@@ -625,6 +748,29 @@ GrowingIO.startWithConfiguration(this, new Configuration()
                         })
             );
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+//sdk >= 2.3.2 && sdk < 2.8.19
+GrowingIO.startWithConfiguration(
+    this, Configuration()
+        .setDeeplinkCallback(object : DeeplinkCallback {
+            fun onReceive(params: Map<String?, String?>?, status: Int) {
+                // 这里接收您的参数，匹配键值对，跳转指定 APP 内页面
+            }
+        })
+)
+//sdk >= 2.8.4, 新增参数 long appAwakePassedTime 
+GrowingIO.startWithConfiguration(this, Configuration()
+    .setDeeplinkCallback { params, status, appAwakePassedTime ->
+        // 这里接收您的参数，匹配键值对，跳转指定 APP 内页面
+        // appAwakePassedTime 这个新的参数用来判定 APP 是否已经打开了很久才收到自定义参数，进而判断是否再继续跳转指定页面
+    }
+)
+```
+{% endtab %}
+{% endtabs %}
 
 返回值说明
 
@@ -656,6 +802,8 @@ GrowingIO.startWithConfiguration(this, new Configuration()
   <tbody></tbody>
 </table>
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 //sdk >= 2.3.2 && sdk < 2.8.19
 GrowingIO.startWithConfiguration(this, new Configuration()
@@ -683,11 +831,42 @@ GrowingIO.startWithConfiguration(this, new Configuration()
             })
 );
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+//sdk >= 2.3.2 && sdk < 2.8.19
+GrowingIO.startWithConfiguration(
+    this, Configuration()
+        .setDeeplinkCallback(object : DeeplinkCallback {
+            fun onReceive(params: Map<String?, String?>, status: Int) {
+                if (status == DeeplinkCallback.SUCCESS) {
+                    //获得您的自定义参数，处理您的相关逻辑
+                    Log.d("TestApplication", "DeepLink 参数获取成功，params$params")
+                }
+            }
+        })
+)
+//sdk >= 2.8.4, 新增参数 long appAwakePassedTime 
+GrowingIO.startWithConfiguration(this, Configuration()
+    .setDeeplinkCallback { params, status, appAwakePassedTime ->
+        //成功得到自定义参数，并且从 APP 打开到收到回调时间小于 1.5 秒
+        if (status == DeeplinkCallback.SUCCESS && appAwakePassedTime < 1500) {
+            //获得您的自定义参数，处理您的相关逻辑
+            Log.d("TestApplication", "DeepLink 参数获取成功，params$params")
+        }
+    }
+)
+```
+{% endtab %}
+{% endtabs %}
 
 ### 17. 采集推送配置
 
 在 **Android SDK 2.6.3** 及以上版本，支持采集通知的标题和内容，此功能默认关闭，如需开启，请在 Application 初始化 GrowingIO 中设置，例如：
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 ...
 @Override
@@ -702,6 +881,19 @@ public void onCreate() {
         ...
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+GrowingIO.startWithConfiguration(
+    this, Configuration() //如果多进程应用，需要开启GrowingIO多进程
+        .setMutiprocess(true)
+        .supportMultiProcessCircle(true) // 开启采集通知
+        .enablePushTrack()
+)
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 SDK对通知的采集仅支持 4.4 及以上机型。

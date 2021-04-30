@@ -6,11 +6,22 @@ description: 运行时 API 可对 SDK 进行采集上报数据的控制。
 
 GrowingIO为App提供运行时随意调用的API，使用方法如下：
 
+{% tabs %}
+{% tab title="Java" %}
 ```java
 // 得到 GrowingIO 实例后可以调用其中 API
 GrowingIO gio = GrowingIO.getInstance();
 gio.setUserId("张溪梦");
 ```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+val gio = GrowingIO.getInstance()
+gio.userId = "张溪梦"
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="danger" %}
 GrowingIO所有API都需要在主线程调用。

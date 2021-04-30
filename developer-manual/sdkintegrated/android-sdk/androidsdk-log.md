@@ -32,21 +32,29 @@ description: Android SDK更新日志
     <tr>
       <td style="text-align:left">2.8.25</td>
       <td style="text-align:left">
-        <p>1.&#x7531;&#x4E8E;&#x9690;&#x79C1;&#x534F;&#x8BAE;&#x5EF6;&#x8FDF;&#x6253;&#x5F00;&#x6570;&#x636E;&#x91C7;&#x96C6;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x6FC0;&#x6D3B;&#x7B49;&#x4E8B;&#x4EF6;&#x7684;&#x91C7;&#x96C6;</p>
-        <p>2.&#x4FEE;&#x590D;&#x6781;&#x7AEF;&#x60C5;&#x51B5;&#x4E0B;&#x5207;&#x6362;&#x7528;&#x6237;&#x540E;&#x65E0;&#x6CD5;&#x66F4;&#x65B0;session</p>
+        <ol>
+          <li>&#x7531;&#x4E8E;&#x9690;&#x79C1;&#x534F;&#x8BAE;&#x5EF6;&#x8FDF;&#x6253;&#x5F00;&#x6570;&#x636E;&#x91C7;&#x96C6;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x6FC0;&#x6D3B;&#x7B49;&#x4E8B;&#x4EF6;&#x7684;&#x91C7;&#x96C6;</li>
+          <li>&#x4FEE;&#x590D;&#x6781;&#x7AEF;&#x60C5;&#x51B5;&#x4E0B;&#x5207;&#x6362;&#x7528;&#x6237;&#x540E;&#x65E0;&#x6CD5;&#x66F4;&#x65B0;session</li>
+        </ol>
       </td>
       <td style="text-align:left">2021-01-12</td>
     </tr>
     <tr>
       <td style="text-align:left">2.8.24</td>
-      <td style="text-align:left">&#x4F18;&#x5316;&#x591A;&#x7EBF;&#x7A0B;&#x95EE;&#x9898;</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x4F18;&#x5316;&#x591A;&#x7EBF;&#x7A0B;&#x95EE;&#x9898;</li>
+          <li>&#x4FEE;&#x590D;&#x88AB;Google Play &#x8B66;&#x544A;&#x7684;HostnameVerifier&#x5B89;&#x5168;&#x6F0F;&#x6D1E;</li>
+        </ol>
+      </td>
       <td style="text-align:left">2020-12-08</td>
     </tr>
     <tr>
       <td style="text-align:left">2.8.23</td>
       <td style="text-align:left">
-        <p>&#x652F;&#x6301;msa1.0.22&#x7248;&#x672C;</p>
-        <p>&#x4FEE;&#x590D;&#x88AB;Google Play &#x8B66;&#x544A;&#x7684;HostnameVerifier&#x5B89;&#x5168;&#x6F0F;&#x6D1E;</p>
+        <ol>
+          <li>&#x652F;&#x6301;msa1.0.22&#x7248;&#x672C;</li>
+        </ol>
       </td>
       <td style="text-align:left">2020-09-22</td>
     </tr>
