@@ -78,7 +78,7 @@ GrowingIO 提供的 UTM 参数和自定义参数的方式采用的是目前市�
 
 ## UTM参数映射 <a id="utm-can-shu-ying-she"></a>
 
-如果你有自定义的参数没办法进行调整，你可以使用UTM映射功能进行参数映射和配置。请参考[UTM映射管理](https://growingio.gitbook.io/docs/product-manual/sysmanage/projectmange/utm-map)。
+如果你有自定义的参数没办法进行调整，你可以使用UTM映射功能进行参数映射和配置。请参考[UTM映射管理](../../projectmange/projectmange/utm.md)。
 
 ## 使用案例 <a id="shi-yong-an-li"></a>
 
