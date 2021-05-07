@@ -192,5 +192,5 @@ ii. 是否在配置 `<intent-filter/>` 代码块中的 Activity 中使用了 `ge
 
 **iOS：**
 
-​[是否添加了圈选激活代码](https://docs.growingio.com/docs/sdk-integration/ios-sdk/ios-sdk-2.x#23-zai-appdelegate-zhong-tian-jia-ji-huo-quan-xuan-de-dai-ma)。
+​[是否添加了圈选激活代码](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/auto-ios-sdk#4-tian-jia-ji-huo-quan-xuan-de-dai-ma)。
 
