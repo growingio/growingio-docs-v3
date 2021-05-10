@@ -18,6 +18,16 @@ description: Android SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.9.1</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x4F18;&#x5316;hybrid sdk&#x591A;&#x6B21;&#x6CE8;&#x5165;&#x95EE;&#x9898;</li>
+          <li>&#x9002;&#x914D;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x5E73;&#x5747;&#x8BBF;&#x95EE;&#x65F6;&#x957F;&#x6307;&#x6807;&#x504F;&#x957F;&#x7684;&#x573A;&#x666F;</li>
+        </ol>
+      </td>
+      <td style="text-align:left">2021-05-10</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.9.0</td>
       <td style="text-align:left">
         <p></p>
