@@ -14,6 +14,12 @@ description: iOS SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.9.1</td>
+      <td style="text-align:left">1.Hybrid &#x4F18;&#x5316;&#xFF0C;&#x5176;&#x4ED6;&#x4F18;&#x5316;</td>
+      <td
+      style="text-align:left">2021-05-11</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.9.0</td>
       <td style="text-align:left">
         <p>1. &#x4E3A;&#x4EC5;&#x96C6;&#x6210;&#x57CB;&#x70B9;SDK&#x7528;&#x6237;&#x63D0;&#x4F9B;hybrid&#x63A5;&#x53E3;,&#x5BF9;&#x5E94;hybrid&#x9875;&#x9762;&#x9700;&#x96C6;&#x6210;
