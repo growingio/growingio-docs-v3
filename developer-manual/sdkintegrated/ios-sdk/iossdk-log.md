@@ -17,8 +17,9 @@ description: iOS SDK更新日志
       <td style="text-align:left">2.9.1</td>
       <td style="text-align:left">
         <p>1.&#x63D0;&#x5347;&#x4E86;SDK&#x7684;&#x7A33;&#x5B9A;&#x6027;, &#x5E76;&#x4E14;&#x5BF9;&#x76F8;&#x5173;&#x6027;&#x80FD;&#x8FDB;&#x884C;&#x4E86;&#x4F18;&#x5316;</p>
-        <p>2.hybrid&#x6CE8;&#x5165;&#x65F6;&#x673A;&#x4F18;&#x5316;&#xFF0C;&#x89E3;&#x51B3;&#x90E8;&#x5206;&#x4E8B;&#x4EF6;&#x65F6;&#x673A;&#x9760;&#x524D;&#x5BFC;&#x81F4;&#x4E8B;&#x4EF6;&#x672A;&#x53D1;&#x9001;&#x95EE;&#x9898;</p>
+        <p>2.hybrid&#x6CE8;&#x5165;&#x65F6;&#x673A;&#x4F18;&#x5316;</p>
         <p>3.&#x4FEE;&#x590D;2.9.0 app&#x5728;&#x540E;&#x53F0;&#x6982;&#x7387;&#x6027;&#x88AB;&#x6740;&#x6B7B;&#x7684;&#x95EE;&#x9898;</p>
+        <p>4.&#x7279;&#x5B9A;&#x573A;&#x666F;&#x8865;&#x53D1;vst&#x4E8B;&#x4EF6;</p>
       </td>
       <td style="text-align:left">2021-05-11</td>
     </tr>
