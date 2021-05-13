@@ -21,7 +21,7 @@ description: iOS SDK更新日志
         <p>3.&#x4FEE;&#x590D;2.9.0 app&#x5728;&#x540E;&#x53F0;&#x6982;&#x7387;&#x6027;&#x88AB;&#x6740;&#x6B7B;&#x7684;&#x95EE;&#x9898;</p>
         <p>4.&#x7279;&#x5B9A;&#x573A;&#x666F;&#x8865;&#x53D1;vst&#x4E8B;&#x4EF6;</p>
       </td>
-      <td style="text-align:left">2021-05-11</td>
+      <td style="text-align:left">2021-05-12</td>
     </tr>
     <tr>
       <td style="text-align:left">2.9.0</td>
