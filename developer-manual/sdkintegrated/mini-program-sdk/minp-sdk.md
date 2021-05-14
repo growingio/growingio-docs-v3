@@ -538,37 +538,6 @@ var gioConfig = require("你的 gioConfig.js 文件地址").default;
 gio('setConfig', gioConfig);
 ```
 {% endtab %}
-
-{% tab title="Octopus框架" %}
-### 依赖 <a id="&#x4F9D;&#x8D56;"></a>
-
-端点octopus框架各个包最低版本
-
-```java
-"@terminus/octopus-core": "4.2.3-alpha.3",
-"@terminus/react-native-octopus": "4.2.9-alpha.4",
-"@terminus/octopus-cli": "5.2.0-alpha.4",
-"@terminus/nusi-mobile": "^2.1.11-beta.1"
-```
-
-小程序sdk最低依赖版本`SDK v3.7.0`
-
-### 接入方式 <a id="&#x63A5;&#x5165;&#x65B9;&#x5F0F;"></a>
-
-1. 下载微信小程序SDK，并解压。下载地址：[https://assets.giocdn.com/sdk/gio-minp.zip](https://assets.giocdn.com/sdk/gio-minp.zip)​
-2. 将解压后的gio-minp目录放在小程序目录下（比如：/src/utils目录）。
-3. 在入口文件中（如：mp\_app.tsx）添加代码：
-
-```java
-const gio = require('utils/gio-minp/index.js').default
-
-gio('init', '你的 GrowingIO 项目ID', '你的小程序AppID', {
-  debug: true,
-  version: '4.2.3',
-  octopus: true  // 新增的配置，以支持octopus
-})
-```
-{% endtab %}
 {% endtabs %}
 
 ### SDK参数配置
