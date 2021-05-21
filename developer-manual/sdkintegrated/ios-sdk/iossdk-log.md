@@ -4,6 +4,10 @@ description: iOS SDK更新日志
 
 # 更新日志
 
+{% hint style="info" %}
+稳定版本2.8.24
+{% endhint %}
+
 <table>
   <thead>
     <tr>
