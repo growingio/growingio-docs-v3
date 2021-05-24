@@ -87,7 +87,7 @@ gio('setPage', properties: object)
 
 ```java
 // 假设初始化后把 gio 对象放在 App 的 globalData 里面
-// 推荐在 Page#onShow 处理这个事件
+// 推荐在 Page#onReady 处理这个事件
 // 下面假设我在 GrowingIO 后台已经配置了两个页面级变量 pageName 和 type
 Page({
   onShow() {
