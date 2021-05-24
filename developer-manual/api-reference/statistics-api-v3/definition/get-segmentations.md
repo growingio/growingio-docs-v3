@@ -23,7 +23,7 @@ GET
 | 路径参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |
 | segmentation\_id | string | 是 | 用户分群ID，可使用[获取分群列表API](../../statistics-api/definition/get-segm.md)获取。 |
-| project\_uid | string | 是 | 项目UID。 |
+| project\_uid | string | 是 | 项目UID，详细请参考 [获取项目UID](../../../../product-manual/projectmange/projectmange/get-uid.md) |
 
 | 查询参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |

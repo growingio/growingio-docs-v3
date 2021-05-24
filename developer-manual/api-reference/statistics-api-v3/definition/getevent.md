@@ -20,10 +20,37 @@ GET
 
 {% tabs %}
 {% tab title="请求参数" %}
-| 路径参数 | 类型 | 是否必传 | 说明 |
-| :--- | :--- | :--- | :--- |
-| chart\_id | string | 是 | 事件分析单图ID。 |
-| project\_uid | string | 是 | 项目UID。 |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#x8DEF;&#x5F84;&#x53C2;&#x6570;</th>
+      <th style="text-align:left">&#x7C7B;&#x578B;</th>
+      <th style="text-align:left">&#x662F;&#x5426;&#x5FC5;&#x4F20;</th>
+      <th style="text-align:left">&#x8BF4;&#x660E;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">chart_id</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">&#x662F;</td>
+      <td style="text-align:left">
+        <p>&#x4E8B;&#x4EF6;&#x5206;&#x6790;&#x5355;&#x56FE;ID</p>
+        <p>&#x8BE6;&#x7EC6;&#x8BF7;&#x53C2;&#x8003;&#xFF1A; <a href="../../statistics-api/definition/get-chartinfo.md">&#x83B7;&#x53D6;&#x770B;&#x677F;&#x4E2D;&#x7684;&#x56FE;&#x8868;&#x4FE1;&#x606F;</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">project_uid</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">&#x662F;</td>
+      <td style="text-align:left">&#x9879;&#x76EE;UID&#xFF0C;&#x8BE6;&#x7EC6;&#x8BF7;&#x53C2;&#x8003;
+        <a
+        href="../../../../product-manual/projectmange/projectmange/get-uid.md">&#x83B7;&#x53D6;&#x9879;&#x76EE;UID</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 | 查询参数 | 类型 | 是否必传 | 说明 |
 | :--- | :--- | :--- | :--- |

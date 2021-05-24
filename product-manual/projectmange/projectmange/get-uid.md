@@ -12,3 +12,9 @@ description: 在项目的任意页面获取项目UID。
 
 UID就是 `GRwdJAdP`。
 
+图示标红位置`nxog09md`即项目的UID:
+
+![](../../../.gitbook/assets/image%20%28139%29.png)
+
+
+
