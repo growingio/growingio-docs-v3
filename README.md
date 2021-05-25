@@ -3,9 +3,14 @@
 ## 新功能介绍
 
 {% hint style="success" %}
-GrowingIO全新上线自动获取Token值功能，详情请参考 [API Token管理](product-manual/projectmange/projectmange/api-token.md)。
+获客分析「推广渠道」升级，支持
 
-GrowingIO 全新上线渠道归因分析，详情参考 [渠道归因分析](product-manual/growing/analysis/attribution-analysis.md)。
+* 华为应用商店付费推广
+* 神马搜索 Web/App OCPC
+* 百度搜索 Web/App OCPC
+* 搜狗搜索 Web OCPC
+* 360搜索 Web OCPC
+* 微信广告平台 小程序 OCPC
 {% endhint %}
 
 {% hint style="success" %}
