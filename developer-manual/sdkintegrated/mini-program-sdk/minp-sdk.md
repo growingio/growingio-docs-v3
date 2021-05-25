@@ -589,6 +589,24 @@ gio('getLocation')
 followShare: true,     //是否详细跟踪分享数据，开启后可使用分享分析功能。默认true
 ```
 
+在需要分析社会关系的页面内，页面的分享方法需添加contentType、contentId字段，示例如下:
+
+```javascript
+onShareAppMessage: function() {
+    // ...
+    return {
+        title: '自定义转发标题',
+        path: 'xxxxxx',
+        contentType: '内容类型',
+        contentId: '内容ID'
+    }
+}
+```
+
+{% hint style="warning" %}
+社会关系功能的支持需要**SDK3.6.5**及以上版本。
+{% endhint %}
+
 #### forceLogin
 
 GrowingIO 默认会在小程序里面设置用户标识符，存储在微信 Storage 里面。这个用户标识符潜在可能会被`clearStorage` 清除掉，所以有可能不同的用户标识符对应同一个微信里的 `OpenID`。
