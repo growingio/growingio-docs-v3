@@ -12,8 +12,8 @@
     <tr>
       <td style="text-align:left">3.7.0</td>
       <td style="text-align:left">
+        <p></p>
         <ol>
-          <li>&#x652F;&#x6301;octopus&#x6846;&#x67B6;</li>
           <li>&#x5206;&#x4EAB;&#x4F18;&#x5316;</li>
           <li>&#x5FAE;&#x4FE1;getUserProfile&#x63A5;&#x53E3;&#x7684;&#x9002;&#x914D;</li>
         </ol>
