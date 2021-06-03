@@ -24,7 +24,7 @@ GrowingIO会按照下面的顺序获取访问用户ID：
 
 1. IDFA
 2. IDFV
-3. 随机 GUID
+3. 随机 UUID
 
 并将之存储至 keychain 中。
 
