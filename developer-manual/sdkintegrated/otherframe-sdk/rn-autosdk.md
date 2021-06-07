@@ -119,7 +119,7 @@ public class MainApplication extends Application implements ReactApplication {
 
 方式二：手动添加
 
-1. 下载 [GrowingCoreKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-CoreKit-2.9.1.zip)、[GrowingAutoTrackKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-AutoTrackKit-2.9.1.zip)、[GrowingReactNativeKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-ReactNativeKit-2.9.1.zip)、[GrowingHeader](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-PublicHeader-2.9.1.zip)，并解压。
+1. 下载 [GrowingCoreKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-CoreKit-2.9.2.zip)、[GrowingAutoTrackKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-AutoTrackKit-2.9.2.zip)、[GrowingReactNativeKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-ReactNativeKit-2.9.2.zip)、[GrowingHeader](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-PublicHeader-2.9.2.zip)，并解压。
 2. 将 `Growing.h` 、`module.modulemap` 和 `GrowingCoreKit.framework`、`GrowingAutoTrackKit.framework`、`GrowingReactNativeKit.framework`
 
    添加到iOS工程中。
@@ -303,7 +303,7 @@ GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 
 方式二：在SDK中设置了Debug模式后，在IDE编译器控制台查看数据采集日志。
 
-方式三：[数据校验]()
+方式三：[数据校验](../../../product-manual/data-center/datacheck/app.md#app-duan-shu-ju-xiao-yan)
 
 ## 常见问题
 
