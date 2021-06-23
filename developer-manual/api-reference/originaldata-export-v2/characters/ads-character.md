@@ -49,7 +49,7 @@ description: 广告相关事件字段共分为2个事件类型。
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">IMEI</th>
+      <th style="text-align:left">imei</th>
       <th style="text-align:left">string&#xFF08;40&#xFF09;</th>
       <th style="text-align:right">
         <p>&lt;IMEI&gt;</p>
