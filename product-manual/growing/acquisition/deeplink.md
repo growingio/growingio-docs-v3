@@ -24,7 +24,7 @@
 
 在正确集成 GrowingIO 提供的 SDK ，以及 URL Scheme 的配置后，即可开始使用 GrowingIO 提供的 DeepLink 深度链接功能。
 
-SDK 端配置：[iOS 端](https://docs.growingio.com/docs/developer-manual/sdkintegrated/ios-sdk/auto-ios-sdk#10-deeplink-and-universal-link)、[Android 端​](https://docs.growingio.com/docs/developer-manual/sdkintegrated/android-sdk/auto-android-sdk#16-deep-link-hui-tiao-can-shu-huo-qu)​
+SDK 端配置：[iOS 端](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/auto-ios-sdk#10-deeplink-and-universal-link)、[Android 端​](https://docs.growingio.com/v3/developer-manual/sdkintegrated/android-sdk/auto-android-sdk#16-deep-link-hui-tiao-can-shu-huo-qu)​
 
 为获得更好的用户使用体验，GrowingIO 同时建议您在 iOS 下开启 Universal Links 、在 Android 下开启 App Links ，该两项技术为 Apple 与 Google 提供的原生方案，使用该技术将在其系统生态中将获得更流畅的跳转体验。
 
