@@ -112,7 +112,7 @@ Content-Security-Policy: frame-ancestors 'self' http://www.growingio.com https:/
 
 对于使用 hashtag 作为单页应用页面切换的网站来说，可以使用 enableHT 来监听 hashtag 的变化，并区分页面来收集页面数据，每次 hashtag 改变都会触发一次 PV，hashtag 的信息也会记录在页面 URL 中。
 
-这部分需要在 [SDK 集成](https://docs.growingio.com/docs/sdk-integration/web-js-sdk#22-hashtag-xi-tong-bian-liang)时开启设置。
+这部分需要在 [SDK 集成](../developer-manual/sdkintegrated/)时开启设置。
 
 ### **4. web 搜索框里的内容可以采集吗？** <a id="4-web-sou-suo-kuang-li-de-nei-rong-ke-yi-cai-ji-ma"></a>
 
