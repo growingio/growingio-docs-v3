@@ -196,22 +196,23 @@ GrowingIO初始化配置项均在AppDelegate.m文件中的didFinishLaunchingWith
     <tr>
       <td style="text-align:left">enableAllWebViews</td>
       <td style="text-align:left">enable</td>
-      <td style="text-align:left">&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x91C7;&#x96C6;WKWebView &#x4FE1;&#x606F;</td>
-      <td
-      style="text-align:left">&#x2714;&#xFE0F;</td>
-        <td style="text-align:left">-</td>
+      <td style="text-align:left">&#x5168;&#x5C40;&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x91C7;&#x96C6; WKWebView
+        &#x4FE1;&#x606F;</td>
+      <td style="text-align:left">&#x2714;&#xFE0F;</td>
+      <td style="text-align:left">-</td>
     </tr>
     <tr>
       <td style="text-align:left">enableHybridHashTag</td>
       <td style="text-align:left">enable</td>
-      <td style="text-align:left">&#x662F;&#x5426;&#x542F;&#x7528; HashTag</td>
+      <td style="text-align:left">&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x542F;&#x7528; Hash Tag</td>
       <td style="text-align:left">&#x2714;&#xFE0F;</td>
       <td style="text-align:left">-</td>
     </tr>
     <tr>
       <td style="text-align:left">isTrackingWebView</td>
       <td style="text-align:left">true</td>
-      <td style="text-align:left">&#x662F;&#x5426;&#x542F;&#x7528; trackingWebView</td>
+      <td style="text-align:left">&#x8FD4;&#x56DE;&#x662F;&#x5426;&#x5168;&#x5C40;&#x91C7;&#x96C6; WKWebView
+        &#x4FE1;&#x606F;</td>
       <td style="text-align:left">&#x2714;&#xFE0F;</td>
       <td style="text-align:left">-</td>
     </tr>

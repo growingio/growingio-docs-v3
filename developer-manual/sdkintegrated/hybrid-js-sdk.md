@@ -24,11 +24,15 @@ Hybrid JS SDK 负责采集用户在 App 中内嵌 H5 页面中的用户行为数
 
 如果 H5 页面已经集成过 Web JS SDK，但不想在 App 中进行 Web JS SDK 的采集时，请将 `window.webViewRequestSend`的值为 false。
 
-### 2. Touch 点击事件采集 <a id="2-touch-dian-ji-shi-jian-cai-ji"></a>
+### 2. 在 App 中禁用 Hybrid JS SDK
+
+如果不想在 App 中进行 Hybrid JS SDK 的采集，iOS SDK 可以设置 enableAllWebViews（全局）为 NO，或设置单个`webView.growingAttributesDonotTrack`为 YES；Android SDK 可以设置 setTrackWebView（全局）为 false，或设置单个 webView 的 ignoredView 为 true。
+
+### 3. Touch 点击事件采集 <a id="2-touch-dian-ji-shi-jian-cai-ji"></a>
 
 Hybrid 支持基于 touch 事件实现的点击数据采集, 如果用户使用了类似 Zepto 等三方框架，需要采集 tap 事件时，请在初始化时配置`window.hybridEnableTouch` 的值为 true。
 
-### 3. 埋点时机配置项 <a id="3-mai-dian-shi-ji-pei-zhi-xiang"></a>
+### 4. 埋点时机配置项 <a id="3-mai-dian-shi-ji-pei-zhi-xiang"></a>
 
 为了不影响用户 H5 页面的加载速度，我们优先加载用户的页面再注入Hybrid JS SDK ，保证用户页面先加载。这样就引出一个问题：用户的界面在加载过程中或者加载完成后立刻调用埋点方法会出现gio未定义，因为这时候Hybrid JS SDK 可能还没有完全注入成功。
 
