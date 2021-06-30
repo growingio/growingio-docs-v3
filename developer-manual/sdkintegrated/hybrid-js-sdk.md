@@ -26,7 +26,7 @@ Hybrid JS SDK 负责采集用户在 App 中内嵌 H5 页面中的用户行为数
 
 ### 2. 在 App 中禁用 Hybrid JS SDK
 
-如果不想在 App 中进行 Hybrid JS SDK 的采集，iOS SDK 可以设置 enableAllWebViews（全局）为 NO，或设置单个`webView.growingAttributesDonotTrack`为 YES；Android SDK 可以设置 setTrackWebView（全局）为 false，或设置单个 webView 的 ignoredView 为 true。
+如果不想在 App 中进行 Hybrid JS SDK 的采集，iOS SDK 可以配置 enableAllWebViews（全局）为 NO，或对于单个 webView，配置`webView.growingAttributesDonotTrack`为 YES；Android SDK 可以配置 setTrackWebView（全局）为 false，或对于单个 webView，`GrowingIO.ignoredView(webView)`为 true。
 
 ### 3. Touch 点击事件采集 <a id="2-touch-dian-ji-shi-jian-cai-ji"></a>
 
