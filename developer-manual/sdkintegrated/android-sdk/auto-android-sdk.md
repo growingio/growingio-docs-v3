@@ -358,7 +358,18 @@ GrowingIO.setViewID(View view, String id);
 GrowingIO.ignoreView(View view)
 ```
 
-### **6. 设置元素对象**
+### 6.忽略Activity的Page事件
+
+通过 `@GrowingIOPageIgnore` 注解可以忽略某个 `Activity` 的页面事件, 例如: 忽略 `FeedActivity` 的页面事件\(注: 忽略了页面事件对应的页面变量事件也不会发送\)
+
+```java
+// 忽略 FeedActivity 的Page事件
+@GrowingIOPageIgnore
+public class FeedActivity extends Activity {
+}
+```
+
+### **7. 设置元素对象**
 
 如果元素自身的内容并不能代表具体的意义，可以使用元素对象来标识。
 
@@ -371,17 +382,6 @@ GrowingIO.setViewInfo(view view, String info);
 {% hint style="info" %}
 适用于原有元素内容含义不大，需要添加描述的场景。
 {% endhint %}
-
-### 7.忽略Activity的Page事件
-
-通过 `@GrowingIOPageIgnore` 注解可以忽略某个 `Activity` 的页面事件, 例如: 忽略 `FeedActivity` 的页面事件
-
-```java
-// 忽略 FeedActivity 的Page事件
-@GrowingIOPageIgnore
-public class FeedActivity extends Activity {
-}
-```
 
 ### 8. 用户浏览事件的半自动采集配置
 
