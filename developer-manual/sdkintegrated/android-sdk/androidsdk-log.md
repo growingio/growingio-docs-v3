@@ -20,6 +20,14 @@ description: Android SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.9.3</td>
+      <td style="text-align:left">
+        <p>1.&#x589E;&#x52A0;&#x6CE8;&#x89E3;&#x7528;&#x4E8E;&#x5FFD;&#x7565;Activity&#x7684;page&#x4E8B;&#x4EF6;</p>
+        <p>2.&#x652F;&#x6301;java9&#x7684;&#x6307;&#x4EE4;</p>
+      </td>
+      <td style="text-align:left">2021-07-01</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.9.2</td>
       <td style="text-align:left">
         <p></p>

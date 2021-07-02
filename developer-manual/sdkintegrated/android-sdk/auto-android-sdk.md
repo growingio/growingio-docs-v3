@@ -372,7 +372,18 @@ GrowingIO.setViewInfo(view view, String info);
 适用于原有元素内容含义不大，需要添加描述的场景。
 {% endhint %}
 
-### 7. 用户浏览事件的半自动采集配置
+### 7.忽略Activity的Page事件
+
+通过 `@GrowingIOPageIgnore` 注解可以忽略某个 `Activity` 的页面事件, 例如: 忽略 `FeedActivity` 的页面事件
+
+```java
+// 忽略 FeedActivity 的Page事件
+@GrowingIOPageIgnore
+public class FeedActivity extends Activity {
+}
+```
+
+### 8. 用户浏览事件的半自动采集配置
 
 > **SDK版本支持：&gt;=2.8.4**
 
@@ -384,7 +395,7 @@ GrowingIO.setViewInfo(view view, String info);
 * 浏览事件关联自定义事件和变量，减少研发埋点工作量
 {% endhint %}
 
-### 8. 设置Debug模式
+### 9. 设置Debug模式
 
 查看数据采集发送日志，能够在 Android Studio 中通过 Logcat 查看GrowingIO 打印的数据发送日志。
 
@@ -421,7 +432,7 @@ GrowingIO.startWithConfiguration(
 {% endtab %}
 {% endtabs %}
 
-### 9. 设置Test模式
+### 10. 设置Test模式
 
 实时发送数据，开启则不遵循移动网络状态下数据发送大小限制以及采集数据缓存 30 秒发送策略。为了方便开发者查看日志，一般和`setDebugMode`一起使用。
 
@@ -458,7 +469,7 @@ GrowingIO.startWithConfiguration(
 {% endtab %}
 {% endtabs %}
 
-### 10. 采集广告Banner数据
+### 11. 采集广告Banner数据
 
 采集`Banner`数据，应用的界面上方横向滚动的`Banner`广告。
 
@@ -526,7 +537,7 @@ Banner 描述和广告出现的顺序一致，通过 Log 查看或者MobileDebug
 }
 ```
 
-### 11. 采集GPS数据
+### 12. 采集GPS数据
 
 精确采集`GPS`数据，请在获取坐标后，调用接口设置位置信息。当用户下一次切换页面，或者发生点击行为时，`GPS`数据会被发送回`GrowingIO`。
 
@@ -556,7 +567,7 @@ GrowingIO.getInstance().setGeoLocation(39.9046900000,116.4071700000);
 对应的清除地理位置的方法为 clearGeoLocation\(\);
 {% endhint %}
 
-### 12. 采集输入框数据
+### 13. 采集输入框数据
 
 GrowingIO 默认采集输入框内容改变次数，不采集文字。
 
@@ -599,7 +610,7 @@ GrowingIO.getInstance().trackEditText(editText)
 * 在**输入框失去焦点的时候或者 onPause 时才会采集事件**，如果输入完成，输入框光标仍然在闪动，则不会采集事件。为了保证数据准确性，请每次用户输入完成时，让输入框失去焦点，可使用editText.setFocusable\(false\);
 {% endhint %}
 
-### 13. WebView锚点链接页面访问
+### 14. WebView锚点链接页面访问
 
 开启之后，App `WebView` 中的页面，如果用户点击带有锚点的跳转链接，则发送一次页面浏览事件，请在 `SDK` 初始化方法中设置，默认值为 false，即默认锚点链接不算做页面浏览事件。
 
@@ -649,7 +660,7 @@ SDK发送对应采集数据：
 }
 ```
 
-### 14. 多进程支持
+### 15. 多进程支持
 
 多进程支持，`SDK`默认不支持多进程使用， 但是可以通过`confiuration`进行设置支持多进程。 在`Application onCreate` 中初始化SDK代码块中配置。
 
@@ -700,7 +711,7 @@ GrowingIO.startWithConfiguration(
    需要使用SDK功能的进程需要初始化SDK， 所有的UI进程 + 部分Service进程\(如果这些进程中涉及手动打点\)。
 {% endhint %}
 
-### 15. GDPR数据采集开关
+### 16. GDPR数据采集开关
 
 > SDK版本支持：2.3.2及以上。
 
@@ -709,7 +720,7 @@ GrowingIO.startWithConfiguration(
 | disableDataCollect\(\) | 遵守欧洲联盟出台的通用数据保护条例，用户不授权，不采集用户数据 |
 | enableDataCollect\(\) | 遵守欧洲联盟出台的通用数据保护条例，用户授权，采集用户数据 |
 
-### 16. Deep Link回调参数获取
+### 17. Deep Link回调参数获取
 
 ​通过获取回调参数，GrowingIO SDK 将会传递指定活动页面参数至您的 App，请根据此参数和业务场景，执行相关的交互。
 
@@ -861,7 +872,7 @@ GrowingIO.startWithConfiguration(this, Configuration()
 {% endtab %}
 {% endtabs %}
 
-### 17. 采集推送配置
+### 18. 采集推送配置
 
 在 **Android SDK 2.6.3** 及以上版本，支持采集通知的标题和内容，此功能默认关闭，如需开启，请在 Application 初始化 GrowingIO 中设置，例如：
 
@@ -961,7 +972,7 @@ SDK对通知的采集仅支持 4.4 及以上机型。
 
 支持对于通知的展现和点击事件的采集，GrowingIO 并未增加新的采集事件类型，而是使用了自定义事件发送，所以需要您创建自定义事件和事件级变量，事件级变量标识符为**`notification_title`**，**`notification_content`**，自定义事件的标识符为**`notification_show`**，**`notification_click`** 创建事件分析，等候片刻即可看到数据。
 
-### 18. 采集OAID
+### 19. 采集OAID
 
 在 Android 10 版本中，非系统应用无法获取 IMEI。加上以前 Android 版本已经对 MAC 地址， AndroidID 的获取做了限制， 在 Android10 中缺少一种唯一标记设备的标识符。 在海外， Google 推荐使用 Google 的广告 ID 作为广告的唯一识别符，在国内[移动安全联盟MSA](http://www.msa-alliance.cn/col.jsp?id=120) 联合各大手机制造商推出了 OAID 的概念， 作为唯一广告标识符。
 
