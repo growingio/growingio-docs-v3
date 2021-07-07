@@ -9,6 +9,8 @@
 
 ### 合规步骤
 
+#### 隐私政策
+
 * 如您的 App 需要通过第三方安全检测，建议在隐私政策授权成功之后，再初始化 GrowingIO SDK（版本需在 2.9.1 及以上，2.9.1 以下会造成 VISIT 事件丢失、部分数据不正常的情况）
 
 ```text
@@ -21,6 +23,10 @@ if (授权隐私政策后) {
     GrowingIO.startWithConfiguration(application, configuration);
 }
 ```
+
+#### GDPR
+
+[General Data Protection Regulation 欧盟通用数据保护条例](https://zh.wikipedia.org/wiki/%E6%AD%90%E7%9B%9F%E4%B8%80%E8%88%AC%E8%B3%87%E6%96%99%E4%BF%9D%E8%AD%B7%E8%A6%8F%E7%AF%84)
 
 * GrowingIO SDK 在 2.3.2+ 版本开始支持`disableDataCollect`接口，可在用户不同意数据采集时不发送数据
 
