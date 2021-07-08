@@ -1,6 +1,6 @@
 # iOS SDK合规说明
 
-请升级到最新 GrowingIO iOS SDK [稳定版本](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/iossdk-log)
+请升级到最新 GrowingIO iOS SDK [稳定版本](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/iossdk-log) 及以上
 
 * 根据 [User Privacy and Data Use](https://developer.apple.com/app-store/user-privacy-and-data-use/)，App 需要通过隐私政策说明应用采集数据
 * 需要告知用户您集成了 GrowingIO SDK，并且 GrowingIO SDK 会尝试获取 IDFA、IDFV 信息用于渠道信息，并且采集用户信息进行行为分析
@@ -26,9 +26,9 @@
 
 [General Data Protection Regulation 欧盟通用数据保护条例](https://zh.wikipedia.org/wiki/%E6%AD%90%E7%9B%9F%E4%B8%80%E8%88%AC%E8%B3%87%E6%96%99%E4%BF%9D%E8%AD%B7%E8%A6%8F%E7%AF%84)
 
-* GrowingIO SDK 在 2.3.2 版本开始支持`disableDataCollect`接口，可在用户不同意数据采集时不发送数据
+* GrowingIO SDK 提供`disableDataCollect`接口，可在用户不同意数据采集时不发送数据
 
-```text
+```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 根据数据采集开关判断
     if (未同意数据采集) {
@@ -45,7 +45,7 @@
 
 * 当用户同意数据采集后，通过`enableDataCollect`接口开启数据发送
 
-```text
+```objectivec
 // 同意数据采集后，开启数据发送
 [Growing enableDataCollect];
 ```
@@ -62,7 +62,7 @@
 
 * GrowingIO SDK 在 2.9.1 之前，需要您确保用户在同意应用追踪后初始化 SDK。
 
-```text
+```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     if (同意应用追踪) {
         // 初始化SDK
@@ -76,7 +76,7 @@
 
 * 2.9.1 之后，在用户同意应用追踪前调用`disableDataCollect`，并初始化 SDK，待用户同意应用追踪后调用`enableDataCollect`
 
-```text
+```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [Growing disableDataCollect];
     // 初始化SDK
