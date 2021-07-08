@@ -3,7 +3,7 @@
 请升级到最新 GrowingIO Android SDK [稳定版本](https://docs.growingio.com/v3/developer-manual/sdkintegrated/android-sdk/androidsdk-log) 及以上
 
 * 根据[工业和信息化部关于开展纵深推进APP侵害用户权益专项整治行动](http://www.gov.cn/zhengce/zhengceku/2020-08/02/content_5531975.htm)，App 需要通过隐私政策说明应用采集数据
-* 需要告知用户您集成了 GrowingIO SDK，并且 GrowingIO SDK 会尝试获取 androidId，IMEI 信息用于渠道信息，并且采集用户信息进行行为分析
+* 需要告知用户您集成了 GrowingIO SDK，并且 GrowingIO SDK 会尝试获取 ANDROID\_ID，IMEI 信息用于渠道信息，并且采集用户信息进行行为分析
 
 ### 集成步骤
 
