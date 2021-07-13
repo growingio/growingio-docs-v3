@@ -8,10 +8,10 @@
 
 不同标签的模型 ，有不同的使用场景 ，详请可见 以下说明： 
 
-* [基础指标值  标签 ](https://app.gitbook.com/@growingio/s/v3/~/drafts/-MEWSCS5iLxkCJzygg8h/product-manual/user-warehouse/yong-hu-biao-qian/biao-qian-mo-xing-shi-yong/ji-chu-zhi-biao-zhi) 
-* [最大/ 最小  标签 ](https://app.gitbook.com/@growingio/s/v3/~/drafts/-MEWSCS5iLxkCJzygg8h/product-manual/user-warehouse/yong-hu-biao-qian/biao-qian-mo-xing-shi-yong/zui-da-zhi-zui-xiao-zhi-de-shi-jian-shu-xing)
-* [最初 / 最终 标签 ](https://app.gitbook.com/@growingio/s/v3/~/drafts/-MEWSCS5iLxkCJzygg8h/product-manual/user-warehouse/yong-hu-biao-qian/biao-qian-mo-xing-shi-yong/zui-chu-zui-zhong-de-shi-jian-shu-xing)
-* [分层标签  ](https://app.gitbook.com/@growingio/s/v3/~/drafts/-MEWSCS5iLxkCJzygg8h/product-manual/user-warehouse/yong-hu-biao-qian/biao-qian-mo-xing-shi-yong/fen-ceng-biao-qian)
+* [基础指标值  标签 ](biao-qian-mo-xing-shi-yong/ji-chu-zhi-biao-zhi.md) 
+* [最大/ 最小  标签 ](biao-qian-mo-xing-shi-yong/zui-da-zhi-zui-xiao-zhi-de-shi-jian-shu-xing.md)
+* [最初 / 最终 标签 ](biao-qian-mo-xing-shi-yong/zui-chu-zui-zhong-de-shi-jian-shu-xing.md)
+* [分层标签  ](biao-qian-mo-xing-shi-yong/fen-ceng-biao-qian.md)
 
 
 
@@ -56,10 +56,10 @@ GrowingIO  支持对登入用户 /  访问用户 ，两个用户体系分别打�
   
 详请可见 以下说明 
 
-* [基础指标值  标签 ](https://app.gitbook.com/@growingio/s/v3/~/drafts/-MEWSCS5iLxkCJzygg8h/product-manual/user-warehouse/yong-hu-biao-qian/biao-qian-mo-xing-shi-yong/ji-chu-zhi-biao-zhi)
-* [最大/ 最小  标签 ](https://app.gitbook.com/@growingio/s/v3/~/drafts/-MEWSCS5iLxkCJzygg8h/product-manual/user-warehouse/yong-hu-biao-qian/biao-qian-mo-xing-shi-yong/zui-da-zhi-zui-xiao-zhi-de-shi-jian-shu-xing)
-* [最初 / 最终 标签 ](https://app.gitbook.com/@growingio/s/v3/~/drafts/-MEWSCS5iLxkCJzygg8h/product-manual/user-warehouse/yong-hu-biao-qian/biao-qian-mo-xing-shi-yong/zui-chu-zui-zhong-de-shi-jian-shu-xing)
-* [分层标签  ](https://app.gitbook.com/@growingio/s/v3/~/drafts/-MEWSCS5iLxkCJzygg8h/product-manual/user-warehouse/yong-hu-biao-qian/biao-qian-mo-xing-shi-yong/fen-ceng-biao-qian)
+* [基础指标值  标签 ](biao-qian-mo-xing-shi-yong/ji-chu-zhi-biao-zhi.md)
+* [最大/ 最小  标签 ](biao-qian-mo-xing-shi-yong/zui-da-zhi-zui-xiao-zhi-de-shi-jian-shu-xing.md)
+* [最初 / 最终 标签 ](biao-qian-mo-xing-shi-yong/zui-chu-zui-zhong-de-shi-jian-shu-xing.md)
+* [分层标签  ](biao-qian-mo-xing-shi-yong/fen-ceng-biao-qian.md)
 
   
 
