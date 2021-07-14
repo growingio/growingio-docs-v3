@@ -26,7 +26,7 @@
 
 [General Data Protection Regulation 欧盟通用数据保护条例](https://zh.wikipedia.org/wiki/%E6%AD%90%E7%9B%9F%E4%B8%80%E8%88%AC%E8%B3%87%E6%96%99%E4%BF%9D%E8%AD%B7%E8%A6%8F%E7%AF%84)
 
-* GrowingIO SDK 提供`disableDataCollect`接口，可在用户不同意数据采集时不发送数据
+GrowingIO SDK 提供`disableDataCollect`接口，可在用户不同意数据采集时不发送数据
 
 ```objectivec
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -43,7 +43,7 @@
 }
 ```
 
-* 当用户同意数据采集后，通过`enableDataCollect`接口开启数据发送
+当用户同意数据采集后，通过`enableDataCollect`接口开启数据发送
 
 ```objectivec
 // 同意数据采集后，开启数据发送
