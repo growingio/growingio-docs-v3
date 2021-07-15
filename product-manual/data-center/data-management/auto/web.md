@@ -539,5 +539,5 @@ Content-Security-Policy: frame-ancestors 'self' http://www.growingio.com https:/
 
 GrowingIO 根据您网站 HTML 结构识别和定义页面上的元素。有的时候网站上的 HTML 标签写法完全相同，呈现在页面上的几个同类元素，可能 HTML 代码完全相同。此时 GrowingIO 采集、圈选数据时无法区分开。我们通过 HTML 标签的 id 和 class 来区分元素，这种情况下您可以在需要区分的标签 class 中添加一些字符串用于区分。
 
-**仍有疑问？请参考**[**常见问题－圈选部分**](https://docs.growingio.com/docs/faq/faq-circle)
+**仍有疑问？请参考**[**常见问题－圈选部分**](../../../../product-faq/quanxuan.md)
 
