@@ -4,7 +4,7 @@
 
 * 根据[工业和信息化部关于开展纵深推进APP侵害用户权益专项整治行动](http://www.gov.cn/zhengce/zhengceku/2020-08/02/content_5531975.htm)，App 需要通过隐私政策说明应用采集数据
 * 需要告知用户您集成了 GrowingIO SDK，并且 GrowingIO SDK 会尝试获取 ANDROID\_ID，IMEI 信息用于渠道信息，并且采集用户信息进行行为分析
-* 为减小您的 App 安装包大小，GrowingIO SDK 圈选功能相关代码通过热更新方式集成，如您需要通过 Google Play 分发应用，请参考集成步骤 - Google Play 中的内容
+* 为减小您的 App 安装包大小，GrowingIO SDK 中圈选与 Mobile Debugger 功能相关代码通过热更新方式集成。如您需要通过 Google Play 分发应用，请参考集成步骤 - Google Play 中的内容
 
 ### 集成步骤
 
@@ -16,7 +16,7 @@
 
 #### Google Play
 
-如您的 App 集成了无埋点 SDK，并需要在 Google Play 分发，依据 Google Play [相关政策](https://support.google.com/googleplay/android-developer/answer/9888379?hl=zh-Hans&ref_topic=9877467#zippy=%2C%E5%B8%B8%E8%A7%81%E8%BF%9D%E8%A7%84%E8%A1%8C%E4%B8%BA%E7%A4%BA%E4%BE%8B)，请务必按照以下方式做调整：
+如您的 App 集成了无埋点 SDK，并需要在 Google Play 分发，依据 Google Play [相关政策](https://support.google.com/googleplay/android-developer/answer/9888379?hl=zh-Hans&ref_topic=9877467#zippy=%2C%E5%B8%B8%E8%A7%81%E8%BF%9D%E8%A7%84%E8%A1%8C%E4%B8%BA%E7%A4%BA%E4%BE%8B)，我们提供了不包含圈选与 Mobile Debugger 功能的无埋点 SDK，请参考以下方式做调整：
 
 在 project 级别的 build.gradle 文件中，添加 maven 仓库：
 
