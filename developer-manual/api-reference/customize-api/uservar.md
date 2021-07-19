@@ -8,6 +8,12 @@
 
 {% code title="java" %}
 ```java
+/**
+ * projectKeyId: 项目ID
+ * secretKey: 项目私钥
+ * keyArray: loginUserId用逗号拼接的字符串
+*/ 
+
 javapublic String authToken(String projectKeyId, String secretKey, String keyArray) throws Exception {
     String message = "ai="+projectKeyId+"&loginUserId="+keyArray;
     Mac hmac = Mac.getInstance("HmacSHA256");
@@ -20,6 +26,12 @@ javapublic String authToken(String projectKeyId, String secretKey, String keyArr
 
 {% code title="Scala" %}
 ```java
+/**
+ * projectKeyId: 项目ID
+ * secretKey: 项目私钥
+ * keyArray: loginUserId用逗号拼接的字符串
+*/ 
+
 def authToken(projectKeyId: String, secretKey: String, keyArray: String): String = {
   val message = s"ai=$projectKeyId&loginUserId=$keyArray"
   val hmac: Mac = Mac.getInstance("HmacSHA256")
@@ -32,6 +44,12 @@ def authToken(projectKeyId: String, secretKey: String, keyArray: String): String
 
 {% code title="python" %}
 ```java
+/**
+ * projectKeyId: 项目ID
+ * secretKey: 项目私钥
+ * keyArray: loginUserId用逗号拼接的字符串
+*/ 
+
 #coding:utf-8 
 import hashlib
 import hmac
@@ -45,6 +63,12 @@ def authToken(projectKeyId,secretKey,keyArray):
 
 {% code title="php" %}
 ```java
+/**
+ * projectKeyId: 项目ID
+ * secretKey: 项目私钥
+ * keyArray: loginUserId用逗号拼接的字符串
+*/ 
+
 function authToken($projectKeyId, $secretKey, $keyArray)
 {
    $message="ai=".$projectKeyId."&loginUserId=".$keyArray;
