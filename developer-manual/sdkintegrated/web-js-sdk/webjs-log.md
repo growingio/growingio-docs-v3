@@ -15,7 +15,10 @@
       <td style="text-align:left">2.2.1</td>
       <td style="text-align:left">
         <ol>
-          <li>&#x6DFB;&#x52A0;platform&#x81EA;&#x52A8;&#x5224;&#x65AD;</li>
+          <li>&#x6DFB;&#x52A0;platform&#x81EA;&#x52A8;&#x5224;&#x65AD;&#xFF0C;&#x8BE6;&#x60C5;&#x67E5;&#x770B;
+            <a
+            href="latest-jssdk.md#5-dong-tai-platform">&#x52A8;&#x6001;platform</a>
+          </li>
         </ol>
       </td>
       <td style="text-align:left">2021-07-21</td>
