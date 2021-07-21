@@ -6,7 +6,7 @@
 
 下面以查看GrowingIO官网热图为例来介绍功能使用：
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20%28150%29.png)
+![](../../../../.gitbook/assets/image%20%28144%29.png)
 
 | 功能项 | 说明 |
 | :--- | :--- |
