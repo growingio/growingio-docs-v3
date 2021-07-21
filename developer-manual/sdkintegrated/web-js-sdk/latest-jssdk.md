@@ -148,11 +148,46 @@ data-growing-idx属性需要赋值，建议传不为0的纯数字。
 
 除上述的用户行为数据（无埋点数据）之外，GrowingIO 还提供了多种 API 接口，供您上传一些自定义的数据指标及维度，请参考[API 2.x](web-sdk-api/websdk-apiv2.md) 。90% 以上的用户都会_上传登录用户 ID_，以便分析登录用户的数据情况。
 
-## 5. 创建应用
+## 5. 自动Platform
+
+{% hint style="info" %}
+版本要求 &gt;= 2.2.1
+{% endhint %}
+
+为了能区分出上报的数据来自哪个平台，SDK实现自动的平台判断，支持的平台如下：
+
+| 字段 | 平台 |
+| :--- | :--- |
+| Web | 网页端（直接浏览器打开或不在以下环境中） |
+| wxwv | 微信内嵌页面（直接微信打开H5页面或公众号H5页面） |
+| MinP | 微信小程序内嵌H5页面 |
+| alip | 支付宝小程序内嵌H5页面 |
+| baidup | 百度小程序内嵌H5页面 |
+| qq | QQ小程序内嵌H5页面 |
+| bytedance | 字节跳动内嵌 H5 页面 |
+| Android | 安卓App中内嵌H5页面（App需要集成安卓SDK） |
+| iOS | iOS App中内嵌H5页面（App需要集成iOS SDK） |
+
+### 1. 如何识别Android和iOS
+
+若要能区分是不是Android（iOS）平台，需要在相应的App内同时集成原生 Android（iOS）SDK。原生的SDK会向`webview`中注入相应的变量，Web JS SDK通过该变量判断是否为对应的平台。
+
+```text
+// 判断安卓
+function isInAndroidApp() {
+    return !!window._vds_bridge;
+}
+// 判断iOS
+function isInIosApp() {
+    return !!window._vds_ios;
+}
+```
+
+## 6. 创建应用
 
 在GrowingIO平台的创建相应的Web应用。创建应用请参考查看[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
 
-## 6. 验证SDK是否正常采集数据
+## 7. 验证SDK是否正常采集数据
 
 {% hint style="info" %}
 了解GrowingIO平台数据类型请参考[数据模型](../../../introduction/datamodel/)。
