@@ -18,16 +18,16 @@
           <li>&#x6DFB;&#x52A0;platform&#x81EA;&#x52A8;&#x5224;&#x65AD;</li>
         </ol>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">2021-07-21</td>
     </tr>
     <tr>
       <td style="text-align:left">2.2.0</td>
       <td style="text-align:left">
         <ol>
-          <li>&#x652F;&#x6301;sendBeacon</li>
+          <li>&#x652F;&#x6301;sendBeacon&#x53D1;&#x9001;&#x6570;&#x636E;</li>
         </ol>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">2021-05-12</td>
     </tr>
     <tr>
       <td style="text-align:left">2.1.46</td>
