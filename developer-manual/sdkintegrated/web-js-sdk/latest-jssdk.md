@@ -148,7 +148,7 @@ data-growing-idx属性需要赋值，建议传不为0的纯数字。
 
 除上述的用户行为数据（无埋点数据）之外，GrowingIO 还提供了多种 API 接口，供您上传一些自定义的数据指标及维度，请参考[API 2.x](web-sdk-api/websdk-apiv2.md) 。90% 以上的用户都会_上传登录用户 ID_，以便分析登录用户的数据情况。
 
-## 5. 自动Platform
+## 5. 动态Platform
 
 {% hint style="info" %}
 版本要求 &gt;= 2.2.1
