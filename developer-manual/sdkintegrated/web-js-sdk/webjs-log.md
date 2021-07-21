@@ -12,6 +12,24 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.2.1</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x6DFB;&#x52A0;platform&#x81EA;&#x52A8;&#x5224;&#x65AD;</li>
+        </ol>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">2.2.0</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x652F;&#x6301;sendBeacon</li>
+        </ol>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.1.46</td>
       <td style="text-align:left">
         <ol>
