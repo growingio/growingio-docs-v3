@@ -170,7 +170,7 @@ data-growing-idx属性需要赋值，建议传不为0的纯数字。
 
 ### 1. 如何识别Android和iOS
 
-若要能区分是不是Android（iOS）平台，需要在相应的App内同时集成原生 Android（iOS）SDK。原生的SDK会向`webview`中注入相应的变量，Web JS SDK通过该变量判断是否为对应的平台。
+若要能区分是不是Android（iOS）平台，需要在相应的App内同时集成原生 Android（iOS）SDK。原生的SDK会向`webview`中注入相应的变量，Web JS SDK通过该变量判断是否为对应的平台。以下是Web JS SDK内部判断代码示例。
 
 ```text
 // 判断安卓
