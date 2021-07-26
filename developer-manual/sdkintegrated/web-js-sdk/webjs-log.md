@@ -12,6 +12,15 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.2.2</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x53BB;&#x9664;platform&#x662F;wxwv&#x7684;&#x5224;&#x65AD;</li>
+        </ol>
+      </td>
+      <td style="text-align:left">2021-07-26</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.2.1</td>
       <td style="text-align:left">
         <ol>
