@@ -32,7 +32,7 @@ Universal Links 配置：[配置方法​](https://docs.growingio.com/v3/product
 
 App Links 配置：[配置方法](https://docs.growingio.com/v3/product-manual/growing/product-configuration/deeplink#32-applinks-pei-zhi)
 
-## 新建监测链接
+## 新建深度链接
 
 一. 在顶部导航栏选择“**获客追踪&gt;深度链接”**，进入深度链接列表。
 
