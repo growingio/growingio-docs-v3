@@ -57,7 +57,7 @@
       * [设置了growing-ignore之后，其子元素也都不采集数据了怎么处理？](developer-manual/sdkintegrated/web-js-sdk/faq/faq-8.md)
     * [Web JS SDK更新日志](developer-manual/sdkintegrated/web-js-sdk/webjs-log.md)
   * [原生 Android SDK](developer-manual/sdkintegrated/android-sdk/README.md)
-    * [无埋点 SDK集成](developer-manual/sdkintegrated/android-sdk/auto-android-sdk.md)
+    * [无埋点 SDK 集成](developer-manual/sdkintegrated/android-sdk/auto-android-sdk.md)
     * [埋点 SDK 集成](developer-manual/sdkintegrated/android-sdk/manunl-android-sdk.md)
     * [Android SDK API](developer-manual/sdkintegrated/android-sdk/android-sdk-api/README.md)
       * [Gradle配置API](developer-manual/sdkintegrated/android-sdk/android-sdk-api/gradle-api.md)

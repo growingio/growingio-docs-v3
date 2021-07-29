@@ -2,32 +2,32 @@
 description: 无埋点 SDK 具备自动采集基本的用户行为事件，比如访问和行为数据等。
 ---
 
-# 无埋点 SDK集成
+# 无埋点 SDK 集成
 
 ## 准备条件
 
 获取项目ID，请参考[查看项目基本信息](../../../product-manual/projectmange/details.md)。
 
-获取URL Scheme，在GrowingIO平台创建对应的应用时会生成URL Scheme。请参考[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
+获取 URL Scheme，在 GrowingIO 平台创建对应的应用时会生成 URL Scheme。请参考[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
 
 {% hint style="info" %}
-使用GrowingIO平台创建相应的应用，平台在应用创建界面自动为您生成已加载当前项目ID、URL Scheme的跟踪代码。
+使用 GrowingIO 平台创建相应的应用，平台在应用创建界面自动为您生成已加载当前项目 ID、URL Scheme 的跟踪代码。
 {% endhint %}
 
 ## 1. 添加依赖代码
 
 {% hint style="success" %}
-Gradle编译环境：Android Studio
+Gradle 编译环境：Android Studio
 
-App适配最低系统版本：Android 4.2 及以上
+App 适配最低系统版本：Android 4.2 及以上
 {% endhint %}
 
 ### 1. 添加工程依赖
 
-在project级别的build.gradle文件中添加`vds-gradle-plugin`依赖。
+在 project 级别的 build.gradle 文件中添加`vds-gradle-plugin`依赖。
 
 {% hint style="info" %}
-2.9.0版本后仓库从JCenter迁移到了Maven Central, 请使用mavenCentral\(\)替换jcenter\(\)
+2.9.0 版本后仓库从 JCenter 迁移到了 Maven Central, 请使用 mavenCentral\(\) 替换 jcenter\(\)
 {% endhint %}
 
 ```javascript
@@ -42,7 +42,7 @@ buildscript {
         //gradle 建议版本
         classpath 'com.android.tools.build:gradle:3.2.1'
         //GrowingIO 无埋点 SDK
-        classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.9.0'
+        classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.9.4'
     }
 }
 ```
@@ -63,7 +63,7 @@ android {
 }
 dependencies {
     //GrowingIO 无埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:autotrack-2.9.0'
+    implementation 'com.growingio.android:vds-android-agent:autotrack-2.9.4'
 }
 ```
 
