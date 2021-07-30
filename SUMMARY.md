@@ -37,9 +37,9 @@
 
 * [SDK 集成](developer-manual/sdkintegrated/README.md)
   * [SDK 简介](developer-manual/sdkintegrated/overview.md)
-  * [合规指南](developer-manual/sdkintegrated/he-gui-zhi-nan/README.md)
-    * [Android SDK合规说明](developer-manual/sdkintegrated/he-gui-zhi-nan/sdk-he-gui-shuo-ming.md)
-    * [iOS SDK合规说明](developer-manual/sdkintegrated/he-gui-zhi-nan/ios-sdk-he-gui-shuo-ming.md)
+  * [合规指南](developer-manual/sdkintegrated/compliance/README.md)
+    * [Android SDK合规说明](developer-manual/sdkintegrated/compliance/sdk-he-gui-shuo-ming.md)
+    * [iOS SDK合规说明](developer-manual/sdkintegrated/compliance/ios-sdk-he-gui-shuo-ming.md)
   * [SDK 使用流程](developer-manual/sdkintegrated/flow.md)
   * [Web JS SDK](developer-manual/sdkintegrated/web-js-sdk/README.md)
     * [概述](developer-manual/sdkintegrated/web-js-sdk/overview.md)
