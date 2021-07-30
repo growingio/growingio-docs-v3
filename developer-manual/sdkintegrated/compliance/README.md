@@ -276,5 +276,5 @@ GrowingIO SDK 默认收集的数据类型只有「设备 ID」和「用户 ID」
 
 1. **隐私条款**
 
-https://accounts.growingio.com/privacy
+[https://accounts.growingio.com/privacy](https://accounts.growingio.com/privacy)
 
