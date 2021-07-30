@@ -4,32 +4,32 @@ description: 埋点 SDK 只自动采集用户访问事件，需要开发同学�
 
 # 埋点 SDK 集成
 
-埋点 SDK 的目标用户是使用第三方插件开发的 APP， 比如使用 Weex、APICloud 等。在这些平台中，我们无法自动采集用户的点击事件和页面浏览事件等，需要依赖调用自定义事件和变量 API来进行数据采集。
+埋点 SDK 的目标用户是使用第三方插件开发的 APP， 比如使用 Weex、APICloud 等。在这些平台中，我们无法自动采集用户的点击事件和页面浏览事件等，需要依赖调用自定义事件和变量 API 来进行数据采集。
 
 {% hint style="info" %}
-如果您的 APP 使用 Android 原生开发，并且希望自动采集用户的点击事件、页面浏览事件等无埋点事件， 请集成 Android无埋点SDK 。
+如果您的 APP 使用 Android 原生开发，并且希望自动采集用户的点击事件、页面浏览事件等无埋点事件， 请集成 Android 无埋点SDK 。
 {% endhint %}
 
 前提条件
 
-* 获取项目ID，获取方法请参考"项目管理 &gt; 项目概览 &gt; [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
-* 获取URL Scheme，在GrowingIO平台创建对应的应用时会生成URL Scheme。请参考[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
+* 获取项目 ID，获取方法请参考"项目管理 &gt; 项目概览 &gt; [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
+* 获取 URL Scheme，在 GrowingIO 平台创建对应的应用时会生成 URL Scheme。请参考[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
 
 ## 1. 添加跟踪代码
 
 {% hint style="success" %}
-Gradle编译环境：Android Studio
+Gradle 编译环境：Android Studio
 
-App适配最低系统版本：Android 4.2 及以上
+App 适配最低系统版本：Android 4.2 及以上
 {% endhint %}
 
 ### 1. 添加依赖
 
 {% hint style="info" %}
-2.9.0版本后仓库从JCenter迁移到了Maven Central, 请使用mavenCentral\(\)替换jcenter\(\)
+2.9.0 版本后仓库从 JCenter 迁移到了 Maven Central, 请使用 mavenCentral\(\) 替换 jcenter\(\)
 {% endhint %}
 
-**在module级别的build.gradle文件中添加`vds-android-agent`依赖、项目ID和URL Scheme。**
+**在 module 级别的 build.gradle 文件中添加`vds-android-agent`依赖、项目 ID 和 URL Scheme。**
 
 代码示例：
 
@@ -42,7 +42,7 @@ android {
 }
 dependencies {
     //GrowingIO 埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:track-2.9.0'
+    implementation 'com.growingio.android:vds-android-agent:track-2.9.4'
 }
 ```
 
