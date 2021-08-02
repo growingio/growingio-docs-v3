@@ -121,9 +121,8 @@ GrowingIO.getInstance().enableDataCollect();
 ```
 
 > 注意：
-
-1. > 第一次打开 App 后，在最终用户同意《隐私条款》前的所有事件不会采集。
-2. > SDK Version &gt; 2.8.25，enableDataCollect 会在调用了 disableDataCollect 且初始化了 SDK的前提下补发 visit 事件
+>
+> 1. 第一次打开 App 后，在最终用户同意《隐私条款》前的所有事件不会采集。2. SDK Version &gt; 2.8.25，enableDataCollect 会在调用了 disableDataCollect 且初始化了 SDK的前提下补发 visit 事件
 
 ### 2.2 iOS 合规步骤
 
@@ -163,9 +162,8 @@ GrowingIO.getInstance().enableDataCollect();
 ```
 
 > 注意：
-
-1. > 第一次打开 App 后，在最终用户同意《隐私条款》前的所有事件不会采集。
-2. > SDK Version &gt; 2.9.1，enableDataCollect 会在调用了 disableDataCollect 且初始化了 SDK的前提下补发 visit 事件
+>
+> 1. 第一次打开 App 后，在最终用户同意《隐私条款》前的所有事件不会采集。2. SDK Version &gt; 2.9.1，enableDataCollect 会在调用了 disableDataCollect 且初始化了 SDK的前提下补发 visit 事件
 
 #### 2.3 常见问题
 
@@ -195,33 +193,35 @@ SDK 不会主动获取 `IDFA 权限`，您需要自行获取 `IDFA 权限`, 请�
 
 1. 选择 「是，会从此 App 中收集数据」
 
-![](https://growingio.feishu.cn/space/api/box/stream/download/asynccode/?code=YjUyMjJlYmEwZjFmMzBkZTEzN2I5MmQxYTdjZDk2MjZfVGFzWVdNVUo5dGw1WWx0RUFyUEdHS2FsUkFVWTd4YldfVG9rZW46Ym94Y256VkIzaFlqdG4xUGtYMTdpaU9LUEpoXzE2Mjc2NDk3NzQ6MTYyNzY1MzM3NF9WNA)
+![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.33.07.png)
 
  2. GrowingIO 不会主动申请采集位置信息，如果客户的App申请获取了位置信息，GrowingIO就会采集位置信息用于定位用户城市级别的位置，需要勾选 「精准位置」
 
 > 如果你想禁用位置信息获取，调用 `+setEnableLocationTrack:` 为 `NO`
 
-![](https://growingio.feishu.cn/space/api/box/stream/download/asynccode/?code=NjQ2ZWJmY2FlNWI4YTg2ODU3ZDRmMTBkY2I1MTJiOTFfTVJ3c2gwS0JQNjNINXBsVU9EY0UzNHJVTzh2UVNUd2hfVG9rZW46Ym94Y25yM3NQN2pnbldzb2FjSnl4anJ5MENkXzE2Mjc2NDk3NDM6MTYyNzY1MzM0M19WNA)
+![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.35.03.png)
 
 3. 默认情况下只需选择 「设备 ID」。如果使用的是 `无埋点SDK` 需继续选择 「产品交互」。如果使用用户关联，即调用 `+setUserId:`接口则还需勾选 「用户 ID」，如图
 
-![](https://growingio.feishu.cn/space/api/box/stream/download/asynccode/?code=NmY4N2U3NWViYzA3YmY4ZTkwMDMzMmNmMWIzODYzMTVfRWppT29YQXQ3Y0gzSEZZaEREejhWSlJUOFBMMmhoUm1fVG9rZW46Ym94Y25VZDNodXkxbU8yc2JsbkFpVThEUnJkXzE2Mjc2NDk4MDE6MTYyNzY1MzQwMV9WNA)
+![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.35.38.png)
 
-4. 如果你使用了 `GrowingMonitorKit` 并调用`+setUploadExceptionEnable:` 方法开启了Crash监控上报，你还需要勾选 「崩溃数据」，如图存
 
-![](https://growingio.feishu.cn/space/api/box/stream/download/asynccode/?code=NmYyYzJlMTcyYTY5MjY2MGM3NTZmNmI5ZjliZjcwMmRfOVg2SzNiOFljSnR4djFYNUVVY0lNNG9sVUt6bFc1YnpfVG9rZW46Ym94Y25CdTUxU2NJeU1yWWRmM08xcVMxQm9mXzE2Mjc2NDk4NDc6MTYyNzY1MzQ0N19WNA)
+
+4. 如果你使用了 `GrowingMonitorKit` 并调用`+setUploadExceptionEnable:` 方法开启了Crash监控上报，你还需要勾选 「崩溃数据」，如图：
+
+![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.35.51%20%281%29.png)
 
 储后会在 App 隐私页面根据我们的选择生成一些列收集类型面板，点击对应面板后可以继续做详细的选择，下面会详细介绍。
 
 ### 4.1 位置
 
-1. 请在 「位置」面板中，勾选 「分析」
+1.请在 「位置」面板中，勾选 「分析」
 
-![](https://growingio.feishu.cn/space/api/box/stream/download/asynccode/?code=NTlmYjM1ZmRlZDZmOTVlNDgxYWY0NTk1NjkwNGQyMDVfaFFzUHgwanJZOUVTcHpoVUxtaWRkcjdYckFvQllRUmdfVG9rZW46Ym94Y25JN2FTMGNFVENrUEVybERiWlRKTG5oXzE2Mjc2NDk0Mzc6MTYyNzY1MzAzN19WNA)
+![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.54.59.png)
 
 2. 然后下一步，勾选「**是**，从此 App 中收集的精确位置数据与用户身份关联」
 
-![](https://growingio.feishu.cn/space/api/box/stream/download/asynccode/?code=OWU2NGRkMWQ4M2EzYzAxYzBlMzgwOTg1MWIwMGM5YzZfcE9NSmUzZVJFQ3FNVU9hVjRiZUlmMzF1SVU1c0RVWW5fVG9rZW46Ym94Y255bk1aZlVYeWFFMUdvUXJKOE5GN2wxXzE2Mjc2NDk0NTY6MTYyNzY1MzA1Nl9WNA)
+![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.38.03.png)
 
 3. 根据您App实际情况选择是否用于追踪目的。
 
@@ -229,39 +229,39 @@ SDK 不会主动获取 `IDFA 权限`，您需要自行获取 `IDFA 权限`, 请�
 
 1. GrowingIO SDK 会在调用 `+setUserId:`接口时收集用户 id 用于分析功能，因此这里选择「分析」，如图 ：
 
-![](https://growingio.feishu.cn/space/api/box/stream/download/asynccode/?code=NDc5ZDVjNGQ2ZjA5YmFiZWJiODkxYzgwMDE5MDRlNWRfOHZOa3Q3Y09nbDJIbG5jekhSOFBWYVFTUDlBM3VwRE5fVG9rZW46Ym94Y253NXJ5bUd6SWlsc2NSZGZKZmNpZFhoXzE2Mjc2NDk0ODI6MTYyNzY1MzA4Ml9WNA)
+![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.39.13.png)
 
  2. 勾选后点击下一步，选择「**是**，从此 App 中收集的用户 ID 与用户身份关联」，这里根据具体的业务进行勾选，如图 ：
 
-![](https://growingio.feishu.cn/space/api/box/stream/download/asynccode/?code=NzBiNWJjNGY1ZmY5OGZkNDM0MzdmNzFlZDkwZjE0OGJfdlVWclB5SmtXa0JpZEpyd2U3cmhaQ1UzdGF3dDVIbm9fVG9rZW46Ym94Y25Ka3MzOWRJTERnckVmUjZhZUdISzNkXzE2Mjc2NDk0OTI6MTYyNzY1MzA5Ml9WNA)
+![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.45.30.png)
 
 3. 点击下一步，需要选择「**是**，我们会将用户 ID 用于追踪目的」
 
-![](https://growingio.feishu.cn/space/api/box/stream/download/asynccode/?code=NGUyOGVjYTUxNzUwMzNmYjQwODBjMTRkZWQxOGQ2NjFfcFlaM0RVQTNiOW9Ib1J3R1pWeVVSYUR1d1VXcGNJOHNfVG9rZW46Ym94Y25JM3Fwblo3bDhSaVpDbjFHdm5QMDhjXzE2Mjc2NDk1MDM6MTYyNzY1MzEwM19WNA)
+![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.41.02.png)
 
 ### 4.3 设备
 
 1. GrowingIO SDK 收集设备 id 用于收集用户登录前的数据，因此这里继续选择「分析」，如图 :
 
-![](https://growingio.feishu.cn/space/api/box/stream/download/asynccode/?code=Yjc4OTI3ODRmYWQ2NDFlZjk1YTAxYTkyMjkwMWM2OWFfYllSazkwdjR5TldwUUxVNGFYMUNGd3l3YXpTY2NXb0VfVG9rZW46Ym94Y25DQ0FtYkZqN3k0WEJzMnJ3M2duT3BlXzE2Mjc2NDk1MTU6MTYyNzY1MzExNV9WNA)
+![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.41.37.png)
 
 2. 点击下一步，因为收集到的数据会与设备 id 绑定，所以此处继续选择「是」
 
-![](https://growingio.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTBiMjExNDk1OTFlYWQ0MmE4ZTAzYTI1YjcyZmRhMWJfYTQyWTJVRzRpTUlWY1FYZEVZTXVMQ2JlaWJTUW1ScmxfVG9rZW46Ym94Y25ibkNJTHBZYmdROFIxbEN2MVRSMUJiXzE2Mjc2NDk1MjU6MTYyNzY1MzEyNV9WNA)
+![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.41.56.png)
 
 3. 继续下一步，同用户 ID ， 会使用 IDFA 与第三方数据相关联以用于定向广告或广告评估目的，如图 ：
 
-![](https://growingio.feishu.cn/space/api/box/stream/download/asynccode/?code=MDg5NTYyOWEyMWM3MDY0YTY4ZWQ5YmFjZjhmYjg4YWFfWnNCMG1MSHhuUzlPb1c2SFhvbGhDYnBxaXhWS1V3cERfVG9rZW46Ym94Y25jRTNNdEZNN21tN1FYNVRKeHA2cU5lXzE2Mjc2NDk1NDA6MTYyNzY1MzE0MF9WNA)
+![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.42.19.png)
 
 ### 4.4 产品交互
 
 1. 使用 GrowingIO 无埋点SDK后，会收集 `APP启动`，`APP退出`，`用户点击`，`页面浏览`等相关行为用于`分析产品`，因此这里继续选择「分析」，如图 ：
 
-![](https://growingio.feishu.cn/space/api/box/stream/download/asynccode/?code=YmEwMjI2ODBkODBiYjBhOWE0ZmNkZTQxOWNiMzUwMmVfek14UGl4akQwTUQ3MWhpblZJQTRVNlBCem9ua0tCY1JfVG9rZW46Ym94Y25wem51dTlqTGpjaGo1UUZod3l0UkdlXzE2Mjc2NDk1NTE6MTYyNzY1MzE1MV9WNA)
+![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.42.57.png)
 
 2. 点击下一步，继续选择是，如图 ：
 
-![](https://growingio.feishu.cn/space/api/box/stream/download/asynccode/?code=NmUyYjczNTZjODlhYWNkNGIyMWE2OWQxYWFjOWI4YWZfZkNFaVgycFN6OUk3MHphYXB6NWJCczJ3bXF5d204OTdfVG9rZW46Ym94Y24zeUIxVFAzNU90VnpXQkxhTHE4eDJiXzE2Mjc2NDk1NjM6MTYyNzY1MzE2M19WNA)
+![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.43.18.png)
 
 3. 最后追踪目的，请根据您实际情况选择，是否要用于追踪目的。
 
