@@ -2,7 +2,7 @@
 description: 为小程序（包括微信、支付宝、百度小程序等）内 H5 页面、微信公众号 H5 应用等提供统一的数据采集 SDK。
 ---
 
-# H5 内嵌页 SDK
+# 小程序和微信公众号H5 内嵌页 SDK
 
 ## 准备条件
 
@@ -229,5 +229,5 @@ gio('track', 'testImp', { foo: 'bar', baz: 'qux'})
 
 方式二：在SDK中设置了Debug模式后，在开发者工具中查看数据采集日志。
 
-方式三：[数据校验]()
+方式三：[数据校验](../../../product-manual/data-center/datacheck/)
 
