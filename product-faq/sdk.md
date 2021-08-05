@@ -40,3 +40,13 @@ web SDK 只有 DOM 结构改变的时候才会补发 imp，而由 display 控制
 
 web SDK 的高级属性 growing-ignore 是具有继承性的，可以使用 growing-title = ""，使不想采的那个元素 v为空。
 
+## 7.小程序sdk在体验评分中提示“存在定时器未跟随页面回收”会造成内存泄漏吗？
+
+该提示和内存泄漏没有关系，这个只是一项最佳实践的检测规则。可见[最佳实践 \| 微信开放文档](https://developers.weixin.qq.com/miniprogram/dev/framework/audits/best-practice.html)第九条规则。具体原因如下：
+
+小程序sdk这边是全局的，在每次上报数据的时候都会用到settimeout做防抖的聚合操作，由于检测是页面级别的，所以会有该提示。
+
+在切换页面的时候会触发一个click事件，如从a页面切换到b页面，在a页面点击切换到b页面时，会在a页面上触发一个click事件，这时sdk就会起一个settimeout，一直持续到事件发送出去才会结束，这样就会触发小程序的这条规则。  
+  
+
+
