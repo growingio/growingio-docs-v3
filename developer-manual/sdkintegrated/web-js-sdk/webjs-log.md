@@ -16,7 +16,7 @@
       <td style="text-align:left">
         <ol>
           <li>&#x652F;&#x6301;&#x83B7;&#x53D6;&#x52A8;&#x6001;platform</li>
-          <li>&#x4FEE;&#x590D;15min&#x5185;&#x5207;&#x6362;userId&#xFF0C;sessionId&#x6CA1;&#x6709;&#x66F4;&#x65B0;&#x7684;&#x95EE;&#x9898;</li>
+          <li>&#x4FEE;&#x590D;15min&#x5185;&#x5207;&#x6362;userId&#xFF0C;&#x8865;&#x53D1;vst&#x65F6;sessionId&#x6CA1;&#x6709;&#x66F4;&#x65B0;&#x7684;&#x95EE;&#x9898;</li>
         </ol>
       </td>
       <td style="text-align:left">2021-08-05</td>
