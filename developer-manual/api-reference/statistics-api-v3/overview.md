@@ -45,15 +45,19 @@ V3接口目前还在持续补充，很快会覆盖现有的 [统计数据导出A
 | :--- | :--- | :--- |
 
 
+| 分布分析下载 | [获取分布分析数据](definition/huo-qu-fen-bu-fen-xi-shu-ju.md) | 单图下载每秒限速2次 |
+| :--- | :--- | :--- |
+
+
 | 获取用户分群下载链接 | [获取用户分群的下载链接](definition/get-segmentations.md) | 下载每秒限速2次 |
 | :--- | :--- | :--- |
 
 
-* 本章节中API 的 project\_uid（项目UID）、dashboard\_id（看板ID）、chart\_id（事件分析单图ID）、funnel\_id（漏斗分析单图ID）、retention\_id（留存分析单图ID） 字段，均可在项目页面url中找到，如："[https://www.growingio.com/admin/projects/nxog09md/dashboard/YoX28w7R](https://www.growingio.com/admin/projects/nxog09md/dashboard/YoX28w7R)" 中的 "nxog09md" 和 "YoX28w7R" 分别是 project\_id 和dashboard\_id。
+* 本章节中API 的 project\_uid（项目UID）、dashboard\_id（看板ID）、chart\_id（事件分析单图ID）、funnel\_id（漏斗分析单图ID）、frequency\_id（分布分析单图ID）、retention\_id（留存分析单图ID） 字段，均可在项目页面url中找到，如："[https://www.growingio.com/admin/projects/nxog09md/dashboard/YoX28w7R](https://www.growingio.com/admin/projects/nxog09md/dashboard/YoX28w7R)" 中的 "nxog09md" 和 "YoX28w7R" 分别是 project\_id 和dashboard\_id。
   * dashboard\_id获取方式
     * 在项目URL中获取
     * 通过[获取看板列表](https://docs.growingio.com/docs/developer-manual/api-reference/statistics-api/definition/get-charts)API根据project\_id获取所有看板信息。
-  * chart\_id、funnel\_id、retention\_id的获取方式
+  * chart\_id、funnel\_id、frequency\_id、retention\_id的获取方式
     * 在项目URL中获取；
     * 通过[获取看板中的图表信息](https://docs.growingio.com/docs/developer-manual/api-reference/statistics-api/definition/get-chartinfo)API，根据dashboard\_id获取当前看板的所有图表信息，返回的信息中会包含图表ID，图表类型等信息。
   * segmentation\_id的获取方式
@@ -64,7 +68,7 @@ V3接口目前还在持续补充，很快会覆盖现有的 [统计数据导出A
 
 ![](../../../.gitbook/assets/image%20%28142%29.png)
 
-* chart\_id、funnel\_id、retention\_id 通过URL获取图示：
+* chart\_id、funnel\_id、frequency\_id、retention\_id 通过URL获取图示：
 
 ![](../../../.gitbook/assets/image%20%28141%29.png)
 
