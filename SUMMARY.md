@@ -161,6 +161,7 @@
       * [获取留存分析数据](developer-manual/api-reference/statistics-api-v3/definition/getretention.md)
       * [获取分布分析数据](developer-manual/api-reference/statistics-api-v3/definition/huo-qu-fen-bu-fen-xi-shu-ju.md)
       * [获取用户分群的下载链接](developer-manual/api-reference/statistics-api-v3/definition/get-segmentations.md)
+      * [获取用户标签的下载链接](developer-manual/api-reference/statistics-api-v3/definition/huo-qu-yong-hu-biao-qian-de-xia-zai-lian-jie.md)
   * [统计数据导出API](developer-manual/api-reference/statistics-api/README.md)
     * [概述](developer-manual/api-reference/statistics-api/overview.md)
     * [接口定义](developer-manual/api-reference/statistics-api/definition/README.md)
