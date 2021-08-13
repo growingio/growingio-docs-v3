@@ -114,6 +114,7 @@ public class TestApplication extends Application {
 | setMutiprocess | false | 使用了多进程必须配置，自定义事件和变量值才会多进程共享 | ALL | ALL |
 | trackAllFragments | false | 是否采集所有Fragment | ALL | - |
 | setHashTagEnable | false | 在`WebView`中的页面访问，是否认为点击锚点链接是一个页面浏览 | ALL | - |
+| setHarmonyEnable | false | 是否识别鸿蒙系统 | &gt;=2.9.6 | &gt;=2.9.6 |
 
 ## 数据采集发送API
 
