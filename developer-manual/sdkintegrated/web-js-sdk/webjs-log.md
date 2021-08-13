@@ -12,6 +12,15 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.2.5</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x52A8;&#x6001;platform&#x652F;&#x6301;&#x4ECE;url&#x7684;gio_platform&#x53C2;&#x6570;&#x8BFB;&#x53D6;</li>
+        </ol>
+      </td>
+      <td style="text-align:left">2021-08-12</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.2.4</td>
       <td style="text-align:left">
         <ol>
