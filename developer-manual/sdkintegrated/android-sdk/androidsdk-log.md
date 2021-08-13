@@ -25,6 +25,8 @@ description: Android SDK更新日志
         <ol>
           <li>&#x652F;&#x6301;&#x9E3F;&#x8499;&#x7CFB;&#x7EDF;&#x8BC6;&#x522B;</li>
           <li>&#x4F18;&#x5316;&#x591A;&#x8FDB;&#x7A0B;&#x4E2D;&#x6307;&#x6807;&#x51C6;&#x786E;&#x6027;</li>
+          <li>&#x8C03;&#x6574;&#x9ED8;&#x8BA4;&#x6700;&#x77ED;&#x53D1;&#x6570;&#x65F6;&#x95F4;&#x4E3A;5s&#xFF0C;&#x4E0E;iOS&#x4FDD;&#x6301;&#x4E00;&#x81F4;</li>
+          <li>&#x4FEE;&#x590D;&#x521D;&#x59CB;&#x5316;&#x53D1;&#x9001;&#x95F4;&#x9694;&#x8FC7;&#x957F;&#xFF0C;&#x5BFC;&#x81F4;&#x65E0;&#x6CD5;&#x53D1;&#x9001;&#x4E8B;&#x4EF6;&#x7684;&#x95EE;&#x9898;</li>
         </ol>
       </td>
       <td style="text-align:left">2021-08-13</td>
