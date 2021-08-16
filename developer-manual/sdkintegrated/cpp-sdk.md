@@ -30,7 +30,7 @@ nmake /f Makefile.vc mode=dll MACHINE=x64 //MACHINE=x64编译64位版本默认x8
 
 3.链接器 -&gt; 常规 -&gt; 附加库目录 -&gt;添加 curl 目录 builds 下 builds\libcurl-vc10-x86-release-static-ipv6-sspi-winssl\lib 
 
-4.链接器 -&gt; 输入 -&gt; 附加依赖项，添加 libcurl\_a.lib;Ws2\_32.lib; Wldap32.lib; winmm.lib; Crypt32.lib;
+4.链接器 -&gt; 输入 -&gt; 附加依赖项，添加 libcurl.lib;Ws2\_32.lib; Wldap32.lib; winmm.lib; Crypt32.lib;
 
 5.在 C/C++ -&gt; 预处理器 -&gt; 预处理器定义中，加入 CURL\_STATICLIB 注：debug 与 release 配置相对于的库 将 manual\_track.h manual\_track.cpp 添加到项目引入头文件中即可使用
 
