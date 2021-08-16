@@ -46,7 +46,7 @@ nmake /f Makefile.vc mode=dll MACHINE=x64 //MACHINE=x64编译64位版本默认x8
 
 3.链接器 -&gt; 输入 -&gt; 附加依赖项，添加 manual\_track.lib 
 
-4.将 manual\_track.dll 复制到工作目录（exe所在目录下）
+4.将 manual\_track.dll libcurl.dll复制到工作目录（exe所在目录下）
 
 ## 3 初始化SDK
 
@@ -113,7 +113,7 @@ growingio_track::Sdk::Track("OpenApp", event_properties);
 ### 5.2 埋点接口
 
 ```cpp
-//发送自定义事件 API cstm
+//发送自定义事件 API cstm event_name 仅支持大小写字母,数字,_
 static void Track(const string &event_name);
 
 static void Track(const string &event_name, const PropertiesNode &properties);
