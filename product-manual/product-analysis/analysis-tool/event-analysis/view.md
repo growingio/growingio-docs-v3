@@ -72,5 +72,11 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LLOlf19XxXNqhWMjuLC-LLOi8X370beS-4gkyfhE6B094E6B3A1E59BBE.png)
 {% endtab %}
+
+{% tab title="环图" %}
+环图主要用于展示分类对整体的占比情况。比如您可选择用户量作为指标，应用平台作为维度，了解各个平台对总用户量的占比。
+
+![](../../../../.gitbook/assets/image%20%28149%29.png)
+{% endtab %}
 {% endtabs %}
 
