@@ -47,7 +47,6 @@
     * [Web JS SDK升级指导](developer-manual/sdkintegrated/web-js-sdk/web-sdk-update.md)
     * [Web JS SDK API](developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/README.md)
       * [API 2.x](developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/websdk-apiv2.md)
-      * [API 1.x](developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/websdk-apiv1.md)
     * [Web半自动采集浏览事件](developer-manual/sdkintegrated/web-js-sdk/web-imp.md)
     * [常见问题](developer-manual/sdkintegrated/web-js-sdk/faq/README.md)
       * [为什么我们的网站要允许iframe加载？](developer-manual/sdkintegrated/web-js-sdk/faq/faq-1.md)
