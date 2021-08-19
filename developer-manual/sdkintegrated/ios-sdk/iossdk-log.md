@@ -18,6 +18,11 @@ description: iOS SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.9.4</td>
+      <td style="text-align:left">1.&#x7A33;&#x5B9A;&#x6027;&#x63D0;&#x5347;</td>
+      <td style="text-align:left">2021-08-19</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.9.3</td>
       <td style="text-align:left">
         <p>1.&#x9002;&#x914D;&#x66F4;&#x591A;&#x6CE8;&#x5165;&#x573A;&#x666F;</p>
