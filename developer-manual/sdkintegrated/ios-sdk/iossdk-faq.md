@@ -102,3 +102,5 @@ Swift：修改AppDelegate.swift，并手动创建main.swift文件。
 
 如果您在圈选或 Mobile Debugger 扫码验证时无法唤起 App，请核对 URL Scheme 是否配置正确，`+[Growing handleUrl:]` 函数调用是否正常，参考[添加 URL Scheme](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/auto-ios-sdk#urlscheme)、[添加激活圈选的代码](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/auto-ios-sdk#4-tian-jia-ji-huo-quan-xuan-de-dai-ma)
 
+[其他圈选问题](../../../product-faq/quanxuan.md)
+
