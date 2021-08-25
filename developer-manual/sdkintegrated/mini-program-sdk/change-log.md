@@ -10,6 +10,12 @@
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">3.7.2</td>
+      <td style="text-align:left">&#x65B0;&#x589E;&#x5BF9;Taro3&#x6846;&#x67B6;&#x7684;&#x652F;&#x6301;</td>
+      <td
+      style="text-align:left">2021-08-25</td>
+    </tr>
+    <tr>
       <td style="text-align:left">3.7.0</td>
       <td style="text-align:left">
         <p></p>
