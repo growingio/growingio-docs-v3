@@ -33,7 +33,8 @@ SDK版本要求：iOS 无埋点SDK &gt;=2.x
 // 手动标识该vc的附加属性  该值可被子节点继承
 @property (nonatomic, copy)   NSString *growingAttributesInfo; 
 ​
-// 手动标识该页面的标题，必须在该UIViewController显示之前设置
+// 手动标识该页面的别名，对应"p"字段，不影响xpath生成，必须在该UIViewController显示之前设置
+// 有些时候，对于完成某个功能的页面，统计时可能需要进一步细分。 比如，对于展示商品列表的页面，需要区分衣物类商品，以及食品类商品的两种列表的访问量。
 @property (nonatomic, copy)   NSString *growingAttributesPageName;
 ```
 

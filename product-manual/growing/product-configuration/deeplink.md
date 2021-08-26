@@ -56,17 +56,17 @@ GrowingIO的域名：
 
 #### **2.2.2 将 Team ID 配置到 GrowingIO 后台。**
 
-1.在UniversalLink模块，单击模块右上角的编辑，进入配置 UniversalLink界面。
+1.在UniversalLink模块，单击模块右上角的“编辑”，进入配置 UniversalLink界面。
 
-配置获取到的Team ID 并勾选“我已完成Xcode配置，开启Universal Link跳转”，同时确认您的 SDK 版本并进行确认。
+![](../../../.gitbook/assets/image%20%28158%29.png)
+
+2. 配置获取到的Team ID 并勾选“我已完成Xcode配置，开启Universal Link跳转”，同时确认您的 SDK 版本，如果SDK版本为2.8.4及以上，请务必勾选”已确认将iOS SDK升级至2.8.4或更高版本“并进行确认。
+
+![](../../../.gitbook/assets/image%20%28159%29.png)
 
 {% hint style="info" %}
-若以上配置完成后，且App端已经完成SDK集成，请勾选”我已完成Xcode配置，开启UniversalLink跳转“；如果SDK版本为2.8.4及以上，请勾选”已确认将iOS SDK升级至2.8.4或更高版本“将开启DeepLink 2.0方案，将获得更好的使用体验。
+如果SDK版本为2.8.4及以上，勾选”已确认将iOS SDK升级至2.8.4或更高版本“将开启DeepLink 2.0方案，将获得更好的使用体验。
 {% endhint %}
-
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtP41qSBliAk88VA3Xe-LtPKKsn2R69VKrS_DHfimage.png)
-
-![](../../../.gitbook/assets/pei-zhi-universallink.png)
 
 ## 3 Android 应用配置
 
