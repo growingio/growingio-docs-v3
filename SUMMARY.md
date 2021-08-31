@@ -283,6 +283,7 @@
     * [反作弊规则](product-manual/growing/product-configuration/anti-cheating.md)
     * [归因配置](product-manual/growing/product-configuration/attribution.md)
   * [渠道配置指南](product-manual/growing/channel-config/README.md)
+    * [HUAWEI Ads](product-manual/growing/channel-config/huawei-ads.md)
     * [腾讯社交广告（Marking API）](product-manual/growing/channel-config/tencent.md)
     * [今日头条](product-manual/growing/channel-config/bytedance.md)
     * [百度原生信息流](product-manual/growing/channel-config/baidu.md)

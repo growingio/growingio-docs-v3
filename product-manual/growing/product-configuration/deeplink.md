@@ -58,11 +58,11 @@ GrowingIO的域名：
 
 1.在UniversalLink模块，单击模块右上角的“编辑”，进入配置 UniversalLink界面。
 
-![](../../../.gitbook/assets/image%20%28158%29.png)
+![](../../../.gitbook/assets/image%20%28163%29.png)
 
 2. 配置获取到的Team ID 并勾选“我已完成Xcode配置，开启Universal Link跳转”，同时确认您的 SDK 版本，如果SDK版本为2.8.4及以上，请务必勾选”已确认将iOS SDK升级至2.8.4或更高版本“并进行确认。
 
-![](../../../.gitbook/assets/image%20%28159%29.png)
+![](../../../.gitbook/assets/image%20%28165%29.png)
 
 {% hint style="info" %}
 如果SDK版本为2.8.4及以上，勾选”已确认将iOS SDK升级至2.8.4或更高版本“将开启DeepLink 2.0方案，将获得更好的使用体验。
