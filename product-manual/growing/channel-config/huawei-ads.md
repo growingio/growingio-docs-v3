@@ -20,8 +20,8 @@
 
 ![](../../../.gitbook/assets/image%20%28162%29.png)
 
-{% hint style="info" %}
-HUAWEI Ads 一个应用只支持一个监测链接，无需使用【批量创建】功能
+{% hint style="warning" %}
+HUAWEI Ads 一个应用只支持一个监测链接。在HUAWEI Ads平台创建多个转化指标，也只需要使用同一条监测链接。
 {% endhint %}
 
 ![](../../../.gitbook/assets/image%20%28154%29.png)

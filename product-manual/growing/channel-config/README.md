@@ -12,6 +12,8 @@ GrowingIO 渠道合作方对接信息持续更新中...
 
 渠道配置参考：
 
+{% page-ref page="huawei-ads.md" %}
+
 {% page-ref page="tencent.md" %}
 
 {% page-ref page="bytedance.md" %}
