@@ -20,11 +20,13 @@
 
 ![](../../../.gitbook/assets/image%20%28162%29.png)
 
+![](../../../.gitbook/assets/image%20%28171%29.png)
+
 {% hint style="warning" %}
 HUAWEI Ads 一个应用只支持一个监测链接。在HUAWEI Ads平台创建多个转化指标，也只需要使用同一条监测链接。
 {% endhint %}
 
-![](../../../.gitbook/assets/image%20%28169%29.png)
+![](../../../.gitbook/assets/image%20%28170%29.png)
 
 2. 在HUAWEI Ads平台，新建转化指标，填写监测链接及参数配置，并保存
 
