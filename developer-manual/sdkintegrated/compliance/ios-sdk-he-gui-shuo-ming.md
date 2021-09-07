@@ -60,6 +60,8 @@ GrowingIO SDK 提供`disableDataCollect`接口，可在用户不同意数据采�
 
 因为在 iOS 14 之后 IDFA 需要用户授权，同意应用追踪之后才能获取到 IDFA。
 
+如若您需要使用 IDFA 作为访问用户 ID，请按照以下步骤初始化 SDK：
+
 * GrowingIO SDK 在 2.9.1 之前，需要您确保用户在同意应用追踪后初始化 SDK。
 
 ```objectivec
