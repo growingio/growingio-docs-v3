@@ -111,7 +111,6 @@
     * [更新日志](developer-manual/sdkintegrated/h5-sdk/change-log.md)
   * [微信小游戏 SDK](developer-manual/sdkintegrated/game-sdk/README.md)
     * [更新日志](developer-manual/sdkintegrated/game-sdk/change-log.md)
-  * [C++ 客户端SDK](developer-manual/sdkintegrated/cpp-sdk.md)
   * [服务端埋点SDK](developer-manual/sdkintegrated/server-sdk/README.md)
     * [Java埋点SDK](developer-manual/sdkintegrated/server-sdk/java-sdk.md)
     * [PHP埋点SDK](developer-manual/sdkintegrated/server-sdk/php-sdk.md)
