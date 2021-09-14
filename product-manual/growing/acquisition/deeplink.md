@@ -40,7 +40,7 @@ App Links 配置：[配置方法](https://docs.growingio.com/v3/product-manual/g
 
 三. 配置参数后单击确定，展示创建好的深度链接或二维码。
 
-（配图）
+![](../../../.gitbook/assets/jie-ping-20210914-shang-wu-10.26.41.png)
 
 | 参数 | 说明 |
 | :--- | :--- |
