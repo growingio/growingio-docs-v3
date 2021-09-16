@@ -55,7 +55,7 @@ iOS：1. App 所属 Apple Developer Team 改变，即[ App 转让](https://help.
 Android：
 
 * 当访问用户ID 是 UUID时，1. 用户删除了应用重新安装；2. 用户在设置中清除了APP的数据
-* 当访问用户ID是AndroidID或IMEI时，上述行为不会导致访问用户ID 变化
+* 当访问用户ID是AndroidID或IMEI时，如果再次获取时可获取到AndroidID或IMEI，上述行为不会导致访问用户ID 变化
 
 微信小程序：
 
