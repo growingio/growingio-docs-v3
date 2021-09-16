@@ -42,8 +42,10 @@ SDK版本要求：iOS 无埋点SDK &gt;=2.x
 
 ```java
 // SDK版本2.8.22 开始支持
-// 使用场景，全局不采集webview的情况下，只想采集单个webview
-// 手动标识该WKWebView可以被采集，默认值NO
+// 手动标识该WKWebView可以被采集，默认值为NO
+// 使用场景：当enableAllWebViews设置为NO的情况下，需要采集该webView
+// - 需要在initWithFrame:configuration:之后立即调用
+// - 如果该webView.growingAttributesDonotTrack为YES，则此设置无效
 @property (nonatomic, assign) BOOL growingAttributesIsTracked;
 ```
 

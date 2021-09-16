@@ -48,11 +48,17 @@ GrowingIO默认使用 UUID（随机 UUID 的方法生成访问用户 ID，并将
 
 访问用户 ID 在哪些情况下会发生变化？
 
-JS：用户使用浏览器的隐身模式、用户手动清空Cookie、同一个用户使用多个浏览器
+Web：1. 用户使用浏览器的隐身模式；2.用户手动清空Cookie；3.同一个用户使用多个浏览器
 
-iOS：当访问用户ID为 IDFV 或 IDFA 时，会随着 IDFA 和 IDFV 的变化而变化；当访问用户 ID 为 UUID 时，用户删除了应用重新安装或者是清除了数据。
+iOS：1. App 所属 Apple Developer Team 改变，即[ App 转让](https://help.apple.com/app-store-connect/#/deved688524f)；2.用户设备抹掉所有内容和设置
 
-Android：当访问用户ID为Android或IMEI时，会随着Android和IMEI的变化而变化；当访问用户ID为UUID时，用户删除了应用重新安装或者是清除了数据。
+Android：
 
-微信小程序：当用户ID 是 UUID时，用户长按小程序入口的小程序图标，删除了小程序；更换了手机设备；手动更新了微信的缓存等。当用户 openID 上述行为不会导致 访问用户ID 变化。
+* 当访问用户ID 是 UUID时，1. 用户删除了应用重新安装；2. 用户在设置中清除了APP的数据
+* 当访问用户ID是AndroidID或IMEI时，上述行为不会导致访问用户ID 变化
+
+微信小程序：
+
+* 当访问用户ID 是 UUID时，1. 用户长按小程序入口的小程序图标，删除了小程序；2. 更换了手机设备；3. 手动更新了微信的缓存等
+* 当访问用户ID 是openID时，上述行为不会导致 访问用户ID 变化
 

@@ -34,7 +34,5 @@ SDK 2.7.4及以下版本不支持Instant Run，请开发者开发期间配置gio
 上线时，一定要将gradle.properties文件中的gioenable改为true，否则我们无法采集数据。
 {% endhint %}
 
-## 2. SDK 数据发送的策略是什么？
 
-![](../../../../.gitbook/assets/image%20%28122%29.png)
 
