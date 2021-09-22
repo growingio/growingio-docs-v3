@@ -30,6 +30,10 @@ gio('setVisitor', properties: object);
 
 **代码示例**
 
+{% hint style="warning" %}
+变量value的数据类型需与【数据中心/数据管理】定义保持一致，否则上报数据将无法正确解析，导致数据丢失。
+{% endhint %}
+
 ```java
 // 假设初始化后把 gio 对象放在 App 的 globalData 里面
 // 比如在针对不同的用户做某个 Campaign 的 A/B 测试
@@ -56,6 +60,10 @@ gio('setUser', properties: object)
 | properties | Object | 是 | 登录用户变量，用户额外的信息参数 |
 
 **代码示例**
+
+{% hint style="warning" %}
+变量value的数据类型需与【数据中心/数据管理】定义保持一致，否则上报数据将无法正确解析，导致数据丢失。
+{% endhint %}
 
 ```java
 // 假设初始化后把 gio 对象放在 App 的 globalData 里面
@@ -84,6 +92,10 @@ gio('setPage', properties: object)
 | properties | Object | 是 | 页面级变量，页面额外的信息参数 |
 
 **代码示例**
+
+{% hint style="warning" %}
+变量value的数据类型需与【数据中心/数据管理】定义保持一致，否则上报数据将无法正确解析，导致数据丢失。
+{% endhint %}
 
 ```java
 // 假设初始化后把 gio 对象放在 App 的 globalData 里面
@@ -127,6 +139,10 @@ gio('setEvar', properties: object)
 
 **代码示例**
 
+{% hint style="warning" %}
+变量value的数据类型需与【数据中心/数据管理】定义保持一致，否则上报数据将无法正确解析，导致数据丢失。
+{% endhint %}
+
 ```java
 // 假设初始化后把 gio 对象放在 App 的 globalData 里面
 getApp().globalData.gio('setEvar', { 
@@ -152,6 +168,10 @@ gio('track', eventName: string, properties: object);
 | properties | Object | 否 | 事件级变量，即事件发生时所伴随的维度信息参数。 |
 
 **代码示例**
+
+{% hint style="warning" %}
+变量value的数据类型需与【数据中心/数据管理】定义保持一致，否则上报数据将无法正确解析，导致数据丢失。
+{% endhint %}
 
 ```java
 // 假设初始化后把 gio 对象放在 App 的 globalData 里面
