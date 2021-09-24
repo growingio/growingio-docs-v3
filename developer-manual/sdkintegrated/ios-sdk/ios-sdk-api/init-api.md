@@ -227,7 +227,7 @@ GrowingIO初始化配置项均在AppDelegate.m文件中的didFinishLaunchingWith
     <tr>
       <td style="text-align:left">setFlushInterval</td>
       <td style="text-align:left">15s</td>
-      <td style="text-align:left">&#x8BBE;&#x7F6E;&#x3001;&#x83B7;&#x53D6;&#x53D1;&#x9001;&#x6570;&#x636E;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;15&#x79D2;</td>
+      <td style="text-align:left">&#x8BBE;&#x7F6E;&#x53D1;&#x9001;&#x6570;&#x636E;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;15&#x79D2;</td>
       <td
       style="text-align:left">&#x2714;&#xFE0F;</td>
         <td style="text-align:left">&#x2714;&#xFE0F;</td>
