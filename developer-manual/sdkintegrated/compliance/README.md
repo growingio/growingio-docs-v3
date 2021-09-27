@@ -82,7 +82,7 @@ growingio {
 }
 ```
 
-#### 1.3.4. OAID
+#### 1.3.5. OAID
 
 在使用渠道追踪功能时，`GrowingIO SDK`会使用到 OAID。如果您不想采集，需要配置`Configuration`
 
@@ -167,19 +167,19 @@ GrowingIO.getInstance().enableDataCollect();
 
 #### 2.3 常见问题
 
-1. Q1：延迟初始化之后，发现丢掉了部分事件
+Q1：延迟初始化之后，发现丢掉了部分事件
 
  A：对于SDK初始化之前，或者`enableDataCollect` 之前的数据，一概丢弃。
 
-1. Q2：发现部分事件沿用了上一次的 `SessionID`
+ Q2：发现部分事件沿用了上一次的 `SessionID`
 
  A：请使用最新版本 `iOS >= 2.9.1` ，`Android >= 2.8.25`，`SessionID` 需要伴随 `Visit` 事件重置，如果事件发送在 `SDK初始化` 之后，`Visit` 事件之前，则会使用上一次的 `SessionID` ，属于已知问题。
 
-1. Q3：发现App启动后丢了`Visit`事件，其他事件正常
+Q3：发现App启动后丢了`Visit`事件，其他事件正常
 
  A：请使用最新版本 `iOS >= 2.9.1` ，`Android >= 2.8.25` ，对于延迟初始化，老版本没有补发 `Visit` 事件，请升级版本，并按照 `合规步骤` 进行集成。
 
-1. Q4：发现App访问时长超长
+Q4：发现App访问时长超长
 
  A：请使用最新版本 `iOS >= 2.9.1` ，`Android >= 2.8.25` ，`SessionID` 需要伴随 `Visit` 事件重置，如果事件发送在 `SDK初始化` 之后，`Visit` 事件之前，则会使用上一次的 `SessionID` ，导致访问时长超长，属于已知问题，同Q2。
 
