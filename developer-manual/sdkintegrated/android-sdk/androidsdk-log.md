@@ -20,6 +20,18 @@ description: Android SDK更新日志
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">2.9.7</td>
+      <td style="text-align:left">
+        <ol>
+          <li>&#x9002;&#x914D; oaid sdk 1.0.26/1.0.27</li>
+          <li>imp &#x9ED8;&#x8BA4;&#x5EF6;&#x65F6;500ms, &#x6700;&#x5C0F;&#x8BBE;&#x7F6E;&#x4E0D;&#x5C11;&#x4E8E;50ms,
+            &#x907F;&#x514D;&#x539F;&#x5148;&#x9ED8;&#x8BA4;&#x4E3A;0&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x754C;&#x9762;&#x5361;&#x987F;</li>
+          <li>&#x4FEE;&#x590D;&#x57CB;&#x70B9;sdk, mobile debugger &#x4E0D;&#x4E0A;&#x4F20;&#x622A;&#x56FE;&#x7684;&#x95EE;&#x9898;</li>
+        </ol>
+      </td>
+      <td style="text-align:left">2021-09-26</td>
+    </tr>
+    <tr>
       <td style="text-align:left">2.9.6</td>
       <td style="text-align:left">
         <ol>
