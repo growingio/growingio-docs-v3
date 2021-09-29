@@ -279,7 +279,6 @@
     * [广告数据权限控制](product-manual/growing/product-configuration/authority.md)
     * [日志数据导出](product-manual/growing/product-configuration/export-log.md)
     * [维度配置（链接扩展维度）](product-manual/growing/product-configuration/utm-config.md)
-    * [反作弊规则](product-manual/growing/product-configuration/anti-cheating.md)
     * [归因配置](product-manual/growing/product-configuration/attribution.md)
   * [渠道配置指南](product-manual/growing/channel-config/README.md)
     * [HUAWEI Ads](product-manual/growing/channel-config/huawei-ads.md)

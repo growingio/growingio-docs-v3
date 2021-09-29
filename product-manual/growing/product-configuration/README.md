@@ -12,7 +12,5 @@
 
 {% page-ref page="utm-config.md" %}
 
-{% page-ref page="anti-cheating.md" %}
-
 
 
