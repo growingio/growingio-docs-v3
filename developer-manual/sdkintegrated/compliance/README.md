@@ -1,14 +1,16 @@
 # 合规指南
 
-## 1. 隐私政策填写
+**鉴于您需要使用GIO提供的服务，请您务必于使用GIO服务之前完成如下合规工作：**
+
+## 1. 隐私政策指南
 
 ### 1.1. 收集和获取
 
-在《隐私政策》中收集和获得您的个人信息栏目中根据实际情况填写以下内容。当您在激活使用时，我们会通过 SDK 收集您的设备信息（例如：`IDFA`、`IDFV`、`操作系统`、`设备型号`、`系统版本`、`AndroidID`、`IMEI` 等）用于统计分析您在 App 内的使用效果。
+在《隐私政策》中收集和获得最终用户的个人信息栏目中根据实际情况填写以下内容。当最终用户在激活使用时，我们会通过 SDK 收集最终用户的设备信息（例如：`IDFA`、`IDFV`、`操作系统`、`设备型号`、`系统版本`、`AndroidID`、`IMEI` 等）用于统计分析最终用户在 App 内的使用效果。
 
 ### 1.2. 与授权合作伙伴共享
 
-在《隐私政策》中的与授权合作伙伴共享栏目中根据实际情况填写以下内容。GrowingIO SDK：收集您的设备信息（例如：`IDFA`、`IDFV`、`操作系统`、`设备型号`、`系统版本`、`AndroidID`、`IMEI` 等）用于数据分析，从而改进我们的产品和服务。
+在《隐私政策》中的与授权合作伙伴共享栏目中根据实际情况填写以下内容：GrowingIO SDK：收集最终用户的设备信息（例如：`IDFA`、`IDFV`、`操作系统`、`设备型号`、`系统版本`、`AndroidID`、`IMEI` 等）用于数据分析，从而改进我们的产品和服务。
 
 ### 1.3. 设备信息说明
 
@@ -16,7 +18,7 @@
 
 * 使用途径
 
-`GrowingIO SDK` 会采集 `IDFA` 和 `IDFV` 字段上传，如果您的项目中引入了 `AdSupport.framework`，会尝试获取 `IDFA`。除了 `IDFA` 和 `IDFV` 字段，SDK会生成 `设备标识` ，其值使用 `IDFA` `IDFV` 和 `UUID` ，三者的优先级为 `IDFA`&gt; `IDFV` &gt; `UUID` ，例如：如果获取不到 `IDFA`，SDK 会使用 `IDFV` 。
+`GrowingIO SDK` 会采集 `IDFA` 和 `IDFV` 字段上传，如果最终用户的项目中引入了 `AdSupport.framework`，会尝试获取 `IDFA`。除了 `IDFA` 和 `IDFV` 字段，SDK会生成 `设备标识` ，其值使用 `IDFA` `IDFV` 和 `UUID` ，三者的优先级为 `IDFA`&gt; `IDFV` &gt; `UUID` ，例如：如果获取不到 `IDFA`，SDK 会使用 `IDFV` 。
 
 * 合规风险
 
@@ -30,7 +32,7 @@ A：对于`IDFA`，App生命周期内，`IDFA` 只会获取一次，就算后续
 
 #### 1.3.2. AndroidId
 
-`GrowingIO SDK`在采集 `设备标识` 时，会默认采集 `AndroidId`，有一定的合规风险，但是考虑采集的准确性，GrowingIO 仍然提供 AndroidId 的采集方法，如果您不需要采集 AndroidId，请配置`Configuration`
+`GrowingIO SDK`在采集 `设备标识` 时，会默认采集 `AndroidId`，有一定的合规风险，但是考虑采集的准确性，GrowingIO 仍然提供 AndroidId 的采集方法，如果最终用户不需要采集 AndroidId，请配置`Configuration`
 
 ```text
 configuration.setAndroidIdEnable(false);
@@ -48,7 +50,7 @@ growingio {
 
 #### 1.3.3. IMEI
 
-在使用渠道追踪功能时，`GrowingIO SDK`会使用到 IMEI。如果您不想采集，需要配置`Configuration`
+在使用渠道追踪功能时，`GrowingIO SDK`会使用到 IMEI。如果最终用户不想采集，需要配置`Configuration`
 
 ```text
 configuration.setImeiEnable(false);
@@ -66,7 +68,7 @@ growingio {
 
 #### 1.3.4. GoogleAdId
 
-在使用渠道追踪功能时，`GrowingIO SDK`会使用到 GoogleAdId。如果您不想采集，需要配置`Configuration`
+在使用渠道追踪功能时，`GrowingIO SDK`会使用到 GoogleAdId。如果最终用户不想采集，需要配置`Configuration`
 
 ```text
 configuration.setGoogleAdIdEnable(false);
@@ -84,7 +86,7 @@ growingio {
 
 #### 1.3.5. OAID
 
-在使用渠道追踪功能时，`GrowingIO SDK`会使用到 OAID。如果您不想采集，需要配置`Configuration`
+在使用渠道追踪功能时，`GrowingIO SDK`会使用到 OAID。如果最终用户不想采集，需要配置`Configuration`
 
 ```text
 configuration.setOAIDEnable(false)
@@ -104,7 +106,7 @@ growingio {
 
 ### 2.1 Android 合规步骤
 
-SDK 在 `2.8.25` 版本及以上提供了合规接口，可以设置在用户同意《隐私政策》后，开启数据采集。具体可以参考以下步骤：用户未同意隐私条款时，可以在 SDK 初始化配置时调用 `disableDataCollect()` 来禁用数据采集（不获取 AndroidId，不获取任何设备信息，也不上报数据）。
+SDK 在 `2.8.25` 版本及以上提供了合规接口，可以设置在最终用户同意您平台的《隐私政策》后，开启数据采集。具体可以参考以下步骤：最终用户未同意您平台的隐私条款时，可以在 SDK 初始化配置时调用 `disableDataCollect()` 来禁用数据采集（不获取 AndroidId，不获取任何设备信息，也不上报数据）。
 
 ```text
 GrowingIO.startWithConfiguration(this, new Configuration()
@@ -114,7 +116,7 @@ GrowingIO.startWithConfiguration(this, new Configuration()
                 );
 ```
 
-当用户同意隐私条款时，调用如下接口，开启数据采集。
+当最终用户同意您平台的隐私条款时，调用如下接口，开启数据采集。
 
 ```text
 GrowingIO.getInstance().enableDataCollect();
@@ -126,9 +128,9 @@ GrowingIO.getInstance().enableDataCollect();
 
 ### 2.2 iOS 合规步骤
 
-因为在 `iOS 14` 之后的IDFA权限需要用户授权，需要同意`隐私条款`之后才能获取到IDFA。
+因为在 `iOS 14` 之后的IDFA权限需要最终用户授权，需要同意您平台的`隐私条款`之后才能获取到IDFA。
 
-* iOS SDK 在 2.9.1 之前，需要您确保用户在同意`隐私条款`后初始化 SDK。
+* iOS SDK 在 2.9.1 之前，需要您确保最终用户在同意您平台的`隐私条款`后初始化 SDK。
 
 ```text
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -142,7 +144,7 @@ GrowingIO.getInstance().enableDataCollect();
 }
 ```
 
-* 在 2.9.1 之后，在用户同意`隐私条款`前调用`disableDataCollect`，并初始化SDK ，待用户同意`隐私条款`后调用 `enableDataCollect`
+* 在 2.9.1 之后，在最终用户同意您平台的`隐私条款`前调用`disableDataCollect`，并初始化SDK ，待最终用户同意您平台的`隐私条款`后调用 `enableDataCollect`
 
 ```text
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -195,23 +197,23 @@ SDK 不会主动获取 `IDFA 权限`，您需要自行获取 `IDFA 权限`, 请�
 
 ![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.33.07.png)
 
- 2. GrowingIO 不会主动申请采集位置信息，如果客户的App申请获取了位置信息，GrowingIO就会采集位置信息用于定位用户城市级别的位置，需要勾选 「精准位置」
+ 2. GrowingIO 不会主动申请采集位置信息，如果您的App申请获取了位置信息，GrowingIO就会采集位置信息用于定位用户城市级别的位置，需要勾选 「精准位置」
 
 > 如果你想禁用位置信息获取，调用 `+setEnableLocationTrack:` 为 `NO`
 
 ![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.35.03.png)
 
-3. 默认情况下只需选择 「设备 ID」。如果使用的是 `无埋点SDK` 需继续选择 「产品交互」。如果使用用户关联，即调用 `+setUserId:`接口则还需勾选 「用户 ID」，如图
+3. 默认情况下只需选择 「设备 ID」。如果使用的是 `无埋点SDK` 需继续选择 「产品交互」。如果使用最终用户关联，即调用 `+setUserId:`接口则还需勾选 「用户 ID」，如图
 
 ![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.35.38.png)
 
 
 
-4. 如果你使用了 `GrowingMonitorKit` 并调用`+setUploadExceptionEnable:` 方法开启了Crash监控上报，你还需要勾选 「崩溃数据」，如图：
+4. 如果您使用了 `GrowingMonitorKit` 并调用`+setUploadExceptionEnable:` 方法开启了Crash监控上报，您还需要勾选 「崩溃数据」，如图：
 
 ![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.35.51%20%281%29.png)
 
-储后会在 App 隐私页面根据我们的选择生成一些列收集类型面板，点击对应面板后可以继续做详细的选择，下面会详细介绍。
+储后会在您的 App 隐私页面根据我们的选择生成一些列收集类型面板，点击对应面板后可以继续做详细的选择，下面会详细介绍。
 
 ### 4.1 位置
 
@@ -223,11 +225,11 @@ SDK 不会主动获取 `IDFA 权限`，您需要自行获取 `IDFA 权限`, 请�
 
 ![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.38.03.png)
 
-3. 根据您App实际情况选择是否用于追踪目的。
+3. 根据您的App实际情况选择是否用于追踪目的。
 
-### 4.2 用户 ID
+### 4.2 最终用户 ID
 
-1. GrowingIO SDK 会在调用 `+setUserId:`接口时收集用户 id 用于分析功能，因此这里选择「分析」，如图 ：
+1. GrowingIO SDK 会在调用 `+setUserId:`接口时收集最终用户 id 用于分析功能，因此这里选择「分析」，如图 ：
 
 ![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.39.13.png)
 
@@ -241,7 +243,7 @@ SDK 不会主动获取 `IDFA 权限`，您需要自行获取 `IDFA 权限`, 请�
 
 ### 4.3 设备
 
-1. GrowingIO SDK 收集设备 id 用于收集用户登录前的数据，因此这里继续选择「分析」，如图 :
+1. GrowingIO SDK 收集设备 id 用于收集最终用户登录前的数据，因此这里继续选择「分析」，如图 :
 
 ![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.41.37.png)
 
@@ -249,7 +251,7 @@ SDK 不会主动获取 `IDFA 权限`，您需要自行获取 `IDFA 权限`, 请�
 
 ![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.41.56.png)
 
-3. 继续下一步，同用户 ID ， 会使用 IDFA 与第三方数据相关联以用于定向广告或广告评估目的，如图 ：
+3. 继续下一步，同最终用户 ID ， 会使用 IDFA 与第三方数据相关联以用于定向广告或广告评估目的，如图 ：
 
 ![](../../../.gitbook/assets/jie-ping-20210802-shang-wu-11.42.19.png)
 
@@ -267,16 +269,24 @@ SDK 不会主动获取 `IDFA 权限`，您需要自行获取 `IDFA 权限`, 请�
 
 ## 5. GrowingIO SDK 合规性说明
 
-GrowingIO SDK 默认收集的数据类型只有「设备 ID」和「用户 ID」主要用于追踪，其他的数据类型采集需要根据自己的采集业务以及选择的SDK 功能来做相应选择：
+GrowingIO SDK 默认收集的数据类型只有「设备 ID」和「用户 ID」主要用于追踪，其他的数据类型采集需要根据您自己的采集业务以及选择的SDK 功能来做相应选择：
 
 * 调用 `+setUserId:`接口：需选择「用户 ID」
 * 使用无埋点 SDK：需选择「产品交互」
 * 开启崩溃收集：需选择「崩溃数据」
 * 开启经纬度采集：需选择「精确位置」
 
-另，该隐私政策的填写是可以更改的。**请根据自己 App 业务的调整及时更新隐私政策。**
+**尽管有上述指南，您应知晓并同意，上述仅为指导性建议，您仍应根据相应管辖国家的法律的调整和更新，以及您自己的业务实际情况，及时调整、更新您平台或APP的隐私政策，以保证您在收集、使用最终用户信息时合法合规，且有充分的权利授权GIO为了向您提供服务的目的收集、使用必要的最终用户信息。否则，您不得使用GIO的任何服务。**
 
 ## **6. 隐私条款**
 
-[https://accounts.growingio.com/privacy](https://accounts.growingio.com/privacy)
+除上述指南外，您还必须知晓并同意GIO企业客户隐私政策，具体如下链接：
+
+[https://accounts.growingio.com/privacy](https://accounts.growingio.com/user-privacy)
+
+GIO亦根据中国法律法规的要求制定了GIO关于最终用户个人信息的隐私政策，具体如下链接，您可以根据您平台或APP隐私政策的需要，选择是否向最终用户公开：
+
+[https://accounts.growingio.com/user-privacy](https://accounts.growingio.com/user-privacy)
+
+您应知晓，GIO会不时更新该合规指南。届时，GIO会通知您具体更新的内容，还请您参考新的合规指南完成合规性操作。
 
