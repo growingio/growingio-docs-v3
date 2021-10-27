@@ -15,18 +15,18 @@ Hashtag使用说明
 {% hint style="success" %}
 URL解读
 
-URL**示意：**www.xxx.com**/**12345/678/123**?**id=1&ig=2
+URL**示意：**www.xxx.com**/**12345/678/123**?**id=1\&ig=2
 
 **拆分：**域名**/**路径**?**查询条件
 
-**即** www.xxx.com **为域名，**/12345/678/123 **为路径，**?id=1&ig=2 **为查询条件**
+**即** www.xxx.com **为域名，**/12345/678/123 **为路径，**?id=1\&ig=2 **为查询条件**
 {% endhint %}
 
-![](https://docs.growingio.com/.gitbook/assets/9412f46a-d87c-41ef-9ee6-9e6e408f4c6a-12626-00000bcf696b73c5_tmp.jpg)
+![](https://docs.growingio.com/.gitbook/assets/9412f46a-d87c-41ef-9ee6-9e6e408f4c6a-12626-00000bcf696b73c5\_tmp.jpg)
 
-## 圈选操作 <a id="1-kai-shi-quan-xuan"></a>
+## 圈选操作 <a href="1-kai-shi-quan-xuan" id="1-kai-shi-quan-xuan"></a>
 
-在顶部导航栏选择“**数据中心 &gt; 无埋点事件定义（圈选） &gt; 您的Web应用”**，进入Web圈选模式。
+在顶部导航栏选择“**数据中心 > 无埋点事件定义（圈选） > 您的Web应用”**，进入Web圈选模式。
 
 {% hint style="success" %}
 Web圈选模式分为浏览和圈选两个模式
@@ -40,7 +40,7 @@ Web圈选模式分为浏览和圈选两个模式
 {% tab title="定义页面" %}
 1、在浏览模式下进入要定义的页面，单击圈选模式下的**定义页面**按钮，进入**定义页面**界面**。**
 
-![](../../../../.gitbook/assets/image%20%2859%29.png)
+![](<../../../../.gitbook/assets/image (59).png>)
 
 左侧选择区：显示与当前页面URL相同的页面（以【当前页】为标识），或包含当前页面的页面。如果页面已经被定义过，可以直接使用。
 
@@ -84,34 +84,19 @@ Web圈选模式分为浏览和圈选两个模式
 当需要定义需要鼠标悬浮等交互行为才能显示的元素时，您可以按住shift键，待元素出现后进行圈选定义。
 {% endhint %}
 
-![](../../../../.gitbook/assets/image%20%28116%29.png)
+![](<../../../../.gitbook/assets/image (116).png>)
 
 | 参数 | 说明 |
-| :--- | :--- |
-
+| -- | -- |
 
 | 所属页面 | 确认元素所在的页面是什么。如果这个元素出现在多个页面同样的位置，想要统计所有的数据，可以通过”定义页面“，先定义元素所在的页面组，在在这里选择该页面组。 |
-| :--- | :--- |
+| ---- | ---------------------------------------------------------------------------- |
 
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x9650;&#x5B9A;&#x6761;&#x4EF6;</th>
-      <th style="text-align:left">
-        <p>&#x8BBE;&#x7F6E;&#x5143;&#x7D20;&#x5F53;&#x524D;&#x7684;&#x6587;&#x672C;&#x3001;&#x987A;&#x5E8F;&#x3001;&#x8F6C;&#x8DF3;&#x94FE;&#x63A5;&#x7B49;&#x9650;&#x5B9A;&#x6761;&#x4EF6;&#xFF0C;&#x786E;&#x5B9A;&#x5143;&#x7D20;&#x7EDF;&#x8BA1;&#x7684;&#x89C4;&#x5219;&#x3002;</p>
-        <p>&#x5185;&#x5BB9;&#xFF1A;</p>
-        <p>&#x987A;&#x5E8F;&#x4F4D;&#xFF1A;</p>
-        <p>&#x8F6C;&#x8DF3;&#x94FE;&#x63A5;&#xFF1A;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 限定条件 | <p>设置元素当前的文本、顺序、转跳链接等限定条件，确定元素统计的规则。</p><p>内容：</p><p>顺序位：</p><p>转跳链接：</p> |
+| ---- | ------------------------------------------------------------------------- |
 
 | 动态展示区 | 通过动态展示区确认是不是自己想要定义的元素和规则。 |
-| :--- | :--- |
-
+| ----- | ------------------------- |
 
 > 对于已被定义过的元素您在修改参数后进行另存为操作。
 
@@ -127,9 +112,9 @@ Web圈选模式分为浏览和圈选两个模式
 {% endtab %}
 
 {% tab title="将查询条件设置为页面级变量" %}
-> SDK版本支持：&gt;=2.x
+> SDK版本支持：>=2.x
 
-以[https://www.growingio.com/projects/1/homepage/overview?platform=ios&channel=banner为例，“?”后面的部分我们通常叫做查询条件（Query），在这个](https://www.growingio.com/projects/1/homepage/overview?platform=ios&channel=banner为例，“?”后面的部分我们通常叫做查询条件（Query），在这个) URL 中标记了这个页面是在哪个平台（platform）打开的，以及通过哪个渠道（channel）访问的等重要信息，不同的公司有不同的应用，这种应用非常常见，那么，我们如何把这些重要的信息利用起来呢？
+以[https://www.growingio.com/projects/1/homepage/overview?platform=ios\&channel=banner为例，“?”后面的部分我们通常叫做查询条件（Query），在这个](https://www.growingio.com/projects/1/homepage/overview?platform=ios\&channel=banner%E4%B8%BA%E4%BE%8B%EF%BC%8C%E2%80%9C?%E2%80%9D%E5%90%8E%E9%9D%A2%E7%9A%84%E9%83%A8%E5%88%86%E6%88%91%E4%BB%AC%E9%80%9A%E5%B8%B8%E5%8F%AB%E5%81%9A%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B6%EF%BC%88Query%EF%BC%89%EF%BC%8C%E5%9C%A8%E8%BF%99%E4%B8%AA) URL 中标记了这个页面是在哪个平台（platform）打开的，以及通过哪个渠道（channel）访问的等重要信息，不同的公司有不同的应用，这种应用非常常见，那么，我们如何把这些重要的信息利用起来呢？
 
 现在不需要埋点和开发，可以直接将这些查询条件设置成页面级变量，即维度；不仅如此，相比与埋点信息的延时发送，GrowingIO 将页面与查询条件中的信息同时发送、采集和计算，没时差，再也不会有那么多的空值了。
 
@@ -139,7 +124,7 @@ Web圈选模式分为浏览和圈选两个模式
 
 2、 选择需要定义的查询条件，为查询条件（标识符）命名后单击确定。
 
-![](../../../../.gitbook/assets/image%20%28114%29.png)
+![](<../../../../.gitbook/assets/image (114).png>)
 
 {% hint style="info" %}
 页面级变量说明
@@ -149,13 +134,13 @@ Web圈选模式分为浏览和圈选两个模式
 埋点优先，埋点页面的数据不受任何影响，只在没有埋点或延时导致埋点数据没有发出来时，会取”标识符“相同的查询条件对应的值。
 {% endhint %}
 
-### **设置查询条件为页面级变量的案例详解** <a id="2-an-li-xiang-jie"></a>
+### **设置查询条件为页面级变量的案例详解** <a href="2-an-li-xiang-jie" id="2-an-li-xiang-jie"></a>
 
 如果你之前进行了埋点，那么这个功能上线后会发生什么变化呢？
 
 电商客户 S 为了分析商品的售卖情况，在详情页进行了埋点，将每个商品的编号、商品名称等设置成了页面级变量，已经实施后上线了，其中商品编号标识符为 id，是从内容中取值的。接下来，用户用这个页面级变量来拆分商品详情页，进行分析。
 
-假设商品详情页的 URL 是这样的 www.s.com/pro?id=342817&city=bj ，我们可以看到查询条件中的 id 就是这个商品的商品编号， **当这个功能上线后，由于「商品编号标识符： id」与「查询条件中的：id 」是一样的，我们会从打点设置的规则和 URL 中的查询条件中同时取 id 的值，**有如下几种情况：
+假设商品详情页的 URL 是这样的 www.s.com/pro?id=342817\&city=bj ，我们可以看到查询条件中的 id 就是这个商品的商品编号， **当这个功能上线后，由于「商品编号标识符： id」与「查询条件中的：id 」是一样的，我们会从打点设置的规则和 URL 中的查询条件中同时取 id 的值，**有如下几种情况：
 
 > 表格第四列「埋点取的值」 - 客户打点时的规则是从「内容」中取值；
 >
@@ -169,105 +154,24 @@ Web圈选模式分为浏览和圈选两个模式
 2.如果一个页面上，没有埋点的值，不管是因为这个页面没有埋点，还是因为发送时间导致没有发送出来，会取查询条件中取到的值。（表格中的第 3 个和第 4 个情况）
 {% endhint %}
 
-| \# | ​ | 变化 | 埋点取的值 | URL 取的值 | 之前 | 之后 |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| # | ​ | 变化 | 埋点取的值 | URL 取的值 | 之前 | 之后 |
+| - | - | -- | ----- | ------- | -- | -- |
 
+| 第 1 个情况 | <p><strong>商品详情页1</strong></p><p>商品页内容中的值 342817</p><p>www.s.com/pro?id=342817&#x26;city=bj</p> | 无变化 | **342817** | 342817 | 342817 | **342817** |
+| ------- | ----------------------------------------------------------------------------------------------- | --- | ---------- | ------ | ------ | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x7B2C; 1 &#x4E2A;&#x60C5;&#x51B5;</th>
-      <th style="text-align:left">
-        <p><b>&#x5546;&#x54C1;&#x8BE6;&#x60C5;&#x9875;1</b>
-        </p>
-        <p>&#x5546;&#x54C1;&#x9875;&#x5185;&#x5BB9;&#x4E2D;&#x7684;&#x503C; 342817</p>
-        <p>www.s.com/pro?id=342817&amp;city=bj</p>
-      </th>
-      <th style="text-align:left">&#x65E0;&#x53D8;&#x5316;</th>
-      <th style="text-align:left"><b>342817</b>
-      </th>
-      <th style="text-align:left">342817</th>
-      <th style="text-align:left">342817</th>
-      <th style="text-align:left"><b>342817</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 第 2 个情况 | <p><strong>商品详情页1</strong></p><p>商品页内容中的值 ac487</p><p>www.s.com/pro?id=342816&#x26;city=bj</p> | 无变化 | **ac487** | 342816 | ac487 | **ac487** |
+| ------- | ---------------------------------------------------------------------------------------------- | --- | --------- | ------ | ----- | --------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x7B2C; 2 &#x4E2A;&#x60C5;&#x51B5;</th>
-      <th style="text-align:left">
-        <p><b>&#x5546;&#x54C1;&#x8BE6;&#x60C5;&#x9875;1</b>
-        </p>
-        <p>&#x5546;&#x54C1;&#x9875;&#x5185;&#x5BB9;&#x4E2D;&#x7684;&#x503C; ac487</p>
-        <p>www.s.com/pro?id=342816&amp;city=bj</p>
-      </th>
-      <th style="text-align:left">&#x65E0;&#x53D8;&#x5316;</th>
-      <th style="text-align:left"><b>ac487</b>
-      </th>
-      <th style="text-align:left">342816</th>
-      <th style="text-align:left">ac487</th>
-      <th style="text-align:left"><b>ac487</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 第 3 个情况 | <p><strong>商品详情页2</strong></p><p>商品页内容中的值 342815 ，但是因为时间的缘故，没有发出来这个值</p><p>www.s.com/pro?id=342815&#x26;city=bj</p> | 补了值 | NA | **342815** | NA | **342815** |
+| ------- | ------------------------------------------------------------------------------------------------------------------- | --- | -- | ---------- | -- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x7B2C; 3 &#x4E2A;&#x60C5;&#x51B5;</th>
-      <th style="text-align:left">
-        <p><b>&#x5546;&#x54C1;&#x8BE6;&#x60C5;&#x9875;2</b>
-        </p>
-        <p>&#x5546;&#x54C1;&#x9875;&#x5185;&#x5BB9;&#x4E2D;&#x7684;&#x503C; 342815
-          &#xFF0C;&#x4F46;&#x662F;&#x56E0;&#x4E3A;&#x65F6;&#x95F4;&#x7684;&#x7F18;&#x6545;&#xFF0C;&#x6CA1;&#x6709;&#x53D1;&#x51FA;&#x6765;&#x8FD9;&#x4E2A;&#x503C;</p>
-        <p>www.s.com/pro?id=342815&amp;city=bj</p>
-      </th>
-      <th style="text-align:left">&#x8865;&#x4E86;&#x503C;</th>
-      <th style="text-align:left">NA</th>
-      <th style="text-align:left"><b>342815</b>
-      </th>
-      <th style="text-align:left">NA</th>
-      <th style="text-align:left"><b>342815</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x7B2C; 4 &#x4E2A;&#x60C5;&#x51B5;</th>
-      <th style="text-align:left">
-        <p><b>&#x5546;&#x54C1;&#x8BA2;&#x5355;&#x9875;1</b>
-        </p>
-        <p>&#x8BA2;&#x5355;&#x9875;&#x6CA1;&#x6709;&#x6253;&#x70B9;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x6CA1;&#x6709;&#x6253;&#x70B9;&#x7684;&#x503C;</p>
-        <p>www.s.com/orderform?id=53462&amp;city=bj</p>
-      </th>
-      <th style="text-align:left">&#x8865;&#x4E86;&#x503C;</th>
-      <th style="text-align:left">NA</th>
-      <th style="text-align:left">NA</th>
-      <th style="text-align:left">
-        <p><b>53462</b>
-        </p>
-        <p>&#x26A0;&#xFE0F;&#xFF1A;&#x672C;&#x6765;&#x7528;&#x6237;&#x6CA1;&#x6709;&#x6253;&#x70B9;&#xFF0C;&#x62FF;&#x4E0D;&#x5230;&#x6570;&#x636E;&#xFF0C;&#x73B0;&#x5728;&#x6709;&#x4E86;&#x8BA2;&#x5355;&#x7F16;&#x53F7;&#x4E1A;&#x52A1;&#x610F;&#x4E49;&#x7684;&#x6570;&#x636E;&#x3002;&#x8FD9;&#x4E2A;&#x4E1A;&#x52A1;&#x610F;&#x4E49;&#x4E0E;&#x524D;&#x9762;&#x7684;&#x5546;&#x54C1;&#x7F16;&#x53F7;&#x4E0D;&#x540C;&#x3002;</p>
-      </th>
-      <th style="text-align:left"><b>53462</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 第 4 个情况 | <p><strong>商品订单页1</strong></p><p>订单页没有打点，所以这里没有打点的值</p><p>www.s.com/orderform?id=53462&#x26;city=bj</p> | 补了值 | NA | NA | <p><strong>53462</strong></p><p>⚠️：本来用户没有打点，拿不到数据，现在有了订单编号业务意义的数据。这个业务意义与前面的商品编号不同。</p> | **53462** |
+| ------- | ------------------------------------------------------------------------------------------------------- | --- | -- | -- | --------------------------------------------------------------------------------------- | --------- |
 
 * 取到的查询条件是b=时，则传 N/A，与现在一致；
-* 查询条件里有 b=1&b=2 ，取 b 的值为 2 ；
-* URL 中存在 ?a=1\#?b=2 ，第一个?是查询条件，即查询条件为a=1，第一个\#是hash，即hash（路径中的一部分）为?b=2；
+* 查询条件里有 b=1\&b=2 ，取 b 的值为 2 ；
+* URL 中存在 ?a=1#?b=2 ，第一个?是查询条件，即查询条件为a=1，第一个#是hash，即hash（路径中的一部分）为?b=2；
 * 解析移动端的数据；
 {% endtab %}
 {% endtabs %}
@@ -278,9 +182,9 @@ Web圈选模式分为浏览和圈选两个模式
 单击圈选页面右上角的最近更新，查看刚刚定义的元素。
 {% endhint %}
 
-## 定义页面案例 <a id="3-qi-ta-te-shu-qing-kuang"></a>
+## 定义页面案例 <a href="3-qi-ta-te-shu-qing-kuang" id="3-qi-ta-te-shu-qing-kuang"></a>
 
-### **基础步骤 \| 监控首页和全站的流量情况**
+### **基础步骤 | 监控首页和全站的流量情况**
 
 #### **1.定义首页：**
 
@@ -292,7 +196,7 @@ Web圈选模式分为浏览和圈选两个模式
 
 第三步：确认现在定义的页面 url 是否正确，修改「页面的名称」，保存。
 
-![](https://docs.growingio.com/.gitbook/assets/20_40_02__04_25_2018.jpg)
+![](https://docs.growingio.com/.gitbook/assets/20\_40\_02\_\_04\_25\_2018.jpg)
 
 定义完页面后，可以去「事件分析」中选择这个指标，就可以看到这个页面的基本数据情况了。
 
@@ -308,7 +212,7 @@ Web圈选模式分为浏览和圈选两个模式
 
 第二步：确认现在定义的页面是否是域名下的所有页面；
 
-![](https://docs.growingio.com/.gitbook/assets/21_04_22__04_25_2018.jpg)
+![](https://docs.growingio.com/.gitbook/assets/21\_04\_22\_\_04\_25\_2018.jpg)
 
 ### **案例一：注册转化率分析（定义每一个转化节点）**
 
@@ -336,19 +240,19 @@ GrowingIO 在线旅游解决方案落地页 `https://www.growingio.com/solution/
 
 GrowingIO 互联网金融解决方案落地页 `https://www.growingio.com​/solution/internet-finance`
 
-我们发现所有的解决方案落地页都是 `https://www.growingio.com/solution/xxx` ，那么如果我想统计所有解决方案页的页面情况，就可以通过通配符「\*」来定义一组页面 `https://www.growingio.com/solution/*`，即：​
+我们发现所有的解决方案落地页都是 `https://www.growingio.com/solution/xxx `，那么如果我想统计所有解决方案页的页面情况，就可以通过通配符「\*」来定义一组页面 `https://www.growingio.com/solution/*`，即：​
 
-![](https://docs.growingio.com/.gitbook/assets/20_59_35__04_25_2018.jpg)
+![](https://docs.growingio.com/.gitbook/assets/20\_59\_35\_\_04\_25\_2018.jpg)
 
 ### **案例三：特殊页面定义——页面 url 中带有 「?」**
 
 如果你发现你的页面 url 中带有「?」，除了用于监测广告投放的 utm 之外，需要在定义页面时手动打开「查询条件」的开关，这种情况是不支持回溯数据的，将从你定义页面的时候开始统计数据：
 
-![](https://docs.growingio.com/.gitbook/assets/21_17_01__04_25_2018.jpg)
+![](https://docs.growingio.com/.gitbook/assets/21\_17\_01\_\_04\_25\_2018.jpg)
 
 ## **定义元素案例**
 
-### **基本步骤 \| 监控重要的按钮数据（定义元素）**
+### **基本步骤 | 监控重要的按钮数据（定义元素）**
 
 注册按钮在首页的点击量是一个重要的数据，因此，我们需要定义这个元素。
 
@@ -360,7 +264,7 @@ GrowingIO 互联网金融解决方案落地页 `https://www.growingio.com​/sol
 
 第三步：填写一个容易理解的名称，然后就可以保存了。
 
-![](https://docs.growingio.com/.gitbook/assets/21_20_14__04_25_2018.jpg)
+![](https://docs.growingio.com/.gitbook/assets/21\_20\_14\_\_04\_25\_2018.jpg)
 
 接下来，可以在「事件分析」等分析工具中使用。
 
@@ -370,7 +274,7 @@ GrowingIO 互联网金融解决方案落地页 `https://www.growingio.com​/sol
 
 在下图中，有一部分用户看到的按钮是「立即注册」，还有一部分用户看到的按钮是「免费试用」，因此，如果我想定义这个按钮的点击情况，不管是什么内容，那么就只「限定顺序」，不限定其他条件：​
 
-![](https://docs.growingio.com/.gitbook/assets/21_32_36__04_25_2018%20%281%29.jpg)
+![](https://docs.growingio.com/.gitbook/assets/21\_32\_36\_\_04\_25\_2018%20\(1\).jpg)
 
 如果想看这个位置上不同内容的点击情况，可以在「事件分析」中，选择「柱图」，用「元素内容」作为维度，来进行分析。
 
@@ -380,13 +284,13 @@ GrowingIO 互联网金融解决方案落地页 `https://www.growingio.com​/sol
 
 因此，在定义这类元素时，要注意选择全站页面组，如果没有定义全站页面组，需要先去「定义页面」，详见「定义页面部分」的「基本步骤」。
 
-![](https://docs.growingio.com/.gitbook/assets/21_29_04__04_25_2018.jpg)
+![](https://docs.growingio.com/.gitbook/assets/21\_29\_04\_\_04\_25\_2018.jpg)
 
 ### **案例三：比较一些长得差不多的元素（定义一组元素）**
 
 当我们想要定义一组列表，或者一组元素时，会发现他们通常结构很像，圈选提供了一种便捷的方式，通过定义「同类元素」的方式来定义一组元素。选中这样的元素后，依然是先确认它的所属页面是否正确，然后「不限定任何限定条件」，这时可以注意第二个蓝框中的话：现在定义的是所属页面中，所有同类元素的数据之和。我们已经将这组同类元素用虚线框标记出来。这时，你就成功定义了这个元素所在的列表。
 
-![](https://docs.growingio.com/.gitbook/assets/21_32_36__04_25_2018.jpg)
+![](https://docs.growingio.com/.gitbook/assets/21\_32\_36\_\_04\_25\_2018.jpg)
 
 然后在「事件分析」中使用「元素内容」的维度进行分析。
 
@@ -411,29 +315,29 @@ GrowingIO 提供支持 Web 圈选的 Chrome 扩展程序。
 1. **圈**选插件安装成功后，**直接在 Chrome 浏览器中打开待圈选网站**。
 2. 单机插件图标登录你的账号。
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LrqhnRPBooFdHnT0FSY-LrqisorSxLz_gaBjKtcimage.png)
+![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LrqhnRPBooFdHnT0FSY-LrqisorSxLz\_gaBjKtcimage.png)
 
 1. 将插件模式切换到圈选模式，就可以开始圈选了，插件圈选方式与页面圈选功能相同。
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LrqhnRPBooFdHnT0FSY-Lrqk4QSF2CnHLdo5gu6image.png)
 
-## 常见问题 <a id="2-chang-jian-wen-ti-faq"></a>
+## 常见问题 <a href="2-chang-jian-wen-ti-faq" id="2-chang-jian-wen-ti-faq"></a>
 
-### **1. 如何定义「一组相似元素之和」？** <a id="21-ru-he-ding-yi-yi-zu-xiang-si-yuan-su-zhi-he"></a>
+### **1. 如何定义「一组相似元素之和」？** <a href="21-ru-he-ding-yi-yi-zu-xiang-si-yuan-su-zhi-he" id="21-ru-he-ding-yi-yi-zu-xiang-si-yuan-su-zhi-he"></a>
 
 如果该元素有同类元素，不限定所有的限定条件，即是统计一组同类元素之和的数据。
 
-### **2. 对于已定义过的元素，更改定义规则后，应该如何保存？** <a id="22-dui-yu-yi-ding-yi-guo-de-yuan-su-geng-gai-ding-yi-gui-ze-hou-ying-gai-ru-he-bao-cun"></a>
+### **2. 对于已定义过的元素，更改定义规则后，应该如何保存？** <a href="22-dui-yu-yi-ding-yi-guo-de-yuan-su-geng-gai-ding-yi-gui-ze-hou-ying-gai-ru-he-bao-cun" id="22-dui-yu-yi-ding-yi-guo-de-yuan-su-geng-gai-ding-yi-gui-ze-hou-ying-gai-ru-he-bao-cun"></a>
 
 更改新的规则后，如果原有数据仍然想继续统计，请选择“另存为”来定义新的规则。
 
-### **3. 如何进行文本「内容」的模糊匹配？** <a id="23-ru-he-jin-hang-wen-ben-nei-rong-de-mo-hu-pi-pei"></a>
+### **3. 如何进行文本「内容」的模糊匹配？** <a href="23-ru-he-jin-hang-wen-ben-nei-rong-de-mo-hu-pi-pei" id="23-ru-he-jin-hang-wen-ben-nei-rong-de-mo-hu-pi-pei"></a>
 
 「限定内容」的情况下，将鼠标移动到「内容」的右边，可以看到一个小铅笔，点击小铅笔后，便打开了文本和模式编辑弹窗。默认为精准匹配，即「限定内容为xxx」，若改成模糊匹配，则意义是「限定内容包含xxx」。 保存元素规则后，将按照新的规则进行统计，如果原有数据仍然想继续统计，请选择「另存为」。
 
 ![](https://docs.growingio.com/.gitbook/assets/223435.jpg)
 
-### **4. 月21日迭代后，新旧版本规则对应关系** <a id="24-3-yue-21-ri-die-dai-hou-xin-jiu-ban-ben-gui-ze-dui-ying-guan-xi"></a>
+### **4. 月21日迭代后，新旧版本规则对应关系** <a href="24-3-yue-21-ri-die-dai-hou-xin-jiu-ban-ben-gui-ze-dui-ying-guan-xi" id="24-3-yue-21-ri-die-dai-hou-xin-jiu-ban-ben-gui-ze-dui-ying-guan-xi"></a>
 
 ![](https://docs.growingio.com/.gitbook/assets/ping-mu-kuai-zhao-20180319-shang-wu-11.24.51.png)
 
@@ -453,13 +357,13 @@ GrowingIO 提供支持 Web 圈选的 Chrome 扩展程序。
 
 元素是叶子节点，无文本内容，且元素的占屏幕面积超过 50% ，因此不能被圈选。如果需要圈选该元素，请添加 data-growing-circle 属性。例如 ：
 
-```text
+```
  <div id= "d1" style="border: 1px solid black; width: 80%; height: 80%"></div>
 ```
 
 本来不可以圈选。在添加 data-growing-circle 属性后可以圈选：
 
-```text
+```
 <div  id= "d1" style="border: 1px solid black; width: 80%; height: 80%" data-growing-circle></div>
 ```
 
@@ -476,7 +380,7 @@ GrowingIO 提供支持 Web 圈选的 Chrome 扩展程序。
 GrowingIO 可以统计原生应用中的 H5 页面和 H5 做成的应用。
 
 * 原生应用中的 H5 页面，以及嵌在应用中的 H5，请参考 [App端数据定义](app.md)。
-* 用 H5 做的应用请参考[ Web端数据定义](web.md)。  
+* 用 H5 做的应用请参考[ Web端数据定义](web.md)。 &#x20;
 
 ### **9. 为什么圈选的元素只有点击量，没有浏览量？**
 
@@ -509,7 +413,7 @@ GrowingIO 可以统计原生应用中的 H5 页面和 H5 做成的应用。
 
 如果 iFrame 中的内容集成了 GrowingIO 的代码就可以圈选，否则无法圈选。 GrowingIO 是使用 iframe 来加载目标网页进行可视化定义的。如果目标网站禁止了 iframe 加载，就无法正常定义标签，当点击某个按钮的时候，页面无法发生跳转且命令行显示：
 
-```text
+```
 Refused to display '**' in a frame because it set 'X-Frame-Options' to 'SAMEORIGIN'.
 ```
 
@@ -517,21 +421,21 @@ Refused to display '**' in a frame because it set 'X-Frame-Options' to 'SAMEORIG
 
 如果你的网站使用https协议，需向响应头添加配置
 
-```text
+```
 Content-Security-Policy: frame-ancestors 'self' https://www.growingio.com
 X-Frame-Options: Allow-From https://www.growingio.com
 ```
 
 如果你的网站使用http协议，需向响应头添加配置
 
-```text
+```
 Content-Security-Policy: frame-ancestors 'self' http://www.growingio.com
 X-Frame-Options: Allow-From http://www.growingio.com
 ```
 
 由于 Chrome 浏览器已经不再支持 X-Frame-Options 配置项，如果你只需在 Chrome 浏览器中进行圈选，建议通过浏览器检查后，只给 Chrome 请求的响应头添加配置
 
-```text
+```
 Content-Security-Policy: frame-ancestors 'self' http://www.growingio.com https://www.growingio.com
 ```
 
@@ -540,4 +444,3 @@ Content-Security-Policy: frame-ancestors 'self' http://www.growingio.com https:/
 GrowingIO 根据您网站 HTML 结构识别和定义页面上的元素。有的时候网站上的 HTML 标签写法完全相同，呈现在页面上的几个同类元素，可能 HTML 代码完全相同。此时 GrowingIO 采集、圈选数据时无法区分开。我们通过 HTML 标签的 id 和 class 来区分元素，这种情况下您可以在需要区分的标签 class 中添加一些字符串用于区分。
 
 **仍有疑问？请参考**[**常见问题－圈选部分**](../../../../product-faq/quanxuan.md)
-

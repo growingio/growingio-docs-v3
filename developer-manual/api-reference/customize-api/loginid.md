@@ -8,7 +8,7 @@ GrowingIO提供此接口来定义某一些登录用户ID为既有用户，并不
 
 auth的计算需要将`loginUserId`的值拼接成`keyArray，`多条使用`逗号`分隔，如上述示例中的keyArray为`abcdef,bcdefg`。Java代码示例如下：
 
-注意此处使用 **projectId**  
+注意此处使用 **projectId**\
 
 
 {% code title="java" %}
@@ -32,7 +32,7 @@ public String authToken(String projectKeyId, String secretKey, String keyArray) 
 
 ### URL
 
-[https://data.growingio.com/{ai}/user/exist](https://data.growingio.com/{ai}/user/exist)
+[https://data.growingio.com/{ai}/user/exist](https://data.growingio.com/%7Bai%7D/user/exist)
 
 ### 请求类型
 
@@ -42,23 +42,23 @@ POST
 
 {% tabs %}
 {% tab title="请求参数" %}
-| 请求头参数 | 类型 | 是否必传 | 说明 |
-| :--- | :--- | :--- | :--- |
-| Access-Token | string | 是 | Public Key，项目公钥 |
-| Content-Type | string | 是 | application/json |
+| 请求头参数        | 类型     | 是否必传 | 说明               |
+| ------------ | ------ | ---- | ---------------- |
+| Access-Token | string | 是    | Public Key，项目公钥  |
+| Content-Type | string | 是    | application/json |
 
-| 路径参数 | 类型 | 是否必传 | 说明 |
-| :--- | :--- | :--- | :--- |
-| ai | string | 是 | 项目ID。 |
+| 路径参数 | 类型     | 是否必传 | 说明    |
+| ---- | ------ | ---- | ----- |
+| ai   | string | 是    | 项目ID。 |
 
-| 查询参数 | 类型 | 是否必传 | 说明 |
-| :--- | :--- | :--- | :--- |
-| auth | string | 是 | 针对数据生成的认证 |
+| 查询参数 | 类型     | 是否必传 | 说明        |
+| ---- | ------ | ---- | --------- |
+| auth | string | 是    | 针对数据生成的认证 |
 
-| body参数 | 类型 | 是否必传 | 说明 |
-| :--- | :--- | :--- | :--- |
-| loginUserId | array | 是 | 登录用户ID**字符串**数组 |
-| registerTime | number | 否 | 上传用户注册的时间戳 |
+| body参数       | 类型     | 是否必传 | 说明              |
+| ------------ | ------ | ---- | --------------- |
+| loginUserId  | array  | 是    | 登录用户ID**字符串**数组 |
+| registerTime | number | 否    | 上传用户注册的时间戳      |
 {% endtab %}
 
 {% tab title="body示例" %}
@@ -74,4 +74,3 @@ POST
 200：OK
 {% endtab %}
 {% endtabs %}
-

@@ -2,7 +2,7 @@
 
 ## 准备条件
 
-获取项目ID，获取方法请参考"项目管理 &gt; 项目概览 &gt; [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
+获取项目ID，获取方法请参考"项目管理 > 项目概览 > [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
 
 ## 1. 添加跟踪代码
 
@@ -53,7 +53,7 @@ gio('init', '你的 GrowingIO 项目ID', '你的微信小游戏的 AppID', { ver
 
 #### 5. 初始场景文件示例
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LatAo-FMcDE3qcUgoZC-LatG-_U2BA1761miEpnimage.png)
+![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LatAo-FMcDE3qcUgoZC-LatG-\_U2BA1761miEpnimage.png)
 {% endtab %}
 {% endtabs %}
 
@@ -61,13 +61,13 @@ gio('init', '你的 GrowingIO 项目ID', '你的微信小游戏的 AppID', { ver
 
 SDK中提供了以下几个参数可以用来进行配置。
 
-| 参数 | 类型/值 | 说明 |
-| :--- | :--- | :--- |
-| version | string | 你的小游戏的版本号 |
-| forceLogin | true \| false | 你的小游戏是否强制要求用户登陆微信获取 openid。默认 false |
+| 参数          | 类型/值          | 说明                                                          |
+| ----------- | ------------- | ----------------------------------------------------------- |
+| version     | string        | 你的小游戏的版本号                                                   |
+| forceLogin  | true \| false | 你的小游戏是否强制要求用户登陆微信获取 openid。默认 false                         |
 | followShare | true \| false | 详细跟踪微信组件中的wx. shareAppMessage事件的转发分享数据，开启后可使用分享分析功能。默认false |
-| getLocation | true \| false | 是否自动获取用户的地理位置信息。默认false |
-| debug | true \| false | 是否开启调试模式，可以看到采集的数据。默认 false |
+| getLocation | true \| false | 是否自动获取用户的地理位置信息。默认false                                     |
+| debug       | true \| false | 是否开启调试模式，可以看到采集的数据。默认 false                                 |
 
 #### version
 
@@ -85,23 +85,10 @@ SDK中提供了以下几个参数可以用来进行配置。
 转发分享小游戏是小游戏获客的重要场景，想要详细的进行转发分享的统计，需要在SDK参数中设置如下参数，默认值为false
 
 | 参数 | 开启值 | 说明 |
-| :--- | :--- | :--- |
+| -- | --- | -- |
 
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">followShare</th>
-      <th style="text-align:left">true</th>
-      <th style="text-align:left">
-        <p>&#x8BE6;&#x7EC6;&#x8DDF;&#x8E2A;&#x5FAE;&#x4FE1;&#x7EC4;&#x4EF6;&#x4E2D;&#x7684;wx.
-          shareAppMessage&#x4E8B;&#x4EF6;&#x7684;&#x8F6C;&#x53D1;&#x5206;&#x4EAB;&#x6570;&#x636E;&#xFF0C;&#x5F00;&#x542F;&#x540E;&#x53EF;&#x4F7F;&#x7528;&#x5206;&#x4EAB;&#x5206;&#x6790;&#x529F;&#x80FD;&#x3002;</p>
-        <p>&#x9ED8;&#x8BA4;&#x4E3A;&#x5173;&#x95ED;false</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| followShare | true | <p>详细跟踪微信组件中的wx. shareAppMessage事件的转发分享数据，开启后可使用分享分析功能。</p><p>默认为关闭false</p> |
+| ----------- | ---- | ---------------------------------------------------------------------------- |
 
 ```java
 var gio = require("utils/gio-ming.js");
@@ -165,11 +152,11 @@ gio('init', '你的 GrowingIO 项目ID', '你的微信小程序的 AppID', { ver
 作为用户行为数据分析工具，用户信息的完善会给后续的分析带来很大的帮助。在小程序中，微信用户属性是非常重要的设置，只有完善了微信用户属性信息，微信的访问用户变量（如下表）才可以在分析工具中使用，交互数据定义、数据校验功能才会方便通过用户微信相关的信息（微信姓名和头像）定位用户。
 
 | 微信访问用户变量 |
-| :--- |
+| -------- |
 | 微信用户所在城市 |
-| 微信用户所在省 |
+| 微信用户所在省  |
 | 微信用户所在国家 |
-| 微信用户的性别 |
+| 微信用户的性别  |
 
 ### 用户接口
 
@@ -247,7 +234,7 @@ gio('setUser', { id: user.id, name: user.name });
 2. 打开开发设置，到服务器域名配置部分。
 3. 在**request合法域名**中添加：https://wxapi.growingio.com
 
-![request &#x5408;&#x6CD5;&#x57DF;&#x540D;](../../../.gitbook/assets/image%20%2885%29.png)
+![request 合法域名](<../../../.gitbook/assets/image (85).png>)
 
 ## 4. 自定义数据上传API
 
@@ -269,5 +256,4 @@ gio('setUser', { id: user.id, name: user.name });
 
 方式二：在SDK中设置了Debug模式后，在开发者工具中查看数据采集日志。
 
-方式三：[数据校验]()
-
+方式三：[数据校验](broken-reference)

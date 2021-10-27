@@ -6,9 +6,9 @@
 
 提供 4 种用户标签的创建方式，您可以根据自己的标签含义，选择相对应的方式进行标签的创建。
 
-不同标签的模型 ，有不同的使用场景 ，详请可见 以下说明： 
+不同标签的模型 ，有不同的使用场景 ，详请可见 以下说明：&#x20;
 
-* [基础指标值  标签 ](biao-qian-mo-xing-shi-yong/ji-chu-zhi-biao-zhi.md) 
+* [基础指标值  标签 ](biao-qian-mo-xing-shi-yong/ji-chu-zhi-biao-zhi.md)&#x20;
 * [最大/ 最小  标签 ](biao-qian-mo-xing-shi-yong/zui-da-zhi-zui-xiao-zhi-de-shi-jian-shu-xing.md)
 * [最初 / 最终 标签 ](biao-qian-mo-xing-shi-yong/zui-chu-zui-zhong-de-shi-jian-shu-xing.md)
 * [分层标签  ](biao-qian-mo-xing-shi-yong/fen-ceng-biao-qian.md)
@@ -45,22 +45,20 @@
 {% hint style="warning" %}
 GrowingIO  支持对登入用户 /  访问用户 ，两个用户体系分别打标记，在创建标签时请明确标签的 用户体系。
 
-用户体系的差异 ： 请见 [ 用戶模型 ](https://app.gitbook.com/@growingio/s/v3/~/drafts/-MEWSCS5iLxkCJzygg8h/introduction/datamodel/usermodel) 
+用户体系的差异 ： 请见 [ 用戶模型 ](https://app.gitbook.com/@growingio/s/v3/\~/drafts/-MEWSCS5iLxkCJzygg8h/introduction/datamodel/usermodel)&#x20;
 {% endhint %}
 
 ![](../../../.gitbook/assets/ying-mu-jie-tu-20200813-xia-wu-4.28.17.png)
 
-### 五、开始设置标签规则 。 
+### 五、开始设置标签规则 。&#x20;
 
-不同标签的模型 ，有不同的使用场景 。  
-  
-详请可见 以下说明 
+不同标签的模型 ，有不同的使用场景 。\
+\
+详请可见 以下说明&#x20;
 
 * [基础指标值  标签 ](biao-qian-mo-xing-shi-yong/ji-chu-zhi-biao-zhi.md)
 * [最大/ 最小  标签 ](biao-qian-mo-xing-shi-yong/zui-da-zhi-zui-xiao-zhi-de-shi-jian-shu-xing.md)
 * [最初 / 最终 标签 ](biao-qian-mo-xing-shi-yong/zui-chu-zui-zhong-de-shi-jian-shu-xing.md)
 * [分层标签  ](biao-qian-mo-xing-shi-yong/fen-ceng-biao-qian.md)
 
-  
-
-
+\

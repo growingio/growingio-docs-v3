@@ -8,858 +8,146 @@ description: iOS SDK更新日志
 稳定版本2.8.24
 {% endhint %}
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">SDK&#x7248;&#x672C;</th>
-      <th style="text-align:left">&#x66F4;&#x65B0;&#x70B9;</th>
-      <th style="text-align:left">&#x65F6;&#x95F4;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">2.9.5</td>
-      <td style="text-align:left">1.keychain&#x64CD;&#x4F5C;&#x4F18;&#x5316;</td>
-      <td style="text-align:left">2021-09</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.9.4</td>
-      <td style="text-align:left">1.&#x7A33;&#x5B9A;&#x6027;&#x63D0;&#x5347;</td>
-      <td style="text-align:left">2021-08-19</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.9.3</td>
-      <td style="text-align:left">
-        <p>1.&#x9002;&#x914D;&#x66F4;&#x591A;&#x6CE8;&#x5165;&#x573A;&#x666F;</p>
-        <p>2. &#x53BB;&#x9664;&#x4E00;&#x4E9B;&#x8B66;&#x544A;</p>
-      </td>
-      <td style="text-align:left">2021-06-24</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.9.2</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x5708;&#x9009;&#x4F18;&#x5316;</li>
-          <li>&#x5176;&#x4ED6;&#x4F18;&#x5316;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2021-06-07</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.9.1</td>
-      <td style="text-align:left">
-        <p>1.&#x63D0;&#x5347;&#x4E86;SDK&#x7684;&#x7A33;&#x5B9A;&#x6027;, &#x5E76;&#x4E14;&#x5BF9;&#x76F8;&#x5173;&#x6027;&#x80FD;&#x8FDB;&#x884C;&#x4E86;&#x4F18;&#x5316;</p>
-        <p>2.hybrid&#x6CE8;&#x5165;&#x65F6;&#x673A;&#x4F18;&#x5316;</p>
-        <p>3.&#x4FEE;&#x590D;2.9.0 app&#x5728;&#x540E;&#x53F0;&#x6982;&#x7387;&#x6027;&#x88AB;&#x6740;&#x6B7B;&#x7684;&#x95EE;&#x9898;</p>
-        <p>4.&#x7279;&#x5B9A;&#x573A;&#x666F;&#x8865;&#x53D1;vst&#x4E8B;&#x4EF6;</p>
-      </td>
-      <td style="text-align:left">2021-05-12</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.9.0</td>
-      <td style="text-align:left">
-        <p>1. &#x4E3A;&#x4EC5;&#x96C6;&#x6210;&#x57CB;&#x70B9;SDK&#x7528;&#x6237;&#x63D0;&#x4F9B;hybrid&#x63A5;&#x53E3;,&#x5BF9;&#x5E94;hybrid&#x9875;&#x9762;&#x9700;&#x96C6;&#x6210;
-          <a
-          href="https://assets.giocdn.com/sdk/hybrid/2.0/gio_hybrid_track.js">gio_hybrid_track.js</a>
-        </p>
-        <p>2. &#x4FEE;&#x590D;&#x5728;iOS 14&#x4EE5;&#x4E0A;IDFA&#x53EF;&#x80FD;&#x83B7;&#x5F97;0000&#x5B57;&#x7B26;&#x95EE;&#x9898;</p>
-      </td>
-      <td style="text-align:left">2021-04-23</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.8.24</td>
-      <td style="text-align:left">
-        <p>&#x65B0;&#x529F;&#x80FD;:</p>
-        <p>&#x4E0D;&#x521D;&#x59CB;&#x5316;SDK&#x4E0D;&#x4F1A;&#x83B7;&#x53D6;idfa&#x3001;idfv&#x7B49;&#x4FE1;&#x606F;</p>
-      </td>
-      <td style="text-align:left">2020-12-08</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.8.22</td>
-      <td style="text-align:left">
-        <p>1. &#x9002;&#x914D;iOS14</p>
-        <p>2.&#x5E7F;&#x544A;&#x76D1;&#x6D4B;&#x4F18;&#x5316;</p>
-        <p>3.&#x65B0;&#x589E;&#x5C5E;&#x6027;growingAttributesIsTracked &#x652F;&#x6301;&#x5168;&#x5C40;&#x4E0D;&#x91C7;&#x96C6;webview&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x91C7;&#x96C6;&#x5355;&#x4E2A;webview</p>
-      </td>
-      <td style="text-align:left">2020-09-01</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.8.20</td>
-      <td style="text-align:left">
-        <p>1.&#x534A;&#x81EA;&#x52A8;&#x57CB;&#x70B9;&#x4F18;&#x5316;</p>
-        <p>2. &#x66F4;&#x65B0;&#x65B0;&#x7248;&#x5E2E;&#x52A9;&#x6587;&#x6863;</p>
-        <p>&#x1F4D4;&#x5982;&#x679C;&#x60A8;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E86;&#x57CB;&#x70B9;SDK&#x548C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#xFF0C;&#x5F53;&#x60A8;&#x5347;&#x7EA7;&#x5230;&#x6B64;&#x7248;&#x672C;&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#x7248;&#x672C;&#x9700;&#x8981;&#x5BF9;&#x5E94;&#x5347;&#x7EA7;&#x5230;1.4.0&#x53CA;&#x4EE5;&#x4E0A;</p>
-      </td>
-      <td style="text-align:left">2020-07-07</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.8.19</td>
-      <td style="text-align:left">
-        <p>1. &#x4F18;&#x5316;&#x65E5;&#x5FD7;&#x6027;&#x80FD;</p>
-        <p>2. &#x89E3;&#x51B3;&#x4E2A;&#x522B;&#x7528;&#x6237;&#x7B26;&#x53F7;&#x91CD;&#x5B9A;&#x4E49;&#x9519;&#x8BEF;</p>
-        <p>&#x1F4D4;&#x5982;&#x679C;&#x60A8;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E86;&#x57CB;&#x70B9;SDK&#x548C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#xFF0C;&#x5F53;&#x60A8;&#x5347;&#x7EA7;&#x5230;&#x6B64;&#x7248;&#x672C;&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#x7248;&#x672C;&#x9700;&#x8981;&#x5BF9;&#x5E94;&#x5347;&#x7EA7;&#x5230;1.4.0&#x53CA;&#x4EE5;&#x4E0A;</p>
-      </td>
-      <td style="text-align:left">2020-06-05</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.8.17</td>
-      <td style="text-align:left">
-        <p>&#x4F18;&#x5316;</p>
-        <p>1.WKWebView&#x517C;&#x5BB9;&#x6027;&#x63D0;&#x5347;
-          <br />2.&#x505A;&#x4E86;&#x4E00;&#x4E9B;&#x5C0F;&#x4F18;&#x5316;</p>
-      </td>
-      <td style="text-align:left">2020-05-27</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.8.16</td>
-      <td style="text-align:left">
-        <p>&#x4F18;&#x5316;:</p>
-        <p>&#x63D0;&#x5347;&#x7A33;&#x5B9A;&#x6027;</p>
-      </td>
-      <td style="text-align:left">2020-05-12</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.8.15</td>
-      <td style="text-align:left">
-        <p>&#x4F18;&#x5316;&#xFF1A;
-          <br />1. &#x65B0;&#x589E; setSessionInterval:(NSTimeInterval)interval &#x63A5;&#x53E3;</p>
-        <p>2. &#x4F18;&#x5316;&#x4EE3;&#x7801;&#x6027;&#x80FD;</p>
-      </td>
-      <td style="text-align:left">2020-04-28</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.8.14</td>
-      <td style="text-align:left">
-        <p>&#x4F18;&#x5316;:</p>
-        <p>&#x5BF9;&#x5E7F;&#x544A;&#x91C7;&#x96C6;&#x654F;&#x611F;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x52A0;&#x5F3A;&#x6570;&#x636E;&#x5B89;&#x5168;</p>
-      </td>
-      <td style="text-align:left">2020-04-15</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.8.13</td>
-      <td style="text-align:left">
-        <p>&#x4FEE;&#x590D;:</p>
-        <p>&#x4F18;&#x5316;&#x57CB;&#x70B9;SDK&#x5728;&#x6781;&#x7AEF;&#x60C5;&#x51B5;&#x4E0B;&#x7528;&#x6237;&#x91CF;&#x3001;&#x8BBF;&#x95EE;&#x91CF;&#x3001;&#x8FDB;&#x5165;&#x6B21;&#x6570;&#x9884;&#x5B9A;&#x4E49;&#x6307;&#x6807;&#x4E0D;&#x51C6;&#x786E;&#x7684;&#x95EE;&#x9898;</p>
-      </td>
-      <td style="text-align:left">2020-04-01</td>
-    </tr>
-  </tbody>
-</table>
+| SDK版本  | 更新点                                                                                                                                                                                   | 时间         |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| 2.9.5  | 1.keychain操作优化                                                                                                                                                                        | 2021-09    |
+| 2.9.4  | 1.稳定性提升                                                                                                                                                                               | 2021-08-19 |
+| 2.9.3  | <p>1.适配更多注入场景</p><p>2. 去除一些警告</p>                                                                                                                                                     | 2021-06-24 |
+| 2.9.2  | <ol><li>圈选优化</li><li>其他优化</li></ol>                                                                                                                                                   | 2021-06-07 |
+| 2.9.1  | <p>1.提升了SDK的稳定性, 并且对相关性能进行了优化</p><p>2.hybrid注入时机优化</p><p>3.修复2.9.0 app在后台概率性被杀死的问题</p><p>4.特定场景补发vst事件</p>                                                                            | 2021-05-12 |
+| 2.9.0  | <p> 1. 为仅集成埋点SDK用户提供hybrid接口,对应hybrid页面需集成<a href="https://assets.giocdn.com/sdk/hybrid/2.0/gio_hybrid_track.js">gio_hybrid_track.js</a></p><p> 2. 修复在iOS 14以上IDFA可能获得0000字符问题</p>    | 2021-04-23 |
+| 2.8.24 | <p>新功能:</p><p>不初始化SDK不会获取idfa、idfv等信息</p>                                                                                                                                             | 2020-12-08 |
+| 2.8.22 | <p>1. 适配iOS14</p><p>2.广告监测优化</p><p>3.新增属性growingAttributesIsTracked 支持全局不采集webview的情况下，采集单个webview</p>                                                                                | 2020-09-01 |
+| 2.8.20 | <p>1.半自动埋点优化</p><p>2. 更新新版帮助文档</p><p><span data-gb-custom-inline data-tag="emoji" data-code="1f4d4">📔</span>如果您同时使用了埋点SDK和用户运营产品的SDK，当您升级到此版本时，用户运营产品的SDK版本需要对应升级到1.4.0及以上</p>       | 2020-07-07 |
+| 2.8.19 | <p>1. 优化日志性能</p><p> 2. 解决个别用户符号重定义错误</p><p><span data-gb-custom-inline data-tag="emoji" data-code="1f4d4">📔</span>如果您同时使用了埋点SDK和用户运营产品的SDK，当您升级到此版本时，用户运营产品的SDK版本需要对应升级到1.4.0及以上</p> | 2020-06-05 |
+| 2.8.17 | <p>优化</p><p>     1.WKWebView兼容性提升 <br>     2.做了一些小优化</p>                                                                                                                              | 2020-05-27 |
+| 2.8.16 | <p>优化:</p><p>       提升稳定性</p>                                                                                                                                                         | 2020-05-12 |
+| 2.8.15 | <p>优化： <br> 1. 新增 setSessionInterval:(NSTimeInterval)interval 接口</p><p> 2. 优化代码性能</p>                                                                                                 | 2020-04-28 |
+| 2.8.14 | <p>优化:</p><p>        对广告采集敏感数据进行加密，加强数据安全</p>                                                                                                                                         | 2020-04-15 |
+| 2.8.13 | <p>修复:</p><p>       优化埋点SDK在极端情况下用户量、访问量、进入次数预定义指标不准确的问题</p>                                                                                                                          | 2020-04-01 |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.8.12</th>
-      <th style="text-align:left">
-        <p>&#x4F18;&#x5316;:</p>
-        <p>&#x53BB;&#x9664;&#x5BF9;UIWebView&#x7684;&#x652F;&#x6301;</p>
-      </th>
-      <th style="text-align:right">2020-03-18</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.8.12 | <p>优化:</p><p>去除对UIWebView的支持</p> | 2020-03-18 |
+| ------ | -------------------------------- | ---------: |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.8.11</th>
-      <th style="text-align:left">
-        <p>&#x4F18;&#x5316;:</p>
-        <p>&#x9ED8;&#x8BA4;&#x5173;&#x95ED;imp&#x4E8B;&#x4EF6;&#x7684;&#x91C7;&#x96C6;</p>
-      </th>
-      <th style="text-align:right">2020-03-03</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.8.11 | <p>优化:</p><p>默认关闭imp事件的采集</p> | 2020-03-03 |
+| ------ | ----------------------------- | ---------: |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.8.10</th>
-      <th style="text-align:left">
-        <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
-        <ul>
-          <li>&#x77ED;&#x94FE;deeplink&#x589E;&#x52A0;&#x5BF9;query&#x7684;&#x7EDF;&#x8BA1;</li>
-          <li>deeplink&#x589E;&#x52A0;&#x624B;&#x52A8;&#x5904;&#x7406;url&#x63A5;&#x53E3;</li>
-        </ul>
-        <p>&#x4F18;&#x5316;:
-          <br />&#x51B7;&#x542F;&#x52A8;app,sessionId&#x4E00;&#x5B9A;&#x53D8;&#x66F4;</p>
-      </th>
-      <th style="text-align:right">2020-02-25</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.8.10 | <p>新功能：</p><ul><li>短链deeplink增加对query的统计</li><li>deeplink增加手动处理url接口</li></ul><p>优化:<br>冷启动app,sessionId一定变更</p> | 2020-02-25 |
+| ------ | ---------------------------------------------------------------------------------------------------------------- | ---------: |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.8.9</th>
-      <th style="text-align:left">
-        <p>&#x4F18;&#x5316;:
-          <br />&#x7F51;&#x7EDC;&#x6027;&#x80FD;&#x63D0;&#x5347;</p>
-        <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
-        <p>&#x89E3;&#x51B3;web&#x5708;&#x9009;app &#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x4E0D;&#x80FD;&#x5708;&#x9009;&#x95EE;&#x9898;</p>
-        <p>&#x1F4D4;&#x5982;&#x679C;&#x60A8;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E86;&#x65E0;&#x57CB;&#x70B9;SDK&#x548C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#xFF0C;&#x5F53;&#x60A8;&#x5347;&#x7EA7;&#x5230;&#x6B64;&#x7248;&#x672C;&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#x7248;&#x672C;&#x9700;&#x8981;&#x5BF9;&#x5E94;&#x5347;&#x7EA7;&#x5230;1.2.3&#x53CA;&#x4EE5;&#x4E0A;&#x3002;</p>
-      </th>
-      <th style="text-align:left">2020-01-02</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.8.9 | <p>优化:<br>网络性能提升</p><p>修复bug：</p><p>解决web圈选app 特殊字符不能圈选问题</p><p>📔如果您同时使用了无埋点SDK和用户运营产品的SDK，当您升级到此版本时，用户运营产品的SDK版本需要对应升级到1.2.3及以上。</p> | 2020-01-02 |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.8.8</th>
-      <th style="text-align:left">
-        <p>&#x4F18;&#x5316;:
-          <br />&#x7F51;&#x7EDC;&#x63A7;&#x5236;&#x80FD;&#x529B;&#x589E;&#x5F3A;
-          <br />
-        </p>
-        <p>&#x1F4D4;&#x5982;&#x679C;&#x60A8;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E86;&#x65E0;&#x57CB;&#x70B9;SDK&#x548C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#xFF0C;&#x5F53;&#x60A8;&#x5347;&#x7EA7;&#x5230;&#x6B64;&#x7248;&#x672C;&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#x7248;&#x672C;&#x9700;&#x8981;&#x5BF9;&#x5E94;&#x5347;&#x7EA7;&#x5230;1.2.1&#x53CA;&#x4EE5;&#x4E0A;&#x3002;</p>
-      </th>
-      <th style="text-align:left">2019-12-24</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.8.8 | <p>优化:<br>网络控制能力增强<br></p><p>📔如果您同时使用了无埋点SDK和用户运营产品的SDK，当您升级到此版本时，用户运营产品的SDK版本需要对应升级到1.2.1及以上。</p> | 2019-12-24 |
+| ----- | --------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.8.7</th>
-      <th style="text-align:left">
-        <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
-        <ul>
-          <li>fix&#x5F3A;&#x5F15;&#x7528;vc&#x5E26;&#x6765;&#x7279;&#x6B8A;&#x573A;&#x666F;&#x4E0B;crash&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x89E3;&#x51B3;WKWebView&#x5185;&#x5B58;&#x6CC4;&#x6F0F;&#x7684;&#x95EE;&#x9898;</li>
-        </ul>
-        <p>&#x1F4D4;&#x5982;&#x679C;&#x60A8;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x4E86;&#x65E0;&#x57CB;&#x70B9;SDK&#x548C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#xFF0C;&#x5F53;&#x60A8;&#x5347;&#x7EA7;&#x5230;&#x6B64;&#x7248;&#x672C;&#x65F6;&#xFF0C;&#x7528;&#x6237;&#x8FD0;&#x8425;&#x4EA7;&#x54C1;&#x7684;SDK&#x7248;&#x672C;&#x9700;&#x8981;&#x5BF9;&#x5E94;&#x5347;&#x7EA7;&#x5230;1.1.0&#x53CA;&#x4EE5;&#x4E0A;&#x3002;</p>
-      </th>
-      <th style="text-align:left">2019-11-29</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.8.7 | <p>修复bug：</p><ul><li>fix强引用vc带来特殊场景下crash的问题</li><li>解决WKWebView内存泄漏的问题</li></ul><p>📔如果您同时使用了无埋点SDK和用户运营产品的SDK，当您升级到此版本时，用户运营产品的SDK版本需要对应升级到1.1.0及以上。</p> | 2019-11-29 |
+| ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.8.6</th>
-      <th style="text-align:left">
-        <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
-        <ul>
-          <li>&#x589E;&#x52A0;&#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#x91C7;&#x96C6;&#x7684;&#x5F00;&#x5173;</li>
-        </ul>
-        <p>&#x4F18;&#x5316;&#xFF1A;</p>
-        <ul>
-          <li>SDK &#x6240;&#x6709; API &#x8C03;&#x7528;&#x5F3A;&#x5236;&#x5185;&#x90E8;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x8C03;&#x7528;&#xFF0C;&#x964D;&#x4F4E;&#x7528;&#x6237;&#x9519;&#x8BEF;&#x7684;&#x5728;&#x5B50;&#x7EBF;&#x7A0B;&#x8C03;&#x7528;&#x9020;&#x6210;
-            crash &#x200C;</li>
-        </ul>
-      </th>
-      <th style="text-align:left">2019-11-12</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.8.6 | <p>新功能：</p><ul><li>增加地理位置信息采集的开关</li></ul><p>优化：</p><ul><li>SDK 所有 API 调用强制内部在主线程调用，降低用户错误的在子线程调用造成 crash ‌</li></ul> | 2019-11-12 |
+| ----- | --------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.8.5</th>
-      <th style="text-align:left">
-        <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
-        <ul>
-          <li>&#x5E7F;&#x544A;&#x76D1;&#x6D4B;&#x65B0;&#x529F;&#x80FD;&#xFF1A;&#x5EF6;&#x8FDF;&#x6DF1;&#x5EA6;&#x94FE;&#x63A5;</li>
-          <li>IMP &#x534A;&#x81EA;&#x52A8;&#x5316;&#x57CB;&#x70B9;&#x652F;&#x6301;&#x8BBE;&#x7F6E;
-            View &#x53EF;&#x89C1;&#x6BD4;&#x4F8B;&#x518D;&#x89E6;&#x53D1;&#x81EA;&#x52A8;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;</li>
-        </ul>
-        <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
-        <ul>
-          <li>web &#x5708;&#x9009; app &#x8F93;&#x5165;&#x6846;&#x5708;&#x9009;&#x652F;&#x6301;</li>
-        </ul>
-      </th>
-      <th style="text-align:left">2019-11-05</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.8.5 | <p>新功能：</p><ul><li>广告监测新功能：延迟深度链接</li><li>IMP 半自动化埋点支持设置 View 可见比例再触发自动埋点事件</li></ul><p>修复bug：</p><ul><li>web 圈选 app 输入框圈选支持</li></ul> | 2019-11-05 |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.8.4</th>
-      <th style="text-align:left">
-        <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
-        <ul>
-          <li>deeplink &#x77ED;&#x94FE;&#x652F;&#x6301;</li>
-          <li>imp &#x534A;&#x81EA;&#x52A8;&#x6253;&#x70B9;&#x81EA;&#x52A8;&#x53D6;&#x5143;&#x7D20;&#x5185;&#x5BB9;</li>
-        </ul>
-        <p>&#x4F18;&#x5316;&#xFF1A;</p>
-        <ul>
-          <li>&#x4F18;&#x5316; setUserId &#x6027;&#x80FD;&#x95EE;&#x9898;</li>
-        </ul>
-        <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
-        <ul>
-          <li>&#x4FEE;&#x590D;GrowingReactNativeKit&#x7248;&#x672C;&#x53F7;&#x8BFB;&#x53D6;&#x4E0D;&#x5230;&#x6B63;&#x786E;&#x503C;&#x7684;&#x95EE;&#x9898;</li>
-        </ul>
-      </th>
-      <th style="text-align:left">2019-10-09</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.8.4 | <p>新功能：</p><ul><li>deeplink 短链支持</li><li>imp 半自动打点自动取元素内容</li></ul><p>优化：</p><ul><li>优化 setUserId 性能问题</li></ul><p>修复bug：</p><ul><li>修复GrowingReactNativeKit版本号读取不到正确值的问题</li></ul> | 2019-10-09 |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.8.3</th>
-      <th style="text-align:left">
-        <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
-        <ul>
-          <li>&#x4FEE;&#x590D; iOS 9 <code>UIInputWindowController</code>&#x5728;<code>GrowingAspectModeSubClass</code> crash&#x7684;&#x95EE;&#x9898;</li>
-        </ul>
-      </th>
-      <th style="text-align:left">2019-08-28</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.8.3 | <p>修复bug：</p><ul><li>修复 iOS 9 <code>UIInputWindowController</code>在<code>GrowingAspectModeSubClass</code> crash的问题</li></ul> | 2019-08-28 |
+| ----- | ---------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.8.2</th>
-      <th style="text-align:left">
-        <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
-        <ul>
-          <li>&#x4FEE;&#x590D;&#x5DF2;&#x77E5;&#x95EE;&#x9898;</li>
-        </ul>
-      </th>
-      <th style="text-align:left">2019-08-27</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.8.2 | <p>修复bug：</p><ul><li>修复已知问题</li></ul> | 2019-08-27 |
+| ----- | ------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.8.1</th>
-      <th style="text-align:left">
-        <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
-        <ul>
-          <li>imp&#x534A;&#x81EA;&#x52A8;&#x57CB;&#x70B9;&#x3002;</li>
-        </ul>
-        <p>&#x4F18;&#x5316;&#xFF1A;</p>
-        <ul>
-          <li>&#x589E;&#x5F3A;SDK&#x7A33;&#x5B9A;&#x6027;&#x3002;</li>
-        </ul>
-        <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
-        <ul>
-          <li>&#x4FEE;&#x590D;web&#x5708;app&#x5728;chrome&#x73AF;&#x5883;&#x6709;&#x65F6;&#x65AD;&#x5F00;&#x94FE;&#x63A5;&#x7684;&#x95EE;&#x9898;&#x3002;</li>
-        </ul>
-      </th>
-      <th style="text-align:left">2019-08-13</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.8.1 | <p>新功能：</p><ul><li>imp半自动埋点。</li></ul><p>优化：</p><ul><li>增强SDK稳定性。</li></ul><p>修复bug：</p><ul><li>修复web圈app在chrome环境有时断开链接的问题。</li></ul> | 2019-08-13 |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.8.0</th>
-      <th style="text-align:left">
-        <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
-        <ul>
-          <li>&#x3010;&#x7535;&#x8111;&#x7AEF;&#x5708;&#x9009; APP&#x3011; &#x652F;&#x6301;<b>&#x6A2A;&#x5C4F;&#x5708;&#x9009;</b>&#x548C;<b>&#x5E73;&#x677F;&#x7535;&#x8111;&#x7AEF;&#x5708;&#x9009;</b>&#x3002;</li>
-        </ul>
-        <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
-        <ul>
-          <li>&#x4FEE;&#x590D;&#x5728;&#x4E2A;&#x522B;&#x6A21;&#x62DF;&#x5668;&#x4E0B;
-            crash &#x7684;&#x95EE;&#x9898;&#xFF1B;</li>
-          <li>&#x4FEE;&#x590D;&#x7535;&#x8111;&#x7AEF;&#x5708;&#x9009; APP &#xFF0C;H5&#x9875;&#x9762;&#x70ED;&#x56FE;&#x5750;&#x6807;&#x9519;&#x4F4D;&#x7684;&#x95EE;&#x9898;&#x3002;</li>
-        </ul>
-      </th>
-      <th style="text-align:left">2019-07-30</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.8.0 | <p>新功能：</p><ul><li>【电脑端圈选 APP】 支持<strong>横屏圈选</strong>和<strong>平板电脑端圈选</strong>。</li></ul><p>修复bug：</p><ul><li>修复在个别模拟器下 crash 的问题；</li><li>修复电脑端圈选 APP ，H5页面热图坐标错位的问题。</li></ul> | 2019-07-30 |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.7.8</th>
-      <th style="text-align:left">
-        <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
-        <ul>
-          <li>&#x4FEE;&#x590D; iOS13<code>UISearchBar</code>&#x5D29;&#x6E83;&#x95EE;&#x9898;&#xFF1B;</li>
-          <li>&#x4FEE;&#x590D; mobiledebugger &#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x6570;&#x636E;&#x5C11;&#x663E;&#x793A;&#x7684;&#x95EE;&#x9898;&#x3002;</li>
-        </ul>
-      </th>
-      <th style="text-align:left">2019-06-29</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.7.8 | <p>修复bug：</p><ul><li>修复 iOS13<code>UISearchBar</code>崩溃问题；</li><li>修复 mobiledebugger 可能出现数据少显示的问题。</li></ul> | 2019-06-29 |
+| ----- | ------------------------------------------------------------------------------------------------------------ | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.7.7</th>
-      <th style="text-align:left">
-        <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
-        <ul>
-          <li>&#x9002;&#x914D; ReactNative 0.59.9 &#x7248;&#x672C;</li>
-          <li>&#x9002;&#x914D; react-navigation ^3.11.0</li>
-        </ul>
-        <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
-        <ul>
-          <li>&#x4FEE;&#x590D;&#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x76F8;&#x5173;&#x7684;&#x591A;&#x7EBF;&#x7A0B;&#x95EE;&#x9898;</li>
-          <li>&#x4FEE;&#x590D;&#x8BBF;&#x95EE;&#x7528;&#x6237; ID &#x53EF;&#x80FD;&#x4E3A;
-            0 &#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x4FEE;&#x590D;&#x9996;&#x6B21;&#x5B89;&#x88C5; app &#x53EF;&#x80FD;&#x4F1A;&#x5F71;&#x54CD; <code>statusbar</code>&#x5C55;&#x793A;&#x65B9;&#x5411;&#x95EE;&#x9898;</li>
-          <li>&#x4FEE;&#x590D; hybrid &#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x5339;&#x914D;
-            page &#x95EE;&#x9898;</li>
-        </ul>
-        <p>&#x4F18;&#x5316;&#xFF1A;</p>
-        <ul>
-          <li>&#x5B8C;&#x5584;&#x5BF9;<code>SDCycleScrollView</code>&#x7684;&#x652F;&#x6301;</li>
-        </ul>
-      </th>
-      <th style="text-align:left">2019-6-21</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.7.7 | <p>新功能：</p><ul><li>适配 ReactNative 0.59.9 版本</li><li>适配 react-navigation ^3.11.0</li></ul><p>修复bug：</p><ul><li>修复地理位置相关的多线程问题</li><li>修复访问用户 ID 可能为 0 的问题</li><li>修复首次安装 app 可能会影响 <code>statusbar</code>展示方向问题</li><li>修复 hybrid 自定义事件匹配 page 问题</li></ul><p>优化：</p><ul><li>完善对<code>SDCycleScrollView</code>的支持</li></ul> | 2019-6-21 |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.7.6</th>
-      <th style="text-align:left">
-        <p>&#x4F18;&#x5316;&#xFF1A;</p>
-        <ul>
-          <li>&#x517C;&#x5BB9;&#x63A8;&#x9001;&#x4F4E;&#x7248;&#x672C; API &#xFF1B;</li>
-          <li>&#x589E;&#x5F3A; <code>GrowingAspectModeSubClass</code> &#x7684;&#x7A33;&#x5B9A;&#x6027;&#x3002;</li>
-        </ul>
-        <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
-        <ul>
-          <li>&#x5708;&#x9009;&#x589E;&#x52A0;&#x5BF9;&#x5185;&#x5D4C; H5 &#x9875;&#x9762;&#x4E2D;<code>chng</code>&#xFF08;&#x8F93;&#x5165;&#x6846;&#x8F93;&#x5165;&#xFF09;&#x4E8B;&#x4EF6;&#x7684;&#x652F;&#x6301;&#x3002;</li>
-        </ul>
-      </th>
-      <th style="text-align:left">2019-05-13</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.7.6 | <p>优化：</p><ul><li>兼容推送低版本 API ；</li><li>增强 <code>GrowingAspectModeSubClass</code> 的稳定性。</li></ul><p>修复bug：</p><ul><li>圈选增加对内嵌 H5 页面中<code>chng</code>（输入框输入）事件的支持。</li></ul> | 2019-05-13 |
+| ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.7.5</th>
-      <th style="text-align:left">
-        <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
-        <ul>
-          <li>&#x6570;&#x636E;&#x5E93;&#x4F18;&#x5316;&#xFF1B;</li>
-          <li>&#x6253;&#x70B9;&#x53C2;&#x6570;&#x89C4;&#x5219;&#x4FEE;&#xFF1B;</li>
-          <li>&#x5BF9;&#x4FE1;&#x9E3D;&#x517C;&#x5BB9;&#xFF1B;</li>
-          <li>&#x4FEE;&#x590D;&#x5BF9;&#x4E8E;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#x4E0B;react
-            native page event&#x53D1;&#x4E0D;&#x51FA;&#x6765;&#x7684;&#x95EE;&#x9898;&#x3002;</li>
-        </ul>
-      </th>
-      <th style="text-align:left">2019-04-23</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.7.5 | <p>修复bug：</p><ul><li>数据库优化；</li><li>打点参数规则修；</li><li>对信鸽兼容；</li><li>修复对于特殊情况下react native page event发不出来的问题。</li></ul> | 2019-04-23 |
+| ----- | ---------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.7.4</th>
-      <th style="text-align:left">
-        <p>&#x4F18;&#x5316;&#xFF1A;</p>
-        <ul>
-          <li>web &#x5708; app &#x8FDE;&#x63A5;&#x6D41;&#x7545;&#x5EA6;&#x4F18;&#x5316;</li>
-          <li>&#x4F18;&#x5316;&#x4E86; mobile debugger &#x7684;&#x6D41;&#x7545;&#x5EA6;</li>
-        </ul>
-        <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
-        <ul>
-          <li>&#x4FEE;&#x590D;&#x4E86;<code>GrowingAspectModeDynamicSwizzling Mode</code> &#x4E0B;<code>WKWebView</code> crash</li>
-        </ul>
-      </th>
-      <th style="text-align:left">2019-03-29</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.7.4 | <p>优化：</p><ul><li>web 圈 app 连接流畅度优化</li><li>优化了 mobile debugger 的流畅度</li></ul><p>修复bug：</p><ul><li>修复了<code>GrowingAspectModeDynamicSwizzling Mode</code> 下<code>WKWebView</code> crash</li></ul> | 2019-03-29 |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.7.3</th>
-      <th style="text-align:left">
-        <p>&#x4F18;&#x5316;&#xFF1A;</p>
-        <ul>
-          <li>&#x4F18;&#x5316;web&#x5708;app</li>
-        </ul>
-      </th>
-      <th style="text-align:left">2019-03-18</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.7.3 | <p>优化：</p><ul><li>优化web圈app</li></ul> | 2019-03-18 |
+| ----- | ------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.7.2</th>
-      <th style="text-align:left">
-        <p>&#x517C;&#x5BB9;&#x4FEE;&#x590D;&#xFF1A;</p>
-        <p>&#x4FEE;&#x590D;&#x90E8;&#x5206;ReactCocoa&#x7248;&#x672C;crash</p>
-      </th>
-      <th style="text-align:left">2019-03-13</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.7.2 | <p>兼容修复：</p><p>修复部分ReactCocoa版本crash</p> | 2019-03-13 |
+| ----- | ---------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.7.1</th>
-      <th style="text-align:left">
-        <p>&#x4FEE;&#x590D;bug&#xFF1A;</p>
-        <ol>
-          <li>&#x4FEE;&#x590D; <code>DDAbstractLogger</code>&#xFF0C;<code>DDExtractFileNameWithoutExtension</code> &#x6587;&#x4EF6;&#x51B2;&#x7A81;
-            &#xFF0C;&#x89E3;&#x51B3;KVO&#x79FB;&#x9664;&#x5F02;&#x5E38;&#x95EE;&#x9898;&#x3002;</li>
-        </ol>
-      </th>
-      <th style="text-align:left">2019-03-08</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.7.1 | <p>修复bug：</p><ol><li>修复 <code>DDAbstractLogger</code>，<code>DDExtractFileNameWithoutExtension</code> 文件冲突 ，解决KVO移除异常问题。</li></ol> | 2019-03-08 |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.7.0</th>
-      <th style="text-align:left">
-        <p>&#x65B0;&#x529F;&#x80FD;&#xFF1A;</p>
-        <ol>
-          <li>&#x589E;&#x52A0;&#x6253;&#x70B9;&#x9A8C;&#x8BC1;&#x529F;&#x80FD; &#xFF1B;</li>
-          <li>&#x589E;&#x52A0; web &#x5708;&#x9009; APP &#x529F;&#x80FD;&#xFF0C;&#x5708;&#x9009;&#x4E2D;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x70ED;&#x56FE;
-            &#xFF1B;</li>
-          <li>&#x66F4;&#x6539; APP &#x7AEF;&#x5708;&#x9009;&#x8FC7;&#x7A0B;&#x4E2D;&#x63D0;&#x793A;&#x6761;&#x53EF;&#x62D6;&#x62FD;&#x63D0;&#x793A;&#x3002;</li>
-        </ol>
-      </th>
-      <th style="text-align:left">2019-02-27</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.7.0 | <p>新功能：</p><ol><li>增加打点验证功能 ；</li><li>增加 web 圈选 APP 功能，圈选中可以查看热图 ；</li><li>更改 APP 端圈选过程中提示条可拖拽提示。</li></ol> | 2019-02-27 |
+| ----- | ----------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.6.7</th>
-      <th style="text-align:left">
-        <ol>
-          <li>&#x63D0;&#x4F9B;&#x5173;&#x95ED;&#x5355;&#x72EC;&#x5143;&#x7D20;&#x5C55;&#x73B0;&#x4E8B;&#x4EF6;&#x63A5;&#x53E3;&#x2014;&#x2014;
-            <a
-            href="https://docs.growingio.com/docs/sdk-integration/ios-sdk/ios-sdk-api#shu-ju-cai-ji-fa-song-api"><code>growingAttributesDonotTrackImp</code>
-              </a> <code>&#x200B;</code>
-          </li>
-          <li>&#x81EA;&#x5B9A;&#x4E49;&#x9875;&#x9762;&#x4E8B;&#x4EF6;&#xFF08;<code>pvar</code>&#xFF09;&#x4F18;&#x5316;&#xFF0C;&#x4E4B;&#x524D; <code>setPageVariable</code> &#x63A5;&#x53E3;&#x9700;&#x8981;&#x7528;&#x6237;&#x6BCF;&#x6B21;&#x8FDB;&#x5165;&#x9875;&#x9762;&#x7684;&#x65F6;&#x5019;&#x8BBE;&#x7F6E;&#xFF0C;
-            &#x73B0;&#x66F4;&#x65B0;&#x4E3A;<code>pvar</code>&#x53EA;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x4E00;&#x6B21;&#xFF0C;&#x5728;&#x9875;&#x9762;&#x9500;&#x6BC1;&#x4E4B;&#x524D;&#x6BCF;&#x6B21;&#x5C55;&#x793A;&#x90FD;&#x4F1A;&#x8865;&#x53D1;<code>pvar</code>&#xFF0C;&#x5982;&#x679C;&#x7528;&#x6237;&#x8BBE;&#x7F6E;<code>null</code>&#x5219;&#x6E05;&#x7A7A; <code>pvar</code>&#x4E8B;&#x4EF6;&#xFF1B;</li>
-        </ol>
-      </th>
-      <th style="text-align:left">2019-01-04</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.6.7 | <ol><li>提供关闭单独元素展现事件接口—— <a href="https://docs.growingio.com/docs/sdk-integration/ios-sdk/ios-sdk-api#shu-ju-cai-ji-fa-song-api"><code>growingAttributesDonotTrackImp</code></a> <code>​</code></li><li>自定义页面事件（<code>pvar</code>）优化，之前 <code>setPageVariable</code> 接口需要用户每次进入页面的时候设置， 现更新为<code>pvar</code>只需要设置一次，在页面销毁之前每次展示都会补发<code>pvar</code>，如果用户设置<code>null</code>则清空 <code>pvar</code>事件；</li></ol> | 2019-01-04 |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
 | 2.6.5 | 增加app close事件上报,将最后一个页面的浏览时长计算入用户进入总时长。 | 2018-12-12 |
-| :--- | :--- | :--- |
+| ----- | --------------------------------------- | ---------- |
 
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.6.3</th>
-      <th style="text-align:left">
-        <ol>
-          <li>&#x4FEE;&#x590D;&#x591A;&#x4E2A;<code>ViewController</code> &#x6ED1;&#x52A8;&#x5207;&#x6362;&#x65F6;&#xFF0C;&#x6CA1;&#x6709;&#x8BC6;&#x522B;&#x5BFC;&#x81F4;&#x7528;&#x6237;&#x9875;&#x9762;&#x8BBF;&#x95EE;&#x4E8B;&#x4EF6;&#x6570;&#x636E;&#x9519;&#x8BEF;&#xFF1B;</li>
-          <li>&#x652F;&#x6301;<a href="https://docs.growingio.com/docs/sdk-integration/ios-sdk/ios-sdk-2.x#push-tui-song-dian-ji-cai-ji">&#x91C7;&#x96C6;&#x901A;&#x77E5;</a>&#x7684;&#x70B9;&#x51FB;&#x3002;</li>
-        </ol>
-      </th>
-      <th style="text-align:left">2018-11-29</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.6.3 | <ol><li>修复多个<code>ViewController</code> 滑动切换时，没有识别导致用户页面访问事件数据错误；</li><li>支持<a href="https://docs.growingio.com/docs/sdk-integration/ios-sdk/ios-sdk-2.x#push-tui-song-dian-ji-cai-ji">采集通知</a>的点击。</li></ol> | 2018-11-29 |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
 | 2.4.5 | 修复vstr发送地址错误 | 2018-10-23 |
-| :--- | :--- | :--- |
+| ----- | ------------ | ---------- |
 
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.4.4</th>
-      <th style="text-align:left">
-        <ol>
-          <li>Hybrid SDK &#x652F;&#x6301;&#x8BBE;&#x7F6E;&#x767B;&#x5F55;&#x7528;&#x6237;&#x53D8;&#x91CF;</li>
-          <li>&#x4FEE;&#x590D;&#x82E5;&#x5E72;&#x517C;&#x5BB9;&#x6027;&#x95EE;&#x9898;</li>
-        </ol>
-      </th>
-      <th style="text-align:left">2018-09-21</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.4.4 | <ol><li>Hybrid SDK 支持设置登录用户变量</li><li>修复若干兼容性问题</li></ol> | 2018-09-21 |
+| ----- | --------------------------------------------------------- | ---------- |
 
 | 2.4.3 | deep link功能升级 | 2018-08-21 |
-| :--- | :--- | :--- |
-
+| ----- | ------------- | ---------- |
 
 | 2.4.2 | 优化iOS Hybrid pvar事件 | 2018-08-02 |
-| :--- | :--- | :--- |
-
+| ----- | ------------------- | ---------- |
 
 | 2.4.1 | Deeplink功能添加Universal Link/应用宝微链接支持 | 2018-07-25 |
-| :--- | :--- | :--- |
+| ----- | ----------------------------------- | ---------- |
 
+| 2.4.0 | <ol><li>稳定性全面测试</li><li>支持访问用户变量</li><li>扩大SDK埋点参数限制</li><li>修复若干兼容性问题</li></ol> | 2018-07-18 |
+| ----- | -------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.4.0</th>
-      <th style="text-align:left">
-        <ol>
-          <li>&#x7A33;&#x5B9A;&#x6027;&#x5168;&#x9762;&#x6D4B;&#x8BD5;</li>
-          <li>&#x652F;&#x6301;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x53D8;&#x91CF;</li>
-          <li>&#x6269;&#x5927;SDK&#x57CB;&#x70B9;&#x53C2;&#x6570;&#x9650;&#x5236;</li>
-          <li>&#x4FEE;&#x590D;&#x82E5;&#x5E72;&#x517C;&#x5BB9;&#x6027;&#x95EE;&#x9898;</li>
-        </ol>
-      </th>
-      <th style="text-align:left">2018-07-18</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.3.3 | <ol><li>修复了在某些情况下影响iOS 处理器性能的问题</li><li>修复了某些情况下向数组内添加nil时引起的崩溃问题</li><li>修复了某些情况下tap实现的点击没有发送数据的问题</li><li>增加了对一部分tags请求的超时限制功能</li><li>clck数据去掉无效的n字段</li></ol> | 2018-06-26 |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.3.3</th>
-      <th style="text-align:left">
-        <ol>
-          <li>&#x4FEE;&#x590D;&#x4E86;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x5F71;&#x54CD;iOS
-            &#x5904;&#x7406;&#x5668;&#x6027;&#x80FD;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x4FEE;&#x590D;&#x4E86;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x5411;&#x6570;&#x7EC4;&#x5185;&#x6DFB;&#x52A0;nil&#x65F6;&#x5F15;&#x8D77;&#x7684;&#x5D29;&#x6E83;&#x95EE;&#x9898;</li>
-          <li>&#x4FEE;&#x590D;&#x4E86;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;tap&#x5B9E;&#x73B0;&#x7684;&#x70B9;&#x51FB;&#x6CA1;&#x6709;&#x53D1;&#x9001;&#x6570;&#x636E;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x589E;&#x52A0;&#x4E86;&#x5BF9;&#x4E00;&#x90E8;&#x5206;tags&#x8BF7;&#x6C42;&#x7684;&#x8D85;&#x65F6;&#x9650;&#x5236;&#x529F;&#x80FD;</li>
-          <li>clck&#x6570;&#x636E;&#x53BB;&#x6389;&#x65E0;&#x6548;&#x7684;n&#x5B57;&#x6BB5;</li>
-        </ol>
-      </th>
-      <th style="text-align:left">2018-06-26</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.3.2 | <ol><li>支持Deeplink直达落地页</li><li>支持GDPR欧盟区一般数据保护条例</li></ol> | 2018-05-21 |
+| ----- | ----------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.3.2</th>
-      <th style="text-align:left">
-        <ol>
-          <li>&#x652F;&#x6301;Deeplink&#x76F4;&#x8FBE;&#x843D;&#x5730;&#x9875;</li>
-          <li>&#x652F;&#x6301;GDPR&#x6B27;&#x76DF;&#x533A;&#x4E00;&#x822C;&#x6570;&#x636E;&#x4FDD;&#x62A4;&#x6761;&#x4F8B;</li>
-        </ol>
-      </th>
-      <th style="text-align:left">2018-05-21</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.3.1 | <ol><li>支持Hybrid Mode埋点</li><li>优化部分场景下Hybrid JS SDK加载失败而无法对H5页面进行数据采集、圈选的情况;</li><li>优化客户端数据库的批量操作以解决部分机型出现崩溃的问题;</li><li>优化因开发证书变更导致keychain数据无法获取的问题;</li><li>优化部分click事件无法找到对应page事件的问题.</li></ol> | 2018-04-10 |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.3.1</th>
-      <th style="text-align:left">
-        <ol>
-          <li>&#x652F;&#x6301;Hybrid Mode&#x57CB;&#x70B9;</li>
-          <li>&#x4F18;&#x5316;&#x90E8;&#x5206;&#x573A;&#x666F;&#x4E0B;Hybrid JS SDK&#x52A0;&#x8F7D;&#x5931;&#x8D25;&#x800C;&#x65E0;&#x6CD5;&#x5BF9;H5&#x9875;&#x9762;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x91C7;&#x96C6;&#x3001;&#x5708;&#x9009;&#x7684;&#x60C5;&#x51B5;;</li>
-          <li>&#x4F18;&#x5316;&#x5BA2;&#x6237;&#x7AEF;&#x6570;&#x636E;&#x5E93;&#x7684;&#x6279;&#x91CF;&#x64CD;&#x4F5C;&#x4EE5;&#x89E3;&#x51B3;&#x90E8;&#x5206;&#x673A;&#x578B;&#x51FA;&#x73B0;&#x5D29;&#x6E83;&#x7684;&#x95EE;&#x9898;;</li>
-          <li>&#x4F18;&#x5316;&#x56E0;&#x5F00;&#x53D1;&#x8BC1;&#x4E66;&#x53D8;&#x66F4;&#x5BFC;&#x81F4;keychain&#x6570;&#x636E;&#x65E0;&#x6CD5;&#x83B7;&#x53D6;&#x7684;&#x95EE;&#x9898;;</li>
-          <li>&#x4F18;&#x5316;&#x90E8;&#x5206;click&#x4E8B;&#x4EF6;&#x65E0;&#x6CD5;&#x627E;&#x5230;&#x5BF9;&#x5E94;page&#x4E8B;&#x4EF6;&#x7684;&#x95EE;&#x9898;.</li>
-        </ol>
-      </th>
-      <th style="text-align:left">2018-04-10</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 2.3.0 | <ol><li>支持Cordova跨平台插件埋点实施</li><li>支持RN（React Native）跨平台插件埋点实施</li><li>支持广告监测产品DeepLink功能</li><li>支持 GrowingIO Mobile Debugger</li></ol> | 2018-03-21 |
+| ----- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">2.3.0</th>
-      <th style="text-align:left">
-        <ol>
-          <li>&#x652F;&#x6301;Cordova&#x8DE8;&#x5E73;&#x53F0;&#x63D2;&#x4EF6;&#x57CB;&#x70B9;&#x5B9E;&#x65BD;</li>
-          <li>&#x652F;&#x6301;RN&#xFF08;React Native&#xFF09;&#x8DE8;&#x5E73;&#x53F0;&#x63D2;&#x4EF6;&#x57CB;&#x70B9;&#x5B9E;&#x65BD;</li>
-          <li>&#x652F;&#x6301;&#x5E7F;&#x544A;&#x76D1;&#x6D4B;&#x4EA7;&#x54C1;DeepLink&#x529F;&#x80FD;</li>
-          <li>&#x652F;&#x6301; GrowingIO Mobile Debugger</li>
-        </ol>
-      </th>
-      <th style="text-align:left">2018-03-21</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 1.4.2 | <ol><li>对部分场景下Hybrid JS SDK加载失败而无法对H5页面进行数据采集、圈选的情况提供可手动调用的接口</li><li>优化客户端数据库的批量操作，解决小部分机型出现crash的情况</li><li>优化因开发证书变更导致keychain数据无法获取的问题</li><li>优化小部分clck事件无法找到对应page的问题</li></ol> | 2018-03-27 |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">1.4.2</th>
-      <th style="text-align:left">
-        <ol>
-          <li>&#x5BF9;&#x90E8;&#x5206;&#x573A;&#x666F;&#x4E0B;Hybrid JS SDK&#x52A0;&#x8F7D;&#x5931;&#x8D25;&#x800C;&#x65E0;&#x6CD5;&#x5BF9;H5&#x9875;&#x9762;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x91C7;&#x96C6;&#x3001;&#x5708;&#x9009;&#x7684;&#x60C5;&#x51B5;&#x63D0;&#x4F9B;&#x53EF;&#x624B;&#x52A8;&#x8C03;&#x7528;&#x7684;&#x63A5;&#x53E3;</li>
-          <li>&#x4F18;&#x5316;&#x5BA2;&#x6237;&#x7AEF;&#x6570;&#x636E;&#x5E93;&#x7684;&#x6279;&#x91CF;&#x64CD;&#x4F5C;&#xFF0C;&#x89E3;&#x51B3;&#x5C0F;&#x90E8;&#x5206;&#x673A;&#x578B;&#x51FA;&#x73B0;crash&#x7684;&#x60C5;&#x51B5;</li>
-          <li>&#x4F18;&#x5316;&#x56E0;&#x5F00;&#x53D1;&#x8BC1;&#x4E66;&#x53D8;&#x66F4;&#x5BFC;&#x81F4;keychain&#x6570;&#x636E;&#x65E0;&#x6CD5;&#x83B7;&#x53D6;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x4F18;&#x5316;&#x5C0F;&#x90E8;&#x5206;clck&#x4E8B;&#x4EF6;&#x65E0;&#x6CD5;&#x627E;&#x5230;&#x5BF9;&#x5E94;page&#x7684;&#x95EE;&#x9898;</li>
-        </ol>
-      </th>
-      <th style="text-align:left">2018-03-27</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 1.4.0 | <ol><li>修复部分情况下圈选返回后页面无法点击的问题</li><li>修复App后台启动发送访问数据异常的问题git</li></ol> | 2018-01-25 |
+| ----- | ----------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">1.4.0</th>
-      <th style="text-align:left">
-        <ol>
-          <li>&#x4FEE;&#x590D;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;&#x5708;&#x9009;&#x8FD4;&#x56DE;&#x540E;&#x9875;&#x9762;&#x65E0;&#x6CD5;&#x70B9;&#x51FB;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x4FEE;&#x590D;App&#x540E;&#x53F0;&#x542F;&#x52A8;&#x53D1;&#x9001;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5F02;&#x5E38;&#x7684;&#x95EE;&#x9898;git</li>
-        </ol>
-      </th>
-      <th style="text-align:left">2018-01-25</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 1.2.0 | <ol><li>全面提升数据采集能力</li><li>优化内存占用，全面提高稳定性</li><li>大幅提升控件兼容性</li><li>加强了对MBProgressHUD的支持</li><li>修复某些特定情况下浏览/点击事件未采集的问题</li><li>修复在 iOS11环境下，应用启动时可能多发一个 Page 事件的问题</li></ol> | 2018-01-11 |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">1.2.0</th>
-      <th style="text-align:left">
-        <ol>
-          <li>&#x5168;&#x9762;&#x63D0;&#x5347;&#x6570;&#x636E;&#x91C7;&#x96C6;&#x80FD;&#x529B;</li>
-          <li>&#x4F18;&#x5316;&#x5185;&#x5B58;&#x5360;&#x7528;&#xFF0C;&#x5168;&#x9762;&#x63D0;&#x9AD8;&#x7A33;&#x5B9A;&#x6027;</li>
-          <li>&#x5927;&#x5E45;&#x63D0;&#x5347;&#x63A7;&#x4EF6;&#x517C;&#x5BB9;&#x6027;</li>
-          <li>&#x52A0;&#x5F3A;&#x4E86;&#x5BF9;MBProgressHUD&#x7684;&#x652F;&#x6301;</li>
-          <li>&#x4FEE;&#x590D;&#x67D0;&#x4E9B;&#x7279;&#x5B9A;&#x60C5;&#x51B5;&#x4E0B;&#x6D4F;&#x89C8;/&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#x672A;&#x91C7;&#x96C6;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x4FEE;&#x590D;&#x5728; iOS11&#x73AF;&#x5883;&#x4E0B;&#xFF0C;&#x5E94;&#x7528;&#x542F;&#x52A8;&#x65F6;&#x53EF;&#x80FD;&#x591A;&#x53D1;&#x4E00;&#x4E2A;
-            Page &#x4E8B;&#x4EF6;&#x7684;&#x95EE;&#x9898;</li>
-        </ol>
-      </th>
-      <th style="text-align:left">2018-01-11</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 1.0.3 | <ol><li>优化 Hybrid 采集，支持通过 hashtag 来跟踪页面切换，并与 Web 端采集规则和设置保持一致</li><li>网络异常时引入 HttpDNS 发送，减少 DNS 劫持，提高数据发送的稳定性</li><li>更好的支持 GPS 数据上报，城市信息分析更准确</li><li>优化来源管理设备追踪的逻辑，匹配更精准</li><li>优化用户识别的逻辑</li><li>优化 BlocksKit 的兼容性</li><li>内存优化和性能改进</li><li>App 内嵌 H5 支持热图功能</li></ol> | 2017-08-22 |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">1.0.3</th>
-      <th style="text-align:left">
-        <ol>
-          <li>&#x4F18;&#x5316; Hybrid &#x91C7;&#x96C6;&#xFF0C;&#x652F;&#x6301;&#x901A;&#x8FC7;
-            hashtag &#x6765;&#x8DDF;&#x8E2A;&#x9875;&#x9762;&#x5207;&#x6362;&#xFF0C;&#x5E76;&#x4E0E;
-            Web &#x7AEF;&#x91C7;&#x96C6;&#x89C4;&#x5219;&#x548C;&#x8BBE;&#x7F6E;&#x4FDD;&#x6301;&#x4E00;&#x81F4;</li>
-          <li>&#x7F51;&#x7EDC;&#x5F02;&#x5E38;&#x65F6;&#x5F15;&#x5165; HttpDNS &#x53D1;&#x9001;&#xFF0C;&#x51CF;&#x5C11;
-            DNS &#x52AB;&#x6301;&#xFF0C;&#x63D0;&#x9AD8;&#x6570;&#x636E;&#x53D1;&#x9001;&#x7684;&#x7A33;&#x5B9A;&#x6027;</li>
-          <li>&#x66F4;&#x597D;&#x7684;&#x652F;&#x6301; GPS &#x6570;&#x636E;&#x4E0A;&#x62A5;&#xFF0C;&#x57CE;&#x5E02;&#x4FE1;&#x606F;&#x5206;&#x6790;&#x66F4;&#x51C6;&#x786E;</li>
-          <li>&#x4F18;&#x5316;&#x6765;&#x6E90;&#x7BA1;&#x7406;&#x8BBE;&#x5907;&#x8FFD;&#x8E2A;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x5339;&#x914D;&#x66F4;&#x7CBE;&#x51C6;</li>
-          <li>&#x4F18;&#x5316;&#x7528;&#x6237;&#x8BC6;&#x522B;&#x7684;&#x903B;&#x8F91;</li>
-          <li>&#x4F18;&#x5316; BlocksKit &#x7684;&#x517C;&#x5BB9;&#x6027;</li>
-          <li>&#x5185;&#x5B58;&#x4F18;&#x5316;&#x548C;&#x6027;&#x80FD;&#x6539;&#x8FDB;</li>
-          <li>App &#x5185;&#x5D4C; H5 &#x652F;&#x6301;&#x70ED;&#x56FE;&#x529F;&#x80FD;</li>
-        </ol>
-      </th>
-      <th style="text-align:left">2017-08-22</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 0.9.12 | <ol><li>支持新版的Web圈选App功能，在电脑上可以方便地圈选App中的元素</li><li>支持设置“页面属性”，上传更多的页面数据，分析更加全面</li><li>通过同一个ViewController实现的不同页面，现在可以在圈选时设置不同的名称了</li><li>配合苹果公司新政策，调用的网络API改为IPv6形式</li><li>修复了许多bug</li></ol> | 2016-05-28 |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">0.9.12</th>
-      <th style="text-align:left">
-        <ol>
-          <li>&#x652F;&#x6301;&#x65B0;&#x7248;&#x7684;Web&#x5708;&#x9009;App&#x529F;&#x80FD;&#xFF0C;&#x5728;&#x7535;&#x8111;&#x4E0A;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x5730;&#x5708;&#x9009;App&#x4E2D;&#x7684;&#x5143;&#x7D20;</li>
-          <li>&#x652F;&#x6301;&#x8BBE;&#x7F6E;&#x201C;&#x9875;&#x9762;&#x5C5E;&#x6027;&#x201D;&#xFF0C;&#x4E0A;&#x4F20;&#x66F4;&#x591A;&#x7684;&#x9875;&#x9762;&#x6570;&#x636E;&#xFF0C;&#x5206;&#x6790;&#x66F4;&#x52A0;&#x5168;&#x9762;</li>
-          <li>&#x901A;&#x8FC7;&#x540C;&#x4E00;&#x4E2A;ViewController&#x5B9E;&#x73B0;&#x7684;&#x4E0D;&#x540C;&#x9875;&#x9762;&#xFF0C;&#x73B0;&#x5728;&#x53EF;&#x4EE5;&#x5728;&#x5708;&#x9009;&#x65F6;&#x8BBE;&#x7F6E;&#x4E0D;&#x540C;&#x7684;&#x540D;&#x79F0;&#x4E86;</li>
-          <li>&#x914D;&#x5408;&#x82F9;&#x679C;&#x516C;&#x53F8;&#x65B0;&#x653F;&#x7B56;&#xFF0C;&#x8C03;&#x7528;&#x7684;&#x7F51;&#x7EDC;API&#x6539;&#x4E3A;IPv6&#x5F62;&#x5F0F;</li>
-          <li>&#x4FEE;&#x590D;&#x4E86;&#x8BB8;&#x591A;bug</li>
-        </ol>
-      </th>
-      <th style="text-align:left">2016-05-28</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| 0.9.8.7 | <ol><li>在圈选时可以高亮出已圈选过的元素，一次圈不完的时候可以下次接着圈，同时也方便了多个同事之间的协作圈选</li><li>改进了圈选App内HTML5页面时的一些细节</li><li>修复了各种圈选可用性和准确性的问题</li></ol> | 2016-04-22 |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------- | ---------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">0.9.8.7</th>
-      <th style="text-align:left">
-        <ol>
-          <li>&#x5728;&#x5708;&#x9009;&#x65F6;&#x53EF;&#x4EE5;&#x9AD8;&#x4EAE;&#x51FA;&#x5DF2;&#x5708;&#x9009;&#x8FC7;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x4E00;&#x6B21;&#x5708;&#x4E0D;&#x5B8C;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x4E0B;&#x6B21;&#x63A5;&#x7740;&#x5708;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x65B9;&#x4FBF;&#x4E86;&#x591A;&#x4E2A;&#x540C;&#x4E8B;&#x4E4B;&#x95F4;&#x7684;&#x534F;&#x4F5C;&#x5708;&#x9009;</li>
-          <li>&#x6539;&#x8FDB;&#x4E86;&#x5708;&#x9009;App&#x5185;HTML5&#x9875;&#x9762;&#x65F6;&#x7684;&#x4E00;&#x4E9B;&#x7EC6;&#x8282;</li>
-          <li>&#x4FEE;&#x590D;&#x4E86;&#x5404;&#x79CD;&#x5708;&#x9009;&#x53EF;&#x7528;&#x6027;&#x548C;&#x51C6;&#x786E;&#x6027;&#x7684;&#x95EE;&#x9898;</li>
-        </ol>
-      </th>
-      <th style="text-align:left">2016-04-22</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">0.9.8.1</th>
-      <th style="text-align:left">
-        <ol>
-          <li>&#x6539;&#x8FDB;App&#x5B9A;&#x4E49;&#x6807;&#x7B7E;&#x754C;&#x9762;UI&#xFF0C;&#x7F8E;&#x89C2;&#x5EA6;&#x5927;&#x5927;&#x63D0;&#x9AD8;</li>
-          <li>&#x6539;&#x8FDB;App&#x5708;&#x9009;&#x4EA4;&#x4E92;&#xFF0C;&#x7ED3;&#x5408;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x5224;&#x65AD;&#x9ED8;&#x8BA4;&#x53C2;&#x6570;</li>
-          <li>&#x6062;&#x590D;&#x4E86;&#x5B9A;&#x4E49;&#x9875;&#x9762;&#x6807;&#x7B7E;</li>
-        </ol>
-      </th>
-      <th style="text-align:left">2016-03-26</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
+| 0.9.8.1 | <ol><li>改进App定义标签界面UI，美观度大大提高</li><li>改进App圈选交互，结合使用场景判断默认参数</li><li>恢复了定义页面标签</li></ol> | 2016-03-26 |
+| ------- | ---------------------------------------------------------------------------------------- | ---------- |

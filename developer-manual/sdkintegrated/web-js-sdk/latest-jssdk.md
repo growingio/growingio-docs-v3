@@ -2,11 +2,11 @@
 
 ## 准备条件
 
-获取项目ID，获取方法请参考"项目管理 &gt; 项目概览 &gt; [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
+获取项目ID，获取方法请参考"项目管理 > 项目概览 > [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
 
 ## 1. 添加跟踪代码
 
-请将以下的页面代码放置到需要分析的页面中的 &lt;head&gt; 和 &lt;/head&gt; 标签之间，即可完成最新 Web JS SDK 页面代码的添加。
+请将以下的页面代码放置到需要分析的页面中的 \<head> 和 \</head> 标签之间，即可完成最新 Web JS SDK 页面代码的添加。
 
 {% hint style="warning" %}
 请注意使用 **您创建Web应用所在项目的项目ID** 替换代码中的 **your projectId** 。
@@ -26,7 +26,7 @@
 ```
 
 {% hint style="warning" %}
- Web JS SDK 默认是不会采集本地页面（域名为 **localhost** 或者 **file://** 协议），如果您希望 SDK 采集本地页面，需要在集成 SDK 代码之前添加如下代码：
+&#x20;Web JS SDK 默认是不会采集本地页面（域名为 **localhost** 或者 **file:// **协议），如果您希望 SDK 采集本地页面，需要在集成 SDK 代码之前添加如下代码：
 
 `window._gr_ignore_local_rule=true; //开启本地页面采集`
 {% endhint %}
@@ -89,7 +89,7 @@ div作为容器标签时，以id=1的div作为容器进行圈选的代码示例�
 
 这时，采集到的li节点的内容就是“上一页”。
 
-更多的文本信息规则，请参考[第4节：What\(内容\)](https://sishen.gitbooks.io/gio-js-book/dom/4what.html)和[第1节：内容规则](https://sishen.gitbooks.io/gio-js-book/5/1.html)。
+更多的文本信息规则，请参考[第4节：What(内容)](https://sishen.gitbooks.io/gio-js-book/dom/4what.html)和[第1节：内容规则](https://sishen.gitbooks.io/gio-js-book/5/1.html)。
 
 ### 3. 设置采集位置信息（data-growing-idx）
 
@@ -152,22 +152,22 @@ data-growing-idx属性需要赋值，建议传不为0的纯数字。
 
 为了能区分出上报的数据来自哪个平台，SDK实现自动的平台判断，支持的平台如下：
 
-| 平台 | 说明 |
-| :--- | :--- |
-| Web | 网页端（直接浏览器打开或不在以下环境中） |
-| MinP | 微信小程序内嵌H5页面 |
-| alip | 支付宝小程序内嵌H5页面 |
-| baidup | 百度小程序内嵌H5页面 |
-| qq | QQ小程序内嵌H5页面 |
-| bytedance | 字节跳动内嵌 H5 页面 |
-| Android | 安卓App中内嵌H5页面（App需要集成安卓SDK） |
-| iOS | iOS App中内嵌H5页面（App需要集成iOS SDK） |
+| 平台        | 说明                             |
+| --------- | ------------------------------ |
+| Web       | 网页端（直接浏览器打开或不在以下环境中）           |
+| MinP      | 微信小程序内嵌H5页面                    |
+| alip      | 支付宝小程序内嵌H5页面                   |
+| baidup    | 百度小程序内嵌H5页面                    |
+| qq        | QQ小程序内嵌H5页面                    |
+| bytedance | 字节跳动内嵌 H5 页面                   |
+| Android   | 安卓App中内嵌H5页面（App需要集成安卓SDK）     |
+| iOS       | iOS App中内嵌H5页面（App需要集成iOS SDK） |
 
 ### 1. 如何识别Android和iOS
 
 若要能区分是不是Android（iOS）平台，需要在相应的App内同时集成原生 Android（iOS）SDK。原生的SDK会向`webview`中注入相应的变量，Web JS SDK通过该变量判断是否为对应的平台。以下是Web JS SDK内部判断代码示例。
 
-```text
+```
 // 判断安卓
 function isInAndroidApp() {
     return !!window._vds_bridge;
@@ -191,4 +191,3 @@ function isInIosApp() {
 GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 
 完成Web页面代码集成部署后，使用[Web Debugger](../../debugging/web-debugger.md) 工具校验您的网站是否在正常向GrowingIO平台发送数据。
-

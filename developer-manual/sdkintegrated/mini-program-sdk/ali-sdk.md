@@ -2,7 +2,7 @@
 
 ## 准备条件
 
-获取项目ID，获取方法请参考"项目管理 &gt; 项目概览 &gt; [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
+获取项目ID，获取方法请参考"项目管理 > 项目概览 > [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
 
 ## 1. 添加跟踪代码
 
@@ -21,7 +21,7 @@
 
 下载 gio-alip.js 文件
 
-```text
+```
 curl --compressed https://assets.giocdn.com/sdk/gio-alip.js -o gio-alip.js
 ```
 
@@ -31,7 +31,7 @@ curl --compressed https://assets.giocdn.com/sdk/gio-alip.js -o gio-alip.js
 
 方式一：
 
-在支付宝小程序项目根目录的 app.js 文件的顶部添加以下 JS 代码，请注意一定要放在 App\(\) 之前：
+在支付宝小程序项目根目录的 app.js 文件的顶部添加以下 JS 代码，请注意一定要放在 App() 之前：
 
 ```javascript
 var gio = require("utils/gio-alip.js").default;
@@ -85,7 +85,7 @@ $global.GioPage({
 
 把文件放在支付宝小程序项目里，比如 utils 目录下。
 
-```text
+```
 curl --compressed https://assets.giocdn.com/sdk/gio-alip.js -o gio-alip.js
 ```
 
@@ -130,7 +130,7 @@ gio('setConfig', gioConfig);
 
 把文件放在支付宝小程序项目里，比如 utils 目录下。
 
-```text
+```
 curl --compressed https://assets.giocdn.com/sdk/gio-alip.esm.js -o gio-alip.js
 ```
 
@@ -177,7 +177,7 @@ App.mpType = 'app';
 
 把文件放在支付宝小程序项目里，比如 utils 目录下。
 
-```text
+```
 curl --compressed https://assets.giocdn.com/sdk/gio-alip.js -o gio-alip.js
 ```
 
@@ -220,25 +220,25 @@ gio('setConfig', gioConfig);
 
 每次发布小程序新版本的时候，更新一下版本号 **version**，可以在 GrowingIO 分析不同版本的数据。除了 version 之外，还有以下额外参数可以使用。
 
-| 参数 | 值 | 解释 |
-| :--- | :--- | :--- |
-| getLocation | true \| false | 是否自动获取用户的地理位置信息。默认false |
-| forceLogin | true \| false | 是否要用用户登陆支付宝获取 userid作为访问用户ID标识采集，建议你的小程序在打开强制要求用户登陆支付宝获取 userid时，才进行开启。默认 false |
-| debug | true \| false | 是否开启调试模式，可以在调试体验版时看到采集的数据，默认 false |
-| version | string | 你的小程序的版本号 |
-| followShare | true \| false | 详细跟踪分享数据，开启后可使用分享分析功能统计分享带来的用户量。默认 false |
+| 参数          | 值             | 解释                                                                              |
+| ----------- | ------------- | ------------------------------------------------------------------------------- |
+| getLocation | true \| false | 是否自动获取用户的地理位置信息。默认false                                                         |
+| forceLogin  | true \| false | 是否要用用户登陆支付宝获取 userid作为访问用户ID标识采集，建议你的小程序在打开强制要求用户登陆支付宝获取 userid时，才进行开启。默认 false |
+| debug       | true \| false | 是否开启调试模式，可以在调试体验版时看到采集的数据，默认 false                                              |
+| version     | string        | 你的小程序的版本号                                                                       |
+| followShare | true \| false | 详细跟踪分享数据，开启后可使用分享分析功能统计分享带来的用户量。默认 false                                        |
 
 #### followShare参数
 
 转发分享小程序是小程序获客的重要场景，想要详细的进行转发分享的统计，需要在SDK参数中，设置如下参数，值为true
 
-| 参数 | 值 | 解释 |
-| :--- | :--- | :--- |
+| 参数          | 值             | 解释                                       |
+| ----------- | ------------- | ---------------------------------------- |
 | followShare | true \| false | 详细跟踪分享数据，开启后可使用分享分析功能统计分享带来的用户量。默认 false |
 
 即支付宝小程序项目根目录的 app.js 文件设置参数如下：
 
-```text
+```
 var gio = require("utils/gio-alip.js");
 // version 是你的小程序的版本号，发版时请调整
 gio('init', '你的项目ID', '你的支付宝小程序AppID', { version: '1.0', followShare: true });
@@ -251,13 +251,13 @@ gio('init', '你的项目ID', '你的支付宝小程序AppID', { version: '1.0',
 * 如果您的小程序在打开时就需要获取用户地理信息，就可以将这个参数配置为true。
 * 如果您的小程序在用户点击某些按钮时，才触发获取位置，则可以按照配置方式，进行用户位置的补发，从而增强用户地理位置的分析能力。
 
-| 参数 | 值 | 解释 |
-| :--- | :--- | :--- |
+| 参数          | 值             | 解释                      |
+| ----------- | ------------- | ----------------------- |
 | getLocation | true \| false | 是否自动获取用户的地理位置信息。默认false |
 
 GrowingIO SDK 默认不会在小程序启动时获取用户的坐标信息。当用户访问到某一功能时需要位置信息时，可以调用以下位置接口，补发vst，采集位置信息，提升用户地域分布的分析准确性。
 
-```text
+```
 gio('getLocation')
 ```
 
@@ -288,7 +288,7 @@ gio("identify", userid);
 2. 打开小程序详情/设置/开发设置
 3. 配置 **httpRequest接口请求域名白名单**：https://wxapi.growingio.com
 
-![httpRequest &#x63A5;&#x53E3;&#x8BF7;&#x6C42;&#x57DF;&#x540D;&#x767D;&#x540D;&#x5355;](../../../.gitbook/assets/image%20%2887%29.png)
+![httpRequest 接口请求域名白名单](<../../../.gitbook/assets/image (87).png>)
 
 ## 3. 支付宝小程序用户属性设置
 
@@ -300,7 +300,7 @@ gio("identify", userid);
 
 当用户在你的小程序上登陆获取到 userid 后，可以用过 identify 接口绑定支付宝用户ID，后续在 GrowingIO 中获取更准确的支付宝访问用户量。示例代码如下：
 
-```text
+```
 my.httpRequest({
     url: 'http://isv.com/auth', // 该url是自己的服务地址，实现的功能是服务端拿到authcode去开放平台进行token验证
     data: {
@@ -316,7 +316,7 @@ my.httpRequest({
 
 当用户在你的小程序上绑定支付宝信息后，可以通过 setVisitor 接口设置支付宝用户信息，后续在 GrowingIO 中分析这个数据。示例代码如下：
 
-```text
+```
 my.getAuthUserInfo({
     success: (userInfo) => {
         gio('setVisitor', userInfo);
@@ -332,7 +332,7 @@ my.getAuthUserInfo({
 
 当用户在你的小程序上注册以后，你的产品应用服务端会在CRM 用户数据库里添加一条记录并且分配一个 ID，可以通过 setUserId 接口设置注册用户ID，后续在 GrowingIO 中分析登录用户这个数据。示例代码如下：
 
-```text
+```
 gio('setUserId', YOUR_USER_ID);
 ```
 
@@ -372,5 +372,4 @@ gio('clearUserId');
 
 方式二：在SDK中设置了Debug模式后，在开发者工具中查看数据采集日志。
 
-方式三：[数据校验]()
-
+方式三：[数据校验](broken-reference)

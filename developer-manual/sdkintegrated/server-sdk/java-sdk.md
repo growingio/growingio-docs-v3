@@ -4,7 +4,7 @@
 
 在服务端Java 应用中集中Java SDK，来上报离线的用户行为。
 
-我们推荐使用 [Maven](http://search.maven.org/) 管理 Java 项目，请在 `pom.xml` 文件中，添加以下依赖信息，Maven 将自动获取Java SDK 并更新项目配置。
+我们推荐使用 [Maven](http://search.maven.org) 管理 Java 项目，请在 `pom.xml` 文件中，添加以下依赖信息，Maven 将自动获取Java SDK 并更新项目配置。
 
 {% code title="pom.xml" %}
 ```markup
@@ -41,7 +41,7 @@
 
 在Java SDK的jar包中，包含了一个默认的配置文件。
 
-{% code title="gio\_default.properties" %}
+{% code title="gio_default.properties" %}
 ```javascript
 #项目采集端地址
 api.host=https://api.growingio.com
@@ -101,7 +101,7 @@ Java SDK会优先读取 gio.properties中的配置。
 
 ## 调用SDK API发送事件
 
-```text
+```
 //事件行为消息体
 GIOEventMessage eventMessage = new GIOEventMessage.Builder()
     .eventTime(System.currentTimeMillis())            // 事件时间，默认为系统时间（选填）
@@ -133,4 +133,3 @@ GrowingIO建议您按照如下步骤进行埋点数据的开发联调
 {% hint style="success" %}
 如有问题，请您随时联系您的客户成功经理！
 {% endhint %}
-

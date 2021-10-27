@@ -1,16 +1,30 @@
 # 产品配置
 
-{% page-ref page="campaign.md" %}
+{% content-ref url="campaign.md" %}
+[campaign.md](campaign.md)
+{% endcontent-ref %}
 
-{% page-ref page="source.md" %}
+{% content-ref url="source.md" %}
+[source.md](source.md)
+{% endcontent-ref %}
 
-{% page-ref page="deeplink.md" %}
+{% content-ref url="deeplink.md" %}
+[deeplink.md](deeplink.md)
+{% endcontent-ref %}
 
-{% page-ref page="authority.md" %}
+{% content-ref url="authority.md" %}
+[authority.md](authority.md)
+{% endcontent-ref %}
 
-{% page-ref page="export-log.md" %}
+{% content-ref url="export-log.md" %}
+[export-log.md](export-log.md)
+{% endcontent-ref %}
 
-{% page-ref page="utm-config.md" %}
+{% content-ref url="utm-config.md" %}
+[utm-config.md](utm-config.md)
+{% endcontent-ref %}
 
-
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 

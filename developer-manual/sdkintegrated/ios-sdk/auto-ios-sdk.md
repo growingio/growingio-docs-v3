@@ -22,9 +22,9 @@ App适配最低系统版本：iOS 8及以上
 
 GrowingIO iOS SDK 包含以下2个组件SDK:
 
-• GrowingCoreKit \(组件基础库,具备分析功能\)
+• GrowingCoreKit (组件基础库,具备分析功能)
 
-• GrowingAutoTrackKit \(无埋点库\)
+• GrowingAutoTrackKit (无埋点库)
 
 {% hint style="warning" %}
 请保证Growing、GrowingCoreKit、GrowingAutoTrackKit版本号一致。
@@ -36,7 +36,7 @@ GrowingIO iOS SDK 包含以下2个组件SDK:
 {% tab title="使用CocoaPods快速添加" %}
 1. 在您的Podfile中添加`pod 'GrowingAutoTrackKit'`。
 2. 执行或 `pod update` 更新pod依赖库。不要使用 `--no-repo-update`选项。
-3. （可选）GrowingIO推荐您添加 **AdSupport.framework** 依赖库，用于来源管理激活匹配,有利于您更好的分析数据 ,添加项目依赖库的位置在项目设置target -&gt; 选项卡General -&gt; Linked Frameworks and Libraries
+3. （可选）GrowingIO推荐您添加 **AdSupport.framework** 依赖库，用于来源管理激活匹配,有利于您更好的分析数据 ,添加项目依赖库的位置在项目设置target -> 选项卡General -> Linked Frameworks and Libraries
 {% endtab %}
 
 {% tab title="手动添加" %}
@@ -51,30 +51,30 @@ GrowingIO iOS SDK 包含以下2个组件SDK:
 
 在工程项目中添加以下库文件。
 
-> 添加项目依赖库的位置在项目设置target -&gt; 选项卡General -&gt; Linked -&gt; Linked Frameworks and Librarie
+> 添加项目依赖库的位置在项目设置target -> 选项卡General -> Linked -> Linked Frameworks and Librarie
 
-| 库名称 | 说明 |
-| :--- | :--- |
-| Foundation.framework | 基础依赖库 |
-| Security.framework | 用户App连接圈选页面SSL连接 |
-| CoreTelephony.framework | 用于读取运营商 |
-| SystemConfiguration.framework | 用于判断网络状态 |
-| AdSupport.framework | 用于来源管理激活匹配 |
-| libicucore.tbd | 用户App连接圈选页面解析 |
-| libsqlite3.tbd | 存储日志 |
-| CoreLocation.framework | 用于读取地理位置信息（如果您的App有权限） |
-| JavaScriptCore.framework | Web圈选App交互 |
-| WebKit.framework | Web圈选 |
+| 库名称                           | 说明                     |
+| ----------------------------- | ---------------------- |
+| Foundation.framework          | 基础依赖库                  |
+| Security.framework            | 用户App连接圈选页面SSL连接       |
+| CoreTelephony.framework       | 用于读取运营商                |
+| SystemConfiguration.framework | 用于判断网络状态               |
+| AdSupport.framework           | 用于来源管理激活匹配             |
+| libicucore.tbd                | 用户App连接圈选页面解析          |
+| libsqlite3.tbd                | 存储日志                   |
+| CoreLocation.framework        | 用于读取地理位置信息（如果您的App有权限） |
+| JavaScriptCore.framework      | Web圈选App交互             |
+| WebKit.framework              | Web圈选                  |
 
 添加编译参数，并注意大小写。
 
-![](../../../.gitbook/assets/image%20%2877%29.png)
+![](<../../../.gitbook/assets/image (77).png>)
 
-### 2. 添加 URL Scheme <a id="urlscheme"></a>
+### 2. 添加 URL Scheme <a href="urlscheme" id="urlscheme"></a>
 
 添加URL Scheme 到项目中，以便唤醒您的程序进行圈选。
 
-![](../../../.gitbook/assets/image%20%2879%29.png)
+![](<../../../.gitbook/assets/image (79).png>)
 
 ### 3. 初始化配置
 
@@ -126,7 +126,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 > 在 AppDelegate 中添加激活圈选的代码
 
 {% hint style="warning" %}
-因为您代码的复杂程度以及iOS SDK的版本差异，有时候 \[Growing handleUrl:url\] 并没有被调用。请在各个平台上调试这段代码，确保当App被URL scheme唤醒之后，该函数能被调用到。
+因为您代码的复杂程度以及iOS SDK的版本差异，有时候 \[Growing handleUrl:url] 并没有被调用。请在各个平台上调试这段代码，确保当App被URL scheme唤醒之后，该函数能被调用到。
 {% endhint %}
 
 {% tabs %}
@@ -261,7 +261,7 @@ view.growingAttributesValue = 广告的唯一ID;
 * 对不同广告图，广告的唯一 ID 也不相同
 * 响应点击的控件，与设置 ID 的控件是同一个
 
-#### 【例子】当您的横向滚动广告共有3张广告图时，您可以在3个响应点击的View上分别设置不同的广告唯一ID，实现方式： <a id="li-zi-dang-nin-de-heng-xiang-gun-dong-guang-gao-gong-you-3-zhang-guang-gao-tu-shi-nin-ke-yi-zai-3-ge-xiang-ying-dian-ji-de-view-shang-fen-bie-she-zhi-bu-tong-de-guang-gao-wei-yi-id-shi-xian-fang-shi"></a>
+#### 【例子】当您的横向滚动广告共有3张广告图时，您可以在3个响应点击的View上分别设置不同的广告唯一ID，实现方式： <a href="li-zi-dang-nin-de-heng-xiang-gun-dong-guang-gao-gong-you-3-zhang-guang-gao-tu-shi-nin-ke-yi-zai-3-ge" id="li-zi-dang-nin-de-heng-xiang-gun-dong-guang-gao-gong-you-3-zhang-guang-gao-tu-shi-nin-ke-yi-zai-3-ge"></a>
 
 ```swift
 view1.growingAttributesValue = @"ad1";
@@ -304,8 +304,8 @@ SDK会自动采集H5页面的数据，不需要特殊配置。
 {% hint style="info" %}
 SDK 2.8.6及以上版本支持手动关闭采集GPS数据。
 
-`//设置为NO，将关闭GPS采集    
-+(void)setEnableLocationTrack:(BOOL)enable;`
+`//设置为NO，将关闭GPS采集  `\
+`+(void)setEnableLocationTrack:(BOOL)enable;`
 {% endhint %}
 
 ### 8. 启用Hashtag识别
@@ -325,7 +325,7 @@ SDK 版本支持：2.3.2及以上。
 
 GrowingIO SDK 针对欧盟区的一般数据保护法（GDPR）提供了以下的API共开发者调用。
 
-```text
+```
 // 开启GDPR，不采集数据
 [Growing disableDataCollect];
 
@@ -335,11 +335,11 @@ GrowingIO SDK 针对欧盟区的一般数据保护法（GDPR）提供了以下�
 
 ### 10. DeepLink & Universal Link
 
-| DeepLink功能 | SDK版本 |
-| :--- | :--- |
-| 基础DeepLink功能（Scheme打开App至首页） | &gt;=2.3.0 |
-| 直达落地页（Scheme打开至活动页） | &gt;=2.3.2 |
-| Universal Link、应用宝微下载链接支持 | &gt;=2.4.1 |
+| DeepLink功能                   | SDK版本   |
+| ---------------------------- | ------- |
+| 基础DeepLink功能（Scheme打开App至首页） | >=2.3.0 |
+| 直达落地页（Scheme打开至活动页）          | >=2.3.2 |
+| Universal Link、应用宝微下载链接支持    | >=2.4.1 |
 
 #### DeepLink
 
@@ -368,15 +368,15 @@ GrowingIO SDK 针对欧盟区的一般数据保护法（GDPR）提供了以下�
 
 {% hint style="info" %}
 * params参数为您在DeepLink页面设置的”直达落地页参数“。
-* SDK版本 &lt; 2.8.5 请在 `+ (BOOL)handleUrl:(NSURL*)url`被调用前注册回调方法。
-* SDK版本 &gt;= 2.8.5 请保证注册回调方法的时机在startWithAccountId函数之前,并且在主线程当中。
+* SDK版本 < 2.8.5 请在 `+ (BOOL)handleUrl:(NSURL*)url`被调用前注册回调方法。
+* SDK版本 >= 2.8.5 请保证注册回调方法的时机在startWithAccountId函数之前,并且在主线程当中。
 {% endhint %}
 
 #### Universal Link
 
 使用Universal Link唤醒App，步骤如下：
 
-1. 配置链接：[配置Universal Link、应用宝微下载（可选项）](../../../product-manual/growing/product-configuration/deeplink.md#ios-ying-yong-pei-zhi)。 
+1. 配置链接：[配置Universal Link、应用宝微下载（可选项）](../../../product-manual/growing/product-configuration/deeplink.md#ios-ying-yong-pei-zhi)。&#x20;
 2. 请在AppDelegate.m添加以下代码：
 
 ```java
@@ -392,7 +392,7 @@ GrowingIO SDK 针对欧盟区的一般数据保护法（GDPR）提供了以下�
 
 如果您添加了库**AdSupport.framework**，GrowingIO则会启用 IDFA，所以在向 App Store 提交应用时，需要：
 
-* 对于问题 **Does this app use the Advertising Identifier \(IDFA\)**，选择 **YES**。
+* 对于问题 **Does this app use the Advertising Identifier (IDFA)**，选择 **YES**。
 * 对于选项**Attribute this app installation to a previously served advertisement**，打勾。
 * 对于选项**Attribute an action taken within this app to a previously served advertisement**，打勾。
 
@@ -405,39 +405,38 @@ GrowingIO SDK 针对欧盟区的一般数据保护法（GDPR）提供了以下�
 * 对于iOS 14之前，你无需主动获取 `广告标识IDFA` 的权限
 * 对于iOS 14之后，你需要使用如下方法来开启你的 `广告标识IDFA` 的权限
 
-1. Plist 文件中添加 `NSUserTrackingUsageDescription`
+1.  Plist 文件中添加 `NSUserTrackingUsageDescription`
 
-   ```text
-   <key>NSUserTrackingUsageDescription</key>
-   <string>GrowingIO测试demo 需要使用你的广告标识信息以用于数据追踪分析</string> //描述内容请根据App修改
-   ```
-
+    ```
+    <key>NSUserTrackingUsageDescription</key>
+    <string>GrowingIO测试demo 需要使用你的广告标识信息以用于数据追踪分析</string> //描述内容请根据App修改
+    ```
 2. 导入框架 `#import <AppTrackingTransparency/AppTrackingTransparency.h>`
-3. 调用获取权限代码
+3.  调用获取权限代码
 
-   ```text
-       if (@available(iOS 14, *)) {
-           // iOS14及以上版本需要先请求权限
-           [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-               switch (status) {
-                   case ATTrackingManagerAuthorizationStatusDenied:
-                       //用户拒绝向App授权
-                       break;
-                   case ATTrackingManagerAuthorizationStatusAuthorized:
-                       //用户同意向App授权
-                       break;
-                   case ATTrackingManagerAuthorizationStatusNotDetermined:
-                       //用户未做选择或未弹窗
-                       break;
-                   case ATTrackingManagerAuthorizationStatusRestricted:
-                       //用户在系统级别开启了限制广告追踪
-                       break;
-                   default:
-                       break;
-               }
-           }];
-       }
-   ```
+    ```
+        if (@available(iOS 14, *)) {
+            // iOS14及以上版本需要先请求权限
+            [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+                switch (status) {
+                    case ATTrackingManagerAuthorizationStatusDenied:
+                        //用户拒绝向App授权
+                        break;
+                    case ATTrackingManagerAuthorizationStatusAuthorized:
+                        //用户同意向App授权
+                        break;
+                    case ATTrackingManagerAuthorizationStatusNotDetermined:
+                        //用户未做选择或未弹窗
+                        break;
+                    case ATTrackingManagerAuthorizationStatusRestricted:
+                        //用户在系统级别开启了限制广告追踪
+                        break;
+                    default:
+                        break;
+                }
+            }];
+        }
+    ```
 
 ### 12. 采集推送
 
@@ -465,7 +464,7 @@ iOS SDK 不支持通知展现的事件采集，但是 Android SDK 支持。
 
 ### 13. 浏览事件的半自动采集配置
 
-> SDK版本支持：&gt;=2.8.4
+> SDK版本支持：>=2.8.4
 
 {% hint style="info" %}
 「用户浏览事件」半自动采集方案已经上线，详细配置请参考[iOS半自动采集浏览事件](ios-imp.md)。
@@ -477,7 +476,7 @@ iOS SDK 不支持通知展现的事件采集，但是 Android SDK 支持。
 
 ## 3.自定义数据上传
 
-除上述的用户行为数据（无埋点数据）之外，GrowingIO 还提供了多种 API 接口，供您上传一些自定义的数据指标及维度 ，请参考iOS SDK API &gt; [自定义数据上传API](ios-sdk-api/customize-api.md) 。
+除上述的用户行为数据（无埋点数据）之外，GrowingIO 还提供了多种 API 接口，供您上传一些自定义的数据指标及维度 ，请参考iOS SDK API > [自定义数据上传API](ios-sdk-api/customize-api.md) 。
 
 ## 4. 创建应用
 
@@ -500,4 +499,3 @@ GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 方式二：在SDK中设置了Debug模式后，在IDE编译器控制台查看数据采集日志。
 
 方式三：[数据校验](https://docs.growingio.com/v3/product-manual/data-center/datacheck/)
-

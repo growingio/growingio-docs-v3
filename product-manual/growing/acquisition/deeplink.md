@@ -6,13 +6,13 @@
 
 ## SDK版本支持
 
-| DeepLink功能 | App SDK版本 |
-| :--- | :--- |
-| DeepLink 基础功能（Scheme 唤起 App） | 2.3.0 |
-| DeepLink 直达 App 内落地页（Scheme打开至活动页） | 2.3.2 |
-| Universal Links / 应宝微下载支持 | 2.4.1 |
-| Universal Links / App Links 一步跳入 App 支持 | 2.8.4 |
-| 支持 Defer DeepLink 功能 | 2.8.5 |
+| DeepLink功能                              | App SDK版本 |
+| --------------------------------------- | --------- |
+| DeepLink 基础功能（Scheme 唤起 App）            | 2.3.0     |
+| DeepLink 直达 App 内落地页（Scheme打开至活动页）      | 2.3.2     |
+| Universal Links / 应宝微下载支持               | 2.4.1     |
+| Universal Links / App Links 一步跳入 App 支持 | 2.8.4     |
+| 支持 Defer DeepLink 功能                    | 2.8.5     |
 
 {% hint style="warning" %}
 使用 DeepLink 功能需要 SDK 升级到 2.3.0 以上，SDK 版本功能向下兼容。
@@ -34,7 +34,7 @@ App Links 配置：[配置方法](https://docs.growingio.com/v3/product-manual/g
 
 ## 新建深度链接
 
-一. 在顶部导航栏选择“**获客追踪&gt;深度链接”**，进入深度链接列表。
+一. 在顶部导航栏选择“**获客追踪>深度链接”**，进入深度链接列表。
 
 二. 单击左上角的**新建深度链接**，进入新建深度链接页面。
 
@@ -42,14 +42,14 @@ App Links 配置：[配置方法](https://docs.growingio.com/v3/product-manual/g
 
 ![](../../../.gitbook/assets/fei-shu-20210914142711.png)
 
-| 参数 | 说明 |
-| :--- | :--- |
-| 深度链接名称 | 深度链接名称，由中文、英文、短横线（-）、下划线（\_）、斜杠（/）组成，长度小于50个字符。 |
-| 推广App | 选择您要推广的App，如果您需要在一条链接中同时推广您的 iOS 与 Android App，请勾选“一个链接同时推广iOS和Android App”。然后各自选择App。 |
-| 应用下载地址 | 应用下载地址。 |
-| 直达App内落地页 | 添加该参数后可实现直达 App 内的某一页面。 |
-| 推广活动 | 选择该链接所属的推广活动。 |
-| 推广渠道 | 选择该链接所属的推广渠道。 |
+| 参数        | 说明                                                                                     |
+| --------- | -------------------------------------------------------------------------------------- |
+| 深度链接名称    | 深度链接名称，由中文、英文、短横线（-）、下划线（\_）、斜杠（/）组成，长度小于50个字符。                                        |
+| 推广App     | 选择您要推广的App，如果您需要在一条链接中同时推广您的 iOS 与 Android App，请勾选“一个链接同时推广iOS和Android App”。然后各自选择App。 |
+| 应用下载地址    | 应用下载地址。                                                                                |
+| 直达App内落地页 | 添加该参数后可实现直达 App 内的某一页面。                                                                |
+| 推广活动      | 选择该链接所属的推广活动。                                                                          |
+| 推广渠道      | 选择该链接所属的推广渠道。                                                                          |
 
 ## 直达 App 内落地页
 
@@ -58,7 +58,7 @@ App Links 配置：[配置方法](https://docs.growingio.com/v3/product-manual/g
 {% hint style="success" %}
 在移动端 App 中我们使用 URI Scheme 来定位一个应用甚至应用里的某个具体的功能或页面，就像定位一个网页一样。
 
-例如：在 App 中我们要定位某个功能页面 ID 为 1234 的某个具体页面，就可以通过 **myapp://com.gio.function?page=1234** 这样的 URI Scheme 来实现。其中，page=1234 即为当前活动页的 URI ，其中 **key=page, value=1234** 。
+例如：在 App 中我们要定位某个功能页面 ID 为 1234 的某个具体页面，就可以通过 **myapp://com.gio.function?page=1234** 这样的 URI Scheme 来实现。其中，page=1234 即为当前活动页的 URI ，其中 **key=page, value=1234 **。
 {% endhint %}
 
 ## 延迟深度链接（Deferred DeepLink）
@@ -75,23 +75,22 @@ App Links 配置：[配置方法](https://docs.growingio.com/v3/product-manual/g
 
 延迟深度链接技术由此推出，通过“延迟”技术，使得新用户在首次安装App时，同样可以到达您设定的指定页面，在App内还原活动场景，促使用户完成转化。
 
-#### 相关配置 <a id="cha-kan-shu-ju-zhi-biao"></a>
+#### 相关配置 <a href="cha-kan-shu-ju-zhi-biao" id="cha-kan-shu-ju-zhi-biao"></a>
 
 如果您的产品从未配置配置过深度链接（DeepLink），首先需要您需要完成深度链接的基本配置工作。提供链接到基本配置位置
 
 如果您的产品已经完成深度链接（DeepLink）配置，无需您进行额外配置工作，您创建的深度链接（ DeepLink） 都将自动升级为延迟深度链接（ Deferred DeepLink）。
 
-#### 查看数据指标 <a id="cha-kan-shu-ju-zhi-biao"></a>
+#### 查看数据指标 <a href="cha-kan-shu-ju-zhi-biao" id="cha-kan-shu-ju-zhi-biao"></a>
 
 您可以查看有多少新用户通过延迟深度链接在App中到达了您设定的活动场景。
 
-一. 在顶部导航栏选择获客分析 &gt; 广告监测，默认进入应用级数据页面。
+一. 在顶部导航栏选择获客分析 > 广告监测，默认进入应用级数据页面。
 
 二. 选择您的App应用。
 
 三. 在下方的推广日报模块单击自定义指标，勾选延迟场景还原即可查看延迟深度链接的数据。
 
-![](../../../.gitbook/assets/image%20%2816%29.png)
+![](<../../../.gitbook/assets/image (16).png>)
 
-![](../../../.gitbook/assets/image%20%2820%29.png)
-
+![](<../../../.gitbook/assets/image (20).png>)

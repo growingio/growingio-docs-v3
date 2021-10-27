@@ -10,21 +10,21 @@ App适配最低系统版本：iOS 8及以上、Android 4.2-10
 
 ### 1. Flutter插件获取安装
 
-根据[dart pub](https://pub.dartlang.org/packages/flutter_growingio_track#-installing-tab-)文档获取安装。
+根据[dart pub](https://pub.dartlang.org/packages/flutter\_growingio\_track#-installing-tab-)文档获取安装。
 
 ### 2. 添加跟踪代码
 
 {% tabs %}
 {% tab title="Android（Native部分）" %}
-Flutter插件运行在Android手机上时依赖于GrowingIO Android SDK \(可以是无埋 点SDK也可以是埋点SDK\)2.6.0及以上, 原生部分请参考：
+Flutter插件运行在Android手机上时依赖于GrowingIO Android SDK (可以是无埋 点SDK也可以是埋点SDK)2.6.0及以上, 原生部分请参考：
 
-Android SDK &gt; [无埋点 SDK集成](../android-sdk/auto-android-sdk.md)
+Android SDK > [无埋点 SDK集成](../android-sdk/auto-android-sdk.md)
 
-Android SDK &gt; [埋点 SDK集成](../android-sdk/manunl-android-sdk.md)
+Android SDK > [埋点 SDK集成](../android-sdk/manunl-android-sdk.md)
 {% endtab %}
 
 {% tab title="iOS（Native部分）" %}
-Flutter 埋点插件是在iOS原生SDK上的扩展，请参考 iOS SDK &gt; [埋点 SDK集成](../ios-sdk/manunl-ios-sdk.md)。
+Flutter 埋点插件是在iOS原生SDK上的扩展，请参考 iOS SDK > [埋点 SDK集成](../ios-sdk/manunl-ios-sdk.md)。
 {% endtab %}
 {% endtabs %}
 
@@ -34,10 +34,10 @@ Flutter 埋点插件是在iOS原生SDK上的扩展，请参考 iOS SDK &gt; [埋
 
 > 发送自定义事件, 对应于cstm事件
 
-| **参数** | **是否必填** | **说明** |
-| :--- | :--- | :--- |
-| eventId | 是 | 事件Id |
-| variable | 否 | 变量, Map型 |
+| **参数**   | **是否必填** | **说明**   |
+| -------- | -------- | -------- |
+| eventId  | 是        | 事件Id     |
+| variable | 否        | 变量, Map型 |
 
 调用示例:
 
@@ -54,7 +54,7 @@ GrowingIO.track('eventId', variable: {'testkey': 'testValue', 'testNumKey': 2333
 
 > 发送转化变量, 对应于evar事件
 
-函数原型为: setEvar\(Map&lt;String, dynamic&gt; variable\), 调用示例:
+函数原型为: setEvar(Map\<String, dynamic> variable), 调用示例:
 
 ```dart
 import 'package:growingioflutter/growingio_track.dart';
@@ -70,7 +70,7 @@ GrowingIO.setEvar({
 
 > 发送用户变量, 对应于ppl事件
 
-函数原型为: setPeopleVariable\(Map&lt;String, dynamic&gt; variable\)
+函数原型为: setPeopleVariable(Map\<String, dynamic> variable)
 
 调用示例:
 
@@ -89,10 +89,10 @@ GrowingIO.setPeopleVariable({
 > 设置登录用户ID, 对应于cs1字段
 
 | **参数** | **类型** | **描述** |
-| :--- | :--- | :--- |
+| ------ | ------ | ------ |
 | userId | String | 登录用户Id |
 
-函数原型: setUserId\(String userId\)
+函数原型: setUserId(String userId)
 
 调用示例:
 
@@ -108,7 +108,7 @@ GrowingIO.setUserId("testUserId");
 
 > 清除登录用户ID
 
-函数原型: clearUserId\(\)
+函数原型: clearUserId()
 
 调用示例:
 
@@ -124,7 +124,7 @@ GrowingIO.clearUserId();
 
 > 设置访问用户变量, 对应于vstr事件
 
-函数原型: setVisitor\(Map&lt;String, dynamic&gt; variable\)
+函数原型: setVisitor(Map\<String, dynamic> variable)
 
 调用示例:
 
@@ -146,7 +146,7 @@ GrowingIO.setVisitor({
 
 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
 
-## 4. 验证SDK是否正常采集数据 <a id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
+## 4. 验证SDK是否正常采集数据 <a href="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju" id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
 
 了解GrowingIO平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
 
@@ -156,7 +156,7 @@ GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 
 方式二：在SDK中设置了Debug模式后，在IDE编译器控制台查看数据采集日志。
 
-方式三：[数据校验]()
+方式三：[数据校验](broken-reference)
 
 ## 常见问题
 
@@ -164,7 +164,7 @@ GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 
 如果您添加了库AdSupport.framework, GrowingIO则会启用IDFA，所以在向App Store 提交应用时，需要：
 
-* 对于问题Does this app use the Advertising Identifier \(IDFA\)，选择YES。
+* 对于问题Does this app use the Advertising Identifier (IDFA)，选择YES。
 * 对于选项Attribute this app installation to a previously served advertisement，打勾。
 * 对于选项Attribute an action taken within this app to a previously served advertisement，打勾。
 
@@ -184,4 +184,3 @@ import 'package:growingioflutter/growingio_track.dart';
 
 * 因为GrowingIO需要获取Android的Activity生命周期，为了数据的准确性，需要在Activity出现前就初始化完成
 * 开发者相信很多用户都会使用flutter + native形式的进行开发，为了同时服务flutter于native
-

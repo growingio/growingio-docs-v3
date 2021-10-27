@@ -11,9 +11,9 @@
 
 ## 产品使用
 
-![](../../../.gitbook/assets/image%20%2857%29.png)
+![](<../../../.gitbook/assets/image (57).png>)
 
-\*\*\*\*
+****
 
 **操作步骤**
 
@@ -31,7 +31,7 @@ Step 4:选择归因回溯时间范围，当前最长支持回溯转化发生前 
 
 在以上 4 步设定完成后，开始进行分析，默认会使用「首次点击归因」分析模型对数据进行计算。
 
-![](../../../.gitbook/assets/image%20%2853%29.png)
+![](<../../../.gitbook/assets/image (53).png>)
 
 
 
@@ -53,7 +53,7 @@ Step 4:选择归因回溯时间范围，当前最长支持回溯转化发生前 
 
 ### 多归因模型对比
 
-![](../../../.gitbook/assets/image%20%2855%29.png)
+![](<../../../.gitbook/assets/image (55).png>)
 
 归因分析支持按照实际业务需求，使用不同归因模型进行计算，同时也支持将不同归因模型下的转化归因结果数据进行对比，充分衡量各渠道或广告的效果。
 
@@ -83,7 +83,7 @@ Step 4:选择归因回溯时间范围，当前最长支持回溯转化发生前 
 
 ## 转化路径
 
-![](../../../.gitbook/assets/image%20%2850%29.png)
+![](<../../../.gitbook/assets/image (50).png>)
 
 转化路径是统计用户在发生转化前的完整的触点数据，并且将具有相同转化路径的用户进行汇总，帮您找出在当前发生的转化的用户中，最佳的转化路径。
 
@@ -99,7 +99,7 @@ Step 4:选择归因回溯时间范围，当前最长支持回溯转化发生前 
 
 A、B、C、D、E 表示用户在发生转化前接触到广告所对应的渠道。
 
-![](../../../.gitbook/assets/image%20%2856%29.png)
+![](<../../../.gitbook/assets/image (56).png>)
 
 小红、小陈、小李 表示三名发生了转化的用户，但各自所接收到的广告以及查看次序不完全相同，那么在这一轮广告投放中，每个广告对于用户发生转化的促成作用是多少呢？
 
@@ -109,7 +109,7 @@ A、B、C、D、E 表示用户在发生转化前接触到广告所对应的渠�
 
 
 
-![](../../../.gitbook/assets/image%20%2851%29.png)
+![](<../../../.gitbook/assets/image (51).png>)
 
 假设小红在第一次下单转化发生后，过了一段时间经过复购推荐发生第二次转化，如上图，小红一人发生 2 次转化，两次转化将分别进行数据回溯，各次转化之间互不干扰。以首次点击归因模型计算，小红两次转化中，A：1 次，B：1 次。以最终点击归因模型计算，则 C：1 次，E：1次。
 
@@ -117,127 +117,13 @@ A、B、C、D、E 表示用户在发生转化前接触到广告所对应的渠�
 
 ### **\*触点、推广渠道信息提取规则**
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><b>&#x5206;&#x7C7B;</b>
-      </th>
-      <th style="text-align:left">&#x4E3E;&#x4F8B;</th>
-      <th style="text-align:left">&#x89E6;&#x70B9;&#x4FE1;&#x606F;&#x63D0;&#x53D6;</th>
-      <th style="text-align:left">&#x63A8;&#x5E7F;&#x6E20;&#x9053;&#x4FE1;&#x606F;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">&#x901A;&#x8FC7; GIO&#x751F;&#x6210;&#x7684;&#x70B9;&#x51FB;&#x76D1;&#x6D4B;&#x94FE;&#x63A5;</td>
-      <td
-      style="text-align:left">
-        <p>&#x7528;&#x6237;&#x9700;&#x8981;&#x5728;&#x5934;&#x6761;&#x8FDB;&#x884C;&#x5E7F;&#x544A;&#x6295;&#x653E;</p>
-        <p>&#x9009;&#x62E9;&#x63A8;&#x5E7F;&#x6E20;&#x9053;&#x4E3A;&#xFF1A;&#x4ECA;&#x65E5;&#x5934;&#x6761;</p>
-        <p>&#x70B9;&#x51FB;&#x76D1;&#x6D4B;&#x94FE;&#x63A5;&#xFF1A; gio.ren/at1/o1de3Q</p>
-        <p>&#x76D1;&#x6D4B;&#x94FE;&#x63A5;&#x540D;&#x79F0;&#x4E3A;&#xFF1A;&#x5934;&#x6761;&#x53CC;&#x5341;&#x4E00;&#x4FC3;&#x9500;&#x76D1;&#x63A7;</p>
-        </td>
-        <td style="text-align:left">&#x5934;&#x6761;&#x53CC;&#x5341;&#x4E00;&#x4FC3;&#x9500;&#x76D1;&#x63A7;</td>
-        <td
-        style="text-align:left">&#x4ECA;&#x65E5;&#x5934;&#x6761;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">UTM &#x53C2;&#x6570;</td>
-      <td style="text-align:left">
-        <p>&#x7528;&#x6237;&#x76F4;&#x63A5;&#x5728;&#x6295;&#x653E;&#x843D;&#x5730;&#x9875;&#x4E2D;&#x6DFB;&#x52A0;
-          utm &#x53C2;&#x6570;&#xFF0C;</p>
-        <p>&#x8FDB;&#x884C;&#x6295;&#x653E;</p>
-        <p>https://www.growingio.com/?utm_source=weixin</p>
-        <p>&amp;utm_medium=article1</p>
-        <p>&amp;utm_campaign=product</p>
-        <p>&amp;utm_content=0811-tool</p>
-        <p>&amp;utm_term=tool</p>
-      </td>
-      <td style="text-align:left">
-        <p>utm_source=weixin</p>
-        <p>&amp;utm_medium=article1</p>
-        <p>&amp;utm_campaign=product</p>
-        <p>&amp;utm_content=0811-tool</p>
-        <p>&amp;utm_term=tool</p>
-        <p>&#xFF08;&#x6309;&#x7167;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7684; UTM &#x503C;&#x7EC4;&#x5408;&#x76F4;&#x63A5;&#x5C55;&#x793A;&#xFF0C;&#x9650;&#x5B9A;&#x6587;&#x5B57;&#x957F;&#x5EA6;&#xFF0C;&#x8D85;&#x8FC7;&#x540E;&#x663E;&#x793A;&#x300C;...&#x300D;&#xFF09;</p>
-      </td>
-      <td style="text-align:left">
-        <p>weixin</p>
-        <p>&#xFF08;&#x5728; utm_source &#x4E0B;&#x76F4;&#x63A5;&#x53D6;&#x503C;&#xFF09;</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p>UTM &#x53C2;&#x6570;</p>
-        <p>&#xFF08;&#x6E20;&#x9053;&#x4FE1;&#x606F;&#x672A;&#x914D;&#x7F6E;&#xFF09;</p>
-      </td>
-      <td style="text-align:left">
-        <p>&#x7528;&#x6237;&#x76F4;&#x63A5;&#x5728;&#x6295;&#x653E;&#x843D;&#x5730;&#x9875;&#x4E2D;&#x6DFB;&#x52A0;
-          utm &#x53C2;&#x6570;&#xFF0C;</p>
-        <p>&#x8FDB;&#x884C;&#x6295;&#x653E;</p>
-        <p>https://www.growingio.com/?</p>
-        <p>utm_campaign=product</p>
-        <p>&amp;utm_xxx=yyy</p>
-      </td>
-      <td style="text-align:left">
-        <p>utm_campaign=product</p>
-        <p>&amp;utm_xxx=yyy</p>
-      </td>
-      <td style="text-align:left">
-        <p>&#x672A;&#x914D;&#x7F6E;</p>
-        <p>&#xFF08;&#x7528;&#x6237;&#x672A;&#x914D;utm_source &#x7684;&#x503C;&#xFF09;</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x641C;&#x7D22;&#x8BCD;</td>
-      <td style="text-align:left">
-        <p>&#x901A;&#x8FC7;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x76F4;&#x63A5;&#x76F4;&#x63A5;&#x8DF3;&#x8F6C;&#x5230;&#x7F51;&#x9875;</p>
-        <p>&#x901A;&#x8FC7;&#x767E;&#x5EA6;&#x641C;&#x7D22;&#x8DF3;&#x8F6C; https://www.growingio.com/</p>
-      </td>
-      <td style="text-align:left">
-        <p>&#x5982;&#x679C;&#x53EF;&#x4EE5;&#x6210;&#x529F;&#x89E3;&#x6790;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x7684;&#x641C;&#x7D22;&#x8BCD;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x5C55;&#x793A;&#x5177;&#x4F53;&#x7684;&#x641C;&#x7D22;&#x8BCD;&#xFF1B;</p>
-        <p>&#x5982;&#x679C;&#x641C;&#x7D22;&#x8BCD;&#x88AB;&#x52A0;&#x5BC6;&#x6216;&#x89E3;&#x6790;&#x5931;&#x8D25;&#xFF0C;&#x5219;&#x5C55;&#x793A;&#x4E3A;&#x81EA;&#x7136;&#x6D41;&#x91CF;&#xFF0C;&#x5982;&#xFF1A;baidu
-          organic</p>
-      </td>
-      <td style="text-align:left">
-        <p>Baidu</p>
-        <p>&#xFF08;&#x76F4;&#x63A5;&#x5C55;&#x793A;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x540D;&#x79F0;&#xFF09;</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x5C0F;&#x7A0B;&#x5E8F;&#x7801;</td>
-      <td style="text-align:left">
-        <p>&#x7528;&#x6237;&#x9700;&#x8981;&#x5728;&#x7EBF;&#x4E0B;&#x505A;&#x5C0F;&#x7A0B;&#x5E8F;&#x63A8;&#x5E7F;</p>
-        <p>&#x4E8C;&#x7EF4;&#x7801;&#x540D;&#x79F0;&#x4E3A;&#xFF1A;xxx &#x7EBF;&#x4E0B;&#x5730;&#x63A8;</p>
-        <p>&#x5E7F;&#x544A;&#x6E20;&#x9053;&#xFF1A;&#x7EBF;&#x4E0B; BD &#x6E20;&#x9053;</p>
-      </td>
-      <td style="text-align:left">xxx &#x7EBF;&#x4E0B;&#x5730;&#x63A8;</td>
-      <td style="text-align:left">
-        <p>&#x7EBF;&#x4E0B; BD &#x6E20;&#x9053;</p>
-        <p>&#xFF08;&#x5728; utm_source &#x4E0B;&#x76F4;&#x63A5;&#x53D6;&#x503C;&#xFF09;</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x5C0F;&#x7A0B;&#x5E8F;&#x76D1;&#x6D4B;&#x94FE;&#x63A5;</td>
-      <td style="text-align:left">
-        <p>&#x7528;&#x6237;&#x9700;&#x8981;&#x5728;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x8FDB;&#x884C;&#x5E7F;&#x544A;&#x6295;&#x653E;</p>
-        <p>&#x9009;&#x62E9;&#x63A8;&#x5E7F;&#x6E20;&#x9053;&#x4E3A;&#xFF1A;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x6587;&#x7AE0;</p>
-        <p>&#x751F;&#x6210;&#x76D1;&#x6D4B;&#x94FE;&#x63A5;&#x4E3A;&#xFF1A;pages/popular/popular?aid=nom42rPz1</p>
-        <p>&#x76D1;&#x6D4B;&#x94FE;&#x63A5;&#x547D;&#x540D;&#x4E3A;&#xFF1A;&#x5927;
-          V &#x8D26;&#x53F7;&#x6269;&#x91CF;&#x63A8;&#x5E7F;</p>
-      </td>
-      <td style="text-align:left">&#x5927; V &#x8D26;&#x53F7;&#x6269;&#x91CF;&#x63A8;&#x5E7F;</td>
-      <td style="text-align:left">&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x6587;&#x7AE0;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">*&#x76F4;&#x63A5;&#x8BBF;&#x95EE;</td>
-      <td style="text-align:left">&#x5F53;&#x7528;&#x6237;&#x5728;&#x8F6C;&#x5316;&#x524D;&#x672A;&#x68C0;&#x6D4B;&#x5230;&#x4EFB;&#x4F55;&#x89E6;&#x70B9;&#x6570;&#x636E;&#xFF0C;&#x5219;&#x8BB0;&#x4E3A;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;</td>
-      <td
-      style="text-align:left">&#x76F4;&#x63A5;&#x8BBF;&#x95EE;</td>
-        <td style="text-align:left">&#x76F4;&#x63A5;&#x8BBF;&#x95EE;</td>
-    </tr>
-  </tbody>
-</table>
-
-
+| **分类**                        | 举例                                                                                                                                                                                                                      | 触点信息提取                                                                                                                                                                                              | 推广渠道信息                                     |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| 通过 GIO生成的点击监测链接               | <p>用户需要在头条进行广告投放</p><p>选择推广渠道为：今日头条</p><p>点击监测链接： gio.ren/at1/o1de3Q</p><p>监测链接名称为：头条双十一促销监控</p>                                                                                                                        | 头条双十一促销监控                                                                                                                                                                                           | 今日头条                                       |
+| UTM 参数                        | <p>用户直接在投放落地页中添加 utm 参数，</p><p>进行投放</p><p>https://www.growingio.com/?utm_source=weixin</p><p>&#x26;utm_medium=article1</p><p>&#x26;utm_campaign=product</p><p>&#x26;utm_content=0811-tool</p><p>&#x26;utm_term=tool</p> | <p>utm_source=weixin</p><p>&#x26;utm_medium=article1</p><p>&#x26;utm_campaign=product</p><p>&#x26;utm_content=0811-tool</p><p>&#x26;utm_term=tool</p><p>（按照用户定义的 UTM 值组合直接展示，限定文字长度，超过后显示「...」）</p> | <p>weixin</p><p>（在 utm_source 下直接取值）</p>   |
+| <p>UTM 参数</p><p>（渠道信息未配置）</p> | <p>用户直接在投放落地页中添加 utm 参数，</p><p>进行投放</p><p>https://www.growingio.com/?</p><p>utm_campaign=product</p><p>&#x26;utm_xxx=yyy</p>                                                                                            | <p>utm_campaign=product</p><p>&#x26;utm_xxx=yyy</p>                                                                                                                                                 | <p>未配置</p><p>（用户未配utm_source 的值）</p>       |
+| 搜索词                           | <p>通过搜索引擎直接直接跳转到网页</p><p>通过百度搜索跳转 https://www.growingio.com/</p>                                                                                                                                                        | <p>如果可以成功解析搜索引擎的搜索词，则直接展示具体的搜索词；</p><p>如果搜索词被加密或解析失败，则展示为自然流量，如：baidu organic</p>                                                                                                                   | <p>Baidu</p><p>（直接展示搜索引擎名称）</p>            |
+| 小程序码                          | <p>用户需要在线下做小程序推广</p><p>二维码名称为：xxx 线下地推</p><p>广告渠道：线下 BD 渠道</p>                                                                                                                                                          | xxx 线下地推                                                                                                                                                                                            | <p>线下 BD 渠道</p><p>（在 utm_source 下直接取值）</p> |
+| 小程序监测链接                       | <p>用户需要在微信公众号进行广告投放</p><p>选择推广渠道为：微信公众号文章</p><p>生成监测链接为：pages/popular/popular?aid=nom42rPz1</p><p>监测链接命名为：大 V 账号扩量推广</p>                                                                                                | 大 V 账号扩量推广                                                                                                                                                                                          | 微信公众号文章                                    |
+| \*直接访问                        | 当用户在转化前未检测到任何触点数据，则记为直接访问                                                                                                                                                                                               | 直接访问                                                                                                                                                                                                | 直接访问                                       |
 

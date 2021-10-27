@@ -4,10 +4,10 @@ description: 你可以在概览中了解产品的基本运行情况，并切换�
 
 # 概览
 
-概览中的数据是小时级别，每 2 小时更新一次。如果想要分钟级别更新的数据情况，请看[实时监控看板](https://growingio.gitbook.io/docs/product-manual/charts/preset/realtime)。  
+概览中的数据是小时级别，每 2 小时更新一次。如果想要分钟级别更新的数据情况，请看[实时监控看板](https://growingio.gitbook.io/docs/product-manual/charts/preset/realtime)。\
 
 
-![](../../../.gitbook/assets/image%20%2813%29.png)
+![](<../../../.gitbook/assets/image (13).png>)
 
 我们会为您默认提供关于您产品的整体运行数据，帮助您整体把握产品的用户情况，包括用户数量、用户参与度与用户来源。
 
@@ -27,11 +27,10 @@ description: 你可以在概览中了解产品的基本运行情况，并切换�
 
 ## 常见问题
 
-#### 1.如果我的项目中有多个应用，概览中的数据包含全部应用么？ <a id="1&#x5982;&#x679C;&#x6211;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x6709;&#x591A;&#x4E2A;&#x5E94;&#x7528;&#xFF0C;&#x6982;&#x89C8;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x5305;&#x542B;&#x5168;&#x90E8;&#x5E94;&#x7528;&#x4E48;&#xFF1F;"></a>
+#### 1.如果我的项目中有多个应用，概览中的数据包含全部应用么？ <a href="1-ru-guo-wo-de-xiang-mu-zhong-you-duo-ge-ying-yong-gai-lan-zhong-de-shu-ju-bao-han-quan-bu-ying-yong" id="1-ru-guo-wo-de-xiang-mu-zhong-you-duo-ge-ying-yong-gai-lan-zhong-de-shu-ju-bao-han-quan-bu-ying-yong"></a>
 
 是的。概览中的数据是多个应用的加和，如果您需要分别看各个应用的数据，可以添加过滤条件。概览暂时不包括微信生态数据（小程序，微信内嵌页，公众号）
 
-#### 2.项目里有多个应用，在项目管理中把其中一个应用删除了，那在概览中还有这个应用的数据么？ <a id="3&#x5BA2;&#x6237;&#x9879;&#x76EE;&#x91CC;&#x6709;&#x591A;&#x4E2A;&#x5E94;&#x7528;&#xFF0C;&#x5728;&#x9879;&#x76EE;&#x7BA1;&#x7406;&#x4E2D;&#x628A;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x5220;&#x9664;&#x4E86;&#xFF0C;&#x90A3;&#x5728;&#x6982;&#x89C8;&#x4E2D;&#x8FD8;&#x6709;&#x8FD9;&#x4E2A;&#x5E94;&#x7528;&#x7684;&#x6570;&#x636E;&#x4E48;&#xFF1F;"></a>
+#### 2.项目里有多个应用，在项目管理中把其中一个应用删除了，那在概览中还有这个应用的数据么？ <a href="3-ke-hu-xiang-mu-li-you-duo-ge-ying-yong-zai-xiang-mu-guan-li-zhong-ba-qi-zhong-yi-ge-ying-yong-shan" id="3-ke-hu-xiang-mu-li-you-duo-ge-ying-yong-zai-xiang-mu-guan-li-zhong-ba-qi-zhong-yi-ge-ying-yong-shan"></a>
 
 目前删除应用了之后，数据层面不会有任何改变，历史数据还在，之后的数据也还会继续收集。
-

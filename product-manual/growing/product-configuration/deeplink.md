@@ -6,7 +6,7 @@
 
 ## 1 进入深度链接配置模块
 
-在顶部导航栏选择“**获客分析 &gt; 产品配置 &gt; 深度链接配置 ”**，进入深度链接配置页面。
+在顶部导航栏选择“**获客分析 > 产品配置 > 深度链接配置 ”**，进入深度链接配置页面。
 
 ![](../../../.gitbook/assets/shen-du-lian-jie-pei-zhi-ru-kou.png)
 
@@ -58,11 +58,11 @@ GrowingIO的域名：
 
 1.在UniversalLink模块，单击模块右上角的“编辑”，进入配置 UniversalLink界面。
 
-![](../../../.gitbook/assets/image%20%28163%29.png)
+![](<../../../.gitbook/assets/image (163).png>)
 
-2. 配置获取到的Team ID 并勾选“我已完成Xcode配置，开启Universal Link跳转”，同时确认您的 SDK 版本，如果SDK版本为2.8.4及以上，请务必勾选”已确认将iOS SDK升级至2.8.4或更高版本“并进行确认。
+2\. 配置获取到的Team ID 并勾选“我已完成Xcode配置，开启Universal Link跳转”，同时确认您的 SDK 版本，如果SDK版本为2.8.4及以上，请务必勾选”已确认将iOS SDK升级至2.8.4或更高版本“并进行确认。
 
-![](../../../.gitbook/assets/image%20%28165%29.png)
+![](<../../../.gitbook/assets/image (165).png>)
 
 {% hint style="info" %}
 如果SDK版本为2.8.4及以上，勾选”已确认将iOS SDK升级至2.8.4或更高版本“将开启DeepLink 2.0方案，将获得更好的使用体验。
@@ -78,7 +78,7 @@ GrowingIO的域名：
 
 也可直接在应用管理中心修改，请参考[修改应用信息](../../projectmange/application-manage.md#xiu-gai-shan-chu-ying-yong)。
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtPeN51XOz8pL5J28rs-LtPetuUHeUEFwBh_438image.png)
+![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtPeN51XOz8pL5J28rs-LtPetuUHeUEFwBh\_438image.png)
 
 ### 3.2 AppLinks配置
 
@@ -86,7 +86,7 @@ App Links 是 Google 在 Android 系统中提供的原生方案，如果您希�
 
 App Links 适用于 Android 6.0 及以上的版本，当用户设备系统版本在 Android 6.0 以下时，DeepLink 将会自动回落至 URL Scheme 方案进行跳转。
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtPeya7y9j-Tf-SYwGB-LtPfdFJ_k7EIOVL8W14image.png)
+![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtPeya7y9j-Tf-SYwGB-LtPfdFJ\_k7EIOVL8W14image.png)
 
 详细配置步骤：
 
@@ -96,13 +96,13 @@ App Links 适用于 Android 6.0 及以上的版本，当用户设备系统版本
 
 1. 执行以下命令 ：
 
-```text
+```
 keytool -list -v -keystore my-release-key.keystore
 ```
 
 1. 执行后你将看到类似下面这样的结果，请复制下来并填写进 GrowingIO 对应的应用配置中。
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtPeya7y9j-Tf-SYwGB-LtPfGzEMvdZaL6PZwtk-LGNxeGABUADKiTWTaEM-Lqj1ayCSvZ98vlMMoj_-LqjDzowsF3cf7B2QR5gimage.png)
+![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtPeya7y9j-Tf-SYwGB-LtPfGzEMvdZaL6PZwtk-LGNxeGABUADKiTWTaEM-Lqj1ayCSvZ98vlMMoj\_-LqjDzowsF3cf7B2QR5gimage.png)
 
 #### **3.2.2 在 Manifest.xml 中配置 Intent Filter**
 
@@ -178,13 +178,13 @@ keytool -list -v -keystore my-release-key.keystore
 1. 完成上述配置后，安装在手机上
 2. 执行以下命令：
 
-```text
+```
 adb shell dumpsys package d
 ```
 
 1. 上述命令执行后的结果中，查找您应用的包名，当 Domains 已经出现 datayi.cn/ gio.ren 说明您的 Intent Filter 配置正确，示例如下：
 
-```text
+```
   Package: com.growingio.android.test    
   Domains: datayi.cn gio.ren  
   Status:  always
@@ -210,13 +210,13 @@ domains 为 manifest.xml 文件中配置 Intent filter 中的 host ，GIO 可能
 
 对于 Status 状态的说明：
 
-| Status 状态 | 描述 |
-| :--- | :--- |
-| ask | Applink校验失败, 每次打开连接跳转时会弹出一个对话框， 提示选择打开短链的App |
-| always | 校验成功，理想状态 |
-| never | 用户选择不再打开 |
-| always-ask | 可忽略，尚未发现这一个出现, 跟 never 一样需要手动干预才会出现 |
-| undefined | 尚未校验完成， 请稍后再试 |
+| Status 状态  | 描述                                           |
+| ---------- | -------------------------------------------- |
+| ask        | Applink校验失败, 每次打开连接跳转时会弹出一个对话框， 提示选择打开短链的App |
+| always     | 校验成功，理想状态                                    |
+| never      | 用户选择不再打开                                     |
+| always-ask | 可忽略，尚未发现这一个出现, 跟 never 一样需要手动干预才会出现          |
+| undefined  | 尚未校验完成， 请稍后再试                                |
 
 **常见问题：**
 
@@ -228,7 +228,7 @@ App _\*\*_Links 的合法性是由系统校验，不同的手机系统使用不�
 
 查看自己手机是使用哪种组件，在命令行中输入以下命令：
 
-```text
+```
 adb shell dumpsys package i
 ```
 
@@ -253,7 +253,7 @@ GrowingIO 提供跳转到应用宝微下载的功能，应用宝微下载为腾�
 
 腾讯微下载介绍：[https://wiki.open.qq.com/index.php?title=mobile/应用宝微下载](https://wiki.open.qq.com/index.php?title=mobile/%E5%BA%94%E7%94%A8%E5%AE%9D%E5%BE%AE%E4%B8%8B%E8%BD%BD)​
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtPfhH_p6U8X7dKYA6C-LtPh1V9S5SeR8Djq6mnimage.png)
+![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LtPfhH\_p6U8X7dKYA6C-LtPh1V9S5SeR8Djq6mnimage.png)
 
 {% hint style="warning" %}
 在确认开启应用宝微下载前，请确认您已经达到腾讯微下载服务的量级标准，并且审核通过，否则直接开启将导致用户使用体验下降。
@@ -272,4 +272,3 @@ GrowingIO 提供跳转到应用宝微下载的功能，应用宝微下载为腾�
 **自由布局**
 
 在此布局中，页面将只保留必要的操作按钮在页面底部，其余空间全部开放，您可以通过对背景图的自由设计，来实现任何您想要的关键元素或页面风格设计。
-

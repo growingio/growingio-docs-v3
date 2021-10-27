@@ -2,7 +2,7 @@
 
 ## 1. GrowingIO SDK无埋点采集的原理是什么？
 
-实现原理：[Method Swizzling](http://nshipster.cn/method-swizzling/) \( method swizzling 作用为替换或者修改系统方法\)，可理解为以下 5 个步骤。
+实现原理：[Method Swizzling](http://nshipster.cn/method-swizzling/) ( method swizzling 作用为替换或者修改系统方法)，可理解为以下 5 个步骤。
 
 1. 在系统方法M1中插入GIO代码GIO\_B1
 2. 系统方法 M1 被执行，此时也会执行 GIO\_B1
@@ -20,7 +20,7 @@ SDK 依赖 subviews 里面的元素次序。如果有动态的需求，建议在
 
 ## 4. 子线程操作UI引起的问题如何处理？
 
-答：GIO SDK 会在主线程中遍历找寻某个subView，如果此时在子线程中删除了该subView，就会造成错乱甚至 crash。此外，Apple 不建议用户在子线程更新 UI。建议客户在 Xcode 中打开 "Main Thread Checker" 检测线程使用是否合理。参考：[Main Thread Checker](https://developer.apple.com/documentation/xcode/diagnosing_memory_thread_and_crash_issues_early)
+答：GIO SDK 会在主线程中遍历找寻某个subView，如果此时在子线程中删除了该subView，就会造成错乱甚至 crash。此外，Apple 不建议用户在子线程更新 UI。建议客户在 Xcode 中打开 "Main Thread Checker" 检测线程使用是否合理。参考：[Main Thread Checker](https://developer.apple.com/documentation/xcode/diagnosing\_memory\_thread\_and\_crash\_issues\_early)
 
 ## 5. 圈选时，来自不同VC的元素显示的VC名称相同？
 
@@ -48,7 +48,7 @@ SDK 依赖 subviews 里面的元素次序。如果有动态的需求，建议在
 
 ## 11. App做了Button防重复点击，集成SDK后发现按钮无法点击？
 
-如果您的UIButton 防重复方案中， hook了 UIControl 的 originalSelector：`@selector(sendAction:to:forEvent:)` 方法，请确保在您的 swizzledSelector：`@selector(your_swizzled_sendAction:to:forEvent:)` 方法**前面**执行 如下代码:  
+如果您的UIButton 防重复方案中， hook了 UIControl 的 originalSelector：`@selector(sendAction:to:forEvent:) `方法，请确保在您的 swizzledSelector：`@selector(your_swizzled_sendAction:to:forEvent:) `方法**前面**执行 如下代码:\
 
 
 ```java
@@ -78,13 +78,13 @@ SDK 依赖 subviews 里面的元素次序。如果有动态的需求，建议在
 
 Object-C：修改main.m文件：
 
-![](../../../.gitbook/assets/image%20%2873%29.png)
+![](<../../../.gitbook/assets/image (73).png>)
 
 Swift：修改AppDelegate.swift，并手动创建main.swift文件。
 
-![](../../../.gitbook/assets/image%20%2874%29.png)
+![](<../../../.gitbook/assets/image (74).png>)
 
-![](../../../.gitbook/assets/image%20%2876%29.png)
+![](<../../../.gitbook/assets/image (76).png>)
 
 ## 13. 关于苹果隐私政策相关事宜的公告
 
@@ -103,4 +103,3 @@ Swift：修改AppDelegate.swift，并手动创建main.swift文件。
 如果您在圈选或 Mobile Debugger 扫码验证时无法唤起 App，请核对 URL Scheme 是否配置正确，`+[Growing handleUrl:]` 函数调用是否正常，参考[添加 URL Scheme](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/auto-ios-sdk#urlscheme)、[添加激活圈选的代码](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/auto-ios-sdk#4-tian-jia-ji-huo-quan-xuan-de-dai-ma)
 
 [其他圈选问题](../../../product-faq/quanxuan.md#yi-dong-duan-quan-xuan)
-

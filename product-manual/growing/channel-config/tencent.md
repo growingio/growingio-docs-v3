@@ -44,34 +44,33 @@
 
 #### **三、转化回传联调**
 
-1、进入腾讯广告 DMP 数据管理平台，找到以下入口![](blob:https://growingio.atlassian.net/d509f1de-cd04-4468-a2c3-c534ab4d925f#media-blob-url=true&id=8a9d65ca-6610-4e62-9598-61db53abf99b&collection=contentId-1350140247&contextId=1350140247&mimeType=image%2Fpng&name=image-20200526-090500.png&size=61589&width=1009&height=182)
+1、进入腾讯广告 DMP 数据管理平台，找到以下入口![](blob:https://growingio.atlassian.net/d509f1de-cd04-4468-a2c3-c534ab4d925f#media-blob-url=true\&id=8a9d65ca-6610-4e62-9598-61db53abf99b\&collection=contentId-1350140247\&contextId=1350140247\&mimeType=image%2Fpng\&name=image-20200526-090500.png\&size=61589\&width=1009\&height=182)
 
-![](../../../.gitbook/assets/image%20%28102%29.png)
+![](<../../../.gitbook/assets/image (102).png>)
 
 2、找到需要联调的应用
 
-![](blob:https://growingio.atlassian.net/f71957e3-1501-42a1-b1da-c7061c73ec9f#media-blob-url=true&id=780c972c-f9ba-4dd4-895a-5b1feeadaf01&collection=contentId-1350140247&contextId=1350140247&mimeType=image%2Fpng&name=image-20200526-090720.png&size=53700&width=933&height=274)
+![](blob:https://growingio.atlassian.net/f71957e3-1501-42a1-b1da-c7061c73ec9f#media-blob-url=true\&id=780c972c-f9ba-4dd4-895a-5b1feeadaf01\&collection=contentId-1350140247\&contextId=1350140247\&mimeType=image%2Fpng\&name=image-20200526-090720.png\&size=53700\&width=933\&height=274)
 
-![](../../../.gitbook/assets/image%20%2898%29.png)
+![](<../../../.gitbook/assets/image (98).png>)
 
 3、找到联调功能入口
 
-![](../../../.gitbook/assets/image%20%28107%29.png)
+![](<../../../.gitbook/assets/image (107).png>)
 
-4、选择要联调的行为和渠道包![](blob:https://growingio.atlassian.net/99671bfd-8b48-44c2-a9b1-f6d690f21355#media-blob-url=true&id=34224b94-311e-42bc-8808-77c17dc77413&collection=contentId-1350140247&contextId=1350140247&mimeType=image%2Fpng&name=image-20200526-091052.png&size=30714&width=605&height=391)
+4、选择要联调的行为和渠道包![](blob:https://growingio.atlassian.net/99671bfd-8b48-44c2-a9b1-f6d690f21355#media-blob-url=true\&id=34224b94-311e-42bc-8808-77c17dc77413\&collection=contentId-1350140247\&contextId=1350140247\&mimeType=image%2Fpng\&name=image-20200526-091052.png\&size=30714\&width=605\&height=391)
 
-![](../../../.gitbook/assets/image%20%28104%29.png)
+![](<../../../.gitbook/assets/image (104).png>)
 
-5、进入联调流程按步骤进行操作![](blob:https://growingio.atlassian.net/4dfb4440-3ddd-4247-82f0-a8f01b819ce6#media-blob-url=true&id=a3cbc210-9c7c-4c85-9e20-73f974dd4e59&collection=contentId-1350140247&contextId=1350140247&mimeType=image%2Fpng&name=image-20200526-091212.png&size=158029&width=788&height=764)
+5、进入联调流程按步骤进行操作![](blob:https://growingio.atlassian.net/4dfb4440-3ddd-4247-82f0-a8f01b819ce6#media-blob-url=true\&id=a3cbc210-9c7c-4c85-9e20-73f974dd4e59\&collection=contentId-1350140247\&contextId=1350140247\&mimeType=image%2Fpng\&name=image-20200526-091212.png\&size=158029\&width=788\&height=764)
 
-![](../../../.gitbook/assets/image%20%28108%29.png)
+![](<../../../.gitbook/assets/image (108).png>)
 
 #### 附录
 
 腾讯联调工具帮助文档：
 
-[https://e.qq.com/ads/adfaq/delivery/special/17/](https://e.qq.com/ads/adfaq/delivery/special/17/)  
+[https://e.qq.com/ads/adfaq/delivery/special/17/](https://e.qq.com/ads/adfaq/delivery/special/17/)\
 
 
-\*\*\*\*
-
+****
