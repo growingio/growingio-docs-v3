@@ -33,7 +33,7 @@
       * [转化变量](introduction/data-definition/ustom-event/convert-variable.md)
   * [数据安全](introduction/data-security.md)
 
-## 开发者文档 <a id="developer-manual"></a>
+## 开发者文档 <a href="developer-manual" id="developer-manual"></a>
 
 * [SDK 集成](developer-manual/sdkintegrated/README.md)
   * [SDK 简介](developer-manual/sdkintegrated/overview.md)
@@ -89,6 +89,7 @@
     * [常见问题](developer-manual/sdkintegrated/ios-sdk/iossdk-faq.md)
     * [更新日志](developer-manual/sdkintegrated/ios-sdk/iossdk-log.md)
     * [用户运营iOS SDK地址](developer-manual/sdkintegrated/ios-sdk/yong-hu-yun-ying-ios-sdk-di-zhi.md)
+  * [C++ 客户端SDK](developer-manual/sdkintegrated/c++-ke-hu-duan-sdk.md)
   * [移动端第三方框架 SDK](developer-manual/sdkintegrated/otherframe-sdk/README.md)
     * [React Native无埋点SDK](developer-manual/sdkintegrated/otherframe-sdk/rn-autosdk.md)
     * [React Native埋点SDK](developer-manual/sdkintegrated/otherframe-sdk/rn-sdk.md)
@@ -215,7 +216,7 @@
     * [数据保护](developer-manual/api-reference/gdprapi/shu-ju-bao-hu.md)
     * [删除原始数据](developer-manual/api-reference/gdprapi/shan-chu-yuan-shi-shu-ju.md)
 
-## 产品使用文档 <a id="product-manual"></a>
+## 产品使用文档 <a href="product-manual" id="product-manual"></a>
 
 * [产品分析](product-manual/product-analysis/README.md)
   * [数据监测](product-manual/product-analysis/data-monitoring/README.md)
@@ -355,8 +356,8 @@
     * [小程序数据校验](product-manual/data-center/datacheck/mini-programs.md)
     * [Mobile Debugger](product-manual/data-center/datacheck/mobile-debugger.md)
     * [Web Debugger](product-manual/data-center/datacheck/web-debugger.md)
-  * [数据集成](product-manual/data-center/data_source_integration/README.md)
-    * [微信公众号集成](product-manual/data-center/data_source_integration/wx-account.md)
+  * [数据集成](product-manual/data-center/data\_source\_integration/README.md)
+    * [微信公众号集成](product-manual/data-center/data\_source\_integration/wx-account.md)
 * [项目管理](product-manual/projectmange/README.md)
   * [如何进入项目管理？](product-manual/projectmange/gotoproject.md)
   * [项目概览](product-manual/projectmange/details.md)
@@ -388,7 +389,7 @@
   * [邀请技术支持](product-manual/tickets/invite.md)
 * [术语解释](product-manual/term.md)
 
-## 常见问题与解决 <a id="product-faq"></a>
+## 常见问题与解决 <a href="product-faq" id="product-faq"></a>
 
 * [基本问题](product-faq/basic.md)
 * [SDK集成](product-faq/sdk.md)
@@ -401,4 +402,3 @@
 * [为何收不到GIO的邮件？](product-faq/wei-he-shou-bu-dao-gio-de-you-jian.md)
 * [无效指标清理说明](product-faq/cleandata.md)
 * [产品维护计划通告](product-faq/chan-pin-wei-hu-ji-hua-tong-gao.md)
-
