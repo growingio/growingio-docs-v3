@@ -1,6 +1,6 @@
 # Table of contents
 
-* [What's new！](README.md)
+* [What's new](README.md)
 * [增长平台全景图](new-growingio-platform.md)
 * [文档使用指南](allguide.md)
 * [产品简介](introduction/README.md)
@@ -402,4 +402,3 @@
 * [为何收不到GIO的邮件？](product-faq/wei-he-shou-bu-dao-gio-de-you-jian.md)
 * [无效指标清理说明](product-faq/cleandata.md)
 * [产品维护计划通告](product-faq/chan-pin-wei-hu-ji-hua-tong-gao.md)
-* [Page 1](product-faq/page-1.md)
