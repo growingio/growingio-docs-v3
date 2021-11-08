@@ -28,15 +28,21 @@
 
 **1. 上一步完成创建后，会跳转至转化详情页，按照提示的2个步骤完成准备工作后，点击“去激活”进入检测流程**
 
-![](<../../../.gitbook/assets/image (110).png>)
+![](../../../.gitbook/assets/1.jpg)
 
 **2. 填写快手ID/快手号，将给您的快手APP发现页信息流里发送一条联调广告**![](blob:https://growingio.atlassian.net/1ea7b7bd-0414-4b1d-b2d9-05214726ec33#media-blob-url=true\&id=9b2a97da-a580-4ca4-b3b0-fb174af810c6\&collection=contentId-1402077227\&contextId=1402077227\&mimeType=image%2Fpng\&name=1579660255408.png\&size=801569\&width=1716\&height=1524)
 
-![](<../../../.gitbook/assets/image (106).png>)
+![](<../../../.gitbook/assets/截屏2021-11-08 下午7.25.21.png>)
+
+![](<../../../.gitbook/assets/截屏2021-11-08 下午7.25.30.png>)
 
 **3. 按照操作提示，完成“获取广告点击数据”和“回传目标用户参数”两个步骤，即可完成激活**
 
-#### &#x20;  <a href="hardbreak" id="hardbreak"></a>
+![](<../../../.gitbook/assets/截屏2021-11-08 下午7.25.57.png>)
+
+![](<../../../.gitbook/assets/截屏2021-11-08 下午7.27.42 (1).png>)
+
+![](<../../../.gitbook/assets/截屏2021-11-08 下午7.27.51.png>)
 
 #### **四、创建广告组时进行关联** <a href="si-chuang-jian-guang-gao-zu-shi-jin-hang-guan-lian" id="si-chuang-jian-guang-gao-zu-shi-jin-hang-guan-lian"></a>
 
