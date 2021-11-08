@@ -12,7 +12,7 @@
 
 1、在GIO后台创建 App 推广链接，目标渠道选择“腾讯社交广告”，然后点击保存‌
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-Lh-LJ8frL-7XyOyxJWE-Lh-LLVBJKkv4I6N-HAkimage.png)
+![](../../../.gitbook/assets/腾讯社交广告1.png)
 
 2、点击保存后进入绑定与授权，‌
 
@@ -28,7 +28,7 @@
 
 获取方式如下：‌
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LRQkXUuEuD5xER41iwA-LRQsE1caJLiZwqN5Z1Himage.png)
+![](../../../.gitbook/assets/腾讯账户id.png)
 
 应用标识，请与广点通后台填写的“应用宝ID”或“苹果商店ID”保持一致。‌
 
