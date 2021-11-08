@@ -8,7 +8,7 @@ description: 统一管理广告监测的渠道。
 
 ## 渠道管理
 
-在顶部导航栏选择“**获客分析 &gt; 产品配置 &gt; 推广渠道 ”**，进入推广渠道管理页面。
+在顶部导航栏选择“**获客分析 > 产品配置 > 推广渠道 ”**，进入推广渠道管理页面。
 
 ![](../../../.gitbook/assets/tui-guang-qu-dao-guan-li.png)
 
@@ -46,7 +46,7 @@ GrowingIO 目前已支持行业主流大多数媒体的转化数据回传，通�
 
 当渠道支持转化回传配置时，在渠道列表中点击该渠道，右侧将展示当前渠道详细信息，通过【添加回传事件】按钮，可添加转化回传事件，或直接在渠道列表中，通过右侧 “+” 操作，可直接添加转化回传事件。
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LrscuRiNffmnHEFX4ks-Lrsd_ADsiemzOtmo19uimage.png)
+![](../../../.gitbook/assets/111.jpg)
 
 新建：通过渠道列表下的添加按钮以及渠道详情中的添加按钮都可添加转化回传事件。
 
@@ -56,7 +56,7 @@ GrowingIO 目前已支持行业主流大多数媒体的转化数据回传，通�
 
 当该渠道支持激活回传时，为方便您的使用， GrowingIO 默认打开渠道的激活回传。
 
-### 自定义转化回传配置 <a id="zi-ding-yi-zhuan-hua-hui-chuan-pei-zhi"></a>
+### 自定义转化回传配置 <a href="zi-ding-yi-zhuan-hua-hui-chuan-pei-zhi" id="zi-ding-yi-zhuan-hua-hui-chuan-pei-zhi"></a>
 
 当渠道方支持更多深度转化数据回传时，如：注册、下单、留存等等，事件回传类型下拉选项中将会出现对应的事件类型可供选择。
 
@@ -64,11 +64,11 @@ GrowingIO 目前已支持行业主流大多数媒体的转化数据回传，通�
 
 二、选择转化事件类型，例如：注册；
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LrscuRiNffmnHEFX4ks-Lrse-AkTa3HZvdt2Fh9image.png)
+![](<../../../.gitbook/assets/123 (1).jpg>)
 
 三、在事件选择器中关联对应回传事件。
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LrscuRiNffmnHEFX4ks-LrsfhOvF9R8NP1iaN6Kimage.png)
+![](../../../.gitbook/assets/112.jpg)
 
 完成回传事件关联，渠道回传事件列表中将会增加刚刚配置的回传事件。
 
@@ -76,15 +76,14 @@ GrowingIO 目前已支持行业主流大多数媒体的转化数据回传，通�
 
 完成回传事件关联，当前渠道回传事件列表中会新增刚刚配置的回传事件。
 
-### **转化回传联调** <a id="zhuan-hua-hui-chuan-lian-tiao"></a>
+### **转化回传联调** <a href="zhuan-hua-hui-chuan-lian-tiao" id="zhuan-hua-hui-chuan-lian-tiao"></a>
 
 在 GrowingIO 与媒体方全部完成转化回传配置后，在正式开启前，部分媒体会要求对转化事件进行测试或联调，GrowingIO 专门为此提供联调工具，该工具的操作引导，可使您快速完成联调流程。
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LsQpogmCgsvVyGyHNyc-LsQq1Hs8xjipO2nw7nIimage.png)
+![](../../../.gitbook/assets/回传配置4.png)
 
 按照步骤引导，确认 1 至 4 步骤均已完成配置，在回传事件联调工具中填写监测链接，和联调测试设备信息，此处需注意监测链接需与在媒体方配置的为同一条链接，联调测试设备应为同一设备。
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LsQpogmCgsvVyGyHNyc-LsQqcOnSHBYgX2XZo9Yimage.png)
+![](<../../../.gitbook/assets/截屏2021-11-08 下午5.22.18.png>)
 
 填写完毕后，点击「获取上报数据」按钮，等待联调数据上报，媒体方平台若显示已收到数据，说明联调成功，如媒体平台长时间未收到上报数据，可再次点击「获取上报数据」按钮，重新获取数据。
-
