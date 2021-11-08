@@ -284,7 +284,7 @@
   * [渠道配置指南](product-manual/growing/channel-config/README.md)
     * [HUAWEI Ads](product-manual/growing/channel-config/huawei-ads.md)
     * [腾讯社交广告（Marking API）](product-manual/growing/channel-config/tencent.md)
-    * [今日头条](product-manual/growing/channel-config/bytedance.md)
+    * [今日头条（巨量纵横）](product-manual/growing/channel-config/bytedance.md)
     * [百度原生信息流](product-manual/growing/channel-config/baidu.md)
     * [百度搜索\_ocpc](product-manual/growing/channel-config/bai-du-sou-suo.md)
     * [微信广告平台](product-manual/growing/channel-config/wechat.md)
