@@ -2,415 +2,47 @@
 
 
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x7248;&#x672C;</th>
-      <th style="text-align:left">&#x8BF4;&#x660E;</th>
-      <th style="text-align:left">&#x65E5;&#x671F;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">2.2.5</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x52A8;&#x6001;platform&#x652F;&#x6301;&#x4ECE;url&#x7684;gio_platform&#x53C2;&#x6570;&#x8BFB;&#x53D6;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2021-08-12</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.2.4</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x652F;&#x6301;&#x83B7;&#x53D6;&#x52A8;&#x6001;platform</li>
-          <li>&#x4FEE;&#x590D;15min&#x5185;&#x5207;&#x6362;userId&#xFF0C;&#x8865;&#x53D1;vst&#x65F6;sessionId&#x6CA1;&#x6709;&#x66F4;&#x65B0;&#x7684;&#x95EE;&#x9898;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2021-08-05</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.2.3</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x5143;&#x7D20;&#x6DF1;&#x5EA6;&#x65F6;&#x5C06;svg&#x4F5C;&#x4E3A;&#x6574;&#x4F53;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2021-07-28</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.2.0</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x652F;&#x6301;sendBeacon&#x53D1;&#x9001;&#x6570;&#x636E;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2021-05-12</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.46</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x652F;&#x6301; file:// &#x534F;&#x8BAE;&#x3002;&#x9700;&#x8981;&#x5148;&#x8BBE;&#x7F6E;
-            window._gr_ignore_local_rule=true;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2021-04-01</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.45</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x4FEE;&#x590D; touch &#x63A5;&#x53E3;&#x5BFC;&#x81F4; vst &#x4E8B;&#x4EF6;&#x591A;&#x53D1;&#x95EE;&#x9898;&#xFF1B;</li>
-          <li>&#x4FEE;&#x590D;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B; vst &#x548C;
-            page &#x5C11;&#x53D1;&#x95EE;&#x9898;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2021-03-03</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.43</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x534A;&#x81EA;&#x52A8;&#x57CB;&#x70B9;&#x589E;&#x52A0; data-gio-imp-attrs
-            &#x914D;&#x7F6E;&#xFF0C;&#x652F;&#x6301;&#x66F4;&#x4E30;&#x5BCC;&#x7684;&#x4E8B;&#x4EF6;&#x53D8;&#x91CF;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#x3002;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2021-01-29</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.42</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x89E3;&#x51B3; IE &#x4E0B; Select &#x7EC4;&#x4EF6;&#x517C;&#x5BB9;&#x95EE;&#x9898;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2021-01-14</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.41</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x652F;&#x6301;&#x9A7C;&#x5CF0;&#x547D;&#x540D;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;&#x53D8;&#x91CF;&#xFF0C;&#x5982;&#x4E8B;&#x4EF6;&#x53D8;&#x91CF;&#x4E3A;
-            fooBar &#x57CB;&#x70B9;&#x65F6;&#x4E3A; data-gio-track-foo-bar</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2020-12-15</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.40</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x907F;&#x514D;&#x4FEE;&#x6539; document.referrer &#x539F;&#x59CB;&#x503C;&#xFF0C;&#x4ECE;&#x800C;&#x5F71;&#x54CD;&#x5BA2;&#x6237;&#x4E1A;&#x52A1;&#x903B;&#x8F91;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2020-12-15</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.39</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x4FEE;&#x590D;&#x52A8;&#x6001;&#x63D2;&#x5165;&#x5D4C;&#x5957;&#x5143;&#x7D20;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x4E2D;&#x5305;&#x542B;&#x58F0;&#x660E;&#x8BD5;&#x57CB;&#x70B9;&#x65F6;&#x4E0D;&#x53D1;&#x9001;&#x4E8B;&#x4EF6;&#x7684;&#x95EE;&#x9898;&#x3002;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2020-11-12</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.38</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x589E;&#x5F3A;&#x7A33;&#x5B9A;&#x6027;&#x3002;&#x89E3;&#x51B3;&#x6781;&#x7AEF;&#x60C5;&#x51B5;&#x4E0B;
-            tagName &#x4E3A; false &#x5BFC;&#x81F4;&#x62A5;&#x9519;&#x95EE;&#x9898;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2020-11-02</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.37</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x4FEE;&#x590D; localhost &#x4E0B;&#x4E0D;&#x80FD;&#x6B63;&#x786E;&#x8BB0;&#x5F55;
-            cookie &#x7684;&#x95EE;&#x9898;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2020-09-11</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.36</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x8BBF;&#x95EE;&#x4E8B;&#x4EF6;&#xFF08;vst&#xFF09;&#x4E0A;&#x62A5;&#x7F51;&#x7AD9;&#x534F;&#x8BAE;
-            (pt)</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2020-08-21</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.35</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x4F18;&#x5316;&#x534A;&#x81EA;&#x52A8;&#x91C7;&#x96C6;&#x6D4F;&#x89C8;&#x4E8B;&#x4EF6;&#x53EF;&#x89C2;&#x6D4B;&#x5B50;&#x8282;&#x70B9;&#x53D8;&#x5316;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2020-05-12</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.34</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x6DFB;&#x52A0;&#x5708;&#x9009;&#x6A21;&#x5F0F;&#x63A7;&#x5236;&#x5F00;&#x5173;&#x914D;&#x7F6E;&#x9879;
-            {circleIframe: false}</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2020-04-20</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.33</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x8BBE;&#x7F6E;imp&#x9ED8;&#x8BA4;&#x4E3A;false</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2020-04-09</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.32</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x8BBE;&#x7F6E;&#x534A;&#x81EA;&#x52A8;&#x91C7;&#x96C6;&#x4E8B;&#x4EF6;&#x9ED8;&#x8BA4;&#x4E3A;false</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2020-03-04</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.31</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x6DFB;&#x52A0;Web&#x534A;&#x81EA;&#x52A8;&#x91C7;&#x96C6;&#x6D4F;&#x89C8;&#x4E8B;&#x4EF6;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2020-03-03</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.27</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x8C03;&#x6574;web sdk&#x5411;&#x89E6;&#x8FBE;sdk&#x53D1;&#x9001;&#x4E8B;&#x4EF6;&#x65F6;&#x673A;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2019-08-10</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.26</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x6DFB;&#x52A0; window._gr_ignore_local_rule &#x53D8;&#x91CF;&#xFF0C;&#x7528;&#x4E8E;&#x5FFD;&#x7565;&#x672C;&#x5730;&#x4E0D;&#x91C7;&#x96C6;&#x89C4;&#x5219;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2019-07-30</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.25</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x79FB;&#x9664;&#x5BF9;localhost&#xFF0C;127.0.0.1&#x672C;&#x5730;&#x5730;&#x5740;&#x7684;&#x91C7;&#x96C6;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2019-07-23</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.24</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x6DFB;&#x52A0;window.name&#x590D;&#x5199;&#x65E5;&#x5FD7;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2019-07-03</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.23</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x6DFB;&#x52A0;event&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2019-06-03</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.22</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x6DFB;&#x52A0;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;&#x53C2;&#x6570;&#x6821;&#x9A8C;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2019-04-26</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.21</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x89E3;&#x51B3;Hybrid SDK&#x52A0;&#x8F7D;&#x540E;Web JS SDK&#x65E0;&#x6CD5;&#x52A0;&#x8F7D;&#x95EE;&#x9898;</li>
-          <li>&#x91C7;&#x96C6;&#x5185;&#x5BB9;&#x83B7;&#x53D6;&#x517C;&#x5BB9;IE8</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2019-04-25</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.20</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x4FEE;&#x590D;Cookie&#x6E05;&#x7A7A;&#x540E;&#xFF0C;&#x9875;&#x9762;&#x6D4F;&#x89C8;&#x65F6;&#x95F4;&#x53D6;&#x503C;&#x4E0D;&#x51C6;&#x786E;&#x95EE;&#x9898;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2019-03-27</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.19</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x4F18;&#x5316;&#x4EE3;&#x7801;&#xFF0C;&#x63D0;&#x9AD8; SDK &#x91C7;&#x96C6;&#x5BB9;&#x9519;&#x6027;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2019-01-29</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.18</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x652F;&#x6301;imp&#x91C7;&#x96C6;container&#x6570;&#x636E;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2019-01-19</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.17</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x652F;&#x6301;&#x7528;&#x6237;&#x8BBE;&#x7F6E;&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x53D8;&#x91CF;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2018-10-30</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.16</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x4FEE;&#x590D;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B; SDK &#x901A;&#x4FE1;&#x5931;&#x6548;&#x5BFC;&#x81F4;&#x7F51;&#x7AD9;&#x65E0;&#x6CD5;&#x5708;&#x9009;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x652F;&#x6301;Chrome&#x5708;&#x9009;&#x63D2;&#x4EF6;&#x9002;&#x914D;
-            iframe &#x5D4C;&#x5957;&#x7684;&#x573A;&#x666F;</li>
-          <li>&#x91C7;&#x96C6;&#x6570;&#x636E;&#x5B9E;&#x65F6;&#x56DE;&#x6389;&#x63A5;&#x53E3;
-            addRealTimeCallback &#x652F;&#x6301;&#x9ED8;&#x8BA4;&#x4E0A;&#x62A5;&#x6240;&#x6709;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;</li>
-          <li>&#x589E;&#x52A0; ignoreClck &#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x5F00;&#x542F;&#x540E;&#x4E0D;&#x91C7;&#x96C6;&#x4EFB;&#x4F55;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2018-09-08</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.15</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x4F18;&#x5316;sdk&#x5728;&#x5708;&#x9009;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x7684;&#x8FD0;&#x884C;&#x6548;&#x7387;</li>
-          <li>&#x4F18;&#x5316;&#x5206;&#x7FA4;&#x6279;&#x91CF;&#x4E0A;&#x4F20;&#x767B;&#x5F55;&#x7528;&#x6237;ID&#x65F6;&#x90E8;&#x5206;ID&#x6CA1;&#x6709;&#x53D6;&#x5230;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x4FEE;&#x590D;&#x4FEE;&#x6539;sdk&#x7684;origin&#x5B57;&#x6BB5;&#x540E;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x5708;&#x9009;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x4FEE;&#x590D;clearUserId&#x63A5;&#x53E3;&#x4E0D;&#x8D77;&#x4F5C;&#x7528;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x4FEE;&#x590D;app&#x7248;&#x672C;&#x548C;&#x7F51;&#x7AD9;/&#x624B;&#x673A;&#x5E94;&#x7528;&#x4E24;&#x4E2A;&#x7EF4;&#x5EA6;&#x65E0;&#x6CD5;&#x4E0E;&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x5173;&#x8054;&#x7684;&#x95EE;&#x9898;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2018-08-08</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.14</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x4FEE;&#x590D;&#x8BBE;&#x7F6E;&#x767B;&#x9646;&#x7528;&#x6237;ID&#x65F6;&#x53EF;&#x80FD;&#x4F1A;&#x62A5;&#x9519;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x4F18;&#x5316;&#x5143;&#x7D20;&#x6D4F;&#x89C8;&#x91CF;&#x6570;&#x636E;&#x7684;&#x4E0A;&#x884C;&#x6570;&#x91CF;&#xFF0C;&#x4E0A;&#x884C;&#x6BCF;&#x6B21;&#x7528;&#x6237;&#x884C;&#x4E3A;&#x540E;60&#x79D2;&#x5185;&#x7684;&#x5143;&#x7D20;&#x6D4F;&#x89C8;&#x91CF;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2018-07-26</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.13</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x6269;&#x5927;&#x91C7;&#x6837;&#x529F;&#x80FD;&#x8FB9;&#x754C;&#xFF0C;&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x7684;&#x53D1;&#x9001;&#x4E5F;&#x8FDB;&#x5165;&#x91C7;&#x6837;&#x63A7;&#x5236;&#x8303;&#x56F4;</li>
-          <li>&#x4F18;&#x5316;&#x5143;&#x7D20;&#x6D4F;&#x89C8;&#x91CF;&#x7684;&#x91C7;&#x96C6;&#x65B9;&#x5F0F;&#xFF0C;&#x89E3;&#x51B3;svg&#x5143;&#x7D20;&#x6D4F;&#x89C8;&#x91CF;&#x5C11;&#x53D1;&#x7684;&#x95EE;&#x9898;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2018-07-19</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.12</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x4F18;&#x5316;cdn&#x53D1;&#x7248;&#x6548;&#x7387;</li>
-          <li>&#x4F18;&#x5316;cookie&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;&#x5927;&#x5E45;&#x964D;&#x4F4E;SDK&#x6240;&#x9700;&#x5360;&#x7528;&#x7684;&#x6D4F;&#x89C8;&#x5668;cookie</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2018-07-17</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.11</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x652F;&#x6301;GrowingIO Chrome&#x5708;&#x9009;&#x63D2;&#x4EF6;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2018-07-10</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.10</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x4F18;&#x5316;SDK&#x542F;&#x52A8;&#x6548;&#x7387;</li>
-          <li>&#x4F18;&#x5316;&#x6570;&#x636E;&#x53D1;&#x9001;&#x6548;&#x7387;</li>
-          <li>&#x4FEE;&#x590D;&#x4E86;&#x540C;&#x65F6;&#x6253;&#x5F00;&#x591A;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x60C5;&#x51B5;&#x4E0B;page&#x4E8B;&#x4EF6;&#x5C11;&#x53D1;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x4FEE;&#x590D;&#x82E5;&#x5E72;&#x517C;&#x5BB9;&#x6027;&#x95EE;&#x9898;</li>
-          <li>&#x589E;&#x52A0;&#x5BB9;&#x9519;&#x5BA2;&#x6237;&#x4E0D;&#x614E;&#x91CD;&#x590D;&#x96C6;&#x6210;SDK&#x7684;&#x60C5;&#x51B5;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2018-07-03</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.9</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x4FEE;&#x590D;&#x5728;iframe+jQuery&#x60C5;&#x51B5;&#x4E0B;page&#x4E8B;&#x4EF6;&#x5C11;&#x53D1;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x4FEE;&#x590D;&#x8BBE;&#x7F6E;&#x91C7;&#x6837;&#x60C5;&#x51B5;&#x4E0B;&#x7684;&#x517C;&#x5BB9;&#x6027;&#x95EE;&#x9898;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2018-06-01</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.8</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x652F;&#x6301;GDPR&#x6B27;&#x76DF;&#x533A;&#x4E00;&#x822C;&#x6570;&#x636E;&#x4FDD;&#x62A4;&#x6761;&#x4F8B;</li>
-          <li>&#x4FEE;&#x590D;&#x82E5;&#x5E72;&#x517C;&#x5BB9;&#x6027;&#x95EE;&#x9898;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2018-05-21</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.7</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x652F;&#x6301;&#x5708;&#x9009;&#x5F39;&#x5C42;&#x5728;&#x6574;&#x4E2A;&#x9875;&#x9762;&#x5185;&#x62D6;&#x62FD;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2018-04-24</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">2.1.6</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x4FEE;&#x590D;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;vst&#x4E8B;&#x4EF6;&#x91CD;&#x53D1;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x4FEE;&#x590D;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;&#x5143;&#x7D20;&#x65E0;&#x6D4F;&#x89C8;&#x91CF;&#x7684;&#x95EE;&#x9898;</li>
-          <li>&#x589E;&#x52A0;&#x624B;&#x52A8;&#x53D1;&#x9001;page&#x4E8B;&#x4EF6;&#x7684;&#x63A5;&#x53E3;&#x4EE5;&#x89E3;&#x51B3;&#x5728;&#x5355;&#x9875;&#x9762;&#x7B49;&#x573A;&#x666F;&#x4E0B;&#x4E22;&#x5931;page&#x4E8B;&#x4EF6;&#x7684;&#x95EE;&#x9898;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2018-04-09</td>
-    </tr>
-  </tbody>
-</table>
-
+| 版本      | 说明                                                                                                                                                                                | 日期         |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| 2.2.6   | <ol><li>修复Xpath异常的问题</li></ol>                                                                                                                                                    | 2021-10-21 |
+| 2.2.5   | <ol><li>动态platform支持从url的gio_platform参数读取</li></ol>                                                                                                                               | 2021-08-12 |
+| 2.2.4   | <ol><li>支持获取动态platform</li><li>修复15min内切换userId，补发vst时sessionId没有更新的问题</li></ol>                                                                                                  | 2021-08-05 |
+| 2.2.3   | <ol><li>元素深度时将svg作为整体</li></ol>                                                                                                                                                   | 2021-07-28 |
+| 2.2.0   | <ol><li>支持sendBeacon发送数据</li></ol>                                                                                                                                                | 2021-05-12 |
+| 2.1.46  | <ol><li>支持 file:// 协议。需要先设置 window._gr_ignore_local_rule=true;</li></ol>                                                                                                          | 2021-04-01 |
+| 2.1.45  | <ol><li>修复 touch 接口导致 vst 事件多发问题；</li><li>修复某些情况下 vst 和 page 少发问题</li></ol>                                                                                                       | 2021-03-03 |
+| 2.1.43  | <ol><li>半自动埋点增加 data-gio-imp-attrs 配置，支持更丰富的事件变量配置方式。</li></ol>                                                                                                                   | 2021-01-29 |
+| 2.1.42  | <ol><li>解决 IE 下 Select 组件兼容问题</li></ol>                                                                                                                                           | 2021-01-14 |
+| 2.1.41  | <ol><li>支持驼峰命名埋点事件变量，如事件变量为 fooBar 埋点时为 data-gio-track-foo-bar</li></ol>                                                                                                          | 2020-12-15 |
+| 2.1.40  | <ol><li>避免修改 document.referrer 原始值，从而影响客户业务逻辑</li></ol>                                                                                                                           | 2020-12-15 |
+| 2.1.39  | <ol><li>修复动态插入嵌套元素的子元素中包含声明试埋点时不发送事件的问题。</li></ol>                                                                                                                                | 2020-11-12 |
+| 2.1.38  | <ol><li>增强稳定性。解决极端情况下 tagName 为 false 导致报错问题</li></ol>                                                                                                                            | 2020-11-02 |
+| 2.1.37  | <ol><li>修复 localhost 下不能正确记录 cookie 的问题</li></ol>                                                                                                                                 | 2020-09-11 |
+| 2.1.36  | <ol><li>访问事件（vst）上报网站协议 (pt)</li></ol>                                                                                                                                            | 2020-08-21 |
+| 2.1.35  | <ol><li>优化半自动采集浏览事件可观测子节点变化</li></ol>                                                                                                                                             | 2020-05-12 |
+| 2.1.34  | <ol><li>添加圈选模式控制开关配置项 {circleIframe: false}</li></ol>                                                                                                                             | 2020-04-20 |
+| 2.1.33  | <ol><li>设置imp默认为false</li></ol>                                                                                                                                                   | 2020-04-09 |
+| 2.1.32  | <ol><li>设置半自动采集事件默认为false</li></ol>                                                                                                                                               | 2020-03-04 |
+| 2.1.31  | <ol><li>添加Web半自动采集浏览事件</li></ol>                                                                                                                                                  | 2020-03-03 |
+| 2.1.27  | <ol><li>调整web sdk向触达sdk发送事件时机</li></ol>                                                                                                                                           | 2019-08-10 |
+| 2.1.26  | <ol><li>添加 window._gr_ignore_local_rule 变量，用于忽略本地不采集规则</li></ol>                                                                                                                  | 2019-07-30 |
+| 2.1.25  | <ol><li>移除对localhost，127.0.0.1本地地址的采集</li></ol>                                                                                                                                   | 2019-07-23 |
+| 2.1.24  | <ol><li>添加window.name复写日志</li></ol>                                                                                                                                               | 2019-07-03 |
+| 2.1.23  | <ol><li>添加event事件监听器</li></ol>                                                                                                                                                    | 2019-06-03 |
+| 2.1.22  | <ol><li>添加埋点事件参数校验</li></ol>                                                                                                                                                      | 2019-04-26 |
+| 2.1.21  | <ol><li>解决Hybrid SDK加载后Web JS SDK无法加载问题</li><li>采集内容获取兼容IE8</li></ol>                                                                                                             | 2019-04-25 |
+| 2.1.20  | <ol><li>修复Cookie清空后，页面浏览时间取值不准确问题</li></ol>                                                                                                                                       | 2019-03-27 |
+| 2.1.19  | <ol><li>优化代码，提高 SDK 采集容错性</li></ol>                                                                                                                                               | 2019-01-29 |
+| 2.1.18  | <ol><li>支持imp采集container数据</li></ol>                                                                                                                                              | 2019-01-19 |
+| 2.1.17  | <ol><li>支持用户设置访问用户变量</li></ol>                                                                                                                                                    | 2018-10-30 |
+| 2.1.16  | <ol><li>修复部分情况下 SDK 通信失效导致网站无法圈选的问题</li><li>支持Chrome圈选插件适配 iframe 嵌套的场景</li><li>采集数据实时回掉接口 addRealTimeCallback 支持默认上报所有事件类型</li><li>增加 ignoreClck 配置项，开启后不采集任何点击事件</li></ol>      | 2018-09-08 |
+| 2.1.15  | <ol><li>优化sdk在圈选初始化时的运行效率</li><li>优化分群批量上传登录用户ID时部分ID没有取到的问题</li><li>修复修改sdk的origin字段后可能无法圈选的问题</li><li>修复clearUserId接口不起作用的问题</li><li>修复app版本和网站/手机应用两个维度无法与自定义事件关联的问题</li></ol> | 2018-08-08 |
+| 2.1.14  | <ol><li>修复设置登陆用户ID时可能会报错的问题</li><li>优化元素浏览量数据的上行数量，上行每次用户行为后60秒内的元素浏览量</li></ol>                                                                                                  | 2018-07-26 |
+| 2.1.13  | <ol><li>扩大采样功能边界，自定义事件的发送也进入采样控制范围</li><li>优化元素浏览量的采集方式，解决svg元素浏览量少发的问题</li></ol>                                                                                                 | 2018-07-19 |
+| 2.1.12  | <ol><li>优化cdn发版效率</li><li>优化cookie使用方式，大幅降低SDK所需占用的浏览器cookie</li></ol>                                                                                                            | 2018-07-17 |
+| 2.1.11  | <ol><li>支持GrowingIO Chrome圈选插件</li></ol>                                                                                                                                          | 2018-07-10 |
+| 2.1.10  | <ol><li>优化SDK启动效率</li><li>优化数据发送效率</li><li>修复了同时打开多个页面的情况下page事件少发的问题</li><li>修复若干兼容性问题</li><li>增加容错客户不慎重复集成SDK的情况</li></ol>                                                      | 2018-07-03 |
+| 2.1.9   | <ol><li>修复在iframe+jQuery情况下page事件少发的问题</li><li>修复设置采样情况下的兼容性问题</li></ol>                                                                                                          | 2018-06-01 |
+| 2.1.8   | <ol><li>支持GDPR欧盟区一般数据保护条例</li><li>修复若干兼容性问题</li></ol>                                                                                                                             | 2018-05-21 |
+| 2.1.7   | <ol><li>支持圈选弹层在整个页面内拖拽</li></ol>                                                                                                                                                  | 2018-04-24 |
+| 2.1.6   | <ol><li>修复部分情况下vst事件重发的问题</li><li>修复部分情况下元素无浏览量的问题</li><li>增加手动发送page事件的接口以解决在单页面等场景下丢失page事件的问题</li></ol>                                                                        | 2018-04-09 |
