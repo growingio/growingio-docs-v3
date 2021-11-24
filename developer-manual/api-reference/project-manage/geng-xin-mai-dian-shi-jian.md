@@ -1,14 +1,16 @@
-# 创建埋点事件
+---
+description: 不支持批量更新，body内需要使用数组形式。
+---
 
-> 创建打点事件，打点事件支持批量创建，如果一次仅创建一条，body 内也需要使用数组形式。
+# 更新埋点事件
 
 ## URL
 
-`https://www.growingio.com/v1/api/projects/{project_uid}/dim/events`
+`https://www.growingio.com/v1/api/projects/{project_uid}/dim/events/{event_id}`
 
 ## 请求类型
 
-POST
+PUT
 
 ## 请求头参数
 
@@ -18,9 +20,10 @@ POST
 
 {% tabs %}
 {% tab title="请求参数" %}
-| 路径参数         | 类型     | 是否必传 | 说明     |
-| ------------ | ------ | ---- | ------ |
-| project\_uid | string | 是    | 项目UID。 |
+| 路径参数         | 类型     | 是否必传 | 说明      |
+| ------------ | ------ | ---- | ------- |
+| project\_uid | string | 是    | 项目UID。  |
+| event\_id    | string | 是    | 埋点事件ID。 |
 
 | body参数 | 类型 | 是否必传 | 说明 |
 | ------ | -- | ---- | -- |

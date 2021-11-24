@@ -204,6 +204,8 @@
     * [从项目内移除成员](developer-manual/api-reference/project-manage/delete-member.md)
     * [获取埋点事件列表](developer-manual/api-reference/project-manage/getevent.md)
     * [创建埋点事件](developer-manual/api-reference/project-manage/create-event.md)
+    * [更新埋点事件](developer-manual/api-reference/project-manage/geng-xin-mai-dian-shi-jian.md)
+    * [删除埋点事件](developer-manual/api-reference/project-manage/shan-chu-mai-dian-shi-jian.md)
     * [获取事件级变量](developer-manual/api-reference/project-manage/get-cstm.md)
     * [创建事件级变量](developer-manual/api-reference/project-manage/create-cstm.md)
     * [获取页面级变量](developer-manual/api-reference/project-manage/get-pvar.md)
