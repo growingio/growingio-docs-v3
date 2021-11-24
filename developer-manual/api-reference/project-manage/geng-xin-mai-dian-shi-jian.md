@@ -4,6 +4,10 @@ description: 不支持批量更新，body内需要使用数组形式。
 
 # 更新埋点事件
 
+{% hint style="warning" %}
+灰度功能 ，如需体验试用，请联系客户经理 。
+{% endhint %}
+
 ## URL
 
 `https://www.growingio.com/v1/api/projects/{project_uid}/dim/events/{event_id}`
