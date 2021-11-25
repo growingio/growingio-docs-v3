@@ -4,6 +4,8 @@
 灰度功能 ，如需体验试用，请联系客户经理 。
 {% endhint %}
 
+**注意事项：调用删除埋点接口，与页面删除功能效果一致。埋点删除后，会从报表界面消失，由该事件保存的历史数据也会消失。删除后无法恢复，请谨慎使用！**
+
 ## URL
 
 `https://www.growingio.com/v1/api/projects/{project_uid}/dim/events/{event_id}`
