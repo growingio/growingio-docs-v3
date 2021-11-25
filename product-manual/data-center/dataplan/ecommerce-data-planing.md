@@ -20,11 +20,11 @@ description: 只需选择场景，即可开启数据规划
 
 二. 单击您需要的看板，可查看看板模板中的数据展示。
 
-![](https://growingio.atlassian.net/wiki/download/thumbnails/989757556/image2019-12-17\_14-47-33.png?version=1\&modificationDate=1576565183244\&cacheVersion=1\&api=v2\&width=900\&height=523)
+![](../../../.gitbook/assets/电商行业数据规划2.png)
 
 三. 在看板模板详情内，单击右下角的生成数据方案，查看此方案中的事件和变量。
 
-![](https://growingio.atlassian.net/wiki/download/thumbnails/989757556/image2019-12-17\_14-50-37.png?version=1\&modificationDate=1576565365471\&cacheVersion=1\&api=v2\&width=900\&height=545)
+![](../../../.gitbook/assets/电商行业数据规划3.png)
 
 四. 单击确定生成方案，即可将此看版添加到您的首页自定义看板中，当前方案的事件和变量也会在数据管理中生成。
 
