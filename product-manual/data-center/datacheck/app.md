@@ -24,4 +24,4 @@
 
 四. 验证完成后，单击页面下方的结束校验，生成验证报告。
 
-![](<../../../.gitbook/assets/image (177).png>)
+![](<../../../.gitbook/assets/image (177) (1).png>)
