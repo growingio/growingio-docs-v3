@@ -10,11 +10,11 @@
 
 一. 在顶部导航栏选择”数据中心 > 数据校验 > 开始校验（仅App）“，进入数据校验模块。
 
-![](https://growingio.atlassian.net/wiki/download/thumbnails/990019726/image2019-12-5\_20-2-58.png?version=1\&modificationDate=1575547348382\&cacheVersion=1\&api=v2\&width=600\&height=612)
+![](<../../../.gitbook/assets/image (178).png>)
 
 二. 单击添加事件/变量，选择待验证的自定义事件及其他变量，单击下一步。
 
-![](<../../../.gitbook/assets/image (178).png>)
+![](<../../../.gitbook/assets/image (178) (1).png>)
 
 三. 选择要验证的移动端应用，使用手机端扫码器扫码二维码，唤起手机端App，在App中进行操作，在调试页面进行验证。
 
