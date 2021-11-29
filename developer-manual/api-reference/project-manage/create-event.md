@@ -45,7 +45,29 @@ POST
 | id | Sring | 是    | 事件级变量的UID。 |
 {% endtab %}
 
+{% tab title="请求示例" %}
+```
+[
+    {
+        "key": "test_2021111",
+        "name": "test_2021111",
+        "description": "test",
+        "type": "counter",
+        "attrs": [
+            {
+                "id": "nRbNYlR3"
+            },{
+                "id": "kGRwO4RZ"
+            }
+        ]
+    }
+]
+```
+{% endtab %}
+
 {% tab title="响应示例" %}
 200：OK
 {% endtab %}
 {% endtabs %}
+
+* id（事件级变量ID）可通过[获取事件级变量](get-cstm.md)获取

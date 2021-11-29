@@ -33,3 +33,4 @@ DELETE
 {% endtab %}
 {% endtabs %}
 
+* event\_id（埋点事件ID）可通过[获取埋点事件列表](getevent.md)获取
