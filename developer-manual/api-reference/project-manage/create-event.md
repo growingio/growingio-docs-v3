@@ -49,15 +49,15 @@ POST
 ```
 [
     {
-        "key": "test_2021111",
-        "name": "test_2021111",
-        "description": "test",
+        "key": "test",
+        "name": "test",
+        "description": "这是事件描述。。",
         "type": "counter",
         "attrs": [
             {
-                "id": "nRbNYlR3"
+                "id": "RbDnyqNG"
             },{
-                "id": "kGRwO4RZ"
+                "id": "RexMqYbL"
             }
         ]
     }

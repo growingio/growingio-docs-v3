@@ -56,15 +56,15 @@ PUT
 ```
 [
     {
-        "key": "test_2021111",
-        "name": "test_2021111",
-        "description": "test",
+        "key": "test",
+        "name": "test_这是更新后的名字",
+        "description": "这是更新后的事件描述。。",
         "type": "counter",
         "attrs": [
             {
-                "id": "nRbNYlR3"
+                "id": "RbDnyqNG"
             },{
-                "id": "kGRwO4RZ"
+                "id": "RexMqYbL"
             }
         ]
     }
