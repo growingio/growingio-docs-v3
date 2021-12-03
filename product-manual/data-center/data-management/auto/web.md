@@ -24,7 +24,7 @@ URL**示意：**www.xxx.com**/**12345/678/123**?**id=1\&ig=2
 
 ![](https://docs.growingio.com/.gitbook/assets/9412f46a-d87c-41ef-9ee6-9e6e408f4c6a-12626-00000bcf696b73c5\_tmp.jpg)
 
-## 圈选操作 <a href="1-kai-shi-quan-xuan" id="1-kai-shi-quan-xuan"></a>
+## 圈选操作 <a href="#1-kai-shi-quan-xuan" id="1-kai-shi-quan-xuan"></a>
 
 在顶部导航栏选择“**数据中心 > 无埋点事件定义（圈选） > 您的Web应用”**，进入Web圈选模式。
 
@@ -134,7 +134,7 @@ Web圈选模式分为浏览和圈选两个模式
 埋点优先，埋点页面的数据不受任何影响，只在没有埋点或延时导致埋点数据没有发出来时，会取”标识符“相同的查询条件对应的值。
 {% endhint %}
 
-### **设置查询条件为页面级变量的案例详解** <a href="2-an-li-xiang-jie" id="2-an-li-xiang-jie"></a>
+### **设置查询条件为页面级变量的案例详解** <a href="#2-an-li-xiang-jie" id="2-an-li-xiang-jie"></a>
 
 如果你之前进行了埋点，那么这个功能上线后会发生什么变化呢？
 
@@ -182,7 +182,7 @@ Web圈选模式分为浏览和圈选两个模式
 单击圈选页面右上角的最近更新，查看刚刚定义的元素。
 {% endhint %}
 
-## 定义页面案例 <a href="3-qi-ta-te-shu-qing-kuang" id="3-qi-ta-te-shu-qing-kuang"></a>
+## 定义页面案例 <a href="#3-qi-ta-te-shu-qing-kuang" id="3-qi-ta-te-shu-qing-kuang"></a>
 
 ### **基础步骤 | 监控首页和全站的流量情况**
 
@@ -240,7 +240,7 @@ GrowingIO 在线旅游解决方案落地页 `https://www.growingio.com/solution/
 
 GrowingIO 互联网金融解决方案落地页 `https://www.growingio.com​/solution/internet-finance`
 
-我们发现所有的解决方案落地页都是 `https://www.growingio.com/solution/xxx `，那么如果我想统计所有解决方案页的页面情况，就可以通过通配符「\*」来定义一组页面 `https://www.growingio.com/solution/*`，即：​
+我们发现所有的解决方案落地页都是 `https://www.growingio.com/solution/xxx` ，那么如果我想统计所有解决方案页的页面情况，就可以通过通配符「\*」来定义一组页面 `https://www.growingio.com/solution/*`，即：​
 
 ![](https://docs.growingio.com/.gitbook/assets/20\_59\_35\_\_04\_25\_2018.jpg)
 
@@ -308,7 +308,7 @@ GrowingIO 提供支持 Web 圈选的 Chrome 扩展程序。
 
 **插件安装**
 
-插件（最新版）手动下载地址： [https://s.growingio.com/5EoKZl](https://s.growingio.com/5EoKZl)，请参考[手动安装插件方法](https://s.growingio.com/2Z4mBB)。
+插件（最新版）手动下载地址：[https://s.growingio.com/5EoKZl](https://s.growingio.com/5EoKZl)，请参考[手动安装插件方法](https://s.growingio.com/2Z4mBB)。
 
 **圈选步骤**
 
@@ -321,23 +321,23 @@ GrowingIO 提供支持 Web 圈选的 Chrome 扩展程序。
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LrqhnRPBooFdHnT0FSY-Lrqk4QSF2CnHLdo5gu6image.png)
 
-## 常见问题 <a href="2-chang-jian-wen-ti-faq" id="2-chang-jian-wen-ti-faq"></a>
+## 常见问题 <a href="#2-chang-jian-wen-ti-faq" id="2-chang-jian-wen-ti-faq"></a>
 
-### **1. 如何定义「一组相似元素之和」？** <a href="21-ru-he-ding-yi-yi-zu-xiang-si-yuan-su-zhi-he" id="21-ru-he-ding-yi-yi-zu-xiang-si-yuan-su-zhi-he"></a>
+### **1. 如何定义「一组相似元素之和」？** <a href="#21-ru-he-ding-yi-yi-zu-xiang-si-yuan-su-zhi-he" id="21-ru-he-ding-yi-yi-zu-xiang-si-yuan-su-zhi-he"></a>
 
 如果该元素有同类元素，不限定所有的限定条件，即是统计一组同类元素之和的数据。
 
-### **2. 对于已定义过的元素，更改定义规则后，应该如何保存？** <a href="22-dui-yu-yi-ding-yi-guo-de-yuan-su-geng-gai-ding-yi-gui-ze-hou-ying-gai-ru-he-bao-cun" id="22-dui-yu-yi-ding-yi-guo-de-yuan-su-geng-gai-ding-yi-gui-ze-hou-ying-gai-ru-he-bao-cun"></a>
+### **2. 对于已定义过的元素，更改定义规则后，应该如何保存？** <a href="#22-dui-yu-yi-ding-yi-guo-de-yuan-su-geng-gai-ding-yi-gui-ze-hou-ying-gai-ru-he-bao-cun" id="22-dui-yu-yi-ding-yi-guo-de-yuan-su-geng-gai-ding-yi-gui-ze-hou-ying-gai-ru-he-bao-cun"></a>
 
 更改新的规则后，如果原有数据仍然想继续统计，请选择“另存为”来定义新的规则。
 
-### **3. 如何进行文本「内容」的模糊匹配？** <a href="23-ru-he-jin-hang-wen-ben-nei-rong-de-mo-hu-pi-pei" id="23-ru-he-jin-hang-wen-ben-nei-rong-de-mo-hu-pi-pei"></a>
+### **3. 如何进行文本「内容」的模糊匹配？** <a href="#23-ru-he-jin-hang-wen-ben-nei-rong-de-mo-hu-pi-pei" id="23-ru-he-jin-hang-wen-ben-nei-rong-de-mo-hu-pi-pei"></a>
 
 「限定内容」的情况下，将鼠标移动到「内容」的右边，可以看到一个小铅笔，点击小铅笔后，便打开了文本和模式编辑弹窗。默认为精准匹配，即「限定内容为xxx」，若改成模糊匹配，则意义是「限定内容包含xxx」。 保存元素规则后，将按照新的规则进行统计，如果原有数据仍然想继续统计，请选择「另存为」。
 
 ![](https://docs.growingio.com/.gitbook/assets/223435.jpg)
 
-### **4. 月21日迭代后，新旧版本规则对应关系** <a href="24-3-yue-21-ri-die-dai-hou-xin-jiu-ban-ben-gui-ze-dui-ying-guan-xi" id="24-3-yue-21-ri-die-dai-hou-xin-jiu-ban-ben-gui-ze-dui-ying-guan-xi"></a>
+### **4. 月21日迭代后，新旧版本规则对应关系** <a href="#24-3-yue-21-ri-die-dai-hou-xin-jiu-ban-ben-gui-ze-dui-ying-guan-xi" id="24-3-yue-21-ri-die-dai-hou-xin-jiu-ban-ben-gui-ze-dui-ying-guan-xi"></a>
 
 ![](https://docs.growingio.com/.gitbook/assets/ping-mu-kuai-zhao-20180319-shang-wu-11.24.51.png)
 
