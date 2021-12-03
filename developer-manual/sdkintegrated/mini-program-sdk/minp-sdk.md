@@ -2,7 +2,7 @@
 
 ## 准备条件
 
-获取项目ID，获取方法请参考"项目管理 &gt; 项目概览 &gt; [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
+获取项目ID，获取方法请参考"项目管理 > 项目概览 > [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
 
 ## 1. 添加跟踪代码
 
@@ -351,7 +351,7 @@ App.mpType = 'app';
 4. 第一步：更新`index.js`到最新版。
 5. 第二步：添加`npm`包。
 
-```text
+```
 npm install  imports-loader --save-dev
 ```
 
@@ -540,22 +540,44 @@ gio('setConfig', gioConfig);
 {% endtab %}
 {% endtabs %}
 
-### SDK参数配置
+### SDK初始化参数配置
 
 SDK中提供了以下几个参数可以用来进行配置。
 
-| **参数** | 类型/值 | 说明 |
-| :--- | :--- | :--- |
-| version | string | 你的小程序的版本号。 |
-| getLocation.autoGet | true \| false | 是否自动获取用户的地理位置信息，默认 false |
-| getLocation.type | wgs84 \| gcj02 | wgs8：标准坐标系；gcj02：火星坐标系 |
-| followShare | true \| false | 详细跟踪分享数据，开启后可使用分享分析功能，默认true |
-| forceLogin | true \| false | 是否强制要求用户登陆微信获取 openid，默认 false |
-| debug | true \| false | 是否开启调试模式，可以在 console 打印采集的数据，默认 false。发布到生产环境时关闭！！！ |
-| usePlugin | true \| false | 你的小程序中是否使用了第三方插件，默认 false。 |
-| comAsPage | true \| false | 是否将 component 当做 page 处理，默认 false。3.6.1 版本添加。 |
+| **参数**              | 类型/值           | 说明                                                        |
+| ------------------- | -------------- | --------------------------------------------------------- |
+| version             | string         | 你的小程序的版本号。                                                |
+| getLocation.autoGet | true \| false  | 是否自动获取用户的地理位置信息，默认 false                                  |
+| getLocation.type    | wgs84 \| gcj02 | wgs8：标准坐标系；gcj02：火星坐标系                                    |
+| followShare         | true \| false  | 详细跟踪分享数据，开启后可使用分享分析功能，默认true                              |
+| forceLogin          | true \| false  | 是否强制要求用户登陆微信获取 openid，默认 false                            |
+| debug               | true \| false  | 是否开启调试模式，可以在 console 打印采集的数据，默认 false。发布到生产环境时关闭！！！       |
+| usePlugin           | true \| false  | 你的小程序中是否使用了第三方插件，默认 false。                                |
+| comAsPage           | true \| false  | 是否将 component 当做 page 处理，默认 false。3.6.1 版本添加。             |
+| autotrack           | true \| false  | <p>是否开启无埋点采集<br>包括：<code>click, change, submit</code></p> |
+| dataCollect         | true \| false  | 是否开启数据采集，设置为false不进行任何数据采集                                |
 
 每次发布小程序新版本的时候，需要更新一下版本号 version, 与线上发布小程序保持一致; 可以在 GrowingIO 平台使用 “App 版本”维度，分析不同版本的数据。
+
+#### dataCollect
+
+默认情况下，SDK开启数据采集。如果您需要初始化时暂时关闭数据采集，可以通过指定 `dataCollect: false` 关闭。 初始化关闭数据采集后，至您打开数据采集之前都不会采集数据和上报。
+
+```
+
+gio('init', ' GrowingIO 项目ID', '你的小程序AppID', {
+  version: '1.0.0',
+  dataCollect: false  
+});
+```
+
+#### 调用接口开启/关闭数据采集(setDataCollect)
+
+默认开启数据采集。当设置为 `false` 时，SDK将不会采集和上报事件。当设置为 `true` 时，SDK将开启采集和上报事件。
+
+```
+gdp('setDataCollect', true);
+```
 
 #### getLocation
 
@@ -636,11 +658,11 @@ forceLogin: true,      //是否强制要求用户登陆微信获取 openid。默
 作为用户行为数据分析工具，用户信息的完善会给后续的分析带来很大的帮助。在小程序中，微信用户属性是非常重要的设置，只有完善了微信用户属性信息，微信的访问用户变量（如下表）才可以在分析工具中使用，交互数据定义、数据校验功能才会方便通过用户微信相关的信息（微信姓名和头像）定位用户。
 
 | 微信访问用户变量 |
-| :--- |
+| -------- |
 | 微信用户所在城市 |
-| 微信用户所在省 |
+| 微信用户所在省  |
 | 微信用户所在国家 |
-| 微信用户的性别 |
+| 微信用户的性别  |
 
 ### 用户接口
 
@@ -718,17 +740,17 @@ gio('setUser', { id: user.id, name: user.name });
 2. 打开开发设置，到服务器域名配置部分。
 3. 在 **request 合法域名**中添加：https://wxapi.growingio.com
 
-![request &#x5408;&#x6CD5;&#x57DF;&#x540D;](../../../.gitbook/assets/image%20%2888%29.png)
+![request 合法域名](<../../../.gitbook/assets/image (88).png>)
 
 ## 4. 无埋点采集事件逻辑和高级配置
 
-#### 访问数据 <a id="fang-wen-shu-ju"></a>
+#### 访问数据 <a href="#fang-wen-shu-ju" id="fang-wen-shu-ju"></a>
 
 每次用户打开小程序的时候，发送一条`应用打开`消息，对应的数据指标是打开次数。发送数据包含但不限于以下信息：进入页面、进入时间、场景值、来源小程序或 App、设备信息、微信信息、应用版本号。
 
 每次用户关闭小程序的时候，关闭动作包括退出小程序回到微信、退出微信，会发送一条`应用关闭`消息，会根据这个消息来计算应用访问时长。发送数据包含但不限于以下信息：退出页面、退出时间。
 
-#### 页面数据 <a id="ye-mian-shu-ju"></a>
+#### 页面数据 <a href="#ye-mian-shu-ju" id="ye-mian-shu-ju"></a>
 
 每次用户访问一个新的页面，发送一条`页面打开`消息，对应的数据意义是页面分析。发送数据包含但不限于以下信息：页面信息、打开时间、页面来源、页面标题、页面级变量。
 
@@ -744,7 +766,7 @@ tap 事件是手指触摸后马上离开时触发的事件。当 wxml 中的 vie
 
 代码示例
 
-比如如下&lt;view data-title='复仇者联盟3' data-index='1' bindtap='clickMovie'&gt;
+比如如下\<view data-title='复仇者联盟3' data-index='1' bindtap='clickMovie'>
 
 ```java
 <view data-title='复仇者联盟3' data-index='1' bindtap='clickMovie'>
@@ -864,7 +886,7 @@ class 中必须加 growing\_collect\_imp 。
 
 ### 注册监听
 
-在对应的 Page.js 的onShow方法中，调用 gio\('collectImp', this\)
+在对应的 Page.js 的onShow方法中，调用 gio('collectImp', this)
 
 ```java
 Page({
@@ -899,4 +921,3 @@ GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 方式二：在SDK中设置了Debug模式后，在微信开发者工具中查看数据采集日志。
 
 方式三：[数据校验](https://docs.growingio.com/v3/product-manual/data-center/datacheck/)
-
