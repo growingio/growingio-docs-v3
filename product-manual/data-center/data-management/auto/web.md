@@ -310,6 +310,10 @@ GrowingIO 提供支持 Web 圈选的 Chrome 扩展程序。
 
 插件（最新版）手动下载地址：[https://s.growingio.com/5EoKZl](https://s.growingio.com/5EoKZl)，请参考[手动安装插件方法](https://s.growingio.com/2Z4mBB)。
 
+{% hint style="info" %}
+若点击下载地址无法自动下载，可复制https://s.growingio.com/5EoKZl，黏贴至浏览器地址栏，进行下载。
+{% endhint %}
+
 **圈选步骤**
 
 1. **圈**选插件安装成功后，**直接在 Chrome 浏览器中打开待圈选网站**。
