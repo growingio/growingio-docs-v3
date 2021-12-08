@@ -556,6 +556,7 @@ SDK中提供了以下几个参数可以用来进行配置。
 | comAsPage           | true \| false  | 是否将 component 当做 page 处理，默认 false。3.6.1 版本添加。             |
 | autotrack           | true \| false  | <p>是否开启无埋点采集<br>包括：<code>click, change, submit</code></p> |
 | dataCollect         | true \| false  | 是否开启数据采集，设置为false不进行任何数据采集                                |
+| enableEventStore    | true \| false  | 是否开启事件本地存储，默认false；设为true，则会开启本地存储（SDK版本>=3.7.4）          |
 
 每次发布小程序新版本的时候，需要更新一下版本号 version, 与线上发布小程序保持一致; 可以在 GrowingIO 平台使用 “App 版本”维度，分析不同版本的数据。
 

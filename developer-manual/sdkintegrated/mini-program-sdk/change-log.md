@@ -1,242 +1,27 @@
 # 更新日志
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x7248;&#x672C;</th>
-      <th style="text-align:left">&#x4FEE;&#x8BA2;&#x8BB0;&#x5F55;</th>
-      <th style="text-align:left">&#x65F6;&#x95F4;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">3.7.2</td>
-      <td style="text-align:left">&#x65B0;&#x589E;&#x5BF9;Taro3&#x6846;&#x67B6;&#x7684;&#x652F;&#x6301;</td>
-      <td
-      style="text-align:left">2021-08-25</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.7.0</td>
-      <td style="text-align:left">
-        <p></p>
-        <ol>
-          <li>&#x5206;&#x4EAB;&#x4F18;&#x5316;</li>
-          <li>&#x5FAE;&#x4FE1;getUserProfile&#x63A5;&#x53E3;&#x7684;&#x9002;&#x914D;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2021-04-28</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.6.1</td>
-      <td style="text-align:left">
-        <ol>
-          <li>&#x65B0;&#x589E; comAsPage &#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x6539;&#x914D;&#x7F6E;&#x9879;&#x4E3A;
-            true &#x5C06; component &#x5F53;&#x505A; page &#x5904;&#x7406;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;
-            false&#xFF0C;&#x4EC5;&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#x751F;&#x6548;&#x3002;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2021-01-20</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.5.9</td>
-      <td style="text-align:left">
-        <p></p>
-        <ol>
-          <li>&#x652F;&#x6301;&#x9A7C;&#x5CF0;&#x547D;&#x540D;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;&#x53D8;&#x91CF;&#xFF0C;&#x5982;&#x4E8B;&#x4EF6;&#x53D8;&#x91CF;&#x4E3A;
-            fooBar &#x57CB;&#x70B9;&#x65F6;&#x4E3A; data-gio-track-foo-bar&#x3002;
-            &#x6CE8;&#x610F;&#xFF1A;&#x4E0D;&#x652F;&#x6301;&#x5176;&#x4ED6;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;&#x53D8;&#x91CF;&#x7684;&#x7EC4;&#x5408;&#x3002;</li>
-        </ol>
-      </td>
-      <td style="text-align:left">2021-01-13</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.5.8</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x5F00;&#x542F; forceLogin &#x4F46;&#x662F;&#x662F;&#x672A;&#x8C03;&#x7528;
-            identity &#x65F6;&#x6253;&#x5370;&#x544A;&#x8B66;&#x65E5;&#x5FD7;</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2020-12-28</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.5.7</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x4FEE;&#x590D;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x76F4;&#x63A5;&#x6253;&#x5F00;&#x5206;&#x4EAB;&#x9875;&#x9762;&#xFF0C;page
-            &#x4E8B;&#x4EF6;&#x65F6;&#x95F4;&#x9519;&#x8BEF;&#x7684;&#x95EE;&#x9898;</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2020-12-09</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.5.6</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x4FEE;&#x590D;&#x5728; Windows &#x4E0B;&#x6253;&#x5F00;&#xFF0C;visit
-            &#x4E8B;&#x4EF6;&#x56E0;&#x83B7;&#x53D6;&#x4E0D;&#x5230; path &#x800C;&#x62A5;&#x9519;&#x95EE;&#x9898;</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2020-11-24</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.5.5</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x8BBE;&#x7F6E;&#x767B;&#x5F55; ID &#x4EE5;&#x540E;&#x91CD;&#x542F;&#x5C0F;&#x7A0B;&#x5E8F;&#x4ECD;&#x7136;&#x751F;&#x6548;</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2020-10-09</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.5.4</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x517C;&#x5BB9; Taro 3.x &#x6846;&#x67B6;&#x4E8B;&#x4EF6;&#x673A;&#x5236;</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2020-09-11</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.5.3</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x4FEE;&#x590D; Taro 3.x &#x6846;&#x67B6; hook &#x914D;&#x7F6E;&#x53EA;&#x8BFB;&#x65B9;&#x6CD5;&#x62A5;&#x9519;</li>
-          <li>&#x4FEE;&#x590D;&#x540C;&#x540D;&#x4E8B;&#x4EF6;&#x540C;&#x65F6;&#x89E6;&#x53D1;&#x591A;&#x6B21;&#x65F6;&#xFF0C;&#x91CD;&#x590D;&#x5F39;&#x7A97;&#x7684;&#x95EE;&#x9898;</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2020-09-04</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.5.2</td>
-      <td style="text-align:left">
-        <p></p>
-        <ul>
-          <li>&#x517C;&#x5BB9;&#x83B7;&#x53D6;&#x65F6;&#x533A;&#x5931;&#x8D25;&#x7684;&#x60C5;&#x51B5;</li>
-          <li>&#x9650;&#x5236; SDK &#x4E0A;&#x62A5;&#x8BF7;&#x6C42;&#x6570;&#x6700;&#x591A;&#x4E3A;
-            3 &#x4E2A;&#xFF0C;&#x9632;&#x6B62;&#x8017;&#x5C3D;&#x5C0F;&#x7A0B;&#x5E8F;&#x94FE;&#x63A5;</li>
-          <li>&#x8BBE;&#x7F6E; SDK &#x4E0A;&#x62A5;&#x8BF7;&#x6C42;&#x8D85;&#x65F6;&#x4E3A;
-            5 &#x79D2;&#x949F;&#xFF0C;&#x8D85;&#x8FC7; 5 &#x79D2;&#x7EC8;&#x6B62;&#x8BF7;&#x6C42;</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2020-08-31</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.5.1</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x517C;&#x5BB9; ES6 Class &#x5173;&#x952E;&#x5B57;&#x5B9A;&#x4E49;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;
-            Hook</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2020-08-13</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.5.0</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x5FAE;&#x4FE1;&#x4E0E;&#x652F;&#x4ED8;&#x5B9D;&#x5C0F;&#x7A0B;&#x5E8F;&#x652F;&#x6301;&#x89E6;&#x8FBE;
-            SDK (OP &#x7248;)</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2020-07-29</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.4.7</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x4FEE;&#x590D; Tano 3.x &#x6846;&#x67B6;&#x4E0B;&#x67D0;&#x4E9B;&#x4E8B;&#x4EF6;&#x91CD;&#x590D;&#x91C7;&#x96C6;&#x7684;&#x95EE;&#x9898;</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2020-07-14</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.4.6</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x652F;&#x6301;&#x767E;&#x5EA6;&#x5C0F;&#x7A0B;&#x5E8F; App.after &#x548C;
-            Page.after &#x65B9;&#x6CD5; Hook</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2020-06-10</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.4.5</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x4FEE;&#x590D;&#x67D0;&#x4E9B;&#x6781;&#x7AEF;&#x60C5;&#x51B5;&#x4E0B;&#x8BBF;&#x95EE;&#x7528;&#x6237;
-            id &#x751F;&#x6210;&#x9519;&#x8BEF;</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2020-06-09</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.4.4</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x4FEE;&#x590D;&#x5C0F;&#x7A0B;&#x5E8F;&#x8FDB;&#x5165;&#x9875;&#x662F;
-            Webview &#x65F6;&#x53D6;&#x4E0D;&#x5230;&#x8BBF;&#x95EE;&#x7528;&#x6237;
-            id &#x7684;&#x95EE;&#x9898;</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2020-06-01</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.4.3</td>
-      <td style="text-align:left">
-        <p></p>
-        <ul>
-          <li>&#x652F;&#x6301; Tano 3.x &#x6846;&#x67B6;</li>
-          <li>&#x4FEE;&#x6539;&#x9875;&#x9762;&#x8BBF;&#x95EE;&#x6765;&#x6E90;&#x5B57;&#x6BB5;&#x540D;&#x79F0;</li>
-          <li>&#x4FEE;&#x6539; close &#x4E8B;&#x4EF6;&#x7684;&#x7C7B;&#x578B;&#x4E3A;
-            VISIT_CLOSE</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2020-05-18</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.4.2</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x652F;&#x6301;&#x5C0F;&#x7A0B;&#x5E8F;&#x9875;&#x9762;&#x5207;&#x6362;&#x4E8B;&#x4EF6;&#x91C7;&#x96C6;</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2020-05-18</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.4.1</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x589E;&#x52A0;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;&#x4E8B;&#x4EF6;&#x540D;&#x79F0;&#x547D;&#x540D;&#x89C4;&#x8303;&#x68C0;&#x67E5;</li>
-          <li>&#x517C;&#x5BB9;&#x767E;&#x5EA6;&#x5C0F;&#x7A0B;&#x5E8F; errorEvent</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2020-03-14</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.4.0</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x652F;&#x4ED8;&#x5B9D;&#x5C0F;&#x7A0B;&#x5E8F;&#x652F;&#x6301;&#x5F39;&#x7A97;&#x9884;&#x89C8;&#x53CA;&#x5C55;&#x793A;</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2020-03-10</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">3.0.0</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x91CD;&#x6784;&#x5C0F;&#x7A0B;&#x5E8F; SDK &#x589E;&#x5F3A;&#x53EF;&#x7EF4;&#x62A4;&#x6027;&#x548C;&#x6613;&#x7528;&#x6027;</li>
-          <li>&#x652F;&#x6301; SDK &#x521D;&#x59CB;&#x5316;&#x81EA;&#x5B9A;&#x4E49;&#x914D;&#x7F6E;
-            setConfig</li>
-          <li>&#x5E9F;&#x5F03; gio-webview &#x7EC4;&#x4EF6;&#xFF0C;&#x63D0;&#x4F9B;
-            H5 &#x5185;&#x5D4C;&#x9875; SDK</li>
-          <li>&#x9ED8;&#x8BA4;&#x6253;&#x5F00; followshare&#xFF0C;&#x96C6;&#x6210;&#x5373;&#x53EF;&#x4F7F;&#x7528; <b>&#x5206;&#x4EAB;&#x5206;&#x6790;</b> &#x529F;&#x80FD;</li>
-          <li>&#x652F;&#x6301;&#xFF1A;&#x767E;&#x5EA6;&#x3001;QQ&#x3001;&#x5B57;&#x8282;&#x8DF3;&#x52A8;&#x3001;&#x5FEB;&#x5E94;&#x7528;&#x5E73;&#x53F0;&#x5C0F;&#x7A0B;&#x5E8F;</li>
-        </ul>
-      </td>
-      <td style="text-align:left">2019-09-17</td>
-    </tr>
-  </tbody>
-</table>
-
+| 版本    | 修订记录                                                                                                                                                                                                     | 时间         |
+| ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| 3.7.4 | <p></p><ul><li>增加事件存储开关enableEventStore，默认false</li><li>修复当用户没有调用获取用户信息时，提审会要求申请权限的问题</li></ul>                                                                                                          | 2021-12-08 |
+| 3.7.2 | 新增对Taro3框架的支持                                                                                                                                                                                            | 2021-08-25 |
+| 3.7.0 | <p></p><ol><li>分享优化</li><li>微信getUserProfile接口的适配</li></ol>                                                                                                                                              | 2021-04-28 |
+| 3.6.1 | <ol><li>新增 comAsPage 配置项，改配置项为 true 将 component 当做 page 处理，默认值为 false，仅微信小程序生效。</li></ol>                                                                                                                | 2021-01-20 |
+| 3.5.9 | <p></p><ol><li>支持驼峰命名埋点事件变量，如事件变量为 fooBar 埋点时为 data-gio-track-foo-bar。 注意：不支持其他埋点事件变量的组合。</li></ol>                                                                                                      | 2021-01-13 |
+| 3.5.8 | <ul><li>开启 forceLogin 但是是未调用  identity 时打印告警日志</li></ul>                                                                                                                                                 | 2020-12-28 |
+| 3.5.7 | <ul><li>修复某些情况下直接打开分享页面，page 事件时间错误的问题</li></ul>                                                                                                                                                         | 2020-12-09 |
+| 3.5.6 | <ul><li>修复在 Windows 下打开，visit 事件因获取不到 path 而报错问题</li></ul>                                                                                                                                               | 2020-11-24 |
+| 3.5.5 | <ul><li>设置登录 ID 以后重启小程序仍然生效</li></ul>                                                                                                                                                                    | 2020-10-09 |
+| 3.5.4 | <ul><li>兼容 Taro 3.x 框架事件机制</li></ul>                                                                                                                                                                     | 2020-09-11 |
+| 3.5.3 | <ul><li>修复 Taro 3.x 框架 hook 配置只读方法报错</li><li>修复同名事件同时触发多次时，重复弹窗的问题</li></ul>                                                                                                                             | 2020-09-04 |
+| 3.5.2 | <p></p><ul><li>兼容获取时区失败的情况</li><li>限制 SDK 上报请求数最多为 3 个，防止耗尽小程序链接</li><li>设置 SDK 上报请求超时为 5 秒钟，超过 5 秒终止请求</li></ul>                                                                                        | 2020-08-31 |
+| 3.5.1 | <ul><li>兼容 ES6 Class 关键字定义类的方法 Hook</li></ul>                                                                                                                                                            | 2020-08-13 |
+| 3.5.0 | <ul><li>微信与支付宝小程序支持触达 SDK (OP 版)</li></ul>                                                                                                                                                               | 2020-07-29 |
+| 3.4.7 | <ul><li>修复 Tano 3.x 框架下某些事件重复采集的问题</li></ul>                                                                                                                                                             | 2020-07-14 |
+| 3.4.6 | <ul><li>支持百度小程序 App.after 和 Page.after 方法 Hook</li></ul>                                                                                                                                                 | 2020-06-10 |
+| 3.4.5 | <ul><li>修复某些极端情况下访问用户 id 生成错误</li></ul>                                                                                                                                                                  | 2020-06-09 |
+| 3.4.4 | <ul><li>修复小程序进入页是 Webview 时取不到访问用户 id 的问题</li></ul>                                                                                                                                                      | 2020-06-01 |
+| 3.4.3 | <p></p><ul><li>支持 Tano 3.x 框架</li><li>修改页面访问来源字段名称</li><li>修改 close 事件的类型为 VISIT_CLOSE</li></ul>                                                                                                         | 2020-05-18 |
+| 3.4.2 | <ul><li>支持小程序页面切换事件采集</li></ul>                                                                                                                                                                          | 2020-05-18 |
+| 3.4.1 | <ul><li>增加埋点事件事件名称命名规范检查</li><li>兼容百度小程序 errorEvent </li></ul>                                                                                                                                           | 2020-03-14 |
+| 3.4.0 | <ul><li>支付宝小程序支持弹窗预览及展示</li></ul>                                                                                                                                                                        | 2020-03-10 |
+| 3.0.0 | <ul><li>重构小程序 SDK 增强可维护性和易用性</li><li>支持 SDK 初始化自定义配置 setConfig</li><li>废弃 gio-webview 组件，提供 H5 内嵌页 SDK</li><li>默认打开 followshare，集成即可使用 <strong>分享分析</strong> 功能</li><li>支持：百度、QQ、字节跳动、快应用平台小程序</li></ul> | 2019-09-17 |
