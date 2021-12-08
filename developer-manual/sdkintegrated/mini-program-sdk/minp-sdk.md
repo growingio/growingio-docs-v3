@@ -580,6 +580,11 @@ gio('init', ' GrowingIO 项目ID', '你的小程序AppID', {
 gdp('setDataCollect', true);
 ```
 
+#### enableEventStore
+
+默认情况下，SDK关闭事件存储功能。此功能在小程序storage中存储SDK已上报的事件数据，用于运营SDK消费，**隔天清空**。\
+**如果您不使用运营SDK可忽略此配置；如果您使用运营SDK，必须开启此配置项，设置为 `true`。**
+
 #### getLocation
 
 根据微信最新的用户地理位置获取的规则，GrowingIO 小程序SDK 默认不会在小程序启动时获取用户的坐标信息。
