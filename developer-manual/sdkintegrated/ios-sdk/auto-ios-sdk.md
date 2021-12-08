@@ -40,7 +40,7 @@ GrowingIO iOS SDK 包含以下2个组件SDK:
 {% endtab %}
 
 {% tab title="手动添加" %}
-1. 下载iOS SDK以下包：[GrowingHeader](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-PublicHeader-2.9.3.zip) ，[GrowingCoreKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-CoreKit-2.9.3.zip)，[GrowingAutoTrackKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-AutoTrackKit-2.9.3.zip)，并解压。
+1. 下载iOS SDK以下包：[GrowingHeader](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-PublicHeader-2.9.9.zip) ，[GrowingCoreKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-CoreKit-2.9.9.zip)，[GrowingAutoTrackKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-AutoTrackKit-2.9.9.zip)，并解压。
 2. 将`Growing.h`、`GrowingCoreKit.framework`、`GrowingAutoTrackKit.framework`添加到iOS工程中。
 
 {% hint style="info" %}
@@ -70,7 +70,7 @@ GrowingIO iOS SDK 包含以下2个组件SDK:
 
 ![](<../../../.gitbook/assets/image (77).png>)
 
-### 2. 添加 URL Scheme <a href="urlscheme" id="urlscheme"></a>
+### 2. 添加 URL Scheme <a href="#urlscheme" id="urlscheme"></a>
 
 添加URL Scheme 到项目中，以便唤醒您的程序进行圈选。
 
@@ -261,7 +261,7 @@ view.growingAttributesValue = 广告的唯一ID;
 * 对不同广告图，广告的唯一 ID 也不相同
 * 响应点击的控件，与设置 ID 的控件是同一个
 
-#### 【例子】当您的横向滚动广告共有3张广告图时，您可以在3个响应点击的View上分别设置不同的广告唯一ID，实现方式： <a href="li-zi-dang-nin-de-heng-xiang-gun-dong-guang-gao-gong-you-3-zhang-guang-gao-tu-shi-nin-ke-yi-zai-3-ge" id="li-zi-dang-nin-de-heng-xiang-gun-dong-guang-gao-gong-you-3-zhang-guang-gao-tu-shi-nin-ke-yi-zai-3-ge"></a>
+#### 【例子】当您的横向滚动广告共有3张广告图时，您可以在3个响应点击的View上分别设置不同的广告唯一ID，实现方式： <a href="#li-zi-dang-nin-de-heng-xiang-gun-dong-guang-gao-gong-you-3-zhang-guang-gao-tu-shi-nin-ke-yi-zai-3-ge" id="li-zi-dang-nin-de-heng-xiang-gun-dong-guang-gao-gong-you-3-zhang-guang-gao-tu-shi-nin-ke-yi-zai-3-ge"></a>
 
 ```swift
 view1.growingAttributesValue = @"ad1";
@@ -304,7 +304,7 @@ SDK会自动采集H5页面的数据，不需要特殊配置。
 {% hint style="info" %}
 SDK 2.8.6及以上版本支持手动关闭采集GPS数据。
 
-`//设置为NO，将关闭GPS采集  `\
+`//设置为NO，将关闭GPS采集`  \
 `+(void)setEnableLocationTrack:(BOOL)enable;`
 {% endhint %}
 
