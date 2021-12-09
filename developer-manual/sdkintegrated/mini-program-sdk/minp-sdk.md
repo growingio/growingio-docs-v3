@@ -544,19 +544,19 @@ gio('setConfig', gioConfig);
 
 SDK中提供了以下几个参数可以用来进行配置。
 
-| **参数**              | 类型/值           | 说明                                                        |
-| ------------------- | -------------- | --------------------------------------------------------- |
-| version             | string         | 你的小程序的版本号。                                                |
-| getLocation.autoGet | true \| false  | 是否自动获取用户的地理位置信息，默认 false                                  |
-| getLocation.type    | wgs84 \| gcj02 | wgs8：标准坐标系；gcj02：火星坐标系                                    |
-| followShare         | true \| false  | 详细跟踪分享数据，开启后可使用分享分析功能，默认true                              |
-| forceLogin          | true \| false  | 是否强制要求用户登陆微信获取 openid，默认 false                            |
-| debug               | true \| false  | 是否开启调试模式，可以在 console 打印采集的数据，默认 false。发布到生产环境时关闭！！！       |
-| usePlugin           | true \| false  | 你的小程序中是否使用了第三方插件，默认 false。                                |
-| comAsPage           | true \| false  | 是否将 component 当做 page 处理，默认 false。3.6.1 版本添加。             |
-| autotrack           | true \| false  | <p>是否开启无埋点采集<br>包括：<code>click, change, submit</code></p> |
-| dataCollect         | true \| false  | 是否开启数据采集，设置为false不进行任何数据采集                                |
-| enableEventStore    | true \| false  | 是否开启事件本地存储，默认false；设为true，则会开启本地存储（SDK版本>=3.7.4）          |
+| **参数**              | 类型/值           | 说明                                                          |
+| ------------------- | -------------- | ----------------------------------------------------------- |
+| version             | string         | 你的小程序的版本号。                                                  |
+| getLocation.autoGet | true \| false  | 是否自动获取用户的地理位置信息，默认 false                                    |
+| getLocation.type    | wgs84 \| gcj02 | wgs8：标准坐标系；gcj02：火星坐标系                                      |
+| followShare         | true \| false  | 详细跟踪分享数据，开启后可使用分享分析功能，默认true                                |
+| forceLogin          | true \| false  | 是否强制要求用户登陆微信获取 openid，默认 false                              |
+| debug               | true \| false  | 是否开启调试模式，可以在 console 打印采集的数据，默认 false。发布到生产环境时关闭！！！         |
+| usePlugin           | true \| false  | 你的小程序中是否使用了第三方插件，默认 false。                                  |
+| comAsPage           | true \| false  | 是否将 component 当做 page 处理，默认 false。3.6.1 版本添加。               |
+| autotrack           | true \| false  | <p>是否开启无埋点采集<br>包括：<code>click, change, submit</code></p>   |
+| dataCollect         | true \| false  | 是否开启数据采集，设置为false不进行任何数据采集                                  |
+| enableEventStore    | true \| false  | 是否开启事件本地存储，默认false；设为true，则会开启本地存储，使用运营SDK需设置（SDK版本>=3.7.4） |
 
 每次发布小程序新版本的时候，需要更新一下版本号 version, 与线上发布小程序保持一致; 可以在 GrowingIO 平台使用 “App 版本”维度，分析不同版本的数据。
 
@@ -579,6 +579,11 @@ gio('init', ' GrowingIO 项目ID', '你的小程序AppID', {
 ```
 gdp('setDataCollect', true);
 ```
+
+#### enableEventStore
+
+默认情况下，SDK关闭事件存储功能。此功能在小程序storage中存储SDK已上报的事件数据，用于运营SDK消费，**隔天清空**。\
+**如果您不使用运营SDK可忽略此配置；如果您使用运营SDK，必须开启此配置项，设置为 `true`。**
 
 #### getLocation
 

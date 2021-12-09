@@ -12,7 +12,7 @@ description: 埋点 SDK 只自动采集用户访问事件，需要开发同学�
 
 前提条件
 
-* 获取项目 ID，获取方法请参考"项目管理 &gt; 项目概览 &gt; [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
+* 获取项目 ID，获取方法请参考"项目管理 > 项目概览 > [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
 * 获取 URL Scheme，在 GrowingIO 平台创建对应的应用时会生成 URL Scheme。请参考[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
 
 ## 1. 添加跟踪代码
@@ -26,7 +26,7 @@ App 适配最低系统版本：Android 4.2 及以上
 ### 1. 添加依赖
 
 {% hint style="info" %}
-2.9.0 版本后仓库从 JCenter 迁移到了 Maven Central, 请使用 mavenCentral\(\) 替换 jcenter\(\)
+2.9.0 版本后仓库从 JCenter 迁移到了 Maven Central, 请使用 mavenCentral() 替换 jcenter()
 {% endhint %}
 
 **在 module 级别的 build.gradle 文件中添加`vds-android-agent`依赖、项目 ID 和 URL Scheme。**
@@ -42,7 +42,7 @@ android {
 }
 dependencies {
     //GrowingIO 埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:track-2.9.4'
+    implementation 'com.growingio.android:vds-android-agent:track-2.9.9'
 }
 ```
 
@@ -137,7 +137,7 @@ class MyApplication : Application() {
 
 {% hint style="info" %}
 1. 请确保将代码添加在`Application`的`onCreate`方法中，添加到其他方法中可能导致数据不准确。
-2. 其中`GrowingIO.startWithConfiguration`第一个参数为`ApplicationContext`对象。 
+2. 其中`GrowingIO.startWithConfiguration`第一个参数为`ApplicationContext`对象。&#x20;
 3. `setChannel`方法的参数定义了“自定义App渠道”这个维度的值。
 {% endhint %}
 
@@ -180,25 +180,25 @@ class MyApplication : Application() {
 R.string.growingio*
 ```
 
-### 5 设置SDK异常上传开关 <a id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
+### 5 设置SDK异常上传开关 <a href="#5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan" id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
 
 SDK会收集SDK内部异常上报服务端，方便开发更好的追踪SDK的问题，和完善SDK的功能。如果您不想帮助我们产品完善功能，或者和您的crash收集框架有冲突，您可以选择关闭此功能。
 
-#### 5.1 setUploadExceptionEnable <a id="5-1-setuploadexceptionenable"></a>
+#### 5.1 setUploadExceptionEnable <a href="#5-1-setuploadexceptionenable" id="5-1-setuploadexceptionenable"></a>
 
 异常消息上报开关
 
-```text
+```
 setUploadExceptionEnable(boolean uploadExceptionEnable)
 ```
 
-#### 5.2 参数说明 <a id="52-can-shu-shuo-ming"></a>
+#### 5.2 参数说明 <a href="#52-can-shu-shuo-ming" id="52-can-shu-shuo-ming"></a>
 
-| **参数名** | **类型** | **必填** | **默认值** | **说明** |
-| :--- | :--- | :--- | :--- | :--- |
-| uploadExceptionEnable | boolean | 否 | true | 开关SDK异常上传功能，true开启，false关闭 |
+| **参数名**               | **类型**  | **必填** | **默认值** | **说明**                     |
+| --------------------- | ------- | ------ | ------- | -------------------------- |
+| uploadExceptionEnable | boolean | 否      | true    | 开关SDK异常上传功能，true开启，false关闭 |
 
-#### 5.3 代码示例 <a id="53-dai-ma-shi-li"></a>
+#### 5.3 代码示例 <a href="#53-dai-ma-shi-li" id="53-dai-ma-shi-li"></a>
 
 {% tabs %}
 {% tab title="Java" %}
@@ -232,9 +232,9 @@ setDebugMode(boolean debugMode);
 
 **参数说明**
 
-| **参数** | 类型 | 是否必填 | 说明 |
-| :--- | :--- | :--- | :--- |
-| debugMode | boolean | 是 | 开启GrowingIO日志，true开始，默认false |
+| **参数**    | 类型      | 是否必填 | 说明                           |
+| --------- | ------- | ---- | ---------------------------- |
+| debugMode | boolean | 是    | 开启GrowingIO日志，true开始，默认false |
 
 **示例代码**
 
@@ -271,9 +271,9 @@ setTestMode(boolean testMode);
 
 **参数说明**
 
-| 参数 | 类型 | 是否必填 | 说明 |
-| :--- | :--- | :--- | :--- |
-| testMode | boolean | 是 | 开启测试模式，true开启，默认false |
+| 参数       | 类型      | 是否必填 | 说明                    |
+| -------- | ------- | ---- | --------------------- |
+| testMode | boolean | 是    | 开启测试模式，true开启，默认false |
 
 **示例代码**
 
@@ -312,10 +312,10 @@ GrowingIO.getInstance().setGeoLocation(double latitude,double longitude);
 
 **参数说明**
 
-| 参数 | 类型 | 是否必传 | 说明 |
-| :--- | :--- | :--- | :--- |
-| latitude | double | 是 | 纬度 |
-| longitude | double | 是 | 经度 |
+| 参数        | 类型     | 是否必传 | 说明 |
+| --------- | ------ | ---- | -- |
+| latitude  | double | 是    | 纬度 |
+| longitude | double | 是    | 经度 |
 
 **示例代码**
 
@@ -339,9 +339,9 @@ setMutiprocess(boolean setMutiprocess);
 
 **参数说明**
 
-| 参数 | 类型 | 是否必填 | 说明 |
-| :--- | :--- | :--- | :--- |
-| isMultiprocess | boolean | 是 | 开启多进程数据采集。默认值false |
+| 参数             | 类型      | 是否必填 | 说明                 |
+| -------------- | ------- | ---- | ------------------ |
+| isMultiprocess | boolean | 是    | 开启多进程数据采集。默认值false |
 
 示例代码：
 
@@ -365,23 +365,23 @@ GrowingIO.startWithConfiguration(
 {% endtabs %}
 
 {% hint style="info" %}
-1. 为什么不默认支持多进程？
+1.  为什么不默认支持多进程？
 
-   跨进程通信是一个相对较慢的过程， 默认不开启， 可以满足大部分用户的要求。
+    跨进程通信是一个相对较慢的过程， 默认不开启， 可以满足大部分用户的要求。
 
-   1. 哪些进程需要初始化SDK？
+    1. 哪些进程需要初始化SDK？
 
-   需要使用SDK功能的进程需要初始化SDK， 所有的UI进程 + 部分Service进程\(如果这些进程中涉及手动埋点\)。
+    需要使用SDK功能的进程需要初始化SDK， 所有的UI进程 + 部分Service进程(如果这些进程中涉及手动埋点)。
 {% endhint %}
 
 ### 5. GDPR数据采集开关
 
 > SDK版本支持：2.3.2及以上
 
-| 接口 | 含义 |
-| :--- | :--- |
-| disableDataCollect\(\) | 遵守欧洲联盟出台的通用数据保护条例，用户不授权，不采集用户数据 |
-| enableDataCollect\(\) | 遵守欧洲联盟出台的通用数据保护条例，用户授权，采集用户数据 |
+| 接口                   | 含义                              |
+| -------------------- | ------------------------------- |
+| disableDataCollect() | 遵守欧洲联盟出台的通用数据保护条例，用户不授权，不采集用户数据 |
+| enableDataCollect()  | 遵守欧洲联盟出台的通用数据保护条例，用户授权，采集用户数据   |
 
 ### 6. Deep Link回调参数获取（setDeeplinkCallback）
 
@@ -420,10 +420,10 @@ GrowingIO.startWithConfiguration(
 
 **返回值说明**
 
-| 返回值名称 | 类型 | 说明 |
-| :--- | :--- | :--- |
-| params | Map&lt;string,string&gt; | 自定义参数，您自定义的键值对 |
-| status | int | DeeplinkCallback.SUCCESS ：自定义参数获取成功； DeeplinkCallback.PARSE\_ERROR ：解析异常；DeeplinkCallback.ILLEGAL\_URI ：非法URI； DeeplinkCallback.NO\_QUERY : 自定义参数为空。 |
+| 返回值名称  | 类型                  | 说明                                                                                                                                                   |
+| ------ | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| params | Map\<string,string> | 自定义参数，您自定义的键值对                                                                                                                                       |
+| status | int                 | DeeplinkCallback.SUCCESS ：自定义参数获取成功； DeeplinkCallback.PARSE\_ERROR ：解析异常；DeeplinkCallback.ILLEGAL\_URI ：非法URI； DeeplinkCallback.NO\_QUERY : 自定义参数为空。 |
 
 **示例代码**
 
@@ -460,7 +460,7 @@ GrowingIO.startWithConfiguration(this, Configuration()
 
 ## 3. 自定义数据上传
 
-GrowingIO 提供多种 API 接口，供您上传一些自定义的数据指标及维度 ，请参考Android SDK API &gt; [自定义数](android-sdk-api/customize-api.md)[上传API](android-sdk-api/customize-api.md)。
+GrowingIO 提供多种 API 接口，供您上传一些自定义的数据指标及维度 ，请参考Android SDK API > [自定义数](android-sdk-api/customize-api.md)[上传API](android-sdk-api/customize-api.md)。
 
 ## 4. 创建应用
 
@@ -470,7 +470,7 @@ GrowingIO 提供多种 API 接口，供您上传一些自定义的数据指标�
 
 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
 
-## 5. 验证SDK是否正常采集数据 <a id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
+## 5. 验证SDK是否正常采集数据 <a href="#5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju" id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
 
 了解GrowingIO平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
 
@@ -481,4 +481,3 @@ GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 方式二：在SDK中设置了Debug模式后，在IDE编译器控制台查看数据采集日志。
 
 方式三：[数据校验](https://docs.growingio.com/v3/product-manual/data-center/datacheck/app)
-

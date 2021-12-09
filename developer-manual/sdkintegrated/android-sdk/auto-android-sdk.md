@@ -42,7 +42,7 @@ buildscript {
         //gradle 建议版本
         classpath 'com.android.tools.build:gradle:3.2.1'
         //GrowingIO 无埋点 SDK
-        classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.9.4'
+        classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.9.9'
     }
 }
 ```
@@ -63,7 +63,7 @@ android {
 }
 dependencies {
     //GrowingIO 无埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:autotrack-2.9.4'
+    implementation 'com.growingio.android:vds-android-agent:autotrack-2.9.9'
 }
 ```
 
@@ -227,11 +227,11 @@ android.enableD8.desugaring=false
 
 * 在SDK版本>=2.7.4时，我们兼容了`android.enableD8.desugaring = true`，无需再做配置。
 
-### 6 设置弹窗SDK异常上传开关 <a href="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan" id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
+### 6 设置弹窗SDK异常上传开关 <a href="#5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan" id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
 
 弹窗SDK会收集SDK内部异常上报服务端，方便开发更好的追踪弹窗SDK的问题，和完善弹窗SDK的功能。如果您不想帮助我们弹窗产品完善功能，或者和您的crash收集框架有冲突，您可以选择关闭此功能。
 
-#### 6.1 setUploadExceptionEnable <a href="5-1-setuploadexceptionenable" id="5-1-setuploadexceptionenable"></a>
+#### 6.1 setUploadExceptionEnable <a href="#5-1-setuploadexceptionenable" id="5-1-setuploadexceptionenable"></a>
 
 弹窗异常消息上报开关
 
@@ -239,13 +239,13 @@ android.enableD8.desugaring=false
 setUploadExceptionEnable(boolean uploadExceptionEnable)
 ```
 
-#### 6.2 参数说明 <a href="52-can-shu-shuo-ming" id="52-can-shu-shuo-ming"></a>
+#### 6.2 参数说明 <a href="#52-can-shu-shuo-ming" id="52-can-shu-shuo-ming"></a>
 
 | **参数名**               | **类型**  | **必填** | **默认值** | **说明**                     |
 | --------------------- | ------- | ------ | ------- | -------------------------- |
 | uploadExceptionEnable | boolean | 是      | true    | 开关SDK异常上传功能，true开启，false关闭 |
 
-#### 6.3 代码示例 <a href="53-dai-ma-shi-li" id="53-dai-ma-shi-li"></a>
+#### 6.3 代码示例 <a href="#53-dai-ma-shi-li" id="53-dai-ma-shi-li"></a>
 
 {% tabs %}
 {% tab title="Java" %}
@@ -902,7 +902,7 @@ SDK对通知的采集仅支持 4.4 及以上机型。
 
 查看通知采集数据
 
-支持对于通知的展现和点击事件的采集，GrowingIO 并未增加新的采集事件类型，而是使用了自定义事件发送，所以需要您创建自定义事件和事件级变量，事件级变量标识符为**`notification_title`**，**`notification_content`**，自定义事件的标识符为**`notification_show`**，**`notification_click `**创建事件分析，等候片刻即可看到数据。
+支持对于通知的展现和点击事件的采集，GrowingIO 并未增加新的采集事件类型，而是使用了自定义事件发送，所以需要您创建自定义事件和事件级变量，事件级变量标识符为**`notification_title`**，**`notification_content`**，自定义事件的标识符为**`notification_show`**，**`notification_click`** 创建事件分析，等候片刻即可看到数据。
 
 ### 18. 采集OAID
 
