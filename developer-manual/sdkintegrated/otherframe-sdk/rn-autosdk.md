@@ -10,9 +10,9 @@ GitHub Demo：[https://github.com/growingio/ReactNativeDemo](https://github.com/
 * 兼容 React Native 版本：0.46-0.56、0.59.9
 * 兼容组件 react-navigation 版本：^2.7.4、^3.11.0
 * 兼容组件 react-native-navigation 版本：^1.1.486
-* App适配最低系统版本：iOS 8及以上、Android 4.2及以上
+*   App适配最低系统版本：iOS 8及以上、Android 4.2及以上
 
-  如果没有使用react-navigation或者react-native-navigation作为导航，请仔细阅读 **下文3.3 page设置API**。
+    如果没有使用react-navigation或者react-native-navigation作为导航，请仔细阅读 **下文3.3 page设置API**。
 {% endhint %}
 
 ## 1. 预处理 JS 文件
@@ -25,7 +25,7 @@ RN无埋点的实现原理是修改用户`React Native`，`React-navigation`， 
 npm install --save react-native-autotrack-growingio
 ```
 
-```text
+```
 npm install --save https://github.com/growingio/GIORNHook.git#0.0.6
 ```
 
@@ -45,7 +45,7 @@ npm install --save https://github.com/growingio/GIORNHook.git#0.0.6
 {% tab title="Android" %}
 ### 1. 添加Android无埋点SDK依赖
 
-React Native无埋点SDK是在Android原生SDK上的扩展，请参照Android SDK&gt; [无埋点 SDK集成](../android-sdk/auto-android-sdk.md) 完成添加跟踪代码配置。
+React Native无埋点SDK是在Android原生SDK上的扩展，请参照Android SDK> [无埋点 SDK集成](../android-sdk/auto-android-sdk.md) 完成添加跟踪代码配置。
 
 {% hint style="warning" %}
 注意替换SDK版本号：
@@ -115,31 +115,31 @@ public class MainApplication extends Application implements ReactApplication {
 
 1. 添加 `pod 'GrowingReactNativeKit'`到Podfile中。
 2. 执行`pod install` 或 `pod update` 更新pod依赖库。
-3. （可选）GrowingIO推荐您添加 **AdSupport.framework** 依赖库，用于来源管理激活匹配,有利于您更好的分析数据 ,添加项目依赖库的位置在项目设置target -&gt; 选项卡General -&gt; Linked Frameworks and Libraries
+3. （可选）GrowingIO推荐您添加 **AdSupport.framework** 依赖库，用于来源管理激活匹配,有利于您更好的分析数据 ,添加项目依赖库的位置在项目设置target -> 选项卡General -> Linked Frameworks and Libraries
 
 方式二：手动添加
 
-1. 下载 [GrowingCoreKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-CoreKit-2.9.3.zip)、[GrowingAutoTrackKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-AutoTrackKit-2.9.3.zip)、[GrowingReactNativeKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-ReactNativeKit-2.9.3.zip)、[GrowingHeader](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-PublicHeader-2.9.3.zip)，并解压。
-2. 将 `Growing.h` 、`module.modulemap` 和 `GrowingCoreKit.framework`、`GrowingAutoTrackKit.framework`、`GrowingReactNativeKit.framework`
+1. 下载 [GrowingCoreKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-CoreKit-2.9.9.zip)、[GrowingAutoTrackKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-AutoTrackKit-2.9.3.zip)、[GrowingReactNativeKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-ReactNativeKit-2.9.9.zip)、[GrowingHeader](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-PublicHeader-2.9.9.zip)，并解压。
+2.  将 `Growing.h` 、`module.modulemap` 和 `GrowingCoreKit.framework`、`GrowingAutoTrackKit.framework`、`GrowingReactNativeKit.framework`
 
-   添加到iOS工程中。
+    添加到iOS工程中。
 
-其他参照 iOS SDK &gt; [无埋点 SDK集成](../ios-sdk/auto-ios-sdk.md) ，操作步骤一致。
+其他参照 iOS SDK > [无埋点 SDK集成](../ios-sdk/auto-ios-sdk.md) ，操作步骤一致。
 
 ### 2. 集成 React Native 埋点SDK
 
-```text
+```
 npm install --save https://github.com/growingio/react-native-growingio.git#0.0.7
 ```
 
-```text
+```
 react-native link react-native-growingio
 ```
 
 {% hint style="danger" %}
 react-native link react-native-growingio 失败（即发现 Libraries中没有 GrowingIORNPlugin.xcodeproj ，则可手动配置）处理方法：
 
-1. 打开 XCode 工程中, 右键点击 Libraries 文件夹 ➜ Add Files to &lt;...&gt;
+1. 打开 XCode 工程中, 右键点击 Libraries 文件夹 ➜ Add Files to <...>
 2. 去 `node_modules` ➜ `react-native-growingio` ➜ iOS ➜ 选择 `GrowingIORNPlugin.xcodeproj`
 3. 在工程`Build Phases` ➜ `Link Binary With Libraries`中添加`libGrowingIORNPlugin.a`
 {% endhint %}
@@ -149,12 +149,12 @@ react-native link react-native-growingio 失败（即发现 Libraries中没有 G
 
 请添加以下内容到Podfile中，并在添加之后执行**`pod update`**：
 
-pod 'GrowingReactNativeTrackKit', :path =&gt; '../node\_modules/react-native-growingio'
+pod 'GrowingReactNativeTrackKit', :path => '../node\_modules/react-native-growingio'
 {% endhint %}
 
 ### 3. 重要配置
 
-与原生混合开发的开发者可详细查看 iOS SDK &gt; 无埋点 SDK&gt; [重要配置](../ios-sdk/auto-ios-sdk.md#fu-lu-1-zhong-yao-pei-zhi)文档，如果原生控件使用不多，只需关注如下配置即可：
+与原生混合开发的开发者可详细查看 iOS SDK > 无埋点 SDK> [重要配置](../ios-sdk/auto-ios-sdk.md#fu-lu-1-zhong-yao-pei-zhi)文档，如果原生控件使用不多，只需关注如下配置即可：
 
 * **​**[**App Store 提交应用注意事项**](../ios-sdk/auto-ios-sdk.md#app-store-ti-jiao-ying-yong-zhu-yi-shi-xiang)\*\*\*\*
 {% endtab %}
@@ -203,15 +203,15 @@ NativeModules.GrowingIO.onPageShow("pageName");
 
 自定义数据上传其实最终是通过 NativeModules.GrowingIO 调用的原生GrowingIO 无埋点的API，以上接口使用时，对应的参数限制条件对您很重要。
 
-| 方法名 | 参数类型 | 说明 |
-| :--- | :--- | :--- |
-| track | \(String eventId, Object eventLevelVariable\(optional\)\) | 自定义事件 |
-| setEvar | \(Object conversionVariables\) | 设置转化变量 |
-| setPeopleVariable | \(Object peopleVariables\) | 设置用户变量 |
-| setUserId | \(String userId\) | 设置登录用户ID |
-| clearUserId | 无参数 | 清除登录用户ID |
-| setVisitor | \(Object visitor\) | 设置访问用户变量 |
-| setPageVariable | \(String pageName, JSONObject pageVariable\) | 设置页面级变量 |
+| 方法名               | 参数类型                                                  | 说明       |
+| ----------------- | ----------------------------------------------------- | -------- |
+| track             | (String eventId, Object eventLevelVariable(optional)) | 自定义事件    |
+| setEvar           | (Object conversionVariables)                          | 设置转化变量   |
+| setPeopleVariable | (Object peopleVariables)                              | 设置用户变量   |
+| setUserId         | (String userId)                                       | 设置登录用户ID |
+| clearUserId       | 无参数                                                   | 清除登录用户ID |
+| setVisitor        | (Object visitor)                                      | 设置访问用户变量 |
+| setPageVariable   | (String pageName, JSONObject pageVariable)            | 设置页面级变量  |
 
 {% hint style="warning" %}
 埋点接口其实最终是通过 NativeModules.GrowingIO 调用的原生GrowingIO 无埋点的API，参数限制与其一致。
@@ -263,26 +263,26 @@ NativeModules.GrowingIO.setPageVariable("HomePage",{ "registered": true, "fee": 
 
 属性列表
 
-| 属性名称 | 参数限制 | 描述 |
-| :--- | :--- | :--- |
-| ignore | 仅接受 true | 忽略对应的元素，不采集点击事件和浏览事件 |
-| track | 仅接受 true | 采集输入框内容，默认采集输入框内容变化次数，不采集内容 |
-| id | - | 设置界面元素ID |
-| content | - | 设置界面元素内容 |
-| info | - | 设置元素对象 |
+| 属性名称    | 参数限制     | 描述                          |
+| ------- | -------- | --------------------------- |
+| ignore  | 仅接受 true | 忽略对应的元素，不采集点击事件和浏览事件        |
+| track   | 仅接受 true | 采集输入框内容，默认采集输入框内容变化次数，不采集内容 |
+| id      | -        | 设置界面元素ID                    |
+| content | -        | 设置界面元素内容                    |
+| info    | -        | 设置元素对象                      |
 
 支持设置组件（Component）列表（包括但不限于）
 
-| 组件 |
-| :--- |
-| View |
-| ScrollView |
-| ListView |
-| Picker |
-| Text |
-| TextInput |
-| WebView |
-| RefreshControl |
+| 组件                |
+| ----------------- |
+| View              |
+| ScrollView        |
+| ListView          |
+| Picker            |
+| Text              |
+| TextInput         |
+| WebView           |
+| RefreshControl    |
 | ActivityIndicator |
 
 ## 6. 创建应用
@@ -293,7 +293,7 @@ NativeModules.GrowingIO.setPageVariable("HomePage",{ "registered": true, "fee": 
 
 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
 
-## 7. 验证SDK是否正常采集数据 <a id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
+## 7. 验证SDK是否正常采集数据 <a href="#5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju" id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
 
 了解GrowingIO平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
 
@@ -320,4 +320,3 @@ GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 （1）原则上对于react native中的tabbar控件,我们只能保证使用原生代码UITabBarController，或者不是RCT为前缀的原生控件实现的tabbar，可以正确采集tabbar上的imp
 
 （2）click event不受影响,可正确采集
-
