@@ -62,4 +62,5 @@ GrowingIO初始化配置项均在AppDelegate.m文件中的didFinishLaunchingWith
 | disablePushTrack       | YES  | 设置是否采集push推送点击，默认不采集                                                        | ✔️         | -         |
 | setEnableLocationTrack | YES  | 设置是否采集地理位置的统计信息，默认采集                                                        | >=2.8.6    | -         |
 | getEnableLocationTrack | 无    | 获取是否采集地理位置                                                                  | >=2.8.6    | -         |
+| setReadClipBoardEnable | YES  | 设置是否读取剪切板                                                                   | >=2.9.8    | >=2.9.8   |
 | setAsaEnabled          | NO   | 设置是否获取 Apple Search Ads 归因数据                                                | >=2.9.9    | >=2.9.9   |
