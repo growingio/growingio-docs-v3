@@ -12,40 +12,40 @@
 
 {% tabs %}
 {% tab title="IOS SDK" %}
-| 字段           | 如何设置不采集                       |
-| ------------ | ----------------------------- |
-| 页面           | -                             |
-| 页面来源         | -                             |
-| idfa         | 不集成了AdSupport.framework       |
-| idfv         | -                             |
-| 设备方向         | -                             |
-| 屏幕高宽         | -                             |
-| 设备品牌、型号      | -                             |
-| 操作系统         | -                             |
-| 操作系统版本       | -                             |
-| 语言环境         | -                             |
-| GIO设置的深度链接信息 | setReadClipBoardEnable(false) |
+| 字段               | 如何设置不采集                       |
+| ---------------- | ----------------------------- |
+| 页面               | -                             |
+| 页面来源             | -                             |
+| idfa             | 不集成了AdSupport.framework       |
+| idfv             | -                             |
+| 设备方向             | -                             |
+| 屏幕高宽             | -                             |
+| 设备品牌、型号          | -                             |
+| 操作系统             | -                             |
+| 操作系统版本           | -                             |
+| 语言环境             | -                             |
+| 剪切板-GIO设置的深度链接信息 | setReadClipBoardEnable(false) |
 {% endtab %}
 
 {% tab title="Android SDK" %}
 
 
-| 字段           | 如何设置不采集                                     |
-| ------------ | ------------------------------------------- |
-| 页面路径         | -                                           |
-| 页面来源         | -                                           |
-| 页面标题         | -                                           |
-| imei         | configuration.setImeiEnable(false);         |
-| adrid        | configuration.setAndroidIdEnable(false)     |
-| gaid         | configuration.setGoogleAdIdEnable(false);   |
-| oaid         | configuration.setOAIDEnable(false)          |
-| 设备方向         | -                                           |
-| 屏幕高宽         | -                                           |
-| 设备品牌、型号      | -                                           |
-| 操作系统         | -                                           |
-| 操作系统版本       | -                                           |
-| 语言环境         | -                                           |
-| GIO设置的深度链接信息 | configuration.setReadClipBoardEnable(false) |
+| 字段               | 如何设置不采集                                     |
+| ---------------- | ------------------------------------------- |
+| 页面路径             | -                                           |
+| 页面来源             | -                                           |
+| 页面标题             | -                                           |
+| imei             | configuration.setImeiEnable(false);         |
+| adrid            | configuration.setAndroidIdEnable(false)     |
+| gaid             | configuration.setGoogleAdIdEnable(false);   |
+| oaid             | configuration.setOAIDEnable(false)          |
+| 设备方向             | -                                           |
+| 屏幕高宽             | -                                           |
+| 设备品牌、型号          | -                                           |
+| 操作系统             | -                                           |
+| 操作系统版本           | -                                           |
+| 语言环境             | -                                           |
+| 剪切板-GIO设置的深度链接信息 | configuration.setReadClipBoardEnable(false) |
 {% endtab %}
 
 {% tab title="Web SDK" %}
