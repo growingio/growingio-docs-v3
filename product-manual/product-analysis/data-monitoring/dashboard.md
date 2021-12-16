@@ -36,7 +36,7 @@
 
 ## 创建看板
 
-一. 在顶部导航栏选择"**数据监测> 全部看板 **入看板列表下的分析看板列表。
+一. 在顶部导航栏选择"**数据监测> 全部看板** 入看板列表下的分析看板列表。
 
 ![](<../../../.gitbook/assets/image (15).png>)
 
@@ -46,7 +46,7 @@
 
 三. 填写看板名称、描述，更改共享设置后单击保存。
 
-## 管理看板 <a href="2-gong-neng-shuo-ming" id="2-gong-neng-shuo-ming"></a>
+## 管理看板 <a href="#2-gong-neng-shuo-ming" id="2-gong-neng-shuo-ming"></a>
 
 在看板列表：
 
@@ -86,9 +86,9 @@
 | 9-分享链接   | 单击直接复制分享链接。                                                                                                  |
 | 10-管理    | <p>全屏：全屏展示当前看板。</p><p>下载：将看板中当前的展示形式下载为图片或者PDF文件。</p><p>删除：删除当前看板。</p>                                       |
 
-## 常见问题 <a href="3-chang-jian-wen-ti" id="3-chang-jian-wen-ti"></a>
+## 常见问题 <a href="#3-chang-jian-wen-ti" id="3-chang-jian-wen-ti"></a>
 
-#### **1.为什么我 hover 到图表上时没有出现角标？** <a href="1-wei-shi-mo-wo-hover-dao-tu-biao-shang-shi-mei-you-chu-xian-jiao-biao" id="1-wei-shi-mo-wo-hover-dao-tu-biao-shang-shi-mei-you-chu-xian-jiao-biao"></a>
+#### **1.为什么我 hover 到图表上时没有出现角标？** <a href="#1-wei-shi-mo-wo-hover-dao-tu-biao-shang-shi-mei-you-chu-xian-jiao-biao" id="1-wei-shi-mo-wo-hover-dao-tu-biao-shang-shi-mei-you-chu-xian-jiao-biao"></a>
 
 因为您没有修改当前看板的权限。同样地，修改名称，添加和移除图表都收到编辑权限的控制。
 

@@ -50,24 +50,10 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 **参数说明**
 
 | 参数名称 | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
+| ---- | -- | ---- | -- |
 
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">userId</th>
-      <th style="text-align:left">string</th>
-      <th style="text-align:left">&#x662F;</th>
-      <th style="text-align:left">
-        <p>&#x7528;&#x6237;&#x7684;<b>&#x767B;&#x5F55;&#x7528;&#x6237;ID</b>
-        </p>
-        <p>&#x9650;&#x5236;&#xFF1A;&#x82F1;&#x6587;&#x6570;&#x5B57;&#x7EC4;&#x5408;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x957F;&#x5EA6;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;1000&#xFF0C;&#x4E14;&#x4E0D;&#x80FD;&#x542B;&#x6709;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#xFF0C;&#x4E0D;&#x5141;&#x8BB8;&#x4F20;&#x7A7A;&#x3001;<code>&quot;&quot;</code> &#x6216;&#x8005;<code>nil</code>&#xFF0C;&#x5982;&#x6709;&#x6E05;&#x9664;&#x64CD;&#x4F5C;&#xFF0C;&#x8BF7;&#x8C03;&#x7528; <code>clearUserId</code> &#x65B9;&#x6CD5;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| userId | string | 是 | <p>用户的<strong>登录用户ID</strong></p><p>限制：英文数字组合的字符串，长度小于等于1000，且不能含有特殊字符，不允许传空、<code>""</code> 或者<code>nil</code>，如有清除操作，请调用 <code>clearUserId</code> 方法</p> |
+| ------ | ------ | - | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ```java
 // setuserId API调用示例
@@ -106,56 +92,16 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 **参数说明**
 
 | 参数名称 | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
+| ---- | -- | ---- | -- |
 
+| key | string | 否 | <p>用户变量的标识符。</p><p><strong>限制</strong>：不能为nil或""，长度小于等于50。</p> |
+| --- | ------ | - | -------------------------------------------------------------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">key</th>
-      <th style="text-align:left">string</th>
-      <th style="text-align:left">&#x5426;</th>
-      <th style="text-align:left">
-        <p>&#x7528;&#x6237;&#x53D8;&#x91CF;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
-        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A;nil&#x6216;&quot;&quot;&#xFF0C;&#x957F;&#x5EA6;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| value | string | 否 | <p>用户变量的值。</p><p><strong>限制</strong>：变量不为nil或者""，若为字符串则长度应小于等于 1000。</p> |
+| ----- | ------ | - | ------------------------------------------------------------------------ |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">value</th>
-      <th style="text-align:left">string</th>
-      <th style="text-align:left">&#x5426;</th>
-      <th style="text-align:left">
-        <p>&#x7528;&#x6237;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x3002;</p>
-        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x53D8;&#x91CF;&#x4E0D;&#x4E3A;nil&#x6216;&#x8005;&quot;&quot;&#xFF0C;&#x82E5;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x5219;&#x957F;&#x5EA6;&#x5E94;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;
-          1000&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">customerVariables</th>
-      <th style="text-align:left">NSDictionary</th>
-      <th style="text-align:left">
-        <p>&#x7528;&#x6237;&#x53D8;&#x91CF;&#x7528;&#x4E8E;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x76F8;&#x5173;&#x7684;&#x5206;&#x6790;&#x3002;</p>
-        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A;nil&#xFF1B;<code>customerVariables</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>NSDictionary</code>&#x6216;&#x8005;<code>NSArray&#xFF1B;</code>
-        </p>
-        <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
-      </th>
-      <th style="text-align:left"></th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| customerVariables | NSDictionary | <p>用户变量用于用户信息相关的分析。</p><p><strong>限制</strong>：不能为nil；<code>customerVariables</code> 内部不允许含有<code>NSDictionary</code>或者<code>NSArray；</code></p><p><code>key</code> 长度限制小于等于50，<code>value</code> 长度限制小等于1000，值不能为空串，也就是""。</p> |   |
+| ----------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | - |
 
 ```java
 // setPeopleVariable API调用示例一
@@ -171,7 +117,7 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 
 当用户未登录时，定义用户属性变量，也可以用于A/B测试上传标签。
 
-**SDK版本支持：&gt;=2.4.0**
+**SDK版本支持：>=2.4.0**
 
 ```java
 // setVisitor 访问用户变量 API原型
@@ -181,25 +127,10 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 **参数说明**
 
 | **参数名称** | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
+| -------- | -- | ---- | -- |
 
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">variable</th>
-      <th style="text-align:left">NSDctionary</th>
-      <th style="text-align:left">&#x662F;</th>
-      <th style="text-align:left">
-        <p>&#x8BBF;&#x95EE;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x3002;</p>
-        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A;<code>nil&#xFF1B;variable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>NSDictionary</code>&#x6216;&#x8005;<code>NSArray&#xFF1B;</code>
-        </p>
-        <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| variable | NSDctionary | 是 | <p>访问用户信息。</p><p><strong>限制</strong>：不能为<code>nil；variable</code> 内部不允许含有<code>NSDictionary</code>或者<code>NSArray；</code></p><p><code>key</code> 长度限制小于等于50，<code>value</code> 长度限制小等于1000，值不能为空串，也就是""。</p> |
+| -------- | ----------- | - | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
 ```java
 // setVisitor API调用示例
@@ -224,56 +155,16 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 **参数说明**
 
 | 参数名称 | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
+| ---- | -- | ---- | -- |
 
+| key | string | 否 | <p>页面级变量的标识符。</p><p><strong>限制</strong>：不能为 nil 或者""，长度小于等于50。</p> |
+| --- | ------ | - | ------------------------------------------------------------------ |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">key</th>
-      <th style="text-align:left">string</th>
-      <th style="text-align:left">&#x5426;</th>
-      <th style="text-align:left">
-        <p>&#x9875;&#x9762;&#x7EA7;&#x53D8;&#x91CF;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
-        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A; nil &#x6216;&#x8005;&quot;&quot;&#xFF0C;&#x957F;&#x5EA6;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| value | string | 否 | <p>页面级变量的值。</p><p><strong>限制</strong>：不能为 nil 或者""，若为字符串则长度应小于等于 1000。</p> |
+| ----- | ------ | - | -------------------------------------------------------------------------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">value</th>
-      <th style="text-align:left">string</th>
-      <th style="text-align:left">&#x5426;</th>
-      <th style="text-align:left">
-        <p>&#x9875;&#x9762;&#x7EA7;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x3002;</p>
-        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A; nil &#x6216;&#x8005;&quot;&quot;&#xFF0C;&#x82E5;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x5219;&#x957F;&#x5EA6;&#x5E94;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;
-          1000&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">pageLevelVariables</th>
-      <th style="text-align:left">NSDictionary</th>
-      <th style="text-align:left">&#x5426;</th>
-      <th style="text-align:left">
-        <p>&#x9875;&#x9762;&#x7EA7;&#x522B;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
-        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A; nil&#xFF1B;<code>pageLevelVariable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>NSDictionary</code>&#x6216;&#x8005;<code>NSArray&#xFF1B;</code>
-        </p>
-        <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| pageLevelVariables | NSDictionary | 否 | <p>页面级别的信息。</p><p><strong>限制</strong>：不能为 nil；<code>pageLevelVariable</code> 内部不允许含有<code>NSDictionary</code>或者<code>NSArray；</code></p><p><code>key</code> 长度限制小于等于50，<code>value</code> 长度限制小等于1000，值不能为空串，也就是""。</p> |
+| ------------------ | ------------ | - | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 {% hint style="info" %}
 **`SDK 2.6.7`** 将页面级变量**`pageLevelVariables`**与该页面对象绑定，设置不同的值将会合并，如果想要清空，需要传 null 。
@@ -305,56 +196,16 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 **参数说明**
 
 | 参数名称 | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
+| ---- | -- | ---- | -- |
 
+| key | string | 否 | <p>转化变量的标识符。</p><p><strong>限制</strong>：不能为 nil 或者""，长度小于等于50。</p> |
+| --- | ------ | - | ----------------------------------------------------------------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">key</th>
-      <th style="text-align:left">string</th>
-      <th style="text-align:left">&#x5426;</th>
-      <th style="text-align:left">
-        <p>&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
-        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A; nil &#x6216;&#x8005;&quot;&quot;&#xFF0C;&#x957F;&#x5EA6;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| value | string | 否 | <p>转化变量的值。</p><p><strong>限制</strong>：变量不为nil或者""，若为字符串则长度应小于等于 1000。</p> |
+| ----- | ------ | - | ------------------------------------------------------------------------ |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">value</th>
-      <th style="text-align:left">string</th>
-      <th style="text-align:left">&#x5426;</th>
-      <th style="text-align:left">
-        <p>&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x3002;</p>
-        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x53D8;&#x91CF;&#x4E0D;&#x4E3A;nil&#x6216;&#x8005;&quot;&quot;&#xFF0C;&#x82E5;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x5219;&#x957F;&#x5EA6;&#x5E94;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;
-          1000&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">conversionVariables</th>
-      <th style="text-align:left">NSDictionary</th>
-      <th style="text-align:left">&#x5426;</th>
-      <th style="text-align:left">
-        <p>&#x8F6C;&#x5316;&#x53D8;&#x91CF;&#x7528;&#x4E8E;&#x9AD8;&#x7EA7;&#x5F52;&#x56E0;&#x5206;&#x6790;&#x3002;</p>
-        <p><b>&#x9650;&#x5236;</b>&#xFF1A;&#x4E0D;&#x80FD;&#x4E3A;nil&#xFF1B;<code>conversinoLevelVariable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>NSDictionary</code>&#x6216;&#x8005;<code>NSArray&#xFF1B;</code>
-        </p>
-        <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| conversionVariables | NSDictionary | 否 | <p>转化变量用于高级归因分析。</p><p><strong>限制</strong>：不能为nil；<code>conversinoLevelVariable</code> 内部不允许含有<code>NSDictionary</code>或者<code>NSArray；</code></p><p><code>key</code> 长度限制小于等于50，<code>value</code> 长度限制小等于1000，值不能为空串，也就是""。</p> |
+| ------------------- | ------------ | - | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ```java
 // setEvar API调用示例一
@@ -379,28 +230,13 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 **参数说明**
 
 | 参数名称 | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
-
+| ---- | -- | ---- | -- |
 
 | eventId | string | 是 | 事件标识符。 |
-| :--- | :--- | :--- | :--- |
+| ------- | ------ | - | ------ |
 
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">eventLevelVariable</th>
-      <th style="text-align:left">NSDictionary</th>
-      <th style="text-align:left">&#x5426;</th>
-      <th style="text-align:left">
-        <p>&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#x6240;&#x4F34;&#x968F;&#x7684;&#x7EF4;&#x5EA6;&#x4FE1;&#x606F;&#x3002;</p>
-        <p>&#x9650;&#x5236;&#xFF1A;&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF08;eventLevelVariable.length()&lt;=100&#xFF09;&#xFF1B;eventLevelVariable&#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>NSDictionary</code>&#x6216;&#x8005;<code>NSArray</code>&#xFF1B;
-          key&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;value&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;200&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x201C;&#x201D;&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| eventLevelVariable | NSDictionary | 否 | <p>事件发生时所伴随的维度信息。</p><p>限制：非空，长度限制小于等于100（eventLevelVariable.length()&#x3C;=100）；eventLevelVariable内部不允许含有<code>NSDictionary</code>或者<code>NSArray</code>； key长度限制小于等于50，value长度限制小于等于200，值不能为空字符串，也就是“”。</p> |
+| ------------------ | ------------ | - | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ```java
 // track API调用示例一
@@ -417,15 +253,15 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 [Growing track:@"loanAmount" withNumber:@800000 andVariable:@{@"loanType":@"houseMortgage", @"province":@"Zhejiang"}];
 ```
 
-### 设置SDK异常上传开关 <a id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
+### 设置SDK异常上传开关 <a href="#5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan" id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
 
 SDK会收集SDK内部异常上报服务端，方便开发更好的追踪SDK的问题，和完善SDK的功能。如果您不想帮助我们产品完善功能，或者和您的crash收集框架有冲突，您可以选择关闭此功能。
 
 {% hint style="info" %}
-请在 startWithAccountId: 或 startWithAccountId: withSampling: 接口之前设置 \(SDK2.8.9以后\)
+请在 startWithAccountId: 或 startWithAccountId: withSampling: 接口之前设置 (SDK2.8.9以后)
 {% endhint %}
 
-* \(**void**\)setUploadExceptionEnable:\(**BOOL**\)uploadExceptionEnable;
+* (**void**)setUploadExceptionEnable:(**BOOL**)uploadExceptionEnable;
 
 ```objectivec
 // sdk crash 收集
@@ -433,3 +269,16 @@ SDK会收集SDK内部异常上报服务端，方便开发更好的追踪SDK的�
 [Growing startWithAccountId:@"aaaa"];
 ```
 
+### 获取 Apple Search Ads 归因数据分析 <a href="#5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan" id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
+
+如您需要使用 Apple Search Ads 归因数据分析，请在 SDK 初始化之前调用`setAsaEnabled`接口：
+
+```objectivec
+// 设置是否获取 Apple Search Ads 归因数据
+[Growing setAsaEnabled:YES];
+[Growing startWithAccountId:@"aaaa"];
+```
+
+在 Target -> Build Phases -> Link Binary With Libraries，添加 iAd.framework 和 AdServices.framework，并设置 AdServices.framework status 为 Optional
+
+![](<../../../../.gitbook/assets/image (180).png>)
