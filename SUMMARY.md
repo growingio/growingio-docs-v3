@@ -284,7 +284,7 @@
     * [维度配置（链接扩展维度）](product-manual/growing/product-configuration/utm-config.md)
     * [归因配置](product-manual/growing/product-configuration/attribution.md)
   * [渠道配置指南](product-manual/growing/channel-config/README.md)
-    * [苹果广告投放（ASA）](product-manual/growing/channel-config/ping-guo-guang-gao-tou-fang-asa.md)
+    * [苹果广告投放（ASA）](product-manual/growing/channel-config/ping-guo-guang-gao-tou-fang.md)
     * [华为应用商oCPD](product-manual/growing/channel-config/hua-wei-ying-yong-shang-ocpd.md)
     * [HUAWEI Ads](product-manual/growing/channel-config/huawei-ads.md)
     * [腾讯社交广告（Marking API）](product-manual/growing/channel-config/tencent.md)
