@@ -281,4 +281,4 @@ SDK会收集SDK内部异常上报服务端，方便开发更好的追踪SDK的�
 
 在 Target -> Build Phases -> Link Binary With Libraries，添加 iAd.framework 和 AdServices.framework，并设置 AdServices.framework status 为 Optional
 
-![](<../../../../.gitbook/assets/image (180).png>)
+![](<../../../../.gitbook/assets/image (180) (1).png>)
