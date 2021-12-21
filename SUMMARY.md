@@ -33,7 +33,7 @@
       * [转化变量](introduction/data-definition/ustom-event/convert-variable.md)
   * [数据安全](introduction/data-security.md)
 
-## 开发者文档 <a href="developer-manual" id="developer-manual"></a>
+## 开发者文档 <a href="#developer-manual" id="developer-manual"></a>
 
 * [SDK 集成](developer-manual/sdkintegrated/README.md)
   * [SDK 简介](developer-manual/sdkintegrated/overview.md)
@@ -218,7 +218,7 @@
     * [数据保护](developer-manual/api-reference/gdprapi/shu-ju-bao-hu.md)
     * [删除原始数据](developer-manual/api-reference/gdprapi/shan-chu-yuan-shi-shu-ju.md)
 
-## 产品使用文档 <a href="product-manual" id="product-manual"></a>
+## 产品使用文档 <a href="#product-manual" id="product-manual"></a>
 
 * [产品分析](product-manual/product-analysis/README.md)
   * [数据监测](product-manual/product-analysis/data-monitoring/README.md)
@@ -284,6 +284,8 @@
     * [维度配置（链接扩展维度）](product-manual/growing/product-configuration/utm-config.md)
     * [归因配置](product-manual/growing/product-configuration/attribution.md)
   * [渠道配置指南](product-manual/growing/channel-config/README.md)
+    * [苹果广告投放](product-manual/growing/channel-config/ping-guo-guang-gao-tou-fang.md)
+    * [华为应用商oCPD](product-manual/growing/channel-config/hua-wei-ying-yong-shang-ocpd.md)
     * [HUAWEI Ads](product-manual/growing/channel-config/huawei-ads.md)
     * [腾讯社交广告（Marking API）](product-manual/growing/channel-config/tencent.md)
     * [今日头条（巨量纵横）](product-manual/growing/channel-config/bytedance.md)
@@ -391,7 +393,7 @@
   * [邀请技术支持](product-manual/tickets/invite.md)
 * [术语解释](product-manual/term.md)
 
-## 常见问题与解决 <a href="product-faq" id="product-faq"></a>
+## 常见问题与解决 <a href="#product-faq" id="product-faq"></a>
 
 * [基本问题](product-faq/basic.md)
 * [SDK集成](product-faq/sdk.md)
