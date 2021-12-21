@@ -173,7 +173,6 @@
       * [获取分群列表](developer-manual/api-reference/statistics-api/definition/get-segm.md)
       * [获取特定分群的用户列表](developer-manual/api-reference/statistics-api/definition/get-segmentations.md)
       * [获取圈选元素定义](developer-manual/api-reference/statistics-api/definition/get-auto.md)
-  * [用户分群更新API](developer-manual/api-reference/yong-hu-fen-qun-geng-xin-api.md)
   * [广告监测链接创建API](developer-manual/api-reference/query-productid/README.md)
     * [概述](developer-manual/api-reference/query-productid/overview.md)
     * [接口定义](developer-manual/api-reference/query-productid/definition/README.md)
