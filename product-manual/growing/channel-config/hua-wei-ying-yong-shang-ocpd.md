@@ -81,5 +81,3 @@ oCPD是一种任务投放形式，支持广告主以转化成本（如激活、�
 ![](<../../../.gitbook/assets/图片6 (1).png>)
 
 ![](../../../.gitbook/assets/图片7.png)
-
-![](file:///private/var/folders/qp/hzbm9hfj34v1284kvgjfc13c0000gn/T/com.kingsoft.wpsoffice.mac/wps-dada/ksohtml/wps3cRyPN.jpg)
