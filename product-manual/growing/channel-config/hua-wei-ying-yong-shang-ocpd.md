@@ -20,7 +20,7 @@ oCPD是一种任务投放形式，支持广告主以转化成本（如激活、�
 
 完成设置后，请记录您的客户端ID和密钥。示例如下：
 
-![](broken-reference)
+![](<../../../.gitbook/assets/图片1 (3).png>)
 
 二、创建监测链接
 
@@ -30,7 +30,7 @@ oCPD是一种任务投放形式，支持广告主以转化成本（如激活、�
 
 &#x20; 推广渠道：华为应用商店oCPD
 
-![](file:///private/var/folders/qp/hzbm9hfj34v1284kvgjfc13c0000gn/T/com.kingsoft.wpsoffice.mac/wps-dada/ksohtml/wpsyZ5kSi.jpg)&#x20;
+![](<../../../.gitbook/assets/图片2 (1).png>)
 
 2 进行授权：填写正确的id及密钥后点击授权
 
@@ -38,19 +38,19 @@ oCPD是一种任务投放形式，支持广告主以转化成本（如激活、�
 
 &#x20; Client\_secret为上文中的密钥
 
-![](file:///private/var/folders/qp/hzbm9hfj34v1284kvgjfc13c0000gn/T/com.kingsoft.wpsoffice.mac/wps-dada/ksohtml/wpshPzNVm.jpg)&#x20;
+![](../../../.gitbook/assets/图片3.png)
 
 3 链接创建成功
 
 &#x20; Growing IO会自动生成一条点击监测链接和一条曝光监测链接
 
-![](file:///private/var/folders/qp/hzbm9hfj34v1284kvgjfc13c0000gn/T/com.kingsoft.wpsoffice.mac/wps-dada/ksohtml/wpsGN2XG7.jpg)&#x20;
+![](../../../.gitbook/assets/图片4.png)
 
 三、投放建议
 
 华为应用商店支持4种事件监测，示例如下：
 
-![](file:///private/var/folders/qp/hzbm9hfj34v1284kvgjfc13c0000gn/T/com.kingsoft.wpsoffice.mac/wps-dada/ksohtml/wpskPPJHP.jpg)&#x20;
+![](../../../.gitbook/assets/图片5.png)
 
 因oCPD是以下载为结算单元，所以推荐您把曝光监测链接投放在曝光位，点击监测链接投放到下载位，即：
 
@@ -78,6 +78,8 @@ oCPD是一种任务投放形式，支持广告主以转化成本（如激活、�
 
 但这种配置会造成获客分析首页的点击数据差异，展示点击数会高于实际数值，需要您在推广详细中根据维度来拆分各个事件数据。
 
-![](file:///private/var/folders/qp/hzbm9hfj34v1284kvgjfc13c0000gn/T/com.kingsoft.wpsoffice.mac/wps-dada/ksohtml/wpsqQuMbs.jpg)&#x20;
+![](<../../../.gitbook/assets/图片6 (1).png>)
+
+![](../../../.gitbook/assets/图片7.png)
 
 ![](file:///private/var/folders/qp/hzbm9hfj34v1284kvgjfc13c0000gn/T/com.kingsoft.wpsoffice.mac/wps-dada/ksohtml/wps3cRyPN.jpg)
