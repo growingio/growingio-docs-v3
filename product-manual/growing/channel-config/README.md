@@ -12,23 +12,50 @@ GrowingIO 渠道合作方对接信息持续更新中...
 
 渠道配置参考：
 
-{% page-ref page="huawei-ads.md" %}
+{% content-ref url="ping-guo-guang-gao-tou-fang.md" %}
+[ping-guo-guang-gao-tou-fang.md](ping-guo-guang-gao-tou-fang.md)
+{% endcontent-ref %}
 
-{% page-ref page="tencent.md" %}
+{% content-ref url="hua-wei-ying-yong-shang-ocpd.md" %}
+[hua-wei-ying-yong-shang-ocpd.md](hua-wei-ying-yong-shang-ocpd.md)
+{% endcontent-ref %}
 
-{% page-ref page="bytedance.md" %}
+{% content-ref url="huawei-ads.md" %}
+[huawei-ads.md](huawei-ads.md)
+{% endcontent-ref %}
 
-{% page-ref page="baidu.md" %}
+{% content-ref url="tencent.md" %}
+[tencent.md](tencent.md)
+{% endcontent-ref %}
 
-{% page-ref page="weibo.md" %}
+{% content-ref url="bytedance.md" %}
+[bytedance.md](bytedance.md)
+{% endcontent-ref %}
 
-{% page-ref page="iqiyi.md" %}
+{% content-ref url="baidu.md" %}
+[baidu.md](baidu.md)
+{% endcontent-ref %}
 
-{% page-ref page="inmobi.md" %}
+{% content-ref url="weibo.md" %}
+[weibo.md](weibo.md)
+{% endcontent-ref %}
 
-{% page-ref page="wechat.md" %}
+{% content-ref url="iqiyi.md" %}
+[iqiyi.md](iqiyi.md)
+{% endcontent-ref %}
 
-{% page-ref page="fengyu.md" %}
+{% content-ref url="inmobi.md" %}
+[inmobi.md](inmobi.md)
+{% endcontent-ref %}
 
-{% page-ref page="bilibili.md" %}
+{% content-ref url="wechat.md" %}
+[wechat.md](wechat.md)
+{% endcontent-ref %}
 
+{% content-ref url="fengyu.md" %}
+[fengyu.md](fengyu.md)
+{% endcontent-ref %}
+
+{% content-ref url="bilibili.md" %}
+[bilibili.md](bilibili.md)
+{% endcontent-ref %}
