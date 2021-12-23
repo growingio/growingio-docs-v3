@@ -1,4 +1,4 @@
-# 苹果广告投放（ASA）
+# 苹果广告投放
 
 **当您要使用Growing IO获客分析服务对您在Apple Search Ads（下文简称ASA）上的投放进行归因分析时，请先确保您的App已经集成了Apple的iAd.framework和AdServices.framework ，同时集成Growing IO iOS SDK（2.9.9） 并按以下说明进行了相应设置，如有疑问请与您的App开发人员沟通。**
 
@@ -26,11 +26,15 @@
 
 1）添加投放账号并授权：
 
-&#x20;    输入org\_id→点击授权
+&#x20;    输入投放账户id→点击授权
+
+&#x20;    <mark style="color:orange;">**如使用第三方公司进行广告投放，建议先在苹果后台给投放公司授权。**</mark>
+
+&#x20;    <mark style="color:orange;">**再由投放公司以实际投放广告的Apple id登录苹果后台后进行Growing IO的授权流程。**</mark>
 
 ![](<../../../.gitbook/assets/截屏2021-12-22 09.59.10 (1).png>)
 
-其中Org\_id为您在[苹果广告投放后台](https://ads.apple.com/cn/)的帐户id，示例如下：
+其中账户id为您在[苹果广告投放后台](https://ads.apple.com/cn/)的帐户id，示例如下：
 
 ![](<../../../.gitbook/assets/IMG\_0790 (1).JPG>)
 
@@ -38,21 +42,21 @@
 
 ![](<../../../.gitbook/assets/图片4 (3).png>)
 
-登录账号ID：填写对应的苹果广告后台的登录账号（Apple ID）
+登录账号ID：填写苹果广告后台的登录账号（Apple ID），请注意：此处应为实际投放广告的账号ID
 
 登录成功后进入选择权限页面，请选择：账号只读
 
 ![](<../../../.gitbook/assets/图片5 (3).png>)
 
-2）授权成功后，请继续在Growing IO后台填写Campaign ID
+2）授权成功后，请继续在Growing IO后台填写广告系列ID
 
 ![](../../../.gitbook/assets/IMG\_0788.JPG)
 
-Campaign ID是您在ASA后台创建的广告系列 ID，示例如下：
+广告系列ID是您在ASA后台创建的广告系列 ID，示例如下：
 
 ![](<../../../.gitbook/assets/图片7 (1).png>)
 
-当您有多个广告系列时，请在授权成功之后依次录入相应的Campaign ID。
+当您有多个广告系列时，在授权成功之后依次录入相应的广告系列ID即可。
 
 &#x20;
 
