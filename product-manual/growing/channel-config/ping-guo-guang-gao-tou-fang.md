@@ -1,22 +1,22 @@
 # 苹果广告投放
 
-**当您要使用Growing IO获客分析服务对您在Apple Search Ads（下文简称ASA）上的投放进行归因分析时，请先确保您的App已经集成了Apple的iAd.framework和AdServices.framework ，同时集成Growing IO iOS SDK（2.9.9） 并按以下说明进行了相应设置，如有疑问请与您的App开发人员沟通。**
+**当您要使用GrowingIO获客分析服务对您在Apple Search Ads（下文简称ASA）上的投放进行归因分析时，请先确保您的App已经集成了Apple的iAd.framework和AdServices.framework ，同时集成GrowingIO iOS SDK（2.9.9） 并按以下说明进行了相应设置，如有疑问请与您的App开发人员沟通。**
 
 ![](<../../../.gitbook/assets/SDK设置 (1).png>)
 
 一、**广告归因与数据展示**
 
-**1、在 Growing IO 后台，创建“苹果广告投放”监测链接，并绑定ASA账号进行相应的授权；‌**
+**1、在 GrowingIO 后台，创建“苹果广告投放”监测链接，并绑定ASA账号进行相应的授权；‌**
 
-**2、Growing IO 会以Campaign ID为维度，通过API接口获取广告投放相应信息；‌**
+**2、GrowingIO 会以Campaign ID为维度，通过API接口获取广告投放相应信息；‌**
 
-**3、Growing IO 会对ASA后台数据和服务端数据做归因匹配，并将归因的结果展示在 Growing IO 后台数据中。**
+**3、GrowingIO 会对ASA后台数据和服务端数据做归因匹配，并将归因的结果展示在 Growing IO 后台数据中。**
 
 &#x20;****&#x20;
 
 二、**创建监测链接与媒体授权**
 
-1、在Growing IO后台**获客分析**→**获客追踪**→**新建监测链接** 中填写对应内容，推广渠道选择“苹果广告投放”，然后点击确定。
+1、在GrowingIO后台**获客分析**→**获客追踪**→**新建监测链接** 中填写对应内容，推广渠道选择“苹果广告投放”，然后点击确定。
 
 **注：**推广APP请选择对应的**iOS** 应用
 
@@ -30,7 +30,7 @@
 
 &#x20;    <mark style="color:orange;">**如使用第三方公司进行广告投放，建议先在苹果后台给投放公司授权。**</mark>
 
-&#x20;    <mark style="color:orange;">**再由投放公司以实际投放广告的Apple id登录苹果后台后进行Growing IO的授权流程。**</mark>
+&#x20;    <mark style="color:orange;">**再由投放公司以实际投放广告的Apple id登录苹果后台后进行GrowingIO的授权流程。**</mark>
 
 ![](<../../../.gitbook/assets/截屏2021-12-22 09.59.10 (1).png>)
 
@@ -48,7 +48,7 @@
 
 ![](<../../../.gitbook/assets/图片5 (3).png>)
 
-2）授权成功后，请继续在Growing IO后台填写广告系列ID
+2）授权成功后，请继续在GrowingIO后台填写广告系列ID
 
 ![](../../../.gitbook/assets/IMG\_0788.JPG)
 
@@ -82,23 +82,23 @@ Apple Search Ads并不生成监测链接，因此相应归因数据的查看与�
 
 **四 归因数据差异说明**
 
-由于Growing IO与Apple的归因逻辑不同，双方平台出现数据差异属于正常现象，以下为数据差异产生的主要原因：
+由于GrowingIO与Apple的归因逻辑不同，双方平台出现数据差异属于正常现象，以下为数据差异产生的主要原因：
 
 &#x20;
 
 1.Apple Search Ads数据延迟
 
-尽管Growing IO SDK拥有前置调用和重试机制，服务端请求苹果接口引入TSL/SSL会话复用，动态超时阈值等一系列手段规避数据延迟造成的数据差异，但当延迟状况严重的情况下，仍旧无法避免数据差异出现。
+尽管GrowingIO SDK拥有前置调用和重试机制，服务端请求苹果接口引入TSL/SSL会话复用，动态超时阈值等一系列手段规避数据延迟造成的数据差异，但当延迟状况严重的情况下，仍旧无法避免数据差异出现。
 
 2.对转化时间定义不同
 
-Apple将按照App安装完成时间作为转化时间，GIO则是按照App首次打开App时间（激活时间）统计转化。另外苹果的归因窗口期30天，因此查看数据时建议将渠道窗口期也设为30天。
+Apple将按照App安装完成时间作为转化时间，GrowingIO则是按照App首次打开App时间（激活时间）统计转化。另外苹果的归因窗口期30天，因此查看数据时建议将渠道窗口期也设为30天。
 
 ![](../../../.gitbook/assets/图片10.png)
 
 3.对新增定义不同
 
-Apple按照Apple ID统计新增安装，Growing IO则是按照设备ID统计新增安装。
+Apple按照Apple ID统计新增安装，GrowingIO则是按照设备ID统计新增安装。
 
 ![](<../../../.gitbook/assets/图片11 (1).png>)
 
