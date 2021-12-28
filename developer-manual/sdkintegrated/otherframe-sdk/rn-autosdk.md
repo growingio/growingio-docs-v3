@@ -203,15 +203,15 @@ NativeModules.GrowingIO.onPageShow("pageName");
 
 自定义数据上传其实最终是通过 NativeModules.GrowingIO 调用的原生GrowingIO 无埋点的API，以上接口使用时，对应的参数限制条件对您很重要。
 
-| 方法名               | 参数类型                                                  | 说明       |
-| ----------------- | ----------------------------------------------------- | -------- |
-| track             | (String eventId, Object eventLevelVariable(optional)) | 自定义事件    |
-| setEvar           | (Object conversionVariables)                          | 设置转化变量   |
-| setPeopleVariable | (Object peopleVariables)                              | 设置用户变量   |
-| setUserId         | (String userId)                                       | 设置登录用户ID |
-| clearUserId       | 无参数                                                   | 清除登录用户ID |
-| setVisitor        | (Object visitor)                                      | 设置访问用户变量 |
-| setPageVariable   | (String pageName, JSONObject pageVariable)            | 设置页面级变量  |
+| 方法名               | 参数类型                                                  | 说明                  |
+| ----------------- | ----------------------------------------------------- | ------------------- |
+| track             | (String eventId, Object eventLevelVariable(optional)) | 自定义事件               |
+| setEvar           | (Object conversionVariables)                          | 设置转化变量              |
+| setPeopleVariable | (Object peopleVariables)                              | 设置用户变量              |
+| setUserId         | (String userId)                                       | 设置登录用户ID            |
+| clearUserId       | 无参数                                                   | 清除登录用户ID            |
+| setVisitor        | (Object visitor)                                      | 设置访问用户变量            |
+| setPageVariable   | (String pageName, JSONObject pageVariable)            | 设置页面级变量，仅支持无埋点sdk使用 |
 
 {% hint style="warning" %}
 埋点接口其实最终是通过 NativeModules.GrowingIO 调用的原生GrowingIO 无埋点的API，参数限制与其一致。
