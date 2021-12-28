@@ -1,6 +1,6 @@
 # App端数据定义
 
-## 一、介绍 <a href="#yi-jie-shao" id="yi-jie-shao"></a>
+## 一、介绍 <a href="yi-jie-shao" id="yi-jie-shao"></a>
 
 为了提供更有效率的便捷的数据定义工作，我们为你提供了在电脑上圈选手机 app 的功能：
 
@@ -16,23 +16,23 @@
 
 6.当前设备支持范围：手机、平板电脑，以及不同设备的横屏、竖屏分别圈选。
 
-## 二、准备工作 <a href="#er-zhun-bei-gong-zuo" id="er-zhun-bei-gong-zuo"></a>
+## 二、准备工作 <a href="er-zhun-bei-gong-zuo" id="er-zhun-bei-gong-zuo"></a>
 
-### **1.SDK 版本要求** <a href="#1sdk-ban-ben-yao-qiu" id="1sdk-ban-ben-yao-qiu"></a>
+### **1.SDK 版本要求** <a href="1sdk-ban-ben-yao-qiu" id="1sdk-ban-ben-yao-qiu"></a>
 
 将想要圈选的 App 升级到 2.7.0 及以上的 SDK版本。
 
 使用横屏圈选，请将想要圈选的 App 升级到 2.8.0 及以上的 SDK 版本。
 
-### **2.使用方法** <a href="#2-shi-yong-fang-fa" id="2-shi-yong-fang-fa"></a>
+### **2.使用方法** <a href="2-shi-yong-fang-fa" id="2-shi-yong-fang-fa"></a>
 
-通过 **数据中心**-**数据管理**-**创建无埋点事件** GrowingIO 圈选入口，在下拉列表中找到需要定义的 App，进入圈选扫码页面，使用手机扫码，选择手机中右边的按钮「 web 端圈选」即可进入电脑圈选，唤醒手机上相对应的 App （加载了 2.7.0 以上版本的 SDK ），操作手机进入到想要定义的页面进行圈选。
+通过 **数据中心**-**数据管理**-**创建无埋点事件 **GrowingIO 圈选入口，在下拉列表中找到需要定义的 App，进入圈选扫码页面，使用手机扫码，选择手机中右边的按钮「 web 端圈选」即可进入电脑圈选，唤醒手机上相对应的 App （加载了 2.7.0 以上版本的 SDK ），操作手机进入到想要定义的页面进行圈选。
 
 请确保手机和电脑在同一个 wifi 局域网下。
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-Ll135OOcbjbcP3CLlu--Ll138X5raGKPVELG7YCE5908CE4B88020WiFi.png)
 
-### **3.查看基本信息** <a href="#3-cha-kan-ji-ben-xin-xi" id="3-cha-kan-ji-ben-xin-xi"></a>
+### **3.查看基本信息** <a href="3-cha-kan-ji-ben-xin-xi" id="3-cha-kan-ji-ben-xin-xi"></a>
 
 可以在左侧看到当前圈选的元素的包名、版本信息以及app和电脑的连接状态。
 
@@ -62,17 +62,17 @@
 
 当手机端退出正在圈选的应用或无线网断开等情况出现时，可能会导致两端设备连接断开，中断圈选。如要继续圈选可重新扫码进行连接。如要结束圈选，可点击右上角“退出圈选”。
 
-### **4.异常情况处理** <a href="#4-yi-chang-qing-kuang-chu-li" id="4-yi-chang-qing-kuang-chu-li"></a>
+### **4.异常情况处理** <a href="4-yi-chang-qing-kuang-chu-li" id="4-yi-chang-qing-kuang-chu-li"></a>
 
 如果扫码失败，可能存在图中所示原因，检查后仍然无法解决可以联系技术支持。
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-Ll0ACUYgbwb2UH8p7yx-Ll0BN1iC0bXuYE0XVZDE689ABE7A081E5A4B1E8B4A5.png)
 
-## 三、圈选元素 <a href="#san-quan-xuan-yuan-su" id="san-quan-xuan-yuan-su"></a>
+## 三、圈选元素 <a href="san-quan-xuan-yuan-su" id="san-quan-xuan-yuan-su"></a>
 
 不管是 app 的原生元素还是 H5 页面上的元素，在 GrowingIO 元素定义的过程中，既需要定义元素本身的条件，也需要定义元素所在的页面，这两个部分在下面进行详细的介绍。
 
-### **1.元素的限定条件** <a href="#1-yuan-su-de-xian-ding-tiao-jian" id="1-yuan-su-de-xian-ding-tiao-jian"></a>
+### **1.元素的限定条件** <a href="1-yuan-su-de-xian-ding-tiao-jian" id="1-yuan-su-de-xian-ding-tiao-jian"></a>
 
 当我们对一个元素进行定义时，往往是想要知道「某个按钮被点了多少次」，因为“点击”的动作在开发时加在了这个按钮上，于是你的用户点击时就会触发跳转等操作，GrowingIO 的圈选定义是基于 app 开发的实现方式，如果使用了不同的实现方式，数据的呈现往往也会有不同，但是这并不影响你定义元素的操作。
 
@@ -80,7 +80,7 @@
 
 根据不同的实现方式，对于不同元素之间的关系，主要有 3 种定义形式：
 
-#### 情况1：多个元素共用一个“点击”动作，常见于商品列表和商品详情等 <a href="#qing-kuang-1-duo-ge-yuan-su-gong-yong-yi-ge-dian-ji-dong-zuo-chang-jian-yu-shang-pin-lie-biao-he-sha" id="qing-kuang-1-duo-ge-yuan-su-gong-yong-yi-ge-dian-ji-dong-zuo-chang-jian-yu-shang-pin-lie-biao-he-sha"></a>
+#### 情况1：多个元素共用一个“点击”动作，常见于商品列表和商品详情等 <a href="qing-kuang-1-duo-ge-yuan-su-gong-yong-yi-ge-dian-ji-dong-zuo-chang-jian-yu-shang-pin-lie-biao-he-sha" id="qing-kuang-1-duo-ge-yuan-su-gong-yong-yi-ge-dian-ji-dong-zuo-chang-jian-yu-shang-pin-lie-biao-he-sha"></a>
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-Ll0ACUYgbwb2UH8p7yx-Ll0BN1vRUFj1j-hd0sFE59BBE5-E5A49AE58583E7B4A0E585B1E794A8E4B880E4B8AAE782B9E587BBE4BA8BE4BBB6vsE78BACE7AB8BE782B9E587BBE4BA8BE4BBB6.png)
 
@@ -110,7 +110,7 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-Ll0ACUYgbwb2UH8p7yx-Ll0BN22Mzvt9UZW87snE59BBE9-E6A188E4BE8B3.png)
 
-#### 情况2：一个元素有独立的“点击”动作，常见于菜单按钮等 <a href="#qing-kuang-2-yi-ge-yuan-su-you-du-li-de-dian-ji-dong-zuo-chang-jian-yu-cai-dan-an-niu-deng" id="qing-kuang-2-yi-ge-yuan-su-you-du-li-de-dian-ji-dong-zuo-chang-jian-yu-cai-dan-an-niu-deng"></a>
+#### 情况2：一个元素有独立的“点击”动作，常见于菜单按钮等 <a href="qing-kuang-2-yi-ge-yuan-su-you-du-li-de-dian-ji-dong-zuo-chang-jian-yu-cai-dan-an-niu-deng" id="qing-kuang-2-yi-ge-yuan-su-you-du-li-de-dian-ji-dong-zuo-chang-jian-yu-cai-dan-an-niu-deng"></a>
 
 这种情况是因为在这个 app 开发的时候，给每个元素单独设置了“点击”的动作，需要单独圈选。
 
@@ -126,11 +126,11 @@
 
 【对于 H5 元素的圈选方法详见 [Web端数据定义（Web圈选）](web.md)】
 
-#### 情况3：存在父子结构的元素 —— **容器圈选** <a href="#qing-kuang-3-cun-zai-fu-zi-jie-gou-de-yuan-su-rong-qi-quan-xuan" id="qing-kuang-3-cun-zai-fu-zi-jie-gou-de-yuan-su-rong-qi-quan-xuan"></a>
+#### 情况3：存在父子结构的元素 —— **容器圈选** <a href="qing-kuang-3-cun-zai-fu-zi-jie-gou-de-yuan-su-rong-qi-quan-xuan" id="qing-kuang-3-cun-zai-fu-zi-jie-gou-de-yuan-su-rong-qi-quan-xuan"></a>
 
 容器元素的数据是容器内所有元素的数据之和，在 H5 页面中，a 标签和 button 标签会默认作为容器，你可以通过查看不同元素的数据，看到这种差异。
 
-### **2.元素的所属页面** <a href="#2-yuan-su-de-suo-shu-ye-mian" id="2-yuan-su-de-suo-shu-ye-mian"></a>
+### **2.元素的所属页面** <a href="2-yuan-su-de-suo-shu-ye-mian" id="2-yuan-su-de-suo-shu-ye-mian"></a>
 
 在定义元素的过程中，你会发现元素默认会有一个所属页面：
 
@@ -146,15 +146,15 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-Ll0ACUYgbwb2UH8p7yx-Ll0BN2C7xAJLfY4PQgvE59BBE14-E5B195E5BC80E58583E7B4A0E68980E5B19EE9A1B5E99DA2.png)
 
-### **3.在热图模式下圈选元素** <a href="#3-zai-re-tu-mo-shi-xia-quan-xuan-yuan-su" id="3-zai-re-tu-mo-shi-xia-quan-xuan-yuan-su"></a>
+### **3.在热图模式下圈选元素** <a href="3-zai-re-tu-mo-shi-xia-quan-xuan-yuan-su" id="3-zai-re-tu-mo-shi-xia-quan-xuan-yuan-su"></a>
 
 可以在圈选时开启热图模式，来查看点击热度：
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-Ll0ACUYgbwb2UH8p7yx-Ll0BN2EwUiRgO7gkBD7E59BBE15-E698BEE7A4BAE783ADE59BBE.png)
 
-## 四、圈选页面 <a href="#si-quan-xuan-ye-mian" id="si-quan-xuan-ye-mian"></a>
+## 四、圈选页面 <a href="si-quan-xuan-ye-mian" id="si-quan-xuan-ye-mian"></a>
 
-### **1.原生页面** <a href="#1-yuan-sheng-ye-mian" id="1-yuan-sheng-ye-mian"></a>
+### **1.原生页面** <a href="1-yuan-sheng-ye-mian" id="1-yuan-sheng-ye-mian"></a>
 
 在 App 中，「原生页面」其实更像是 App 的「组成部分」，每个部分上有承载着不同功能的元素，帮助用户完成在 App 中的操作。
 
@@ -162,7 +162,7 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-Ll0ACUYgbwb2UH8p7yx-Ll0BN2GFyAB3hOdiF3\_E59BBE16-E5AE9AE4B989E58E9FE7949FE9A1B5E99DA2.png)
 
-### **2.H5 页面** <a href="#2h5-ye-mian" id="2h5-ye-mian"></a>
+### **2.H5 页面** <a href="2h5-ye-mian" id="2h5-ye-mian"></a>
 
 为了更方便地定义 H5 页面，页面选择中提供快捷模式和自定义模式
 
@@ -176,7 +176,7 @@
 
 一个 H5 页面可能会在这个 App 的不同页面下加载出来，在这个模式下，这个 H5 不管在哪个页面被打开，只统计在当前原生页面下被加载的数据。
 
-## 五、FAQ <a href="#wu-faq" id="wu-faq"></a>
+## 五、FAQ <a href="wu-faq" id="wu-faq"></a>
 
 **1.App 的 H5 页面圈选的数据是怎样的？** 如果只加载了 Android 和 iOS 的 SDK ，就只能是 App 圈选，H5 在 App 外面的数据是统计不到的； 如果加载了JS SDK ，是可以在 web 圈选的，App 上圈的就是在 App 的数据，web 里圈的还会包含 App 外的数据。
 

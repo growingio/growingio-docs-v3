@@ -26,7 +26,7 @@
 ```
 
 {% hint style="warning" %}
-&#x20;Web JS SDK 默认是不会采集本地页面（域名为 **localhost** 或者 **file://** 协议），如果您希望 SDK 采集本地页面，需要在集成 SDK 代码之前添加如下代码：
+&#x20;Web JS SDK 默认是不会采集本地页面（域名为 **localhost** 或者 **file:// **协议），如果您希望 SDK 采集本地页面，需要在集成 SDK 代码之前添加如下代码：
 
 `window._gr_ignore_local_rule=true; //开启本地页面采集`
 {% endhint %}
