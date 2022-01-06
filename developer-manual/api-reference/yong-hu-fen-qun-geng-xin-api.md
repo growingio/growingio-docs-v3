@@ -25,26 +25,39 @@ PUT
 | body参数  | 类型     | 是否必传 | 说明                                                               |
 | ------- | ------ | ---- | ---------------------------------------------------------------- |
 | idtype  | string | 是    | <p>用户ID类型：<br>cs1：登录用户ID<br>openid：openid<br>unionid：unionid</p> |
-| content | string | 是    | 用户ID列表                                                           |
+| content | array  | 是    | 用户ID列表                                                           |
 
 
 {% endtab %}
 
 {% tab title="body示例" %}
-
+```
+{
+  "idtype":"cs1",
+  "content":[
+          "1",
+          "2"
+  ]
+}
+```
 {% endtab %}
 
 {% tab title="响应示例" %}
 ```
+// 更新成功
+200：OK
+"分群【xxx】更新成功。"
+
+//更新失败  
+400：Bad Request
 {
-  "status": "",
-  "downloadLinks": [],
-  "exportType": "",
-  "dataType": "",
-  "exportDate": "",
-  "exportVersion": "",
-  "requestTime": "",
-  "errorMsg": ""
+    "message": "分群的类型和idtype不匹配",
+    "errors": [
+        {
+            "code": "bad_request",
+            "message": "错误访问"
+        }
+    ]
 }
 ```
 {% endtab %}
