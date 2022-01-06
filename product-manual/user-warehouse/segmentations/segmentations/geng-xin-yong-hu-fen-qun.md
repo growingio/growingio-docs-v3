@@ -26,4 +26,3 @@
 原有分群内保留的ID将全部删除，替换成新上传文件内的ID。
 {% endhint %}
 
-若需API更新，可参考：[用户分群更新API](../../../../developer-manual/api-reference/yong-hu-fen-qun-geng-xin-api.md)
