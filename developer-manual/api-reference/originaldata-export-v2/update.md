@@ -10,6 +10,7 @@
 
 * 从API2.0接口开通那一刻起，API1.0接口依旧可以继续使用，但是**`一个月`**之后就会失效，请您在过渡期内尽快升级您的使用代码。
 * API2.0接口从开通的那一刻起就开始生效，比如您于`2018-08-01 10:30:00`升级到了API2.0接口，那么API2.0接口就可以下载`2018-08-01 11:00:00`之后的数据了，但是之前的数据还需要通过API1.0去获取。
+* 在过渡期内，仍可以关闭API2.0接口，继续使用API1.0。过渡期结束后，无法降级。
 
 ## 新旧版本接口对比
 
@@ -17,13 +18,13 @@
 {% tab title="URL" %}
 2.0 接口格式：
 
-```text
+```
 https://www.growingio.com/v2/insights/{export_type}/{data_type}/{ai}/{export_date}.json
 ```
 
 1.0 接口格式：
 
-```text
+```
 https://www.growingio.com/insights/{ai}/{date}.json
 ```
 {% endtab %}
@@ -31,7 +32,7 @@ https://www.growingio.com/insights/{ai}/{date}.json
 {% tab title="响应示例" %}
 2.0 接口返回数据格式：
 
-```text
+```
 {
   "status”:"FINISHED",
   "downloadLinks":[
@@ -49,7 +50,7 @@ https://www.growingio.com/insights/{ai}/{date}.json
 
 1.0接口返回数据格式
 
-```text
+```
 {
   "status":"FINISHED",
   "downlinks":[
@@ -74,4 +75,3 @@ visit、page、action、action\_tag、custom\_attr、ads\_track\_click、ads\_tr
 数据格式变化请参考各个版本的字段说明章节。
 {% endtab %}
 {% endtabs %}
-
