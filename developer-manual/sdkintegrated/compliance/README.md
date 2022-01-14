@@ -353,7 +353,7 @@ GrowingIO SDK 默认收集的数据类型只有「设备 ID」和「用户 ID」
 
 除上述指南外，您还必须知晓并同意GIO企业客户隐私政策，具体如下链接：
 
-[https://accounts.growingio.com/privacy](https://accounts.growingio.com/user-privacy)
+&#x20;[https://accounts.growingio.com/privacy](https://accounts.growingio.com/privacy)
 
 GIO亦根据中国法律法规的要求制定了GIO关于最终用户个人信息的隐私政策，具体如下链接，您可以根据您平台或APP隐私政策的需要，选择是否向最终用户公开：
 
