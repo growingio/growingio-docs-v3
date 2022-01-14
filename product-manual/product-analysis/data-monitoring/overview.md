@@ -27,10 +27,10 @@ description: 你可以在概览中了解产品的基本运行情况，并切换�
 
 ## 常见问题
 
-#### 1.如果我的项目中有多个应用，概览中的数据包含全部应用么？ <a href="1-ru-guo-wo-de-xiang-mu-zhong-you-duo-ge-ying-yong-gai-lan-zhong-de-shu-ju-bao-han-quan-bu-ying-yong" id="1-ru-guo-wo-de-xiang-mu-zhong-you-duo-ge-ying-yong-gai-lan-zhong-de-shu-ju-bao-han-quan-bu-ying-yong"></a>
+#### 1.如果我的项目中有多个应用，概览中的数据包含全部应用么？ <a href="#1-ru-guo-wo-de-xiang-mu-zhong-you-duo-ge-ying-yong-gai-lan-zhong-de-shu-ju-bao-han-quan-bu-ying-yong" id="1-ru-guo-wo-de-xiang-mu-zhong-you-duo-ge-ying-yong-gai-lan-zhong-de-shu-ju-bao-han-quan-bu-ying-yong"></a>
 
 是的。概览中的数据是多个应用的加和，如果您需要分别看各个应用的数据，可以添加过滤条件。概览暂时不包括微信生态数据（小程序，微信内嵌页，公众号）
 
-#### 2.项目里有多个应用，在项目管理中把其中一个应用删除了，那在概览中还有这个应用的数据么？ <a href="3-ke-hu-xiang-mu-li-you-duo-ge-ying-yong-zai-xiang-mu-guan-li-zhong-ba-qi-zhong-yi-ge-ying-yong-shan" id="3-ke-hu-xiang-mu-li-you-duo-ge-ying-yong-zai-xiang-mu-guan-li-zhong-ba-qi-zhong-yi-ge-ying-yong-shan"></a>
+#### 2.项目里有多个应用，在项目管理中把其中一个应用删除了，那在概览中还有这个应用的数据么？ <a href="#3-ke-hu-xiang-mu-li-you-duo-ge-ying-yong-zai-xiang-mu-guan-li-zhong-ba-qi-zhong-yi-ge-ying-yong-shan" id="3-ke-hu-xiang-mu-li-you-duo-ge-ying-yong-zai-xiang-mu-guan-li-zhong-ba-qi-zhong-yi-ge-ying-yong-shan"></a>
 
-目前删除应用了之后，数据层面不会有任何改变，历史数据还在，之后的数据也还会继续收集。
+目前删除应用了之后，历史数据还在，不会有任何改变。同时，若应用未移除SDK，之后的数据也还会继续收集，但不作计算。
