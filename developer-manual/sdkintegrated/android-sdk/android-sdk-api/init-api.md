@@ -47,7 +47,10 @@ public class TestApplication extends Application {
                 .setImeiEnable(true)
                 .setGoogleAdIdEnable(true)
                 .setAndroidIdEnable(true)
-                .setOAIDEnable(true));
+                .setOAIDEnable(true)
+                .setOAIDProvideConfig(OaidProvideConfig.provideOaid(
+                        context -> "<Your Oaid>"
+                )));
 ​
     }
 }
@@ -77,18 +80,20 @@ public class TestApplication extends Application {
 
 ## 数据采集发送API
 
-| API                  | 默认值                | 说明                                                                                            | 无埋点SDK版本支持 | 埋点SDK版本支持 |
-| -------------------- | ------------------ | --------------------------------------------------------------------------------------------- | ---------- | --------- |
-| setDisabled          | false              | SDK 是否采集数据，设置为`true`时不采集数据                                                                    | ALL        | ALL       |
-| setSampling          | 1                  | 采样率\[0.01\~1],若设置sampling = 0.01，则 1% 的设备会被采集数据，每次启动会根据用户设置的采样率判断设备是否在采集的范围之内，**使用之前请咨询技术支持** | ALL        | ALL       |
-| setSessionInterval   | 30 \* 1000         | 在后台停留时长超过此值，则产生新的`sessionId`,发送`visit`事件。                                                     | ALL        | ALL       |
-| setFlushInterval     | 15 \* 1000         | 数据刷新的最长时间间隔，默认 15 秒 。如果距离上次发送数据事件超过此时间则发送事件                                                   | ALL        | ALL       |
-| setThrottle          | false              | 是否节流发送，节流发送时`imp`不发送，不发送但是采集，`imp`为元素展示事件                                                     | ALL        | -         |
-| setDisableImpression | true               | 是否采集`imp`事件，`imp`为元素展示事件，默认不采集`imp。需要`setDisableImpression(false)，同时服务端返回配置为true时才会采集。        | >=2.8.11   | -         |
-| disableCellularImp   | false              | 否关闭移动蜂窝网`imp`事件采集，`imp`为元素展示事件                                                                | ALL        | -         |
-| setCellularDataLimit | 10 \* 1024 \* 1024 | 一天的时间之内，在移动蜂窝网下的数据最大传输量，默认 10 M。                                                              | ALL        | ALL       |
-| setBulkSize          | 300                | 如果数据库存储数据条数大于等于`bulkSize`，则马上发送数据。                                                            | ALL        | ALL       |
-| setImeiEnable        | true               | 设置为 false 则 SDK 不采集 `imei，`适用于**海外应用市场**上架的应用。                                                | >=2.7.8    | -         |
-| setAndroidIdEnable   | true               | 设置为 false 则 SDK 不采集 `androidid` ，适用于**海外应用市场**上架的应用。                                          | >=2.7.8    | -         |
-| setGoogleAdIdEnable  | true               | 设置为 false 则 SDK 不采集 `GoogleAdId` ，适用于**海外应用市场**上架的应用。                                         | >=2.7.8    | -         |
-| setOAIDEnable        | true               | 国内[移动安全联盟MSA](http://www.msa-alliance.cn/col.jsp?id=120) 联合各大手机制造商推出了 OAID ， 作为唯一广告标识符。       | >=2.8.5    | -         |
+| API                  | 默认值                 | 说明                                                                                            | 无埋点SDK版本支持 | 埋点SDK版本支持 |
+| -------------------- | ------------------- | --------------------------------------------------------------------------------------------- | ---------- | --------- |
+| setDisabled          | false               | SDK 是否采集数据，设置为`true`时不采集数据                                                                    | ALL        | ALL       |
+| setSampling          | 1                   | 采样率\[0.01\~1],若设置sampling = 0.01，则 1% 的设备会被采集数据，每次启动会根据用户设置的采样率判断设备是否在采集的范围之内，**使用之前请咨询技术支持** | ALL        | ALL       |
+| setSessionInterval   | 30 \* 1000          | 在后台停留时长超过此值，则产生新的`sessionId`,发送`visit`事件。                                                     | ALL        | ALL       |
+| setFlushInterval     | 15 \* 1000          | 数据刷新的最长时间间隔，默认 15 秒 。如果距离上次发送数据事件超过此时间则发送事件                                                   | ALL        | ALL       |
+| setThrottle          | false               | 是否节流发送，节流发送时`imp`不发送，不发送但是采集，`imp`为元素展示事件                                                     | ALL        | -         |
+| setDisableImpression | true                | 是否采集`imp`事件，`imp`为元素展示事件，默认不采集`imp。需要`setDisableImpression(false)，同时服务端返回配置为true时才会采集。        | >=2.8.11   | -         |
+| disableCellularImp   | false               | 否关闭移动蜂窝网`imp`事件采集，`imp`为元素展示事件                                                                | ALL        | -         |
+| setCellularDataLimit | 10 \* 1024 \* 1024  | 一天的时间之内，在移动蜂窝网下的数据最大传输量，默认 10 M。                                                              | ALL        | ALL       |
+| setBulkSize          | 300                 | 如果数据库存储数据条数大于等于`bulkSize`，则马上发送数据。                                                            | ALL        | ALL       |
+| setImeiEnable        | true                | 设置为 false 则 SDK 不采集 `imei，`适用于**海外应用市场**上架的应用。                                                | >=2.7.8    | -         |
+| setAndroidIdEnable   | true                | 设置为 false 则 SDK 不采集 `androidid` ，适用于**海外应用市场**上架的应用。                                          | >=2.7.8    | -         |
+| setGoogleAdIdEnable  | true                | 设置为 false 则 SDK 不采集 `GoogleAdId` ，适用于**海外应用市场**上架的应用。                                         | >=2.7.8    | -         |
+| setOAIDEnable        | true                | 国内[移动安全联盟MSA](http://www.msa-alliance.cn/col.jsp?id=120) 联合各大手机制造商推出了 OAID ， 作为唯一广告标识符。       | >=2.8.5    | -         |
+| setOAIDProvideConfig | OaidProvideConfig对象 | OaidProvideConfig.provideOaid() -> 手动提供OAID值 OaidProvideConfig.provideCert() -> 手动提供CERT值     | >=2.9.11   |           |
+
