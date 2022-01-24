@@ -24,7 +24,7 @@
 [utm-config.md](utm-config.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="attribution.md" %}
+[attribution.md](attribution.md)
 {% endcontent-ref %}
 
