@@ -89,7 +89,6 @@
     * [常见问题](developer-manual/sdkintegrated/ios-sdk/iossdk-faq.md)
     * [更新日志](developer-manual/sdkintegrated/ios-sdk/iossdk-log.md)
     * [用户运营iOS SDK地址](developer-manual/sdkintegrated/ios-sdk/yong-hu-yun-ying-ios-sdk-di-zhi.md)
-  * [C++ 客户端SDK](developer-manual/sdkintegrated/c++-ke-hu-duan-sdk.md)
   * [移动端第三方框架 SDK](developer-manual/sdkintegrated/otherframe-sdk/README.md)
     * [React Native无埋点SDK](developer-manual/sdkintegrated/otherframe-sdk/rn-autosdk.md)
     * [React Native埋点SDK](developer-manual/sdkintegrated/otherframe-sdk/rn-sdk.md)
