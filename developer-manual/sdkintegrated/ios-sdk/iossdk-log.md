@@ -2,10 +2,10 @@
 description: iOS SDK更新日志
 ---
 
-# iOS SDK 更新日志
+# 更新日志
 
-{% hint style="warning" %}
-稳定版本2.9.11
+{% hint style="info" %}
+稳定版本2.8.24
 {% endhint %}
 
 | SDK版本  | 更新点                                                                                                                                                                                   | 时间         |

@@ -2,12 +2,12 @@
 description: Android SDK更新日志
 ---
 
-# Android SDK更新日志
+# 更新日志
 
 {% hint style="danger" %}
 升级到2.8.7及以上版本，集成SDK中添加依赖时，需将module级别的GrowingIO SDK的引用后缀 @aar 去除
 
-稳定版本为2.9.11
+稳定版本2.8.25
 {% endhint %}
 
 | 版本     | 说明                                                                                                                                                                                                                                                                       | 日期         |

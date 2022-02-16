@@ -400,18 +400,10 @@ GrowingIO SDK 针对欧盟区的一般数据保护法（GDPR）提供了以下�
 >
 > GrowingIO 使用 IDFA 来做来源管理激活设备的精确匹配，让你更好的衡量广告效果。如您不希望启用IDFA，可以选择不引入 AdSupport.framework
 
-#### 关于 IDFA 权限获取
+#### 关于权限获取
 
 * 对于iOS 14之前，你无需主动获取 `广告标识IDFA` 的权限
 * 对于iOS 14之后，你需要使用如下方法来开启你的 `广告标识IDFA` 的权限
-
-{% hint style="info" %}
-2021 年 4 月 27 日，iOS 14.5 正式发布，新版本的 iOS 最主要变化如下：
-
-自 iOS14.5、iPadOS 14.5 和 tvOS 14.5 开始，所有 App 都必须使用 `AppTrackingTransparency` 框架来征得用户的许可，才能对其进行跟踪或访问其设备的广告标识符。
-
-And starting with iOS 14.5, iPadOS 14.5, and tvOS 14.5, you’ll be required to ask users for their permission to track them across apps and websites owned by other companies.
-{% endhint %}
 
 1.  Plist 文件中添加 `NSUserTrackingUsageDescription`
 
@@ -423,58 +415,28 @@ And starting with iOS 14.5, iPadOS 14.5, and tvOS 14.5, you’ll be required to 
 3.  调用获取权限代码
 
     ```
-    - (void)applicationDidBecomeActive:(UIApplication *)application {
-      // 调用AppTrackingTransparency相关实现请在ApplicationDidBecomeActive之后，适配iOS 15
-      // 参考: https://developer.apple.com/forums/thread/690607?answerId=688798022#688798022
-      if (@available(iOS 14, *)) {
-         // iOS14及以上版本需要先请求权限
-         [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-             switch (status) {
-                 case ATTrackingManagerAuthorizationStatusDenied:
-                     //用户拒绝向App授权
-                     break;
-                 case ATTrackingManagerAuthorizationStatusAuthorized:
-                     //用户同意向App授权
-                     break;
-                 case ATTrackingManagerAuthorizationStatusNotDetermined:
-                     //用户未做选择或未弹窗
-                     break;
-                 case ATTrackingManagerAuthorizationStatusRestricted:
-                     //用户在系统级别开启了限制广告追踪
-                     break;
-                 default:
-                     break;
-             }
-         }];
-     }
-    }
+        if (@available(iOS 14, *)) {
+            // iOS14及以上版本需要先请求权限
+            [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+                switch (status) {
+                    case ATTrackingManagerAuthorizationStatusDenied:
+                        //用户拒绝向App授权
+                        break;
+                    case ATTrackingManagerAuthorizationStatusAuthorized:
+                        //用户同意向App授权
+                        break;
+                    case ATTrackingManagerAuthorizationStatusNotDetermined:
+                        //用户未做选择或未弹窗
+                        break;
+                    case ATTrackingManagerAuthorizationStatusRestricted:
+                        //用户在系统级别开启了限制广告追踪
+                        break;
+                    default:
+                        break;
+                }
+            }];
+        }
     ```
-
-#### 关于使用 IDFA 作为访问用户ID
-
-GrowingIO SDK 使用 访问用户ID 标识访问用户 ，其值使用 IDFA 、IDFV 或 随机字符串 ，三者的优先级为 IDFA > IDFV > 随机字符串 ，例如：如果获取不到 IDFA，SDK 会使用 IDFV 作为访问用户ID。
-
-访问用户ID生成时机是在 SDK 第一次初始化时，生成之后会被存储在 Keychain 中，如果 Keychain 数据一直存在，则访问用户ID不会发生改变。
-
-如果需要使用 IDFA 作为访问用户ID，则需要在请求获取 IDFA 权限之后再初始化SDK。如果用户不允许广告跟踪，则会按照 IDFV > 随机字符串 的逻辑生成访问用户ID。
-
-```
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-  // 调用AppTrackingTransparency相关实现请在ApplicationDidBecomeActive之后，适配iOS 15
-  // 参考: https://developer.apple.com/forums/thread/690607?answerId=688798022#688798022
-  if (@available(iOS 14, *)) {
-    [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-      // 初始化 GrowingIO SDK
-    }];
-  } else {
-    // 初始化 GrowingIO SDK
-  }
-}
-```
-
-{% hint style="info" %}
-使用 IDFA 作为访问用户ID，同时为使 App 合规，则第一次SDK初始化应该在 用户同意隐私协议和获取 IDFA 权限之后。参考[合规步骤](../compliance/ios-sdk-he-gui-shuo-ming.md#he-gui-bu-zhou)
-{% endhint %}
 
 ### 12. 采集推送
 
