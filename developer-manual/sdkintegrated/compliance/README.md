@@ -56,7 +56,7 @@ GIO亦根据中国法律法规的要求制定了GIO关于最终用户个人信�
 | 页面来源             | -                                           | 无风险        |
 | 页面标题             | -                                           | 无风险        |
 | imei             | configuration.setImeiEnable(false);         | 高风险        |
-| ndroidId         | configuration.setAndroidIdEnable(false)     | 高风险        |
+| androidId        | configuration.setAndroidIdEnable(false)     | 高风险        |
 | gaid             | configuration.setGoogleAdIdEnable(false);   | 高风险        |
 | oaid             | configuration.setOAIDEnable(false)          | 高风险        |
 | 设备方向             | -                                           | 无风险        |
