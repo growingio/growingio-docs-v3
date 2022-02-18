@@ -8,11 +8,11 @@ description: 半自动浏览事件能够携带用户添加的自定义事件和�
 
 请升级最新版本的SDK。
 
-| 无埋点SDK版本 | 特性 |
-| :--- | :--- |
-| 2.8.5 | 添加配置当 View 可见的比例则自动触发埋点事件 |
-| 2.8.4 | 支持自动采集元素内容 |
-| 2.8.2 | 支持 imp 半自动埋点 |
+| 无埋点SDK版本 | 特性                        |
+| -------- | ------------------------- |
+| 2.8.5    | 添加配置当 View 可见的比例则自动触发埋点事件 |
+| 2.8.4    | 支持自动采集元素内容                |
+| 2.8.2    | 支持 imp 半自动埋点              |
 
 {% hint style="warning" %}
 React Native 无埋点 SDK目前不支持。
@@ -35,7 +35,7 @@ React Native 无埋点 SDK目前不支持。
 * 在实际用户场景中并不能真正代表用户对于某个 View 的浏览次数
 * 想自定义添加一些自定义变量，无法添加。
 
-## **新版半自动浏览事件介绍** <a id="xin-ban-ban-zi-dong-liu-lan-shi-jian-jie-shao"></a>
+## **新版半自动浏览事件介绍** <a href="#xin-ban-ban-zi-dong-liu-lan-shi-jian-jie-shao" id="xin-ban-ban-zi-dong-liu-lan-shi-jian-jie-shao"></a>
 
 新版方案：**用户标记一个 View 并提供自定义事件和变量，SDK 负责监控，当此 View 对象可见时发送用户配置的自定义事件和变量。**
 
@@ -47,7 +47,7 @@ React Native 无埋点 SDK目前不支持。
 
 下面我们将从三个方面介绍此方案。
 
-### **1.** **标记View并设置自定义事件和变量** <a id="1-biao-ji-view-bing-she-zhi-zi-ding-yi-shi-jian-he-bian-liang"></a>
+### **1.** **标记View并设置自定义事件和变量** <a href="#1-biao-ji-view-bing-she-zhi-zi-ding-yi-shi-jian-he-bian-liang" id="1-biao-ji-view-bing-she-zhi-zi-ding-yi-shi-jian-he-bian-liang"></a>
 
 在旧版无埋点 SDK 中，如果想查看某个广告位的具体某个商品的曝光次数，通过圈选广告位的 view 元素的 imp 事件是无法做到的，仍需要您埋点自定义事件。
 
@@ -55,13 +55,13 @@ React Native 无埋点 SDK目前不支持。
 
 此方案将监控 View 的可见和埋点的触发时机交给 GIO SDK ， 开发者只需要将自定义事件的变量传递给 SDK 即可。
 
-### **2.** **元素的浏览事件相对于旧版更准** <a id="2-yuan-su-de-liu-lan-shi-jian-xiang-dui-yu-jiu-ban-geng-zhun"></a>
+### **2.** **元素的浏览事件相对于旧版更准** <a href="#2-yuan-su-de-liu-lan-shi-jian-xiang-dui-yu-jiu-ban-geng-zhun" id="2-yuan-su-de-liu-lan-shi-jian-xiang-dui-yu-jiu-ban-geng-zhun"></a>
 
 对于用户主动标记 imp 采集的元素，相对于旧版本自动采集会更加准确，我们举例以下两个场景来说明。
 
-#### **场景1** **：** **不同的页面共享同一个元素** <a id="chang-jing-1-bu-tong-de-ye-mian-gong-xiang-tong-yi-ge-yuan-su"></a>
+#### **场景1** **：** **不同的页面共享同一个元素** <a href="#chang-jing-1-bu-tong-de-ye-mian-gong-xiang-tong-yi-ge-yuan-su" id="chang-jing-1-bu-tong-de-ye-mian-gong-xiang-tong-yi-ge-yuan-su"></a>
 
-![imp&#x573A;&#x666F;1](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LsFN-kH_I1FhypMMhpC-LsGHzPX8zIQyxBkJeEqimage.png)
+![imp场景1](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LsFN-kH\_I1FhypMMhpC-LsGHzPX8zIQyxBkJeEqimage.png)
 
 底部的导航栏在 Tab 页面中是共享元素，即切换 Tab ，底部的导航栏持续可见，在不同的 Tab 页面中是共享元素。
 
@@ -77,9 +77,9 @@ React Native 无埋点 SDK目前不支持。
 
 可以认为新版本方案只关心当前元素对于用户是否可见，和页面访问事件 page 无关联。更贴近实际场景，相对旧版本更准。
 
-#### **场景2** **：** **列表元素的展现统计** <a id="chang-jing-2-lie-biao-yuan-su-de-zhan-xian-tong-ji"></a>
+#### **场景2** **：** **列表元素的展现统计** <a href="#chang-jing-2-lie-biao-yuan-su-de-zhan-xian-tong-ji" id="chang-jing-2-lie-biao-yuan-su-de-zhan-xian-tong-ji"></a>
 
-![imp&#x573A;&#x666F;2](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LsFN-kH_I1FhypMMhpC-LsGIgGsbAd0wdRHzc6Himage.png)
+![imp场景2](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LsFN-kH\_I1FhypMMhpC-LsGIgGsbAd0wdRHzc6Himage.png)
 
 **旧版本：**
 
@@ -95,7 +95,7 @@ GIO 推荐广告位在 `ScrollView` 的最底部，需要用户滑动才能看�
 
 新版本浏览事件采集的列表，内部的元素展现次数的统计更加准确，更符合业务场景。
 
-### **3.** **提升用户浏览事件采集的性能** <a id="3-ti-sheng-yong-hu-liu-lan-shi-jian-cai-ji-de-xing-neng"></a>
+### **3.** **提升用户浏览事件采集的性能** <a href="#3-ti-sheng-yong-hu-liu-lan-shi-jian-cai-ji-de-xing-neng" id="3-ti-sheng-yong-hu-liu-lan-shi-jian-cai-ji-de-xing-neng"></a>
 
 旧版本中，无埋点 SDK 将自动采集所有 View 的信息，最终分析时不会分析所有 APP 中的 View，在APP的性能、用户流量上都是一种浪费。
 
@@ -114,102 +114,39 @@ GIO 推荐广告位在 `ScrollView` 的最底部，需要用户滑动才能看�
 
 ### 标记半自动化采集View元素
 
-#### **markImpression\(ImpressionMark mark\)** <a id="markimpression-impressionmark-mark"></a>
+#### **markImpression(ImpressionMark mark)** <a href="#markimpression-impressionmark-mark" id="markimpression-impressionmark-mark"></a>
 
 | **参数** | 说明 |
-| :--- | :--- |
+| ------ | -- |
 
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">mark</th>
-      <th style="text-align:left">
-        <p><b>ImpressionMark:</b> &#x6807;&#x8BB0; view &#x7684;&#x914D;&#x7F6E;&#x7C7B;&#xFF1B;</p>
-        <p><b>&#x6CE8;&#x610F;&#xFF1A;</b>&#x8FD0;&#x884C;&#x65F6;&#x6807;&#x8BB0;
-          view &#x5BF9;&#x8C61;&#xFF0C;SDK &#x4E0D;&#x5B58;&#x50A8;&#x6807;&#x8BB0;&#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x5B58;&#x5728;&#x6807;&#x8BB0;&#x4E00;&#x6B21;&#xFF0C;&#x6C38;&#x8FDC;&#x8BB0;&#x5F55;&#x5E76;&#x91C7;&#x96C6;&#x7684;&#x73B0;&#x8C61;&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| mark | <p><strong>ImpressionMark:</strong> 标记 view 的配置类；</p><p><strong>注意：</strong>运行时标记 view 对象，SDK 不存储标记对象，所以不存在标记一次，永远记录并采集的现象。</p> |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------- |
 
 | 参数 | 传参方式 | 是否必填 | 说明 |
-| :--- | :--- | :--- | :--- |
-
+| -- | ---- | ---- | -- |
 
 | view | 构造函数传参 | 是 | **View：**需要标记采集 imp 的 view |
-| :--- | :--- | :--- | :--- |
+| ---- | ------ | - | -------------------------- |
 
+| eventId | 构造函数传参 | 是 | <p><strong>String：</strong>自定义事件标识符；</p><p>非空，长度限制小于等于50；</p><p>SDK 2.4.0以下版本不支持中文，仅支持 0 到 9、a 到 z 以及下划线，并且不能以数字开头。</p> |
+| ------- | ------ | - | ----------------------------------------------------------------------------------------------------------------------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">eventId</th>
-      <th style="text-align:left">&#x6784;&#x9020;&#x51FD;&#x6570;&#x4F20;&#x53C2;</th>
-      <th style="text-align:left">&#x662F;</th>
-      <th style="text-align:left">
-        <p><b>String&#xFF1A;</b>&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x6807;&#x8BC6;&#x7B26;&#xFF1B;</p>
-        <p>&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF1B;</p>
-        <p>SDK 2.4.0&#x4EE5;&#x4E0B;&#x7248;&#x672C;&#x4E0D;&#x652F;&#x6301;&#x4E2D;&#x6587;&#xFF0C;&#x4EC5;&#x652F;&#x6301;
-          0 &#x5230; 9&#x3001;a &#x5230; z &#x4EE5;&#x53CA;&#x4E0B;&#x5212;&#x7EBF;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x80FD;&#x4EE5;&#x6570;&#x5B57;&#x5F00;&#x5934;&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">setVariable</th>
-      <th style="text-align:left">set &#x65B9;&#x6CD5;&#x4F20;&#x53C2;</th>
-      <th style="text-align:left">&#x5426;</th>
-      <th style="text-align:left">
-        <p><b>JSONObject&#xFF1A;</b>&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#x6240;&#x4F34;&#x968F;&#x7684;&#x7EF4;&#x5EA6;&#xFF08;&#x53D8;&#x91CF;&#xFF09;&#x4FE1;&#x606F;&#x3002;</p>
-        <p>&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF08;<code>eventLevelVariable.length()&lt;=100</code>&#xFF09;&#xFF1B;</p>
-        <p><code>eventLevelVariable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>JSONObject</code>&#x6216;&#x8005;<code>JSONArray&#xFF1B;</code>
-        </p>
-        <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| setVariable | set 方法传参 | 否 | <p><strong>JSONObject：</strong>事件发生时所伴随的维度（变量）信息。</p><p>非空，长度限制小于等于100（<code>eventLevelVariable.length()&#x3C;=100</code>）；</p><p><code>eventLevelVariable</code> 内部不允许含有<code>JSONObject</code>或者<code>JSONArray；</code></p><p><code>key</code> 长度限制小于等于50，<code>value</code> 长度限制小等于1000，值不能为空串，也就是""。</p> |
+| ----------- | -------- | - | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 
 | setGlobalId | set 方法传参 | 否 | **String**：用于在Activity范围内唯一标记View，下文有详细解释改字段的用法与原因。 |
-| :--- | :--- | :--- | :--- |
+| ----------- | -------- | - | --------------------------------------------------- |
 
+| setDelayTimeMills | set 方法传参 | 否，默认为0（2.9.7版本开始默认值更新为500） | <p><strong>long ：</strong>检测Impression的延迟时间(ms)， 默认不延时；</p><p>是一个性能调优字段, 是允许GIO在界面改变后， 延时一段时间再次进行View的可见性检测判断. 默认为 0 是经过 GIO 性能测试的， 相信能够满足大部分场景的性能要求。 可以将此值设为 200, 300, 400, 500。</p> |
+| ----------------- | -------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">setDelayTimeMills</th>
-      <th style="text-align:left">set &#x65B9;&#x6CD5;&#x4F20;&#x53C2;</th>
-      <th style="text-align:left">&#x5426;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0</th>
-      <th style="text-align:left">
-        <p><b>long &#xFF1A;</b>&#x68C0;&#x6D4B;Impression&#x7684;&#x5EF6;&#x8FDF;&#x65F6;&#x95F4;(ms)&#xFF0C;
-          &#x9ED8;&#x8BA4;&#x4E0D;&#x5EF6;&#x65F6;&#xFF1B;</p>
-        <p>&#x662F;&#x4E00;&#x4E2A;&#x6027;&#x80FD;&#x8C03;&#x4F18;&#x5B57;&#x6BB5;,
-          &#x662F;&#x5141;&#x8BB8;GIO&#x5728;&#x754C;&#x9762;&#x6539;&#x53D8;&#x540E;&#xFF0C;
-          &#x5EF6;&#x65F6;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x518D;&#x6B21;&#x8FDB;&#x884C;View&#x7684;&#x53EF;&#x89C1;&#x6027;&#x68C0;&#x6D4B;&#x5224;&#x65AD;.
-          &#x9ED8;&#x8BA4;&#x4E3A; 0 &#x662F;&#x7ECF;&#x8FC7; GIO &#x6027;&#x80FD;&#x6D4B;&#x8BD5;&#x7684;&#xFF0C;
-          &#x76F8;&#x4FE1;&#x80FD;&#x591F;&#x6EE1;&#x8DB3;&#x5927;&#x90E8;&#x5206;&#x573A;&#x666F;&#x7684;&#x6027;&#x80FD;&#x8981;&#x6C42;&#x3002;
-          &#x53EF;&#x4EE5;&#x5C06;&#x6B64;&#x503C;&#x8BBE;&#x4E3A; 200, 300, 400,
-          500&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-GlobalId 字段的提供主要是为了适配 RecyclerView 这类的可复用 View 对浏览定义的影响。 GIO对View的可见性跟踪默认是对象级别的跟踪，所以默认情况下用户notifyDataSetChange时\(即使内容并没有改变\)， 由于所有View被重新Bind， 而且由于RecyclerView的复用机制， 并不能保证复用顺序有序, 可能触发多条浏览事件发出， 这显然是不符合预期的。
+GlobalId 字段的提供主要是为了适配 RecyclerView 这类的可复用 View 对浏览定义的影响。 GIO对View的可见性跟踪默认是对象级别的跟踪，所以默认情况下用户notifyDataSetChange时(即使内容并没有改变)， 由于所有View被重新Bind， 而且由于RecyclerView的复用机制， 并不能保证复用顺序有序, 可能触发多条浏览事件发出， 这显然是不符合预期的。
 
 例如：用户下拉刷新页面，新增了一条 item ，但是列表顺序变了和未刷新前不一致，此时可能会有多条浏览事件发出，不符合预期，所以提供 globalId 方案解决使得只发送列表中可见新出现的元素。
 
 提供以下方法解决此问题:
 
-**1. 调用 Adapter 的 setHasStableIds\(true\), 并重写 getItemId 方法:**
+**1. 调用 Adapter 的 setHasStableIds(true), 并重写 getItemId 方法:**
 
 ```javascript
 Adapter adapter = new MAdapter();
@@ -246,12 +183,12 @@ public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
 ### 停止半自动采集View的浏览事件
 
-#### **stopMarkViewImpression\(View markedView\)** <a id="stopmarkviewimpression-view-markedview"></a>
+#### **stopMarkViewImpression(View markedView)** <a href="#stopmarkviewimpression-view-markedview" id="stopmarkviewimpression-view-markedview"></a>
 
 已经标记的View对象，通知GIO停止标记跟踪View的可见性。
 
-| 参数 | 说明 |
-| :--- | :--- |
+| 参数   | 说明                 |
+| ---- | ------------------ |
 | view | **View:** 标记 view。 |
 
 ### xml的快捷配置方式
@@ -260,7 +197,7 @@ public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 使用此方法标记View的浏览时， 请使用MobileDebugger验证， 如果没有发出， 请使用调用接口的形式。
 {% endhint %}
 
-同时提供一个在xml中配置GIO imp事件的简单配置, GIO会在视图改变时检测View的tag属性，**如果符合"gio-tag-事件名称" 标准**，此时会调用GrowingIO.getInstance\(\).markViewImpression\(new ImpressionMark\(thisView, “事件名称"\)方法。
+同时提供一个在xml中配置GIO imp事件的简单配置, GIO会在视图改变时检测View的tag属性，**如果符合"gio-tag-事件名称" 标准**，此时会调用GrowingIO.getInstance().markViewImpression(new ImpressionMark(thisView, “事件名称")方法。
 
 ```javascript
 <TextView
@@ -281,29 +218,15 @@ public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 Android 无埋点 **SDK 2.8.4** 及以上支持。
 {% endhint %}
 
-#### setCollectContent <a id="setcollectcontent"></a>
+#### setCollectContent <a href="#setcollectcontent" id="setcollectcontent"></a>
 
 自动采集元素内容，事件变量为 `gio_v`。
 
 | 参数 | 说明 |
-| :--- | :--- |
+| -- | -- |
 
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">collectV</th>
-      <th style="text-align:left">
-        <p>boolean: &#x662F;&#x5426;&#x81EA;&#x52A8;&#x91C7;&#x96C6;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; <b>true</b>&#xFF1B;</p>
-        <ul>
-          <li>true &#x91C7;&#x96C6;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#xFF1B;</li>
-          <li>false &#x4E0D;&#x91C7;&#x96C6;&#x5143;&#x7D20;&#x5185;&#x5BB9;&#x3002;</li>
-        </ul>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| collectV | <p>boolean: 是否自动采集元素内容，默认值为 <strong>true</strong>；</p><ul><li>true 采集元素内容；</li><li>false 不采集元素内容。</li></ul> |
+| -------- | ----------------------------------------------------------------------------------------------------------- |
 
 ```javascript
 //自动采集元素内容并发送埋点事件，默认值为 true 采集元素内容。
@@ -319,30 +242,15 @@ GrowingIO.getInstance().markViewImpression(
 Android 无埋点 **SDK 2.8.5** 及以上支持。
 {% endhint %}
 
-#### setVisibleScale <a id="setvisiblescale"></a>
+#### setVisibleScale <a href="#setvisiblescale" id="setvisiblescale"></a>
 
 设置 View 的可见比例，当可见的比例大于等于 visiableScale 则自动触发埋点事件。
 
 | 参数 | 说明 |
-| :--- | :--- |
+| -- | -- |
 
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">visibleScale</th>
-      <th style="text-align:left">
-        <p><b>float:</b> &#x53C2;&#x6570;&#x8303;&#x56F4;&#x5728; 0-1&#xFF1B;</p>
-        <ul>
-          <li>&#x5F53;&#x4E3A; 0 &#x65F6;&#x4E3A;&#x53EF;&#x89C1;&#x4EFB;&#x610F;&#x50CF;&#x7D20;&#x5219;&#x89E6;&#x53D1;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;&#xFF1B;</li>
-          <li>&#x5F53;&#x4E3A; 1 &#x65F6;&#x4E3A; View &#x5B8C;&#x5168;&#x53EF;&#x89C1;&#x5219;&#x89E6;&#x53D1;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;&#x3002;</li>
-        </ul>
-        <p><b>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;0&#xFF0C;&#x5143;&#x7D20;&#x4EFB;&#x610F;&#x50CF;&#x7D20;&#x53EF;&#x89C1;&#x53D1;&#x9001;&#x57CB;&#x70B9;&#x4E8B;&#x4EF6;</b>&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| visibleScale | <p><strong>float:</strong> 参数范围在 0-1；</p><ul><li>当为 0 时为可见任意像素则触发埋点事件；</li><li>当为 1 时为 View 完全可见则触发埋点事件。</li></ul><p><strong>默认值为0，元素任意像素可见发送埋点事件</strong>。</p> |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ```javascript
 //当元素大于等于一半可见时，自动采集元素内容并发送埋点事件。
@@ -405,6 +313,5 @@ class MyAdapter extends PagerAdapter {
 
 #### **3.当元素内容发生改变，会发送事件么？**
 
-例如 TextView，当元素内容发生变化，不会再次发送事件。[    
+例如 TextView，当元素内容发生变化，不会再次发送事件。[  \
 ](https://docs.growingio.com/docs/sdk-integration/android-sdk/api)
-
