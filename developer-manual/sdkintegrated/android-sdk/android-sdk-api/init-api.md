@@ -68,17 +68,17 @@ public class TestApplication extends Application {
 
 
 
-| API                       | 默认值   | 说明                                          | 无埋点SDK版本支持 | 埋点SDK版本支持 |
-| ------------------------- | ----- | ------------------------------------------- | ---------- | --------- |
-| setDeeplinkCallback       | 无     | DeepLink 回调接口，获得自定义参数以便跳转对应 APP页 面          | >=2.3.2    | ALL       |
-| setTrackWebView           | true  | 是否采集全部的`WebView,`设置为`false`时不采所有`WebView`数据 | ALL        | -         |
-| supportMultiProcessCircle | false | 是否使用多进程圈选功能                                 | ALL        | -         |
-| setMutiprocess            | false | 使用了多进程必须配置，自定义事件和变量值才会多进程共享                 | ALL        | ALL       |
-| trackAllFragments         | false | 是否采集所有Fragment                              | ALL        | -         |
-| setHashTagEnable          | false | 在`WebView`中的页面访问，是否认为点击锚点链接是一个页面浏览          | ALL        | -         |
-| setHarmonyEnable          | false | 是否识别鸿蒙系统，默认不识别                              | >=2.9.6    | >=2.9.6   |
-| setReadClipBoardEnable    | true  |  是否读取剪切板信息，默认读取                             | >=2.9.8    |           |
-|                           |       |                                             |            |           |
+| API                           | 默认值   | 说明                                          | 无埋点SDK版本支持 | 埋点SDK版本支持 |
+| ----------------------------- | ----- | ------------------------------------------- | ---------- | --------- |
+| setDeeplinkCallback           | 无     | DeepLink 回调接口，获得自定义参数以便跳转对应 APP页 面          | >=2.3.2    | ALL       |
+| setTrackWebView               | true  | 是否采集全部的`WebView,`设置为`false`时不采所有`WebView`数据 | ALL        | -         |
+| supportMultiProcessCircle     | false | 是否使用多进程圈选功能                                 | ALL        | -         |
+| setMutiprocess                | false | 使用了多进程必须配置，自定义事件和变量值才会多进程共享                 | ALL        | ALL       |
+| trackAllFragments             | false | 是否采集所有Fragment                              | ALL        | -         |
+| setHashTagEnable              | false | 在`WebView`中的页面访问，是否认为点击锚点链接是一个页面浏览          | ALL        | -         |
+| setHarmonyEnable              | false | 是否识别鸿蒙系统，默认不识别                              | >=2.9.6    | >=2.9.6   |
+| setReadClipBoardEnable        | true  |  是否读取剪切板信息，默认读取                             | >=2.9.8    | >=2.9.8   |
+| setRequireAppProcessesEnabled | true  | 是获取多进程信息                                    | >=2.9.12   | >=2.9.12  |
 
 ## 数据采集发送API
 
