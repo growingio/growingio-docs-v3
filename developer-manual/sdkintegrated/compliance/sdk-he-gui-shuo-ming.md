@@ -159,7 +159,7 @@ GrowingIO.getInstance().enableDataCollect();
 如果您需要禁止采集 AndroidId，请配置`Configuration`
 
 ```
-configuration.setAndroidIdEnable(false);
+.setAndroidIdEnable(false);
 ```
 
 无埋点版本SDK可以通过gradle配置关闭AndroidId采集
@@ -179,7 +179,7 @@ growingio {
 如果您需要禁止采集 IMEI，需要配置`Configuration`
 
 ```
-configuration.setImeiEnable(false);
+.setImeiEnable(false);
 ```
 
 无埋点版本SDK可以通过gradle配置关闭IMEI采集
@@ -199,7 +199,7 @@ growingio {
 如果您需要禁止采集 GoogleAdId，需要配置`Configuration`
 
 ```
-configuration.setGoogleAdIdEnable(false);
+.setGoogleAdIdEnable(false);
 ```
 
 无埋点版本SDK可以通过gradle配置关闭GoogleAdId采集
@@ -220,7 +220,13 @@ growingio {
 
 &#x20;`GrowingIO SDK`默认会获取app多进程信息，用于更准确的在不同进程共享数据。
 
-如果您不希望sdk调用获取进程信息的敏感函数，可在初始化时设置 `.setRequireAppProcessesEnabled(false)`&#x20;
+如果您不希望 SDK 调用获取进程信息的敏感函数，例如 APP 需要隐私检查时，可在初始化时做如下设置&#x20;
+
+```
+.setRequireAppProcessesEnabled(false)；
+```
+
+&#x20;
 
 ### 常见问题
 
