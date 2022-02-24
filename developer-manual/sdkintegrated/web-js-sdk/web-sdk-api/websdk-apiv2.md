@@ -48,10 +48,10 @@ gio('clearUserId');
 gio('init', projectId, options);
 ```
 
-| 参数名称 | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
-| projectId | string | 是 | 项目ID |
-| options | JSON Object | 否 | 系统变量配置 |
+| 参数名称      | 类型          | 是否必须 | 说明     |
+| --------- | ----------- | ---- | ------ |
+| projectId | string      | 是    | 项目ID   |
+| options   | JSON Object | 否    | 系统变量配置 |
 
 **代码示例：**
 
@@ -74,9 +74,9 @@ gio('init', '1234567890', {'imp':false});
 gio('setUserId', userId);
 ```
 
-| 参数名称 | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
-| userId | string | 是 | 用户的登录用户ID |
+| 参数名称   | 类型     | 是否必须 | 说明        |
+| ------ | ------ | ---- | --------- |
+| userId | string | 是    | 用户的登录用户ID |
 
 **代码示例：**
 
@@ -106,11 +106,11 @@ gio('people.set', key, value);
 gio('people.set', customerVariables);
 ```
 
-| 参数名称 | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
-| key | string | 否 | 登录用户变量的标识符。 |
-| value | string | 否 | 登录用户变量的值。 |
-| customerVariables | JSON Object | 否 | 包含登录用户变量的JSON对象。 |
+| 参数名称              | 类型          | 是否必须 | 说明               |
+| ----------------- | ----------- | ---- | ---------------- |
+| key               | string      | 否    | 登录用户变量的标识符。      |
+| value             | string      | 否    | 登录用户变量的值。        |
+| customerVariables | JSON Object | 否    | 包含登录用户变量的JSON对象。 |
 
 **代码示例：**
 
@@ -134,11 +134,11 @@ gio('visitor.set', key, value);
 gio('visitor.set', visitorVariables);
 ```
 
-| 参数名称 | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
-| key | string | 否 | 访问用户变量的标识符。 |
-| value | string | 否 | 访问用户变量的值。 |
-| visitorVariables | JSON Object | 否 | 包含访问用户变量的JSON对象。 |
+| 参数名称             | 类型          | 是否必须 | 说明               |
+| ---------------- | ----------- | ---- | ---------------- |
+| key              | string      | 否    | 访问用户变量的标识符。      |
+| value            | string      | 否    | 访问用户变量的值。        |
+| visitorVariables | JSON Object | 否    | 包含访问用户变量的JSON对象。 |
 
 **代码示例：**
 
@@ -162,11 +162,11 @@ gio('page.set', key, value);
 gio('page.set', pageLevelVariables);
 ```
 
-| 参数名称 | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
-| key | string | 否 | 页面级变量的标识符。 |
-| value | string | 否 | 页面级变量的值。 |
-| pageLevelVariables | JSON Object | 否 | 包含页面级变量的JSON对象，即页面级别的信息。 |
+| 参数名称               | 类型          | 是否必须 | 说明                       |
+| ------------------ | ----------- | ---- | ------------------------ |
+| key                | string      | 否    | 页面级变量的标识符。               |
+| value              | string      | 否    | 页面级变量的值。                 |
+| pageLevelVariables | JSON Object | 否    | 包含页面级变量的JSON对象，即页面级别的信息。 |
 
 **代码示例：**
 
@@ -190,11 +190,11 @@ gio('evar.set', key, value);
 gio('evar.set', conversionVariables);
 ```
 
-| 参数名称 | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
-| key | string | 否 | 转化变量的标识符。 |
-| value | strong | 否 | 转化变量的值。 |
-| conversionVariables | JSON Object | 否 | 包含转化变量的JSON对象。 |
+| 参数名称                | 类型          | 是否必须 | 说明             |
+| ------------------- | ----------- | ---- | -------------- |
+| key                 | string      | 否    | 转化变量的标识符。      |
+| value               | strong      | 否    | 转化变量的值。        |
+| conversionVariables | JSON Object | 否    | 包含转化变量的JSON对象。 |
 
 **代码示例：**
 
@@ -217,10 +217,10 @@ gio('evar.set', {'campaignId': '1234567890', 'campaignOwner':'lisi'});
 gio('track', eventId, eventLevelVariables);
 ```
 
-| 参数名称 | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
-| eventId | string | 是 | 事件标识符 |
-| eventLevelVariables | JSON Object | 否 | 包含事件级变量的JSON对象，暨事件发生时所伴随的维度信息。限制：非空，长度限制小于等于100（eventLevelVariable.length\(\)&lt;=100）；eventLevelVariable内部不允许含有JSONObject或者JSONArray； key长度限制小于等于50，value长度限制小于等于200，值不能为空字符串，也就是“ ”。 |
+| 参数名称                | 类型          | 是否必须 | 说明                                                                                                                                                                                |
+| ------------------- | ----------- | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| eventId             | string      | 是    | 事件标识符                                                                                                                                                                             |
+| eventLevelVariables | JSON Object | 否    | 包含事件级变量的JSON对象，暨事件发生时所伴随的维度信息。限制：非空，长度限制小于等于100（eventLevelVariable.length()<=100）；eventLevelVariable内部不允许含有JSONObject或者JSONArray； key长度限制小于等于50，value长度限制小于等于200，值不能为空字符串，也就是“ ”。 |
 
 **代码示例：**
 
@@ -234,7 +234,7 @@ gio('track', 'registerSuccess');
 gio('track', 'registerSuccess', {'gender':'male', 'age':21});
 ```
 
-### 9. 手动发送页面浏览事件\(sendPage\)
+### 9. 手动发送页面浏览事件(sendPage)
 
 在默认情况下，由于用户浏览网站的交互行为导致当前页面的 URL 产生变化时，GrowingIO 的 Web JS SDK 会发送一个 page 类型的请求。在一些特殊的情况下，例如用户在访问单页应用（Single Page Application）类型的网站时，用户的操作会导致业务上面理解的页面产生了变化，但是当前的 URL 可能并没有改变。
 
@@ -252,11 +252,25 @@ gio('sendPage'); // 在调用 window.gio('send') 之后调用
 * 全局配置, 可以放到send之后
 * 关闭或开启全局数据采集
 
+```
+// enableDataCollect，默认true，采集数据
+// 支持初始化配置和全局配置
+gio('init', 'your projectId', {
+	...
+	//停止采集数据
+	enableDataCollect: false,
+});
+gio('send');
+//采集数据
+window.gio('config',{'enableDataCollect': true});
+```
+
 ```javascript
+// dataCollect (sdk版本2.2.7开始推荐使用enableDataCollect)
 // 停止采集数据
-window.gio('config',{"dataCollect": true}); // 全局配置, 在调用 window.gio('send') 之前调用
+window.gio('config',{'dataCollect': true}); 
 // 采集数据 (默认)
-window.gio('config',{"dataCollect": false});
+window.gio('config',{'dataCollect': false});
 ```
 
 ### 11. 获取访问用户ID（getVisitUserId）
@@ -264,4 +278,3 @@ window.gio('config',{"dataCollect": false});
 ```javascript
 gio('getVisitUserId'); // 在调用 window.gio('send') 之后调用
 ```
-
