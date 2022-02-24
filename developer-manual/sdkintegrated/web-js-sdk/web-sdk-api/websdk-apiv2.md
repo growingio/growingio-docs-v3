@@ -254,19 +254,22 @@ gio('sendPage'); // 在调用 window.gio('send') 之后调用
 
 ```
 // enableDataCollect，默认true，采集数据
-// 支持初始化配置和全局配置
+// 支持初始化配置
 gio('init', 'your projectId', {
-	...
-	//停止采集数据
-	enableDataCollect: false,
+    //停止采集数据
+    enableDataCollect: false,
 });
 gio('send');
-//采集数据
+// 采集数据
 window.gio('config',{'enableDataCollect': true});
 ```
 
+{% hint style="info" %}
+sdk版本2.2.7开始，推荐使用enableDataCollect
+{% endhint %}
+
 ```javascript
-// dataCollect (sdk版本2.2.7开始推荐使用enableDataCollect)
+// dataCollect，sdk版本2.2.7之前可用！
 // 停止采集数据
 window.gio('config',{'dataCollect': true}); 
 // 采集数据 (默认)
