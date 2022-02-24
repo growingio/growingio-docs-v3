@@ -220,7 +220,7 @@ growingio {
 
 &#x20;`GrowingIO SDK`默认会获取app多进程信息，用于更准确的在不同进程共享数据。
 
-如果您需要不希望sdk调用获取进程信息的敏感函数，可在初始化时设置 `.setRequireAppProcessesEnabled(false)`&#x20;
+如果您不希望sdk调用获取进程信息的敏感函数，可在初始化时设置 `.setRequireAppProcessesEnabled(false)`&#x20;
 
 ### 常见问题
 
