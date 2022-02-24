@@ -300,6 +300,7 @@
     * [快手平台](product-manual/growing/channel-config/kuai-shou-ping-tai.md)
     * [凤羽广告平台](product-manual/growing/channel-config/fengyu.md)
     * [bilibili（B站）](product-manual/growing/channel-config/bilibili.md)
+    * [Page 1](product-manual/growing/channel-config/page-1.md)
   * [相关知识](product-manual/growing/othe-info/README.md)
     * [UTM参数使用指南](product-manual/growing/othe-info/utm-use.md)
     * [移动端转化归因](product-manual/growing/othe-info/app-attribution.md)
