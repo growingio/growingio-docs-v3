@@ -577,7 +577,7 @@ gio('init', ' GrowingIO 项目ID', '你的小程序AppID', {
 默认开启数据采集。当设置为 `false` 时，SDK将不会采集和上报事件。当设置为 `true` 时，SDK将开启采集和上报事件。
 
 ```
-gdp('setDataCollect', true);
+gio('setDataCollect', true);
 ```
 
 #### enableEventStore
