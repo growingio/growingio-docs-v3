@@ -78,7 +78,7 @@ public class TestApplication extends Application {
 | setHashTagEnable              | false | 在`WebView`中的页面访问，是否认为点击锚点链接是一个页面浏览          | ALL        | -         |
 | setHarmonyEnable              | false | 是否识别鸿蒙系统，默认不识别                              | >=2.9.6    | >=2.9.6   |
 | setReadClipBoardEnable        | true  |  是否读取剪切板信息，默认读取                             | >=2.9.8    | >=2.9.8   |
-| setRequireAppProcessesEnabled | true  | 是获取多进程信息                                    | >=2.9.12   | >=2.9.12  |
+| setRequireAppProcessesEnabled | true  | 是否获取多进程信息                                   | >=2.9.12   | >=2.9.12  |
 
 ## 数据采集发送API
 
