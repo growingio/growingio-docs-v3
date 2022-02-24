@@ -216,6 +216,12 @@ growingio {
 
 在使用渠道追踪功能时，会使用到 OAID。`GrowingIO SDK` 默认不采集 OAID。
 
+#### 关于禁用获取APP多进程信息
+
+&#x20;GrowingIO SDK默认会获取app多进程信息，用于更准确的在不同进程共享数据。
+
+如果您需要不希望sdk调用获取进程信息的敏感函数，可在初始化时设置`.setRequireAppProcessesEnabled(false)`&#x20;
+
 ### 常见问题
 
 #### Q：延迟初始化之后，发现丢掉了部分事件 <a href="#q-yan-chi-chu-shi-hua-zhi-hou-fa-xian-diu-diao-le-bu-fen-shi-jian" id="q-yan-chi-chu-shi-hua-zhi-hou-fa-xian-diu-diao-le-bu-fen-shi-jian"></a>
