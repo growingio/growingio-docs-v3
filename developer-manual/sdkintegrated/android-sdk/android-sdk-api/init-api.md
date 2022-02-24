@@ -47,6 +47,7 @@ public class TestApplication extends Application {
                 .setImeiEnable(true)
                 .setGoogleAdIdEnable(true)
                 .setAndroidIdEnable(true)
+                .setRequireAppProcessesEnabled(true)
                 .setOAIDEnable(true)
                 .setOAIDProvideConfig(OaidProvideConfig.provideOaid(
                         context -> "<Your Oaid>"
@@ -77,6 +78,7 @@ public class TestApplication extends Application {
 | setHashTagEnable          | false | 在`WebView`中的页面访问，是否认为点击锚点链接是一个页面浏览          | ALL        | -         |
 | setHarmonyEnable          | false | 是否识别鸿蒙系统，默认不识别                              | >=2.9.6    | >=2.9.6   |
 | setReadClipBoardEnable    | true  |  是否读取剪切板信息，默认读取                             | >=2.9.8    |           |
+|                           |       |                                             |            |           |
 
 ## 数据采集发送API
 
