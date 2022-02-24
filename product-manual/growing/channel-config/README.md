@@ -59,3 +59,7 @@ GrowingIO 渠道合作方对接信息持续更新中...
 {% content-ref url="bilibili.md" %}
 [bilibili.md](bilibili.md)
 {% endcontent-ref %}
+
+{% content-ref url="vivo-ying-xiao-ping-tai.md" %}
+[vivo-ying-xiao-ping-tai.md](vivo-ying-xiao-ping-tai.md)
+{% endcontent-ref %}

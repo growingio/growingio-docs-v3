@@ -22,29 +22,12 @@ GrowingIO使用 IP 地址来分析访问者的地理位置，以及确保此服�
 
 [​General Data Protection Regulation 欧盟通用数据保护条例](https://zh.wikipedia.org/wiki/%E6%AD%90%E7%9B%9F%E4%B8%80%E8%88%AC%E8%B3%87%E6%96%99%E4%BF%9D%E8%AD%B7%E8%A6%8F%E7%AF%84)​
 
-GrowingIO 作为数据处理方，为符合 GDPR， Web JS SDK 提供设置接口，可在用户未同意隐私协议时，将dataCollect`dataCollectdataCollect`设置为 `true` ，禁止数据采集；\
+GrowingIO 作为数据处理方，为符合 GDPR， Web JS SDK 提供设置接口，可在用户未同意隐私协议时，将`dataCollect`设置为 `true` ，禁止数据采集；\
 在用户同意隐私协议后，将`dataCollect`设置为 `false` ，开启数据采集。
 
-{% hint style="info" %}
-sdk版本2.2.7开始，推荐使用enableDataCollect，默认true，采集数据
-{% endhint %}
-
 ```
-// enableDataCollect
-// 支持初始化配置
-gio('init', 'your projectId', {
-    //停止采集数据
-    enableDataCollect: false,
-});
-gio('send');
-// 采集数据
-window.gio('config',{'enableDataCollect': true});
-```
-
-```
-// dataCollect，sdk版本2.2.7之前可用！
 // 停止采集数据
-window.gio('config',{"dataCollect": true});
+window.gio('config',{"dataCollect": true}); // 全局配置, 在调用 window.gio('send') 之前调用
 // 采集数据 (默认)
 window.gio('config',{"dataCollect": false});
 ```
