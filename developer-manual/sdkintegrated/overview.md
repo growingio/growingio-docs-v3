@@ -4,6 +4,58 @@ description: 介绍SDK工作方式
 
 # SDK 简介
 
+### SDK支持范围
+
+SDK 包括客户端SDK和服务端SDK。目前客户端SDK支持Android和iOS原生，Web JS，小程序，微信小游戏，内嵌页，以及众多第三方混合开发框架。服务端SDK支持Java 和 PHP。SDK支持移动端第三方框架列表如下：
+
+* React Native
+* Flutter
+* Cordova
+* Weex
+* API Cloud
+* AppCan
+
+小程序支持微信小程序，支付宝小程序，百度小程序，QQ小程序，字节小程序。
+
+**各小程序SDK支持的开发框架如下**：
+
+| 小程序SDK | 原生框架 | 原生框架+第三方插件 | Taro | uni-app | mpvue | mpvue+第三方插件 | WePY | WePY + 第三方插件 | Chameleon |
+| ------ | ---- | ---------- | ---- | ------- | ----- | ----------- | ---- | ------------ | --------- |
+| 微信小程序  | ✅    | ✅          | ✅    | ✅       | ✅     | ✅           | ✅    | ✅            | ✅         |
+| 支付宝小程序 | ✅    | -          | ✅    | ✅       | -     | -           | -    | -            | ✅         |
+| 百度小程序  | ✅    | -          | ✅    | ✅       | -     | -           | -    | -            | ✅         |
+| 字节小程序  | ✅    | -          | ✅    | ✅       | -     | -           |      | -            | -         |
+| QQ小程序  | ✅    | -          | ✅    | ✅       | -     | -           | -    | -            | -         |
+
+**各SDK支持的事件类型如下**：
+
+| SDK              | 访问 | 页面浏览 | 元素点击 | 输入框改变内容 | 表单提交 | 自定义埋点 | 页面级变量 | 转化变量 | 访问用户变量 | 登录用户变量 | 激活 | 应用关闭 |
+| ---------------- | -- | ---- | ---- | ------- | ---- | ----- | ----- | ---- | ------ | ------ | -- | ---- |
+| Android无埋点       | ✅  | ✅    | ✅    | ✅       | ✅    | ✅     | ✅     | ✅    | ✅      | ✅      | ✅  | ✅    |
+| Android埋点        | ✅  | -    | -    | -       | -    | ✅     | -     | ✅    | ✅      | ✅      | ✅  | ✅    |
+| iOS无埋点           | ✅  | ✅    | ✅    | ✅       | ✅    | ✅     | ✅     | ✅    | ✅      | ✅      | ✅  | ✅    |
+| iOS埋点            | ✅  | -    | -    | -       | -    | ✅     | -     | ✅    | ✅      | ✅      | ✅  | ✅    |
+| Web JS           | ✅  | ✅    | ✅    | ✅       | ✅    | ✅     | ✅     | ✅    | ✅      | ✅      | -  | -    |
+| 小程序              | ✅  | ✅    | ✅    | ✅       | ✅    | ✅     | ✅     | ✅    | ✅      | ✅      | -  | ✅    |
+| 微信小游戏            | ✅  | -    | -    | -       | -    | ✅     | ✅     | ✅    | ✅      | ✅      | -  | -    |
+| Hybrid JS        | -  | ✅    | ✅    | ✅       | ✅    | ✅     | ✅     | ✅    | ✅      | ✅      | -  | -    |
+| 小程序和公众号H5内嵌页     | ✅  | ✅    | ✅    | ✅       | ✅    | ✅     | ✅     | ✅    | ✅      | ✅      | -  | -    |
+| React Native 无埋点 | ✅  | ✅    | ✅    | ✅       | ✅    | ✅     | ✅     | ✅    | ✅      | ✅      | -  | -    |
+| React Native 埋点  | ✅  | -    | -    | -       | -    | ✅     | -     | ✅    | ✅      | ✅      | -  | -    |
+| Flutter          | ✅  | -    | -    | -       | -    | ✅     | -     | ✅    | ✅      | ✅      | -  | -    |
+| Cordova          | ✅  | -    | -    | -       | -    | ✅     | -     | ✅    | ✅      | ✅      | -  | -    |
+| Weex             | ✅  | -    | -    | -       | -    | ✅     | -     | ✅    | ✅      | ✅      | -  | -    |
+| API Cloud        | ✅  | -    | -    | -       | -    | ✅     | -     | ✅    | ✅      | ✅      | -  | -    |
+| AppCan           | ✅  | -    | -    | -       | -    | ✅     | -     | ✅    | ✅      | ✅      | -  | -    |
+| Java             | -  | -    | -    | -       | -    | ✅     | -     | -    | -      | -      | -  | -    |
+| PHP              | -  | -    | -    | -       | -    | ✅     | -     | -    | -      | -      | -  | -    |
+
+{% hint style="info" %}
+关于事件类型说明请查看[**事件模型**](https://docs.growingio.com/v3/introduction/datamodel/eventmodel/)
+
+SDK未支持的服务端开发语言，GrowingIO 提供有 [OPEN API](https://docs.growingio.com/v3/developer-manual/api-reference/)
+{% endhint %}
+
 ## SDK 工作方式
 
 ### JS SDK
@@ -36,85 +88,13 @@ GrowingIO Web JS SDK 会在网站用户加载网页后自动启动，并收集�
 
 **移动端框架版本兼容**
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x6846;&#x67B6;</th>
-      <th style="text-align:left">SDK&#x7C7B;&#x522B;</th>
-      <th style="text-align:left">App&#x9002;&#x914D;&#x7684;&#x7CFB;&#x7EDF;&#x7248;&#x672C;</th>
-      <th style="text-align:left">&#x6846;&#x67B6;&#x7248;&#x672C;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">&#x539F;&#x751F;Android</td>
-      <td style="text-align:left">&#x65E0;&#x57CB;&#x70B9;&#x3001;&#x57CB;&#x70B9;</td>
-      <td style="text-align:left">
-        <p>Android 4.2+</p>
-        <p>iOS 8+</p>
-      </td>
-      <td style="text-align:left">-</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x539F;&#x751F;iOS</td>
-      <td style="text-align:left">&#x65E0;&#x57CB;&#x70B9;&#x3001;&#x57CB;&#x70B9;</td>
-      <td style="text-align:left">iOS 8+</td>
-      <td style="text-align:left">-</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">React Native</td>
-      <td style="text-align:left">&#x65E0;&#x57CB;&#x70B9;&#x3001;&#x57CB;&#x70B9;</td>
-      <td style="text-align:left">
-        <p>Android 4.2+</p>
-        <p>iOS 8+</p>
-      </td>
-      <td style="text-align:left">0.46-0.56&#x3001;0.59.9</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Flutter</td>
-      <td style="text-align:left">&#x57CB;&#x70B9;</td>
-      <td style="text-align:left">
-        <p>Android 4.2+</p>
-        <p>iOS 8+</p>
-      </td>
-      <td style="text-align:left">-</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Cordova</td>
-      <td style="text-align:left">&#x57CB;&#x70B9;</td>
-      <td style="text-align:left">
-        <p>Android 4.2+</p>
-        <p>iOS 8+</p>
-      </td>
-      <td style="text-align:left">5.0.0</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Weex</td>
-      <td style="text-align:left">&#x57CB;&#x70B9;</td>
-      <td style="text-align:left">
-        <p>Android 4.2+</p>
-        <p>iOS 8+</p>
-      </td>
-      <td style="text-align:left">0.16.0</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">API Cloud</td>
-      <td style="text-align:left">&#x57CB;&#x70B9;</td>
-      <td style="text-align:left">
-        <p>Android 4.2+</p>
-        <p>iOS 8+</p>
-      </td>
-      <td style="text-align:left">-</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">APP Can</td>
-      <td style="text-align:left">&#x57CB;&#x70B9;</td>
-      <td style="text-align:left">
-        <p>Android 4.2+</p>
-        <p>iOS 8+</p>
-      </td>
-      <td style="text-align:left">-</td>
-    </tr>
-  </tbody>
-</table>
-
+| 框架           | SDK类别  | App适配的系统版本                       | 框架版本             |
+| ------------ | ------ | -------------------------------- | ---------------- |
+| 原生Android    | 无埋点、埋点 | <p>Android 4.2+</p><p>iOS 8+</p> | -                |
+| 原生iOS        | 无埋点、埋点 | iOS 8+                           | -                |
+| React Native | 无埋点、埋点 | <p>Android 4.2+</p><p>iOS 8+</p> | 0.46-0.56、0.59.9 |
+| Flutter      | 埋点     | <p>Android 4.2+</p><p>iOS 8+</p> | -                |
+| Cordova      | 埋点     | <p>Android 4.2+</p><p>iOS 8+</p> | 5.0.0            |
+| Weex         | 埋点     | <p>Android 4.2+</p><p>iOS 8+</p> | 0.16.0           |
+| API Cloud    | 埋点     | <p>Android 4.2+</p><p>iOS 8+</p> | -                |
+| APP Can      | 埋点     | <p>Android 4.2+</p><p>iOS 8+</p> | -                |
