@@ -8,25 +8,43 @@ App适配最低系统版本：iOS 8及以上、Android 4.2-10
 
 ## 1. 集成SDK
 
-### 1. Flutter插件获取安装
-
-根据[dart pub](https://pub.dartlang.org/packages/flutter\_growingio\_track#-installing-tab-)文档获取安装。
-
-### 2. 添加跟踪代码
+### 1. 环境配置
 
 {% tabs %}
-{% tab title="Android（Native部分）" %}
-Flutter插件运行在Android手机上时依赖于GrowingIO Android SDK (可以是无埋 点SDK也可以是埋点SDK)2.6.0及以上, 原生部分请参考：
+{% tab title="Android（Native 部分）" %}
+Flutter 插件运行在 Android 手机上时依赖于 GrowingIO Android SDK (可以是无埋点 SDK 也可以是埋点 SDK) 2.6.0 及以上, 原生部分请参考：
 
 Android SDK > [无埋点 SDK集成](../android-sdk/auto-android-sdk.md)
 
 Android SDK > [埋点 SDK集成](../android-sdk/manunl-android-sdk.md)
 {% endtab %}
 
-{% tab title="iOS（Native部分）" %}
-Flutter 埋点插件是在iOS原生SDK上的扩展，请参考 iOS SDK > [埋点 SDK集成](../ios-sdk/manunl-ios-sdk.md)。
+{% tab title="iOS（Native 部分）" %}
+Flutter 埋点插件是在 iOS 原生 SDK 上的扩展，请参考 iOS SDK > [埋点 SDK集成](../ios-sdk/manunl-ios-sdk.md)。
 {% endtab %}
 {% endtabs %}
+
+### 2. Flutter SDK 集成
+
+在`pubspec.yaml`文件中添加依赖
+
+```
+dependencies:
+  flutter_growingio_track:
+    git:
+      url: https://github.com/growingio/flutter-growingio-track.git
+      ref: master
+```
+
+然后执行`flutter pub get`指令
+
+### 3. 导入
+
+在对应的 \*.dart 文件，使用以下方式导入
+
+```
+import 'package:flutter_growingio_track/flutter_growingio_track.dart';
+```
 
 ## 2. 自定义数据上传
 
@@ -146,7 +164,7 @@ GrowingIO.setVisitor({
 
 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
 
-## 4. 验证SDK是否正常采集数据 <a href="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju" id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
+## 4. 验证SDK是否正常采集数据 <a href="#5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju" id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
 
 了解GrowingIO平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
 
