@@ -1,11 +1,11 @@
 # 产品配置
 
-{% content-ref url="campaign.md" %}
-[campaign.md](campaign.md)
-{% endcontent-ref %}
-
 {% content-ref url="source.md" %}
 [source.md](source.md)
+{% endcontent-ref %}
+
+{% content-ref url="campaign.md" %}
+[campaign.md](campaign.md)
 {% endcontent-ref %}
 
 {% content-ref url="deeplink.md" %}
