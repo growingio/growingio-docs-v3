@@ -58,11 +58,11 @@ GrowingIO直接支持百度统计的参数解析；如果您的自主投放追�
 
 1、以百度后台为例，假设百度后台申请账号时，填写的主域名为 domain.com；
 
-2、GrowingIO后台，生成的监测链接为 https://gio.ren/w/rABC；
+2、GrowingIO后台，生成的监测链接为 https://datayi.cn/w/rABC；
 
-3、域名管理员，新建子域名 tc.domain.com，使用 CNAME 解析到 gio.ren；
+3、域名管理员，新建子域名 tc.domain.com，使用 CNAME 解析到 datayi.cn；
 
-4、在投放使用时，将监测链接，gio.ren替换为子域名tc.domain.com：http://tc.domain.com/w/rABC。
+4、在投放使用时，将监测链接，datayi.cn替换为子域名tc.domain.com：http://tc.domain.com/w/rABC。
 
 （以上 tc.domain.com 仅为示例，具体看贵司的二级域名使用情况。）
 
@@ -78,7 +78,7 @@ GrowingIO直接支持百度统计的参数解析；如果您的自主投放追�
 
 1、s.growingio.com 使用 s.domain.com 替换；
 
-2、gio.ren 使用 tc.domain.com 替换。
+2、datayi.cn使用 tc.domain.com 替换。
 
 3、datayi.cn 使用 lk.domain.com 替换。
 
