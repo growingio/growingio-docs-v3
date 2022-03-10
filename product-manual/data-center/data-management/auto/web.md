@@ -9,7 +9,7 @@ GrowingIO 全量采集用户行为数据，你可以通过「圈选」来定义�
 {% hint style="info" %}
 Hashtag使用说明
 
-如果您的Web页面URL使用了Hashtag，请在加载SDK进行预先配置，请参考[Web JS SDK](../../../../../developer-manual/sdkintegrated/web-js-sdk/)。
+如果您的Web页面URL使用了Hashtag，请在加载SDK进行预先配置，请参考[Web JS SDK](../../../../developer-manual/sdkintegrated/web-js-sdk/)。
 {% endhint %}
 
 {% hint style="success" %}
@@ -40,7 +40,7 @@ Web圈选模式分为浏览和圈选两个模式
 {% tab title="定义页面" %}
 1、在浏览模式下进入要定义的页面，单击圈选模式下的**定义页面**按钮，进入**定义页面**界面**。**
 
-![](<../../../../../.gitbook/assets/image (59).png>)
+![](<../../../../.gitbook/assets/image (59).png>)
 
 左侧选择区：显示与当前页面URL相同的页面（以【当前页】为标识），或包含当前页面的页面。如果页面已经被定义过，可以直接使用。
 
@@ -84,7 +84,7 @@ Web圈选模式分为浏览和圈选两个模式
 当需要定义需要鼠标悬浮等交互行为才能显示的元素时，您可以按住shift键，待元素出现后进行圈选定义。
 {% endhint %}
 
-![](<../../../../../.gitbook/assets/image (116).png>)
+![](<../../../../.gitbook/assets/image (116).png>)
 
 | 参数 | 说明 |
 | -- | -- |
@@ -124,7 +124,7 @@ Web圈选模式分为浏览和圈选两个模式
 
 2、 选择需要定义的查询条件，为查询条件（标识符）命名后单击确定。
 
-![](<../../../../../.gitbook/assets/image (114).png>)
+![](<../../../../.gitbook/assets/image (114).png>)
 
 {% hint style="info" %}
 页面级变量说明
@@ -308,18 +308,18 @@ GrowingIO 提供支持 Web 圈选的 Chrome 扩展程序。
 
 **插件安装**
 
-插件（最新版）手动下载地址：[https://assets.giocdn.com/circle/collector/gio-saas-collection.zip](https://assets.giocdn.com/circle/collector/gio-saas-collection.zip)，请参考[手动安装插件方法](https://s.growingio.com/2Z4mBB)。
+插件（最新版）手动下载地址：[https://assets.giocdn.com/circle/collector/gio-saas-collection.zip](https://assets.giocdn.com/circle/collector/gio-saas-collection.zip)，请参考[Chrome插件安装步骤](web/chrome-cha-jian-an-zhuang-bu-zhou.md)
 
 {% hint style="info" %}
-若点击下载地址无法自动下载，可复制https://s.growingio.com/5EoKZl，黏贴至浏览器地址栏，进行下载。
+若点击下载地址无法自动下载，可复制[https://assets.giocdn.com/circle/collector/gio-saas-collection.zip](https://assets.giocdn.com/circle/collector/gio-saas-collection.zip)，黏贴至浏览器地址栏，进行下载。
 {% endhint %}
 
 **圈选步骤**
 
-1. **圈**选插件安装成功后，**直接在 Chrome 浏览器中打开待圈选网站**。
-2. 单机插件图标登录你的账号。
+1. **圈**选插件安装成功后，**直接在 Chrome 浏览器中打开待圈选网站**
+2. 点击GIO SaaS Collet插件登录你的账号
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LrqhnRPBooFdHnT0FSY-LrqisorSxLz\_gaBjKtcimage.png)
+![](<../../../../.gitbook/assets/截屏2022-03-10 10.20.15 (1).png>)
 
 1. 将插件模式切换到圈选模式，就可以开始圈选了，插件圈选方式与页面圈选功能相同。
 
@@ -383,8 +383,8 @@ GrowingIO 提供支持 Web 圈选的 Chrome 扩展程序。
 
 GrowingIO 可以统计原生应用中的 H5 页面和 H5 做成的应用。
 
-* 原生应用中的 H5 页面，以及嵌在应用中的 H5，请参考 [App端数据定义](../app.md)。
-* 用 H5 做的应用请参考[ Web端数据定义](./)。 &#x20;
+* 原生应用中的 H5 页面，以及嵌在应用中的 H5，请参考 [App端数据定义](app.md)。
+* 用 H5 做的应用请参考[ Web端数据定义](web.md)。 &#x20;
 
 ### **9. 为什么圈选的元素只有点击量，没有浏览量？**
 
@@ -411,7 +411,7 @@ GrowingIO 可以统计原生应用中的 H5 页面和 H5 做成的应用。
 3. 可能是工程师加载 js 代码时的项目 ID 填写有误（项目 ID 没有空格）；
 4. 有可能复写 window 对象：可视化圈选时候，必须要保证您的网站与 GrowingIO 平台之间的通信。如果 window.top, window.parent, window.name, window.location 被复写，将导致无法圈选。
 
-如果出于某些原因你不能改变 iframe 或 window 相关设置，建议使用[插件圈选](./#cha-jian-quan-xuan) 。
+如果出于某些原因你不能改变 iframe 或 window 相关设置，建议使用[插件圈选](web.md#cha-jian-quan-xuan) 。
 
 ### **14. 能否在 iframe 中进行圈选？**
 
@@ -447,4 +447,4 @@ Content-Security-Policy: frame-ancestors 'self' http://www.growingio.com https:/
 
 GrowingIO 根据您网站 HTML 结构识别和定义页面上的元素。有的时候网站上的 HTML 标签写法完全相同，呈现在页面上的几个同类元素，可能 HTML 代码完全相同。此时 GrowingIO 采集、圈选数据时无法区分开。我们通过 HTML 标签的 id 和 class 来区分元素，这种情况下您可以在需要区分的标签 class 中添加一些字符串用于区分。
 
-**仍有疑问？请参考**[**常见问题－圈选部分**](../../../../../product-faq/quanxuan.md)
+**仍有疑问？请参考**[**常见问题－圈选部分**](../../../../product-faq/quanxuan.md)

@@ -124,7 +124,7 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-Ll0ACUYgbwb2UH8p7yx-Ll0BN26g92IiIaRLFgrE59BBE12-E58D95E78BACE7BB9FE8AEA1E79A84E58583E7B4A0E79A84E5908CE7B1BBE58583E7B4A0.png)
 
-【对于 H5 元素的圈选方法详见 [Web端数据定义（Web圈选）](web/)】
+【对于 H5 元素的圈选方法详见 [Web端数据定义（Web圈选）](web.md)】
 
 #### 情况3：存在父子结构的元素 —— **容器圈选** <a href="#qing-kuang-3-cun-zai-fu-zi-jie-gou-de-yuan-su-rong-qi-quan-xuan" id="qing-kuang-3-cun-zai-fu-zi-jie-gou-de-yuan-su-rong-qi-quan-xuan"></a>
 

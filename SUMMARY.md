@@ -338,7 +338,7 @@
   * [数据管理](product-manual/data-center/data-management/README.md)
     * [无埋点事件](product-manual/data-center/data-management/auto/README.md)
       * [概述](product-manual/data-center/data-management/auto/overview.md)
-      * [Web端数据定义](product-manual/data-center/data-management/auto/web/README.md)
+      * [Web端数据定义](product-manual/data-center/data-management/auto/web.md)
         * [Chrome插件安装步骤](product-manual/data-center/data-management/auto/web/chrome-cha-jian-an-zhuang-bu-zhou.md)
       * [App端数据定义](product-manual/data-center/data-management/auto/web-app.md)
       * [App端数据定义（App圈选）](product-manual/data-center/data-management/auto/app.md)
