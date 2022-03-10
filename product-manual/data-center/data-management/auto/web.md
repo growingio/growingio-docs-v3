@@ -24,7 +24,7 @@ URL**示意：**www.xxx.com**/**12345/678/123**?**id=1\&ig=2
 
 ![](https://docs.growingio.com/.gitbook/assets/9412f46a-d87c-41ef-9ee6-9e6e408f4c6a-12626-00000bcf696b73c5\_tmp.jpg)
 
-## 圈选操作 <a href="#1-kai-shi-quan-xuan" id="1-kai-shi-quan-xuan"></a>
+## iframe圈选操作 <a href="#1-kai-shi-quan-xuan" id="1-kai-shi-quan-xuan"></a>
 
 在顶部导航栏选择“**数据中心 > 无埋点事件定义（圈选） > 您的Web应用”**，进入Web圈选模式。
 
@@ -317,13 +317,14 @@ GrowingIO 提供支持 Web 圈选的 Chrome 扩展程序。
 **圈选步骤**
 
 1. **圈**选插件安装成功后，**直接在 Chrome 浏览器中打开待圈选网站**
-2. 点击GIO SaaS Collet插件登录你的账号
+
+&#x20; 2\. 点击GIO SaaS Collet插件登录你的账号
 
 ![](<../../../../.gitbook/assets/截屏2022-03-10 10.20.15 (1).png>)
 
-1. 将插件模式切换到圈选模式，就可以开始圈选了，插件圈选方式与页面圈选功能相同。
+3\. 将插件模式切换到圈选模式，就可以开始圈选了，插件圈选方式与页面圈选功能相同。
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LrqhnRPBooFdHnT0FSY-Lrqk4QSF2CnHLdo5gu6image.png)
+![](<../../../../.gitbook/assets/截屏2022-03-10 19.25.33.png>)
 
 ## 常见问题 <a href="#2-chang-jian-wen-ti-faq" id="2-chang-jian-wen-ti-faq"></a>
 
@@ -411,7 +412,7 @@ GrowingIO 可以统计原生应用中的 H5 页面和 H5 做成的应用。
 3. 可能是工程师加载 js 代码时的项目 ID 填写有误（项目 ID 没有空格）；
 4. 有可能复写 window 对象：可视化圈选时候，必须要保证您的网站与 GrowingIO 平台之间的通信。如果 window.top, window.parent, window.name, window.location 被复写，将导致无法圈选。
 
-如果出于某些原因你不能改变 iframe 或 window 相关设置，建议使用[插件圈选](web.md#cha-jian-quan-xuan) 。
+如果出于某些原因你不能改变 iframe 或 window 相关设置，建议使用[插件进行圈选](web/chrome-cha-jian-an-zhuang-bu-zhou.md) 。
 
 ### **14. 能否在 iframe 中进行圈选？**
 
