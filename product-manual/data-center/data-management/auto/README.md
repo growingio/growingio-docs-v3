@@ -6,9 +6,9 @@ description: 在GrowingIO平台上对无埋点事件进行可视化及管理。
 
 成功集成无埋点SDK之后，即可开始在GrowingIO平台创建无埋点事件（将无埋点事件进行可视化配置），也叫圈选。
 
-在导航栏选择“**数据中心 &gt; 数据管理”**，进入数据管理模块，在左侧导航栏选择“**事件 &gt; 无埋点事件”**，进入无埋点事件管理页面。
+在导航栏选择“**数据中心 > 数据管理”**，进入数据管理模块，在左侧导航栏选择“**事件 > 无埋点事件”**，进入无埋点事件管理页面。
 
-## 创建无埋点事件 <a id="1-jian-jie"></a>
+## 创建无埋点事件 <a href="#1-jian-jie" id="1-jian-jie"></a>
 
 ### 前提条件
 
@@ -16,7 +16,7 @@ description: 在GrowingIO平台上对无埋点事件进行可视化及管理。
 
 ### 操作步骤
 
-创建无埋点事件即无埋点事件定义（圈选），请参考[无埋点事件定义](web.md)。
+创建无埋点事件即无埋点事件定义（圈选），请参考[无埋点事件定义](web/)。
 
 ## 管理无埋点事件
 
@@ -56,5 +56,4 @@ description: 在GrowingIO平台上对无埋点事件进行可视化及管理。
 
 在新的数据管理上线后，我们将原先的「复合指标」功能升级为「计算指标」，将原先的「合并指标」功能调整为「合并事件」。新的合并事件与计算指标功能支持使用埋点事件，以及不同类型事件的合并与计算，不再仅限使用无埋点事件。
 
-您可以通过进入[自定义指标管理](https://app.gitbook.com/@growingio/s/v3/~/drafts/-M9qteolP7taHwEo0w1a/product-manual/data-center/data-management/custom-metric)，体验全新的计算指标与合并事件功能。
-
+您可以通过进入[自定义指标管理](https://app.gitbook.com/@growingio/s/v3/\~/drafts/-M9qteolP7taHwEo0w1a/product-manual/data-center/data-management/custom-metric)，体验全新的计算指标与合并事件功能。
