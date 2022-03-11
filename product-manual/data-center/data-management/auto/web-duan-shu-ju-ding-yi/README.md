@@ -2,14 +2,14 @@
 
 ## 圈选准备
 
-GrowingIO 全量采集用户行为数据，你可以通过「圈选」来定义元素和页面，作为数据分析的基础指标。
+GrowingIO 全量采集用户行为数据，您可以通过「圈选」来定义元素和页面，作为数据分析的基础指标。
 
 在没有定义过的情况下，GrowingIO 保留和回溯元素过去 7 天的点击量，页面过去 7 天的浏览量。
 
 {% hint style="info" %}
 Hashtag使用说明
 
-如果您的Web页面URL使用了Hashtag，请在加载SDK进行预先配置，请参考[Web JS SDK](../../../../developer-manual/sdkintegrated/web-js-sdk/)。
+如果您的Web页面URL使用了Hashtag，请在加载SDK进行预先配置，请参考[Web JS SDK](../../../../../developer-manual/sdkintegrated/web-js-sdk/)。
 {% endhint %}
 
 {% hint style="success" %}
@@ -24,11 +24,11 @@ URL**示意：**www.xxx.com**/**12345/678/123**?**id=1\&ig=2
 
 ![](https://docs.growingio.com/.gitbook/assets/9412f46a-d87c-41ef-9ee6-9e6e408f4c6a-12626-00000bcf696b73c5\_tmp.jpg)
 
-## [iframe圈选](web/iframe-quan-xuan.md) <a href="#1-kai-shi-quan-xuan" id="1-kai-shi-quan-xuan"></a>
+## [iframe圈选](iframe-quan-xuan.md)  <a href="#1-kai-shi-quan-xuan" id="1-kai-shi-quan-xuan"></a>
 
-## [Chrome插件圈选](web.md#3-qi-ta-te-shu-qing-kuang) <a href="#3-qi-ta-te-shu-qing-kuang" id="3-qi-ta-te-shu-qing-kuang"></a>
+## [Chrome插件圈选 ](chrome-cha-jian-quan-xuan.md) <a href="#3-qi-ta-te-shu-qing-kuang" id="3-qi-ta-te-shu-qing-kuang"></a>
 
-## 常见问题 <a href="#2-chang-jian-wen-ti-faq" id="2-chang-jian-wen-ti-faq"></a>
+## 常见问题  <a href="#2-chang-jian-wen-ti-faq" id="2-chang-jian-wen-ti-faq"></a>
 
 ### **1. 如何定义「一组相似元素之和」？** <a href="#21-ru-he-ding-yi-yi-zu-xiang-si-yuan-su-zhi-he" id="21-ru-he-ding-yi-yi-zu-xiang-si-yuan-su-zhi-he"></a>
 
@@ -86,8 +86,8 @@ URL**示意：**www.xxx.com**/**12345/678/123**?**id=1\&ig=2
 
 GrowingIO 可以统计原生应用中的 H5 页面和 H5 做成的应用。
 
-* 原生应用中的 H5 页面，以及嵌在应用中的 H5，请参考 [App端数据定义](app.md)。
-* 用 H5 做的应用请参考[ Web端数据定义](web.md)。 &#x20;
+* 原生应用中的 H5 页面，以及嵌在应用中的 H5，请参考 [App端数据定义](../app.md)。
+* 用 H5 做的应用请参考[ Web端数据定义](broken-reference)。 &#x20;
 
 ### **9. 为什么圈选的元素只有点击量，没有浏览量？**
 
@@ -114,7 +114,7 @@ GrowingIO 可以统计原生应用中的 H5 页面和 H5 做成的应用。
 3. 可能是工程师加载 js 代码时的项目 ID 填写有误（项目 ID 没有空格）；
 4. 有可能复写 window 对象：可视化圈选时候，必须要保证您的网站与 GrowingIO 平台之间的通信。如果 window.top, window.parent, window.name, window.location 被复写，将导致无法圈选。
 
-如果出于某些原因你不能改变 iframe 或 window 相关设置，建议使用[插件进行圈选](web/chrome-cha-jian-an-zhuang-bu-zhou.md) 。
+如果出于某些原因你不能改变 iframe 或 window 相关设置，建议使用[插件进行圈选](chrome-cha-jian-an-zhuang-bu-zhou.md) 。
 
 ### **14. 能否在 iframe 中进行圈选？**
 
@@ -150,4 +150,4 @@ Content-Security-Policy: frame-ancestors 'self' http://www.growingio.com https:/
 
 GrowingIO 根据您网站 HTML 结构识别和定义页面上的元素。有的时候网站上的 HTML 标签写法完全相同，呈现在页面上的几个同类元素，可能 HTML 代码完全相同。此时 GrowingIO 采集、圈选数据时无法区分开。我们通过 HTML 标签的 id 和 class 来区分元素，这种情况下您可以在需要区分的标签 class 中添加一些字符串用于区分。
 
-**仍有疑问？请参考**[**常见问题－圈选部分**](../../../../product-faq/quanxuan.md)
+**仍有疑问？请参考**[**常见问题－圈选部分**](../../../../../product-faq/quanxuan.md)
