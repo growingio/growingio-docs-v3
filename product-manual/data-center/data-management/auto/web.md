@@ -2,7 +2,7 @@
 
 ## 圈选准备
 
-GrowingIO 全量采集用户行为数据，你可以通过「圈选」来定义元素和页面，作为数据分析的基础指标。
+GrowingIO 全量采集用户行为数据，您可以通过「圈选」来定义元素和页面，作为数据分析的基础指标。
 
 在没有定义过的情况下，GrowingIO 保留和回溯元素过去 7 天的点击量，页面过去 7 天的浏览量。
 
@@ -24,11 +24,11 @@ URL**示意：**www.xxx.com**/**12345/678/123**?**id=1\&ig=2
 
 ![](https://docs.growingio.com/.gitbook/assets/9412f46a-d87c-41ef-9ee6-9e6e408f4c6a-12626-00000bcf696b73c5\_tmp.jpg)
 
-## [iframe圈选](web/iframe-quan-xuan.md) <a href="#1-kai-shi-quan-xuan" id="1-kai-shi-quan-xuan"></a>
+## [iframe圈选](web/iframe-quan-xuan.md)  <a href="#1-kai-shi-quan-xuan" id="1-kai-shi-quan-xuan"></a>
 
-## [Chrome插件圈选](web.md#3-qi-ta-te-shu-qing-kuang) <a href="#3-qi-ta-te-shu-qing-kuang" id="3-qi-ta-te-shu-qing-kuang"></a>
+## [Chrome插件圈选](web.md#3-qi-ta-te-shu-qing-kuang)  <a href="#3-qi-ta-te-shu-qing-kuang" id="3-qi-ta-te-shu-qing-kuang"></a>
 
-## 常见问题 <a href="#2-chang-jian-wen-ti-faq" id="2-chang-jian-wen-ti-faq"></a>
+## 常见问题  <a href="#2-chang-jian-wen-ti-faq" id="2-chang-jian-wen-ti-faq"></a>
 
 ### **1. 如何定义「一组相似元素之和」？** <a href="#21-ru-he-ding-yi-yi-zu-xiang-si-yuan-su-zhi-he" id="21-ru-he-ding-yi-yi-zu-xiang-si-yuan-su-zhi-he"></a>
 
