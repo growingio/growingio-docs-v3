@@ -1,7 +1,7 @@
-# Web JS SDK升级指导
+# SDK 版本1.x升级2.x指导
 
 {% hint style="danger" %}
-如果您目前希望从 1.x 版本升级至 2.x 版本，请务必联系 GrowingIO 对接人，我们需要在后台为你开启 2.x 版本所对应的功能权限。
+如果您目前希望从 1.x 版本升级至 2.x 版本，请务必联系 GrowingIO 对接人，我们需要在后台为您开启 2.x 版本所对应的功能权限。
 
 如果直接重新集成2.x版本SDK，而后台对应功能权限未开启的话，可能会造成数据丢失问题。
 {% endhint %}
@@ -30,7 +30,7 @@
 {% tab title="2.x版本方法格式" %}
 对于 CS1 字段，也就是登陆用户ID，请使用以下方法：
 
-```text
+```
 // 设置登录用户ID
 gio('setUserId', userId);
 ​
@@ -40,21 +40,21 @@ gio('clearUserId');
 
 对于应用级变量，也就是 1.x 版本中的 CS2 - CS10，请使用以下方法：
 
-```text
+```
 gio(‘app.set’, key, value) // 单个变量
 gio('app.set', appLevelVariables) // 多个变量，可组合为一个JSON对象appLevelVariables传入
 ```
 
 对于用户变量，也就是 1.x 版本中的 CS11 - CS20，请使用以下方法：
 
-```text
+```
 gio('people.set', key, value); // 单个变量
 gio('people.set', peopleVariables); // 多个变量，可组合为一个JSON对象peopleVariables传入
 ```
 {% endtab %}
 
 {% tab title="1.x版本方法格式" %}
-```text
+```
 _vds.push(['setCS1', 'CS1的key', 'CS1的value']);
 _vds.push(['setCS2', 'CS2的key', 'CS2的value']);
 _vds.push(['setCS3', 'CS3的key', 'CS3的value']);
@@ -68,7 +68,7 @@ _vds.push(['setCS10', 'CS10的key', 'CS10的value']);
 
 2.x版本取消了应用级变量的配置，但如果您在1.x中已配置，且进行了数据迁移操作，2.x将为您保留此部分迁移数据在维度选择时使用。
 
-如需新增用户变量字段请在“**数据中心 &gt; 数据管理 &gt; 变量 &gt; 用户变量**”，下的**登录用户变量**页签下配置。配置方式请参考[用户变量](../../../product-manual/data-center/data-management/user/)。
+如需新增用户变量字段请在“**数据中心 > 数据管理 > 变量 > 用户变量**”，下的**登录用户变量**页签下配置。配置方式请参考[用户变量](../../../product-manual/data-center/data-management/user/)。
 
 ## 3. 迁移页面属性字段
 
@@ -96,7 +96,7 @@ _vds.push([‘setPS3’, ‘PS1 的值’]);
 
 ### 3.2 GrowingIO后台配置
 
-您需要在“**数据中心 &gt; 数据管理 &gt; 变量 &gt; 事件变量**”，下的**页面级变量**页签下进行配置。
+您需要在“**数据中心 > 数据管理 > 变量 > 事件变量**”，下的**页面级变量**页签下进行配置。
 
 ## 4. 迁移自定义事件（埋点事件）
 
@@ -127,9 +127,9 @@ window._vds.track(event_name, properties)
 
 ### 4.2 GrowingIO后台配置
 
-您需要在“**数据中心 &gt; 数据管理 &gt; 变量 &gt; 事件变量**”，下的**事件级变量**页签下配置事件变量。
+您需要在“**数据中心 > 数据管理 > 变量 > 事件变量**”，下的**事件级变量**页签下配置事件变量。
 
-在在“**数据中心 &gt; 数据管理 &gt; 事件 &gt; 埋点事件**”，下新建自定义事件，并选择已创建好的事件级变量。
+在在“**数据中心 > 数据管理 > 事件 > 埋点事件**”，下新建自定义事件，并选择已创建好的事件级变量。
 
 ## 5. 数据迁移
 
@@ -139,5 +139,4 @@ window._vds.track(event_name, properties)
 
 在完成了上述代码实施和配置后，我们当然需要对数据是否成功上传进行校验。校验工作分为两步完成。GrowingIO 提供了 SDK debug 模式以及 debug 工具，来帮助您完成数据的校验。
 
-\*\*\*\*[**点击查看 GrowingIO Web Debugger 的安装和使用**](../../debugging/web-debugger.md)。
-
+[**点击查看 GrowingIO Web Debugger 的安装和使用**](../../debugging/web-debugger.md)。

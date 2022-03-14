@@ -4,7 +4,7 @@ description: 介绍SDK工作方式
 
 # SDK 简介
 
-### SDK支持范围
+## SDK支持范围
 
 SDK 包括客户端SDK和服务端SDK。目前客户端SDK支持Android和iOS原生，Web JS，小程序，微信小游戏，内嵌页，以及众多第三方混合开发框架。服务端SDK支持Java 和 PHP。SDK支持移动端第三方框架列表如下：
 

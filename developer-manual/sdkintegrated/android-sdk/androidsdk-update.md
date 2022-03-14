@@ -74,7 +74,7 @@ GrowingIO growingIO = GrowingIO.getInstance();
 
 2.x版本取消了应用级变量的配置，但如果您在1.x中已配置，且进行了数据迁移操作，2.x将为您保留此部分迁移数据在维度选择时使用。
 
-如需新增用户变量字段请在“**数据中心 &gt; 数据管理 &gt; 变量 &gt; 用户变量**”，下的**登录用户变量**页签下配置。配置方式请参考[用户变量](../../../product-manual/data-center/data-management/user/)。
+如需新增用户变量字段请在“**数据中心 > 数据管理 > 变量 > 用户变量**”，下的**登录用户变量**页签下配置。配置方式请参考[用户变量](../../../product-manual/data-center/data-management/user/)。
 
 ## 3. 迁移页面属性字段（PS字段）
 
@@ -111,9 +111,9 @@ GrowingIO.setPS2(Activity activity, String property);
 
 ### GrowingIOh后台配置
 
-您需要在 **“数据中心 &gt; 数据管理 &gt; 事件变量 ”** 的页面级变量中进行配置。配置方式请参考[创建页面级变量](../../api-reference/project-manage/create-pvar.md)。
+您需要在 **“数据中心 > 数据管理 > 事件变量 ”** 的页面级变量中进行配置。配置方式请参考[创建页面级变量](../../api-reference/project-manage/create-pvar.md)。
 
-## 4. 迁移自定义事件（埋点事件）
+## 4. 迁移埋点事件
 
 如果您未做自定义事件的上传，请忽略此部分。
 
@@ -143,9 +143,9 @@ public class GrowingIO {
 
 ### GrowingIO后台配置
 
-自定义事件的配置，您需要在 **“数据中心 &gt; 数据管理 &gt; 埋点事件 ”** 中进行配置。配置方式请参考[埋点事件管理](../../../product-manual/data-center/data-management/manual.md)。
+自定义事件的配置，您需要在 **“数据中心 > 数据管理 > 埋点事件 ”** 中进行配置。配置方式请参考[埋点事件管理](../../../product-manual/data-center/data-management/manual.md)。
 
-也是在**“管理” - “自定义事件和变量”** 页面中的 **“自定义事件” Tab 页**。但您会发现，除了 “自定义事件” Tab 页外，现在还提供了 “事件级变量” Tab 页来专门管理事件级变量的配置。您只需在 “事件级变量” Tab 页完成事件级变量的配置，然后在新建自定义事件时，从已经建好的事件级变量中选择即可。
+也是在**“管理” - “埋点事件和变量”** 页面中的 **“埋点事件” Tab 页**。但您会发现，除了 “自定义事件” Tab 页外，现在还提供了 “事件级变量” Tab 页来专门管理事件级变量的配置。您只需在 “事件级变量” Tab 页完成事件级变量的配置，然后在新建自定义事件时，从已经建好的事件级变量中选择即可。
 
 ## 5. 数据迁移
 
@@ -154,4 +154,3 @@ public class GrowingIO {
 ## 6. 数据校验
 
 在完成了上述代码实施和配置后，我们当然需要对数据是否成功上传进行校验。点击查看 [GrowingIO Mobile Debugger 的安装和使用](../../debugging/mobile-debugger.md)。
-

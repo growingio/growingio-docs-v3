@@ -4,6 +4,8 @@ description: 无埋点 SDK 具备自动采集基本的用户行为事件，比�
 
 # 无埋点 SDK 集成
 
+无埋点 SDK 具备自动采集基本的用户行为事件，比如访问，页面浏览，元素点击等行为数据。同时也包含埋点SDK的所有功能。
+
 ## 准备条件
 
 获取项目ID，请参考[查看项目基本信息](../../../product-manual/projectmange/details.md)。
@@ -14,7 +16,7 @@ description: 无埋点 SDK 具备自动采集基本的用户行为事件，比�
 使用 GrowingIO 平台创建相应的应用，平台在应用创建界面自动为您生成已加载当前项目 ID、URL Scheme 的跟踪代码。
 {% endhint %}
 
-## 1. 添加依赖代码
+## 1. 添加依赖
 
 {% hint style="success" %}
 Gradle 编译环境：Android Studio
@@ -24,11 +26,13 @@ App 适配最低系统版本：Android 4.2 及以上
 
 ### 1. 添加工程依赖
 
-在 project 级别的 build.gradle 文件中添加`vds-gradle-plugin`依赖。
+**在 project 级别的 build.gradle 文件中添加`vds-gradle-plugin`依赖。**
 
 {% hint style="info" %}
 2.9.0 版本后仓库从 JCenter 迁移到了 Maven Central, 请使用 mavenCentral() 替换 jcenter()
 {% endhint %}
+
+示例代码：
 
 ```javascript
 buildscript {
@@ -42,12 +46,12 @@ buildscript {
         //gradle 建议版本
         classpath 'com.android.tools.build:gradle:3.2.1'
         //GrowingIO 无埋点 SDK
-        classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.9.9'
+        classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.9.12'
     }
 }
 ```
 
-在 module 级别的 build.gradle 文件中添加`com.growingio.android`插件、`vds-android-agent`依赖和对应的资源。
+**在 module 级别的 build.gradle 文件中添加`com.growingio.android`插件、`vds-android-agent`依赖和对应的资源。**
 
 代码示例：
 
@@ -63,15 +67,19 @@ android {
 }
 dependencies {
     //GrowingIO 无埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:autotrack-2.9.9'
+    implementation 'com.growingio.android:vds-android-agent:autotrack-2.9.12'
 }
 ```
 
 ### 2. 添加 URL Scheme 和应用权限
 
-URL Scheme 是您在 GrowingIO 平台创建应用时生成的该应用的唯一标识。把 URL Scheme 添加到您的项目，以便我们唤醒您的应用。
+URL Scheme 是您在 GrowingIO 平台创建应用时生成的该应用的唯一标识。把 URL Scheme 添加到您的项目中，以便在使用圈选，Mobile  Debugger，及深度链接功能时唤醒您的应用。
 
-将应用的 URLScheme 和应用权限添加到你的 AndroidManifest.xml 中的 LAUNCHER Activity 下。
+{% hint style="info" %}
+URL Scheme 只能对应一个应用。当应用的包名发生变化时，需再次创建一个应用使用对应的 URL Scheme
+{% endhint %}
+
+将 URLScheme 和应用权限添加到您的 AndroidManifest.xml 中的 LAUNCHER Activity 下。
 
 代码示例：
 
@@ -123,9 +131,9 @@ URL Scheme 是您在 GrowingIO 平台创建应用时生成的该应用的唯一�
 
 ### 3. SDK初始化配置
 
-SDK的初始化时机必须在 Application 的 onCreate 方法中进行。
+请将 GrowingIO.startWithConfiguration 加在您的 Application 的 onCreate 方法中。**为使 App 合规，请参考**[**合规步骤**](../compliance/sdk-he-gui-shuo-ming.md#he-gui-bu-zhou)**。**
 
-请将 GrowingIO.startWithConfiguration 加在您的 Application 的 onCreate 方法中
+示例代码：
 
 {% tabs %}
 {% tab title="Java" %}
@@ -138,6 +146,7 @@ public class MyApplication extends Application {
             .trackAllFragments()
             // 建议使用 BuildConfig 设置
             .setChannel("XXX应用商店")
+            
         );
     }
 }
@@ -161,21 +170,20 @@ class MyApplication : Application() {
 {% endtabs %}
 
 {% hint style="info" %}
-1. 请确保将代码添加在`Application`的`onCreate`方法中，添加到其他方法中可能导致数据不准确。
-2. 其中`GrowingIO.startWithConfiguration`第一个参数为`ApplicationContext`对象。&#x20;
-3. `setChannel`方法的参数定义了“自定义App渠道”这个维度的值。
-4. `trackAllFragments`方法作用是将 APP 内部的所有`Fragment`标记认为可以代表一个页面。 常见于`Activity` 中包含多个 `Fragment`， 在业务场景上这里的每一个 Fragment 都可以代表一个页面。例如点击 Tab 切换页面。
+1. 其中`GrowingIO.startWithConfiguration`第一个参数为`ApplicationContext`对象。&#x20;
+2. `setChannel`方法的参数定义了“自定义App渠道”这个维度的值，填写APP要发布的应用商店名称。
+3. `trackAllFragments`方法作用是将 APP 内部的`Fragment`标记为代表一个页面。 常见于`Activity` 中包含多个 `Fragment`， 在业务场景上这里的每一个 Fragment 都可以代表一个页面。例如点击 Tab 切换页面。
 {% endhint %}
 
 {% hint style="danger" %}
 **注意事项**
 
-`trackAllFragments`方法如果在初始化时调用，APP 内部的 Fragment 将代替 Activity 作为页面，一个 Activity 中包含多个 Fragment 时大概率会是面积最大的 Fragment 作为当前的页面事件( Page )。
+`trackAllFragments`方法如果在初始化时调用，APP 内部的 Fragment 将代替 Activity 作为页面，一个 Activity 中包含多个 Fragment 时大概率会使用面积最大的 Fragment 作为当前页面的页面浏览事件( page )。
 {% endhint %}
 
 ### 4. 代码混淆
 
-如果你启用了混淆，请在你的 proguard-rules.pro 中加入如下代码：
+如果您启用了混淆，请在 proguard-rules.pro 中添加如下代码：
 
 {% hint style="danger" %}
 **SDK 2.6.0 更新了混淆文件，前后混淆文件内容截然不同，请注意更新。**
@@ -218,34 +226,30 @@ lambda 表达式目前业界主流两种，分别为 retrolambda 和 AndroidStud
 
 GrowingIO 的SDK 只支持 AndroidStudio 自带的 lambda 表达式。
 
-* 在SDK版本<2.7.4时，对于 `android.enableD8.desugaring = true` 未做兼容。 在`com.android.tools.build:gradle:3.2.1` 之后， Google默认开启 `desugaring` 特性， 暂时需要用户手动关闭。
+* SDK版本<2.7.4时，对于 `android.enableD8.desugaring = true` 未做兼容。 在`com.android.tools.build:gradle:3.2.1` 之后， Google默认开启 `desugaring` 特性， 暂时需要用户手动关闭。
 
 ```java
 //关闭方法：在项目根目录中 gradle.properties 文件中增加以下配置：
 android.enableD8.desugaring=false
 ```
 
-* 在SDK版本>=2.7.4时，我们兼容了`android.enableD8.desugaring = true`，无需再做配置。
+* SDK版本>=2.7.4时，兼容了`android.enableD8.desugaring = true`，无需再做配置。
 
-### 6 设置弹窗SDK异常上传开关 <a href="#5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan" id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
+### 6. 设置SDK异常上传开关 <a href="#5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan" id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
 
-弹窗SDK会收集SDK内部异常上报服务端，方便开发更好的追踪弹窗SDK的问题，和完善弹窗SDK的功能。如果您不想帮助我们弹窗产品完善功能，或者和您的crash收集框架有冲突，您可以选择关闭此功能。
-
-#### 6.1 setUploadExceptionEnable <a href="#5-1-setuploadexceptionenable" id="5-1-setuploadexceptionenable"></a>
-
-弹窗异常消息上报开关
+SDK默认会开启收集SDK内部异常上报至服务端功能，方便开发更好的追踪SDK问题和完善SDK功能。如果您不希望收集SDK内部异常，或者和您的 crash 收集框架有冲突，您可以关闭该功能。
 
 ```
 setUploadExceptionEnable(boolean uploadExceptionEnable)
 ```
 
-#### 6.2 参数说明 <a href="#52-can-shu-shuo-ming" id="52-can-shu-shuo-ming"></a>
+参数说明：
 
 | **参数名**               | **类型**  | **必填** | **默认值** | **说明**                     |
 | --------------------- | ------- | ------ | ------- | -------------------------- |
 | uploadExceptionEnable | boolean | 是      | true    | 开关SDK异常上传功能，true开启，false关闭 |
 
-#### 6.3 代码示例 <a href="#53-dai-ma-shi-li" id="53-dai-ma-shi-li"></a>
+代码示例：
 
 {% tabs %}
 {% tab title="Java" %}
@@ -268,29 +272,53 @@ GrowingIO.startWithConfiguration(this, Configuration()
 
 ## 2. 重要配置
 
-### 1. 自定义点击事件
+### 1. 自定义控件点击事件
 
-如果您有自定义的控件重写了`View`的`onTouchEvent`方法来判断和处理点击事件，那么必须调用它的`PerformClick`，并且设置相应的`onClickListener`。
+如果您有自定义控件重写了`View`的`onTouchEvent`方法来判断和处理点击事件，那么必须调用它的`performClick`，并且设置相应的`onClickListener`。
+
+代码示例：
+
+{% code title="" %}
+```java
+// 自定义控件示例
+class CustomView extends View {
+    ...
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+      ...
+      performClick();
+      ...
+    }
+    ...
+}
+// 应用示例
+CustomView view = findViewById(R.id.view);
+view.setOnClickListener(new View.OnClickListener() { ... })
+```
+{% endcode %}
 
 或者使用手动调用系统点击事件方法。 请参考[点击事件采集逻辑。](faq/class1.md#2-dian-ji-shi-jian-cai-ji-luo-ji-shi-shen-me)
 
-### 2. 设置页面别名
+### 2. 设置页面名称
 
-对于安卓应用，页面指的是`Activity`或者`Fragment`。
+对于安卓应用，页面指的是`Activity`或`Fragment`。
 
-有些时候，当您代码中的原有页面标题不足以支持业务人员对页面进行识别时，您可以使用此接口设置一个容易识别的页面名称来替换页面标题字段。
+有些时候，当您代码中的原有页面不足以支持业务人员对页面进行识别时，您可以使用此接口设置一个容易识别的页面名称来替换页面浏览事件的`p`字段。参考：[页面定义](faq/class1.md#1.-growingio-dui-yu-ye-mian-de-ding-yi-biao-shi-shi-shen-me)
 
-为处理这种场景，我们提供了取别名的方法，方法如下：
+为处理这种场景，我们提供了设置页面名称的方法，方法如下：
 
 ```java
+// 如果您设置的对象是Fragment，将Activity替换为Fragment即可
 GrowingIO.setPageName(Activity activity, String name)
 ```
 
-如果您设置的的对象是`Fragment`，将上方的`Activity`替换为`Fragment`即可。
+{% hint style="info" %}
+使用 `setPageName` 接口需要提前规划好页面名称。需保证业务上同一页面的页面名称保持不变，否则会造成同一页面的页面浏览量数据不准确。
+{% endhint %}
 
 **我们用**`Activity`**来举例，具体说明它的用法。**
 
-1. 某个应用的商品列表页是用`FeedActivity`实现的，所以默认的页面名称都是`FeedActivity`。
+1. 某个应用的商品列表页是用`FeedActivity`类实现的，所以默认的页面名称(`p`字段的值)是`FeedActivity`。
 2. 现在我们想区分衣物类商品列表和食品类商品列表，分别看它们的浏览量，可以在`onCreate`方法中添加如下代码：
 
 {% tabs %}
@@ -320,13 +348,13 @@ class FeedActivity : Activity() {
 
 {% hint style="info" %}
 1. 必须在该`Activity`的`onCreate`方法中完成该属性的赋值操作。
-2. 页面别名建议设置为汉字、字母、数字和下划线的组合。
+2. 页面名称建议设置为汉字、字母、数字和下划线的组合。
 3. 为查看数据方便，请尽量对 iOS 和安卓的同功能页面取不同的名称。
 {% endhint %}
 
 ### 3. 设置界面元素内容
 
-SDK 默认不会采集 `ImageView` 的内容，如果您需要区分不同的`ImageView`，可以使用 `contentDescription` 来标记，也可以调用下方的方法来设置：
+SDK 默认不会采集 `ImageView` 的内容，如果您需要区分不同的`ImageView`，可以使用 `contentDescription` 来标记，也可以调用下方的方法来设置，数据表现上对应元素触发的点击事件中元素 v 字段的值 ：
 
 ```java
 GrowingIO.setViewContent(View view, String contentDescription);
@@ -338,7 +366,7 @@ SDK 会使用 Layout 文件中的 ID 来识别一个元素。
 
 如果部分元素在 Layout 文件中没有 ID，建议在 Layout 文件中添加。
 
-对于动态生成的元素，可以使用如下方法对它设置唯一的 ID：
+对于动态生成的元素，可以使用如下方法对它设置唯一的 ID，数据表现上对应元素触发的点击事件中元素 x 字段的值 ：
 
 ```java
 GrowingIO.setViewID(View view, String id);
@@ -350,9 +378,11 @@ GrowingIO.setViewID(View view, String id);
 3. 对于已经集成过旧版 SDK (1.x) 并圈选过的应用，对某个元素设置 ID 后再圈选它，指标数值会从零开始计算，类似初次集成 SDK 后发版的效果，但不影响之前圈选的其它指标数据。如果不希望出现这种情况，请不要使用这个方法。
 {% endhint %}
 
-### 5. 忽略元素
+### 5. 设置忽略元素
 
-如果您需要不采集某些元素，比如**倒计时元素**或**涉及隐私的内容**，可以使用此接口。另外如果想禁止 WebView 的数据采集，也可调用此接口。
+如果您需要不采集某些元素，比如**倒计时元素**或**涉及隐私的内容**，可以使用此接口。
+
+另外如果想禁止 WebView 内H5页面的数据采集，也可调用此接口。如果H5页面集成有Web JS SDK， 则此接口无法禁止Web JS SDK 采集数据。
 
 ```java
 GrowingIO.ignoreView(View view)
@@ -360,7 +390,7 @@ GrowingIO.ignoreView(View view)
 
 ### **6. 设置元素对象**
 
-如果元素自身的内容并不能代表具体的意义，可以使用元素对象来标识。
+如果元素自身的内容并不能代表具体的意义，可以使用元素对象来标识，数据表现上对应元素触发的点击事件中元素 obj 字段的值 。
 
 例如：在商品`ListView`添加购物车的场景中，每个商品`item`都含有一个加入购物车按钮，这时无法区分商品`item`与将它加入购物车按钮的一对一关系，此时调用此方法增加描述。
 
@@ -372,26 +402,26 @@ GrowingIO.setViewInfo(view view, String info);
 适用于原有元素内容含义不大，需要添加描述的场景。
 {% endhint %}
 
-### 7. 用户浏览事件的半自动采集配置
+### 7. 元素浏览事件的半自动采集配置
 
 > **SDK版本支持：>=2.8.4**
 
 {% hint style="info" %}
-「用户浏览事件」半自动采集方案已经上线，详细配置请参考[Android半自动采集浏览事件](android-imp.md)。
+「元素浏览事件」半自动采集方案已经上线，详细配置请参考[Android半自动采集浏览事件](android-imp.md)。
 
 * 事件/元素采集更具针对性，提升采集效率
 * 优化采集逻辑，贴合业务场景，提升数据准确性
-* 浏览事件关联自定义事件和变量，减少研发埋点工作量
+* 浏览事件关联埋点事件和事件级变量，减少研发埋点工作量
 {% endhint %}
 
 ### 8. 设置Debug模式
 
-查看数据采集发送日志，能够在 Android Studio 中通过 Logcat 查看GrowingIO 打印的数据发送日志。
+Debug 模式：在 Android Studio 中通过 Logcat 查看 GrowingIO SDK 打印的数据采集发送日志。
 
-在 App 的 Application onCreate 初始化 SDK 位置添加配置。
+在SDK初始化代码中添加如下配置：
 
 ```java
-setDebugMode(boolean debugMode);
+setDebugMode(boolean debugMode)
 ```
 
 **参数说明**
@@ -423,12 +453,12 @@ GrowingIO.startWithConfiguration(
 
 ### 9. 设置Test模式
 
-实时发送数据，开启则不遵循移动网络状态下数据发送大小限制以及采集数据缓存 30 秒发送策略。为了方便开发者查看日志，一般和`setDebugMode`一起使用。
+Test模式：实时发送数据，开启则不遵循移动网络状态下数据发送大小限制以及采集数据默认缓存 15 秒发送策略。为了方便开发者查看日志，一般和`setDebugMode`一起使用。
 
-在App的Application onCrate 初始化 SDK 位置添加配置。
+在SDK初始化代码中添加如下配置：
 
 ```java
-setTestMode(boolean testMode);
+setTestMode(boolean testMode)
 ```
 
 **参数说明**
@@ -458,14 +488,12 @@ GrowingIO.startWithConfiguration(
 {% endtab %}
 {% endtabs %}
 
-### 10. 采集广告Banner数据
+### 10. 设置采集广告Banner数据
 
-采集`Banner`数据，应用的界面上方横向滚动的`Banner`广告。
-
-对于此类广告，如果您的应用通过 `ViewPager`、`AdapterView` 或者`RecyclerView` 实现，请在 Banner 创建时（包括动态创建）调用此接口来采集数据。
+应用中界面上横向滚动`Banner`广告，如果是用通过 `ViewPager`、`AdapterView` 或者`RecyclerView` 实现的，请您在 Banner 创建时（包括动态创建）调用此接口来采集数据。
 
 ```java
-GrowingIO.getInstance().trackBanner(View banner,List<String> bannerDescriptions);
+trackBanner(View banner,List<String> bannerDescriptions)
 ```
 
 **参数说明**
@@ -500,7 +528,9 @@ GrowingIO.trackBanner(bannerViewPager, Arrays.asList("banner 1", "banner 2", "ba
 {% endtabs %}
 
 {% hint style="info" %}
-Banner 描述和广告出现的顺序一致，通过 Log 查看或者MobileDebugger 的方式检查配置是否正确。查看 Banner clck 事件 `e` 字段中的 `v` 字段是否为您设置的 banner description。
+Banner 描述和广告出现的顺序一致，通过 Log 或 Mobile Debugger 查看配置是否正确。
+
+查看 Banner clck 事件 `e` 字段中的 `v` 字段是否为您设置的 banner description。
 {% endhint %}
 
 **检验数据发送日志示例**
@@ -526,16 +556,20 @@ Banner 描述和广告出现的顺序一致，通过 Log 查看或者MobileDebug
 }
 ```
 
-### 11. 采集GPS数据
+### 11. 设置采集GPS数据
 
-精确采集`GPS`数据，请在获取坐标后，调用接口设置位置信息。当用户下一次切换页面，或者发生点击行为时，`GPS`数据会被发送回`GrowingIO`。
+GrowingIO SDK 默认不采集地理位置信息。
+
+如果您需要精确采集`GPS`数据，请在获取坐标后，调用接口设置位置信息。
+
+经纬度设置为(0,0)，视为无效设置。有效设置经纬度，会发送一个 vst 事件，用于携带经纬度数据上报。
 
 {% hint style="success" %}
-如果您不调用此接口也可以，我们会根据用户的`ip`定义用户位置，能够在最终的数据分析时看到`APP`用户地域分布。
+如果您不调用此接口也可以，我们会根据用户的`ip模糊匹配`用户所在城市地区，能够在最终的数据分析时看到`APP`用户地域分布。
 {% endhint %}
 
 ```java
-GrowingIO.getInstance().setGeoLocation(double latitude,double longitude);
+setGeoLocation(double latitude,double longitude)
 ```
 
 **参数说明**
@@ -553,17 +587,17 @@ GrowingIO.getInstance().setGeoLocation(39.9046900000,116.4071700000);
 ```
 
 {% hint style="info" %}
-对应的清除地理位置的方法为 clearGeoLocation();
+对应清除地理位置的方法为 clearGeoLocation();
 {% endhint %}
 
-### 12. 采集输入框数据
+### 12. 设置采集输入框数据
 
-GrowingIO 默认采集输入框内容改变次数，不采集文字。
+GrowingIO SDK 默认仅采集输入框内容改变次数，不采集输入框内的文字。
 
-在您需要采集应用内某个输入框内的文字（例如搜索框）时使用此接口。
+如果您需要采集应用内某个输入框内的文字（例如搜索框）时，请使用如下接口。
 
 {% hint style="success" %}
-当这个输入框失去焦点（包括应用退到后台），且输入框内容跟获取焦点前相比发生变化时，输入框内文字会被发送回 GrowingIO 。
+调用接口后，当这个输入框失去焦点（包括应用退到后台），且输入框内容跟获取焦点前相比发生变化时，输入框内文字数据会被上报。
 {% endhint %}
 
 ```java
@@ -572,9 +606,9 @@ GrowingIO.getInstance().trackEditText(EditText editText);
 
 **参数说明**
 
-| 参数       | 类型      | 是否必填 | 说明    |
-| -------- | ------- | ---- | ----- |
-| editText | ditText | 是    | 采集输入框 |
+| 参数       | 类型       | 是否必填 | 说明    |
+| -------- | -------- | ---- | ----- |
+| editText | EditText | 是    | 采集输入框 |
 
 **示例代码**
 
@@ -595,15 +629,23 @@ GrowingIO.getInstance().trackEditText(editText)
 {% endtabs %}
 
 {% hint style="success" %}
-* 对于密码输入框，即便标记为需要采集，SDK也会忽略不进行采集。
-* 在**输入框失去焦点的时候或者 onPause 时才会采集事件**，如果输入完成，输入框光标仍然在闪动，则不会采集事件。为了保证数据准确性，请每次用户输入完成时，让输入框失去焦点，可使用editText.setFocusable(false);
+* 对于密码输入框，即是被标记为需要采集输入框的文字，SDK不会进行采集。
+* 在**输入框失去焦点的时候或者 onPause 时才会触发chng事件**，如果输入完成，输入框光标仍然在闪动，则**不触发chng事件**。为了保证数据准确性，请每次用户输入完成时，让输入框失去焦点，可使用editText.setFocusable(false);
 {% endhint %}
 
-### 13. WebView锚点链接页面访问
+### 13. 设置内嵌H5页面锚点跳转触发页面浏览事件
 
-开启之后，App `WebView` 中的页面，如果用户点击带有锚点的跳转链接，则发送一次页面浏览事件，请在 `SDK` 初始化方法中设置，默认值为 false，即默认锚点链接不算做页面浏览事件。
+GrowingIO SDK 默认情况下，不会把`HashTag`识别成页面 URL 的一部分，内嵌H5页面点击锚点页面跳转不计为页面浏览事件。
 
-GrowingIO 默认不会把`HashTag`识别成页面 URL 的一部分，对于使用`HashTag`进行页面跳转的单页面网站应用来说，可以启用它来标识页面，`HashTag`的值也会记录在页面URL中。
+对于使用`HashTag`进行页面跳转的单页面网站应用来说，可以启用它来标识页面，`HashTag`的值也会记录在页面URL中。启用之后，如果用户点击页面中的锚点进行页面跳转，则发送一次页面浏览事件。
+
+在SDK初始化代码中添加如下代码：
+
+```java
+setHashTagEnable(boolean hashTagEnable)
+```
+
+**示例代码：**
 
 {% tabs %}
 {% tab title="Java" %}
@@ -619,9 +661,9 @@ GrowingIO.startWithConfiguration(this, Configuration().setHashTagEnable(true))
 {% endtab %}
 {% endtabs %}
 
-举例：
+**场景示例**：
 
-点击 APP `WebView` 中代码混淆的锚点链接，URL 中`#`号后面为锚点，设置后 SDK 会发送页面浏览事件，它的链接为：​[https://docs.growingio.com/docs/sdk-integration/android-sdk#4-dai-ma-hun-xiao](https://docs.growingio.com/docs/sdk-integration/android-sdk#4-dai-ma-hun-xiao)
+点击 APP `WebView` 中“代码混淆”的锚点链接，URL 中`#`号后面为锚点，设置后 SDK 会发送页面浏览事件，它的链接为：​[https://docs.growingio.com/docs/sdk-integration/android-sdk#4-dai-ma-hun-xiao](https://docs.growingio.com/docs/sdk-integration/android-sdk#4-dai-ma-hun-xiao)
 
 ![](<../../../.gitbook/assets/image (123).png>)
 
@@ -651,7 +693,9 @@ SDK发送对应采集数据：
 
 ### 14. 多进程支持
 
-多进程支持，`SDK`默认不支持多进程使用， 但是可以通过`confiuration`进行设置支持多进程。 在`Application onCreate` 中初始化SDK代码块中配置。
+GrowingIO SDK默认不支持多进程使用， 但是可以通过`confiuration`进行设置支持多进程。&#x20;
+
+在SDK初始化代码中添加如下代码：
 
 ```java
 //支持多进程数据采集
@@ -660,14 +704,14 @@ setMutiprocess(boolean setMutiprocess);
 supportMultiProcessCircle(boolean smpc);
 ```
 
-参数说明
+**参数说明：**
 
 | 参数             | 类型      | 是否必填 | 说明                 |
 | -------------- | ------- | ---- | ------------------ |
 | isMultiprocess | boolean | 是    | 开启多进程数据采集。默认值false |
 | smpc           | boolean | 是    | 开启多进程圈选。默认值false   |
 
-示例代码：
+**示例代码：**
 
 {% tabs %}
 {% tab title="Java" %}
@@ -691,13 +735,13 @@ GrowingIO.startWithConfiguration(
 {% endtabs %}
 
 {% hint style="info" %}
-1.  为什么不默认支持多进程？
+1. 为什么不默认支持多进程？
 
-    跨进程通信是一个相对较慢的过程， 默认不开启， 可以满足大部分用户的要求。
+&#x20; 跨进程通信是一个相对较慢的过程， 默认不开启， 可以满足大部分用户的要求。
 
-    1. 哪些进程需要初始化SDK？
+&#x20;2\. 哪些进程需要初始化SDK？
 
-    需要使用SDK功能的进程需要初始化SDK， 所有的UI进程 + 部分Service进程(如果这些进程中涉及手动打点)。
+&#x20;需要使用SDK功能的进程需要初始化SDK， 所有的UI进程 + 部分Service进程(如果这些进程中涉及手动打点)。
 {% endhint %}
 
 ### 15. GDPR数据采集开关
@@ -709,16 +753,36 @@ GrowingIO.startWithConfiguration(
 | disableDataCollect() | 遵守欧洲联盟出台的通用数据保护条例，用户不授权，不采集用户数据 |
 | enableDataCollect()  | 遵守欧洲联盟出台的通用数据保护条例，用户授权，采集用户数据   |
 
+**示例代码：**
+
+```
+    // 初始化配置
+    Configuration configuration = new Configuration();
+    // 其它初始化配置如是否开启ebug等
+    ...
+    // 根据数据采集开关判断
+    if (<未同意隐私协议>) {
+        configuration.disableDataCollect();
+    }
+    // 初始化SDK
+    GrowingIO.startWithConfiguration(application, configuration);
+```
+
+```java
+// 同意数据采集后，开启数据发送
+GrowingIO.getInstance().enableDataCollect();
+```
+
 ### 16. Deep Link回调参数获取
 
-​通过获取回调参数，GrowingIO SDK 将会传递指定活动页面参数至您的 App，请根据此参数和业务场景，执行相关的交互。
+​GrowingIO SDK 提供有 Deep Link 回调接口，调用后获取回调参数，您需要根据回调参数和业务场景，添加对应的交互代码。
 
 {% hint style="info" %}
 **SDK 2.3.2** 开始提供 DeepLink Callback 接口，在 **SDK 2.8.4** 支持 App Links ，为了保证接收自定义参数并进行自定义跳转这一流程的完整性，App Links 沿用此接口，并新增一个参数，下文将详细解释。
 {% endhint %}
 
 {% hint style="success" %}
-此 Callback 只有在应用收到来自 GIO Intent 的时候才会触发，您需要先在广告监测新建监测链接，并使用监测链接唤醒 APP 时触发此 callback 。
+此 Callback 只有在应用收到来自 GIO Intent 的时候才会触发，您需要先在广告监测新建监测链接，并使用监测链接唤醒 APP 时触发此 allback 。
 
 [点击了解新建监测链接。](../../api-reference/query-productid/definition/create-deeplinks.md)
 {% endhint %}
@@ -772,19 +836,13 @@ GrowingIO.startWithConfiguration(this, Configuration()
 {% endtab %}
 {% endtabs %}
 
-返回值说明
+**返回值说明**：
 
-| 返回值名称 | 类型 | 说明 |
-| ----- | -- | -- |
-
-| params | Map\<string,string> | 自定义参数，您自定义的键值对 |
-| ------ | ------------------- | -------------- |
-
-| status | int | DeeplinkCallback.SUCCESS ：自定义参数获取成功； DeeplinkCallback.PARSE\_ERROR ：解析异常；DeeplinkCallback.ILLEGAL\_URI ：非法URI； DeeplinkCallback.NO\_QUERY : 自定义参数为空。DeeplinkCallback.APPLINK\_GET\_PARAMS\_FAILED : （SDK 2.8.4新增）AppLink 由于网络原因获取自定义参数失败。 |
-| ------ | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-| appAwakePassedTime | long | <p>（SDK 2.8.4新增）App 唤醒到收到 GIO callback 的时间，<strong>单位毫秒</strong>。用以判断网络状态不好的情况，应用已经打开很久，才收到回调，开发人员决定是否收到参数后仍然跳转自定义的指定页面。</p><p><strong>当返回值为 0 的时候，为 DeepLink 方式打开。</strong></p> |
-| ------------------ | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 返回值名称              | 类型                   | 说明                                                                                                                                                                                                                                       |
+| ------------------ | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| params             | Map\<String, String> | 自定义参数，您自定义的键值对                                                                                                                                                                                                                           |
+| status             | int                  | DeeplinkCallback.SUCCESS ：自定义参数获取成功； DeeplinkCallback.PARSE\_ERROR ：解析异常；DeeplinkCallback.ILLEGAL\_URI ：非法URI； DeeplinkCallback.NO\_QUERY : 自定义参数为空。DeeplinkCallback.APPLINK\_GET\_PARAMS\_FAILED : （SDK 2.8.4新增）AppLink 由于网络原因获取自定义参数失败 |
+| appAwakePassedTime | long                 | <p>（SDK 2.8.4新增）App 唤醒到收到 GIO callback 的时间，<strong>单位毫秒</strong>。用以判断网络状态不好的情况，应用已经打开很久，才收到回调，开发人员决定是否收到参数后仍然跳转自定义的指定页面。</p><p><strong>当返回值为 0 的时候，为 DeepLink 方式打开</strong></p>                                                          |
 
 {% tabs %}
 {% tab title="Java" %}
@@ -847,7 +905,7 @@ GrowingIO.startWithConfiguration(this, Configuration()
 
 ### 17. 采集推送配置
 
-在 **Android SDK 2.6.3** 及以上版本，支持采集通知的标题和内容，此功能默认关闭，如需开启，请在 Application 初始化 GrowingIO 中设置，例如：
+在 **Android SDK 2.6.3** 及以上版本，支持采集通知的标题和内容，此功能默认关闭，如需开启，请在SDK初始化代码中设置开启采集通知，例如：
 
 {% tabs %}
 {% tab title="Java" %}
@@ -880,29 +938,21 @@ GrowingIO.startWithConfiguration(
 {% endtabs %}
 
 {% hint style="info" %}
-SDK对通知的采集仅支持 4.4 及以上机型。
+SDK对通知的采集仅支持操作系统统为 Android 4.4 及以上的设备。
 {% endhint %}
 
 注意：
 
-| 支持推送平台 | 注意事项 |
-| ------ | ---- |
+| 支持推送平台       | 注意事项                                                                                                                                                                                 |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Notification | 全部支持                                                                                                                                                                                 |
+| 极光推送         | <p></p><p>1.初始化时，极光进程也需要初始化</p><p>2.如果多进程应用，需要开启GrowingIO多进程</p>                                                                                                                     |
+| 华为推送         | <p></p><p>1.初始化时，推送进程也需要初始化</p><p>2.NC(Notification Center)消息，需要用户设置自定义字段: notification_title表示title， 与notification_content表示内容，请见表格下方图片</p>                                         |
+| 小米推送         | <p></p><p>1.初始化时，推送进程也需要初始化</p><p>2.SDK hook了PushMessageReceiver的onNotificationMessageArrived与onNotificationMessageClicked函数, 会触发SDK发送两条消息. 其中onNotificationMessageArrived需要系统支持</p> |
 
-| Notification | 全部支持 |
-| ------------ | ---- |
+**查看通知采集数据：**
 
-| 极光推送 | <ol><li>初始化时，极光进程也需要初始化</li><li>如果多进程应用，需要开启GrowingIO多进程</li></ol> |
-| ---- | ------------------------------------------------------------------ |
-
-| 华为推送 | <ol><li>初始化时，推送进程也需要初始化</li><li>NC(Notification Center)消息，需要用户设置自定义字段: notification_title表示title， 与notification_content表示内容，请见表格下方图片。</li></ol> |
-| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-
-| 小米推送 | <ol><li>初始化时，推送进程也需要初始化</li><li>SDK hook了PushMessageReceiver的onNotificationMessageArrived与onNotificationMessageClicked函数, 会触发SDK发送两条消息. 其中onNotificationMessageArrived需要系统支持。</li></ol> |
-| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-查看通知采集数据
-
-支持对于通知的展现和点击事件的采集，GrowingIO 并未增加新的采集事件类型，而是使用了自定义事件发送，所以需要您创建自定义事件和事件级变量，事件级变量标识符为**`notification_title`**，**`notification_content`**，自定义事件的标识符为**`notification_show`**，**`notification_click`** 创建事件分析，等候片刻即可看到数据。
+GrowingIO SDK 支持通知的展现和点击事件的采集，并未增加新的事件类型，而是使用了埋点事件发送，所以需要您创建[埋点事件和事件级变量](../../../introduction/datamodel/eventmodel/custom-event.md#mai-dian-shi-jian-de-ding-yi)，事件级变量标识符为**`notification_title`**，**`notification_content`**，埋点事件的标识符为**`notification_show`**，**`notification_click`** 创建事件分析，1-2小时之后即可看到数据。
 
 ### 18. 采集OAID
 
@@ -919,7 +969,7 @@ SDK对通知的采集仅支持 4.4 及以上机型。
 {% hint style="danger" %}
 注意:
 
-OAID 为可选字段，在客户集成 MSA SDK 情况下根据配置可选采集。GrowingIO SDK不会初始化 MSA SDK，我们仅调用其接口获取 OAID 值， 需要客户自行初始化 MSA的 SDK。
+OAID 为可选字段，在客户集成 MSA SDK 情况下根据配置可选采集。GrowingIO SDK 不会初始化 MSA SDK，我们仅调用其接口获取 OAID 值， 需要客户自行初始化 MSA的 SDK。
 
 [点击查看 MSA 集成步骤](http://www.msa-alliance.cn/col.jsp?id=120)。
 {% endhint %}
@@ -937,18 +987,18 @@ OAID 为可选字段，在客户集成 MSA SDK 情况下根据配置可选采集
 ## 4. 创建应用
 
 {% hint style="danger" %}
-**添加代码之后，请先Clean项目，然后再进行编译，并在你的 Android App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
+**添加代码之后，请先Clean项目，然后再进行编译，并在您的 Android App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
 {% endhint %}
 
-在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
+在 GrowingIO 平台应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
 
 ## 5. 验证SDK是否正常采集数据
 
 {% hint style="info" %}
-了解GrowingIO平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
+了解 GrowingIO 平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
 {% endhint %}
 
-GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
+GrowingIO 为您提供多种验证SDK是否正常采集数据的方式：
 
 方式一：[Mobile Debugger](../../debugging/mobile-debugger.md)
 

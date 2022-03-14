@@ -1,4 +1,3 @@
-# 设置了growing-ignore之后，其子元素也都不采集数据了怎么处理？
+# 设置了 growing-ignore 之后，其子元素也不采集怎么处理？
 
-web sdk 的高级属性 growing-ignore 是具有继承性的，可以使用growing-title = ""，使不想采的那个元素v为空。
-
+web sdk 的高级属性 growing-ignore 具有继承性，可以使用属性 data-growing-title = ""，使不想采集的元素的 v 为空。

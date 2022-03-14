@@ -4,13 +4,15 @@ description: 埋点 SDK 只自动采集用户访问事件，需要开发同学�
 
 # 埋点 SDK 集成
 
-埋点 SDK 的目标用户是使用第三方插件开发的 APP， 比如使用 Weex、APICloud 等。在这些平台中，我们无法自动采集用户的点击事件和页面浏览事件等，需要依赖调用自定义事件和变量 API 来进行数据采集。
+埋点 SDK 的目标是使用第三方插件开发的 APP， 比如使用 Weex、APICloud 等，或不需要SDK自动采集页面浏览，元素点击行为数据的APP。
+
+在一些第三方混合开发框架中，我们无法自动采集用户的点击事件和页面浏览事件等，需要依赖调用埋点事件和事件级变量 API 来进行数据采集。
 
 {% hint style="info" %}
 如果您的 APP 使用 Android 原生开发，并且希望自动采集用户的点击事件、页面浏览事件等无埋点事件， 请集成 Android 无埋点SDK 。
 {% endhint %}
 
-前提条件
+## 准备条件
 
 * 获取项目 ID，获取方法请参考"项目管理 > 项目概览 > [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
 * 获取 URL Scheme，在 GrowingIO 平台创建对应的应用时会生成 URL Scheme。请参考[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
@@ -42,13 +44,19 @@ android {
 }
 dependencies {
     //GrowingIO 埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:track-2.9.9'
+    implementation 'com.growingio.android:vds-android-agent:track-2.9.12'
 }
 ```
 
 ### 2. 添加URL cheme和应用权限
 
-**在当前Android项目的配置文件AndroidManifest.xml 中的 LAUNCHER Activity 下添加URL Scheme，以便在使用Mobile Debugger的时候通过DeepLink方式唤醒您的程序。**
+URL Scheme 是您在 GrowingIO 平台创建应用时生成的该应用的唯一标识。把 URL Scheme 添加到您的项目中，以便在使用圈选，Mobile  Debugger，及深度链接功能时唤醒您的应用。
+
+{% hint style="info" %}
+URL Scheme 只能对应一个应用。当应用的包名发生变化时，需再次创建一个应用使用对应的 URL Scheme
+{% endhint %}
+
+将 URLScheme 和应用权限添加到您的 AndroidManifest.xml 中的 LAUNCHER Activity 下。
 
 代码示例：
 
@@ -101,9 +109,9 @@ dependencies {
 
 ### 3. SDK初始化配置
 
-请将以下 GrowingIO.startWithConfiguration加在您的Application 的 onCreate 方法中
+请将 GrowingIO.startWithConfiguration 加在您的 Application 的 onCreate 方法中。**为使 App 合规，请参考**[**合规步骤**](../compliance/sdk-he-gui-shuo-ming.md#he-gui-bu-zhou)**。**
 
-代码示例
+代码示例**：**
 
 {% tabs %}
 {% tab title="Java" %}
@@ -136,9 +144,8 @@ class MyApplication : Application() {
 {% endtabs %}
 
 {% hint style="info" %}
-1. 请确保将代码添加在`Application`的`onCreate`方法中，添加到其他方法中可能导致数据不准确。
-2. 其中`GrowingIO.startWithConfiguration`第一个参数为`ApplicationContext`对象。&#x20;
-3. `setChannel`方法的参数定义了“自定义App渠道”这个维度的值。
+1. 其中`GrowingIO.startWithConfiguration`第一个参数为`ApplicationContext`对象。&#x20;
+2. `setChannel`方法的参数定义了“自定义App渠道”这个维度的值，填写APP要发布的应用商店名称。
 {% endhint %}
 
 ### 4. 代码混淆
@@ -182,23 +189,19 @@ R.string.growingio*
 
 ### 5 设置SDK异常上传开关 <a href="#5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan" id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
 
-SDK会收集SDK内部异常上报服务端，方便开发更好的追踪SDK的问题，和完善SDK的功能。如果您不想帮助我们产品完善功能，或者和您的crash收集框架有冲突，您可以选择关闭此功能。
-
-#### 5.1 setUploadExceptionEnable <a href="#5-1-setuploadexceptionenable" id="5-1-setuploadexceptionenable"></a>
-
-异常消息上报开关
+SDK默认会开启收集SDK内部异常上报至服务端功能，方便开发更好的追踪SDK问题和完善SDK功能。如果您不希望收集SDK内部异常，或者和您的 crash 收集框架有冲突，您可以关闭该功能。
 
 ```
 setUploadExceptionEnable(boolean uploadExceptionEnable)
 ```
 
-#### 5.2 参数说明 <a href="#52-can-shu-shuo-ming" id="52-can-shu-shuo-ming"></a>
+#### 参数说明 <a href="#52-can-shu-shuo-ming" id="52-can-shu-shuo-ming"></a>
 
 | **参数名**               | **类型**  | **必填** | **默认值** | **说明**                     |
 | --------------------- | ------- | ------ | ------- | -------------------------- |
 | uploadExceptionEnable | boolean | 否      | true    | 开关SDK异常上传功能，true开启，false关闭 |
 
-#### 5.3 代码示例 <a href="#53-dai-ma-shi-li" id="53-dai-ma-shi-li"></a>
+#### 代码示例 <a href="#53-dai-ma-shi-li" id="53-dai-ma-shi-li"></a>
 
 {% tabs %}
 {% tab title="Java" %}
@@ -222,9 +225,9 @@ GrowingIO.startWithConfiguration(this, Configuration()
 
 ### 1. 设置Debug模式（setDebugMode）
 
-查看数据采集发送日志，能够在Android Studio中通过Logcat查看GrowingIO打印的数据发送日志。
+Debug 模式：在 Android Studio 中通过 Logcat 查看 GrowingIO SDK 打印的数据采集发送日志。
 
-在App的Application onCrate初始化SDK位置添加配置。
+在SDK初始化代码中添加如下配置：
 
 ```java
 setDebugMode(boolean debugMode);
@@ -261,9 +264,9 @@ GrowingIO.startWithConfiguration(
 
 ### 2. 设置Test模式（setTestMode）
 
-实时发送数据，开启则不遵循移动网络状态下数据发送大小限制以及采集数据缓存30秒发送策略。为了方便开发者查看日志，一般和`setDebugMode`一起使用。
+Test模式：实时发送数据，开启则不遵循移动网络状态下数据发送大小限制以及采集数据默认缓存 15 秒发送策略。为了方便开发者查看日志，一般和`setDebugMode`一起使用。
 
-在App的Application onCrate初始化SDK位置添加配置。
+在SDK初始化代码中添加如下配置：
 
 ```java
 setTestMode(boolean testMode);
@@ -298,16 +301,20 @@ GrowingIO.startWithConfiguration(
 {% endtab %}
 {% endtabs %}
 
-### 3. 采集GPS数据（setGeoLocation）
+### 3. 设置采集GPS数据
 
-精确采集`GPS`数据，请在获取坐标后，调用接口设置位置信息。当用户下一次切换页面，或者发生点击行为时，`GPS`数据会被发送回`GrowingIO`。
+GrowingIO SDK 默认不采集地理位置信息。
+
+如果您需要精确采集`GPS`数据，请在获取坐标后，调用接口设置位置信息。
+
+当用户下一次切换页面，或发生点击行为数据时，`GPS信息`会被上报。
 
 {% hint style="success" %}
-如果您不调用此接口也可以，我们会根据用户的`ip`定义用户位置，能够在最终的数据分析时看到`APP`用户地域分布。
+如果您不调用此接口也可以，我们会根据用户的`ip模糊匹配`用户所在城市地区，能够在最终的数据分析时看到`APP`用户地域分布。
 {% endhint %}
 
 ```java
-GrowingIO.getInstance().setGeoLocation(double latitude,double longitude);
+setGeoLocation(double latitude,double longitude);
 ```
 
 **参数说明**
@@ -325,12 +332,14 @@ GrowingIO.getInstance().setGeoLocation(39.9046900000,116.4071700000);
 ```
 
 {% hint style="info" %}
-对应的清除地理位置的方法为 clearGeoLocation（）；
+对应清除地理位置的方法为 clearGeoLocation()；
 {% endhint %}
 
 ### 4. 多进程支持（setMutiprocess）
 
-多进程支持，`SDK`默认不支持多进程使用， 但是可以通过`confiuration`进行设置支持多进程。 在`Application onCreate` 中初始化SDK代码块中配置。
+GrowingIO SDK默认不支持多进程使用， 但是可以通过`confiuration`进行设置支持多进程。&#x20;
+
+在SDK初始化代码中添加如下代码。
 
 ```java
 //支持多进程数据采集
@@ -365,13 +374,13 @@ GrowingIO.startWithConfiguration(
 {% endtabs %}
 
 {% hint style="info" %}
-1.  为什么不默认支持多进程？
+1. 为什么不默认支持多进程？
 
-    跨进程通信是一个相对较慢的过程， 默认不开启， 可以满足大部分用户的要求。
+&#x20; 跨进程通信是一个相对较慢的过程， 默认不开启， 可以满足大部分用户的要求。
 
-    1. 哪些进程需要初始化SDK？
+&#x20;2\. 哪些进程需要初始化SDK？
 
-    需要使用SDK功能的进程需要初始化SDK， 所有的UI进程 + 部分Service进程(如果这些进程中涉及手动埋点)。
+&#x20;需要使用SDK功能的进程需要初始化SDK， 所有的UI进程 + 部分Service进程(如果这些进程中涉及手动埋点)。
 {% endhint %}
 
 ### 5. GDPR数据采集开关
@@ -383,20 +392,61 @@ GrowingIO.startWithConfiguration(
 | disableDataCollect() | 遵守欧洲联盟出台的通用数据保护条例，用户不授权，不采集用户数据 |
 | enableDataCollect()  | 遵守欧洲联盟出台的通用数据保护条例，用户授权，采集用户数据   |
 
-### 6. Deep Link回调参数获取（setDeeplinkCallback）
+**示例代码：**
 
-​通过获取回调参数，GrowingIO SDK将会传递指定活动页面参数至您的App，请根据此参数和业务场景，执行相关的交互。
+```
+    // 初始化配置
+    Configuration configuration = new Configuration();
+    // 其它初始化配置如是否开启ebug等
+    ...
+    // 根据数据采集开关判断
+    if (<未同意隐私协议>) {
+        configuration.disableDataCollect();
+    }
+    // 初始化SDK
+    GrowingIO.startWithConfiguration(application, configuration);
+```
+
+```java
+// 同意数据采集后，开启数据发送
+GrowingIO.getInstance().enableDataCollect();
+```
+
+### 6. Deep Link回调参数获取
+
+​GrowingIO SDK 提供有 Deep Link 回调接口，调用后获取回调参数，您需要根据回调参数和业务场景，添加对应的交互代码。
+
+{% hint style="info" %}
+**SDK 2.3.2** 开始提供 DeepLink Callback 接口，在 **SDK 2.8.4** 支持 App Links ，为了保证接收自定义参数并进行自定义跳转这一流程的完整性，App Links 沿用此接口，并新增一个参数，下文将详细解释。
+{% endhint %}
+
+{% hint style="success" %}
+此 Callback 只有在应用收到来自 GIO Intent 的时候才会触发，您需要先在广告监测新建监测链接，并使用监测链接唤醒 APP 时触发此 allback 。
+
+[点击了解新建监测链接。](../../api-reference/query-productid/definition/create-deeplinks.md)
+{% endhint %}
 
 在 GrowingIO SDK 代码初始化部分配置。
 
 {% tabs %}
 {% tab title="Java" %}
 ```java
+//sdk >= 2.3.2 && sdk < 2.8.19
 GrowingIO.startWithConfiguration(this, new Configuration()
                 .setDeeplinkCallback(new DeeplinkCallback() {
                             @Override
-                            public void onReceive(Map<String, String> params, int status, long time) { 
+                            public void onReceive(Map<String, String> params, int status) { 
                             // 这里接收您的参数，匹配键值对，跳转指定 APP 内页面
+                            }
+                        })
+            );
+//sdk >= 2.8.4, 新增参数 long appAwakePassedTime 
+GrowingIO.startWithConfiguration(this, new Configuration()
+                .setDeeplinkCallback(new DeeplinkCallback() {
+                            @Override
+                            public void onReceive(Map<String, String> params, int status, long appAwakePassedTime) { 
+                            // 这里接收您的参数，匹配键值对，跳转指定 APP 内页面
+                            // appAwakePassedTime 这个新的参数用来判定 APP 是否已经打开了很久才收到自定义参数，进而判断是否再继续跳转指定页面
                             }
                         })
             );
@@ -405,36 +455,58 @@ GrowingIO.startWithConfiguration(this, new Configuration()
 
 {% tab title="Kotlin" %}
 ```kotlin
+//sdk >= 2.3.2 && sdk < 2.8.19
 GrowingIO.startWithConfiguration(
     this, Configuration()
         .setDeeplinkCallback(object : DeeplinkCallback {
-
-            override fun onReceive(params: MutableMap<String, String>?, status: Int, longTime: Long) {
+            fun onReceive(params: Map<String?, String?>?, status: Int) {
                 // 这里接收您的参数，匹配键值对，跳转指定 APP 内页面
             }
         })
+)
+//sdk >= 2.8.4, 新增参数 long appAwakePassedTime 
+GrowingIO.startWithConfiguration(this, Configuration()
+    .setDeeplinkCallback { params, status, appAwakePassedTime ->
+        // 这里接收您的参数，匹配键值对，跳转指定 APP 内页面
+        // appAwakePassedTime 这个新的参数用来判定 APP 是否已经打开了很久才收到自定义参数，进而判断是否再继续跳转指定页面
+    }
 )
 ```
 {% endtab %}
 {% endtabs %}
 
-**返回值说明**
+**返回值说明:**
 
-| 返回值名称  | 类型                  | 说明                                                                                                                                                   |
-| ------ | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| params | Map\<string,string> | 自定义参数，您自定义的键值对                                                                                                                                       |
-| status | int                 | DeeplinkCallback.SUCCESS ：自定义参数获取成功； DeeplinkCallback.PARSE\_ERROR ：解析异常；DeeplinkCallback.ILLEGAL\_URI ：非法URI； DeeplinkCallback.NO\_QUERY : 自定义参数为空。 |
+| 返回值名称              | 类型                   | 说明                                                                                                                                                                              |
+| ------------------ | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| params             | Map\<String, String> | 自定义参数，您自定义的键值对                                                                                                                                                                  |
+| status             | int                  | DeeplinkCallback.SUCCESS ：自定义参数获取成功； DeeplinkCallback.PARSE\_ERROR ：解析异常；DeeplinkCallback.ILLEGAL\_URI ：非法URI； DeeplinkCallback.NO\_QUERY : 自定义参数为空                             |
+| appAwakePassedTime | long                 | <p>（SDK 2.8.4新增）App 唤醒到收到 GIO callback 的时间，<strong>单位毫秒</strong>。用以判断网络状态不好的情况，应用已经打开很久，才收到回调，开发人员决定是否收到参数后仍然跳转自定义的指定页面。</p><p><strong>当返回值为 0 的时候，为 DeepLink 方式打开</strong></p> |
 
 **示例代码**
 
 {% tabs %}
 {% tab title="Java" %}
 ```java
+//sdk >= 2.3.2 && sdk < 2.8.19
 GrowingIO.startWithConfiguration(this, new Configuration()
     .setDeeplinkCallback(new DeeplinkCallback() {
                 @Override
-                public void onReceive(Map<String, String> params, int status,long time) {
+                public void onReceive(Map<String, String> params, int status) {
                      if (status == DeeplinkCallback.SUCCESS) {
+                        //获得您的自定义参数，处理您的相关逻辑
+                        Log.d("TestApplication", "DeepLink 参数获取成功，params" + params.toString());
+                    }
+                }
+            })
+);
+//sdk >= 2.8.4, 新增参数 long appAwakePassedTime 
+GrowingIO.startWithConfiguration(this, new Configuration()
+    .setDeeplinkCallback(new DeeplinkCallback() {
+                @Override
+                public void onReceive(Map<String, String> params, int status, long appAwakePassedTime) {
+                     //成功得到自定义参数，并且从 APP 打开到收到回调时间小于 1.5 秒
+                     if (status == DeeplinkCallback.SUCCESS && appAwakePassedTime < 1500) {
                         //获得您的自定义参数，处理您的相关逻辑
                         Log.d("TestApplication", "DeepLink 参数获取成功，params" + params.toString());
                     }
@@ -446,9 +518,23 @@ GrowingIO.startWithConfiguration(this, new Configuration()
 
 {% tab title="Kotlin" %}
 ```kotlin
+//sdk >= 2.3.2 && sdk < 2.8.19
+GrowingIO.startWithConfiguration(
+    this, Configuration()
+        .setDeeplinkCallback(object : DeeplinkCallback {
+            fun onReceive(params: Map<String?, String?>, status: Int) {
+                if (status == DeeplinkCallback.SUCCESS) {
+                    //获得您的自定义参数，处理您的相关逻辑
+                    Log.d("TestApplication", "DeepLink 参数获取成功，params$params")
+                }
+            }
+        })
+)
+//sdk >= 2.8.4, 新增参数 long appAwakePassedTime 
 GrowingIO.startWithConfiguration(this, Configuration()
-    .setDeeplinkCallback { params, status, time ->
-        if (status == DeeplinkCallback.SUCCESS) {
+    .setDeeplinkCallback { params, status, appAwakePassedTime ->
+        //成功得到自定义参数，并且从 APP 打开到收到回调时间小于 1.5 秒
+        if (status == DeeplinkCallback.SUCCESS && appAwakePassedTime < 1500) {
             //获得您的自定义参数，处理您的相关逻辑
             Log.d("TestApplication", "DeepLink 参数获取成功，params$params")
         }
@@ -460,24 +546,30 @@ GrowingIO.startWithConfiguration(this, Configuration()
 
 ## 3. 自定义数据上传
 
-GrowingIO 提供多种 API 接口，供您上传一些自定义的数据指标及维度 ，请参考Android SDK API > [自定义数](android-sdk-api/customize-api.md)[上传API](android-sdk-api/customize-api.md)。
+除上述的用户行为数据（无埋点数据）之外，GrowingIO 还提供了多种 API 接口，供您上传一些自定义的数据指标及维度 ，请参考Android SDK API > [自定义数](android-sdk-api/customize-api.md)[上传API](android-sdk-api/customize-api.md)。
+
+{% hint style="success" %}
+90% 以上的用户都会上传登录用户 ID ，以便分析登录用户的数据情况。
+{% endhint %}
 
 ## 4. 创建应用
 
 {% hint style="danger" %}
-**添加代码之后，请先Clean项目，然后再进行编译，并在你的 Android App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
+**添加代码之后，请先Clean项目，然后再进行编译，并在您的 Android App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
 {% endhint %}
 
-在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
+在 GrowingIO 平台应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
 
-## 5. 验证SDK是否正常采集数据 <a href="#5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju" id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
+## 5. 验证SDK是否正常采集数据
 
-了解GrowingIO平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
+{% hint style="info" %}
+了解 GrowingIO 平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
+{% endhint %}
 
-GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
+GrowingIO 为您提供多种验证SDK是否正常采集数据的方式：
 
-方式一：[Mobile Debugger​](../../debugging/mobile-debugger.md)
+方式一：[Mobile Debugger](../../debugging/mobile-debugger.md)
 
 方式二：在SDK中设置了Debug模式后，在IDE编译器控制台查看数据采集日志。
 
-方式三：[数据校验](https://docs.growingio.com/v3/product-manual/data-center/datacheck/app)
+方式三：（**推荐**）[数据校验](https://docs.growingio.com/v3/product-manual/data-center/datacheck/app)

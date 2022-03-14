@@ -207,11 +207,11 @@ GrowingIO SDK 默认收集的数据类型只有「设备 ID」和「用户 ID」
 
 ## 常见问题
 
-#### Q：App一开始禁止了`IDFA`权限，后续允许了`IDFA` 权限，数据会有什么变化？[#](http://localhost:3000/growingio-sdk-docs/docs/compliance/iosCompliance#qapp%E4%B8%80%E5%BC%80%E5%A7%8B%E7%A6%81%E6%AD%A2%E4%BA%86idfa%E6%9D%83%E9%99%90%E5%90%8E%E7%BB%AD%E5%85%81%E8%AE%B8%E4%BA%86idfa-%E6%9D%83%E9%99%90%E6%95%B0%E6%8D%AE%E4%BC%9A%E6%9C%89%E4%BB%80%E4%B9%88%E5%8F%98%E5%8C%96) <a href="#qapp-yi-kai-shi-jin-zhi-le-idfa-quan-xian-hou-xu-yun-xu-le-idfa-quan-xian-shu-ju-hui-you-shen-me-bia" id="qapp-yi-kai-shi-jin-zhi-le-idfa-quan-xian-hou-xu-yun-xu-le-idfa-quan-xian-shu-ju-hui-you-shen-me-bia"></a>
+### Q：App一开始禁止了`IDFA`权限，后续允许了`IDFA` 权限，数据会有什么变化？[#](http://localhost:3000/growingio-sdk-docs/docs/compliance/iosCompliance#qapp%E4%B8%80%E5%BC%80%E5%A7%8B%E7%A6%81%E6%AD%A2%E4%BA%86idfa%E6%9D%83%E9%99%90%E5%90%8E%E7%BB%AD%E5%85%81%E8%AE%B8%E4%BA%86idfa-%E6%9D%83%E9%99%90%E6%95%B0%E6%8D%AE%E4%BC%9A%E6%9C%89%E4%BB%80%E4%B9%88%E5%8F%98%E5%8C%96) <a href="#qapp-yi-kai-shi-jin-zhi-le-idfa-quan-xian-hou-xu-yun-xu-le-idfa-quan-xian-shu-ju-hui-you-shen-me-bia" id="qapp-yi-kai-shi-jin-zhi-le-idfa-quan-xian-hou-xu-yun-xu-le-idfa-quan-xian-shu-ju-hui-you-shen-me-bia"></a>
 
 A：对于`IDFA`，App生命周期内，`IDFA` 只会获取一次，就算后续 IDFA 权限打开了，也不会再获取，可以在下一次App启动后生效。对于 设备标识，仅且在 App第一次启动时生成，后续不再改变，优先级为 `IDFA`> `IDFV` > 随机字符串，如果 `IDFA` 无法获取，则会使用`IDFV` 且不再变动，会存入`Keychain`，卸载也无法修改。如果要设备标识 和 `IDFA` 绑定，则需要在用户同意 `IDFA`权限之后进行第一次SDK初始化操作。
 
-#### Q：延迟初始化之后，发现丢掉了部分事件 <a href="#q-yan-chi-chu-shi-hua-zhi-hou-fa-xian-diu-diao-le-bu-fen-shi-jian" id="q-yan-chi-chu-shi-hua-zhi-hou-fa-xian-diu-diao-le-bu-fen-shi-jian"></a>
+### Q：延迟初始化之后，发现丢掉了部分事件 <a href="#q-yan-chi-chu-shi-hua-zhi-hou-fa-xian-diu-diao-le-bu-fen-shi-jian" id="q-yan-chi-chu-shi-hua-zhi-hou-fa-xian-diu-diao-le-bu-fen-shi-jian"></a>
 
 A：对于SDK初始化之前，或者开启数据采集之前发生的事件，一概丢弃。
 

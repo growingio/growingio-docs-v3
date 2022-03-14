@@ -8,13 +8,13 @@
 
 ![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LI58sGTg1USJzrnTVZD-LI5KdIC78J2Y7tfdBp2image.png)
 
-2.使用[DebugMode](../auto-android-sdk.md#1-she-zhi-debug-mo-shi-setdebugmode)日志，进入页面发送的`page`的`p`为当前的页面。
+2.使用[DebugMode](../auto-android-sdk.md#1-she-zhi-debug-mo-shi-setdebugmode)日志，进入页面发送的`page`的`p`字段值为当前的页面。
 
-3.使用[Mobile Debugger](../../../debugging/mobile-debugger.md) 查看`page`事件的`p`。
+3.使用[Mobile Debugger](../../../debugging/mobile-debugger.md) 查看`page`事件的`p`字段值为当前的页面。。
 
 ## 2. 点击事件采集逻辑是什么？
 
-设置以下点击事件的控件会被采集点击事件，如果您自定义了点击事件，不在下方列举之内，将无法采集点击事件，影响数据分析。
+设置以下点击事件的控件会被采集点击事件。如果您自定义了控件的点击事件，不在下方列举之内，将无法采集点击事件，进而无法数据分析该控件点击事件。
 
 ```java
 onCheckedChanged(android/widget/CompoundButton)
@@ -33,12 +33,12 @@ onGroupClick(android/widget/ExpandableListView;android/view/View)
 onChildClick(android/widget/ExpandableListView;android/view/View)
 ```
 
-如果您自定义了 Click 事件， 但是希望 SDK 采集。 可以放置一个 `onClickListener` 作为代理。这种方案即使随着我们的 SDK 升级也会被兼容。
+如果您自定义了 Click 事件， 但又希望 SDK 采集，可以放置一个 `onClickListener` 作为代理。这种方案即使我们的 SDK 升级也会被兼容。
 
 {% hint style="info" %}
-请注意设置您的 View 可点击：
+注意，需设置 View 可点击：
 
-`//设置view Clickable, 如果不设置会不能圈选这个 View。`
+`//设置view Clickable, 如果不设置，则不能圈选该 View。`
 
 `view.setClickable(true);`
 {% endhint %}
@@ -55,7 +55,7 @@ public void onCustomClick(View view){
 }
 ```
 
-例： `TabHost` 的点击事件采集增加 onClickListener 后可以采集到点击事件
+例： `TabHost` 的点击事件增加 onClickListener 后，可以采集到点击事件
 
 ```java
 TabHost.OnTabChangeListener listener = new TabHost.OnTabChangeListener() {
@@ -69,20 +69,20 @@ TabHost.OnTabChangeListener listener = new TabHost.OnTabChangeListener() {
 }
 ```
 
-最后，如果您是在布局文件中在`view`上使用 `onClick` 属性的点击事件，不会被采集，不支持。
+最后，如果您在布局文件中`view`上使用了 `onClick` 属性的点击事件，则不支持该点击事件采集。
 
 {% hint style="warning" %}
 如果您还未采集到点击事件， 并且使用了 lambda 表达式，请参考[lambda配置](../auto-android-sdk.md#5-lambda-biao-da-shi-zhi-chi-pei-zhi-xiang)。
 {% endhint %}
 
-## 3. 如何查看当前App SDK的版本？
+## 3. 如何查看当前App 集成SDK的版本号？
 
 有以下多种方式，任选其一。
 
-1. 唤起圈选，点击小红点，能够看到版本号；
+1. APP 唤起圈选，点击小红点，能够看到版本号；
 2. 使用 Mobile Debugger ， 点击左侧截图区域的 `i` 图标，能够看到版本号；
 3. 翻阅代码，app 目录层中的 build.gradle 文件中查找；
-4. 查看日志，每条 vst 事件中 `av` 字段描述版本号；
+4. 查看日志，每条 vst 事件中 `av` 字段值描述SDK版本号；
 5. 抓包查看，网络请求中包含。
 
 ## 4. 为何不建议自定义设备ID？
@@ -125,4 +125,3 @@ TabHost.OnTabChangeListener listener = new TabHost.OnTabChangeListener() {
 ```
 
 多个 Intent Filter 不建议合并，强烈建议不要合并，除非经过严谨的测试，[Google 官方解释](https://developer.android.com/training/app-links/deep-linking#adding-filters)。
-

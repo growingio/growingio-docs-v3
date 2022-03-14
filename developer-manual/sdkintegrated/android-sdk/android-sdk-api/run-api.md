@@ -4,46 +4,46 @@ description: 运行时 API 可对 SDK 进行采集上报数据的控制。
 
 # 运行时API
 
-GrowingIO为App提供运行时随意调用的API，使用方法如下：
+GrowingIO SDK 为App提供了运行时调用的API，使用方法如下：
 
 {% tabs %}
 {% tab title="Java" %}
 ```java
 // 得到 GrowingIO 实例后可以调用其中 API
 GrowingIO gio = GrowingIO.getInstance();
-gio.setUserId("张溪梦");
+gio.setUserId("登录用户ID");
 ```
 {% endtab %}
 
 {% tab title="Kotlin" %}
 ```kotlin
 val gio = GrowingIO.getInstance()
-gio.userId = "张溪梦"
+gio.userId = "登录用户ID"
 ```
 {% endtab %}
 {% endtabs %}
 
 {% hint style="danger" %}
-GrowingIO所有API都需要在主线程调用。
+GrowingIO SDK 所有 API 都需要在主线程调用。
 {% endhint %}
 
 ## 基础配置API
 
 | API              | 说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | 无埋点SDK版本支持 | 埋点SDK版本支持 |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------- |
-| setGeoLocation   | 设置经纬度，并在 vst 事件中发送，Android SDK 暂时没办法自动获取`GPS`数据，如果您要采集`GPS`数据，需要在您的App每次获取完`GPS`数据之后，通过该`API`告知 SDK。如果您不设置，我们默认使用用户`IP`的`Location。`                                                                                                                                                                                                                                                                                                                                                   | ALL        | ALL       |
+| setGeoLocation   | 设置经纬度，并在 vst 事件中发送，Android SDK 默认不获取`GPS`数据，如果您要采集`GPS`数据，需要在您的App每次获取完`GPS`数据之后，调用过该`API`。经纬度设置为(0,0)，视为无效设置                                                                                                                                                                                                                                                                                                                                                                         | ALL        | ALL       |
 | clearGeoLocation | 清空经纬度                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | ALL        | ALL       |
-| setViewInfo      | <p>配置 view 的 Tag，标记 View ，并在 GrowingIO 相关事件中发送 ，内容对应 <code>xPath</code> 中的 <code>obj</code></p><p>例如：在商品<code>ListView</code>添加购物车的场景中，每个商品<code>item</code>都含有一个加入购物车按钮，这时无法区分商品<code>item</code>与将它加入购物车按钮的一对一关系，此时调用此方法增加描述。</p><p>注意：适用于原有<code>v</code>字段含义不大，只关注描述的场景，使用此接口后<code>v</code>字段将不采集</p>                                                                                                                                                                            | ALL        | -         |
+| setViewInfo      | <p>配置 view 的 Tag，标记 View ，并在 SDK 相关事件中发送 ，内容对应 <code>xPath</code> 中的 <code>obj</code></p><p>例如：在商品<code>ListView</code>添加购物车的场景中，每个商品<code>item</code>都含有一个加入购物车按钮，这时无法区分商品<code>item</code>与将它加入购物车按钮的一对一关系，此时调用此方法增加描述。</p><p>注意：适用于原有<code>v</code>字段含义不大，只关注描述的场景，使用此接口后<code>v</code>字段将不采集</p>                                                                                                                                                                                  | ALL        | -         |
 | setViewContent   | <p>配置 view 的 Tag，标记 View ，并在 GrowingIO相关事件中发送，内容对应 <code>xPath</code> 中的 <code>v</code></p><p>SDK默认不会采集ImageView的内容，为了能对不同的图片元素（ImageView）区分统计，需要对每个具有分析意义的图片元素（ImageView）添加描述。</p>                                                                                                                                                                                                                                                                                                   | ALL        | -         |
 | setViewID        | <p>设置 View id ，配置之后对应 xPath 中的 view id，SDK将会使用Layout文件中的ID来识别一个元素。</p><p>如果部分元素在Layout文件中没有ID，建议在Layout文件中添加。</p><p>对于动态生成的元素，可以使用如下方法对它设置唯一的ID。</p><p>当您的应用界面改版时，可能会导致无法准确地统计已经圈选的元素。因此，对于应用中的主要流程涉及到的界面元素，建议您为它们设置固定的唯一ID，以保证数据的一致性。</p><ul><li>ID 只能设置为字母、数字和下划线的组合</li><li>如果在ViewGroup上设置ID的话，SDK会忽略他所有子元素的默认ID（就是写在xml文件里的）只会使用GrowingIO.setViewID设置的ID。</li><li>对于已经集成过旧版SDK并圈选过的应用，对某个元素设置ID后再圈选它，指标数值会从零开始计算，类似初次集成SDK后发版的效果，但不影响之前圈选的其它指标数据。如果不希望出现这种情况，请不要使用这个方法</li></ul> | ALL        | -         |
-| setChannel       | <ul><li><strong>&#x3C;2.6.5 版本</strong>： 先设置渠道信息，再发送数据 能够保证所有数据都一定会带上渠道信息。</li><li><strong>>=2.6.5 版本</strong>： 保留原有设置渠道信息的方法，新增在运行时设置渠道信息。新增的接口无法保证所有数据都一定会带上渠道信息（虽然我们会通过重发机制进行保证，但是无法做到100%）。</li></ul>                                                                                                                                                                                                                                                                             | ALL        | -         |
+| setChannel       | <ul><li><strong>&#x3C;2.6.5 版本</strong>： 先设置渠道信息，再发送数据 能够保证所有数据都一定会带上渠道信息。</li><li><strong>>=2.6.5 版本</strong>： 保留原有设置渠道信息的方法，新增在运行时设置渠道信息。新增的接口无法保证所有数据都一定会带上渠道信息（虽然我们会通过重发机制进行保证，但是无法做到100%）。</li></ul>                                                                                                                                                                                                                                                                             | ALL        | ALL       |
 
 ## 数据采集API
 
 | API                | 说明                                                                                                                                                                                                                                                             | 无埋点SDK版本支持 | 埋点SDK版本支持 |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------- |
-| isDeeplinkUrl      | 校验链接URI是否满足GIO的格式，如"gio.ren"或".datayi.cn"结尾等                                                                                                                                                                                                                   | >=2.8.11   | -         |
-| doDeeplinkByUrl    | true 表示是GIO的deeplink链接，进行下一步判断， false 表示非GIO相关链接.参数callback不填则默认使用全局初始化时设置的callback                                                                                                                                                                            | >=2.8.11   | -         |
+| isDeeplinkUrl      | 校验链接URI是否满足GIO的格式，如"gio.ren"或".datayi.cn"结尾等                                                                                                                                                                                                                   | >=2.8.11   | >=2.8.11  |
+| doDeeplinkByUrl    | true 表示是GIO的deeplink链接，进行下一步判断， false 表示非GIO相关链接.参数callback不填则默认使用全局初始化时设置的callback                                                                                                                                                                            | >=2.8.11   | >=2.8.11  |
 | disableDataCollect | 遵守欧洲联盟出台的通用数据保护条例，用户不授权，不采集用户数据                                                                                                                                                                                                                                | >=2.3.2    | ALL       |
 | enableDataCollect  | 遵守欧洲联盟出台的通用数据保护条例，用户授权，采集用户数据                                                                                                                                                                                                                                  | >=2.3.2    | ALL       |
 | disable            | GrowingIO停止采集                                                                                                                                                                                                                                                  | ALL        | ALL       |
@@ -71,9 +71,9 @@ GrowingIO所有API都需要在主线程调用。
 | trackWebView        | 采集 `WebView` 事件，默认采集，您可以在不全量采集`WebView`的时候，定制采集某个`WebView`                                                                                                                                                             | >=2.8.22 | -       |
 | trackX5WebView      | 采集 X5WebView 事件，默认采集                                                                                                                                                                                                   | <2.6.0   | -       |
 | setTabName          | 如果您有某些View动态添加到ViewTree中并且在父容器中的位置不固定（例如常见的多Fragment实现的Tab切换），请给每个View设置ID来辅助统计                                                                                                                                        | ALL      | -       |
-| setImeiEnable       | 设置为 false 则 SDK 不采集 `imei，`适用于**海外应用市场**上架的应用。                                                                                                                                                                         | >=2.7.8  | -       |
-| setAndroidIdEnable  | 设置为 false 则 SDK 不采集 `androidId` ,适用于**海外应用市场**上架的应用。                                                                                                                                                                   | >=2.7.8  | -       |
-| setGoogleAdIdEnable | 设置为 false 则 SDK 不采集 `GoogleAdId` ,适用于**海外应用市场**上架的应用。                                                                                                                                                                  | >=2.7.8  | -       |
-| setOAIDEnable       | 国内[移动安全联盟MSA](http://www.msa-alliance.cn/col.jsp?id=120) 联合各大手机制造商推出了 OAID ， 作为唯一广告标识符。**Android 2.8.5** 新增。                                                                                                           | >=2.8.5  | -       |
+| setImeiEnable       | 设置为 false 则 SDK 不采集 `imei，`适用于**海外应用市场**上架的应用。                                                                                                                                                                         | >=2.7.8  | >=2.7.8 |
+| setAndroidIdEnable  | 设置为 false 则 SDK 不采集 `androidId` ,适用于**海外应用市场**上架的应用。                                                                                                                                                                   | >=2.7.8  | >=2.7.8 |
+| setGoogleAdIdEnable | 设置为 false 则 SDK 不采集 `GoogleAdId` ,适用于**海外应用市场**上架的应用。                                                                                                                                                                  | >=2.7.8  | >=2.7.8 |
+| setOAIDEnable       | 国内[移动安全联盟MSA](http://www.msa-alliance.cn/col.jsp?id=120) 联合各大手机制造商推出了 OAID ， 作为唯一广告标识符。**Android 2.8.5** 新增。                                                                                                           | >=2.8.5  | >=2.8.5 |
 | bridgeForWebView    | 提供原生的 WebView bridge供hybrid调用, 支持hybrid事件发送                                                                                                                                                                            | -        | >=2.9.0 |
 | bridgeForX5WebView  | 提供腾讯X5内核的WebView bridge供hybrid调用, 支持hybrid事件发送                                                                                                                                                                         | -        | >=2.9.0 |

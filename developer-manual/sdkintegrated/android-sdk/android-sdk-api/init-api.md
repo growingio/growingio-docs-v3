@@ -4,9 +4,9 @@ description: 初始化 SDK 时配置项 API ，可以控制 SDK  的采集上报
 
 # 初始化配置项API
 
-初始化配置项均在`Application`的`onCreate`方法中 SDK 初始化代码块中设置，下面将分类并描述含义。
+初始化配置项 API 均在 SDK 初始化代码块中设置，下面将分类描述各配置项的含义。
 
-示例代码
+**示例代码：**
 
 ```java
 import android.app.Application;
@@ -93,9 +93,9 @@ public class TestApplication extends Application {
 | disableCellularImp   | false               | 否关闭移动蜂窝网`imp`事件采集，`imp`为元素展示事件                                                                | ALL        | -         |
 | setCellularDataLimit | 10 \* 1024 \* 1024  | 一天的时间之内，在移动蜂窝网下的数据最大传输量，默认 10 M。                                                              | ALL        | ALL       |
 | setBulkSize          | 300                 | 如果数据库存储数据条数大于等于`bulkSize`，则马上发送数据。                                                            | ALL        | ALL       |
-| setImeiEnable        | true                | 设置为 false 则 SDK 不采集 `imei，`适用于**海外应用市场**上架的应用。                                                | >=2.7.8    | -         |
-| setAndroidIdEnable   | true                | 设置为 false 则 SDK 不采集 `androidid` ，适用于**海外应用市场**上架的应用。                                          | >=2.7.8    | -         |
-| setGoogleAdIdEnable  | true                | 设置为 false 则 SDK 不采集 `GoogleAdId` ，适用于**海外应用市场**上架的应用。                                         | >=2.7.8    | -         |
-| setOAIDEnable        | true                | 国内[移动安全联盟MSA](http://www.msa-alliance.cn/col.jsp?id=120) 联合各大手机制造商推出了 OAID ， 作为唯一广告标识符。       | >=2.8.5    | -         |
-| setOAIDProvideConfig | OaidProvideConfig对象 | OaidProvideConfig.provideOaid() -> 手动提供OAID值 OaidProvideConfig.provideCert() -> 手动提供CERT值     | >=2.9.11   |           |
+| setImeiEnable        | true                | 设置为 false 则 SDK 不采集 `imei，`适用于**海外应用市场**上架的应用。                                                | >=2.7.8    | >=2.7.8   |
+| setAndroidIdEnable   | true                | 设置为 false 则 SDK 不采集 `androidid` ，适用于**海外应用市场**上架的应用。                                          | >=2.7.8    | >=2.7.8   |
+| setGoogleAdIdEnable  | true                | 设置为 false 则 SDK 不采集 `GoogleAdId` ，适用于**海外应用市场**上架的应用。                                         | >=2.7.8    | >=2.7.8   |
+| setOAIDEnable        | true                | 国内[移动安全联盟MSA](http://www.msa-alliance.cn/col.jsp?id=120) 联合各大手机制造商推出了 OAID ， 作为唯一广告标识符。       | >=2.8.5    | >=2.8.5   |
+| setOAIDProvideConfig | OaidProvideConfig对象 | OaidProvideConfig.provideOaid() -> 手动提供OAID值 OaidProvideConfig.provideCert() -> 手动提供CERT值     | >=2.9.11   | >=2.9.11  |
 
