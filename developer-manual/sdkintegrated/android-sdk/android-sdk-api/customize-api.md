@@ -134,7 +134,7 @@ gio.setPeopleVariable(jsonObject);
 
 **检验数据发送日志示例：**
 
-注意 `t` 字段等于 ppl，表示登录用户变量发送成功，需注意 `var`字段中的 `key` 和 `value` 是否符合预期，其它字段无需仔细验证。
+注意 `t` 字段值为 ppl，表示登录用户变量发送成功，需注意 `var`字段中的 `key` 和 `value` 是否符合预期，其它字段无需仔细验证。
 
 ```java
 {
@@ -201,7 +201,7 @@ gio.setVisitor(jsonObject)
 
 **检验数据发送日志示例**
 
-注意 `t` 字段等于 vstr，表示访问用户变量发送成功，需注意 `var`字段中的 `key` 和 `value` 是否符合预期，其它字段无需仔细验证**。**
+注意 `t` 字段值为 vstr，表示访问用户变量发送成功，需注意 `var`字段中的 `key` 和 `value` 是否符合预期，其它字段无需仔细验证**。**
 
 ```java
 {
@@ -262,7 +262,7 @@ gio.setPageVariableX(Fragment fragment, JSONObject pageLevelVariables);
 | activity           | Activity   | 是    | 当前页面访问事件（page事件）发送的页面                                                                                                                                                                                                                                                       |
 | fragment           | Fragment   | 否    | 当前页面访问事件（page事件）发送的页面                                                                                                                                                                                                                                                       |
 | key                | tring      | 否    | <p>页面级变量的标识符</p><p>限制：非空，长度&#x3C;=50</p>                                                                                                                                                                                                                                    |
-| value              | String     | 否    | <p>页面级变量的值</p><p>限制：非空，长度&#x3C;=等于1000</p>                                                                                                                                                                                                                                  |
+| value              | String     | 否    | <p>页面级变量的值</p><p>限制：非空，长度&#x3C;=1000</p>                                                                                                                                                                                                                                    |
 | pageLevelvariables | JSONObject | 否    | <p>页面级变的信息</p><p>限制：非null，长度&#x3C;=100（<code>pageLevelVariable.length()&#x3C;=100</code>）；</p><p><code>pageLevelVariable</code> 内部不允许含有<code>JSONObject</code>或者<code>JSONArray</code>；</p><p><code>key</code> 长度&#x3C;=50，<code>value</code>长度&#x3C;=1000，值不能为空串，也就是""</p> |
 
 {% hint style="info" %}
@@ -301,7 +301,7 @@ gio.setPageVariable(myActivity, jsonObject)
 
 **检验数据发送日志示例：**
 
-注意 `t` 等于`pvar`字段，表示自定义事件发送成功，需注意 `var`字段中的 `key` 和 `value` 是否符合预期，其它字段无需仔细验证**。**
+注意 `t` 字段值为pvar，表示自定义事件发送成功，需注意 `var`字段中的 `key` 和 `value` 是否符合预期，其它字段无需仔细验证**。**
 
 ```java
 {
@@ -394,7 +394,7 @@ gio.setEvar(jsonObject)
 
 **检验数据发送日志示例：**
 
-注意 `t` 字段等于 evar ，表示转化事件发送成功，需注意 `var`字段中的 `key` 和 `value` 是否符合预期，其它字段无需仔细验证。
+注意 `t` 字段值为 evar ，表示转化事件发送成功，需注意 `var`字段中的 `key` 和 `value` 是否符合预期，其它字段无需仔细验证。
 
 ```java
 {
@@ -484,7 +484,7 @@ gio.track("registerSuccess", jsonObject)
 
 **检验数据发送日志示例**
 
-注意 `t` 等于 `cstm` 字段，表示自定义事件发送成功，`n` 字段表示埋点事件的标识符，需注意 `var`字段中的 `key` 和 `value` 是否符合预期，其它字段无需仔细验证**。**
+注意 `t` 字段值为 cstm ，表示自定义事件发送成功，`n` 字段表示埋点事件的标识符，需注意 `var`字段中的 `key` 和 `value` 是否符合预期，其它字段无需仔细验证**。**
 
 ```java
 //展示 track 接口调用示例三日志内容

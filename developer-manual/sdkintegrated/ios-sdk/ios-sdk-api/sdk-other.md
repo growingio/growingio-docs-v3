@@ -1,7 +1,7 @@
 # 埋点SDK支持的其他接口
 
 {% hint style="info" %}
-**GrowingIO 埋点 SDK 仅自动采集设备信息和您埋点内容数据，对比无埋点 SDK ，埋点 SDK 少很多 API， 请勿在埋点 SDK 中调用无埋点 SDK 接口。**
+**GrowingIO 埋点 SDK 仅自动采集设备信息和您埋点内容数据。对比无埋点 SDK ，埋点 SDK 少很多 API， 请勿在埋点 SDK 中调用无埋点 SDK 接口。**
 {% endhint %}
 
 ```java
@@ -49,4 +49,3 @@
 + (void)bridgeForWKWebView:(WKWebView *)webView;
 
 ```
-

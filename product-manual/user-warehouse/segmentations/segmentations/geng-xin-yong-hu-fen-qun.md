@@ -18,7 +18,7 @@
 
 4、选择已创建的CSV分群进行更新，点击【确定】完成更新。&#x20;
 
-![](<../../../../.gitbook/assets/image (180).png>)。
+![](<../../../../.gitbook/assets/image (180) (1).png>)。
 
 {% hint style="info" %}
 更新规则：

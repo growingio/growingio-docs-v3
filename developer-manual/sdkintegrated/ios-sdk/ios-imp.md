@@ -4,11 +4,11 @@
 
 请升级最新版本的SDK。
 
-| 无埋点SDK版本 | 特性 |
-| :--- | :--- |
-| 2.8.5 | 添加配置当 View 可见的比例则自动触发埋点事件 |
-| 2.8.4 | 支持自动采集元素内容 |
-| 2.8.2 | 支持 imp 半自动埋点 |
+| 无埋点SDK版本 | 特性                        |
+| -------- | ------------------------- |
+| 2.8.5    | 添加配置当 View 可见的比例则自动触发埋点事件 |
+| 2.8.4    | 支持自动采集元素内容                |
+| 2.8.2    | 支持 imp 半自动埋点              |
 
 {% hint style="warning" %}
 React Native 无埋点 SDK目前不支持配置。
@@ -43,7 +43,7 @@ React Native 无埋点 SDK目前不支持配置。
 
 下面我们将从三个方面介绍此方案。
 
-### **1.** **标记View并设置自定义事件和变量** <a id="1-biao-ji-view-bing-she-zhi-zi-ding-yi-shi-jian-he-bian-liang"></a>
+### **1.** **标记View并设置自定义事件和变量** <a href="#1-biao-ji-view-bing-she-zhi-zi-ding-yi-shi-jian-he-bian-liang" id="1-biao-ji-view-bing-she-zhi-zi-ding-yi-shi-jian-he-bian-liang"></a>
 
 在旧版无埋点 SDK 中，如果想查看某个广告位的具体某个商品的曝光次数，通过圈选广告位的 view 元素的 imp 事件是无法做到的，仍需要您埋点自定义事件。
 
@@ -51,13 +51,13 @@ React Native 无埋点 SDK目前不支持配置。
 
 此方案将监控 View 的可见和埋点的触发时机交给 GIO SDK ， 开发者只需要将自定义事件的变量传递给 SDK 即可。
 
-### **2.** **元素的浏览事件相对于旧版更准** <a id="2-yuan-su-de-liu-lan-shi-jian-xiang-dui-yu-jiu-ban-geng-zhun"></a>
+### **2.** **元素的浏览事件相对于旧版更准** <a href="#2-yuan-su-de-liu-lan-shi-jian-xiang-dui-yu-jiu-ban-geng-zhun" id="2-yuan-su-de-liu-lan-shi-jian-xiang-dui-yu-jiu-ban-geng-zhun"></a>
 
 对于用户主动标记 imp 采集的元素，相对于旧版本自动采集会更加准确，我们举例以下两个场景来说明。
 
-#### **场景1** **：** **不同的页面共享同一个元素** <a id="chang-jing-1-bu-tong-de-ye-mian-gong-xiang-tong-yi-ge-yuan-su"></a>
+#### **场景1** **：** **不同的页面共享同一个元素** <a href="#chang-jing-1-bu-tong-de-ye-mian-gong-xiang-tong-yi-ge-yuan-su" id="chang-jing-1-bu-tong-de-ye-mian-gong-xiang-tong-yi-ge-yuan-su"></a>
 
-![imp&#x573A;&#x666F;1](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-Lszgmj8Q9lq1tmAli2W-LszhwXRcIlDHRgKHlKIimage.png)
+![imp场景1](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-Lszgmj8Q9lq1tmAli2W-LszhwXRcIlDHRgKHlKIimage.png)
 
 底部的导航栏在 Tab 页面中是共享元素，即切换 Tab ，底部的导航栏持续可见，在不同的 Tab 页面中是共享元素。
 
@@ -73,9 +73,9 @@ React Native 无埋点 SDK目前不支持配置。
 
 可以认为新版本方案只关心当前元素对于用户是否可见，和页面访问事件 page 无关联。更贴近实际场景，相对旧版本更准。​
 
-#### **场景2** **：** **列表元素的展现统计** <a id="chang-jing-2-lie-biao-yuan-su-de-zhan-xian-tong-ji"></a>
+#### **场景2** **：** **列表元素的展现统计** <a href="#chang-jing-2-lie-biao-yuan-su-de-zhan-xian-tong-ji" id="chang-jing-2-lie-biao-yuan-su-de-zhan-xian-tong-ji"></a>
 
-![imp&#x573A;&#x666F;2](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-Lszgmj8Q9lq1tmAli2W-Lszi4nG5IpNlM4SdlNzimage.png)
+![imp场景2](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-Lszgmj8Q9lq1tmAli2W-Lszi4nG5IpNlM4SdlNzimage.png)
 
 **旧版本：**
 
@@ -91,7 +91,7 @@ GIO 推荐广告位在 `ScrollView` 的最底部，需要用户滑动才能看�
 
 新版本浏览事件采集的列表，内部的元素展现次数的统计更加准确，更符合业务场景。
 
-### **3.** **提升用户浏览事件采集的性能** <a id="3-ti-sheng-yong-hu-liu-lan-shi-jian-cai-ji-de-xing-neng"></a>
+### **3.** **提升用户浏览事件采集的性能** <a href="#3-ti-sheng-yong-hu-liu-lan-shi-jian-cai-ji-de-xing-neng" id="3-ti-sheng-yong-hu-liu-lan-shi-jian-cai-ji-de-xing-neng"></a>
 
 旧版本中，无埋点 SDK 将自动采集所有 View 的信息，最终分析时不会分析所有 APP 中的 View，在APP的性能、用户流量上都是一种浪费。
 
@@ -108,46 +108,14 @@ GIO 推荐广告位在 `ScrollView` 的最底部，需要用户滑动才能看�
 * 对于被追踪元素上方有其它元素遮挡的情况 ，GrowingIO 仍可能发送该元素的展示事件 （适配这种case会消耗巨大性能，暂时不兼容）。
 {% endhint %}
 
-### **标记半自动化采集View元素** <a id="biao-ji-ban-zi-dong-hua-cai-ji-view-yuan-su"></a>
+### **标记半自动化采集View元素** <a href="#biao-ji-ban-zi-dong-hua-cai-ji-view-yuan-su" id="biao-ji-ban-zi-dong-hua-cai-ji-view-yuan-su"></a>
 
 **growingImpTrack**
 
-| **参数** | 是否必填 | 说明 |
-| :--- | :--- | :--- |
-
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">eventId</th>
-      <th style="text-align:left">&#x662F;</th>
-      <th style="text-align:left">
-        <p><b>NSString:</b> &#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x6807;&#x8BC6;&#x7B26;&#xFF1B;</p>
-        <p>&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF1B;</p>
-        <p>SDK 2.4.0&#x4EE5;&#x4E0B;&#x7248;&#x672C;&#x4E0D;&#x652F;&#x6301;&#x4E2D;&#x6587;&#xFF0C;&#x4EC5;&#x652F;&#x6301;
-          0 &#x5230; 9&#x3001;a &#x5230; z &#x4EE5;&#x53CA;&#x4E0B;&#x5212;&#x7EBF;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x80FD;&#x4EE5;&#x6570;&#x5B57;&#x5F00;&#x5934;&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">variable</th>
-      <th style="text-align:left">&#x5426;</th>
-      <th style="text-align:left">
-        <p><b>NSDictionary:</b> &#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#x6240;&#x4F34;&#x968F;&#x7684;&#x7EF4;&#x5EA6;&#xFF08;&#x53D8;&#x91CF;&#xFF09;&#x4FE1;&#x606F;&#x3002;</p>
-        <p>&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF08;<code>eventLevelVariable.length()&lt;=100</code>&#xFF09;&#xFF1B;</p>
-        <p><code>eventLevelVariable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>JSONObject</code>&#x6216;&#x8005;<code>JSONArray&#xFF1B;</code>
-        </p>
-        <p><code>key</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code> &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| **参数**   | 是否必填 | 说明                                                                                                                                                                                                                                                                                                                 |
+| -------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| eventId  | 是    | <p><strong>NSString:</strong> 自定义事件标识符；</p><p>非空，长度&#x3C;=50；</p><p>SDK 2.4.0以下版本不支持中文，仅支持 0 到 9、a 到 z 以及下划线，并且不能以数字开头</p>                                                                                                                                                                                         |
+| variable | 否    | <p><strong>NSDictionary:</strong> 事件发生时所伴随的维度（变量）信息。</p><p>非空，长度&#x3C;=100（<code>eventLevelVariable.length()&#x3C;=100</code>）；</p><p><code>eventLevelVariable</code> 内部不允许含有<code>JSONObject</code>或者<code>JSONArray；</code></p><p><code>key</code> 长度&#x3C;=50，<code>value</code> 长度&#x3C;=1000，值不能为空串，也就是""</p> |
 
 **growingStopImpTrack**
 
@@ -254,4 +222,3 @@ int main(int argc, char * argv[]) {
     return cell;
 }
 ```
-

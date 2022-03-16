@@ -6,7 +6,7 @@ description: 埋点 SDK 只自动采集用户访问事件，需要开发同学�
 
 埋点 SDK 的目标是使用第三方插件开发的 APP， 比如使用 Weex、APICloud 等，或不需要SDK自动采集页面浏览，元素点击行为数据的APP。
 
-在一些第三方混合开发框架中，我们无法自动采集用户的点击事件和页面浏览事件等，需要依赖调用埋点事件和事件级变量 API 来进行数据采集。
+在一些第三方混合开发框架中，我们无法自动采集用户的点击事件和页面浏览事件等，需要依赖调用埋点事件或事件变量 API 来进行数据采集。
 
 {% hint style="info" %}
 如果您的 APP 使用 Android 原生开发，并且希望自动采集用户的点击事件、页面浏览事件等无埋点事件， 请集成 Android 无埋点SDK 。
@@ -48,7 +48,7 @@ dependencies {
 }
 ```
 
-### 2. 添加URL cheme和应用权限
+### 2. 添加URL Scheme和应用权限
 
 URL Scheme 是您在 GrowingIO 平台创建应用时生成的该应用的唯一标识。把 URL Scheme 添加到您的项目中，以便在使用圈选，Mobile  Debugger，及深度链接功能时唤醒您的应用。
 
@@ -223,7 +223,7 @@ GrowingIO.startWithConfiguration(this, Configuration()
 
 ## 2. 重要配置
 
-### 1. 设置Debug模式（setDebugMode）
+### 1. 设置Debug模式
 
 Debug 模式：在 Android Studio 中通过 Logcat 查看 GrowingIO SDK 打印的数据采集发送日志。
 
@@ -307,8 +307,6 @@ GrowingIO SDK 默认不采集地理位置信息。
 
 如果您需要精确采集`GPS`数据，请在获取坐标后，调用接口设置位置信息。
 
-当用户下一次切换页面，或发生点击行为数据时，`GPS信息`会被上报。
-
 {% hint style="success" %}
 如果您不调用此接口也可以，我们会根据用户的`ip模糊匹配`用户所在城市地区，能够在最终的数据分析时看到`APP`用户地域分布。
 {% endhint %}
@@ -335,7 +333,7 @@ GrowingIO.getInstance().setGeoLocation(39.9046900000,116.4071700000);
 对应清除地理位置的方法为 clearGeoLocation()；
 {% endhint %}
 
-### 4. 多进程支持（setMutiprocess）
+### 4. 多进程支持
 
 GrowingIO SDK默认不支持多进程使用， 但是可以通过`confiuration`进行设置支持多进程。&#x20;
 

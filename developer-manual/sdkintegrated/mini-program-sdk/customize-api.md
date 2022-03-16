@@ -1,20 +1,50 @@
 # 自定义数据上传API
 
+## 设置登录**用户**ID
+
+当用户登录之后，可以通过 `setUserId` 接口上报登录用户ID，用于在 GrowingIO 平台标记登录用户，后续可使用该登录用户ID分析这个登录用户的行为数据。
+
+**接口定义**
+
+```java
+gio('setUserId', userId)
+```
+
+**参数说明**
+
+| 名称     | 类型     | 是否必须 | 说明     |
+| ------ | ------ | ---- | ------ |
+| userId | string | 是    | 登录用户ID |
+
+**示例代码**
+
+```java
+gio('setUserId', 'test_userId');
+```
+
+## 清除登录用户ID
+
+当用户退出登录之后调用`clearUserId`，清除已经设置的登录用户ID。
+
+```java
+gio('clearUserId');
+```
+
 ## 预置自定义事件
 
 GrowingIO 预置了两个小程序的标准自定义事件：分享到群聊或好友信息和程序错误，接入SDK即可以使用。
 
 **微信小程序分享到好友或群聊信息**
 
-![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LGNxeGABUADKiTWTaEM%2F-LH66a23TIvbEtQOPKyt%2F-LH675ymMloYtj1u3JVJ%2Fimage.png?alt=media&token=025a5cfb-90eb-45ee-aa58-767c0380bae1)
+![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LGNxeGABUADKiTWTaEM%2F-LH66a23TIvbEtQOPKyt%2F-LH675ymMloYtj1u3JVJ%2Fimage.png?alt=media\&token=025a5cfb-90eb-45ee-aa58-767c0380bae1)
 
 **程序错误**
 
-![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LGNxeGABUADKiTWTaEM%2F-LH66a23TIvbEtQOPKyt%2F-LH67LAaMuVbR_KxSYVc%2Fimage.png?alt=media&token=0708739e-4cae-4315-b633-e9aeb2e25ca2)
+![](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LGNxeGABUADKiTWTaEM%2F-LH66a23TIvbEtQOPKyt%2F-LH67LAaMuVbR\_KxSYVc%2Fimage.png?alt=media\&token=0708739e-4cae-4315-b633-e9aeb2e25ca2)
 
-## 设置访问用户变量（setVisitor）
+## 设置访问用户变量
 
-当用户未登录时，定义用户属性变量。在添加所需要发送的事件代码之前，需要在GrowingIO”**数据中心** &gt; **数据管理** &gt; **变量** &gt; **用户变量**的访问用户变量页签下置用户变量。
+当用户未登录时，定义用户属性变量。在添加所需要发送的事件代码之前，需要在GrowingIO”**数据中心** > **数据管理** > **变量** > **用户变量**的访问用户变量页签下置用户变量。
 
 **接口定义**
 
@@ -24,9 +54,9 @@ gio('setVisitor', properties: object);
 
 **参数说明**
 
-| 名称 | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
-| properties | Object | 是 | 访问用户级变量，用户额外的信息参数 |
+| 名称         | 类型     | 是否必须 | 说明                |
+| ---------- | ------ | ---- | ----------------- |
+| properties | Object | 是    | 访问用户级变量，用户额外的信息参数 |
 
 **代码示例**
 
@@ -43,9 +73,9 @@ getApp().globalData.gio('setVisitor', {
 });
 ```
 
-## 设置登录用户变量（setUser）
+## 设置登录用户变量
 
-发送登录用户的信息。在添加所需要发送的事件代码之前，需要在GrowingIO”**数据中心** &gt; **数据管理** &gt; **变量** &gt; **用户变量**的登录用户变量页签下置用户变量。
+发送登录用户的信息。在添加所需要发送的事件代码之前，需要在GrowingIO”**数据中心** > **数据管理** > **变量** > **用户变量**的登录用户变量页签下置用户变量。
 
 **接口定义**
 
@@ -55,9 +85,9 @@ gio('setUser', properties: object)
 
 **参数说明**
 
-| 名称 | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
-| properties | Object | 是 | 登录用户变量，用户额外的信息参数 |
+| 名称         | 类型     | 是否必须 | 说明               |
+| ---------- | ------ | ---- | ---------------- |
+| properties | Object | 是    | 登录用户变量，用户额外的信息参数 |
 
 **代码示例**
 
@@ -75,9 +105,9 @@ getApp().globalData.gio('setUser', {
 });
 ```
 
-## 设置页面级变量（setPage）
+## 设置页面级变量
 
-发送页面级别的信息。在添加所需要发送的事件代码之前，需要在GrowingIO”**数据中心** &gt; **数据管理** &gt; **变量** &gt; **事件变量**的页面级变量页签下设置页面级变量。
+发送页面级别的信息。在添加所需要发送的事件代码之前，需要在GrowingIO”**数据中心** > **数据管理** > **变量** > **事件变量**的页面级变量页签下设置页面级变量。
 
 **接口定义**
 
@@ -87,9 +117,9 @@ gio('setPage', properties: object)
 
 **参数说明**
 
-| 名称 | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
-| properties | Object | 是 | 页面级变量，页面额外的信息参数 |
+| 名称         | 类型     | 是否必须 | 说明              |
+| ---------- | ------ | ---- | --------------- |
+| properties | Object | 是    | 页面级变量，页面额外的信息参数 |
 
 **代码示例**
 
@@ -111,9 +141,9 @@ Page({
 }
 ```
 
-## 设置转化变量（setEvar）
+## 设置转化变量
 
-发送一个转化变量用于高级归因分析。在添加所需要发送的事件代码之前，需要在GrowingIO”**数据中心** &gt; **数据管理** &gt; **变量** &gt; **转化变量**下配置转化变量。
+发送一个转化变量用于高级归因分析。在添加所需要发送的事件代码之前，需要在GrowingIO”**数据中心** > **数据管理** > **变量** > **转化变量**下配置转化变量。
 
 设置一个转化信息用于高级归因分析，目前支持归因方式有最初归因、最终归因和线性归因。
 
@@ -133,9 +163,9 @@ gio('setEvar', properties: object)
 
 **参数说明**
 
-| 参数名称 | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
-| properties | Object | 是 | 转化级变量和转化信息 |
+| 参数名称       | 类型     | 是否必须 | 说明         |
+| ---------- | ------ | ---- | ---------- |
+| properties | Object | 是    | 转化级变量和转化信息 |
 
 **代码示例**
 
@@ -150,9 +180,9 @@ getApp().globalData.gio('setEvar', {
 });
 ```
 
-## 设置自定义事件及事件级变量（track）
+## 设置埋点事件和事件级变量
 
-手动发送一个自定义事件。在添加所需要发送的事件代码之前，需要在GrowingIO”**数据中心** &gt; **数据管理** &gt; **事件** &gt; **埋点事件“**下配置埋点事件，在**变量** &gt; **事件变量**下配置事件级变量。
+手动发送一个自定义事件。在添加所需要发送的事件代码之前，需要在GrowingIO”**数据中心** > **数据管理** > **事件** > **埋点事件“**下配置埋点事件，在**变量** > **事件变量**下配置事件级变量。
 
 **接口定义**
 
@@ -162,10 +192,10 @@ gio('track', eventName: string, properties: object);
 
 **参数说明**
 
-| 名称 | 类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
-| eventName | string | 是 | 事件标识符。 |
-| properties | Object | 否 | 事件级变量，即事件发生时所伴随的维度信息参数。 |
+| 名称         | 类型     | 是否必须 | 说明                      |
+| ---------- | ------ | ---- | ----------------------- |
+| eventName  | string | 是    | 事件标识符。                  |
+| properties | Object | 否    | 事件级变量，即事件发生时所伴随的维度信息参数。 |
 
 **代码示例**
 
@@ -186,4 +216,3 @@ Page({
   }
 })
 ```
-

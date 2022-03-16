@@ -1,5 +1,7 @@
 # 无埋点 SDK集成
 
+无埋点 SDK 具备自动采集基本的用户行为事件，比如访问，页面浏览，元素点击等行为数据。同时也包含埋点SDK的所有功能。
+
 ## 准备条件
 
 获取项目ID，请参考[查看项目基本信息](../../../product-manual/projectmange/details.md)。
@@ -72,13 +74,19 @@ GrowingIO iOS SDK 包含以下2个组件SDK:
 
 ### 2. 添加 URL Scheme <a href="#urlscheme" id="urlscheme"></a>
 
-添加URL Scheme 到项目中，以便唤醒您的程序进行圈选。
+URL Scheme 是您在 GrowingIO 平台创建应用时生成的该应用的唯一标识。把 URL Scheme 添加到您的项目中，以便在使用圈选，Mobile  Debugger，及深度链接功能时唤醒您的应用。
+
+{% hint style="info" %}
+URL Scheme 只能对应一个应用。当应用的包名发生变化时，需再次创建一个应用使用对应的 URL Scheme
+{% endhint %}
 
 ![](<../../../.gitbook/assets/image (79).png>)
 
 ### 3. 初始化配置
 
-> 在 AppDelegate 中引入`#import "Growing.h"`并添加初始化方法。
+在 AppDelegate 中引入`#import "Growing.h"`并添加初始化方法。
+
+**为使 App 合规，请参考**[**iOS合规步骤**](../compliance/ios-sdk-he-gui-shuo-ming.md#he-gui-bu-zhou)**。**
 
 {% tabs %}
 {% tab title="Objective-C" %}
@@ -123,10 +131,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ### 4.添加激活圈选的代码
 
-> 在 AppDelegate 中添加激活圈选的代码
+在 AppDelegate 中添加激活圈选的代码
 
 {% hint style="warning" %}
-因为您代码的复杂程度以及iOS SDK的版本差异，有时候 \[Growing handleUrl:url] 并没有被调用。请在各个平台上调试这段代码，确保当App被URL scheme唤醒之后，该函数能被调用到。
+因为您代码的复杂程度以及 iOS SDK 的版本差异，有时候 `[Growing handleUrl:url]` 并没有被调用。请在各个平台上调试这段代码，确保当App被URL scheme唤醒之后，该函数能被调用到。
 {% endhint %}
 
 {% tabs %}
@@ -203,9 +211,9 @@ func application(_ application: UIApplication, open url: URL, sourceApplication:
 下列内容为常用配置，更多属性及接口详细信息见 Growing.h
 {% endhint %}
 
-### 1. 设置页面别名
+### 1. 设置页面名称
 
-有些时候，当您代码中的原有页面标题不足以支持业务人员对页面进行识别时，您可以使用此接口设置一个容易识别的页面名称来替换页面标题字段。
+有些时候，当您代码中的原有页面不足以支持业务人员对页面进行识别时，您可以使用此接口设置一个容易识别的页面名称来替换页面浏览事件的`p`字段。
 
 为处理这种场景，我们提供了取别名的方法，方法如下：
 
@@ -213,6 +221,10 @@ func application(_ application: UIApplication, open url: URL, sourceApplication:
 //手动标识该页面的标题，必须在该UIViewController显示之前设置
 @property (nonatomic,copy) NSString* growingAttributesPageName;
 ```
+
+{% hint style="info" %}
+使用 `setPageName` 接口需要提前规划好页面名称。需保证业务上同一页面的页面名称保持不变，否则会造成同一页面的页面浏览量数据不准确。
+{% endhint %}
 
 {% hint style="info" %}
 1. 必须在该UIViewController显示之前设置。
@@ -246,7 +258,7 @@ func application(_ application: UIApplication, open url: URL, sourceApplication:
 
 ### 3. 设置元素内容
 
-当您想采集一些可能没有文字的控件（比如UIImageView，UIView）时，也可以给属性growingAttributesValue 赋值作为文字，用来在圈选的时候区分不同的内容。
+当您想采集一些可能没有文字的控件（比如UIImageView，UIView）时，可以给属性growingAttributesValue 赋值作为文字，用来在圈选的时候区分不同的内容。
 
 如果您的 app 上方有横向滚动的 Banner 广告，若要收集 Banner 相关数据，请在响应点击的控件上添加如下代码：
 
@@ -271,6 +283,8 @@ view3.growingAttributesValue = @"ad3";
 
 ### 4. 采集输入框数据
 
+GrowingIO SDK 默认仅采集输入框内容改变次数，不采集输入框内的文字。
+
 如果您需要采集应用内某个输入框内的文字（例如搜索框），请调用如下接口进行设置：
 
 ```swift
@@ -282,10 +296,10 @@ view.growingAttributesDonotTrackValue = NO;
 view代表要被采集的输入框。 当这个输入框失去焦点（包括应用退到后台），且输入框内容跟获取焦点前相比发生变化时，输入框内文字会被发送回GrowingIO。
 
 {% hint style="info" %}
-对于密码输入框，即便标记为需要采集，SDK也会忽略，不采集它的数据。
+对于密码输入框，即是被标记为需要采集输入框的文字，SDK不会进行采集。
 {% endhint %}
 
-### 5. Facebook广告SDK
+### 5. Facebook广告SDK使用适配
 
 如果您使用了 Facebook 广告 SDK，请务必在 main 函数第一行调用以下代码来避免冲突，否则可能造成无法创建项目或者统计准确性问题。注意：APP启动后，将不允许修改采集模式。
 
@@ -293,13 +307,19 @@ view代表要被采集的输入框。 当这个输入框失去焦点（包括应
 [Growing setAspectMode:GrowingAspectModeDynamicSwizzling];
 ```
 
-### 6  采集WebView页面数据
+### 6.  采集WebView页面数据
 
-SDK会自动采集H5页面的数据，不需要特殊配置。
+无埋点 SDK 会自动采集H5页面的数据，不需要特殊配置。
 
 ### 7. 采集GPS数据
 
-如果您的应用有相应的权限，SDK将自动采集您的GPS数据。
+GrowingIO SDK 默认不采集地理位置信息。
+
+如果您的应用有相应的权限，调用如下接口，设置为 `YES` 时，SDK将自动采集GPS数据。
+
+{% hint style="success" %}
+如果您不调用此接口也可以，我们会根据用户的`ip模糊匹配`用户所在城市地区，能够在最终的数据分析时看到`APP`用户地域分布。
+{% endhint %}
 
 {% hint style="info" %}
 SDK 2.8.6及以上版本支持手动关闭采集GPS数据。
@@ -308,9 +328,13 @@ SDK 2.8.6及以上版本支持手动关闭采集GPS数据。
 `+(void)setEnableLocationTrack:(BOOL)enable;`
 {% endhint %}
 
-### 8. 启用Hashtag识别
+### 8. 设置内嵌H5页面锚点跳转触发页面浏览事件
 
-您可以在项目中添加以下方法以启用Hashtag识别：
+GrowingIO SDK 默认情况下，不会把`HashTag`识别成页面 URL 的一部分，内嵌H5页面点击锚点页面跳转不计为页面浏览事件。
+
+对于使用`HashTag`进行页面跳转的单页面网站应用来说，可以启用它来标识页面，`HashTag`的值也会记录在页面URL中。启用之后，如果用户点击页面中的锚点进行页面跳转，则发送一次页面浏览事件。
+
+在SDK初始化代码中添加如下代码：
 
 ```swift
 // 设置为 YES, 将启用 HashTag
@@ -374,7 +398,7 @@ GrowingIO SDK 针对欧盟区的一般数据保护法（GDPR）提供了以下�
 
 #### Universal Link
 
-使用Universal Link唤醒App，步骤如下：
+使用 Universal Link 唤醒App，步骤如下：
 
 1. 配置链接：[配置Universal Link、应用宝微下载（可选项）](../../../product-manual/growing/product-configuration/deeplink.md#ios-ying-yong-pei-zhi)。&#x20;
 2. 请在AppDelegate.m添加以下代码：
@@ -386,7 +410,7 @@ GrowingIO SDK 针对欧盟区的一般数据保护法（GDPR）提供了以下�
 }
 ```
 
-1. 添加Universal Link参数解析回调方法，此方法与DeepLink方法一致。
+3\. 添加Universal Link参数解析回调方法，此方法与DeepLink方法一致。
 
 ### 11. App Store提交应用注意事项
 
@@ -511,6 +535,38 @@ iOS SDK 不支持通知展现的事件采集，但是 Android SDK 支持。
 * 优化采集逻辑，贴合业务场景，提升数据准确性
 * 浏览事件关联自定义事件和变量，减少研发埋点工作量
 {% endhint %}
+
+### 14. 设置SDK异常上传开关 <a href="#5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan" id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
+
+SDK默认会开启收集SDK内部异常上报至服务端功能，方便开发更好的追踪SDK问题和完善SDK功能。如果您不希望收集SDK内部异常，或者和您的 crash 收集框架有冲突，您可以关闭该功能。
+
+{% hint style="info" %}
+请在 startWithAccountId: 或 startWithAccountId: withSampling: 接口之前设置 (SDK2.8.9以后)
+{% endhint %}
+
+```
+- (void)setUploadExceptionEnable:(BOOL)uploadExceptionEnable;
+```
+
+```objectivec
+// sdk crash 收集
+[Growing setUploadExceptionEnable:YES];
+[Growing startWithAccountId:@"aaaa"];
+```
+
+### 15. 获取 Apple Search Ads 归因数据分析 <a href="#5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan" id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
+
+如您需要使用 Apple Search Ads 归因数据分析，请在 SDK 初始化之前调用`setAsaEnabled`接口：
+
+```objectivec
+// 设置是否获取 Apple Search Ads 归因数据
+[Growing setAsaEnabled:YES];
+[Growing startWithAccountId:@"aaaa"];
+```
+
+在 Target -> Build Phases -> Link Binary With Libraries，添加 iAd.framework 和 AdServices.framework，并设置 AdServices.framework status 为 Optional
+
+![](<../../../.gitbook/assets/image (179).png>)
 
 ## 3.自定义数据上传
 

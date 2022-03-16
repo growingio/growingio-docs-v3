@@ -1,7 +1,7 @@
 # 动态添加属性说明
 
 {% hint style="success" %}
-SDK版本要求：iOS 无埋点SDK &gt;=2.x
+SDK版本要求：**iOS 无埋点 SDK** >=2.x
 {% endhint %}
 
 ## 1. UIView 增加属性
@@ -48,4 +48,3 @@ SDK版本要求：iOS 无埋点SDK &gt;=2.x
 // - 如果该webView.growingAttributesDonotTrack为YES，则此设置无效
 @property (nonatomic, assign) BOOL growingAttributesIsTracked;
 ```
-

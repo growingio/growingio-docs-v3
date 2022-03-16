@@ -1,8 +1,14 @@
 # 埋点 SDK集成
 
-埋点 SDK 的目标用户是使用第三方插件开发的 APP， 比如使用 Weex、APICloud 等。在这些平台中，我们无法自动采集用户的点击事件和页面浏览事件等，需要依赖调用自定义事件和变量 API来进行数据采集。 如果您的 APP 使用 iOS 原生开发，并且希望自动采集用户的点击事件、页面浏览事件等无埋点事件， 请集成 iOS 无埋点SDK 。
+埋点 SDK 的目标是使用第三方插件开发的 APP， 比如使用 Weex、APICloud 等，或不需要SDK自动采集页面浏览，元素点击行为数据的APP。
 
-前提条件
+在一些第三方混合开发框架中，我们无法自动采集用户的点击事件和页面浏览事件等，需要依赖调用埋点事件或变量 API 来进行数据采集。
+
+{% hint style="info" %}
+如果您的 APP 使用 OS 原生开发，并且希望自动采集用户的点击事件、页面浏览事件等无埋点事件， 请集成 iOS无埋点SDK 。
+{% endhint %}
+
+## 前提条件
 
 * 获取项目ID，获取方法请参考"项目管理 > 项目概览 > [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
 * 获取URL Scheme，在GrowingIO平台创建对应的应用时会生成URL Scheme。请参考[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
@@ -67,13 +73,19 @@ GrowingIO iOS SDK  包含以下组件SDK:
 
 ### 2. 添加 URL Scheme <a href="#urlscheme" id="urlscheme"></a>
 
-添加URL Scheme 到项目中，以便唤醒您的程序进行圈选。
+URL Scheme 是您在 GrowingIO 平台创建应用时生成的该应用的唯一标识。把 URL Scheme 添加到您的项目中，以便在使用圈选，Mobile  Debugger，及深度链接功能时唤醒您的应用。
+
+{% hint style="info" %}
+URL Scheme 只能对应一个应用。当应用的包名发生变化时，需再次创建一个应用使用对应的 URL Scheme
+{% endhint %}
 
 ![](<../../../.gitbook/assets/image (75).png>)
 
 ### 3. 初始化配置
 
-> 在 AppDelegate 中引入`#import "Growing.h"`并添加初始化方法。
+在 AppDelegate 中引入`#import "Growing.h"`并添加初始化方法。
+
+**为使 App 合规，请参考**[**iOS合规步骤**](../compliance/ios-sdk-he-gui-shuo-ming.md#he-gui-bu-zhou)**。**
 
 {% tabs %}
 {% tab title="Objective-C" %}
@@ -185,7 +197,168 @@ func application(_ app: UIApplication, open url: URL, options: [UIApplication.Op
 * 实际情况可能很复杂，请在调试时确保函数`[Growing handleUrl:]`会被执行到
 {% endhint %}
 
-## 3. App Store提交应用注意事项
+## 2.  重要配置
+
+### 1. Facebook广告SDK使用适配
+
+如果您使用了 Facebook 广告 SDK，请务必在 main 函数第一行调用以下代码来避免冲突，否则可能造成无法创建项目或者统计准确性问题。注意：APP启动后，将不允许修改采集模式。
+
+```swift
+[Growing setAspectMode:GrowingAspectModeDynamicSwizzling];
+```
+
+### 2.  采集WebView页面数据
+
+埋点 SDK 会采集H5页面的数据，需要增加如下特殊配置。同时H5页面需要手动集成 [Hybrid SDK](../jin-ji-cheng-mai-dian-sdk-de-hybrid-js-sdk.md)。
+
+{% hint style="info" %}
+SDK 2.9.0及以上版本支持该接口
+
+`+ (void)bridgeForWKWebView:(WKWebView *)webView;`
+{% endhint %}
+
+**示例代码：**。
+
+```
+//需要在 webview 初始化后调用
+WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.frame];
+[Growing bridgeForWKWebView:webView];
+```
+
+### 3. 采集GPS数据
+
+GrowingIO SDK 默认不采集地理位置信息。
+
+如果您的应用有相应的权限，调用如下接口，设置为 `YES` 时，SDK将自动采集GPS数据。
+
+{% hint style="success" %}
+如果您不调用此接口也可以，我们会根据用户的`ip模糊匹配`用户所在城市地区，能够在最终的数据分析时看到`APP`用户地域分布。
+{% endhint %}
+
+{% hint style="info" %}
+SDK 2.8.6及以上版本支持手动关闭采集GPS数据。
+
+`//设置为NO，将关闭GPS采集`  \
+`+(void)setEnableLocationTrack:(BOOL)enable;`
+{% endhint %}
+
+### 4. 设置内嵌H5页面锚点跳转触发页面浏览事件
+
+GrowingIO SDK 默认情况下，不会把`HashTag`识别成页面 URL 的一部分，内嵌H5页面点击锚点页面跳转不计为页面浏览事件。
+
+对于使用`HashTag`进行页面跳转的单页面网站应用来说，可以启用它来标识页面，`HashTag`的值也会记录在页面URL中。启用之后，如果用户点击页面中的锚点进行页面跳转，则发送一次页面浏览事件。
+
+在SDK初始化代码中添加如下代码：
+
+```swift
+// 设置为 YES, 将启用 HashTag
++ (void)enableHybridHashTag:(BOOL)enable;
+```
+
+### 5. GDPR数据采集开关
+
+{% hint style="warning" %}
+SDK 版本支持：2.3.2及以上。
+{% endhint %}
+
+GrowingIO SDK 针对欧盟区的一般数据保护法（GDPR）提供了以下的API共开发者调用。
+
+```
+// 开启GDPR，不采集数据
+[Growing disableDataCollect];
+
+// 关闭GDPR，采集数据
+[Growing enableDataCollect];
+```
+
+### 6. DeepLink & Universal Link
+
+| DeepLink功能                   | SDK版本   |
+| ---------------------------- | ------- |
+| 基础DeepLink功能（Scheme打开App至首页） | >=2.3.0 |
+| 直达落地页（Scheme打开至活动页）          | >=2.3.2 |
+| Universal Link、应用宝微下载链接支持    | >=2.4.1 |
+
+#### DeepLink
+
+1. 确认URl Scheme添加正确。
+2. 添加自定义参数回调方法：
+
+```swift
+/**
+ deeplink广告落地页参数回调设置
+​
+ @param handler deeplink广告落地页参数回调, params 为解析正确时回调的参数, processTime为从app被deeplink唤起到handler回调的时间(单位秒), error 为解析错误时返回的参数.
+                 handler 默认为空, 客户需要手动设置.
+ */
++ (void)registerDeeplinkHandler:(void(^)(NSDictionary *params, NSTimeInterval processTime, NSError *error))handler;
+```
+
+```swift
+//DeepLink 调用示例
+[Growing registerDeeplinkHandler:^(NSDictionary *params, NSTimeInterval processTime, NSError *error) {
+        NSLog(@"params : %@", params);
+        XCTAssertNotNil(params);
+        XCTAssertEqualObjects(params[@"key1"], @"value1");
+        XCTAssertEqualObjects(params[@"key2"], @"value2");
+ }];
+```
+
+{% hint style="info" %}
+* params参数为您在DeepLink页面设置的”直达落地页参数“。
+* SDK版本 < 2.8.5 请在 `+ (BOOL)handleUrl:(NSURL*)url`被调用前注册回调方法。
+* SDK版本 >= 2.8.5 请保证注册回调方法的时机在startWithAccountId函数之前,并且在主线程当中。
+{% endhint %}
+
+#### Universal Link
+
+使用 Universal Link 唤醒App，步骤如下：
+
+1. 配置链接：[配置Universal Link、应用宝微下载（可选项）](../../../product-manual/growing/product-configuration/deeplink.md#ios-ying-yong-pei-zhi)。&#x20;
+2. 请在AppDelegate.m添加以下代码：
+
+```java
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler{
+    [Growing handleUrl:userActivity.webpageURL];
+    return YES;
+}
+```
+
+3\. 添加Universal Link参数解析回调方法，此方法与DeepLink方法一致。
+
+### 7. 设置SDK异常上传开关 <a href="#5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan" id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
+
+SDK默认会开启收集SDK内部异常上报至服务端功能，方便开发更好的追踪SDK问题和完善SDK功能。如果您不希望收集SDK内部异常，或者和您的 crash 收集框架有冲突，您可以关闭该功能。
+
+{% hint style="info" %}
+请在 startWithAccountId: 或 startWithAccountId: withSampling: 接口之前设置 (SDK2.8.9以后)
+{% endhint %}
+
+```
+- (void)setUploadExceptionEnable:(BOOL)uploadExceptionEnable;
+```
+
+```objectivec
+// sdk crash 收集
+[Growing setUploadExceptionEnable:YES];
+[Growing startWithAccountId:@"aaaa"];
+```
+
+### 8. 获取 Apple Search Ads 归因数据分析 <a href="#5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan" id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
+
+如您需要使用 Apple Search Ads 归因数据分析，请在 SDK 初始化之前调用`setAsaEnabled`接口：
+
+```objectivec
+// 设置是否获取 Apple Search Ads 归因数据
+[Growing setAsaEnabled:YES];
+[Growing startWithAccountId:@"aaaa"];
+```
+
+在 Target -> Build Phases -> Link Binary With Libraries，添加 iAd.framework 和 AdServices.framework，并设置 AdServices.framework status 为 Optional
+
+![](<../../../.gitbook/assets/image (179).png>)
+
+### 9. App Store提交应用注意事项
 
 如果您添加了库**AdSupport.framework**, GrowingIO则会启用 IDFA，所以在向 App Store 提交应用时，需要：
 
@@ -233,17 +406,17 @@ func application(_ app: UIApplication, open url: URL, options: [UIApplication.Op
         }
     ```
 
-## 4. 自定义数据上传
+## 3. 自定义数据上传
 
 除上述的用户行为数据（无埋点数据）之外，GrowingIO 还提供了多种 API 接口，供您上传一些自定义的数据指标及维度 ，请参考iOS SDK API > [自定义数据上传API](ios-sdk-api/customize-api.md) 。
 
-## 5. 创建应用 <a href="#4-chuang-jian-ying-yong" id="4-chuang-jian-ying-yong"></a>
+## 4. 创建应用 <a href="#4-chuang-jian-ying-yong" id="4-chuang-jian-ying-yong"></a>
 
 **添加代码之后，请先Clean项目，然后再进行编译，并在你的  App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
 
 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
 
-## 6. 验证SDK是否正常采集数据 <a href="#5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju" id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
+## 5. 验证SDK是否正常采集数据 <a href="#5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju" id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
 
 了解GrowingIO平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
 
