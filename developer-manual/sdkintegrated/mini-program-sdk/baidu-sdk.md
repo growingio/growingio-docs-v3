@@ -294,9 +294,9 @@ swan..getUserInfo({ success: function(res) { ... gio('setVisitor', res.userInfo)
 
 ## 7. 创建应用
 
-请在添加了跟踪代码的支付宝小程序重新启动几次，发送数据给 GrowingIO。
+请在添加了跟踪代码的百度小程序重新启动几次，发送数据给 GrowingIO。
 
-在GrowingIO平台的创建微信小游戏应用。创建应用请参考查看[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
+在GrowingIO平台的创建百度小程序应用。创建应用请参考查看[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
 
 ## 8. 验证SDK是否正常采集数据
 

@@ -2,7 +2,7 @@
 
 ## 准备条件
 
-获取项目ID，获取方法请参考"项目管理 &gt; 项目概览 &gt; [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
+获取项目ID，获取方法请参考"项目管理 > 项目概览 > [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
 
 ## 1. 添加跟踪代码
 
@@ -10,7 +10,7 @@
 
 把文件放在快应用应用项目里，比如 utils 目录下。
 
-```text
+```
 curl --compressed https://assets.giocdn.com/sdk/gio-quickapp.js -o gio-quickapp.js
 ```
 
@@ -44,11 +44,11 @@ export default trackPage({
 
 建议每次发布小程序新版本的时候，更新一下版本号 version，可以在 GrowingIO 分析不同版本的数据。除了 version 之外，还有以下额外参数可以使用。
 
-| 参数 | 值 | 解释 |
-| :--- | :--- | :--- |
-| version | string | 你的小程序的版本号 |
-| forceLogin | true \| false | 你的快应用是否获取用户唯一标识，默认 false |
-| debug | true \| false | 是否开启调试模式，可以看到采集的数据。默认 false |
+| 参数         | 值             | 解释                          |
+| ---------- | ------------- | --------------------------- |
+| version    | string        | 你的小程序的版本号                   |
+| forceLogin | true \| false | 你的快应用是否获取用户唯一标识，默认 false    |
+| debug      | true \| false | 是否开启调试模式，可以看到采集的数据。默认 false |
 
 ## 3. 添加接口权限
 
@@ -68,7 +68,7 @@ export default trackPage({
 
 ## 4. 快应用 用户属性设置
 
-### 绑定快应用用户ID <a id="bang-ding-kuai-ying-yong-yong-hu-id"></a>
+### 绑定快应用用户ID <a href="#bang-ding-kuai-ying-yong-yong-hu-id" id="bang-ding-kuai-ying-yong-yong-hu-id"></a>
 
 当用户在你的应用上登陆获取到 用户唯一id 后，可以用过 identify 接口绑定快应用用户ID，后续在 GrowingIO 中获取更准确的快应用访问用户量。示例代码如下：
 
@@ -82,34 +82,10 @@ device.getUserId({
 })
 ```
 
-### 设置快应用用户信息 <a id="she-zhi-zhu-ce-yong-hu-id"></a>
+### 设置快应用用户信息 <a href="#she-zhi-zhu-ce-yong-hu-id" id="she-zhi-zhu-ce-yong-hu-id"></a>
 
 ```java
 gio（'setVisitor', res.userInfo）;
-```
-
-### 设置登录用户ID <a id="she-zhi-zhu-ce-yong-hu-id"></a>
-
-当用户在你的快应用上注册以后，你的产品应用服务端会在用户数据库里添加一条记录并且分配一个 ID，可以通过 setUserId 接口设置注册用户ID，后续在 GrowingIO 中分析登录用户这个数据。示例代码如下：
-
-```java
-gio('setUserId', YOUR_USER_ID);
-```
-
-### 清除登录用户ID
-
-用户退出登录时，清除登录用户ID。
-
-```java
-gio('clearUserId');
-```
-
-### 设置登录用户属性 <a id="she-zhi-zhu-ce-yong-hu-xin-xi"></a>
-
-当用户在你的快应用上传了注册用户ID后，可以通过 setUser 接口设置注册用户信息，后续在 GrowingIO 中分析这个数据。示例代码如下：
-
-```java
-gio('setUser', { id: user.id, name: user.name });
 ```
 
 ## 5. 自定义数据上传API
@@ -129,4 +105,3 @@ gio('setUser', { id: user.id, name: user.name });
 方式二：在SDK中设置了Debug模式后，在开发者工具中查看数据采集日志。
 
 方式三：[数据校验](../../../product-manual/data-center/datacheck/)
-

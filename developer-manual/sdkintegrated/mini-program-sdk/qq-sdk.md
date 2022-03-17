@@ -154,20 +154,83 @@ gio('setConfig', gioConfig);
 
 建议每次发布小程序新版本的时候，更新一下版本号 version，可以在 GrowingIO 分析不同版本的数据。除了 version 之外，还有以下额外参数可以使用。
 
-| 参数                  | 值              | 解释                                      |
-| ------------------- | -------------- | --------------------------------------- |
-| version             | string         | 你的小程序的版本号                               |
-| getLocation autoGet | true \| false  | 是否自动获取用户的地理位置信息。默认false                 |
-| getLocation type    | wgs84 \| gcj02 | gcj02 为火星坐标系                            |
-| followShare         | true \| false  | 详细跟踪分享数据，开启后可使用分享分析功能。默认true            |
-| forceLogin          | true \| false  | 你的 QQ 小程序是否强制要求用户登陆微信获取 openid。默认 false |
-| debug               | true \| false  | 是否开启调试模式，可以看到采集的数据。默认 false             |
+| 参数                  | 值              | 解释                                    |
+| ------------------- | -------------- | ------------------------------------- |
+| version             | string         | 你的小程序的版本号                             |
+| getLocation autoGet | true \| false  | 是否自动获取用户的地理位置信息。默认false               |
+| getLocation type    | wgs84 \| gcj02 | gcj02 为火星坐标系                          |
+| followShare         | true \| false  | 详细跟踪分享数据，开启后可使用分享分析功能。默认true          |
+| forceLogin          | true \| false  | 你的 QQ 小程序是否强制要求用户登陆获取 openid。默认 false |
+| debug               | true \| false  | 是否开启调试模式，可以看到采集的数据。默认 false           |
 
-forceLogin 是一个需要特别注意的参数。GrowingIO 默认会在小程序里面设置用户标识符，存储在QQ Storage 里面。这个用户标识符潜在可能会被 `clearStorage` 清除掉，所以有可能不同的用户标识符对应同一个QQ里的 openid。如果你的小程序在用户打开后会去做登陆并且获取 `openid` 和/或 `unionid`，可以设置 `forceLogin` 为 true。当 forceLogin 为 true 的时候，用户标识符会使用 openid，潜在风险是如果没有设置 openid，数据不会发送，**所以请特别注意这个参数的设置**
+### 采集GPS数据
 
+#### 配置 `getLocation`
+
+GrowingIO SDK 默认不采集地理位置信息。
+
+如您需要在小程序打开时获取用户地理位置信息，需在初始化配置项中设置 `autoGet: true` 来打开此功能。同时您可能需要配置项目的`permission`字段：[参考文档](https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html#permission)：
+
+```java
+getLocation: {          //是否自动获取用户的地理位置信息, 并设置获取方式
+   autoGet: true,       //默认不自动获取
+   type: 'gcj02'           //支持wgs84 | gcj02为火星坐标系, 默认wgs84
+},
 ```
-如需配置 请将 forceLogin 设为 true
+
+如果您初始化配置项中没有打开此功能，当用户访问至某一功能需要位置信息时，可以手动调用获取地理位置接口，自动补发访问事件，采集位置信息，提升用户地域分布的分析准确性。
+
+```java
+// 获取用户的地理信息
+gio('getLocation')
 ```
+
+{% hint style="danger" %}
+**如果您初始化开启getLocation配置，用户打开小程序即需要授权；手动调用getLocation方法时，需要用户授权。都需要配置项目中的`permission`字段：**[**参考文档**](https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html#permission)
+{% endhint %}
+
+### 跟踪分享数据
+
+#### 配置`followShare`
+
+转发分享小程序是小程序获客的重要场景，默认情况下，SDK开启跟踪分享数据功能，详细的进行转发分享的统计，来帮助您更好的分析。
+
+如您不需要此功能，可以在初始化配置中设置`followShare: false` 来关闭跟踪分享。
+
+在 gioConfig.js 文件或初始化配置项中将 followShare 配置如下:
+
+```javascript
+followShare: false,     //是否详细跟踪分享数据，关闭后不使用分享分析功能。默认true
+```
+
+### 强制登录模式
+
+**配置`forceLogin`**
+
+默认情况下，SDK 会自动生成访问用户ID来标识访问用户，存储在 Storage 里面。这个用户标识符潜在可能会被`clearStorage` 清除掉，所以有可能不同的自动生成访问用户ID对应同一个QQ用户里的 `OpenID。`
+
+如您需要使用 openId 或 unionId 标识访问用户，可以在初始化配置中设置 `forceLogin: true` 来打开强制登录模式。
+
+强制登录模式适用于打开小程序就调用 `wx.login` ([参考文档](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/login/wx.login.html)) 获取 openId 或 unionId 的小程序。 开启此模式并调用 `identity` 上报 openid 或 unionId，会将上报的 Id 作为访问用户ID，
+
+设置`forceLogin`为`true`后，SDK会继续采集但暂停上报数据，待调用 `wx.login`后获取 openId 或 unionId，调用 `identify` 方法后开始数据上报。**调用 `identify` 会替换事件数据的 u(访问用户ID) 字段的值 为设定值（一般是小程序openId 或 unionId），包括调用`identify`之前触发的事件**
+
+需在 gioConfig.js 文件或初始化配置项将 forceLogin 配置如下:
+
+```javascript
+forceLogin: true, //是否强制要求调用 wx.login 获取 opend 或 unionId。默认 false
+```
+
+获取到 openId 或  unionId 后调用 [`identify`](qq-sdk.md#bang-ding-wei-xin-yong-hu-openid-unionid) 接口。
+
+{% hint style="danger" %}
+适用于打开小程序就调用 `wx.login` 获取 openId 或 unionId 的小程序。
+
+小程序SDK初始化时配置了 `forceLogin` 为 `true`，如果打开小程序后没有调用 `wx.login` 获取 openId 或 unionId，没有调用 `identify` 方法，会导致SDK不能上报数据，访问数据将大幅减少。如果调用了`，但时机不在小程序打开时，而在小程序使用中较晚的时机，在调用之前若小程序关闭则会造成此次访问过程中采集的数据丢失。`\
+
+
+如果您不能确定是否要设置这个参数，请先咨询我们技术支持。
+{% endhint %}
 
 ## 3. 添加请求服务器域名
 
@@ -232,7 +295,7 @@ QQ信息包含**QQ昵称**、**QQ头像**、**性别**、**QQ所填国家**、**
 
 请在添加了跟踪代码的支付宝小程序重新启动几次，发送数据给 GrowingIO。
 
-在GrowingIO平台的创建微信小游戏应用。创建应用请参考查看[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
+在GrowingIO平台的创建微信小程序应用。创建应用请参考查看[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
 
 ## 8. 验证SDK是否正常采集数据
 
