@@ -107,6 +107,7 @@
     * [QQ小程序SDK](developer-manual/sdkintegrated/mini-program-sdk/qq-sdk.md)
     * [字节跳动小程序SDK](developer-manual/sdkintegrated/mini-program-sdk/byte-dance.md)
     * [快应用SDK](developer-manual/sdkintegrated/mini-program-sdk/quick.md)
+    * [无埋点采集逻辑和高级配置](developer-manual/sdkintegrated/mini-program-sdk/wu-mai-dian-cai-ji-luo-ji-he-gao-ji-pei-zhi.md)
     * [自定义数据上传API](developer-manual/sdkintegrated/mini-program-sdk/customize-api.md)
   * [Hybrid JS SDK](developer-manual/sdkintegrated/hybrid-js-sdk.md)
   * [小程序和微信公众号H5 内嵌页 SDK](developer-manual/sdkintegrated/h5-sdk/README.md)

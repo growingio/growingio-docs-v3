@@ -2,7 +2,7 @@
 
 ## 准备条件
 
-获取项目ID，获取方法请参考"项目管理 &gt; 项目概览 &gt; [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
+获取项目ID，获取方法请参考"项目管理 > 项目概览 > [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
 
 ## 1. 添加跟踪代码
 
@@ -19,7 +19,7 @@
 
 把文件放在百度小程序项目里，比如 utils 目录下。
 
-```text
+```
 curl --compressed https://assets.giocdn.com/sdk/gio-baidup.js -o gio-baidup.js
 ```
 
@@ -27,7 +27,7 @@ curl --compressed https://assets.giocdn.com/sdk/gio-baidup.js -o gio-baidup.js
 
 方式一：
 
-在百度小程序项目根目录的 app.js 文件的顶部添加以下 JS 代码，请注意一定要放在 App\(\) 之前：
+在百度小程序项目根目录的 app.js 文件的顶部添加以下 JS 代码，请注意一定要放在 App() 之前：
 
 ```java
 var gio = require("utils/gio-baidup.js").default;
@@ -61,7 +61,7 @@ gio('setConfig', gioConfig);
 
 文件把文件放在百度小程序项目里，比如 utils 目录下。
 
-```text
+```
 curl --compressed https://assets.giocdn.com/sdk/gio-baidup.js -o gio-baidup.js
 ```
 
@@ -106,7 +106,7 @@ gio('setConfig', gioConfig);
 
 把文件放在百度小程序项目里，比如 utils 目录下。
 
-```text
+```
 curl --compressed https://assets.giocdn.com/sdk/gio-baidup.esm.js -o gio-baidup.js
 ```
 
@@ -151,7 +151,7 @@ App.mpType = 'app';
 
 把文件放在百度小程序项目里，比如 utils 目录下。
 
-```text
+```
 curl --compressed https://assets.giocdn.com/sdk/gio-baidup.js -o gio-baidup.js
 ```
 
@@ -196,14 +196,52 @@ gio('setConfig', gioConfig);
 建议每次发布小程序新版本的时候，更新一下版本号 version，可以在 GrowingIO 分析不同版本的数据。除了 version 之外，还有以下额外参数可以使用。
 {% endhint %}
 
-| 参数 | 值 | 解释 |
-| :--- | :--- | :--- |
-| forceLogin | true \| false | 您的小程序是否强制要求用户登陆百度获取 swanid，默认 false |
-| debug | true \| false | 是否开启调试模式，可以看到采集的数据，默认 false |
-| version | string | 您的小程序的版本号 |
-| followShare | true \| false | 详细跟踪分享数据，开启后可使用分享分析功能。默认 false |
+| 参数          | 值             | 解释                                  |
+| ----------- | ------------- | ----------------------------------- |
+| forceLogin  | true \| false | 您的小程序是否强制要求用户登陆百度获取 swanid，默认 false |
+| debug       | true \| false | 是否开启调试模式，可以看到采集的数据，默认 false         |
+| version     | string        | 您的小程序的版本号                           |
+| followShare | true \| false | 详细跟踪分享数据，开启后可使用分享分析功能。默认 true       |
 
-forceLogin 是一个需要特别注意的参数。GrowingIO 默认会在小程序里面设置用户标识符，存储在百度 Storage 里面。这个用户标识符潜在可能会被 `clearStorage` 清除掉，所以有可能不同的用户标识符对应同一个百度里的 swanid。如果建议您获取用户的`swanid` ，然后设置 `forceLogin` 为 true。当 forceLogin 为 true 的时候，用户标识符会使用 swanid，潜在风险是如果没有设置 swanid，数据不会发送，**所以请特别注意这个参数的设置**，具体集成示例：
+### 跟踪分享数据
+
+#### 配置`followShare`
+
+转发分享小程序是小程序获客的重要场景，默认情况下，SDK开启跟踪分享数据功能，详细的进行转发分享的统计，来帮助您更好的分析。
+
+如您不需要此功能，可以初始化配置中设置 `followShare: false` 来关闭跟踪分享。
+
+即小程序项目根目录的 app.js 文件设置参数如下：
+
+```javascript
+// version 是您的小程序的版本号，发版时请调整
+gio('init', '您的项目ID', '您的百度小程序AppID', { version: '1.0', followShare: true })
+```
+
+### 强制登录模式
+
+**配置`forceLogin`**
+
+默认情况下，SDK 会自动生成访问用户ID来标识访问用户，存储在 Storage 里面。这个用户标识符潜在可能会被`clearStorage` 清除掉，所以有可能不同的自动生成访问用户ID对应同一个百度用户的 `swanId`
+
+如您需要使用 `swanId`标识访问用户，可以在初始化配置中设置 `forceLogin: true` 来打开强制登录模式。
+
+强制登录模式适用于打开小程序就调用登陆并且获取 swanId 的小程序。 开启此模式并调用 `identity` 上报 swanId，会将上报的 swanId 作为访问用户ID。
+
+设置`forceLogin`为`true`后，SDK会继续采集但暂停上报数据，待调用 登陆并且获取 `swanId`，调用 `identify` 方法后开始数据上报。**调用 `identify` 会替换事件数据的 u(访问用户ID) 字段的值 为设定值（一般是小程序的 swanId），包括调用`identify`之前触发的事件。**
+
+获取到 swanId 后调用 [`identify`](baidu-sdk.md#bang-ding-bai-du-yong-hu-id) 接口。
+
+{% hint style="danger" %}
+适用于打开小程序就调用登陆并且获取 swanId `的小程序`。
+
+小程序SDK初始化时配置了 `forceLogin` 为 `true`，如果打开小程序后没有调用登陆并且获取 swanId，没有调用 `identify` 方法，会导致SDK不能上报数据，访问数据将大幅减少。如果调用了`，但时机不在小程序打开时，而在小程序使用中较晚的时机，在调用之前若小程序关闭则会造成此次访问过程中采集的数据丢失。`\
+
+
+如果您不能确定是否要设置这个参数，请先咨询我们技术支持。
+{% endhint %}
+
+**请特别注意这个参数的设置**，具体集成示例：
 
 ```javascript
 gio('init', '你的项目 ID', '你的百度小程序 AppID', { version: '1.0', forceLogin: true });
@@ -220,29 +258,11 @@ gio("identify", swanid);
 2. 打开开发设置，到服务器域名配置部分
 3. 在request合法域名中添加：`https://wxapi.growingio.com`
 
-## 4. 添加分享参数
-
-转发分享小程序是小程序获客的重要场景，想要详细的进行转发分享的统计，需要在SDK参数中，设置如下参数，值为true
-
-| 参数 | 值 | 解释 |
-| :--- | :--- | :--- |
-| followShare | true \| false | 详细跟踪分享数据，开启后可使用分享分析功能。默认 false |
-
-即百度小程序项目根目录的 app.js 文件设置参数如下：
-
-```javascript
-var gio = require("utils/gio-baidup.js");
-// version 是你的小程序的版本号，发版时请调整
-gio('init', '你的项目 ID', '你的百度小程序 AppID', { version: '1.0', followShare: true });
-```
-
-## 5. 百度小程序用户属性设置
+## 4. 百度小程序用户属性设置
 
 作为用户行为数据分析工具，用户信息的完善会给后续的分析带来很大的帮助。在小程序中，百度用户属性是非常重要的设置，只有完善了百度用户属性信息，百度的访问用户变量（如下表）才可以在分析工具中使用，交互数据定义、数据校验功能才会方便通过用百度相关的信息（百度姓名和头像）定位用户。
 
-下面是专门针对用户的三个接口。
-
-#### 绑定百度用户ID
+### 绑定百度用户swand
 
 当用户在你的小程序上登陆获取到 swanid 后，可以用过 identify 接口绑定百度用户ID，后续在 GrowingIO 中获取更准确的百度访问用户量。示例代码如下：
 
@@ -250,7 +270,7 @@ gio('init', '你的项目 ID', '你的百度小程序 AppID', { version: '1.0', 
 swan.getSwanId({ success: (res) => { gio('identify', res.data.swanid) } });
 ```
 
-#### 设置百度用户信息
+### 设置百度用户信息
 
 当用户在你的小程序上绑定百度信息后，可以通过 setVisitor 接口设置百度用户信息，后续在 GrowingIO 中分析这个数据。示例代码如下：
 
@@ -264,30 +284,9 @@ swan..getUserInfo({ success: function(res) { ... gio('setVisitor', res.userInfo)
 注：用户画像中的部分数据，只有在设置百度用户信息后，才可以统计。
 {% endhint %}
 
-#### 设置登录用户ID
+## 5. 无埋点采集逻辑和高级配置
 
-当用户在你的小程序上注册以后，你的产品应用服务端会在用户数据库里添加一条记录并且分配一个 ID，可以通过 setUserId 接口设置注册用户ID，后续在 GrowingIO 中分析登录用户这个数据。示例代码如下：
-
-```javascript
-gio('setUserId', YOUR_USER_ID);
-```
-
-#### 清除登录用户ID
-
-用户退出登录时，清除登录用户ID。
-
-```javascript
-gio('clearUserId');
-```
-
-#### 设置登录用户属性
-
-当用户在你的小程序上传了注册用户ID后，可以通过 setUser 接口设置注册用户信息，后续在 GrowingIO 中分析这个数据。示例代码如下：
-
-```javascript
-gio('setUserId', user.id); 
-gio('setUser', { id: user.id, name: user.name });
-```
+在进行无埋点数据采集时，您需要了解和使用[无埋点采集逻辑及行为数据采集的高级配置](wu-mai-dian-cai-ji-luo-ji-he-gao-ji-pei-zhi.md)
 
 ## 6. 自定义数据上传API
 
@@ -306,4 +305,3 @@ gio('setUser', { id: user.id, name: user.name });
 方式二：在SDK中设置了Debug模式后，在开发者工具中查看数据采集日志。
 
 方式三：[数据校验](../../../product-manual/data-center/datacheck/)
-

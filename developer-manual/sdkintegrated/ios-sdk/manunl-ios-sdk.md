@@ -209,17 +209,20 @@ func application(_ app: UIApplication, open url: URL, options: [UIApplication.Op
 
 ### 2.  采集WebView页面数据
 
-埋点 SDK 会采集H5页面的数据，需要增加如下特殊配置。同时H5页面需要手动集成 [Hybrid SDK](../jin-ji-cheng-mai-dian-sdk-de-hybrid-js-sdk.md)。
+埋点 SDK 会采集H5页面的数据，需要增加如下特殊配置。同时H5页面**需要手动集成** [Hybrid SDK](../jin-ji-cheng-mai-dian-sdk-de-hybrid-js-sdk.md)。
+
+```c
+//需要在 webview 初始化后调用
++ (void)bridgeForWKWebView:(WKWebView *)webView;
+```
 
 {% hint style="info" %}
 SDK 2.9.0及以上版本支持该接口
-
-`+ (void)bridgeForWKWebView:(WKWebView *)webView;`
 {% endhint %}
 
-**示例代码：**。
+**示例代码**
 
-```
+```c
 //需要在 webview 初始化后调用
 WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.frame];
 [Growing bridgeForWKWebView:webView];
@@ -254,6 +257,10 @@ GrowingIO SDK 默认情况下，不会把`HashTag`识别成页面 URL 的一部�
 // 设置为 YES, 将启用 HashTag
 + (void)enableHybridHashTag:(BOOL)enable;
 ```
+
+{% hint style="danger" %}
+如果内嵌H5页面集成了Web JS SDK，则 Web JS SDK 中 [HashTag](../web-js-sdk/latest-jssdk.md#1.-hashtag-xi-tong-bian-liang) 配置有效，该接口调用无效
+{% endhint %}
 
 ### 5. GDPR数据采集开关
 

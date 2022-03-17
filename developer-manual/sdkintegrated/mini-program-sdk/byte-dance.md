@@ -186,7 +186,7 @@ gio("identify", userid);
 
 下面是专门针对用户的接口。
 
-### 绑定字节跳动用户ID <a href="bang-ding-zi-jie-tiao-dong-yong-hu-id" id="bang-ding-zi-jie-tiao-dong-yong-hu-id"></a>
+### 绑定字节跳动用户ID <a href="#bang-ding-zi-jie-tiao-dong-yong-hu-id" id="bang-ding-zi-jie-tiao-dong-yong-hu-id"></a>
 
 当用户在你的小程序上登陆获取到 openid 后，可以用过 identify 接口绑定字节跳动用户ID，后续在 GrowingIO 中获取更准确的字节跳动访问用户量。示例代码如下：
 
@@ -204,7 +204,7 @@ tt.request({
 })
 ```
 
-### 设置字节跳动用户信息 <a href="she-zhi-zi-jie-tiao-dong-yong-hu-xin-xi" id="she-zhi-zi-jie-tiao-dong-yong-hu-xin-xi"></a>
+### 设置字节跳动用户信息 <a href="#she-zhi-zi-jie-tiao-dong-yong-hu-xin-xi" id="she-zhi-zi-jie-tiao-dong-yong-hu-xin-xi"></a>
 
 当用户在你的小程序上绑定字节跳动信息后，可以通过 setVisitor 接口设置字节跳动用户信息，后续在 GrowingIO 中分析这个数据。示例代码如下：
 
@@ -225,41 +225,21 @@ QQ信息包含**QQ昵称**、**QQ头像**、**性别**、**QQ所填国家**、**
 \*注：用户画像中的部分数据，只有在设置字节跳动用户信息后，才可以统计。
 {% endhint %}
 
-### 设置登录用户ID <a href="she-zhi-zhu-ce-yong-hu-id" id="she-zhi-zhu-ce-yong-hu-id"></a>
+## 5. 无埋点采集逻辑和高级配置
 
-当用户在你的小程序上注册以后，你的产品应用服务端会在用户数据库里添加一条记录并且分配一个 ID，可以通过 setUserId 接口设置注册用户ID，后续在 GrowingIO 中分析登录用户这个数据。示例代码如下：
+在进行无埋点数据采集时，您需要了解和使用[无埋点采集逻辑及行为数据采集的高级配置](wu-mai-dian-cai-ji-luo-ji-he-gao-ji-pei-zhi.md)
 
-```javascript
-gio('setUserId', YOUR_USER_ID);
-```
-
-### 清除登录用户ID
-
-用户退出登录时，清除登录用户ID。
-
-```javascript
-gio('clearUserId');
-```
-
-### 设置登录用户属性 <a href="she-zhi-zhu-ce-yong-hu-xin-xi" id="she-zhi-zhu-ce-yong-hu-xin-xi"></a>
-
-当用户在你的小程序上传了注册用户ID后，可以通过 setUser 接口设置注册用户信息，后续在 GrowingIO 中分析这个数据。示例代码如下：
-
-```javascript
-gio('setUserId', user.id); gio('setUser', { id: user.id, name: user.name });
-```
-
-## 5. 自定义数据上传API
+## 6. 自定义数据上传API
 
 自定义数据上传API，请参考[自定义数据上传API](customize-api.md)。
 
-## 6. 创建应用
+## 7. 创建应用
 
 请在添加了跟踪代码的支付宝小程序重新启动几次，发送数据给 GrowingIO。
 
 在GrowingIO平台的创建微信小游戏应用。创建应用请参考查看[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
 
-## 7. 验证SDK是否正常采集数据
+## 8. 验证SDK是否正常采集数据
 
 方式一：[小程序&内嵌页Debugger](../../debugging/minpdebugger.md)
 

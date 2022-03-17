@@ -262,7 +262,7 @@ GrowingIO.startWithConfiguration(
 {% endtab %}
 {% endtabs %}
 
-### 2. 设置Test模式（setTestMode）
+### 2. 设置Test模式
 
 Test模式：实时发送数据，开启则不遵循移动网络状态下数据发送大小限制以及采集数据默认缓存 15 秒发送策略。为了方便开发者查看日志，一般和`setDebugMode`一起使用。
 
@@ -301,7 +301,92 @@ GrowingIO.startWithConfiguration(
 {% endtab %}
 {% endtabs %}
 
-### 3. 设置采集GPS数据
+### 3.  采集WebView页面数据
+
+埋点 SDK 会采集H5页面的数据，需要增加如下特殊配置。同时H5页面**需要手动集成** [Hybrid SDK](../jin-ji-cheng-mai-dian-sdk-de-hybrid-js-sdk.md)。
+
+```java
+// 提供原生的 WebView bridge供hybrid调用, 支持hybrid事件发送
+public void bridgeForWebView(WebView webView)
+// 提供腾讯X5内核的WebView bridge供hybrid调用, 支持hybrid事件发送
+public void bridgeForX5WebView(com.tencent.smtt.sdk.WebView x5WebView)
+```
+
+{% hint style="info" %}
+SDK 2.9.0及以上版本支持该接口
+{% endhint %}
+
+**示例代例**
+
+```
+//需要在 webview 初始化后调用
+GrowingIO.getInstance().bridgeForWebView(webView);
+```
+
+### 4. 设置内嵌H5页面锚点跳转触发页面浏览事件
+
+GrowingIO SDK 默认情况下，不会把`HashTag`识别成页面 URL 的一部分，内嵌H5页面点击锚点页面跳转不计为页面浏览事件。
+
+对于使用`HashTag`进行页面跳转的单页面网站应用来说，可以启用它来标识页面，`HashTag`的值也会记录在页面URL中。启用之后，如果用户点击页面中的锚点进行页面跳转，则发送一次页面浏览事件。
+
+在SDK初始化代码中添加如下代码：
+
+```java
+setHashTagEnable(boolean hashTagEnable)
+```
+
+{% hint style="danger" %}
+如果内嵌H5页面集成了Web JS SDK，则 Web JS SDK 中 [HashTag](../web-js-sdk/latest-jssdk.md#1.-hashtag-xi-tong-bian-liang) 配置有效，该接口调用无效
+{% endhint %}
+
+
+
+**示例代码：**
+
+{% tabs %}
+{% tab title="Java" %}
+```java
+GrowingIO.startWithConfiguration(this, new Configuration().setHashTagEnable(true));
+```
+{% endtab %}
+
+{% tab title="Kotlin" %}
+```kotlin
+GrowingIO.startWithConfiguration(this, Configuration().setHashTagEnable(true))
+```
+{% endtab %}
+{% endtabs %}
+
+**场景示例**：
+
+点击 APP `WebView` 中“代码混淆”的锚点链接，URL 中`#`号后面为锚点，设置后 SDK 会发送页面浏览事件，它的链接为：​[https://docs.growingio.com/docs/sdk-integration/android-sdk#4-dai-ma-hun-xiao](https://docs.growingio.com/docs/sdk-integration/android-sdk#4-dai-ma-hun-xiao)
+
+![](<../../../.gitbook/assets/image (123).png>)
+
+SDK发送对应采集数据：
+
+```java
+{
+    "u":"2e94075c-ead2-33ac-ab7f-f9611162efc4",
+    "s":"78383569-3038-4bd4-b27c-349939367922",
+    "tl":"Android SDK - 帮助文档",
+    //t 为事件类型，page 为页面浏览事件
+    "t":"page",
+    "tm":1532408777047,
+    "pt":"https",
+    "d":"com.growingio.android.test::docs.growingio.com",
+    //p 为浏览的页面
+    "p":"StandardWebView::/docs/sdk-integration/android-sdk#4-dai-ma-hun-xiao",
+    "rp":"https://docs.growingio.com/docs/sdk-integration/android-sdk#ji-cheng",
+    "cs1":"GrowingIO",
+    "appId":"fakeAppID",
+    "v":"Android SDK - 帮助文档",
+    "r":"WIFI",
+    "gesid":434,
+    "esid":153
+```
+
+### 5. 设置采集GPS数据
 
 GrowingIO SDK 默认不采集地理位置信息。
 
@@ -333,7 +418,7 @@ GrowingIO.getInstance().setGeoLocation(39.9046900000,116.4071700000);
 对应清除地理位置的方法为 clearGeoLocation()；
 {% endhint %}
 
-### 4. 多进程支持
+### 6. 多进程支持
 
 GrowingIO SDK默认不支持多进程使用， 但是可以通过`confiuration`进行设置支持多进程。&#x20;
 
@@ -381,7 +466,7 @@ GrowingIO.startWithConfiguration(
 &#x20;需要使用SDK功能的进程需要初始化SDK， 所有的UI进程 + 部分Service进程(如果这些进程中涉及手动埋点)。
 {% endhint %}
 
-### 5. GDPR数据采集开关
+### 7. GDPR数据采集开关
 
 > SDK版本支持：2.3.2及以上
 
@@ -410,7 +495,7 @@ GrowingIO.startWithConfiguration(
 GrowingIO.getInstance().enableDataCollect();
 ```
 
-### 6. Deep Link回调参数获取
+### 8. Deep Link回调参数获取
 
 ​GrowingIO SDK 提供有 Deep Link 回调接口，调用后获取回调参数，您需要根据回调参数和业务场景，添加对应的交互代码。
 

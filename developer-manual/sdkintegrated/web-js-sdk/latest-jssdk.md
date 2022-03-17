@@ -49,7 +49,7 @@ gio('config', {'hashtag':true}); //放在init和send之间
 
 高级设置可以帮助您更好地进行圈选操作，请将高级设置插入Web应用的HTML代码中。
 
-### 1. 设置采集容器（data-growing-container）
+### 1. 设置采集容器
 
 GrowingIO默认可以圈选页面 DOM 上所有叶子结点和叶子结点的上一级父节点，以及 button 或 a 标签。
 
@@ -73,7 +73,7 @@ GrowingIO默认可以圈选页面 DOM 上所有叶子结点和叶子结点的上
 
 更多容器信息规则，请参考第三节：[容器规则](https://sishen.gitbooks.io/gio-js-book/5/3.html)。
 
-### 2. 设置采集文本信息（data-growing-title）
+### 2. 设置采集文本信息
 
 对于一些图片或者区块，可以通过设置 data-growing-title 属性来设置采集结点的文本。
 
@@ -89,7 +89,7 @@ GrowingIO默认可以圈选页面 DOM 上所有叶子结点和叶子结点的上
 
 更多的文本信息规则，请参考[第4节：What(内容)](https://sishen.gitbooks.io/gio-js-book/dom/4what.html)和[第1节：内容规则](https://sishen.gitbooks.io/gio-js-book/5/1.html)。
 
-### 3. 设置采集位置信息（data-growing-idx）
+### 3. 设置采集位置信息
 
 除了内容以外，元素在列表里所在位置在某些场景下也是非常重要的信息。例如，对于推荐广告位而言，希望知道哪个位置的点击率最高。
 
@@ -122,7 +122,7 @@ data-growing-idx 属性需要赋值，建议设置不为0的纯数字。
 
 更多的位置信息规则，请参考[第2节：位置规则](https://sishen.gitbooks.io/gio-js-book/5/2.html)。
 
-### 4. 设置数据采集黑名单（data-growing-ignore）
+### 4. 设置数据采集黑名单
 
 如果您希望过滤一些内容，可以在网站 DOM 结点上设置 data-growing-ignore 属性值为 true，该容器里所有元素的浏览量和点击量都不会被采集。
 
@@ -134,7 +134,7 @@ data-growing-idx 属性需要赋值，建议设置不为0的纯数字。
 </div>
 ```
 
-### 5. 开启输入文本框内容采集（data-growing-track）
+### 5. 开启输入文本框内容采集
 
 由于输入文本框可能涉及一些隐私信息，比如账号、密码等，GrowingIO在采集数据的时候默认不采集输入文本框的数据。
 

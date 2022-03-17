@@ -99,7 +99,7 @@ run.mode=production
 
 Java SDK会优先读取 gio.properties中的配置。
 
-## 调用SDK API发送事件
+## 调用SDK API发送埋点事件
 
 ```
 //事件行为消息体

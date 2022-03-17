@@ -341,6 +341,10 @@ GrowingIO SDK 默认情况下，不会把`HashTag`识别成页面 URL 的一部�
 + (void)enableHybridHashTag:(BOOL)enable;
 ```
 
+{% hint style="danger" %}
+如果内嵌H5页面集成了Web JS SDK，则 Web JS SDK 中 [HashTag](../web-js-sdk/latest-jssdk.md#1.-hashtag-xi-tong-bian-liang) 配置有效，该接口调用无效
+{% endhint %}
+
 ### 9. GDPR数据采集开关
 
 {% hint style="warning" %}

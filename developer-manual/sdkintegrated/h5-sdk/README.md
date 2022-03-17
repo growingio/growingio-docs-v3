@@ -18,7 +18,7 @@ description: 为小程序（包括微信、支付宝、百度小程序等）内 
 <script type="text/javascript">
       !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.giocdn.com/2.0/gio-wxwv.js","gio");
       // ‘你的appid’为选填项，如果你的微信内嵌页应用有微信分配的appid，建议填写；如果没有，可以留空。
-      gio('init', '你的项目ID', '你的 appid', { debug: false });
+      gio('init', '您的项目ID', '您的 appid', { debug: false });
       gio('send');
 </script>
 ```
@@ -28,8 +28,8 @@ description: 为小程序（包括微信、支付宝、百度小程序等）内 
 需要在SDK初始化时进行平台的配置。
 
 ```javascript
-gio(‘init’, ‘您的 GrowingIO 项目ID’, ‘您的 AppID’, { 
-    platform：支持传入一个判断函数或者一个字符串
+gio('init', '您的项目ID', '您的 appid', { 
+    platform：'Minp' //支持传入一个判断函数或者一个字符串
 });
 ```
 
@@ -97,13 +97,13 @@ GrowingIO默认不会把 hashtag 识别成页面 URL 的一部分。对于使用
 gio('init', '你的项目ID'[,'微信App_id'], { setImp:false, hashtag: true });
 ```
 
-### 微信用户ID 和 用户属性 <a href="sdk-wei-xin-yong-hu-shu-xing-she-zhi" id="sdk-wei-xin-yong-hu-shu-xing-she-zhi"></a>
+### 微信用户ID 和 用户属性 <a href="#sdk-wei-xin-yong-hu-shu-xing-she-zhi" id="sdk-wei-xin-yong-hu-shu-xing-she-zhi"></a>
 
 作为用户行为数据分析工具，用户信息的完善会给后续的分析带来很大的帮助。在微信内嵌页中，微信用户属性是非常重要的设置，只有完善了微信用户属性信息，微信的访问用户变量（如下表）才可以在分析工具中使用，交互数据定义、数据校验功能才会方便通过用户微信相关的信息（微信姓名和头像）定位用户。
 
 下面是专门针对用户的两个个接口。
 
-#### 绑定微信用户ID <a href="bang-ding-wei-xin-yong-hu-id" id="bang-ding-wei-xin-yong-hu-id"></a>
+#### 绑定微信用户ID <a href="#bang-ding-wei-xin-yong-hu-id" id="bang-ding-wei-xin-yong-hu-id"></a>
 
 当用户在你的微信内嵌页上授权获取到 openid 后，可以用过 `identify` 接口绑定微信用户ID，后续在 GrowingIO 中使用微信ID创建用户分群。示例代码如下：
 
@@ -120,7 +120,7 @@ wx.request({
 })
 ```
 
-#### 设置微信用户信息 <a href="she-zhi-wei-xin-yong-hu-xin-xi" id="she-zhi-wei-xin-yong-hu-xin-xi"></a>
+#### 设置微信用户信息 <a href="#she-zhi-wei-xin-yong-hu-xin-xi" id="she-zhi-wei-xin-yong-hu-xin-xi"></a>
 
 当用户在你的微信内嵌页上绑定微信信息后，可以通过 `setVisitor` 接口设置微信用户信息，后续在 GrowingIO 中，使用访问用户变量分析这个数据。示例代码如下：
 
@@ -134,11 +134,11 @@ wx.getUserInfo({
 
 微信信息包含**微信昵称**、**微信头像**。
 
-### 登录用户ID <a href="deng-lu-yong-hu-id" id="deng-lu-yong-hu-id"></a>
+### 登录用户ID <a href="#deng-lu-yong-hu-id" id="deng-lu-yong-hu-id"></a>
 
 设置登录用户ID，可以将用户行为和您业务系统中的用户ID打通，有助于您在分析用户时，能够进一步了解业务价值上的用户核心行为。
 
-#### 设置登录用户 ID <a href="she-zhi-deng-lu-yong-hu-idsetuserid" id="she-zhi-deng-lu-yong-hu-idsetuserid"></a>
+#### 设置登录用户 ID <a href="#she-zhi-deng-lu-yong-hu-idsetuserid" id="she-zhi-deng-lu-yong-hu-idsetuserid"></a>
 
 当用户登录之后调用 setUserId API ，设置登录用户 ID 。
 
@@ -153,7 +153,7 @@ gio('setUserId', userId);
 gio('setUserId', '1234567890');
 ```
 
-#### 清除登录用户 ID <a href="qing-chu-deng-lu-yong-hu-idclearuserid" id="qing-chu-deng-lu-yong-hu-idclearuserid"></a>
+#### 清除登录用户 ID <a href="#qing-chu-deng-lu-yong-hu-idclearuserid" id="qing-chu-deng-lu-yong-hu-idclearuserid"></a>
 
 当用户登出之后调用 clearUserId ，清除已经设置的登录用户 ID 。
 

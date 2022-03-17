@@ -4,20 +4,20 @@ description: 仅集成埋点SDK，没有集成无埋点时使用，需手动集�
 
 # 仅集成埋点SDK的Hybrid JS SDK
 
-## 简介 <a id="jian-jie"></a>
+## 简介 <a href="#jian-jie" id="jian-jie"></a>
 
 仅集成原生埋点SDK，没有集成无埋点时使用。 埋点SDK需更新到最新版本
 
 Hybrid JS SDK 负责采集用户在 App 中内嵌 H5 页面中的埋点用户行为数据。
 
-## 1. 添加跟踪代码 <a id="1-tian-jia-gen-zong-dai-ma"></a>
+## 1. 添加跟踪代码 <a href="#1-tian-jia-gen-zong-dai-ma" id="1-tian-jia-gen-zong-dai-ma"></a>
 
-###  1. H5页面添加代码 <a id="1-h-5-ye-mian-tian-jia-dai-ma"></a>
+### &#x20;1. H5页面添加代码 <a href="#1-h-5-ye-mian-tian-jia-dai-ma" id="1-h-5-ye-mian-tian-jia-dai-ma"></a>
 
-将以下JS代码复制到H5页面的 **&lt;head&gt;** 和 **&lt;/head&gt;** 标签之间即可。安装成功后，除 localhost 和 IP 地址外，网址下的埋点行为数据在app内都将会被收集通过移动端上报，移动端需要去设置bridge，[iOS 设置bridgeForWKWebView](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/sdk-other) ，[安卓设置bridgeForWebView或bridgeForX5WebView](https://docs.growingio.com/v3/developer-manual/sdkintegrated/android-sdk/android-sdk-api/run-api) 
+将以下JS代码复制到H5页面的 **\<head>** 和 **\</head>** 标签之间即可。安装成功后，除 localhost 和 IP 地址外，网址下的埋点行为数据在app内都将会被收集通过移动端上报，移动端需要去设置bridge，[iOS 设置bridgeForWKWebView](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/sdk-other) ，[安卓设置bridgeForWebView或bridgeForX5WebView](https://docs.growingio.com/v3/developer-manual/sdkintegrated/android-sdk/android-sdk-api/run-api)&#x20;
 
 {% hint style="info" %}
-移动端需要去设置bridge，[iOS 设置bridgeForWKWebView](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/sdk-other) ，[安卓设置bridgeForWebView或bridgeForX5WebView](https://docs.growingio.com/v3/developer-manual/sdkintegrated/android-sdk/android-sdk-api/run-api) 
+移动端需要去设置bridge，[iOS 设置bridgeForWKWebView](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/sdk-other) ，[安卓设置bridgeForWebView或bridgeForX5WebView](https://docs.growingio.com/v3/developer-manual/sdkintegrated/android-sdk/android-sdk-api/run-api)&#x20;
 {% endhint %}
 
 ```javascript
@@ -38,11 +38,11 @@ Hybrid JS SDK 负责采集用户在 App 中内嵌 H5 页面中的埋点用户行
 
 #### 高级配置
 
-| 字段 | 类型 | 说明 |
-| :--- | :--- | :--- |
-| debug | boolean | 是否开启调试模式，输出日志（仅对hybrid有效） |
-| hashtag | boolean | 是否开启hash模式路由处理 |
-| autotrack | boolean | 是否集成无埋点sdk |
+| 字段        | 类型      | 说明                        |
+| --------- | ------- | ------------------------- |
+| debug     | boolean | 是否开启调试模式，输出日志（仅对hybrid有效） |
+| hashtag   | boolean | 是否开启hash模式路由处理            |
+| autotrack | boolean | 是否集成无埋点sdk                |
 
 1. 关于`autotrack`字段
 
@@ -58,14 +58,14 @@ Hybrid JS SDK 负责采集用户在 App 中内嵌 H5 页面中的埋点用户行
 
 
 
-### 1. 设置自定义事件和事件级变量（track） <a id="1-she-zhi-zi-ding-yi-shi-jian-he-shi-jian-ji-bian-liang-track"></a>
+### 1. 设置自定义事件和事件级变量（track） <a href="#1-she-zhi-zi-ding-yi-shi-jian-he-shi-jian-ji-bian-liang-track" id="1-she-zhi-zi-ding-yi-shi-jian-he-shi-jian-ji-bian-liang-track"></a>
 
 在添加所需要发送的事件代码之前，需要在打点管理用户界面配置事件以及事件级变量。
 
-| 参数名称 | 参数类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
-| eventId | String | 是 | 事件标识符 |
-| eventLevelVariables | JSON Object | 否 | 包含事件级变量的JSON对象，暨事件发生时所伴随的维度信息。 |
+| 参数名称                | 参数类型        | 是否必须 | 说明                             |
+| ------------------- | ----------- | ---- | ------------------------------ |
+| eventId             | String      | 是    | 事件标识符                          |
+| eventLevelVariables | JSON Object | 否    | 包含事件级变量的JSON对象，暨事件发生时所伴随的维度信息。 |
 
 ```javascript
 // track API原型
@@ -76,15 +76,15 @@ gio('track', 'registerSuccess');
 gio('track', 'registerSuccess', {'gender':'male', 'age':21});
 ```
 
-### 2. 设置转化变量（evar.set） <a id="3-she-zhi-zhuan-hua-bian-liang-evarset"></a>
+### 2. 设置转化变量 <a href="#3-she-zhi-zhuan-hua-bian-liang-evarset" id="3-she-zhi-zhuan-hua-bian-liang-evarset"></a>
 
 发送一个转化信息用于高级归因分析，在添加代码之前必须在打点管理界面上声明转化变量。
 
-| 参数名称 | 参数类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
-| key | String | 否 | 转化变量的标识符 |
-| Value | String | 否 | 转化变量的值 |
-| conversionVariables | JSON Object | 否 | 包含转化变量的JSON对象 |
+| 参数名称                | 参数类型        | 是否必须 | 说明            |
+| ------------------- | ----------- | ---- | ------------- |
+| key                 | String      | 否    | 转化变量的标识符      |
+| Value               | String      | 否    | 转化变量的值        |
+| conversionVariables | JSON Object | 否    | 包含转化变量的JSON对象 |
 
 ```javascript
 // evar.set API原型
@@ -97,13 +97,13 @@ gio('evar.set', {'campaignId': '1234567890', 'campaignOwner':'lisi'});
 
 
 
-### 3. 设置访问用户变量 <a id="4-she-zhi-yong-hu-ji-bian-liang-peopleset"></a>
+### 3. 设置访问用户变量 <a href="#4-she-zhi-yong-hu-ji-bian-liang-peopleset" id="4-she-zhi-yong-hu-ji-bian-liang-peopleset"></a>
 
-| 参数名称 | 参数类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
-| key | String | 否 | 用户变量的标识符 |
-| value | String | 否 | 用户变量的值 |
-| customerVariables | JSON Object | 否 | 包含用户变量的JSON对象 |
+| 参数名称              | 参数类型        | 是否必须 | 说明            |
+| ----------------- | ----------- | ---- | ------------- |
+| key               | String      | 否    | 用户变量的标识符      |
+| value             | String      | 否    | 用户变量的值        |
+| customerVariables | JSON Object | 否    | 包含用户变量的JSON对象 |
 
 ```javascript
 // visitor.set API原型
@@ -116,15 +116,15 @@ gio('visitor.set', {'gender':'male', 'age':'25'});
 
 
 
-### 4. 设置登录用户变量（people.set） <a id="4-she-zhi-yong-hu-ji-bian-liang-peopleset"></a>
+### 4. 设置登录用户变量 <a href="#4-she-zhi-yong-hu-ji-bian-liang-peopleset" id="4-she-zhi-yong-hu-ji-bian-liang-peopleset"></a>
 
 发送用户信息用于用户信息相关分析，在添加代码之前必须在打点管理界面上声明转化变量。
 
-| 参数名称 | 参数类型 | 是否必须 | 说明 |
-| :--- | :--- | :--- | :--- |
-| key | String | 否 | 用户变量的标识符 |
-| value | String | 否 | 用户变量的值 |
-| customerVariables | JSON Object | 否 | 包含用户变量的JSON对象 |
+| 参数名称              | 参数类型        | 是否必须 | 说明            |
+| ----------------- | ----------- | ---- | ------------- |
+| key               | String      | 否    | 用户变量的标识符      |
+| value             | String      | 否    | 用户变量的值        |
+| customerVariables | JSON Object | 否    | 包含用户变量的JSON对象 |
 
 ```javascript
 // people.set API原型
@@ -146,4 +146,3 @@ gio('setUserId', 'zhangsan');
 ```javascript
 gio('clearUserId');
 ```
-

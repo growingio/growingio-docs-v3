@@ -629,7 +629,11 @@ GrowingIO.getInstance().trackEditText(editText)
 * 在**输入框失去焦点的时候或者 onPause 时才会触发chng事件**，如果输入完成，输入框光标仍然在闪动，则**不触发chng事件**。为了保证数据准确性，请每次用户输入完成时，让输入框失去焦点，可使用editText.setFocusable(false);
 {% endhint %}
 
-### 13. 设置内嵌H5页面锚点跳转触发页面浏览事件
+### 13.  采集WebView页面数据
+
+无埋点 SDK 会自动采集H5页面的数据，不需要特殊配置。
+
+### 14. 设置内嵌H5页面锚点跳转触发页面浏览事件
 
 GrowingIO SDK 默认情况下，不会把`HashTag`识别成页面 URL 的一部分，内嵌H5页面点击锚点页面跳转不计为页面浏览事件。
 
@@ -640,6 +644,12 @@ GrowingIO SDK 默认情况下，不会把`HashTag`识别成页面 URL 的一部�
 ```java
 setHashTagEnable(boolean hashTagEnable)
 ```
+
+{% hint style="danger" %}
+如果内嵌H5页面集成了Web JS SDK，则 Web JS SDK 中 [HashTag](../web-js-sdk/latest-jssdk.md#1.-hashtag-xi-tong-bian-liang) 配置有效，该接口调用无效
+{% endhint %}
+
+
 
 **示例代码：**
 
@@ -687,7 +697,7 @@ SDK发送对应采集数据：
 }
 ```
 
-### 14. 多进程支持
+### 15. 多进程支持
 
 GrowingIO SDK默认不支持多进程使用， 但是可以通过`confiuration`进行设置支持多进程。&#x20;
 
@@ -740,7 +750,7 @@ GrowingIO.startWithConfiguration(
 &#x20;需要使用SDK功能的进程需要初始化SDK， 所有的UI进程 + 部分Service进程(如果这些进程中涉及手动打点)。
 {% endhint %}
 
-### 15. GDPR数据采集开关
+### 16. GDPR数据采集开关
 
 > SDK版本支持：2.3.2及以上。
 
@@ -769,7 +779,7 @@ GrowingIO.startWithConfiguration(
 GrowingIO.getInstance().enableDataCollect();
 ```
 
-### 16. Deep Link回调参数获取
+### 17. Deep Link回调参数获取
 
 ​GrowingIO SDK 提供有 Deep Link 回调接口，调用后获取回调参数，您需要根据回调参数和业务场景，添加对应的交互代码。
 
@@ -899,7 +909,7 @@ GrowingIO.startWithConfiguration(this, Configuration()
 {% endtab %}
 {% endtabs %}
 
-### 17. 采集推送配置
+### 18. 采集推送配置
 
 在 **Android SDK 2.6.3** 及以上版本，支持采集通知的标题和内容，此功能默认关闭，如需开启，请在SDK初始化代码中设置开启采集通知，例如：
 
@@ -950,7 +960,7 @@ SDK对通知的采集仅支持操作系统统为 Android 4.4 及以上的设备�
 
 GrowingIO SDK 支持通知的展现和点击事件的采集，并未增加新的事件类型，而是使用了埋点事件发送，所以需要您创建[埋点事件和事件级变量](../../../introduction/datamodel/eventmodel/custom-event.md#mai-dian-shi-jian-de-ding-yi)，事件级变量标识符为**`notification_title`**，**`notification_content`**，埋点事件的标识符为**`notification_show`**，**`notification_click`** 创建事件分析，1-2小时之后即可看到数据。
 
-### 18. 采集OAID
+### 19. 采集OAID
 
 在 Android 10 版本中，非系统应用无法获取 IMEI。加上以前 Android 版本已经对 MAC 地址， AndroidID 的获取做了限制， 在 Android10 中缺少一种唯一标记设备的标识符。 在海外， Google 推荐使用 Google 的广告 ID 作为广告的唯一识别符，在国内[移动安全联盟MSA](http://www.msa-alliance.cn/col.jsp?id=120) 联合各大手机制造商推出了 OAID 的概念， 作为唯一广告标识符。
 
