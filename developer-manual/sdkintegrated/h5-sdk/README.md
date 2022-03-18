@@ -219,9 +219,9 @@ gio('track', 'testImp', { foo: 'bar', baz: 'qux'})
 
 ## 5. 创建应用
 
-请在添加了跟踪代码的支付宝小程序重新启动几次，发送数据给 GrowingIO。
+请在添加了跟踪代码的页面加载几次，上报数据给 GrowingIO。
 
-在GrowingIO平台的创建微信小游戏应用。创建应用请参考查看[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
+在GrowingIO平台的创建内嵌页应用。创建应用请参考查看[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
 
 ## 6. 验证SDK是否正常采集数据
 
