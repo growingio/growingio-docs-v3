@@ -26,63 +26,64 @@ POST
 
 名称
 
-| 类型 | 是否必传 | 说明 |  |
-| :--- | :--- | :--- | :--- |
-| Content | string | 是 | application/json |
+| 类型      | 是否必传   | 说明 |                  |
+| ------- | ------ | -- | ---------------- |
+| Content | string | 是  | application/json |
 
 ## 参数说明与示例
 
 {% tabs %}
 {% tab title="请求参数" %}
-| 路径参数 | 类型 | 是否必传 | 说明 |
-| :--- | :--- | :--- | :--- |
-| project\_uid | string | 是 | 项目UID。 |
+| 路径参数         | 类型     | 是否必传 | 说明     |
+| ------------ | ------ | ---- | ------ |
+| project\_uid | string | 是    | 项目UID。 |
 
-| body参数 | 类型 | 是否必传 | 说明 |
-| :--- | :--- | :--- | :--- |
-| productId | string | 是 | 对应微信小程序应用ID，在[查询应用ID](cha-xun-ying-yong-id.md)中获取。 |
-| buildQrCode | boolean | 是 | 是否创建二维码 |
-| redirectUrl | string | 是 | 跳转链接 |
-| campaignId | string | 是 | 广告活动ID，在[查询推广活动I](querycampaignid.md) 中获取。 |
-| channelId | string | 是 | 推广渠道ID，在[查询推广渠道ID](querychannelid.md) 中获取。 |
-| utmMedium | string | 否 | utm medium 参数 |
-| utmContent | string | 否 | utm content 参数 |
-| utmTerm | string | 否 | utm term 参数 |
-| comments | string | 否 | 备注 |
-| codeType | string | 否 | 二维码类型，A码或C码 |
-| name | string | 是 | 二维码名称 |
+| body参数      | 类型      | 是否必传 | 说明                                                 |
+| ----------- | ------- | ---- | -------------------------------------------------- |
+| productId   | string  | 是    | 对应微信小程序应用ID，在[查询应用ID](cha-xun-ying-yong-id.md)中获取。 |
+| buildQrCode | boolean | 是    | 是否创建二维码                                            |
+| redirectUrl | string  | 是    | 跳转链接                                               |
+| campaignId  | string  | 是    | 广告活动ID，在[查询推广活动I](querycampaignid.md) 中获取。         |
+| channelId   | string  | 是    | 推广渠道ID，在[查询推广渠道ID](querychannelid.md) 中获取。         |
+| utmMedium   | string  | 否    | utm medium 参数                                      |
+| utmContent  | string  | 否    | utm content 参数                                     |
+| utmTerm     | string  | 否    | utm term 参数                                        |
+| comments    | string  | 否    | 备注                                                 |
+| codeType    | string  | 否    | 二维码类型，A码或C码                                        |
+| linkStyle   | string  | 否    | all为附带参数链接；为空或者=aid是短连接                            |
+| name        | string  | 是    | 二维码名称                                              |
 {% endtab %}
 
 {% tab title="返回参数" %}
-| 名称 | 类型 | 备注 |
-| :--- | :--- | :--- |
-| id | string | 小程序码ID |
-| linkId | string | 监测链接ID |
-| name | string | 监测链接名字 |
-| projectId | string | 项目ID |
-| spn | string | spn |
-| trackingUrl | string | GrowingIO 分配的追踪链接 |
-| redirectUrl | string | 目标链接 |
-| campaignId | string | 广告活动ID |
-| campaignName | string | 广告活动名称 |
-| channelId | string | 推广渠道ID |
-| channelName | string | 推广渠道名称 |
-| utmMedium | string | utm medium 参数 |
-| utmContent | string | utm content 参数 |
-| utmTerm | string | utm term 参数 |
-| comments | string | 备注 |
-| status | string | 状态 |
-| creatorId | string | 创建人ID |
-| creatorName | string | 创建人名称 |
-| updaterId | string | 更新人ID |
-| updaterName | string | 更新人名称 |
-| createdAt | number | 创建时间 |
-| updatedAt | number | 更新时间 |
+| 名称           | 类型     | 备注                |
+| ------------ | ------ | ----------------- |
+| id           | string | 小程序码ID            |
+| linkId       | string | 监测链接ID            |
+| name         | string | 监测链接名字            |
+| projectId    | string | 项目ID              |
+| spn          | string | spn               |
+| trackingUrl  | string | GrowingIO 分配的追踪链接 |
+| redirectUrl  | string | 目标链接              |
+| campaignId   | string | 广告活动ID            |
+| campaignName | string | 广告活动名称            |
+| channelId    | string | 推广渠道ID            |
+| channelName  | string | 推广渠道名称            |
+| utmMedium    | string | utm medium 参数     |
+| utmContent   | string | utm content 参数    |
+| utmTerm      | string | utm term 参数       |
+| comments     | string | 备注                |
+| status       | string | 状态                |
+| creatorId    | string | 创建人ID             |
+| creatorName  | string | 创建人名称             |
+| updaterId    | string | 更新人ID             |
+| updaterName  | string | 更新人名称             |
+| createdAt    | number | 创建时间              |
+| updatedAt    | number | 更新时间              |
 {% endtab %}
 
 {% tab title="body示例" %}
 {% code title="调用 A 接口创建 小程序码 的请求参数示例" %}
-```text
+```
 // 创建小程序广告监测链接，同时创建小程序码 (A码)
 // Request Payload
 {
@@ -102,7 +103,7 @@ POST
 {% endcode %}
 
 {% code title="调用 C 接口创建 小程序码 的请求参数示例" %}
-```text
+```
 // 创建小程序广告监测链接，同时创建小程序二维码 （C码）
 // Request Payload
 {
@@ -124,7 +125,7 @@ POST
 
 {% tab title="响应示例" %}
 {% code title="调用 A 接口创建 小程序码 的请求，返回参数示例" %}
-```text
+```
 // Response
 {
     "id": "a9a84ZoB",
@@ -155,7 +156,7 @@ POST
 {% endcode %}
 
 {% code title="调用 C 接口创建 小程序码 的请求，返回参数示例" %}
-```text
+```
 //Response 
 {
     "id": "nPNWAaoW",
@@ -186,4 +187,3 @@ POST
 {% endcode %}
 {% endtab %}
 {% endtabs %}
-
