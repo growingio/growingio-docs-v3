@@ -6,6 +6,7 @@
 
 | 版本      | 说明                                                                                                                                                                                                                                | 日期         |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| 2.3.1   | <ol><li>hashtag后的参数拼接到query上报</li></ol>                                                                                                                                                                                           | 2022-03-30 |
 | 2.2.7   | <ol><li>增加开关<a href="https://docs.growingio.com/v3/developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/websdk-apiv2#10.-gdpr-shu-ju-cai-ji-kai-guan"><code>enableDataCollect</code></a>  用于控制是否采集数据</li><li>适配web圈选插件</li></ol> | 2022-02-24 |
 | 2.2.6   | <ol><li>修复Xpath异常的问题</li></ol>                                                                                                                                                                                                    | 2021-10-21 |
 | 2.2.5   | <ol><li>动态platform支持从url的gio_platform参数读取</li></ol>                                                                                                                                                                               | 2021-08-12 |
