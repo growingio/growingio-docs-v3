@@ -20,7 +20,11 @@ Android SDK > [埋点 SDK集成](../android-sdk/manunl-android-sdk.md)
 {% endtab %}
 
 {% tab title="iOS（Native 部分）" %}
-Flutter 埋点插件是在 iOS 原生 SDK 上的扩展，请参考 iOS SDK > [埋点 SDK集成](../ios-sdk/manunl-ios-sdk.md)。
+Flutter 埋点插件是在 iOS 原生 SDK（无埋点或埋点）上的扩展，原生部分请参考：
+
+iOS 无埋点 SDK > [无埋点 SDK集成](../ios-sdk/auto-ios-sdk.md)
+
+iOS 埋点 SDK > [埋点 SDK集成](../ios-sdk/manunl-ios-sdk.md)
 {% endtab %}
 {% endtabs %}
 
