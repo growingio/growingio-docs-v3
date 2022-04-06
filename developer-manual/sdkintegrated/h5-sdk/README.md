@@ -70,7 +70,7 @@ gio('getGioInfo');
 ```
 
 **注意：**\
-**1）gdp('getGioInfo') 返回的是一个 search 字符串，需要您在字符串前手动拼接 ? 或 & 符号。必须在 URL 的 search 中使用；如果 URL 中有 Hashtag（#），不能直接 Hashtag（#）后使用，必须在 URL 的 search 中使用。**
+**1）gio('getGioInfo') 返回的是一个 search 字符串，需要您在字符串前手动拼接 ? 或 & 符号。必须在 URL 的 search 中使用；如果 URL 中有 Hashtag（#），不能直接 Hashtag（#）后使用，必须在 URL 的 search 中使用。**
 
 **2）gio('getGioInfo')获取的数据是一次性的，非动态获取，如果切换用户导致sessionId或userId等用户信息变动时，需要您销毁当前webview重设地址。并且使用不保留当前页面的跳转方式跳出承载webview的小程序页面。**
 
@@ -105,7 +105,7 @@ Page({
 <web-view src="{{ webUrl }}"></web-view>
 ```
 
-**`gdp('getGioInfo')`默认获取到的数据示例：**
+**`gio('getGioInfo')`默认获取到的数据示例：**
 
 ```javascript
 // H5 页面原有的 URL为 :
@@ -114,7 +114,7 @@ Page({
 
 ```javascript
 // 小程序WebView加载H5时的拼接示例为
-`https://www.growingio.com/?foo=1&${gdp('getGioInfo')}#锚点`
+`https://www.growingio.com/?foo=1&${gio('getGioInfo')}#锚点`
 
 ```
 
