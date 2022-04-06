@@ -61,19 +61,61 @@ gio('send');
 </script>
 ```
 
-在小程序里面 WebView 加载时，URL添加额外属性 gio('getGioInfo') 获取用户会话信息。注意使用`?`或`&`拼接。
+#### **H5页面与小程序**打通用户数[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.3/commonlyApi#%E4%B8%8Eh5%E6%89%93%E9%80%9A%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AEgetgioinfo) <a href="#yu-h5-da-tong-yong-hu-shu-ju-getgioinfo" id="yu-h5-da-tong-yong-hu-shu-ju-getgioinfo"></a>
+
+当有H5页面需要获取小程序SDK采集用户数据的需求时(将H5页面采集的数据需要与小程序采集的数据做关联分析)，调用此接口可将获取以下数据
+
+```javascript
+gio('getGioInfo');
+```
+
+**注意：**\
+**1）gdp('getGioInfo') 返回的是一个 search 字符串，需要您在字符串前手动拼接 ? 或 & 符号。必须在 URL 的 search 中使用；如果 URL 中有 Hashtag（#），不能直接 Hashtag（#）后使用，必须在 URL 的 search 中使用。**
+
+**2）gio('getGioInfo')获取的数据是一次性的，非动态获取，如果切换用户导致sessionId或userId等用户信息变动时，需要您销毁当前webview重设地址。并且使用不保留当前页面的跳转方式跳出承载webview的小程序页面。**
+
+**示例**
 
 ```javascript
 举例：
 # webview.js
 Page({
-  data: {
-    // 当内嵌页URL存在参数时，需带上&符号
-    webUrl: `https://example.org/demo.html?key=val&${gio('getGioInfo')}`
+  data: { url: '' },
+  onShow() {
+    // 每次onShow时设url的值，保证getGioInfo拿到的是最新值
+    this.setData({ url: `https://www.growingIO.com?${gio('getGioInfo')}` });
+  },
+  onHide() {
+    // 退出webview承载页时要销毁webview，保证下次进入时是一个拿到最新数据的全新页面
+    this.setData({ url: '' });
+  },
+  // 如果页面中有登录，需要在登录之后重设一次url的值
+  handleLogin() {
+    ...
+    // 登录完成后重设一次url的值，保证先销毁webview，getGioInfo拿到的是最新值
+    this.setData({ url: '' }, () => {
+      this.setData({ url: `https://www.growingIO.com?${gio('getGioInfo')}` });
+    });
   }
-});
+})
+
+
+
 # webview.wxml
 <web-view src="{{ webUrl }}"></web-view>
+```
+
+**`gdp('getGioInfo')`默认获取到的数据示例：**
+
+```javascript
+// H5 页面原有的 URL为 :
+'https://www.growingio.com/?foo=1#锚点'
+```
+
+```javascript
+// 小程序WebView加载H5时的拼接示例为
+`https://www.growingio.com/?foo=1&${gdp('getGioInfo')}#锚点`
+
 ```
 
 ## 2. 高级配置
