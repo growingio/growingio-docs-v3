@@ -61,7 +61,7 @@ gio('send');
 </script>
 ```
 
-#### **H5页面与小程序**打通用户数[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.3/commonlyApi#%E4%B8%8Eh5%E6%89%93%E9%80%9A%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AEgetgioinfo) <a href="#yu-h5-da-tong-yong-hu-shu-ju-getgioinfo" id="yu-h5-da-tong-yong-hu-shu-ju-getgioinfo"></a>
+#### **H5页面与小程序**打通用户数据[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.3/commonlyApi#%E4%B8%8Eh5%E6%89%93%E9%80%9A%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AEgetgioinfo) <a href="#yu-h5-da-tong-yong-hu-shu-ju-getgioinfo" id="yu-h5-da-tong-yong-hu-shu-ju-getgioinfo"></a>
 
 当有H5页面需要获取小程序SDK采集用户数据的需求时(将H5页面采集的数据需要与小程序采集的数据做关联分析)，调用此接口可将获取以下数据
 
