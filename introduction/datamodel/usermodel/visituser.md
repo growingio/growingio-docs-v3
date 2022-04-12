@@ -10,7 +10,7 @@
 
 同一个项目中相同的访问用户 ID 会识别为一个用户。
 
-## 访问用户ID生成机制
+## 访问用户ID
 
 ### WEB JS SDK
 
@@ -44,9 +44,13 @@ GrowingIO默认使用 UUID（随机 UUID 的方法生成访问用户 ID，并将
 
 访问用户ID 将保存到微信浏览器的 cookie 中。
 
+[访问用户ID生成机制详细说明](visituser.md#10-ke-hu-duan-sdkdeviceid-sheng-cheng-ji-zhi-jian-yao-luo-ji-shi-shen-me)
+
 ## 常见问题
 
-访问用户 ID 在哪些情况下会发生变化？
+**访问用户 ID 在哪些情况下会发生变化？**
+
+**A:**
 
 Web：1. 用户使用浏览器的隐身模式；2.用户手动清空Cookie；3.同一个用户使用多个浏览器
 
@@ -62,3 +66,46 @@ Android：
 * 当访问用户ID 是 UUID时，1. 用户长按小程序入口的小程序图标，删除了小程序；2. 更换了手机设备；3. 手动更新了微信的缓存等
 * 当访问用户ID 是openID时，上述行为不会导致 访问用户ID 变化
 
+#### 客户端SDK 访问用户ID生成机制是什么？[​](http://localhost:3000/growingio-sdk-docs/question/common#10-%E5%AE%A2%E6%88%B7%E7%AB%AFsdk-deviceid-%E7%94%9F%E6%88%90%E6%9C%BA%E5%88%B6%E7%AE%80%E8%A6%81%E9%80%BB%E8%BE%91%E6%98%AF%E4%BB%80%E4%B9%88) <a href="#10-ke-hu-duan-sdkdeviceid-sheng-cheng-ji-zhi-jian-yao-luo-ji-shi-shen-me" id="10-ke-hu-duan-sdkdeviceid-sheng-cheng-ji-zhi-jian-yao-luo-ji-shi-shen-me"></a>
+
+**A:**
+
+* iOS： IDFA > IDFV > 随机访问用户ID
+* Android：androidId > imei > 随机访问用户ID
+* 小程序：OpenID > 随机访问用户ID
+* Web: 随机访问用户ID
+
+访问用户ID 的生成时机是在SDK初始化时。\
+iOS设备如果想要使用IDFA作为访问用户ID，需要在用户授权获取到之后初始化SDK；如果拒绝授权，iOS 按照优先级 IDFV > 随机访问用户ID, 生成访问用户ID **。**Keychain存储。
+
+```c
+NSString *uuid;
+NSUUID *idfa = ((NSUUID * (*)(id, SEL))[sharedManager methodForSelector:advertisingIdentifierSelector])(
+        sharedManager, advertisingIdentifierSelector);
+uuid = [idfa UUIDString];
+
+uuid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+
+uuid = [[NSUUID UUID] UUIDString];
+```
+
+Android 设备首先会获取AndroidID，如果AndroidID 为空或为“9774d56d682e549c”(山寨机或其他设备)，会通过用户授权获取IMEI，如果IMEI获取不到，会随机生成访问用户ID 。本地文件存储。
+
+```java
+String uuid = null;
+
+String adId = getAndroidId();
+uuid = UUID.nameUUIDFromBytes(adId.getBytes(Charset.forName("UTF-8"))).toString();
+        
+String imi = getImei();
+uuid = UUID.nameUUIDFromBytes(imi.getBytes(Charset.forName("UTF-8"))).toString();
+
+uuid = UUID.randomUUID().toString();
+```
+
+小程序：如果SDK设置了强制登录模式，小程序打开时调用 wx.login 获取openid或unionId，且调用 identify 上报，会使用第一参数 作为 访问用户 ID ，否则会自动生成 随机访问用户ID。访问用户ID 将保存到微信浏览器的 cookie 中。
+
+Web: 随机访问用户ID 存储在 localStorage 中，永久有效。
+
+\
+这样复杂逻辑的目的是尽量使用访问用户ID 标识唯一一台设备，将同一台设备上的访问用户标识为同一个用户。
