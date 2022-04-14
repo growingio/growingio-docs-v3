@@ -155,7 +155,7 @@ confirm 事件是对于 input 和 textarea 控件，当输入完成后触发的�
 使用此方法标记元素的浏览时，请在console 日志输出中验证是否发送埋点事件和事件级变量（t = cstm）。
 
 ```javascript
-<view class="page-section growing_collect_imp" data-gio-imp-track='测试imp打点2' data-gio-track-age='18' data-gio-track-name='xxx' id='test_imp'>
+<view class="page-section growing_collect_imp" data-gio-imp-track='impTest' data-gio-track-age='18' data-gio-track-name='xxx' id='test_imp'>
   // ......
 </view>
 ```
