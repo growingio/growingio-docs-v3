@@ -64,8 +64,10 @@ GIO移动端 SDK
 
 如果未同意《隐私协议》， 在 Activity 的onCreate()方法中同意隐私协议后进行 SDK 初始化。如果已同意《隐私协议》，在 Application 的 onCreate() 方法主线程中初始化 SDK。
 
-{% hint style="info" %}
-在隐私协议授权同意之后，再初始化 GrowingIO SDK（版本需在 2.9.1 及以上）
+{% hint style="warning" %}
+在隐私协议授权同意之后，再初始化 GrowingIO SDK（版本需在 2.9.1 及以上）。
+
+如果配置有[AppLink](../../../product-manual/growing/product-configuration/deeplink.md#3.2-applinks-pei-zhi)，则在如果配置有[AppLink](../../../product-manual/growing/product-configuration/deeplink.md#3.2-applinks-pei-zhi)，则在SDK初始化之后可用。
 {% endhint %}
 
 ```
@@ -106,8 +108,8 @@ public class MyApplication extends Application {
 
 ### 方式二、设置数据收集开关
 
-{% hint style="info" %}
-SDK版本需在 2.9.12及以上
+{% hint style="warning" %}
+SDK版本需在 2.9.12及以上。如果配置有[AppLink](../../../product-manual/growing/product-configuration/deeplink.md#3.2-applinks-pei-zhi)，则在`enableDataCollect 之后可用`。
 {% endhint %}
 
 GrowingIO SDK 提供 `disableDataCollect` 接口，可在用户不同意隐私协议时，调用该接口， 禁止数据采集；在用户同意隐私协议时，调用 `enableDataCollect` 接口， 开启数据采集
