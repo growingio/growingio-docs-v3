@@ -67,7 +67,7 @@ GIO移动端 SDK
 {% hint style="warning" %}
 在隐私协议授权同意之后，再初始化 GrowingIO SDK（版本需在 2.9.1 及以上）。
 
-如果配置有[AppLink](../../../product-manual/growing/product-configuration/deeplink.md#3.2-applinks-pei-zhi)，则在如果配置有[AppLink](../../../product-manual/growing/product-configuration/deeplink.md#3.2-applinks-pei-zhi)，则在SDK初始化之后可用。
+如果配置有[AppLink](../../../product-manual/growing/product-configuration/deeplink.md#3.2-applinks-pei-zhi)，则在SDK初始化之后可用。
 {% endhint %}
 
 ```

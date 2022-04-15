@@ -42,7 +42,7 @@ GIO移动端 SDK
 
 3.延迟初始化
 
-集成 [iOS SDK](../ios-sdk/)，请在用户同意《隐私协议》之后再初始化 GrowingIO SDK。如果配置[UniversialLink](../../../product-manual/growing/product-configuration/deeplink.md#2.2-universal-links-pei-zhi)，则在SDK初始化之后可用。 示例代码如下：
+集成 [iOS SDK](../ios-sdk/)，请在用户同意《隐私协议》之后再初始化 GrowingIO SDK。如果配置有[UniversialLink](../../../product-manual/growing/product-configuration/deeplink.md#2.2-universal-links-pei-zhi)，则在SDK初始化之后可用。 示例代码如下：
 
 ```
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
