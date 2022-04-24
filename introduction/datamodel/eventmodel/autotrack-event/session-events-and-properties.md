@@ -10,68 +10,17 @@
 
 一次访问会生成一个 session 值，各平台的 session 刷新时间如下：
 
-* Web端：用户无操作30分钟后 session 值过期，30 分钟后的操作生成新的 session 值。
-* 移动端：App退出30秒后再进入，刷新session值。
-* 小程序：小程序关闭5分钟后再进入，刷新session值。
+* Web端：首次访问时生成 session，当用户30分钟内无操作行为，之后有操作行为，刷新 session。
+* 移动端：冷启动时生成 session，当App进入后台30秒后再次启动，刷新session。
+* 小程序：冷启动时生成 session，当小程序进入后台5分钟后再次启动，刷新session。
 
 ## 访问事件的变量
 
 GrowingIO 从 SDK 生成和发送的访问事件中提取了很多信息，我们将之称为访问事件的变量，这些信息包括：
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">&#x7C7B;&#x578B;</th>
-      <th style="text-align:left">&#x4FE1;&#x606F;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">&#x7528;&#x6237;&#x8BBE;&#x5907;&#x4FE1;&#x606F;</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x53CA;&#x7248;&#x672C;</li>
-          <li>&#x8BBE;&#x5907;&#x54C1;&#x724C;</li>
-          <li>&#x8BBE;&#x5907;&#x578B;&#x53F7;</li>
-          <li>&#x8BBE;&#x5907;&#x7C7B;&#x578B;&#xFF08;&#x624B;&#x673A;/&#x5E73;&#x677F;&#xFF09;</li>
-          <li>&#x8BBE;&#x5907;&#x5236;&#x9020;&#x5546;</li>
-          <li>&#x6D4F;&#x89C8;&#x5668;&#x53CA;&#x7248;&#x672C;</li>
-          <li>&#x7CFB;&#x7EDF;&#x8BED;&#x8A00;</li>
-          <li>&#x5C4F;&#x5E55;&#x5927;&#x5C0F;</li>
-          <li>&#x8BBE;&#x5907;&#x65B9;&#x5411;</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x7528;&#x6237;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x56FD;&#x5BB6;&#x3001;&#x5730;&#x533A;&#x3001;&#x57CE;&#x5E02;&#x540D;&#x79F0;</li>
-          <li>&#x56FD;&#x5BB6;&#x4EE3;&#x7801;</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x7684;&#x5E94;&#x7528;&#x4FE1;&#x606F;</td>
-      <td
-      style="text-align:left">
-        <ul>
-          <li>&#x7F51;&#x7AD9;/&#x624B;&#x673A;&#x5E94;&#x7528;</li>
-          <li>App&#x7248;&#x672C;</li>
-        </ul>
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&#x7528;&#x6237;&#x843D;&#x5730;&#x9875;&#x4FE1;&#x606F;</td>
-      <td style="text-align:left">
-        <ul>
-          <li>&#x57DF;&#x540D;</li>
-          <li>&#x9875;&#x9762;</li>
-          <li>&#x8BBF;&#x95EE;&#x6765;&#x6E90;</li>
-          <li>&#x9875;&#x9762;&#x6765;&#x6E90;</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
+| 类型        | 信息                                                                                                                                          |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| 用户设备信息    | <ul><li>操作系统及版本</li><li>设备品牌</li><li>设备型号</li><li>设备类型（手机/平板）</li><li>设备制造商</li><li>浏览器及版本</li><li>系统语言</li><li>屏幕大小</li><li>设备方向</li></ul> |
+| 用户位置信息    | <ul><li>国家、地区、城市名称</li><li>国家代码</li></ul>                                                                                                   |
+| 用户访问的应用信息 | <ul><li>网站/手机应用</li><li>App版本</li></ul>                                                                                                     |
+| 用户落地页信息   | <ul><li>域名</li><li>页面</li><li>访问来源</li><li>页面来源</li></ul>                                                                                   |
