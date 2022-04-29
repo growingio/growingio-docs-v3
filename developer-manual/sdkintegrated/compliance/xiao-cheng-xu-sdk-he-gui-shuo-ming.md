@@ -21,6 +21,10 @@
 GrowingIO 作为数据处理方，为符合 GDPR，小程序 SDK 提供设置接口，可在用户未同意隐私协议时，初始化时将`dataCollect`设置为 `false` ，禁止数据采集；\
 在用户同意隐私协议后，调用`setDataCollect`设置为 `true`，开启数据采集。
 
+{% hint style="info" %}
+SDK版本>=3.7.3
+{% endhint %}
+
 ```
 ​gio('init', ' GrowingIO 项目ID', '你的小程序AppID', {
   version: '1.0.0',
@@ -28,10 +32,10 @@ GrowingIO 作为数据处理方，为符合 GDPR，小程序 SDK 提供设置接
 });
 
 // 如果用户未同意隐私协议，弹出隐私协议弹框，用户同意隐私协议后，设置开启数据采集。
-gdp('setDataCollect', true);
+gio('setDataCollect', true);
 
 // 如果同意隐私协议，设置开启数据采集。可写在 app.js 的 onshow 方法中
-gdp('setDataCollect', true);
+gio('setDataCollect', true);
 ```
 
 ## 常见问题 <a href="#chang-jian-wen-ti" id="chang-jian-wen-ti"></a>

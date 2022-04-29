@@ -547,8 +547,8 @@ SDK中提供了以下几个参数可以用来进行配置。
 | **参数**              | 类型/值           | 说明                                                          |
 | ------------------- | -------------- | ----------------------------------------------------------- |
 | version             | string         | 您的小程序的版本号                                                   |
-| getLocation.autoGet | true \| false  | 是否自动获取用户的地理位置信息，默认 false                                    |
-| getLocation.type    | wgs84 \| gcj02 | wgs8：标准坐标系；gcj02：火星坐标系                                      |
+| getLocation.autoGet | true \| false  | 是否自动获取用户的地理位置信息，默认 false (3.7.5版本不支持)                       |
+| getLocation.type    | wgs84 \| gcj02 | wgs8：标准坐标系；gcj02：火星坐标系(3.7.5版本不支持)                          |
 | followShare         | true \| false  | 详细跟踪分享数据，开启后可使用分享分析功能，默认true                                |
 | forceLogin          | true \| false  | 是否开启强制登录模式，默认 false                                         |
 | debug               | true \| false  | 是否开启调试模式，可以在 console 打印采集的数据，默认 false。发布到生产环境时需关闭！！！        |
@@ -598,6 +598,10 @@ gio('setDataCollect', true);
 ### 采集GPS数据
 
 #### 配置 `getLocation`
+
+{% hint style="info" %}
+3.7.5版本不支持
+{% endhint %}
 
 GrowingIO SDK 默认不采集地理位置信息。
 
