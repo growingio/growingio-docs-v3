@@ -223,8 +223,6 @@ Page({
 
 _**2022年4月18日起，微信官方对****`getLocation`****进行了权限限制，因此SDK废弃了与getLocation有关的逻辑，并新增****`setLocation`****来代替此功能。**_
 
-_****_
-
 **接口定义**
 
 ```java
@@ -237,8 +235,6 @@ gio('setLocation', latitude, longitude);
 | ----------- | -------- | -------------------------- |
 | `latitude`  | `number` | 必填；纬度，范围为 -90\~90，负数表示南纬   |
 | `longitude` | `number` | 必填；经度，范围为 -180\~180，负数表示西经 |
-
-
 
 **示例**[**​**](https://growingio.github.io/growingio-sdk-docs/docs/miniprogram/3.8/commonlyApi#%E7%A4%BA%E4%BE%8B-5)
 
