@@ -216,3 +216,33 @@ Page({
   }
 })
 ```
+
+## 设置位置信息
+
+当用户访问至某一功能需要位置信息时，可以手动调用小程序Api获取地理位置接口，赋值给SDK，自动补发VISIT，采集位置信息，提升用户地域分布的分析准确性。同时您需要配置项目的`permission`字段[参考文档](https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html#permission)和对应的权限申请[参考文档](https://developers.weixin.qq.com/miniprogram/dev/api/location/wx.getLocation.html)。
+
+_**2022年4月18日起，微信官方对****`getLocation`****进行了权限限制，因此SDK废弃了与getLocation有关的逻辑，并新增****`setLocation`****来代替此功能。**_
+
+_****_
+
+**接口定义**
+
+```java
+gio('setLocation', latitude, longitude); 
+```
+
+**参数说明**[**​**](https://growingio.github.io/growingio-sdk-docs/docs/miniprogram/3.8/commonlyApi#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E-3)
+
+| 名称          | 类型       | 说明                         |
+| ----------- | -------- | -------------------------- |
+| `latitude`  | `number` | 必填；纬度，范围为 -90\~90，负数表示南纬   |
+| `longitude` | `number` | 必填；经度，范围为 -180\~180，负数表示西经 |
+
+
+
+**示例**[**​**](https://growingio.github.io/growingio-sdk-docs/docs/miniprogram/3.8/commonlyApi#%E7%A4%BA%E4%BE%8B-5)
+
+```
+gio('setLocation', 30.23902949389956, 120.14519080902102);
+// 调用后会自动补发带位置信息的vst事件  
+```
