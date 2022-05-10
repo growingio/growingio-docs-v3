@@ -157,8 +157,8 @@ gio('setConfig', gioConfig);
 | 参数                  | 值              | 解释                                    |
 | ------------------- | -------------- | ------------------------------------- |
 | version             | string         | 你的小程序的版本号                             |
-| getLocation autoGet | true \| false  | 是否自动获取用户的地理位置信息。默认false               |
-| getLocation type    | wgs84 \| gcj02 | gcj02 为火星坐标系                          |
+| getLocation autoGet | true \| false  | 是否自动获取用户的地理位置信息，默认false （3.7.5+版本不支持） |
+| getLocation type    | wgs84 \| gcj02 | gcj02 为火星坐标系（3.7.5+版本不支持）             |
 | followShare         | true \| false  | 详细跟踪分享数据，开启后可使用分享分析功能。默认true          |
 | forceLogin          | true \| false  | 你的 QQ 小程序是否强制要求用户登陆获取 openid。默认 false |
 | debug               | true \| false  | 是否开启调试模式，可以看到采集的数据。默认 false           |
@@ -166,6 +166,10 @@ gio('setConfig', gioConfig);
 ### 采集GPS数据
 
 #### 配置 `getLocation`
+
+{% hint style="info" %}
+3.7.5+版本不支持，请使用  [`setLocation`](customize-api.md#she-zhi-wei-zhi-xin-xi) `接口`
+{% endhint %}
 
 GrowingIO SDK 默认不采集地理位置信息。
 

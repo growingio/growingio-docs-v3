@@ -219,7 +219,11 @@ Page({
 
 ## 设置位置信息
 
-当用户访问至某一功能需要位置信息时，可以手动调用小程序Api获取地理位置接口，赋值给SDK，自动补发VISIT，采集位置信息，提升用户地域分布的分析准确性。同时您需要配置项目的`permission`字段[参考文档](https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html#permission)和对应的权限申请[参考文档](https://developers.weixin.qq.com/miniprogram/dev/api/location/wx.getLocation.html)。
+{% hint style="info" %}
+3.7.6+版本支持
+{% endhint %}
+
+当用户访问至某一功能需要位置信息时，可以调用小程序Api获取地理位置接口，将获取到的经纬度数据通过调用SDK  `setLocation` API 进行上报，发送VISIT事件携带经纬度数据。位置信息可以提升用户地域分布的分析准确性。同时您需要配置项目的`permission`字段[参考文档](https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html#permission)和对应的权限申请[参考文档](https://developers.weixin.qq.com/miniprogram/dev/api/location/wx.getLocation.html)。
 
 _**2022年4月18日起，微信官方对****`getLocation`****进行了权限限制，因此SDK废弃了与getLocation有关的逻辑，并新增****`setLocation`****来代替此功能。**_
 

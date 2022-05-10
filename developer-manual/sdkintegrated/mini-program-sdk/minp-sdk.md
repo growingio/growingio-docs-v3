@@ -600,7 +600,7 @@ gio('setDataCollect', true);
 #### 配置 `getLocation`
 
 {% hint style="info" %}
-3.7.5+版本不支持
+3.7.5+版本不支持，请使用  [`setLocation`](customize-api.md#she-zhi-wei-zhi-xin-xi) `接口`
 {% endhint %}
 
 GrowingIO SDK 默认不采集地理位置信息。
