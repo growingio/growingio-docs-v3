@@ -222,7 +222,7 @@ SDK中提供了以下几个参数可以用来进行配置
 
 | 参数          | 类型/值          | 解释                                                                              |
 | ----------- | ------------- | ------------------------------------------------------------------------------- |
-| getLocation | true \| false | 是否自动获取用户的地理位置信息。默认false                                                         |
+| getLocation | true \| false | 是否自动获取用户的地理位置信息，默认false (3.7.5+版本不支持)                                           |
 | forceLogin  | true \| false | 是否要用用户登陆支付宝获取 userid作为访问用户ID标识采集，建议你的小程序在打开强制要求用户登陆支付宝获取 userid时，才进行开启。默认 false |
 | debug       | true \| false | 是否开启调试模式，可以在调试体验版时看到采集的数据，默认 false                                              |
 | version     | string        | 你的小程序的版本号                                                                       |
@@ -251,6 +251,10 @@ gio('init', '你的项目ID', '你的支付宝小程序AppID', { version: '1.0',
 ### 采集GPS数据
 
 #### 配置`getLocation`
+
+{% hint style="info" %}
+3.7.5+版本不支持
+{% endhint %}
 
 GrowingIO SDK 默认不采集地理位置信息。
 
