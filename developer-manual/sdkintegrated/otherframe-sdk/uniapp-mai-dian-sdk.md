@@ -29,12 +29,10 @@ App适配最低系统版本：iOS 8及以上、Android 4.2-10
     * Android设置中UrlSchemes配置官网提供的android项目urlscheme
     * iOS设置中UrlSchemes配置官网提供的ios项目urlscheme
 
-### 2. Android Studio 、Xcode集成
+### 2. 本地打包集成
 
 {% tabs %}
 {% tab title="Android" %}
-
-
 [官方参考文档](https://nativesupport.dcloud.net.cn/NativePlugin/course/android)
 
 两种方式：一种为依赖 Android Module 模式，可参考app 查看，另一种引入 aar 包，可参考app2查看。
