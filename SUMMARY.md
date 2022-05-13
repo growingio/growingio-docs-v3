@@ -99,6 +99,7 @@
     * [Weex埋点SDK](developer-manual/sdkintegrated/otherframe-sdk/weex-sdk.md)
     * [API Cloud埋点SDK](developer-manual/sdkintegrated/otherframe-sdk/apicloud-sdk.md)
     * [AppCan埋点SDK](developer-manual/sdkintegrated/otherframe-sdk/appcan-sdk.md)
+    * [uniapp 埋点SDK](developer-manual/sdkintegrated/otherframe-sdk/uniapp-mai-dian-sdk.md)
   * [小程序 SDK](developer-manual/sdkintegrated/mini-program-sdk/README.md)
     * [小程序 SDK 更新日志](developer-manual/sdkintegrated/mini-program-sdk/change-log.md)
     * [微信小程序 SDK](developer-manual/sdkintegrated/mini-program-sdk/minp-sdk.md)
