@@ -154,9 +154,9 @@ implementation "com.growingio.android:vds-android-agent:track-2.8.25"
 
 请结合 [官方参考文档](https://nativesupport.dcloud.net.cn/NativePlugin/course/ios) 来集成
 
-1. 在你的 xcode 项目中导入 GrowingIOUniPlugin 库；
+1. 在 xcode 项目中导入 GrowingIOUniPlugin 库；
 2. 按照参考文档，将项目与 GrowingIOUniPlugin 库建立连接；
-3. 在 GrowingIOUniPlugin 中引入 GrowingIO ，集体可以查看 [GrowingIO iOS  集成](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/auto-ios-sdk)。具体的代码配置在 `GrowingIOTrackProxy` 中。
+3. 在 GrowingIOUniPlugin 中引入 GrowingIO ，集成可以查看 [GrowingIO iOS  集成](https://docs.growingio.com/v3/developer-manual/sdkintegrated/ios-sdk/auto-ios-sdk)。具体的代码配置在 `GrowingIOTrackProxy` 中。
 4. 若是无法找到 `Growing.h` 文件，则需要在 Target `GrowingIOUniPlugin` => `Build Settings` => `Header Search Paths` 添加 `"$(SRCROOT)/Pods/Growing/PublicHeader"`路径并设为 recursive。
 5. 在 HBuilder-Hello 项目中的 `HBuilder-uniPlugin-Info.plist` 中配置插件
 

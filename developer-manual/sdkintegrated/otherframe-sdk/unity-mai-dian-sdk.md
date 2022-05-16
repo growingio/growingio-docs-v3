@@ -13,7 +13,7 @@ App适配最低系统版本：iOS 8及以上、Android 4.2-10
 {% tabs %}
 {% tab title="Android" %}
 1. 将最新的Unity埋点SDK `vds-android-agent-game-track.jar`导入 Unity 项目目录`Assets/Plugins/Android/`
-2. 在Android工程的`Application`的`onCreate`方法中初始化GrowingIO
+2. 在Android工程中集成 Android 原生埋点SDK，并初始化，参考[Android原生端埋点SDK文档](https://docs.growingio.com/docs/sdk-integration/android-sdk/android-mai-dian-sdk)，如已集成请跳过该步骤
 
 ```
 public class GameApp extends Application {
@@ -37,11 +37,10 @@ public class GameApp extends Application {
 {% endtab %}
 
 {% tab title="iOS" %}
-1. 将最新的埋点SDK `GrowingCoreKit.framework` 导入 Unity 项目目录 `Assets/Plugins/iOS/` 中
+1. 将最新的埋点SDK `GrowingCoreKit.framework` 参考[iOS原生端埋点SDK](https://docs.growingio.com/docs/sdk-integration/ios-sdk-1/mai-dian-sdk-ji-cheng)，导入 Unity 项目目录 `Assets/Plugins/iOS/` 中
 2. 将 `BuildPostProcessor` 脚本文件导入 Unity 项目目录 `Assets/Editor`中
 3. 配置 URLScheme：将在GrowingIO官网申请到的应用的 `URL Scheme` 填入到 `BuildPostProcessor` 中的 `AddInfoPlist(path, "XXXXX");` XXXXX 处并保存
-4. Unity 工程中可以通过 `GrowingIOGame.cs`脚本调用指定的埋点方法
-5. 初始化埋点SDK:Unity 导出 Xcode 工程后，通过在GrowingIO官网申请到项目ID，在 `UnityAppController.mm` 文件中的代码方法中完成初始化
+4. 在iOS工程中集成 iOS 原生埋点SDK，并初始化，参考[iOS原生端埋点SDK文档](https://docs.growingio.com/docs/sdk-integration/ios-sdk-1/mai-dian-sdk-ji-cheng)，如已集成请跳过该步骤
 
 ```
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
@@ -50,6 +49,8 @@ public class GameApp extends Application {
      return YES;
 }
 ```
+
+&#x20;5\. Unity 工程中可以通过 `GrowingIOGame.cs`脚本调用指定的埋点方法
 
 &#x20;6\. 更多细节请参考[UnityDemo](https://github.com/growingio/GrowingSDK-Unity-GameTrack/tree/master/UnityDemo)和[iOS原生端埋点SDK文档](https://docs.growingio.com/docs/sdk-integration/ios-sdk-1/mai-dian-sdk-ji-cheng)
 {% endtab %}
