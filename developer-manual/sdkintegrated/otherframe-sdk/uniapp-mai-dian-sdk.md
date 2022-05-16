@@ -12,35 +12,62 @@ App适配最低系统版本：iOS 8及以上、Android 4.2-10
 
 ## 1. 集成
 
+1. 下载该仓库代码，将release 文件夹下 GrowingIO-Track 添加至工程的 nativeplugins 目录下
+
+&#x20; 2\. HBuilderX中，在对应工程的 manifest.json 中选择“App原生插件配置”，本地插件\[选择本地插件]，勾选 GrowingIO-Track 插件，并将必填字段进行填写
+
+* growing\_android\_account\_id 即项目id, 可在官网查看
+* growing\_ios\_account\_id 即项目id, 可在官网查看
+* growing\_android\_url\_scheme 即android项目的 urlscheme
+* 其余字段均为可选字段, 除debug字段外(默认为非debug模式), 服务器地址配置默认都是当前SaaS地址(无需额外配置)
+
+![](https://user-images.githubusercontent.com/14357923/168552832-91825033-cea8-4876-b101-d88062a58d81.png)
+
+3\. HBuilderX中配置唤醒 urlscheme
+
+* manifest.json中选择“App常用其它设置”
+  * Android设置中UrlSchemes配置官网提供的android项目urlscheme
+  * iOS设置中UrlSchemes配置官网提供的ios项目urlscheme
+
+![](../../../.gitbook/assets/addurlscheme.png)
+
+4\. uniapp 工程中的代码书写示例
+
+```
+gio = uni.requireNativePlugin('GrowingIO-Track')
+gio.track({'eventId':'activate'});
+
+//自定义参数
+gio.track({
+   "eventId": "custom",
+   "eventLevelVariable": {
+      "grow_index": "苹果",
+      "grow_click": 14
+   }
+});
+```
+
 插件位于 release 文件夹下。\
 该插件用于 HBuilder 云打包使用，而且仅在云打包情况下，manifest.json 下的参数设置才能在app中生效。
 
 若是自己使用工具（Android Studio 或者 Xcode）打包可以参考 [UniPlugin-Android](https://github.com/growingio/growing-sdk-uniapp/tree/main/UniPlugin-Android) 和 [UniPlugin-iOS](https://github.com/growingio/growing-sdk-uniapp/tree/main/UniPlugin-iOS) 两个例子进行集成。
 
-### 1. 云打包集成
+### 关于插件说明
 
-* HBuilderX中在manifest.json中选择本地原生插件配置, 并将必填字段进行填写
-  * growing\_android\_account\_id 即项目id, 可在官网查看
-  * growing\_ios\_account\_id 即项目id, 可在官网查看
-  * growing\_android\_url\_scheme 即android项目的urlscheme
-  * 其余字段均为可选字段, 除debug字段外(默认为非debug模式), 服务器地址配置默认都是当前SaaS地址(无需额外配置)
-* HBuilderX中配置唤醒urlscheme
-  * manifest.json中选择App常用其它设置
-    * Android设置中UrlSchemes配置官网提供的android项目urlscheme
-    * iOS设置中UrlSchemes配置官网提供的ios项目urlscheme
+该插件用于 HBuilder 云打包使用，而且仅在云打包情况下，manifest.json 下的参数设置才能在app中生效。
 
-### 2. 本地打包集成
+若是自己使用工具（Android Studio 或者 Xcode）打包可以参考如下：
 
 {% tabs %}
 {% tab title="Android" %}
 [官方参考文档](https://nativesupport.dcloud.net.cn/NativePlugin/course/android)
 
-两种方式：一种为依赖 Android Module 模式，可参考app 查看，另一种引入 aar 包，可参考app2查看。
+两种方式：一种为依赖 Android Module 模式，可参考示例代码 app 中查看，另一种引入 aar 包，可参考示例代码 app2 中查看。
 
 ### 方式一：依赖 Android Module
 
-1. 在你的Android Studio 项目中导入 uniplugin\_growingio 模块；
-2. 在 app 模块的 build.gradle 中添加模块
+1. 在您的Android Studio 项目中导入 uniplugin\_growingio 模块；
+2. 在示例app 模块的 build.gradle 中添加模块
 
 ```
 // 添加uni-app插件
@@ -49,7 +76,7 @@ implementation project(':uniplugin_growingio')
 
 &#x20;3\. 在 `uniplugin_growingio` 模块的 `GrowingIOTrackAppProxy` 类里面进行 growingIo sdk 的初始化，具体可以参考[GrowingIO sdk 文档](https://docs.growingio.com/docs/developer-manual/sdkintegrated/android-sdk/manunl-android-sdk)
 
-&#x20;4\. 在 app 模块下的 assets 的 dcloud\_uniplugins.json 中添加插件
+&#x20;4\. 在示例 app 模块下的 assets 的 dcloud\_uniplugins.json 中添加插件
 
 ```
 {
@@ -68,7 +95,7 @@ implementation project(':uniplugin_growingio')
 }
 ```
 
-&#x20;5\. 最后在你的vue文件中调用
+&#x20;5\. 最后在您的vue文件中调用
 
 ```
 const growing = uni.requireNativePlugin('GrowingIO-Track');
@@ -76,13 +103,13 @@ growing.track({'eventId':'login'});
 growing.printLog('这是 GrowingIO 模块的消息');
 ```
 
-&#x20;6\. 最后根据官方调用原生插件的过程，将通过 HBuilderX 发行的 www 文件夹覆盖到 app 模块下的 www 后就可以运行查看结果。 [官方插件调试教程](https://nativesupport.dcloud.net.cn/NativePlugin/course/android?id=%e6%8f%92%e4%bb%b6%e8%b0%83%e8%af%95)
+&#x20;6\. 最后根据官方调用原生插件的过程，将通过 HBuilderX 发行的 www 文件夹覆盖到示例 app 模块下的 www 后就可以运行查看结果。 [官方插件调试教程](https://nativesupport.dcloud.net.cn/NativePlugin/course/android?id=%e6%8f%92%e4%bb%b6%e8%b0%83%e8%af%95)
 
 ### 方式二：引入 aar 包
 
-具体可以参考 app2 下的配置
+具体可以参考示例 app2 下的配置
 
-1. 在 你的项目的 libs 下放入 `growingio-uniplugin.aar` 包
+1. 在 您的项目的 libs 下放入 `growingio-uniplugin.aar` 包
 2. 在 `build.gradle` 添加依赖
 
 ```
@@ -443,7 +470,9 @@ uexGrowingIO.setVisitor({"gender":"male","age":21});
 ## 3. 创建应用
 
 {% hint style="danger" %}
-**添加代码之后，请先Clean项目，然后再进行编译，并在你的 App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
+**添加代码之后，请先Clean项目，然后再进行编译，并在您的 App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
+
+**如果您的 uniapp 应用会被分别打包成新的 Android 和 iOS APP，则需要分别创建Android 和 iOS应用。**
 {% endhint %}
 
 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。

@@ -225,7 +225,7 @@ GrowingIOGame.SetVisitor(dictionary);
 ## 3. 创建应用
 
 {% hint style="danger" %}
-**添加代码之后，请先Clean项目，然后再进行编译，并在你的 App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
+**添加代码之后，请先Clean项目，然后再进行编译，并在您的 App 安装了 SDK 后重新启动几次 App，保证行为采集数据自动发送给 GrowingIO，以便顺利完成检测。**
 {% endhint %}
 
 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。

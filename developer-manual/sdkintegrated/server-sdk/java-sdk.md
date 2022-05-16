@@ -4,7 +4,7 @@
 
 在服务端Java 应用中集中Java SDK，来上报离线的用户行为。
 
-我们推荐使用 [Maven](http://search.maven.org) 管理 Java 项目，请在 `pom.xml` 文件中，添加以下依赖信息，Maven 将自动获取Java SDK 并更新项目配置。
+我们推荐使用 [Maven](http://search.maven.org/) 管理 Java 项目，请在 `pom.xml` 文件中，添加以下依赖信息，Maven 将自动获取Java SDK 并更新项目配置。
 
 {% code title="pom.xml" %}
 ```markup

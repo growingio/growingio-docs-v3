@@ -47,7 +47,7 @@ GIO移动端 SDK
 
 ### 个人信息字段采集
 
-我们通过采集唯一设备识别码（如IMEI/AndroidID/IP地址）对用户进行唯一标识，以便进行诸如用户访问量，广告等数据统计。在无法获取设备识别码的情况下（如Android高版本API限制），我们推荐集成由[移动安全联盟MSA](http://www.msa-alliance.cn)提供的 Oaid SDK 作为设备唯一识别码，以便正常提供统计分析服务。
+我们通过采集唯一设备识别码（如IMEI/AndroidID/IP地址）对用户进行唯一标识，以便进行诸如用户访问量，广告等数据统计。在无法获取设备识别码的情况下（如Android高版本API限制），我们推荐集成由[移动安全联盟MSA](http://www.msa-alliance.cn/)提供的 Oaid SDK 作为设备唯一识别码，以便正常提供统计分析服务。
 
 ### Android 设备权限 <a href="#android-she-bei-quan-xian" id="android-she-bei-quan-xian"></a>
 

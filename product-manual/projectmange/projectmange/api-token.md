@@ -36,6 +36,6 @@ API Token管理功能可直接由系统利用项目的公钥和私钥自动生�
 
 ## 管理Token
 
-修改描述：单击 ![](../../../.gitbook/assets/bian-ji-icon.png) ，可修改当前Token的描述。
+修改描述：单击 <img src="../../../.gitbook/assets/bian-ji-icon.png" alt="" data-size="line"> ，可修改当前Token的描述。
 
-删除：单击 ![](../../../.gitbook/assets/shan-chu-icon.png) ，可以删除当前Token，删除后该Token即失效。
+删除：单击 <img src="../../../.gitbook/assets/shan-chu-icon.png" alt="" data-size="line"> ，可以删除当前Token，删除后该Token即失效。

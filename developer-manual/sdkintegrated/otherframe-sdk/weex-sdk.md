@@ -21,7 +21,7 @@ App适配最低系统版本：iOS 8及以上、Android 4.2-10
 ### 1. 添加Android 原生SDK依赖
 
 * 建议使用 Android Studio 打开项目中， `platforms`文件夹中的`android` 文件夹 。
-* Weex 埋点 SDK 是在 Android 原生 SDK 上的扩展，参照 [Android 埋点 SDK](../android-sdk/manunl-android-sdk.md)，集成步骤的 1~4，操作步骤完全一致。
+* Weex 埋点 SDK 是在 Android 原生 SDK 上的扩展，参照 [Android 埋点 SDK](../android-sdk/manunl-android-sdk.md)，集成步骤的 1\~4，操作步骤完全一致。
 
 ### 2. 添加SDK
 
@@ -33,7 +33,7 @@ App适配最低系统版本：iOS 8及以上、Android 4.2-10
 
 在相应工程的 build.gradle 文件的 的 dependencies 中添加
 
-```text
+```
 compile 'com.growingio.android:vds-weex:0.3'
 ```
 
@@ -45,31 +45,31 @@ compile 'com.growingio.android:vds-weex:0.3'
 {% tab title="iOS" %}
 ### 1. 添加iOS埋点SDK依赖
 
-Weex埋点 SDK 是在 iOS 原生 SDK 上的扩展，请参照原生iOS SDK &gt; [埋点 SDK集成](../ios-sdk/manunl-ios-sdk.md)，完成代码跟踪部分配置。
+Weex埋点 SDK 是在 iOS 原生 SDK 上的扩展，请参照原生iOS SDK > [埋点 SDK集成](../ios-sdk/manunl-ios-sdk.md)，完成代码跟踪部分配置。
 
 ### 2. 添加SDK
 
 #### 1. 命令行集成
 
-```text
+```
 weex plugin add weex-growingio
 ```
 
 #### 2. 手动集成 在podfile中添加
 
-```text
+```
 pod 'WeexGrowingIO'
 ```
 
 #### 3. 命令行输入
 
-```text
+```
 pod update
 ```
 
 ### 3. 重要配置
 
-与原生混合开发的开发者可详细查看 iOS SDK &gt; 无埋点 SDK &gt; [重要配置](../ios-sdk/auto-ios-sdk.md#fu-lu-1-zhong-yao-pei-zhi)文档，如果原生控件使用不多，只需关注如下配置即可：
+与原生混合开发的开发者可详细查看 iOS SDK > 无埋点 SDK > [重要配置](../ios-sdk/auto-ios-sdk.md#fu-lu-1-zhong-yao-pei-zhi)文档，如果原生控件使用不多，只需关注如下配置即可：
 
 * **​**[**App Store 提交应用注意事项**](../ios-sdk/auto-ios-sdk.md#app-store-ti-jiao-ying-yong-zhu-yi-shi-xiang)\*\*\*\*
 {% endtab %}
@@ -93,10 +93,10 @@ track(event);
 
 **参数说明：**
 
-| 参数名称 | 参数类型 | 必填 | 说明 |
-| :--- | :--- | :--- | :--- |
-| `eventId` | String | 是 | 事件标识符 |
-| `eventLevelVariable` | Object | 否 | 事件发生时所伴随的维度信息 |
+| 参数名称                 | 参数类型   | 必填 | 说明            |
+| -------------------- | ------ | -- | ------------- |
+| `eventId`            | String | 是  | 事件标识符         |
+| `eventLevelVariable` | Object | 否  | 事件发生时所伴随的维度信息 |
 
 采集自定义事件 `eventId`，该事件的属性信息属于事件级变量。
 
@@ -107,28 +107,13 @@ track(event);
 参数违反以下条件将不发送数据，调用后请验证数据是否发送，事件类型`t`为`cstm`。
 
 | 参数名称 | 限制条件 |
-| :--- | :--- |
-
+| ---- | ---- |
 
 | `eventId` | 非空，长度限制小于等于50； |
-| :--- | :--- |
+| --------- | -------------- |
 
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><code>eventLevelVariable</code>
-      </th>
-      <th style="text-align:left">
-        <p>&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF08;<code>eventLevelVariable.length()&lt;=100</code>&#xFF09;&#xFF1B;</p>
-        <p><code>eventLevelVariable</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x5D4C;&#x5957;
-          Object&#xFF1B;</p>
-        <p><code>eventLevelVariable</code>Object &#x4E2D;&#x7684; <code>key</code>&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code>&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| `eventLevelVariable` | <p>非空，长度限制小于等于100（<code>eventLevelVariable.length()&#x3C;=100</code>）；</p><p><code>eventLevelVariable</code> 内部不允许嵌套 Object；</p><p><code>eventLevelVariable</code>Object 中的 <code>key</code>长度限制小于等于50，<code>value</code>长度限制小等于1000。</p> |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ```java
 //获取 gio
@@ -181,29 +166,17 @@ setEvar(conversionVariables);
 
 **参数说明：**
 
-| 参数名 | 类型 | 是否必填 | 描述 |
-| :--- | :--- | :--- | :--- |
-| conversionVariables | Object | 是 | 转化级属性 |
+| 参数名                 | 类型     | 是否必填 | 描述    |
+| ------------------- | ------ | ---- | ----- |
+| conversionVariables | Object | 是    | 转化级属性 |
 
 **参数限制条件：**
 
 | 参数名称 | 限制条件 |
-| :--- | :--- |
+| ---- | ---- |
 
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">conversionVariables</th>
-      <th style="text-align:left">
-        <p>&#x975E;&#x7A7A;&#xFF0C;&#x952E;&#x503C;&#x5BF9;&#x4E2A;&#x6570;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF1B;</p>
-        <p><code>conversionVariables</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>Object</code> &#x5D4C;&#x5957;&#xFF1B;</p>
-        <p><code>conversionVariables</code>Object &#x4E2D;&#x7684; <code>key</code>&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code>&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| conversionVariables | <p>非空，键值对个数小于等于100；</p><p><code>conversionVariables</code> 内部不允许含有<code>Object</code> 嵌套；</p><p><code>conversionVariables</code>Object 中的 <code>key</code>长度限制小于等于50，<code>value</code>长度限制小等于1000。</p> |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ```javascript
 //获取 gio
@@ -253,34 +226,22 @@ setPeopleVariable(peopleVariables);
 
 **参数说明：**
 
-| 参数名 | 类型 | 是否必填 | 描述 |
-| :--- | :--- | :--- | :--- |
-| peopleVariables | Object | 是 | 用户属性 |
+| 参数名             | 类型     | 是否必填 | 描述   |
+| --------------- | ------ | ---- | ---- |
+| peopleVariables | Object | 是    | 用户属性 |
 
 **参数限制条件：**
 
 | 参数名称 | 限制条件 |
-| :--- | :--- |
+| ---- | ---- |
 
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">peopleVariables</th>
-      <th style="text-align:left">
-        <p>&#x975E;&#x7A7A;&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;100&#xFF08;<code>peopleVariables.length()&lt;=100</code>&#xFF09;&#xFF1B;</p>
-        <p><code>peopleVariables</code> &#x5185;&#x90E8;&#x4E0D;&#x5141;&#x8BB8;&#x542B;&#x6709;<code>JSONObject</code>&#x6216;&#x8005;&#xFF1B;</p>
-        <p><code>peopleVariables</code>Object &#x4E2D;&#x7684; <code>key</code>&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;<code>value</code>&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| peopleVariables | <p>非空，长度限制小于等于100（<code>peopleVariables.length()&#x3C;=100</code>）；</p><p><code>peopleVariables</code> 内部不允许含有<code>JSONObject</code>或者；</p><p><code>peopleVariables</code>Object 中的 <code>key</code>长度限制小于等于50，<code>value</code>长度限制小等于1000。</p> |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ```java
 //获取 gio
 var gio = weex.requireModule('GrowingIO');
-gio.setPeopleVariable({ 'name': '玎玎', 'email': 'dingding@growingio.com' })
+gio.setPeopleVariable({ 'name': 'testName', 'email': 'testName@company.com' 
 ```
 
 **检验数据发送日志示例：**
@@ -297,8 +258,8 @@ gio.setPeopleVariable({ 'name': '玎玎', 'email': 'dingding@growingio.com' })
     "cs1":"GrowingIO",
     // 用户变量
     "var":{
-        'name': '玎玎', 
-        'email': 'dingding@growingio.com'
+        'name': 'testName', 
+        'email': 'testName@company.com'
     },
     "gesid":311,
     "esid":0
@@ -316,24 +277,10 @@ setUserId(userId);
 **参数说明：**
 
 | 参数名称 | 参数类型 | 必填 | 说明 |
-| :--- | :--- | :--- | :--- |
+| ---- | ---- | -- | -- |
 
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">userId</th>
-      <th style="text-align:left">String</th>
-      <th style="text-align:left">&#x662F;</th>
-      <th style="text-align:left">
-        <p>&#x767B;&#x5F55;&#x7528;&#x6237;Id&#xFF0C;&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;1000&#xFF1B;</p>
-        <p>&#x5982;&#x679C;&#x503C;&#x4E3A;&#x7A7A;&#x5219;&#x6E05;&#x7A7A;&#x4E86;&#x767B;&#x5F55;&#x7528;&#x6237;&#x53D8;&#x91CF;&#xFF0C;&#x4E0D;&#x5EFA;&#x8BAE;&#x8FD9;&#x4E48;&#x7528;&#xFF0C;</p>
-        <p>&#x8BF7;&#x4F7F;&#x7528; clearUserId &#x6E05;&#x9664;&#x767B;&#x5F55;&#x7528;&#x6237;&#x53D8;&#x91CF;&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| userId | String | 是 | <p>登录用户Id，长度限制小于等于1000；</p><p>如果值为空则清空了登录用户变量，不建议这么用，</p><p>请使用 clearUserId 清除登录用户变量。</p> |
+| ------ | ------ | - | ----------------------------------------------------------------------------------------- |
 
 ```java
 //获取 gio
@@ -370,24 +317,10 @@ setVisitor(visitorVar);
 **参数说明：**
 
 | 参数名称 | 参数类型 | 必填 | 说明 |
-| :--- | :--- | :--- | :--- |
+| ---- | ---- | -- | -- |
 
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><code>visitorVar</code>
-      </th>
-      <th style="text-align:left">Object</th>
-      <th style="text-align:left">&#x662F;</th>
-      <th style="text-align:left">
-        <p>&#x4E0D;&#x53EF;&#x4F7F;&#x7528;&#x5D4C;&#x5957;&#x7684;<code>JSONObject</code>&#x5BF9;&#x8C61;&#xFF0C;&#x5373;&#x4E3A;JSONObject&#x4E2D;&#x4E0D;&#x53EF;&#x4EE5;&#x653E;&#x5165;<code>JSONObject</code>&#x6216;&#x8005;<code>JSONArray</code>&#xFF1B;</p>
-        <p>key &#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;50&#xFF0C;value&#x957F;&#x5EA6;&#x9650;&#x5236;&#x5C0F;&#x7B49;&#x4E8E;1000&#xFF0C;&#x503C;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x4E32;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&quot;&quot;&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| `visitorVar` | Object | 是 | <p>不可使用嵌套的<code>JSONObject</code>对象，即为JSONObject中不可以放入<code>JSONObject</code>或者<code>JSONArray</code>；</p><p>key 长度限制小于等于50，value长度限制小等于1000，值不能为空串，也就是""。</p> |
+| ------------ | ------ | - | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ```java
 //获取 gio
@@ -425,7 +358,7 @@ gio.setVisitor({"gender":"male","age":21});
 
 在GrowingIO平台的应用创建页面继续完成应用创建的数据检测，检测成功后应用创建成功。
 
-## 4. 验证SDK是否正常采集数据 <a id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
+## 4. 验证SDK是否正常采集数据 <a href="#5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju" id="5-yan-zheng-sdk-shi-fou-zheng-chang-cai-ji-shu-ju"></a>
 
 了解GrowingIO平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
 
@@ -434,4 +367,3 @@ GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 方式一：[Mobile Debugger​​](../../debugging/mobile-debugger.md)
 
 方式二：在SDK中设置了Debug模式后，在IDE编译器控制台查看数据采集日志。
-
