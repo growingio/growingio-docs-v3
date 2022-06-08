@@ -230,18 +230,16 @@ WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.frame];
 
 ### 3. 采集GPS数据
 
-GrowingIO SDK 默认不采集地理位置信息。
-
-如果您的应用有相应的权限，调用如下接口，设置为 `YES` 时，SDK将自动采集GPS数据。
+如果用户开启相应获取地理位置信息权限，调用如下接口，设置为 `YES` （默认值）时，SDK将自动采集地理位置数据。如果希望禁止采集地理位置信息，需要调用如下接口，设置为 `NO`。
 
 {% hint style="success" %}
-如果您不调用此接口也可以，我们会根据用户的`ip模糊匹配`用户所在城市地区，能够在最终的数据分析时看到`APP`用户地域分布。
+如果没有用户的地理位置信息，我们会根据用户的`ip模糊匹配`用户所在城市地区，能够在最终的数据分析时看到`APP`用户地域分布。
 {% endhint %}
 
 {% hint style="info" %}
-SDK 2.8.6及以上版本支持手动关闭采集GPS数据。
+SDK 2.8.6及以上版本支持手动关闭采集地理位置数据。
 
-`//设置为NO，将关闭GPS采集`  \
+`//设置为NO，将关闭地理位置数据采集`  \
 `+(void)setEnableLocationTrack:(BOOL)enable;`
 {% endhint %}
 

@@ -60,7 +60,7 @@ GrowingIO初始化配置项均在AppDelegate.m文件中的didFinishLaunchingWith
 | disableDataCollect     | 无    | 设置 GDPR 生效                                                                               | ✔️         | ✔️        |
 | enableDataCollect      | 无    | 设置 GDPR 失效                                                                               | ✔️         | ✔️        |
 | disablePushTrack       | YES  | 设置是否采集push推送点击，默认不采集                                                                     | ✔️         | ✔️        |
-| setEnableLocationTrack | YES  | 设置是否采集地理位置的统计信息，默认采集；调用需在SDK初始化之前                                                        | >=2.8.6    | >=2.8.6   |
+| setEnableLocationTrack | YES  | 设置是否采集地理位置的统计信息，默认采集(前提：用户开启相应获取地理位置信息权限)；调用需在SDK初始化之前                                   | >=2.8.6    | >=2.8.6   |
 | getEnableLocationTrack | 无    | 获取是否采集地理位置                                                                               | >=2.8.6    | >=2.8.6   |
 | setReadClipBoardEnable | YES  | 设置是否读取剪切板；调用需在SDK初始化之前                                                                   | >=2.9.8    | >=2.9.8   |
 | setAsaEnabled          | NO   | 设置是否获取 Apple Search Ads 归因数据；调用需在SDK初始化之前                                                | >=2.9.9    | >=2.9.9   |
