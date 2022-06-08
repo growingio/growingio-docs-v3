@@ -230,9 +230,9 @@ WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.frame];
 
 ### 3. 采集GPS数据
 
-用户开启相应获取地理位置信息权限，调用如下接口，设置为 `YES` （默认值），当 App 调用获取地理位置API 时，SDK会同步采集地理位置信息。用户未开启权限，则不采集。
+用户开启相应获取地理位置信息权限，在SDK初始化前调用如下接口，设置为 `YES` （默认值），当 App 调用获取地理位置API 时，SDK会同步采集地理位置信息。用户未开启权限，则不采集。
 
-如果希望禁止采集地理位置信息，调用如下接口，设置为 `NO`。
+如果希望禁止采集地理位置信息，在SDK初始化前调用如下接口，设置为 `NO`。
 
 {% hint style="success" %}
 如果没有用户的地理位置信息，我们会根据用户的`ip模糊匹配`用户所在城市地区，能够在最终的数据分析时看到`APP`用户地域分布。
@@ -241,7 +241,7 @@ WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.frame];
 {% hint style="info" %}
 SDK 2.8.6及以上版本支持手动关闭采集地理位置数据。
 
-`//设置为NO，将关闭地理位置数据采集`  \
+`//在SDK初始化之前调用，设置为NO，将关闭地理位置信息采集`  \
 `+(void)setEnableLocationTrack:(BOOL)enable;`
 {% endhint %}
 
