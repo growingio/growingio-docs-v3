@@ -6,7 +6,7 @@
 
 | 版本    | 说明                                                                                     | 日期         |
 | ----- | -------------------------------------------------------------------------------------- | ---------- |
-| 3.7.7 | <p></p><ul><li>修复Uni-app vue2，taro2框架pageOnShow中自定义事件 ptm、path、query获取错误的问题</li></ul>  | 2022-06-08 |
+| 3.7.7 | <p></p><ul><li>修复uniapp-vue2，taro2框架pageOnShow中自定义事件 ptm、path、query获取错误的问题</li></ul>   | 2022-06-06 |
 | 3.7.6 | <ul><li>添加setLocation方法</li><li>修复setUserId判断逻辑有误导致session变更的问题</li><li>其他优化</li></ul> | 2022-05-10 |
 
 | 3.7.5 | <ul><li>移除getLocation相关逻辑</li></ul>                                                                                                                                                                      | 2022-04-29 |
