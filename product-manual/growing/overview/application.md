@@ -66,13 +66,15 @@
 ### 数据指标概念
 
 * 点击：GrowingIO 监测链接的点击数统计。
-* 进入量：访问用户进入网站进行访问的数量。
-* 访问用户量：访问用户的数量。
-* 新访问用户量：过去 365 天内首次访问用户的数量。
+* 访问量 | 推广目标页：用户从进入推广目标页到离开为止的一个操作过程记为一次访问。
+* 访问用户量 | 推广目标页：推广目标页的访问用户数量。
+* 新访问用户量 | 推广目标页：推广目标页过去 365 天首次访问的用户数量。
+
+
 
 ### **全局设定**
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LeHgAxqElp3IcWMpkcp-LeHgZ2zvDAGpbCgAnyRE59BBEE78987.png)
+![](../../../.gitbook/assets/screenshot-20220609-211357.png)
 
 | **项** | 说明 |
 | ----- | -- |
