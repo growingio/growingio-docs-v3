@@ -108,7 +108,9 @@
 
 此报表支持数据导出，通过右上角下载按钮即可导出当前表格数据。
 
-![](https://docs.growingio.com/.gitbook/assets/-LGNxeGABUADKiTWTaEM-LeHgluGjm1y4gHUszxj-LeHh0rbhQ-BNzrWQ-xTimage.png)
+支持自定义表格列数据，通过自定义指标按钮可自定义需要展示的指标。
+
+![](../../../.gitbook/assets/12345.png)
 
 ## 微信小程序推广数据
 
