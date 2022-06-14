@@ -16,34 +16,17 @@
 
 第三步: 在Chrome地址栏右侧点击 "**扩展程序**" 图标，选择插件将插件固定在导航栏，方便后续使用。
 
-
+![](../../../../../.gitbook/assets/screenshot-20220614-145917.png)
 
 ### 插件唤起 <a href="#cha-jian-huan-qi" id="cha-jian-huan-qi"></a>
 
-第一步: 在Chrome中单击右键点击检查，或使用F12唤起检查模式。
+第一步: 在谷歌浏览器地址栏中输入待圈选地址
 
-第二步: 在检查模式中选择GIO SaaS Collection插件。
-
-![](../../../../../.gitbook/assets/2.png)
+第二步: 在扩展程序中选择GIO圈选插件
 
 第三步: 输入GrowingIO账号、密码进行登陆
 
-![](<../../../../../.gitbook/assets/截屏2022-03-10 10.20.15.png>)
 
-第四步: 建议设置检查模式在右侧边栏展示。
 
-设置方法：Chrome检查模式右上角点击【三个竖立的点】选择展示形式，如下图：
 
-![](<../../../../../.gitbook/assets/3 (1).png>)
 
-### **插件报错说明**
-
-&#x20;当您安装成功插件后，会在Chrome扩展程序中看到错误提示，如下图：
-
-![](../../../../../.gitbook/assets/1.png)
-
-点击错误按钮会展示如下信息，这种情况是由于Chrome扩展程序平台自身迭代过程所引发的报错，并不影响插件的正常使用。忽略即可。详见：[https://developer.chrome.com/blog/mv2-transition/](https://developer.chrome.com/blog/mv2-transition/)
-
-![](<../../../../../.gitbook/assets/2 (1).png>)
-
-![](<../../../../../.gitbook/assets/3 (2).png>)
