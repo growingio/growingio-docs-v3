@@ -639,7 +639,7 @@ gio('getLocation')
 followShare: false,     //是否详细跟踪分享数据，关闭后不使用分享分析功能。默认true
 ```
 
-在需要分析社会关系的页面内，页面的分享方法需添加contentType、contentId字段，示例如下:
+在需要分析社会关系的页面内，页面的分享方法需添加contentType、contentId字段，SDK采集时会优先获取分享回调方法中的`path`, `title`, `contentType`, `contentId`，若没有配置则会获取页面信息。示例如下:
 
 ```javascript
 onShareAppMessage: function() {
