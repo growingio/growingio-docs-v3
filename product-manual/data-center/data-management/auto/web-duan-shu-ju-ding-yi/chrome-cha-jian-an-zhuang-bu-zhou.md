@@ -2,7 +2,7 @@
 
 ### 插件下载[​](https://docs.growingio.com/op-help/docs/2.5/product-manual/data-management/auto-track/web/auto-track-web-chrome-plugin#%E6%8F%92%E4%BB%B6%E4%B8%8B%E8%BD%BD)
 
-在 “**数据 > 事件 > 无埋点事件**" 中点击 “**创建无埋点事件 > 网页应用**“ 进入Web圈选说明页面。在页面中点击 “[**下载插件**](https://assets.giocdn.com/circle/collector/gio-saas-collection.zip)“ 下载 - GrowingIO Web Collection。
+在 “**数据 > 事件 > 无埋点事件**" 中点击 “**创建无埋点事件 > 网页应用**“ 进入Web圈选说明页面。在页面中点击 “[**下载插件**](https://assets.giocdn.com/circle/collector/gio-saas-collection.zip)“ 下载 - GrowingIO SaaS Collection。
 
 ![](<../../../../../.gitbook/assets/截屏2022-03-10 19.24.49.png>)
 
