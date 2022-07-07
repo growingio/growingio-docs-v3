@@ -1,6 +1,6 @@
 # 小程序 SDK 合规说明
 
-请使用最新 GrowingIO 小程序SDK [稳定版本](../mini-program-sdk/change-log.md) 及以上
+请使用最新 GrowingIO 小程序SDK [稳定版本](../mini-program-sdk/3.7-ji-yi-xia/change-log.md) 及以上
 
 ## 收集的数据
 

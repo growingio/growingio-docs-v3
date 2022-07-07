@@ -13,7 +13,7 @@
 3. 打开微信，进入集成了小程序SDK的小程序或内嵌页SDK的内嵌页应用中。
 4. 等待5秒左右，可以看到用户显示在页面中。
 
-在功能页面上，会展示目前进入实时数据验证实时传输数据的微信应用用户，以及部分用户微信信息、设备、操作系统的信息。但是部分信息的展示，例如用户微信名称、头像、国家、省份、城市，需要在SDK中设置微信用户属性设置。详情请见[小程序SDK 微信用户属性设置](../sdkintegrated/mini-program-sdk/minp-sdk.md#2-wei-xin-yong-hu-xin-xi-de-pei-zhi)或者[微信内嵌页微信用户信息设置](../sdkintegrated/h5-sdk/#2-gao-ji-pei-zhi)。
+在功能页面上，会展示目前进入实时数据验证实时传输数据的微信应用用户，以及部分用户微信信息、设备、操作系统的信息。但是部分信息的展示，例如用户微信名称、头像、国家、省份、城市，需要在SDK中设置微信用户属性设置。详情请见[小程序SDK 微信用户属性设置](../sdkintegrated/mini-program-sdk/3.7-ji-yi-xia/ji-cheng/minp-sdk.md#2-wei-xin-yong-hu-xin-xi-de-pei-zhi)或者[微信内嵌页微信用户信息设置](../sdkintegrated/h5-sdk/#2-gao-ji-pei-zhi)。
 
 ![](../../.gitbook/assets/xiao-cheng-xu-debugger1.jpg)
 
@@ -22,4 +22,3 @@
 和小程序/内嵌页产生交互（访问、页面浏览、点击等），以及上报的所有自定义埋点事件、变量、用户变量等，都在此页面可以看到数据实时上报的记录。
 
 ![](../../.gitbook/assets/xiao-cheng-xu-debugger2.jpg)
-

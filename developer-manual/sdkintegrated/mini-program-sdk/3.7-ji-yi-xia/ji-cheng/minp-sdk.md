@@ -1,8 +1,8 @@
-# 微信小程序 SDK
+# 微信小程序
 
 ## 准备条件
 
-获取项目ID，获取方法请参考"项目管理 > 项目概览 > [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
+获取项目ID，获取方法请参考"项目管理 > 项目概览 > [查看项目基本信息](../../../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
 
 ## 1. 添加跟踪代码
 
@@ -567,13 +567,12 @@ SDK中提供了以下几个参数可以用来进行配置。
 #### 配置`dataCollect`
 
 {% hint style="info" %}
-如果您的小程序需要进行合规检查，请参考[小程序合规说明](../compliance/xiao-cheng-xu-sdk-he-gui-shuo-ming.md)
+如果您的小程序需要进行合规检查，请参考[小程序合规说明](../../../compliance/xiao-cheng-xu-sdk-he-gui-shuo-ming.md)
 {% endhint %}
 
 默认情况下，SDK开启数据采集。如果您需要初始化时暂时关闭数据采集，可在初始化配置中设置 `dataCollect: false` 关闭采集。 初始化关闭数据采集后，至您打开数据采集之前都不会采集数据和上报。
 
-```
-
+```javascript
 gio('init', ' GrowingIO 项目ID', '您的小程序AppID', {
   version: '1.0.0',
   dataCollect: false  
@@ -600,7 +599,7 @@ gio('setDataCollect', true);
 #### 配置 `getLocation`
 
 {% hint style="info" %}
-3.7.5+版本不支持，请使用  [`setLocation`](customize-api.md#she-zhi-wei-zhi-xin-xi) `接口`
+3.7.5+版本不支持，请使用  [`setLocation`](../customize-api.md#she-zhi-wei-zhi-xin-xi) `接口`
 {% endhint %}
 
 GrowingIO SDK 默认不采集地理位置信息。
@@ -690,7 +689,7 @@ forceLogin: true, //是否强制要求调用 wx.login 获取 opend 或 unionId�
 2. 打开开发设置，到服务器域名配置部分。
 3. 在 **request 合法域名**中添加：https://wxapi.growingio.com
 
-![request 合法域名](<../../../.gitbook/assets/image (88).png>)
+![request 合法域名](<../../../../../.gitbook/assets/image (88).png>)
 
 ## 4. 微信用户信息配置
 
@@ -790,7 +789,7 @@ wx.getUserInfo({
 
 ## 5. 无埋点采集逻辑和高级配置
 
-在进行无埋点数据采集时，您需要了解和使用[无埋点采集逻辑及行为数据采集的高级配置](wu-mai-dian-cai-ji-luo-ji-he-gao-ji-pei-zhi.md)
+在进行无埋点数据采集时，您需要了解和使用[无埋点采集逻辑及行为数据采集的高级配置](../wu-mai-dian-cai-ji-luo-ji-he-gao-ji-pei-zhi.md)
 
 ## 6. 自定义数据上传API
 
@@ -798,21 +797,21 @@ wx.getUserInfo({
 小程序自定义数据上报的埋点代码，建议放在onShow的生命周期函数之后。
 {% endhint %}
 
-自定义数据上传API，请参考[自定义数据上传API](customize-api.md)。
+自定义数据上传API，请参考[自定义数据上传API](../customize-api.md)。
 
 ## 7. 创建应用
 
 请在添加了跟踪代码的微信小程序重新启动几次，发送数据给 GrowingIO。
 
-在GrowingIO平台的创建微信小程序应用。创建应用请参考查看[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
+在GrowingIO平台的创建微信小程序应用。创建应用请参考查看[创建应用](../../../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
 
 ## 8. 验证SDK是否正常采集数据
 
-了解GrowingIO平台数据采集类型请参考[数据模型](../../../introduction/datamodel/)。
+了解GrowingIO平台数据采集类型请参考[数据模型](../../../../../introduction/datamodel/)。
 
 GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 
-方式一：[小程序&内嵌页Debugger](../../debugging/minpdebugger.md)
+方式一：[小程序&内嵌页Debugger](../../../../debugging/minpdebugger.md)
 
 方式二：在SDK中设置了Debug模式后，在微信开发者工具中查看数据采集日志。
 

@@ -18,7 +18,7 @@
 
 {% tabs %}
 {% tab title="例一：页面级变量作为维度" %}
-常用于商品详情页、搜索结果页等由同一个模板\(类\)填充的多个页面，以便区分这些页面间不同的业务含义。例如商品详情页可用页面级变量来标记：商品名称、商品 ID、品类、价格等信息。如图示：
+常用于商品详情页、搜索结果页等由同一个模板(类)填充的多个页面，以便区分这些页面间不同的业务含义。例如商品详情页可用页面级变量来标记：商品名称、商品 ID、品类、价格等信息。如图示：
 
 ![](../../.gitbook/assets/ye-mian-ji-bian-liang-.png)
 
@@ -54,22 +54,21 @@ GrowingIO 推荐设置一个页面级变量来保存页面的类型信息。我�
 
 
 
-## 页面变量的配置和上传 <a id="zi-ding-yi-bian-liang-de-pei-zhi-he-shang-chuan"></a>
+## 页面变量的配置和上传 <a href="#zi-ding-yi-bian-liang-de-pei-zhi-he-shang-chuan" id="zi-ding-yi-bian-liang-de-pei-zhi-he-shang-chuan"></a>
 
-### **第一步：在 “事件和变量”中完成配置** <a id="di-yi-bu-zai-shi-jian-he-bian-liang-zhong-wan-cheng-pei-zhi"></a>
+### **第一步：在 “事件和变量”中完成配置** <a href="#di-yi-bu-zai-shi-jian-he-bian-liang-zhong-wan-cheng-pei-zhi" id="di-yi-bu-zai-shi-jian-he-bian-liang-zhong-wan-cheng-pei-zhi"></a>
 
 参考上述场景示例，配合梳理业务需求并完成“指标+维度”的设计，确认需要将哪些变量设置为页面级变量，请勿直接开始代码的部署，需要先到 GrowingIO 要求先在打点管理的界面上进行变量的声明操作。
 
 配置方式参考[事件变量](../../product-manual/data-center/data-management/event.md)。
 
-### **第二步：代码部署** <a id="di-er-bu-dai-ma-bu-shu"></a>
+### **第二步：代码部署** <a href="#di-er-bu-dai-ma-bu-shu" id="di-er-bu-dai-ma-bu-shu"></a>
 
 完成了配置后，即可在代码中完成以上设计的 “自定义事件和变量” 的部署。具体的说，就是调用 GrowingIO 提供的 API 接口，上传数据。
 
 * [JS 接口文档​](../../developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/)
 * ​[Android 接口文档​](../../developer-manual/sdkintegrated/android-sdk/android-sdk-api/)
 * ​[iOS 接口文档​](../../developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/)
-* [​小程序、小游戏以及内嵌页 SDK​](../../developer-manual/sdkintegrated/mini-program-sdk/customize-api.md)
+* [​小程序、小游戏以及内嵌页 SDK​](../../developer-manual/sdkintegrated/mini-program-sdk/3.7-ji-yi-xia/customize-api.md)
 
 API中给出了页面级变量的上传方式。
-

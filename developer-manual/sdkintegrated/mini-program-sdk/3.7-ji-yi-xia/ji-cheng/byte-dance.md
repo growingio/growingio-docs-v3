@@ -1,8 +1,8 @@
-# 字节跳动小程序SDK
+# 字节跳动小程序
 
 ## 准备条件
 
-获取项目ID，获取方法请参考"项目管理 > 项目概览 > [查看项目基本信息](../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
+获取项目ID，获取方法请参考"项目管理 > 项目概览 > [查看项目基本信息](../../../../../product-manual/projectmange/details.md#cha-kan-xiang-mu-ji-ben-xin-xi)"。
 
 ## 1. 添加跟踪代码
 
@@ -184,7 +184,7 @@ gio('init', '您的项目ID', '您的字节小程序AppID', { version: '1.0', fo
 #### 配置 `getLocation`
 
 {% hint style="info" %}
-3.7.5+版本不支持，请使用  [`setLocation`](customize-api.md#she-zhi-wei-zhi-xin-xi) `接口`
+3.7.5+版本不支持，请使用  [`setLocation`](../customize-api.md#she-zhi-wei-zhi-xin-xi) `接口`
 {% endhint %}
 
 GrowingIO SDK 默认不采集地理位置信息。
@@ -329,21 +329,21 @@ wx.getUserInfo({
 
 ## 5. 无埋点采集逻辑和高级配置
 
-在进行无埋点数据采集时，您需要了解和使用[无埋点采集逻辑及行为数据采集的高级配置](wu-mai-dian-cai-ji-luo-ji-he-gao-ji-pei-zhi.md)
+在进行无埋点数据采集时，您需要了解和使用[无埋点采集逻辑及行为数据采集的高级配置](../wu-mai-dian-cai-ji-luo-ji-he-gao-ji-pei-zhi.md)
 
 ## 6. 自定义数据上传API
 
-自定义数据上传API，请参考[自定义数据上传API](customize-api.md)。
+自定义数据上传API，请参考[自定义数据上传API](../customize-api.md)。
 
 ## 7. 创建应用
 
 请在添加了跟踪代码的字节小程序重新启动几次，发送数据给 GrowingIO。
 
-在GrowingIO平台的创建字节小程序应用。创建应用请参考查看[创建应用](../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
+在GrowingIO平台的创建字节小程序应用。创建应用请参考查看[创建应用](../../../../../product-manual/projectmange/application-manage.md#chuang-jian-ying-yong)。
 
 ## 8. 验证SDK是否正常采集数据
 
-方式一：[小程序&内嵌页Debugger](../../debugging/minpdebugger.md)
+方式一：[小程序&内嵌页Debugger](../../../../debugging/minpdebugger.md)
 
 方式二：在SDK中设置了Debug模式后，在开发者工具中查看数据采集日志。
 

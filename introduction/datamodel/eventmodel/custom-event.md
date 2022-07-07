@@ -21,7 +21,7 @@
 * [WEB JS SDK](../../../developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/)
 * [iOS](../../../developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/customize-api.md)
 * [Android](../../../developer-manual/sdkintegrated/android-sdk/android-sdk-api/customize-api.md)
-* [小程序](../../../developer-manual/sdkintegrated/mini-program-sdk/customize-api.md)
+* [小程序](../../../developer-manual/sdkintegrated/mini-program-sdk/3.7-ji-yi-xia/customize-api.md)
 
 ### 服务端埋点
 
@@ -31,4 +31,3 @@
 * 线下营销活动数据录入，无法通过无埋点事件进行分析
 
 客户可以在服务端通过调用 GrowingIO 的服务器埋点事件接口来发送埋点事件。
-

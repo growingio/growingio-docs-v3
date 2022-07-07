@@ -1,6 +1,6 @@
 # 埋点事件和事件级变量
 
-## 1. 数据规划 <a id="di-yi-bu-cong-shu-ju-xu-qiu-dao-ju-ti-zhi-biao-wei-du"></a>
+## 1. 数据规划 <a href="#di-yi-bu-cong-shu-ju-xu-qiu-dao-ju-ti-zhi-biao-wei-du" id="di-yi-bu-cong-shu-ju-xu-qiu-dao-ju-ti-zhi-biao-wei-du"></a>
 
 数据规划就是将数据需求转化为具体的“指标+维度”。
 
@@ -35,7 +35,7 @@ Android、iOS 以及 Web 端三端不需要区分：对于这三端，可以只�
 举例来说，“订单总量”这个指标可以包含三端的总量，在 GrowingIO 平台分析时使用预定义维度“网站/手机应用”或者“操作系统”就可以拆分三端分别的量。
 {% endhint %}
 
-## 2. 平台数据声明 <a id="di-er-bu-zai-mai-dian-guan-li-zhong-wan-cheng-pei-zhi"></a>
+## 2. 平台数据声明 <a href="#di-er-bu-zai-mai-dian-guan-li-zhong-wan-cheng-pei-zhi" id="di-er-bu-zai-mai-dian-guan-li-zhong-wan-cheng-pei-zhi"></a>
 
 在GrowingIO平台声明事件和事件级变量。
 
@@ -52,7 +52,7 @@ Android、iOS 以及 Web 端三端不需要区分：对于这三端，可以只�
 * ​[JS 接口文档​](../../../developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/)
 * ​[Android 接口文档​](../../../developer-manual/sdkintegrated/android-sdk/android-sdk-api/)
 * ​[iOS 接口文档​](../../../developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/)
-* [​小程序、小游戏以及内嵌页 SDK​](../../../developer-manual/sdkintegrated/mini-program-sdk/customize-api.md)
+* [​小程序、小游戏以及内嵌页 SDK​](../../../developer-manual/sdkintegrated/mini-program-sdk/3.7-ji-yi-xia/customize-api.md)
 
 API 中给出了埋点事件和事件级变量的上传方式。
 
@@ -64,11 +64,11 @@ API 中给出了埋点事件和事件级变量的上传方式。
 
 以原生Android 无埋点 SDK为例：
 
-在SDK中开启Debug：Android 无埋点 SDK &gt; [设置Debug模式](../../../developer-manual/sdkintegrated/android-sdk/auto-android-sdk.md#8-she-zhi-debug-mo-shi)。
+在SDK中开启Debug：Android 无埋点 SDK > [设置Debug模式](../../../developer-manual/sdkintegrated/android-sdk/auto-android-sdk.md#8-she-zhi-debug-mo-shi)。
 
 在开发者工具中查看日志，如下图：
 
-![](../../../.gitbook/assets/image%20%2870%29.png)
+![](<../../../.gitbook/assets/image (70).png>)
 
 ![](../../../.gitbook/assets/debug-mo-shi-.png)
 
@@ -78,4 +78,3 @@ API 中给出了埋点事件和事件级变量的上传方式。
 * 使用debug 工具，来帮助您进行数据的校验。具体请参考[SDK调试](../../../developer-manual/debugging/)。
 * App及小程序可以使用数据校验功能校验进行[数据校验](https://docs.growingio.com/v3/product-manual/data-center/datacheck/)。
 {% endhint %}
-

@@ -258,7 +258,7 @@ gio('track', 'testImp', { foo: 'bar', baz: 'qux'})
 
 ## 4. 自定义数据上传API
 
-自定义数据上传API，请参考[自定义数据上传API](../mini-program-sdk/customize-api.md)。
+自定义数据上传API，请参考[自定义数据上传API](../mini-program-sdk/3.7-ji-yi-xia/customize-api.md)。
 
 ## 5. 创建应用
 

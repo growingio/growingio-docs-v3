@@ -42,7 +42,7 @@ GrowingIO在所有平台的SDK中都提供了对应的API来实现应用运行�
 * [Web JS SDK](../../../developer-manual/sdkintegrated/web-js-sdk/)
 * [iOS SDK](../../../developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/)
 * [Android SDK](../../../developer-manual/sdkintegrated/android-sdk/android-sdk-api/)
-* [微信小程序 SDK](../../../developer-manual/sdkintegrated/mini-program-sdk/customize-api.md)
+* [微信小程序 SDK](../../../developer-manual/sdkintegrated/mini-program-sdk/3.7-ji-yi-xia/customize-api.md)
 
 ### 通过用户属性上传API上传用户属性（登录用户属性Only）
 

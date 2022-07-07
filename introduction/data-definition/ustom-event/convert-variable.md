@@ -4,7 +4,7 @@
 
 在 GrowingIO 的一个项目内，转化变量的个数上限为 10 个。如果您所创建的转化变量已达上限，请联系您的客户成功经理或邀请技术支持进行扩容。
 
-## **转化变量的使用场景** <a id="zhuan-hua-bian-liang-de-shi-yong-chang-jing"></a>
+## **转化变量的使用场景** <a href="#zhuan-hua-bian-liang-de-shi-yong-chang-jing" id="zhuan-hua-bian-liang-de-shi-yong-chang-jing"></a>
 
 转化变量可以用于回答下列业务问题，用户可以通过内部活动、搜索、导航等各个不同的入口访问到产品详情产生转化，那么，哪个入口的效果更好呢？使用不同的归因方式，得到的结论是不同的。
 
@@ -12,11 +12,11 @@
 * 使用线性归因模型，内部搜索的效果怎样，某个具体的搜索词带来了多少订单，营业收入。
 * 使用最近归因模型，同一个内部活动的不同入口分别带来了多少内部活动详情页面的浏览。
 
-## **归因方式** <a id="gui-yin-fang-shi"></a>
+## **归因方式** <a href="#gui-yin-fang-shi" id="gui-yin-fang-shi"></a>
 
 当发生一个事件的时候，GrowingIO 会通过转化变量中配置的归因模型，去计算应该将这个事件归到转化变量中的哪一个有效值上，转化变量目前支持以下三种归因模型：
 
-### **最近（Most Recent）** <a id="zui-jin-most-recent"></a>
+### **最近（Most Recent）** <a href="#zui-jin-most-recent" id="zui-jin-most-recent"></a>
 
 **当事件发生时，往前看，事件所有的权重将全部分配给转化变量中还在持久性范围之内并且离事件发生的时间点最近的值上。**
 
@@ -27,10 +27,10 @@
 由于这个用户的操作，GrowingIO 上将看到类似于这样的报表：
 
 | **内部活动代码** | **订单量** |
-| :--- | :--- |
-| abcd0003 | +1 |
+| ---------- | ------- |
+| abcd0003   | +1      |
 
-### **线性（Linear）** <a id="xian-xing-linear"></a>
+### **线性（Linear）** <a href="#xian-xing-linear" id="xian-xing-linear"></a>
 
 **当事件发生时，往前看，事件所有的权重将平均分配所有还在持久性范围之内，还没有失效的那些值上。**
 
@@ -41,16 +41,16 @@
 由于这个用户的操作，GrowingIO 上将看到类似于这样的报表：
 
 | **内部活动代码** | **订单量** |
-| :--- | :--- |
-| abcd0001 | +0.333 |
-| abcd0002 | +0.333 |
-| abcd0003 | +0.333 |
+| ---------- | ------- |
+| abcd0001   | +0.333  |
+| abcd0002   | +0.333  |
+| abcd0003   | +0.333  |
 
 {% hint style="warning" %}
 使用限制：在使用分析工具对事件进行维度拆分时，线性归因的转化变量不能与事件级变量、页面级变量同时作为维度使用。
 {% endhint %}
 
-### **最初（First）** <a id="zui-chu-first"></a>
+### **最初（First）** <a href="#zui-chu-first" id="zui-chu-first"></a>
 
 **当事件发生时，往前看，事件所有的权重将全部分配给转化变量中还在持久性范围之内并且离事件发生的时间点最远的那个值上。从用户的角度来说也就是还在持久性范围之内的最初的那个值获得发生事件的所有权重。**
 
@@ -61,12 +61,12 @@
 由于这个用户的操作，GrowingIO 上将看到类似于这样的报表：
 
 | **内部活动代码** | **订单量** |
-| :--- | :--- |
-| abcd0001 | +1 |
+| ---------- | ------- |
+| abcd0001   | +1      |
 
 请注意，虽然GrowingIO 支持在声明并且使用了一段时间的某一个转化变量上进行更改归因方式的操作，但是归因方式的改变将导致该转化变量的报表上展现的数据将出现两种或者多种归因方式混合的情况。这将导致数据出现错误，从错误的数据得出的结论也是错误的。所以，GrowingIO 建议重新启用新的转化变量来实现更改归因方式的需求。
 
-## **失效时间** <a id="shi-xiao-shi-jian"></a>
+## **失效时间** <a href="#shi-xiao-shi-jian" id="shi-xiao-shi-jian"></a>
 
 对于转换变量来讲，失效时间是一个配置项。GrowingIO 目前支持访问，一天，一周，一月这四种失效的配置项。这四种配置项的意义分别是：
 
@@ -82,22 +82,22 @@
 * 如果失效是一周，保存在转化变量中的站内搜索词“手机”在下周一早上的七点十五分失效。
 * 如果失效是一月，保存在转化变量中的站内搜索词“手机”将在三十天之后的早上七点十五分失效。
 
-## 转化变量的配置和上传 <a id="zi-ding-yi-bian-liang-de-pei-zhi-he-shang-chuan"></a>
+## 转化变量的配置和上传 <a href="#zi-ding-yi-bian-liang-de-pei-zhi-he-shang-chuan" id="zi-ding-yi-bian-liang-de-pei-zhi-he-shang-chuan"></a>
 
-### **第一步：配置 "归因方式" 和 "失效时间"** <a id="di-yi-bu-zai-shi-jian-he-bian-liang-zhong-wan-cheng-pei-zhi"></a>
+### **第一步：配置 "归因方式" 和 "失效时间"** <a href="#di-yi-bu-zai-shi-jian-he-bian-liang-zhong-wan-cheng-pei-zhi" id="di-yi-bu-zai-shi-jian-he-bian-liang-zhong-wan-cheng-pei-zhi"></a>
 
 参考开始讲到的使用场景，配合梳理业务需求并完成“指标 + 维度”的设计，确认需要将哪些变量设置为页转化变量，请勿直接开始代码的部署,需要先到 GrowingIO 后台找到 数据管理 功能，在界面中完成对应的配置。
 
 配置方式请参考[转化变量](../../../product-manual/data-center/data-management/conversion.md)。
 
-### **第二步：代码部署** <a id="di-er-bu-dai-ma-bu-shu"></a>
+### **第二步：代码部署** <a href="#di-er-bu-dai-ma-bu-shu" id="di-er-bu-dai-ma-bu-shu"></a>
 
 完成了配置后，即可在代码中完成以上设计的 “自定义事件和变量” 的部署。具体的说，就是调用 GrowingIO 提供的 API 接口，上传数据。
 
 * [JS 接口文档​](../../../developer-manual/sdkintegrated/web-js-sdk/web-sdk-api/)
 * ​[Android 接口文档​](../../../developer-manual/sdkintegrated/android-sdk/android-sdk-api/)
 * ​[iOS 接口文档​](../../../developer-manual/sdkintegrated/ios-sdk/ios-sdk-api/)
-* [​小程序、小游戏以及内嵌页 SDK​](../../../developer-manual/sdkintegrated/mini-program-sdk/customize-api.md)
+* [​小程序、小游戏以及内嵌页 SDK​](../../../developer-manual/sdkintegrated/mini-program-sdk/3.7-ji-yi-xia/customize-api.md)
 
 API中给出了转化变量的上传方式
 
@@ -107,9 +107,8 @@ API中给出了转化变量的上传方式
 转化变量的归因计算是以自然天为单位的，也就是说当天发生的转化行为，需要第二天才能够在 GrowingIO 后台图表中进行分析。
 {% endhint %}
 
-## 分析场景示例 <a id="fen-xi-chang-jing-shi-li"></a>
+## 分析场景示例 <a href="#fen-xi-chang-jing-shi-li" id="fen-xi-chang-jing-shi-li"></a>
 
 在电商购物场景中，可将促使用户下单的前序行为如：活动页浏览、搜索、站内banner 点击等，定义为转化变量，用于分解下单行为。例如，我们在用户进行搜索时，通过转化变量上传其输入的搜索词，即可在 GrowingIO 后台按以下方式分解不同搜索词带来的下单转化：
 
 ![](https://docs.growingio.com/.gitbook/assets/zhuanhuabianliang.png)
-
