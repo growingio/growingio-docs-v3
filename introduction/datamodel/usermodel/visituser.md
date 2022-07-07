@@ -40,7 +40,7 @@ GrowingIO 会按照如下顺序获取访问用户ID：
 
 ### 小程序 SDK
 
-GrowingIO默认使用 UUID（随机 UUID 的方法生成访问用户 ID，并将之记录在浏览器的 Cookie 中）来作为访问用户 ID，您也可以通过 API 设置使用 openid 作为访问用户ID。
+GrowingIO默认使用 UUID 来作为访问用户 ID，您也可以通过 API 设置使用 openid 作为访问用户ID。
 
 访问用户ID 将保存到 storage 中。
 
