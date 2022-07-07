@@ -42,7 +42,7 @@ GrowingIO 会按照如下顺序获取访问用户ID：
 
 GrowingIO默认使用 UUID（随机 UUID 的方法生成访问用户 ID，并将之记录在浏览器的 Cookie 中）来作为访问用户 ID，您也可以通过 API 设置使用 openid 作为访问用户ID。
 
-访问用户ID 将保存到微信浏览器的 cookie 中。
+访问用户ID 将保存到 storage 中。
 
 [访问用户ID生成机制详细说明](visituser.md#10-ke-hu-duan-sdkdeviceid-sheng-cheng-ji-zhi-jian-yao-luo-ji-shi-shen-me)
 
@@ -103,7 +103,7 @@ uuid = UUID.nameUUIDFromBytes(imi.getBytes(Charset.forName("UTF-8"))).toString()
 uuid = UUID.randomUUID().toString();
 ```
 
-小程序：如果SDK设置了强制登录模式，小程序打开时调用 wx.login 获取openid或unionId，且调用 identify 上报，会使用第一参数 作为 访问用户 ID ，否则会自动生成 随机访问用户ID。访问用户ID 将保存到微信浏览器的 cookie 中。
+小程序：如果SDK设置了强制登录模式，小程序打开时调用 wx.login 获取openid或unionId，且调用 identify 上报，会使用第一参数 作为 访问用户 ID ，否则会自动生成 随机访问用户ID。访问用户ID 将保存到 storage 中。
 
 Web: 随机访问用户ID 存储在 localStorage 中，永久有效。
 
