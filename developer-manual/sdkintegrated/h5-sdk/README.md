@@ -149,7 +149,7 @@ gio('init', '你的项目ID'[,'微信App_id'], { setImp:false, hashtag: true });
 
 如您需要使用 openId 或 unionId 标识访问用户，可以在初始化配置中设置 `forceLogin: true` 来打开强制登录模式。
 
-强制登录模式适用于加载页面就调用 `wx.login` ([参考文档](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/login/wx.login.html)) 获取 openId 或 unionId 。 开启此模式并调用 `identity` 上报 openid 或 unionId，会将上报的 Id 作为访问用户ID，平台统计数据中访问用户量会与微信后台的比较接近。
+强制登录模式适用于打开页面就调用 `wx.login` ([参考文档](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/login/wx.login.html)) 获取 openId 或 unionId 。 开启此模式并调用 `identity` 上报 openid 或 unionId，会将上报的 Id 作为访问用户ID，平台统计数据中访问用户量会与微信后台的比较接近。
 
 设置`forceLogin`为`true`后，SDK会继续采集但暂停上报数据，待调用 `wx.login`后获取 openId 或 unionId，调用 `identify` 方法后开始数据上报。**调用 `identify` 会替换事件数据的 u(访问用户ID) 字段的值 为设定值（一般是 openId 或 unionId），包括调用`identify`之前触发的事件**
 
@@ -164,7 +164,7 @@ forceLogin: true, //是否强制要求调用 wx.login 获取 opend 或 unionId�
 {% hint style="danger" %}
 适用于打开页面调用 `wx.login` 获取 openId 或 unionId 。
 
-SDK初始化时配置了 `forceLogin` 为 `true`，如果打开页面后没有调用 `wx.login` 获取 openId 或 unionId，没有调用 `identify` 方法，会导致SDK不能上报数据，访问数据将大幅减少。如果调用了`，但时机页面打开时，而在页面使用中较晚的时机，在调用之前若页面关闭则会造成此次访问过程中采集的数据丢失。`\
+SDK初始化时配置了 `forceLogin` 为 `true`，如果打开页面后没有调用 `wx.login` 获取 openId 或 unionId，没有调用 `identify` 方法，会导致SDK不能上报数据，访问数据将大幅减少。如果调用了`，但时机不在页面打开时，而在页面使用中较晚的时机，在调用之前若页面关闭则会造成此次访问过程中采集的数据丢失。`\
 如果您不能确定是否要设置这个参数，请先咨询我们技术支持
 {% endhint %}
 
@@ -174,7 +174,7 @@ SDK初始化时配置了 `forceLogin` 为 `true`，如果打开页面后没有�
 
 上报微信信息，支持按照 openId、unionId 进行用户分群，以及使用微信推送等高级功能。
 
-当您的页面调用 `wx.login` 获取到 openId、unionId 后，可以通过 `identify` 接口绑定微信用户 openId 、unionId，后续在 GrowingIO 平台用户分群功能使用。
+当页面调用 `wx.login` 获取到 openId、unionId 后，可以通过 `identify` 接口绑定微信用户 openId 、unionId，后续在 GrowingIO 平台用户分群功能使用。
 
 **接口定义**
 
