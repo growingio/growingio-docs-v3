@@ -123,11 +123,12 @@ Page({
 
 内嵌页 SDK 还有以下额外参数可以使用：
 
-| 参数      | 值             | 解释                                                                                                                    |
-| ------- | ------------- | --------------------------------------------------------------------------------------------------------------------- |
-| hashtag | true \| false | GrowingIO默认不会把 hashtag 识别成页面 URL 的一部分。对于使用 hashtag 进行页面跳转的单页面网站应用来说，可以启用 hashtag 作为标识页面的一部分，将hashtag设置为true，默认为false。 |
-| debug   | true \| false | 开启debug可以进行数据的实时调试，默认为false，调试方式为打开开发者工具，在console中查看。                                                                 |
-| touch   | true \| false | 设置是否支持touch事件，如果为true则会采集touch事件，否则采集click事件。sdk中会判断当前是否支持touch事件设置默认值。                                               |
+| 参数          | 值              | 解释                                                                                                                    |
+| ----------- | -------------- | --------------------------------------------------------------------------------------------------------------------- |
+| hashtag     | true \| false  | GrowingIO默认不会把 hashtag 识别成页面 URL 的一部分。对于使用 hashtag 进行页面跳转的单页面网站应用来说，可以启用 hashtag 作为标识页面的一部分，将hashtag设置为true，默认为false。 |
+| debug       | true \| false  | 开启debug可以进行数据的实时调试，默认为false，调试方式为打开开发者工具，在console中查看。                                                                 |
+| touch       | true \| false  | 设置是否支持touch事件，如果为true则会采集touch事件，否则采集click事件。sdk中会判断当前是否支持touch事件设置默认值。                                               |
+| forceLogin  |  true \| false | 是否开启强制登录模式，默认 false                                                                                                   |
 
 ### 启用hashtag识别
 
@@ -140,42 +141,128 @@ GrowingIO默认不会把 hashtag 识别成页面 URL 的一部分。对于使用
 gio('init', '你的项目ID'[,'微信App_id'], { setImp:false, hashtag: true });
 ```
 
-### 微信用户ID 和 用户属性 <a href="#sdk-wei-xin-yong-hu-shu-xing-she-zhi" id="sdk-wei-xin-yong-hu-shu-xing-she-zhi"></a>
+### 强制登录模式
 
-作为用户行为数据分析工具，用户信息的完善会给后续的分析带来很大的帮助。在微信内嵌页中，微信用户属性是非常重要的设置，只有完善了微信用户属性信息，微信的访问用户变量（如下表）才可以在分析工具中使用，交互数据定义、数据校验功能才会方便通过用户微信相关的信息（微信姓名和头像）定位用户。
+**配置`forceLogin`**
 
-下面是专门针对用户的两个个接口。
+默认情况下，SDK 会自动生成访问用户ID来标识访问用户，存储在微信 Storage 里面。这个用户标识符潜在可能会被`clearStorage` 清除掉，所以有可能不同的自动生成访问用户ID对应同一个微信里的 `OpenID。`
 
-#### 绑定微信用户ID <a href="#bang-ding-wei-xin-yong-hu-id" id="bang-ding-wei-xin-yong-hu-id"></a>
+如您需要使用 openId 或 unionId 标识访问用户，可以在初始化配置中设置 `forceLogin: true` 来打开强制登录模式。
 
-当用户在你的微信内嵌页上授权获取到 openid 后，可以用过 `identify` 接口绑定微信用户ID，后续在 GrowingIO 中使用微信ID创建用户分群。示例代码如下：
+强制登录模式适用于加载页面就调用 `wx.login` ([参考文档](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/login/wx.login.html)) 获取 openId 或 unionId 。 开启此模式并调用 `identity` 上报 openid 或 unionId，会将上报的 Id 作为访问用户ID，平台统计数据中访问用户量会与微信后台的比较接近。
+
+设置`forceLogin`为`true`后，SDK会继续采集但暂停上报数据，待调用 `wx.login`后获取 openId 或 unionId，调用 `identify` 方法后开始数据上报。**调用 `identify` 会替换事件数据的 u(访问用户ID) 字段的值 为设定值（一般是 openId 或 unionId），包括调用`identify`之前触发的事件**
+
+需在初始化配置项将 forceLogin 配置如下:
 
 ```javascript
-wx.request({ 
-  url: 'https://YOUR_HOST_NAME/wechat/code2key',
-  method: 'GET',
-  data: { code: res.code }
-  success: res => 
-    var openid = res.data.openid;
-    var unionid = res.data.unionid;
-    // ...
-    gio('identify', res.data.openid, res.data.unionid)
+forceLogin: true, //是否强制要求调用 wx.login 获取 opend 或 unionId。默认 false
+```
+
+获取到 openId 或  unionId 后调用 [`identify`](./#bang-ding-wei-xin-yong-hu-openid-unionid) 接口。
+
+{% hint style="danger" %}
+适用于打开页面调用 `wx.login` 获取 openId 或 unionId 。
+
+SDK初始化时配置了 `forceLogin` 为 `true`，如果打开页面后没有调用 `wx.login` 获取 openId 或 unionId，没有调用 `identify` 方法，会导致SDK不能上报数据，访问数据将大幅减少。如果调用了`，但时机页面打开时，而在页面使用中较晚的时机，在调用之前若页面关闭则会造成此次访问过程中采集的数据丢失。`\
+如果您不能确定是否要设置这个参数，请先咨询我们技术支持
+{% endhint %}
+
+### 微信用户信息配置
+
+#### 绑定微信用户 openId 、unionId
+
+上报微信信息，支持按照 openId、unionId 进行用户分群，以及使用微信推送等高级功能。
+
+当您的页面调用 `wx.login` 获取到 openId、unionId 后，可以通过 `identify` 接口绑定微信用户 openId 、unionId，后续在 GrowingIO 平台用户分群功能使用。
+
+**接口定义**
+
+```java
+gio('identify', openId, unionId)
+```
+
+**参数说明**
+
+| 参数      | 类型     | 是否必须 | 说明           |
+| ------- | ------ | ---- | ------------ |
+| openId  | string | 是    | 获取到的  openId |
+| unionId | string | 否    | 获取到的 unionId |
+
+**示例代码**
+
+```java
+wx.login({
+  success (res) {
+    if (res.code) {
+      //发起网络请求
+      wx.request({
+        url: 'https://example.com/onLogin',
+        data: {
+          code: res.code
+        },
+        success: res => {
+          var openid = res.data.openid;
+          var unionid = res.data.unionid;
+          // ...
+          gio('identify', res.data.openid, res.data.unionid)
+        }
+      })
+    } else {
+      console.log('登录失败！' + res.errMsg)
+    }
+  }
 })
 ```
 
-#### 设置微信用户信息 <a href="#she-zhi-wei-xin-yong-hu-xin-xi" id="she-zhi-wei-xin-yong-hu-xin-xi"></a>
+{% hint style="danger" %}
+如果 SDK 初始化配置项中 **没有配置** `forceLogin` 为 true，而调用了该接口， **** u(访问用户ID) 字段的值会是自动生成的访问用户ID。**如果配置了**，调用此接口后，u(访问用户ID) 字段的值会是 参数 openId 的值。
 
-当用户在你的微信内嵌页上绑定微信信息后，可以通过 `setVisitor` 接口设置微信用户信息，后续在 GrowingIO 中，使用访问用户变量分析这个数据。示例代码如下：
+调用 `identify 接口会发送 vstr(访问用户变量)事件，但是 openId，unionId 不能作为访问用户变量来使用，会在`GrowingIO 平台用户分群功能使用。
+{% endhint %}
 
-```javascript
-wx.getUserInfo({
+#### 微信用户属性设置
+
+作为用户行为数据分析工具，用户信息的完善会给后续的分析带来很大的帮助。在页面中，微信用户属性是非常重要的设置，只有完善了微信用户属性信息，系统自带的微信访问用户变量（如下表）才可以在分析工具中使用，交互数据定义、数据校验功能才会方便通过用户微信相关的信息（微信姓名和头像）定位用户。
+
+| 系统自带的微信访问用户变量 |
+| ------------- |
+| 微信用户所在城市      |
+| 微信用户所在省       |
+| 微信用户所在国家      |
+| 微信用户的性别       |
+
+当页面上获取到微信用户信息后，可以通过 `setVisitor` 接口上报微信用户信息，后续在 GrowingIO 平台中使用上述变量分析微信用户属性数据。
+
+**接口定义**
+
+```java
+gio('setVisitor', userInfo)
+```
+
+**参数说明**
+
+| 名称       | 类型     | 是否必须 | 说明     |
+| -------- | ------ | ---- | ------ |
+| userInfo | Object | 是    | 微信用户信息 |
+
+**示例代码**
+
+```java
+wx.getUserInfo({ 
   success: res => 
     // ...
     gio('setVisitor', res.userInfo);
 })
 ```
 
-微信信息包含**微信昵称**、**微信头像**。
+{% hint style="info" %}
+微信用户信息包含**微信昵称**、**微信头像**、**性别**、**微信所填国家**、**微信所填省份**、**微信所填城市**。
+
+性别、微信所填国家、微信所填省份、微信所填城市会作为访问用户变量，这些访问用户变量标识符平台会自动生成，无需添加配置。
+
+用户画像中的部分数据，只有在设置微信用户信息后，才可以统计。
+{% endhint %}
 
 ### 登录用户ID <a href="#deng-lu-yong-hu-id" id="deng-lu-yong-hu-id"></a>
 
