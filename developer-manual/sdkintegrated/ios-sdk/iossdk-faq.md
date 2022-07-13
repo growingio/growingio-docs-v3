@@ -16,7 +16,7 @@
 
 ## 3. SDK与其他SDK冲突报错，集成其他SDK后不采集数据，SDK开启debug模式无日志输出，APP在部分机型上没有采集到数据，该如何处理？
 
-SDK 支持两种采集模式 Method Swizzling 和 KVO，默认情况下为  KVO。如果您出现问题中的情况，请按照下面方法尝试解决：在 main 方法实现的第一行中添加 `[Growing setAspectMode:GrowingAspectModeDynamicSwizzling];` 。如果工程是是Swift 语言开发的，在 UIAPplicationMain 函数的上方添加 `Growing.setAspectMode(.dynamicSwizzling)`&#x20;
+SDK 支持两种采集模式 Method Swizzling 和 KVO，默认情况下为  KVO。如果您出现问题中的情况，请按照下面方法尝试解决：在 main 方法实现的第一行中添加 `[Growing setAspectMode:GrowingAspectModeDynamicSwizzling];` 。如果工程是Swift 语言开发的，在 UIAPplicationMain 函数上方添加 `Growing.setAspectMode(.dynamicSwizzling)`&#x20;
 
 ## 4. 如果动态添加UIView、删除UIView或者修改UIView在父视图中的位置，会有什么影响？
 
