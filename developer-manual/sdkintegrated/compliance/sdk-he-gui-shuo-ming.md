@@ -112,7 +112,7 @@ public class MyApplication extends Application {
 SDK版本需在 2.9.12及以上。如果配置有[AppLink](../../../product-manual/growing/product-configuration/deeplink.md#3.2-applinks-pei-zhi)，则在`enableDataCollect 之后可用`。
 {% endhint %}
 
-GrowingIO SDK 提供 `disableDataCollect` 接口，可在用户不同意隐私协议时，调用该接口， 禁止数据采集；在用户同意隐私协议时，调用 `enableDataCollect` 接口， 开启数据采集
+GrowingIO SDK 提供 `disableDataCollect` 接口，可在用户不同意隐私协议时，调用该接口， 禁止数据采集；在用户同意隐私协议时，调用 `enableDataCollect` 接口， 开启数据采集。若希望在开启数据采集前禁止获取 AndroidID ，请在 SDK 初始化配置项中设置 `.setAndroidIdEnable(false)`
 
 ```
 // Application 的 onCreate() 方法中主线程初始化 SDK
