@@ -15,6 +15,10 @@
 * mpvue / uni-app 框架
 * chameleon 框架
 
+{% hint style="warning" %}
+如果您使用有GrowingIO 小程序运营SDK， 且集成本文档中的SDK版本 >=3.7.4，请在初始化SDK时，增加配置项 `enableEventStore: true`
+{% endhint %}
+
 {% tabs %}
 {% tab title="原生框架" %}
 #### 1. 根据下载小程序采集SDK
