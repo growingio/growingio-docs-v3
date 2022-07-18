@@ -18,7 +18,7 @@ GrowingIO gio = GrowingIO.getInstance();
 gio.track(String eventId);
 gio.track(String eventId, JSONObject eventLevelVariables);
 ​
-// 发送页面级变量 API
+// 发送页面级变量 API，适用于无埋点SDK
 GrowingIO gio = GrowingIO.getInstance();
 gio.setPageVariable(Activity activity, String key, String value);
 gio.setPageVariable(Activity activity, String key, Number value);
@@ -224,7 +224,7 @@ gio.setVisitor(jsonObject)
 ### 5. 设置页面级变量
 
 {% hint style="info" %}
-使用限制：适用于无埋点SDK。
+使用限制：适用于**无埋点SDK**。
 {% endhint %}
 
 当需要上报页面级变量时，调用 `setPageVariable` API。

@@ -1,6 +1,6 @@
 # 自定义数据上传API
 
-您的APP或网页在集成了 GrowingIO 的 SDK 之后，它将会自动地为您采集一系列用户行为数据，并在 GrowingIO 分析后台供您制成数据分析报表。除上述的用户行为数据（或称为无埋点数据）之外，GrowingIO 还提供了多种 API 接口，供您上传一些自定义事件和变量，下面介绍自定义事件和变量 API 使用方法。
+您的APP或网页在集成了 GrowingIO 的 SDK 之后，它将会自动地为您采集一系列用户行为数据，并在 GrowingIO 分析后台供您制成数据分析报表。除上述的用户行为数据（或称为无埋点数据）之外，GrowingIO 还提供了多种 API 接口，供您上传一些自定义事件和变量，下面介绍自定义事件和变量 API 使用方法。  &#x20;
 
 ## API概览
 
@@ -11,7 +11,7 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 + (void)track:(NSString *)eventId;
 + (void)track:(NSString *)eventId withVariable:(NSDictionary<NSString *, NSObject *> *)variable;
 ​
-// 发送页面级变量 API
+// 发送页面级变量 API，适用于无埋点SDK
 + (void)setPageVariableWithKey:(NSString *)key andStringValue:(NSString *)stringValue toViewController:(UIViewController *)viewController;
 + (void)setPageVariableWithKey:(NSString *)key andNumberValue:(NSNumber *)numberValue toViewController:(UIViewController *)viewController;
 + (void)setPageVariable:(NSDictionary<NSString *, NSObject *> *)variable toViewController:(UIViewController *)viewController;
@@ -138,7 +138,7 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 ### 设置页面级变量
 
 {% hint style="info" %}
-使用限制：适用于无埋点SDK。
+使用限制：适用于**无埋点SDK**。
 {% endhint %}
 
 当需要上报页面级变量时，调用 `setPageVariable` API。
