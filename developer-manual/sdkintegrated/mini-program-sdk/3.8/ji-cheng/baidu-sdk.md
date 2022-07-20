@@ -149,7 +149,7 @@ import gio from './utils/gio/gio-taro.js';
 // npm集成方式
 import gio from 'gio-miniprogram-sdk-saas/gio-taro';
 
-gdp('init', 'your GrowingIO 项目ID', 'your AppId', {
+gio('init', 'your GrowingIO 项目ID', 'your AppId', {
     version: 'your miniProgram version',
     taro: Taro,
     ...other settings
@@ -191,7 +191,7 @@ import gio from './utils/gio/gio-taro.js';
 // npm集成方式
 import gio from 'gio-miniprogram-sdk-saas/gio-taro';
 
-gdp('init', 'your GrowingIO 项目ID', 'your AppId', {
+gio('init', 'your GrowingIO 项目ID', 'your AppId', {
     version: 'your miniProgram version',
     taro: Taro,
     ...other settings
@@ -212,7 +212,7 @@ import gio from './utils/gio/gio-taro.js';
 // npm集成方式
 import gio from 'gio-miniprogram-sdk-saas/gio-taro';
 
-gdp('init', 'your GrowingIO 项目ID', 'your AppId', {
+gio('init', 'your GrowingIO 项目ID', 'your AppId', {
     version: 'your miniProgram version',
     taro: Taro, // 注意taro和taroVue都需要传
     taroVue: Vue, // 注意taro和taroVue都需要传
