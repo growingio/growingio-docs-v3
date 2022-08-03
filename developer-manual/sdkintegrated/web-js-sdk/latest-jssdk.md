@@ -26,9 +26,8 @@
 ```
 
 {% hint style="warning" %}
-&#x20;Web JS SDK 默认是不会采集本地页面（域名为 **localhost** 或者 **file://** 协议），如果您希望 SDK 采集本地页面，需要在集成 SDK 代码前添加如下代码：
-
-`window._gr_ignore_local_rule=true; //开启本地页面采集`
+1. &#x20;assets.giocdn.com/2.1/gio.js 该地址为Web JS SDK 的CDN地址，使用该地址加载的是SDK的最新版本，即 SDK 每次发布版本，页面即可加载最新版本SDK。
+2. Web JS SDK 默认是不会采集本地页面（域名为 **localhost** 或者 **file://** 协议），如果您希望 SDK 采集本地页面，需要在集成 SDK 代码前添加如下代码：    `window._gr_ignore_local_rule=true; //开启本地页面采集`
 {% endhint %}
 
 ## 2. 配置系统变量
