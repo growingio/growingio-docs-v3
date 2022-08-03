@@ -2,7 +2,9 @@
 
 **SDK历史版本下载地址：**[https://github.com/growingio/growingio-sdk-miniprogram-autotracker/releases](https://github.com/growingio/growingio-sdk-miniprogram-autotracker/releases)
 
+### V3.8.2 - 2022/08/02[​](https://growingio.github.io/growingio-sdk-docs/docs/miniprogram/3.8/version#v383---20220802) <a href="#v383---20220802" id="v383---20220802"></a>
 
+* 修复`onShareAppMessage、onShareTimeline`异步返回自定义参数时SDK取值错误导致分享链接错误的问题
 
 ### V3.8.1 - 2022/07/26
 
