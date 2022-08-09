@@ -133,7 +133,9 @@ Page({
 
 **曝光逻辑**[**​**](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/commonlyApi#%E6%9B%9D%E5%85%89%E9%80%BB%E8%BE%91)
 
-只要从**屏幕不可见区域到可见区域**即计为一次曝光并上报。
+&#x20;   **always：只要从屏幕不可见区域到可见区域**即可计为一次曝光并上报。(默认值)
+
+&#x20;   **once：从屏幕不可见区域到可见区域**曝光只上报一次。
 
 **支持范围**[**​**](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/commonlyApi#%E6%94%AF%E6%8C%81%E8%8C%83%E5%9B%B4)
 
@@ -194,17 +196,35 @@ Page({
 以上两种使用方法对应产生的 **cstm** 事件相当于： ↓↓↓
 
 ```javascript
-gdp(
+gio(
     'track', 
     'imp_user_var', 
     { name: 'Mike', age: '16', sex: 'boy' }
 );
 ```
 
+**单次曝光**
+
+如果您的曝光事件只需要统计一次或触发过于频繁导致曝光事件量过大，可以在节点上添加`data-gio-imp-type="once"`并设置唯一的`节点id`，来使得曝光逻辑变为单次上报。
+
+```html
+<view
+    class="growing_collect_imp"
+    id="imp_1"
+    data-gio-imp-type="once"
+    data-gio-imp-track="imp_picture_var"
+    ...
+>
+  监听的元素，必须有内容或额外样式来让节点有实际大小
+</view>
+```
+
 **注意：**\
 **1）被标记的节点必须有实际的大小，一个没有内容和样式的节点标记可能不会触发事件。**
 
 **2）请勿在同一页面中大量标记半自动埋点浏览事件（如商品列表），可能会严重影响页面性能导致卡顿。**
+
+**3）`data-gio-imp-type`配置项SDK版本>=3.8.4支持。**
 
 ## 其他[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/commonlyApi#%E5%85%B6%E4%BB%96) <a href="#qi-ta" id="qi-ta"></a>
 
