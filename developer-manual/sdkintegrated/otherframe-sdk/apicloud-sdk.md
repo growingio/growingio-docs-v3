@@ -55,7 +55,7 @@ API Cloud的debug模式只支持静态配置，不支持动态配置。
 * 在自动定义模块中上传了压缩包，保存成功后。一定要点击添加模块后面的“+”，否则不是真正添加成功。添加成功后，去已添加模块中能看到刚刚添加的模块。
 {% endhint %}
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20\(219\).png)
+![](../../../.gitbook/assets/apicloud-1.png)
 
 ## 3. Android的额外操作
 
@@ -67,11 +67,13 @@ Android云编译Loader为AppLoader， 使用自定义模块时需要编译Androi
 
 在自定义loader页签下勾选**使用升级环境编译**。
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20\(200\).png)
+![](../../../.gitbook/assets/apicloud-2.png)
 
 1. 云编译时，请勾选**使用升级环境编译。**
 
-![](https://github.com/growingio/growingio-docs-v3/tree/d520f4a494f6c0635c83422f55c665597e79ee96/.gitbook/assets/image%20\(79\).png)
+****
+
+![](../../../.gitbook/assets/apicloud-3.png)
 
 ## 4. 插件API
 
