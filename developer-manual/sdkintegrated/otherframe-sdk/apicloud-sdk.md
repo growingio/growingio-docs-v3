@@ -81,9 +81,7 @@ Android云编译Loader为AppLoader， 使用自定义模块时需要编译Androi
 gio.init();
 ```
 
-```
-   **此接口为Android初始化， 在require后调用，iOS不需要，iOS已自动初始化**建议在require GrowingIO时调用此接口
-```
+**此接口为Android初始化， 在require后调用，iOS不需要，iOS已自动初始化**建议在require GrowingIO时调用此接口
 
 ```javascript
  vargio =null;
