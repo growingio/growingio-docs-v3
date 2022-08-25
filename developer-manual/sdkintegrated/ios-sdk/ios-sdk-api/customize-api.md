@@ -236,9 +236,4 @@ SDK 提供多种不同类型的API，请根据您的实际需要正确地调用�
 [Growing track:@"registerSuccess" withVariable:@{@"gender":@"male", @"age":@"21"}];
 ```
 
-```java
-// track API调用示例三
-[Growing track:@"loanAmount" withNumber:@800000 andVariable:@{@"loanType":@"houseMortgage", @"province":@"Zhejiang"}];
-```
-
 ### &#x20;<a href="#5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan" id="5-she-zhi-dan-chuang-sdk-yi-chang-shang-chuan-kai-guan"></a>
