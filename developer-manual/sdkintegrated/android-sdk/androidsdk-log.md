@@ -14,6 +14,7 @@ description: Android SDK更新日志
 
 | 版本     | 说明                                                                                                                                                                                                                                                                       | 日期         |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
+| 2.9.14 | <ol><li>埋点打通webview保持和无埋点相同逻辑 </li><li>修复获取不到AndroidId时多次获取不合规问题</li></ol>                                                                                                                                                                                               | 2022-09-06 |
 | 2.9.13 | <ol><li>添加对 UCWebView 的Hook</li><li>增加<a href="https://docs.growingio.com/v3/developer-manual/sdkintegrated/android-sdk/android-sdk-api/run-api#shu-ju-cai-ji-api">数据采集API</a>：bridgeForUcWebView</li></ol>                                                              | 2022-04-14 |
 | 2.9.12 | <ol><li>增加<a href="https://docs.growingio.com/v3/developer-manual/sdkintegrated/android-sdk/android-sdk-api/init-api#ji-chu-pei-zhi-api">初始化配置</a> setRequireAppProcessesEnabled用于控制是否获取多进程信息</li><li>其他优化</li></ol>                                                     | 2022-02-24 |
 | 2.9.11 | <ol><li>增加<a href="https://growingio.gitbook.io/v3/developer-manual/sdkintegrated/android-sdk/android-sdk-api/init-api#shu-ju-cai-ji-fa-song-api">初始化配置</a>setOAIDProvideConfig,用于传入用户的Cert证书或者Oaid值</li><li>支持java11 visitNestHost指令</li><li>初始化线程锁概率性引起ANR修复</li></ol> | 2022-01-20 |
@@ -26,8 +27,6 @@ description: Android SDK更新日志
 | 2.9.2  | <p></p><ol><li>fragment补发activity的pvar事件</li><li>修复原生与hybrid嵌套listview时xpath异常的问题</li></ol>                                                                                                                                                                              | 2021-06-02 |
 | 2.9.1  | <ol><li>优化hybrid sdk多次注入问题</li><li>适配可能导致平均访问时长指标偏长的场景</li></ol>                                                                                                                                                                                                         | 2021-05-10 |
 | 2.9.0  | <p></p><ol><li>为仅集成埋点SDK用户提供hybrid接口,对应hybrid页面需集成gio_hybrid_track.js</li><li>仓库从JCenter迁移到MavenCentral</li><li>提高sdk稳定性</li></ol>                                                                                                                                       | 2021-04-23 |
-
-
 
 | 2.8.25 | <p></p><ul><li>由于隐私协议延迟打开数据采集，不会影响激活等事件的采集</li></ul><ul><li>修复极端情况下切换用户后无法更新session</li></ul>                                             | 2021-01-12 |
 | ------ | ----------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
