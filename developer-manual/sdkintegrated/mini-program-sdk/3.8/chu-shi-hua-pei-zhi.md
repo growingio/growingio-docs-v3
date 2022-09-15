@@ -97,14 +97,7 @@ gio('setOption', 'debug', true | false);
 
 ### followShare[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/initSettings#followshare) <a href="#followshare" id="followshare"></a>
 
-默认情况下，SDK开启跟踪分享数据功能，详细的进行转发分享的统计，来帮助您更好的分析。如您不需要此功能，可以通过指定 `followShare: false` 来关闭跟踪分享。
-
-```javascript
-gio('init', ' GrowingIO 项目ID', '您的小程序AppID', {
-  version: '1.0.0',
-  followShare: false  
-});
-```
+默认情况下，SDK开启跟踪分享数据功能，自动上报分享事件，详细的进行转发分享的统计，来帮助您更好的分析。
 
 在分享回调方法中，添加 `contentType` 和 `contentId` 字段。例如：
 
@@ -129,6 +122,8 @@ onShareTimeline: function(result) {
   }
 }
 ```
+
+如您不需要此功能，可以通过指定 `followShare: false` 来关闭跟踪分享，分享事件将不再上报。
 
 ### forceLogin <a href="#forcelogin" id="forcelogin"></a>
 
