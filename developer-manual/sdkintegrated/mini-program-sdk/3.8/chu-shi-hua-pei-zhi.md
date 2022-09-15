@@ -109,10 +109,21 @@ gio('init', ' GrowingIO 项目ID', '您的小程序AppID', {
 在分享回调方法中，添加 `contentType` 和 `contentId` 字段。例如：
 
 ```javascript
-onShareAppMessage: function() {
+onShareAppMessage: function(result) {
   return {
-    title: '自定义转发标题',
+    ...result,
+    title: '自定义分享标题',
     path: 'xxxxxx',
+    contentType: '内容类型',
+    contentId: '内容ID'
+  }
+},
+
+onShareTimeline: function(result) {
+  return {
+    ...result,
+    title: '自定义朋友圈标题',
+    query: 'xxxxxx',
     contentType: '内容类型',
     contentId: '内容ID'
   }

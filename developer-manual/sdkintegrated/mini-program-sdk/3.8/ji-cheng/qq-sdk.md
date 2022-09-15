@@ -22,7 +22,7 @@
 
 **1、加载SDK**
 
-QQ小程序原生SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.6/gio-qq.js](https://assets.giocdn.com/sdk/minip/saas/3.8.6/gio-qq.js)
+QQ小程序原生SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.5/gio-qq.js](https://assets.giocdn.com/sdk/minip/saas/3.8.5/gio-qq.js)
 
 > (如果您点击链接在浏览器中直接打开了文件并不是下载文件，请尝试右键点击链接，选择 `链接存储为...` 即可正常触发下载)
 
@@ -50,7 +50,7 @@ App({ ... });
 
 **方式一：下载本地集成**
 
-uni-app框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.6/gio-uniapp.js](https://assets.giocdn.com/sdk/minip/saas/3.8.6/gio-uniapp.js)
+uni-app框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.5/gio-uniapp.js](https://assets.giocdn.com/sdk/minip/saas/3.8.5/gio-uniapp.js)
 
 > (如果您点击链接在浏览器中直接打开了文件并不是下载文件，请尝试右键点击链接，选择 `链接存储为...` 即可正常触发下载)
 
@@ -123,7 +123,7 @@ export function createApp() {
 
 **方式一：下载本地集成**
 
-Taro框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.6/gio-taro.js](https://assets.giocdn.com/sdk/minip/saas/3.8.6/gio-taro.js)
+Taro框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.5/gio-taro.js](https://assets.giocdn.com/sdk/minip/saas/3.8.5/gio-taro.js)
 
 > (如果您点击链接在浏览器中直接打开了文件并不是下载文件，请尝试右键点击链接，选择 `链接存储为...` 即可正常触发下载)
 
