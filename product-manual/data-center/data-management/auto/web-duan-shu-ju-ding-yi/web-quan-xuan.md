@@ -1,6 +1,6 @@
-# iframe圈选
+# Web圈选
 
-## iframe圈选操作 <a href="#1-kai-shi-quan-xuan" id="1-kai-shi-quan-xuan"></a>
+## Web圈选操作 <a href="#1-kai-shi-quan-xuan" id="1-kai-shi-quan-xuan"></a>
 
 在顶部导航栏选择“**数据中心 > 无埋点事件定义（圈选） > 您的Web应用”**，进入Web圈选模式。
 

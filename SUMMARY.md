@@ -358,7 +358,7 @@
     * [无埋点事件](product-manual/data-center/data-management/auto/README.md)
       * [概述](product-manual/data-center/data-management/auto/overview.md)
       * [Web端数据定义](product-manual/data-center/data-management/auto/web-duan-shu-ju-ding-yi/README.md)
-        * [iframe圈选](product-manual/data-center/data-management/auto/web-duan-shu-ju-ding-yi/iframe-quan-xuan.md)
+        * [Web圈选](product-manual/data-center/data-management/auto/web-duan-shu-ju-ding-yi/web-quan-xuan.md)
         * [Chrome插件圈选](product-manual/data-center/data-management/auto/web-duan-shu-ju-ding-yi/chrome-cha-jian-quan-xuan.md)
         * [Chrome插件安装步骤](product-manual/data-center/data-management/auto/web-duan-shu-ju-ding-yi/chrome-cha-jian-an-zhuang-bu-zhou.md)
       * [App端数据定义](product-manual/data-center/data-management/auto/web-app.md)

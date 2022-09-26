@@ -24,7 +24,7 @@ URL**示意：**www.xxx.com**/**12345/678/123**?**id=1\&ig=2
 
 ![](https://docs.growingio.com/.gitbook/assets/9412f46a-d87c-41ef-9ee6-9e6e408f4c6a-12626-00000bcf696b73c5\_tmp.jpg)
 
-## [iframe圈选](iframe-quan-xuan.md)  <a href="#1-kai-shi-quan-xuan" id="1-kai-shi-quan-xuan"></a>
+## [iframe圈选](web-quan-xuan.md)  <a href="#1-kai-shi-quan-xuan" id="1-kai-shi-quan-xuan"></a>
 
 ## [Chrome插件圈选 ](chrome-cha-jian-quan-xuan.md) <a href="#3-qi-ta-te-shu-qing-kuang" id="3-qi-ta-te-shu-qing-kuang"></a>
 
