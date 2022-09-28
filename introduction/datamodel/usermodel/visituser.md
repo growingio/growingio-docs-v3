@@ -105,7 +105,7 @@ uuid = UUID.randomUUID().toString();
 
 小程序：如果SDK设置了强制登录模式，小程序打开时调用 wx.login 获取openid或unionId，且调用 identify 上报，会使用第一参数 作为 访问用户 ID ，否则会自动生成 随机访问用户ID。访问用户ID 将保存到 storage 中。
 
-Web: 随机访问用户ID 存储在 localStorage 中，永久有效。
+Web: 随机访问用户ID 默认存储在cookie中，清除cookie会重新生成新的ID。
 
 \
 这样复杂逻辑的目的是尽量使用访问用户ID 标识唯一一台设备，将同一台设备上的访问用户标识为同一个用户。
