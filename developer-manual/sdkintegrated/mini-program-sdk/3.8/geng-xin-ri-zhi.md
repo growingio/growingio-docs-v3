@@ -2,7 +2,9 @@
 
 **SDK历史版本下载地址：**[https://github.com/growingio/growingio-sdk-miniprogram-autotracker/releases](https://github.com/growingio/growingio-sdk-miniprogram-autotracker/releases)
 
+### V3.8.8 - 2022/10/11 <a href="#v387---20220914" id="v387---20220914"></a>
 
+* 修复uniapp无埋点事件偶发不能触发的问题
 
 ### V3.8.7 - 2022/09/22 <a href="#v387---20220914" id="v387---20220914"></a>
 
