@@ -18,7 +18,7 @@ gio('setOption', optionKey, optionValue);  // return true | false
 
 ### 1、开启/关闭无埋点数据采集(autotrack)
 
-当加载了无埋点插件时，默认开启无埋点数据采集。当设置为 **`false`** 时，将不再采集 ** `clck` , `chng` , `sbmt`** 无埋点事件。未加载插件时无论 autotrack 是否开启都不会进行采集。
+默认开启无埋点数据采集。当设置为 **`false`** 时，将不再采集 ** `clck` , `chng` , `sbmt`** 无埋点事件。
 
 ```javascript
 gio('setOption', 'autotrack', true | false);
@@ -29,7 +29,7 @@ gio('setOption', 'autotrack', true | false);
 
 ### 2、开启/关闭数据采集(dataCollect)
 
-默认开启数据采集。当设置为 **`false`** 时，SDK将不会采集和上报事件。由关闭修改为开启时，自动补发VISIT和当前页面的PAGE事件。
+默认开启数据采集。当设置为 **`false`** 时，SDK将不会采集和上报事件。由关闭修改为开启时，自动补发visit和当前页面的page事件。
 
 ```javascript
 gio('setOption', 'dataCollect', true | false);
