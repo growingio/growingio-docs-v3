@@ -2,15 +2,6 @@
 
 **SDK历史版本下载地址：**[https://github.com/growingio/growingio-sdk-miniprogram-autotracker/releases](https://github.com/growingio/growingio-sdk-miniprogram-autotracker/releases)
 
-### V3.8.9 - 2022/11/17 <a href="#v387---20220914" id="v387---20220914"></a>
-
-* 修复在小程序页面型插件中集成报错的问题。
-* 修复remax框架部分事件不触发的问题。
-* 修复Taro3react无埋点xpath取值错误问题。
-* 修复支付宝小程序（含原生及各框架）页面参数丢失的问题。
-* 修复iOS下小程序分享完成后偶现事件卡住的问题。
-* 优化初始化关闭数据采集或无埋点时，没有提示的问题。
-
 ### V3.8.8 - 2022/10/11 <a href="#v387---20220914" id="v387---20220914"></a>
 
 * 修复uniapp框架中偶现点击事件丢失的问题。

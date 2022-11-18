@@ -22,7 +22,7 @@
 
 **1、加载SDK**
 
-微信原生SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-wechat.js](https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-wechat.js)
+微信原生SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.9/gio-wechat.js](https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-wechat.js)
 
 > (如果您点击链接在浏览器中直接打开了文件并不是下载文件，请尝试右键点击链接，选择 `链接存储为...` 即可正常触发下载)
 
@@ -50,7 +50,7 @@ App({ ... });
 
 **方式一：下载本地集成**
 
-uni-app框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-uniapp.js](https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-uniapp.js)
+uni-app框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.9/gio-uniapp.js](https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-uniapp.js)
 
 > (如果您点击链接在浏览器中直接打开了文件并不是下载文件，请尝试右键点击链接，选择 `链接存储为...` 即可正常触发下载)
 
@@ -123,7 +123,7 @@ export function createApp() {
 
 **方式一：下载本地集成**
 
-Taro框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-taro.js](https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-taro.js)
+Taro框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.9/gio-taro.js](https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-taro.js)
 
 > (如果您点击链接在浏览器中直接打开了文件并不是下载文件，请尝试右键点击链接，选择 `链接存储为...` 即可正常触发下载)
 
@@ -256,7 +256,7 @@ export default App;
 
 **方式一：下载本地集成**
 
-Chameleon框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-chameleon.js](https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-chameleon.js)
+Chameleon框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.9/gio-chameleon.js](https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-chameleon.js)
 
 > (如果您点击链接在浏览器中直接打开了文件并不是下载文件，请尝试右键点击链接，选择 `链接存储为...` 即可正常触发下载)
 
@@ -297,7 +297,7 @@ export default new App();
 
 **方式一：下载本地集成**
 
-WePY2框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-wepy.js](https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-wepy.js)
+WePY2框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.9/gio-wepy.js](https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-wepy.js)
 
 > (如果您点击链接在浏览器中直接打开了文件并不是下载文件，请尝试右键点击链接，选择 `链接存储为...` 即可正常触发下载)
 
@@ -336,7 +336,7 @@ wepy.app({ ... });
 
 **方式一：下载本地集成**
 
-Remax框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-remax.js](https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-remax.js)
+Remax框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.9/gio-remax.js](https://assets.giocdn.com/sdk/minip/saas/3.8.8/gio-remax.js)
 
 > (如果您点击链接在浏览器中直接打开了文件并不是下载文件，请尝试右键点击链接，选择 `链接存储为...` 即可正常触发下载)
 
