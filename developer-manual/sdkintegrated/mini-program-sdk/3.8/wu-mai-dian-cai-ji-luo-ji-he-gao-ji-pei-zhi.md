@@ -109,7 +109,7 @@ change 事件是针对 checkbox、radio、picker-view 这些控件，当选择�
 ```javascript
 Page({
   onLoad: {
-    wx.sethjsNavigationBarTitle({
+    wx.setNavigationBarTitle({
       title: 'NewTitle'
     });
   }
