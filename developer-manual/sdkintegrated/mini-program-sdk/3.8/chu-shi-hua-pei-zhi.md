@@ -4,21 +4,21 @@
 
 下表中列出了所有小程序SDK的配置项，请按需设置。如您不确定是否需要，请咨询我们。
 
-| **字段名**       | **参数类型**  | **默认值** | **说明**                           |
-| ------------- | --------- | ------- | -------------------------------- |
-| `autotrack`   | `boolean` | `true`  | 是否开启无埋点采集，集成无埋点插件后默认开启无埋点采集      |
-| `cml`         | `any`     | `-`     | 使用 Chameleon 开发时使用的实例，参考集成示例代码   |
-| `comAsPage`   | `boolean` | `false` | 是否将 Component 组件 当做 Page 处理      |
-| `dataCollect` | `boolean` | `true`  | 是否开启数据采集                         |
-| `debug`       | `boolean` | `false` | 是否开启调试模式                         |
-| `followShare` | `boolean` | `true`  | 是否跟踪分享数据                         |
-| `forceLogin`  | `boolean` | `false` | 是否开启强制登录模式                       |
-| `remax`       | `any`     | `-`     | 使用 Remax 开发时使用的实例，参考集成示例代码       |
-| `taro`        | `any`     | `-`     | 使用 Taro 开发时使用的实例，参考集成示例代码        |
-| `taroVue`     | `any`     | `-`     | 使用 Taro3vue2/3 开发时使用的实例，参考集成示例代码 |
-| `uniVue`      | `any`     | `-`     | 使用 uni-app 开发时使用的实例，参考集成示例代码     |
-| `version`     | `string`  | `-`     | 小程序发版版本号(建议填写)                   |
-| `wepy`        | `any`     | `-`     | 使用 WePY 开发时使用的实例，参考集成示例代码        |
+| **字段名**         | **参数类型**  | **默认值** | **说明**                           |
+| --------------- | --------- | ------- | -------------------------------- |
+| `autotrack`     | `boolean` | `true`  | 是否开启无埋点采集，集成无埋点插件后默认开启无埋点采集      |
+| `cml`           | `any`     | `-`     | 使用 Chameleon 开发时使用的实例，参考集成示例代码   |
+| `comAsPage(废弃)` | `boolean` | `false` | 是否将 Component 组件 当做 Page 处理      |
+| `dataCollect`   | `boolean` | `true`  | 是否开启数据采集                         |
+| `debug`         | `boolean` | `false` | 是否开启调试模式                         |
+| `followShare`   | `boolean` | `true`  | 是否跟踪分享数据                         |
+| `forceLogin`    | `boolean` | `false` | 是否开启强制登录模式                       |
+| `remax`         | `any`     | `-`     | 使用 Remax 开发时使用的实例，参考集成示例代码       |
+| `taro`          | `any`     | `-`     | 使用 Taro 开发时使用的实例，参考集成示例代码        |
+| `taroVue`       | `any`     | `-`     | 使用 Taro3vue2/3 开发时使用的实例，参考集成示例代码 |
+| `uniVue`        | `any`     | `-`     | 使用 uni-app 开发时使用的实例，参考集成示例代码     |
+| `version`       | `string`  | `-`     | 小程序发版版本号(建议填写)                   |
+| `wepy`          | `any`     | `-`     | 使用 WePY 开发时使用的实例，参考集成示例代码        |
 
 ## 配置项详解[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/initSettings#%E9%85%8D%E7%BD%AE%E9%A1%B9%E8%AF%A6%E8%A7%A3) <a href="#pei-zhi-xiang-xiang-jie" id="pei-zhi-xiang-xiang-jie"></a>
 
@@ -41,7 +41,7 @@ gio('init', ' GrowingIO 项目ID', '您的小程序AppID', {
 gio('setOption', 'autotrack', true | false);
 ```
 
-### comAsPage[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/initSettings#comaspage) <a href="#comaspage" id="comaspage"></a>
+### comAsPage[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/initSettings#comaspage)(废弃) <a href="#comaspage" id="comaspage"></a>
 
 有时您可能会使用 Component 来代替 Page 进行代码编写。此时你需要设置 `comAsPage: true` 来将 Component 当做 Page 处理发送 PAGE 事件。
 
@@ -53,7 +53,9 @@ gio('init', ' GrowingIO 项目ID', '您的小程序AppID', {
 ```
 
 **注意：**\
-**一旦开启此配置，小程序中所有Component组件都会被视为一个页面，组件生命周期 page.show 一旦触发即发送page事件。**
+1）**一旦开启此配置，小程序中所有Component组件都会被视为一个页面，组件生命周期 page.show 一旦触发即发送page事件。**
+
+**2）SDK版本 3.8.10 起废弃此配置项，SDK会自动识别作为页面的Component。**
 
 ### dataCollect <a href="#datacollect" id="datacollect"></a>
 

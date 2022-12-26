@@ -2,44 +2,61 @@
 
 **SDK历史版本下载地址：**[https://github.com/growingio/growingio-sdk-miniprogram-autotracker/releases](https://github.com/growingio/growingio-sdk-miniprogram-autotracker/releases)
 
+### V3.8.10 - 2022/12/22 <a href="#v3811---20221222" id="v3811---20221222"></a>
+
+* 🐞 修复在特定条件下调用getApp会导致死循环卡死的问题。
+* 🐞 修复Taro2框架中支付宝小程序和百度小程序Page事件丢失的问题。
+* 🐞 修复uniapp框架中支付宝小程序偶现报错或报警告的问题。
+* 🌟 优化使用Component作为页面时自动适配，同时移除`comAsPage`初始化配置项。
+* 🌟 优化修改gioPageTitle设置页面标题为setNavigationBarTitle生效。
+
+### V3.8.9 - 2022/11/17 <a href="#v387---20220914" id="v387---20220914"></a>
+
+* 🐞 修复在小程序页面型插件中集成报错的问题。
+* 🐞 修复remax框架部分事件不触发的问题。
+* 🐞 修复Taro3react无埋点xpath取值错误问题。
+* 🐞 修复支付宝小程序（含原生及各框架）页面参数丢失的问题。
+* 🐞 修复iOS下小程序分享完成后偶现事件卡住的问题。
+* 🌟 优化初始化关闭数据采集或无埋点时，没有提示的问题。
+
 ### V3.8.8 - 2022/10/11 <a href="#v387---20220914" id="v387---20220914"></a>
 
-* 修复uniapp框架中偶现点击事件丢失的问题。
+* 🐞 修复uniapp框架中偶现点击事件丢失的问题。
 
 ### V3.8.7 - 2022/09/22 <a href="#v387---20220914" id="v387---20220914"></a>
 
-* 修复Taro框架中阻止冒泡失效的问题。
-* 修复pvar事件的页面时间在某些情况下可能取值错误的问题。
-* 优化曝光监听逻辑，减少性能影响。
+* 🐞 修复Taro框架中阻止冒泡失效的问题。
+* 🐞 修复pvar事件的页面时间在某些情况下可能取值错误的问题。
+* 🌟 优化曝光监听逻辑，减少性能影响。
 
 ### V3.8.6 - 2022/09/14[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v387---20220914) <a href="#v387---20220914" id="v387---20220914"></a>
 
-* 修复`onShareTimeline`返回取值错误的问题。
-* 新增微信小程序、QQ小程序`onAddToFavorites`预置埋点事件支持。
+* 🐞 修复`onShareTimeline`返回取值错误的问题。
+* 🎉 新增微信小程序、QQ小程序`onAddToFavorites`预置埋点事件支持。
 
 ### V3.8.5 - 2022/09/06 <a href="#v383---20220802" id="v383---20220802"></a>
 
-* 修复esid总是为1不累加的问题。
-* 修复部分工具类方法极端取值时运行错误的问题。
-* 修复运营弹窗条件复杂时运行报错的问题。
+* 🐞 修复esid总是为1不累加的问题。
+* 🐞 修复部分工具类方法极端取值时运行错误的问题。
+* 🐞 修复运营弹窗条件复杂时运行报错的问题。
 
 ### V3.8.4 - 2022/08/09 <a href="#v383---20220802" id="v383---20220802"></a>
 
-* 修复运营弹窗埋点存储过多导致存储可能超限和校验次数过多影响性能的问题。
-* 新增半自动浏览事件单次发送功能。
+* 🐞 修复运营弹窗埋点存储过多导致存储可能超限和校验次数过多影响性能的问题。
+* 🎉 新增半自动浏览事件单次发送功能。
 
 ### V3.8.3 - 2022/08/05[​](https://growingio.github.io/growingio-sdk-docs/docs/miniprogram/3.8/version#v383---20220802) <a href="#v383---20220802" id="v383---20220802"></a>
 
-* 修复开启`forceLogin`且未调用`identify`时关闭小程序会上报匿名用户数据的问题。
+* 🐞 修复开启`forceLogin`且未调用`identify`时关闭小程序会上报匿名用户数据的问题。
 
 ### V3.8.2 - 2022/08/01[​](https://growingio.github.io/growingio-sdk-docs/docs/miniprogram/3.8/version#v383---20220802) <a href="#v383---20220802" id="v383---20220802"></a>
 
-* 修复`onShareAppMessage、onShareTimeline`异步返回自定义参数时SDK取值错误导致分享链接错误的问题。
+* 🐞 修复`onShareAppMessage、onShareTimeline`异步返回自定义参数时SDK取值错误导致分享链接错误的问题。
 
 ### V3.8.1 - 2022/07/26
 
-* 修复设置identify补发的vstr事件字段名大小写问题。
+* 🐞 修复设置identify补发的vstr事件字段名大小写问题。
 
 ### V3.8.0 - 2022/06/29
 
-* 3.8.0正式版。
+* 🎉 3.8.0正式版。

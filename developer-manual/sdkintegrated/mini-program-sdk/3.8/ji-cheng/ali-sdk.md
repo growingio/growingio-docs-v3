@@ -22,7 +22,7 @@
 
 **1、加载SDK**
 
-阿里(支付宝)原生SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.9/gio-alipay.js](https://assets.giocdn.com/sdk/minip/saas/3.8.9/gio-alipay.js)
+阿里(支付宝)原生SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.10/gio-alipay.js](https://assets.giocdn.com/sdk/minip/saas/3.8.10/gio-alipay.js)
 
 > (如果您点击链接在浏览器中直接打开了文件并不是下载文件，请尝试右键点击链接，选择 `链接存储为...` 即可正常触发下载)
 
@@ -50,7 +50,7 @@ App({ ... });
 
 **方式一：下载本地集成**
 
-uni-app框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.9/gio-uniapp.js](https://assets.giocdn.com/sdk/minip/saas/3.8.9/gio-uniapp.js)
+uni-app框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.10/gio-uniapp.js](https://assets.giocdn.com/sdk/minip/saas/3.8.10/gio-uniapp.js)
 
 > (如果您点击链接在浏览器中直接打开了文件并不是下载文件，请尝试右键点击链接，选择 `链接存储为...` 即可正常触发下载)
 
@@ -123,7 +123,7 @@ export function createApp() {
 
 **方式一：下载本地集成**
 
-Taro框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.9/gio-taro.js](https://assets.giocdn.com/sdk/minip/saas/3.8.9/gio-taro.js)
+Taro框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.10/gio-taro.js](https://assets.giocdn.com/sdk/minip/saas/3.8.10/gio-taro.js)
 
 > (如果您点击链接在浏览器中直接打开了文件并不是下载文件，请尝试右键点击链接，选择 `链接存储为...` 即可正常触发下载)
 
@@ -185,15 +185,16 @@ module.exports = {
 
 ```javascript
 import React, { Component } from 'react';
-import Taro from '@tarojs/taro';
 // 下载集成方式
 import gio from './utils/gio/gio-taro.js';
 // npm集成方式
 import gio from 'gio-miniprogram-sdk-saas/gio-taro';
 
+// 无论哪种集成方式，都要引入taroRuntime
+const taroRuntime = require('@tarojs/runtime');
 gio('init', 'your GrowingIO 项目ID', 'your AppId', {
     version: 'your miniProgram version',
-    taro: Taro,
+    taro: taroRuntime,
     ...other settings
 });
 
@@ -256,7 +257,7 @@ export default App;
 
 **方式一：下载本地集成**
 
-Chameleon框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.9/gio-chameleon.js](https://assets.giocdn.com/sdk/minip/saas/3.8.9/gio-chameleon.js)
+Chameleon框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.10/gio-chameleon.js](https://assets.giocdn.com/sdk/minip/saas/3.8.10/gio-chameleon.js)
 
 > (如果您点击链接在浏览器中直接打开了文件并不是下载文件，请尝试右键点击链接，选择 `链接存储为...` 即可正常触发下载)
 
@@ -297,7 +298,7 @@ export default new App();
 
 **方式一：下载本地集成**
 
-Remax框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.9/gio-remax.js](https://assets.giocdn.com/sdk/minip/saas/3.8.9/gio-remax.js)
+Remax框架SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.10/gio-remax.js](https://assets.giocdn.com/sdk/minip/saas/3.8.10/gio-remax.js)
 
 > (如果您点击链接在浏览器中直接打开了文件并不是下载文件，请尝试右键点击链接，选择 `链接存储为...` 即可正常触发下载)
 
