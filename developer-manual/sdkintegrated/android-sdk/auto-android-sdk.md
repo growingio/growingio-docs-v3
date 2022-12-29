@@ -42,7 +42,7 @@ buildscript {
         //gradle 建议版本
         classpath 'com.android.tools.build:gradle:3.2.1'
         //GrowingIO 无埋点 SDK
-        classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.9.12'
+        classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.9.15'
     }
 }
 ```
@@ -63,7 +63,7 @@ android {
 }
 dependencies {
     //GrowingIO 无埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:autotrack-2.9.12'
+    implementation 'com.growingio.android:vds-android-agent:autotrack-2.9.15'
 }
 ```
 
