@@ -7,8 +7,8 @@ GitHub Demo：[https://github.com/growingio/ReactNativeDemo](https://github.com/
 {% hint style="info" %}
 版本支持：
 
-* 兼容 React Native 版本：0.46-0.56、0.59.9
-* 兼容组件 react-navigation 版本：^2.7.4、^3.11.0
+* 兼容 React Native 版本：0.46-0.56、0.59.9、0.66+
+* 兼容组件 react-navigation 版本：^2.7.4、^3.11.0、6.x+
 * 兼容组件 react-native-navigation 版本：^1.1.486
 *   App适配最低系统版本：iOS 8及以上、Android 4.2及以上
 
@@ -26,7 +26,7 @@ npm install --save react-native-autotrack-growingio
 ```
 
 ```
-npm install --save https://github.com/growingio/GIORNHook.git#0.0.6
+npm install --save https://github.com/growingio/GIORNHook.git#0.0.7
 ```
 
 #### 配置 package.json 文件
