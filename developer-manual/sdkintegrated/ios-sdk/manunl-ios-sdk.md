@@ -41,7 +41,7 @@ GrowingIO iOS SDK  包含以下组件SDK:
 {% endtab %}
 
 {% tab title="手动添加" %}
-1. 下载iOS SDK以下包：[GrowingHeader](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-PublicHeader-2.9.13.zip) ，[GrowingCoreKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-CoreKit-2.9.13.zip)，并解压。
+1. 下载iOS SDK以下包：[GrowingHeader](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-PublicHeader-2.9.14.zip) ，[GrowingCoreKit](https://assets.growingio.com/sdk/ios/GrowingIO-iOS-CoreKit-2.9.14.zip)，并解压。
 2. 将`Growing.h`、`GrowingCoreKit.framework`、添加到iOS工程中。
 
 {% hint style="info" %}
