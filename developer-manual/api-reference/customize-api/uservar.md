@@ -89,20 +89,20 @@ POST
 
 {% tabs %}
 {% tab title="请求参数" %}
-| 请求头参数 | 类型 | 是否必传 | 说明 |
-| :--- | :--- | :--- | :--- |
-| Access-Token | string | 是 | Public Key，项目公钥 |
-| Content-Type | string | 是 | application/json |
+| 请求头参数        | 类型     | 是否必传 | 说明               |
+| ------------ | ------ | ---- | ---------------- |
+| Access-Token | string | 是    | Public Key，项目公钥  |
+| Content-Type | string | 是    | application/json |
 
-| 查询参数 | 类型 | 是否必传 | 说明 |
-| :--- | :--- | :--- | :--- |
-| auth | string | 是 | 认证码，针对每条数据独立生成的认证。使用独立的认证码，详细见本页获取认证码。 |
+| 查询参数 | 类型     | 是否必传 | 说明                                     |
+| ---- | ------ | ---- | -------------------------------------- |
+| auth | string | 是    | 认证码，针对每条数据独立生成的认证。使用独立的认证码，详细见本页获取认证码。 |
 
-| body参数 | 类型 | 是否必传 | 说明 |
-| :--- | :--- | :--- | :--- |
-| loginUserId | string | 是 | 登录用户ID。 |
-| userProperty1 | string | 否 | 在GrowingIO系统内定义的用户属性（如gender） |
-| userproperty2 | string | 否 | 在GrowingIO系统内定义的用户属性（如user\_name） |
+| body参数        | 类型     | 是否必传 | 说明                                             |
+| ------------- | ------ | ---- | ---------------------------------------------- |
+| loginUserId   | string | 是    | 登录用户ID。                                        |
+| userProperty1 | string | 否    | 在GrowingIO系统内定义的用户属性（如gender），长度不超过255个字符。     |
+| userproperty2 | string | 否    | 在GrowingIO系统内定义的用户属性（如user\_name），长度不超过255个字符。 |
 
 {% hint style="success" %}
 **body内的userProperty1-N为您在GrowingIO系统内定义的用户属性的key，如gender、user\_name等。支持使用数组的方式一次上传多条数据（建议单次上报条数小于100条），body大小的最大限制为2M。**
@@ -138,4 +138,3 @@ POST
 ```
 {% endtab %}
 {% endtabs %}
-
