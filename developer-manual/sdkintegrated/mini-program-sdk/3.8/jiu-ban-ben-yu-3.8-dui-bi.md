@@ -24,13 +24,17 @@
 
 #### 初始化[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/contrast#%E5%88%9D%E5%A7%8B%E5%8C%96) <a href="#chu-shi-hua" id="chu-shi-hua"></a>
 
-**移除项：** `enableEventStore`、`usePlugin`、`vue`、`getLocation(含autoGet和type)` 配置项，`setConfig` 方法。
+**移除项：** `enableEventStore`、`usePlugin`、`vue`、`getLocation(含autoGet和type)` 、`comAsPage` 配置项，`setConfig` 方法。
 
 > 初始化配置项 `enableEventStore` 字段废弃；3.7.4版本起为解决没有使用运营SDK却导致存储超限问题而提供的配置项，重构后已改造此模块，因此废弃。未使用无影响，已使用直接移除即可。
 >
 > 初始化配置项 `usePlugin` 字段废弃；未使用无影响，已使用直接移除即可。
 >
 > 初始化配置项 `vue` 字段废弃；使用其他实例字段代替。
+>
+> 初始化配置项 `getLocation` 字段废弃；未使用无影响，已使用请参考 `setLocation` 方法；用于弥补移除了自动获取位置的功能。[参考文档](https://docs.growingio.com/v3/developer-manual/sdkintegrated/mini-program-sdk/3.8/shu-ju-cai-ji-api#10-she-zhi-di-li-wei-zhi-setlocation)
+>
+> 初始化配置项 `comAsPage` 字段 3.8.10 起废弃；未使用无影响，已使用直接移除即可。
 >
 > 初始化方法 `setConfig` 废弃，仅支持通过 `init` 方法进行初始化；因为它容易歧义误导使用。
 
@@ -48,7 +52,7 @@
 
 > 新增 `setOption` 方法；用于统一动态设置SDK配置项。[参考文档](chu-shi-hua-pei-zhi.md)
 >
-> 新增 [`setLocation`](shu-ju-cai-ji-api.md#she-zhi-wei-zhi-xin-xi) 方法；用于弥补移除了自动获取位置的功能。
+> 新增 `setLocation` 方法；用于弥补移除了自动获取位置的功能。[参考文档](https://docs.growingio.com/v3/developer-manual/sdkintegrated/mini-program-sdk/3.8/shu-ju-cai-ji-api#10-she-zhi-di-li-wei-zhi-setlocation)
 
 ### 功能点新增、优化、问题修复[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/contrast#%E5%8A%9F%E8%83%BD%E7%82%B9%E6%96%B0%E5%A2%9E%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98%E4%BF%AE%E5%A4%8D) <a href="#gong-neng-dian-xin-zeng-you-hua-wen-ti-xiu-fu" id="gong-neng-dian-xin-zeng-you-hua-wen-ti-xiu-fu"></a>
 
@@ -59,3 +63,5 @@
 3、带有 `autoplay` 属性且值为 `true` 的原生组件（例如：swiper、video）产生的change事件会被自动忽略，如果您想采集它，请参考[无埋点采集逻辑和高级配置](wu-mai-dian-cai-ji-luo-ji-he-gao-ji-pei-zhi.md)。
 
 4、在<3.8的旧版本中，使用taro或者uni-app框架开发的小程序在某些特定场景下可能会丢失自定义采集标记，我们在3.8版本中我们修复了它。
+
+5、在<3.8 的旧版本中，您只能通过下载 SDK 文件至本地项目的方式来集成 SDK。从 3.8.0 的版本开始，您还可以通过 npm 的方式来集成 SDK。
