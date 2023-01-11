@@ -2,6 +2,12 @@
 
 **SDK历史版本下载地址：**[https://github.com/growingio/growingio-sdk-miniprogram-autotracker/releases](https://github.com/growingio/growingio-sdk-miniprogram-autotracker/releases)
 
+### V3.8.11 - 2023/01/11[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
+
+* 🐞 修复弹窗组件没有激活事件时全量存储导致小程序本地存储超限的问题。
+* 🐞 修复弹窗组件多个同时使用时多次弹窗的问题。
+* 🎉 新增手动更新半自动埋点监控的功能（以应对动态渲染半自动埋点节点无法被监听的问题）。
+
 ### V3.8.10 - 2022/12/22 <a href="#v3811---20221222" id="v3811---20221222"></a>
 
 * 🐞 修复在特定条件下调用getApp会导致死循环卡死的问题。

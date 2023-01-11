@@ -146,19 +146,19 @@ Page({
 
 用户标记一个元素并提供埋点事件，SDK 负责监控指定元素，当此元素出现在屏幕可视区域中时发送用户配置的埋点事件。因此您同样需要参考埋点事件在平台上进行事件类型和变量的预定义。
 
-**曝光逻辑**[**​**](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/commonlyApi#%E6%9B%9D%E5%85%89%E9%80%BB%E8%BE%91)
+### **曝光逻辑**[**​**](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/commonlyApi#%E6%9B%9D%E5%85%89%E9%80%BB%E8%BE%91)
 
 &#x20;   **always：只要从屏幕不可见区域到可见区域**即可计为一次曝光并上报。(默认值)
 
 &#x20;   **once：从屏幕不可见区域到可见区域**曝光只上报一次。
 
-**支持范围**[**​**](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/commonlyApi#%E6%94%AF%E6%8C%81%E8%8C%83%E5%9B%B4)
+### **支持范围**[**​**](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/commonlyApi#%E6%94%AF%E6%8C%81%E8%8C%83%E5%9B%B4)
 
 微信小程序、阿里(支付宝)小程序(基础库>=2.7.0)、百度小程序、字节跳动小程序、QQ小程序。
 
 快应用不支持。
 
-**使用方法一：**
+### **使用方法一：**
 
 1、在需要标记的元素上添加 **`growing_collect_imp`** 样式名。
 
@@ -178,7 +178,7 @@ Page({
 </view>
 ```
 
-**使用方法二：**[**​**](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/commonlyApi#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95)
+### **使用方法二：**[**​**](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/commonlyApi#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95)
 
 1、在需要标记的元素上添加 **`growing_collect_imp`** 样式名。
 
@@ -218,7 +218,7 @@ gio(
 );
 ```
 
-**单次曝光**
+### **单次曝光**
 
 如果您的曝光事件只需要统计一次或触发过于频繁导致曝光事件量过大，可以在节点上添加`data-gio-imp-type="once"`并设置唯一的`节点id`，来使得曝光逻辑变为单次上报。
 
@@ -234,12 +234,45 @@ gio(
 </view>
 ```
 
+### 手动更新半自动埋点监听[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/plugins/impressionTracking#%E6%89%8B%E5%8A%A8%E6%9B%B4%E6%96%B0%E5%8D%8A%E8%87%AA%E5%8A%A8%E5%9F%8B%E7%82%B9%E7%9B%91%E5%90%AC) <a href="#shou-dong-geng-xin-ban-zi-dong-mai-dian-jian-ting" id="shou-dong-geng-xin-ban-zi-dong-mai-dian-jian-ting"></a>
+
+当您需要添加半自动埋点的节点是动态渲染时（例如根据接口数据渲染不同的内容），SDK 可能会因为无法感知节点渲染时机而失去对标记节点的监听。此时，您需要调用 `updateImpression` 手动更新 SDK 的监听来保证您的动态渲染节点能够被监听到。
+
+**示例**[**​**](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/plugins/impressionTracking#%E7%A4%BA%E4%BE%8B)
+
+```javascript
+const { gio } = global;
+Page({
+  data: {
+    impData: [],
+  },
+  onShow() {
+    // 这里通过一个Promise来模拟调用接口
+    const getData = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve({ name: 'Lily', age: 18 });
+      }, 3000);
+    });
+    getData.then((result) => {
+      this.setData({ impData: result }, () => {
+        // 在setData回调用调用 updateImpression 即可
+        gio('updateImpression');
+      });
+    });
+  },
+});
+```
+
+
+
 **注意：**\
 **1）被标记的节点必须有实际的大小，一个没有内容和样式的节点标记可能不会触发事件。**
 
 **2）请勿在同一页面中大量标记半自动埋点浏览事件（如商品列表），可能会严重影响页面性能导致卡顿。**
 
 **3）`data-gio-imp-type`配置项SDK版本>=3.8.4支持。**
+
+**4）`updateImpression`** **方法SDK版本>=3.8.11支持。**
 
 ## 其他[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/commonlyApi#%E5%85%B6%E4%BB%96) <a href="#qi-ta" id="qi-ta"></a>
 
