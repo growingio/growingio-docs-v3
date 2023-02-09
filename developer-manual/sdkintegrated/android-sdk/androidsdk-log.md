@@ -10,14 +10,11 @@ description: Android SDK更新日志
 稳定版本为2.9.11
 {% endhint %}
 
-| 版本     | 说明                                                                                                     | 日期         |
-| ------ | ------------------------------------------------------------------------------------------------------ | ---------- |
-| 2.9.17 | <ol><li><p>增加初始化配置项</p><p>supportTaoBaoWebView </p></li><li>修复setMutiprocess(false)，不能存文件的问题</li></ol> | 2023-02-09 |
 
 
-
-| 2.9.16 | <ol><li>适配react native 0.66+，react navigation 6.x+</li></ol>                                                                                                                                                                                                             | 2023-01-05 |
+| 版本     | 说明                                                                                                                                                                                                                                                                       | 日期         |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
+| 2.9.16 | <ol><li>适配react native 0.66+，react navigation 6.x+</li></ol>                                                                                                                                                                                                             | 2023-01-05 |
 | 2.9.15 | <ol><li>修复hybrid pageName可能取值错误的问题</li></ol>                                                                                                                                                                                                                             | 2022-10-11 |
 | 2.9.14 | <ol><li>埋点打通webview保持和无埋点相同逻辑 </li><li>修复获取不到AndroidId时多次获取不合规问题</li></ol>                                                                                                                                                                                               | 2022-09-06 |
 | 2.9.13 | <ol><li>添加对 UCWebView 的Hook</li><li>增加<a href="https://docs.growingio.com/v3/developer-manual/sdkintegrated/android-sdk/android-sdk-api/run-api#shu-ju-cai-ji-api">数据采集API</a>：bridgeForUcWebView</li></ol>                                                              | 2022-04-14 |

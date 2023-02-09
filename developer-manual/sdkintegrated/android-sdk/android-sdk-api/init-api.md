@@ -94,5 +94,5 @@ public class TestApplication extends Application {
 | setGoogleAdIdEnable  | true                | 设置为 false 则 SDK 不采集 `GoogleAdId` ，适用于**海外应用市场**上架的应用。                                         | >=2.7.8    | >=2.7.8   |
 | setOAIDEnable        | true                | 国内[移动安全联盟MSA](http://www.msa-alliance.cn/col.jsp?id=120) 联合各大手机制造商推出了 OAID ， 作为唯一广告标识符。       | >=2.8.5    | >=2.8.5   |
 | setOAIDProvideConfig | OaidProvideConfig对象 | OaidProvideConfig.provideOaid() -> 手动提供OAID值 OaidProvideConfig.provideCert() -> 手动提供CERT值     | >=2.9.11   | >=2.9.11  |
-| supportTaobaoWebView | false               | 支持配置taobao weiview无埋点注入                                                                       | >=2.9.17   |           |
+| supportTaobaoWebView | false               | 支持配置taobao webview无埋点注入                                                                       | >=2.9.17   |           |
 
