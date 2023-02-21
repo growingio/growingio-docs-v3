@@ -374,7 +374,19 @@ export default App;
 
 ## 小程序插件中集成
 
-[小程序插件](https://developers.weixin.qq.com/miniprogram/introduction/plugin.html)中集成SDK参考小程序集成，在指定的插件 Component 组件的 js 中集成即可。SDK 初始化时会自动切换为插件模式，将当前 Component 视为一个独立应用发送VISIT事件。
+[小程序插件](https://developers.weixin.qq.com/miniprogram/introduction/plugin.html)中集成SDK参考小程序集成，在插件入口文件 index.js 或指定的插件 Component 组件的 js 中集成即可。SDK 初始化时会自动切换为插件模式，将当前 Component 视为一个独立应用发送VISIT事件。
+
+```javascript
+// 插件入口文件index.js
+import gdp from './utils/gio/sdk.js';
+
+gdp('init', 'your GrowingIO 项目ID', 'your AppId', {
+    version: 'your miniProgram version',
+    ...other settings
+});
+
+module.exports = { ... };
+```
 
 ```javascript
 // myComponent.js
@@ -387,6 +399,8 @@ gio('init', 'your GrowingIO 项目ID', 'your AppId', {
 
 Component({ ... });
 ```
+
+<mark style="color:red;">注意：</mark>由于小程序插件中无法获取到页面信息（即没有 path），因此在小程序插件中集成时，会自动关闭无埋点功能（不论是否开启 autotrack）即只能使用埋点。
 
 ## 添加白名单
 
