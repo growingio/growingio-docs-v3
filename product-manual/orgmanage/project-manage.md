@@ -7,7 +7,7 @@
 {% hint style="info" %}
 一个组织中的项目数项上限，依据购买版本所决定。
 
-什么是项目？ [点击查看](https://app.gitbook.com/@growingio/s/v3/\~/drafts/-MBcwXbYNkFvkWTAXo-d/product-manual/projectmange)
+什么是项目？ [点击查看](../projectmange/)
 {% endhint %}
 
 ## 界面说明
