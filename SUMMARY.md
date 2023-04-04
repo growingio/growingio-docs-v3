@@ -428,7 +428,7 @@
 * [数据安全](product-faq/data-security.md)
 * [产品使用](product-faq/produceuse.md)
 * [数据统计差异](product-faq/diffinfo.md)
-* [如何刪除不要的項目？](product-faq/delete-project.md)
+* [如何删除不要的项目？](product-faq/delete-project.md)
 * [为何收不到GIO的邮件？](product-faq/wei-he-shou-bu-dao-gio-de-you-jian.md)
 * [无效指标清理说明](product-faq/cleandata.md)
 * [产品维护计划通告](product-faq/chan-pin-wei-hu-ji-hua-tong-gao.md)
