@@ -26,7 +26,7 @@ npm install --save react-native-autotrack-growingio
 ```
 
 ```
-npm install --save https://github.com/growingio/GIORNHook.git#0.0.7
+npm install --save https://github.com/growingio/GIORNHook.git#0.0.8
 ```
 
 #### 配置 package.json 文件
@@ -320,3 +320,24 @@ GrowingIO为您提供多种验证SDK是否正常采集数据的方式：
 （1）原则上对于react native中的tabbar控件,我们只能保证使用原生代码UITabBarController，或者不是RCT为前缀的原生控件实现的tabbar，可以正确采集tabbar上的imp
 
 （2）click event不受影响,可正确采集
+
+### 4. npm项目中同时集成了不同版本（如4.x、6.x）的react-navigation时，page、click event失效？
+
+如果同时集成了不同版本的react-navigation，预处理的文件路径发生了变化，需要在package.json中手动配置对应的预处理路径，如果不确定路径是否正确可以咨询技术支持
+
+下面的例子为同时集成react-navigation 4.x和6.x时的设置
+
+```json
+{
+  "dependencies": {
+    ...
+  }
+  "GrowingIO": {
+    "path": {
+      "react-navigation-3x": "react-navigation/node_modules/@react-navigation/native",
+      "react-navigation-4x": "react-navigation/node_modules/@react-navigation/native",
+      "react-navigation-6x": "@react-navigation/native/node_modules/@react-navigation/core"
+    }
+  }
+}
+```
