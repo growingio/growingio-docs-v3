@@ -1,7 +1,7 @@
 # Web JS SDK 更新日志
 
 {% hint style="warning" %}
-稳定版本为 2.2.7
+稳定版本为 2.3.4
 {% endhint %}
 
 | 版本      | 说明                                                                                                                                                                                                                                | 日期         |
