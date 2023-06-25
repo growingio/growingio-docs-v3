@@ -44,7 +44,7 @@ android {
 }
 dependencies {
     //GrowingIO 埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:track-2.9.15'
+    implementation 'com.growingio.android:vds-android-agent:track-2.9.18'
 }
 ```
 
