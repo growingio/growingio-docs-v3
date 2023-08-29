@@ -44,13 +44,13 @@ android {
 }
 dependencies {
     //GrowingIO 埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:track-2.9.18'
+    implementation 'com.growingio.android:vds-android-agent:track-2.10.0'
 }
 ```
 
 ### 2. 添加URL Scheme和应用权限
 
-URL Scheme 是您在 GrowingIO 平台创建应用时生成的该应用的唯一标识。把 URL Scheme 添加到您的项目中，以便在使用圈选，Mobile  Debugger，及深度链接功能时唤醒您的应用。
+URL Scheme 是您在 GrowingIO 平台创建应用时生成的该应用的唯一标识。把 URL Scheme 添加到您的项目中，以便在使用圈选，Mobile Debugger，及深度链接功能时唤醒您的应用。
 
 {% hint style="info" %}
 URL Scheme 只能对应一个应用。当应用的包名发生变化时，需再次创建一个应用使用对应的 URL Scheme
@@ -111,7 +111,7 @@ URL Scheme 只能对应一个应用。当应用的包名发生变化时，需再
 
 请将 GrowingIO.startWithConfiguration 加在您的 Application 的 onCreate 方法中。**为使 App 合规，请参考**[**合规步骤**](../compliance/sdk-he-gui-shuo-ming.md#he-gui-bu-zhou)**。**
 
-代码示例**：**
+代码示例\*\*：\*\*
 
 {% tabs %}
 {% tab title="Java" %}
@@ -144,7 +144,7 @@ class MyApplication : Application() {
 {% endtabs %}
 
 {% hint style="info" %}
-1. 其中`GrowingIO.startWithConfiguration`第一个参数为`ApplicationContext`对象。&#x20;
+1. 其中`GrowingIO.startWithConfiguration`第一个参数为`ApplicationContext`对象。
 2. `setChannel`方法的参数定义了“自定义App渠道”这个维度的值，填写APP要发布的应用商店名称。
 {% endhint %}
 
@@ -301,7 +301,7 @@ GrowingIO.startWithConfiguration(
 {% endtab %}
 {% endtabs %}
 
-### 3.  采集WebView页面数据
+### 3. 采集WebView页面数据
 
 埋点 SDK 会采集H5页面的数据，需要增加如下特殊配置。同时H5页面**需要手动集成** [Hybrid SDK](../jin-ji-cheng-mai-dian-sdk-de-hybrid-js-sdk.md)。
 
@@ -338,8 +338,6 @@ setHashTagEnable(boolean hashTagEnable)
 {% hint style="danger" %}
 如果内嵌H5页面集成了Web JS SDK，则 Web JS SDK 中 [HashTag](../web-js-sdk/latest-jssdk.md#1.-hashtag-xi-tong-bian-liang) 配置有效，该接口调用无效
 {% endhint %}
-
-
 
 **示例代码：**
 
@@ -420,7 +418,7 @@ GrowingIO.getInstance().setGeoLocation(39.9046900000,116.4071700000);
 
 ### 6. 多进程支持
 
-GrowingIO SDK默认不支持多进程使用， 但是可以通过`confiuration`进行设置支持多进程。&#x20;
+GrowingIO SDK默认不支持多进程使用， 但是可以通过`confiuration`进行设置支持多进程。
 
 在SDK初始化代码中添加如下代码。
 
@@ -459,11 +457,11 @@ GrowingIO.startWithConfiguration(
 {% hint style="info" %}
 1. 为什么不默认支持多进程？
 
-&#x20; 跨进程通信是一个相对较慢的过程， 默认不开启， 可以满足大部分用户的要求。
+跨进程通信是一个相对较慢的过程， 默认不开启， 可以满足大部分用户的要求。
 
-&#x20;2\. 哪些进程需要初始化SDK？
+2\. 哪些进程需要初始化SDK？
 
-&#x20;需要使用SDK功能的进程需要初始化SDK， 所有的UI进程 + 部分Service进程(如果这些进程中涉及手动埋点)。
+需要使用SDK功能的进程需要初始化SDK， 所有的UI进程 + 部分Service进程(如果这些进程中涉及手动埋点)。
 {% endhint %}
 
 ### 7. GDPR数据采集开关
