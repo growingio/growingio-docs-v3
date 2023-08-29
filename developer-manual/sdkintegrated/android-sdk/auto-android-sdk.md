@@ -42,7 +42,7 @@ buildscript {
         //gradle 建议版本
         classpath 'com.android.tools.build:gradle:3.2.1'
         //GrowingIO 无埋点 SDK
-        classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.10.0'
+        classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.9.18'
     }
 }
 ```
@@ -63,13 +63,13 @@ android {
 }
 dependencies {
     //GrowingIO 无埋点 SDK
-    implementation 'com.growingio.android:vds-android-agent:autotrack-2.10.0'
+    implementation 'com.growingio.android:vds-android-agent:autotrack-2.9.18'
 }
 ```
 
 ### 2. 添加 URL Scheme 和应用权限
 
-URL Scheme 是您在 GrowingIO 平台创建应用时生成的该应用的唯一标识。把 URL Scheme 添加到您的项目中，以便在使用圈选，Mobile  Debugger，及深度链接功能时唤醒您的应用。
+URL Scheme 是您在 GrowingIO 平台创建应用时生成的该应用的唯一标识。把 URL Scheme 添加到您的项目中，以便在使用圈选，Mobile Debugger，及深度链接功能时唤醒您的应用。
 
 {% hint style="info" %}
 URL Scheme 只能对应一个应用。当应用的包名发生变化时，需再次创建一个应用使用对应的 URL Scheme
@@ -166,7 +166,7 @@ class MyApplication : Application() {
 {% endtabs %}
 
 {% hint style="info" %}
-1. 其中`GrowingIO.startWithConfiguration`第一个参数为`ApplicationContext`对象。&#x20;
+1. 其中`GrowingIO.startWithConfiguration`第一个参数为`ApplicationContext`对象。
 2. `setChannel`方法的参数定义了“自定义App渠道”这个维度的值，填写APP要发布的应用商店名称。
 3. `trackAllFragments`方法作用是将 APP 内部的`Fragment`标记为代表一个页面。 常见于`Activity` 中包含多个 `Fragment`， 在业务场景上这里的每一个 Fragment 都可以代表一个页面。例如点击 Tab 切换页面。
 {% endhint %}
@@ -629,7 +629,7 @@ GrowingIO.getInstance().trackEditText(editText)
 * 在**输入框失去焦点的时候或者 onPause 时才会触发chng事件**，如果输入完成，输入框光标仍然在闪动，则**不触发chng事件**。为了保证数据准确性，请每次用户输入完成时，让输入框失去焦点，可使用editText.setFocusable(false);
 {% endhint %}
 
-### 13.  采集WebView页面数据
+### 13. 采集WebView页面数据
 
 无埋点 SDK 会自动采集H5页面的数据，不需要特殊配置。
 
@@ -648,8 +648,6 @@ setHashTagEnable(boolean hashTagEnable)
 {% hint style="danger" %}
 如果内嵌H5页面集成了Web JS SDK，则 Web JS SDK 中 [HashTag](../web-js-sdk/latest-jssdk.md#1.-hashtag-xi-tong-bian-liang) 配置有效，该接口调用无效
 {% endhint %}
-
-
 
 **示例代码：**
 
@@ -699,7 +697,7 @@ SDK发送对应采集数据：
 
 ### 15. 多进程支持
 
-GrowingIO SDK默认不支持多进程使用， 但是可以通过`confiuration`进行设置支持多进程。&#x20;
+GrowingIO SDK默认不支持多进程使用， 但是可以通过`confiuration`进行设置支持多进程。
 
 在SDK初始化代码中添加如下代码：
 
@@ -743,11 +741,11 @@ GrowingIO.startWithConfiguration(
 {% hint style="info" %}
 1. 为什么不默认支持多进程？
 
-&#x20; 跨进程通信是一个相对较慢的过程， 默认不开启， 可以满足大部分用户的要求。
+跨进程通信是一个相对较慢的过程， 默认不开启， 可以满足大部分用户的要求。
 
-&#x20;2\. 哪些进程需要初始化SDK？
+2\. 哪些进程需要初始化SDK？
 
-&#x20;需要使用SDK功能的进程需要初始化SDK， 所有的UI进程 + 部分Service进程(如果这些进程中涉及手动打点)。
+需要使用SDK功能的进程需要初始化SDK， 所有的UI进程 + 部分Service进程(如果这些进程中涉及手动打点)。
 {% endhint %}
 
 ### 16. GDPR数据采集开关
@@ -949,16 +947,16 @@ SDK对通知的采集仅支持操作系统统为 Android 4.4 及以上的设备�
 
 注意：
 
-| 支持推送平台       | 注意事项                                                                                                                                                                                 |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Notification | 全部支持                                                                                                                                                                                 |
-| 极光推送         | <p></p><p>1.初始化时，极光进程也需要初始化</p><p>2.如果多进程应用，需要开启GrowingIO多进程</p>                                                                                                                     |
-| 华为推送         | <p></p><p>1.初始化时，推送进程也需要初始化</p><p>2.NC(Notification Center)消息，需要用户设置自定义字段: notification_title表示title， 与notification_content表示内容，请见表格下方图片</p>                                         |
-| 小米推送         | <p></p><p>1.初始化时，推送进程也需要初始化</p><p>2.SDK hook了PushMessageReceiver的onNotificationMessageArrived与onNotificationMessageClicked函数, 会触发SDK发送两条消息. 其中onNotificationMessageArrived需要系统支持</p> |
+| 支持推送平台       | 注意事项                                                                                                                                                                          |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Notification | 全部支持                                                                                                                                                                          |
+| 极光推送         | <p>1.初始化时，极光进程也需要初始化</p><p>2.如果多进程应用，需要开启GrowingIO多进程</p>                                                                                                                     |
+| 华为推送         | <p>1.初始化时，推送进程也需要初始化</p><p>2.NC(Notification Center)消息，需要用户设置自定义字段: notification_title表示title， 与notification_content表示内容，请见表格下方图片</p>                                         |
+| 小米推送         | <p>1.初始化时，推送进程也需要初始化</p><p>2.SDK hook了PushMessageReceiver的onNotificationMessageArrived与onNotificationMessageClicked函数, 会触发SDK发送两条消息. 其中onNotificationMessageArrived需要系统支持</p> |
 
 **查看通知采集数据：**
 
-GrowingIO SDK 支持通知的展现和点击事件的采集，并未增加新的事件类型，而是使用了埋点事件发送，所以需要您创建[埋点事件和事件级变量](../../../introduction/datamodel/eventmodel/custom-event.md#mai-dian-shi-jian-de-ding-yi)，事件级变量标识符为**`notification_title`**，**`notification_content`**，埋点事件的标识符为**`notification_show`**，**`notification_click`** 创建事件分析，1-2小时之后即可看到数据。
+GrowingIO SDK 支持通知的展现和点击事件的采集，并未增加新的事件类型，而是使用了埋点事件发送，所以需要您创建[埋点事件和事件级变量](../../../introduction/datamodel/eventmodel/custom-event.md#mai-dian-shi-jian-de-ding-yi)，事件级变量标识符为\*\*`notification_title`**，**`notification_content`**，埋点事件的标识符为**`notification_show`**，**`notification_click`\*\* 创建事件分析，1-2小时之后即可看到数据。
 
 ### 19. 采集OAID
 
@@ -968,7 +966,7 @@ GrowingIO SDK 支持通知的展现和点击事件的采集，并未增加新的
 
 {% hint style="info" %}
 * 支持采集：**Android SDK 2.8.5** 及以上， 包含埋点包与无埋点包及对应插件版本；
-* 目前  SDK版本2.9.7及其以上 测试的 OAID SDK 版本为 1.0.26/1.0.27, 在API不变更的情况下支持后续版本；
+* 目前 SDK版本2.9.7及其以上 测试的 OAID SDK 版本为 1.0.26/1.0.27, 在API不变更的情况下支持后续版本；
 * 目前仅在 **activate** 事件（激活，用户首次安装并打开应用时发送）中包含 OAID。
 {% endhint %}
 
