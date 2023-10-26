@@ -73,8 +73,8 @@ public class TestApplication extends Application {
 | trackAllFragments             | false | 是否采集所有Fragment                              | ALL        | -         |
 | setHashTagEnable              | false | 在`WebView`中的页面访问，是否认为点击锚点链接是一个页面浏览          | ALL        | -         |
 | setHarmonyEnable              | false | 是否识别鸿蒙系统，默认不识别                              | >=2.9.6    | >=2.9.6   |
-| setReadClipBoardEnable        | false  |  是否读取剪切板信息，默认读取   (SDK版本2.10.1开始，默认值为false)                           | >=2.9.8    | >=2.9.8   |
-| setRequireAppProcessesEnabled | false  | 是否获取多进程信息  (SDK版本2.10.1开始，默认值为false)                                  | >=2.9.12   | >=2.9.12  |
+| setReadClipBoardEnable        | false  |  是否读取剪切板信息，默认不读取，设为 true 则 SDK 会读取   (SDK版本2.10.1开始，默认值为false)                           | >=2.9.8    | >=2.9.8   |
+| setRequireAppProcessesEnabled | false  | 是否获取多进程信息，默认不获取  (SDK版本2.10.1开始，默认值为false)                                  | >=2.9.12   | >=2.9.12  |
 
 ## 数据采集发送API
 
@@ -89,9 +89,9 @@ public class TestApplication extends Application {
 | disableCellularImp   | false               | 否关闭移动蜂窝网`imp`事件采集，`imp`为元素展示事件                                                                | ALL        | -         |
 | setCellularDataLimit | 10 \* 1024 \* 1024  | 一天的时间之内，在移动蜂窝网下的数据最大传输量，默认 10 M。                                                              | ALL        | ALL       |
 | setBulkSize          | 300                 | 如果数据库存储数据条数大于等于`bulkSize`，则马上发送数据。                                                            | ALL        | ALL       |
-| setImeiEnable        | false                | 设置为 true 则 SDK 采集 `imei，`适用于**海外应用市场**上架的应用。  (SDK版本2.10.1开始，默认值为false)                                               | >=2.7.8    | >=2.7.8   |
-| setAndroidIdEnable   | false                | 设置为 true 则 SDK 采集 `androidid` ，适用于**海外应用市场**上架的应用。 (SDK版本2.10.1开始，默认值为false)                                         | >=2.7.8    | >=2.7.8   |
-| setGoogleAdIdEnable  | false                | 设置为 false 则 SDK 不采集 `GoogleAdId` ，适用于**海外应用市场**上架的应用。 (SDK版本2.10.1开始，默认值为false)                                        | >=2.7.8    | >=2.7.8   |
-| setOAIDEnable        | false                | 国内[移动安全联盟MSA](http://www.msa-alliance.cn/col.jsp?id=120) 联合各大手机制造商推出了 OAID ， 作为唯一广告标识符。 (SDK版本2.10.1开始，默认值为false)       | >=2.8.5    | >=2.8.5   |
+| setImeiEnable        | false                | 默认不采集，设置为 true 则 SDK 采集 `imei，`适用于**海外应用市场**上架的应用。  (SDK版本2.10.1开始，默认值为false)                                               | >=2.7.8    | >=2.7.8   |
+| setAndroidIdEnable   | false                | 默认不采集，设置为 true 则 SDK 采集 `androidid` ，适用于**海外应用市场**上架的应用。 (SDK版本2.10.1开始，默认值为false)                                         | >=2.7.8    | >=2.7.8   |
+| setGoogleAdIdEnable  | false                | 默认不采集，设置为 true 则 SDK 采集 `GoogleAdId` ，适用于**海外应用市场**上架的应用。 (SDK版本2.10.1开始，默认值为false)                                        | >=2.7.8    | >=2.7.8   |
+| setOAIDEnable        | false                | 默认不采集，设置为 true 则 SDK 采集 `OAID` ， 国内[移动安全联盟MSA](http://www.msa-alliance.cn/col.jsp?id=120) 联合各大手机制造商推出了 OAID ， 作为唯一广告标识符。 (SDK版本2.10.1开始，默认值为false)       | >=2.8.5    | >=2.8.5   |
 | setOAIDProvideConfig | OaidProvideConfig对象 | OaidProvideConfig.provideOaid() -> 手动提供OAID值 OaidProvideConfig.provideCert() -> 手动提供CERT值     | >=2.9.11   | >=2.9.11  |
 
