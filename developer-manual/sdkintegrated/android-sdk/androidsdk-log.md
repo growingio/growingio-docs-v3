@@ -7,11 +7,12 @@ description: Android SDK更新日志
 {% hint style="danger" %}
 升级到2.8.7及以上版本，集成SDK中添加依赖时，需将module级别的GrowingIO SDK的引用后缀 @aar 去除
 
-稳定版本为2.9.18
+稳定版本为2.10.1
 {% endhint %}
 
 | 版本     | 说明                                                                                                                                               | 日期         |
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| 2.10.1 | <ol><li>`setAndroidIdEnable`、`setImeiEnable`、`setOAIDEnable`、`setGoogleAdIdEnable`、`setRequireAppProcessesEnabled`、`setReadClipBoardEnable`、`setUploadExceptionEnable`默认值均改为false</li></ol>                                                                                                 | 2023-10-07 |
 | 2.10.0 | <ol><li>添加 Hook 点，适配新的 gradle 插件</li><li>删除静态无用代码，避免合规检测</li></ol>                                                                                                 | 2023-08-29 |
 | 2.9.18 | <ol><li>修复初始化sdk时可能出现空指针异常</li><li>修复FileUtils高版本抛出非IOException</li><li>忽略ConcurrentModificationException崩溃</li><li>修复进入圈选时偶现页面无法跳转的问题</li></ol> | 2023-06-14 |
 | 2.9.17 | <ol><li><p>增加初始化配置项</p><p>supportTaoBaoWebView </p></li><li>修复setMutiprocess(false)，不能存文件的问题</li></ol>                                           | 2023-02-09 |
