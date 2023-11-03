@@ -2,6 +2,12 @@
 
 **SDK历史版本下载地址：**[https://github.com/growingio/growingio-sdk-miniprogram-autotracker/releases](https://github.com/growingio/growingio-sdk-miniprogram-autotracker/releases)
 
+### V3.8.16 - 2023/09/25[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
+
+* 🐞 修复taro3react使用function component写法不定义生命周期不触发page事件，以及自定义方法报警告的问题。
+* 🐞 修复uniapp-vue3中，使用setup写法并传参的自定义方法点击事件无法触发的问题。
+* 🐞 修复 uniappVue3 框架中编译打包后点击事件丢失的问题。
+
 ### V3.8.12 - 2023/02/21[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
 
 * 🐞 修复使用资源位组件时某些情况下报错的问题。
