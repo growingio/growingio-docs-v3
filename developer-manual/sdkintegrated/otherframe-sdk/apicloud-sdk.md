@@ -43,8 +43,8 @@ API Cloud的debug模式只支持静态配置，不支持动态配置。
 
 模块包下载：
 
-* iOS模块包：[下载](https://github.com/growingio/APICloud-growingio/blob/master/iOS/iOS/GrowingIO\_iOS.zip)​
-* Android模块包：[下载](https://github.com/growingio/APICloud-growingio/blob/master/android/GrowingIO.zip)
+* iOS模块包：[下载](https://github.com/growingio/APICloud-growingio/blob/master/release/iOS/GrowingIO.zip)​
+* Android模块包：[下载](https://github.com/growingio/APICloud-growingio/blob/master/release/Android/GrowingIO.zip)
 
 在API Cloud的开发控制台上选择应用，然后在界面右侧选择 端开发 > 模块。
 
