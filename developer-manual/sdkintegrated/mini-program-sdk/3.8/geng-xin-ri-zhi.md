@@ -4,9 +4,32 @@
 
 ### V3.8.16 - 2023/09/25[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
 
+* 🐞 修复百度小程序无法正确获取场景值的问题。
+* 🐞 修复taro2在百度小程序下无埋点失效的问题。
 * 🐞 修复taro3react使用function component写法不定义生命周期不触发page事件，以及自定义方法报警告的问题。
 * 🐞 修复uniapp-vue3中，使用setup写法并传参的自定义方法点击事件无法触发的问题。
-* 🐞 修复 uniappVue3 框架中编译打包后点击事件丢失的问题。
+* 🐞 修复曝光事件在页面销毁时可能没有及时销毁监听导致内存泄漏的问题。
+* 🐞 修复小程序自定义组件中曝光事件无法触发的问题。
+
+### V3.8.15 - 2023/09/25[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
+
+* 🌟 优化初始化配置项host处理逻辑。
+
+### V3.8.14 - 2023/09/25[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
+
+* 🐞 修复进入小程序参数带中文时query会被encode导致平台解析错误的问题。
+* 🐞 修复分享时promise不生效和自定义utm参数丢失的问题。
+* 🌟 优化跳转小程序时extraData中的参数与query一起上报。
+* 🌟 优化兼容微信小程序2.26.1基础库在windows上崩溃白屏问题。
+
+
+### V3.8.13 - 2023/09/25[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
+
+* 🐞 修复分享事件可能在某些情况下丢失默认页面参数的问题。
+* 🌟 优化降低本地存储的存取频率，减少对性能的影响。
+* 🌟 优化事件发送失败时重发逻辑，提高重发成功率。
+* 🌟 优化运营SDK初始化逻辑。
+* 🎉 新增uni-appVue3、Taro3Vue3 <script setup> 写法的支持。
 
 ### V3.8.12 - 2023/02/21[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
 
