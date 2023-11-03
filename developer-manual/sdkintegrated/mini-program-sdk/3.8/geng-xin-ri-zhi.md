@@ -11,11 +11,11 @@
 * 🐞 修复曝光事件在页面销毁时可能没有及时销毁监听导致内存泄漏的问题。
 * 🐞 修复小程序自定义组件中曝光事件无法触发的问题。
 
-### V3.8.15 - 2023/09/25[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
+### V3.8.15 - 2023/07/17[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
 
 * 🌟 优化初始化配置项host处理逻辑。
 
-### V3.8.14 - 2023/09/25[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
+### V3.8.14 - 2023/05/17[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
 
 * 🐞 修复进入小程序参数带中文时query会被encode导致平台解析错误的问题。
 * 🐞 修复分享时promise不生效和自定义utm参数丢失的问题。
@@ -23,7 +23,7 @@
 * 🌟 优化兼容微信小程序2.26.1基础库在windows上崩溃白屏问题。
 
 
-### V3.8.13 - 2023/09/25[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
+### V3.8.13 - 2023/03/22[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
 
 * 🐞 修复分享事件可能在某些情况下丢失默认页面参数的问题。
 * 🌟 优化降低本地存储的存取频率，减少对性能的影响。
