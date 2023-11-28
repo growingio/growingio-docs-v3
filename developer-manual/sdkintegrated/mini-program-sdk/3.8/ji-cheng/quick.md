@@ -16,7 +16,7 @@
 
 **1、加载SDK**
 
-快应用原生SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.16/gio-quickapp.js](https://assets.giocdn.com/sdk/minip/saas/3.8.16/gio-quickapp.js)
+快应用原生SDK下载：[https://assets.giocdn.com/sdk/minip/saas/3.8.17/gio-quickapp.js](https://assets.giocdn.com/sdk/minip/saas/3.8.17/gio-quickapp.js)
 
 > (如果您点击链接在浏览器中直接打开了文件并不是下载文件，请尝试右键点击链接，选择 `链接存储为...` 即可正常触发下载)
 
