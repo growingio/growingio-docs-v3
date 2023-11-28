@@ -2,6 +2,12 @@
 
 **SDK历史版本下载地址：**[https://github.com/growingio/growingio-sdk-miniprogram-autotracker/releases](https://github.com/growingio/growingio-sdk-miniprogram-autotracker/releases)
 
+### V3.8.17 - 2023/11/23[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
+
+* 🐞 修复淘宝小程序云函数上报请求异常的问题。
+* 🐞 修复uniapp-vue3中，使用setup写法的变量被污染导致异常的问题。
+* 🌟 优化请求队列逻辑。
+
 ### V3.8.16 - 2023/09/25[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
 
 * 🐞 修复百度小程序无法正确获取场景值的问题。
