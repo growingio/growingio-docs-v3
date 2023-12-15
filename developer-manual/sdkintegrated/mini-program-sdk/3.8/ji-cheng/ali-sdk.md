@@ -162,26 +162,6 @@ Taro.render(<App />, document.getElementById('app'));
 {% endtab %}
 
 {% tab title="Taro3(react)" %}
-额外安装bable插件
-
-```bash
-npm i babel-plugin-setname --save
-```
-
-```javascript
-// babel.config.js
-module.exports = {
-  presets: [['taro', { framework: 'react' }]],
-  plugins: [
-    [
-      'babel-plugin-setname', {
-        includes: ['src'],
-        lower: false, // 从taro2升级至3时请修改为true
-      }
-    ]
-  ]
-};
-```
 
 ```javascript
 import React, { Component } from 'react';
@@ -241,7 +221,7 @@ const App = createApp({ ... });
 
 gio('init', 'your GrowingIO 项目ID', 'your AppId', {
     version: 'your miniProgram version',
-    taro: Taro, // 注意taro和taroVue都需要传
+    taro: taroRuntime, // 注意taro和taroVue都需要传
     taroVue: App, // 注意taro和taroVue都需要传
     ...other settings
 });
