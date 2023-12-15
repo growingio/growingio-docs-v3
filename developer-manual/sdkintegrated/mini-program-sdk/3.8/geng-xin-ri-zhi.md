@@ -2,6 +2,11 @@
 
 **SDK历史版本下载地址：**[https://github.com/growingio/growingio-sdk-miniprogram-autotracker/releases](https://github.com/growingio/growingio-sdk-miniprogram-autotracker/releases)
 
+### V3.8.18 - 2023/12/15[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
+
+* 🐞 修复 taro3react、taro3vue3 框架下，点击事件异常的问题.
+* 🐞 修复支付宝、百度、头条小程序曝光逻辑。
+
 ### V3.8.17 - 2023/11/23[​](http://localhost:3000/growingio-sdk-docs/docs/miniprogram/3.8/version#v3812---20230111) <a href="#v3812---20230111" id="v3812---20230111"></a>
 
 * 🐞 修复淘宝小程序云函数上报请求异常的问题。
