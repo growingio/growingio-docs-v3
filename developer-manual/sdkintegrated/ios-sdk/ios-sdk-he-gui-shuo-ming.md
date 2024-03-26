@@ -22,6 +22,39 @@
 
 ### 合规步骤
 
+#### Privacy manifest
+
+手动将以下内容合并到您的 App 的 PrivacyInfo.xcprivacy 中：
+```xml
+<key>NSPrivacyAccessedAPITypes</key>
+<array>
+  <dict>
+    <key>NSPrivacyAccessedAPIType</key>
+    <string>NSPrivacyAccessedAPICategoryFileTimestamp</string>
+    <key>NSPrivacyAccessedAPITypeReasons</key>
+    <array>
+      <string>C617.1</string>
+    </array>
+  </dict>
+  <dict>
+    <key>NSPrivacyAccessedAPIType</key>
+    <string>NSPrivacyAccessedAPICategoryDiskSpace</string>
+    <key>NSPrivacyAccessedAPITypeReasons</key>
+    <array>
+      <string>7D9E.1</string>
+    </array>
+  </dict>
+  <dict>
+    <key>NSPrivacyAccessedAPIType</key>
+    <string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+    <key>NSPrivacyAccessedAPITypeReasons</key>
+    <array>
+      <string>CA92.1</string>
+    </array>
+  </dict>
+</array>
+```
+
 #### GDPR
 
 [General Data Protection Regulation 欧盟通用数据保护条例](https://zh.wikipedia.org/wiki/%E6%AD%90%E7%9B%9F%E4%B8%80%E8%88%AC%E8%B3%87%E6%96%99%E4%BF%9D%E8%AD%B7%E8%A6%8F%E7%AF%84)
