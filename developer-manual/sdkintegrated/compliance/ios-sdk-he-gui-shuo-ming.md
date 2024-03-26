@@ -67,6 +67,39 @@ GIO移动端 SDK
 
 ## 其他说明
 
+### 关于 Privacy manifest 隐私清单
+
+手动将以下内容合并到您的 App 的 PrivacyInfo.xcprivacy 中：
+```xml
+<key>NSPrivacyAccessedAPITypes</key>
+<array>
+  <dict>
+    <key>NSPrivacyAccessedAPIType</key>
+    <string>NSPrivacyAccessedAPICategoryFileTimestamp</string>
+    <key>NSPrivacyAccessedAPITypeReasons</key>
+    <array>
+      <string>C617.1</string>
+    </array>
+  </dict>
+  <dict>
+    <key>NSPrivacyAccessedAPIType</key>
+    <string>NSPrivacyAccessedAPICategoryDiskSpace</string>
+    <key>NSPrivacyAccessedAPITypeReasons</key>
+    <array>
+      <string>7D9E.1</string>
+    </array>
+  </dict>
+  <dict>
+    <key>NSPrivacyAccessedAPIType</key>
+    <string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+    <key>NSPrivacyAccessedAPITypeReasons</key>
+    <array>
+      <string>CA92.1</string>
+    </array>
+  </dict>
+</array>
+```
+
 ### 关于 GDPR <a href="#guan-yu-gdpr" id="guan-yu-gdpr"></a>
 
 为符合[​General Data Protection Regulation 欧盟通用数据保护条例](https://zh.wikipedia.org/wiki/%E6%AD%90%E7%9B%9F%E4%B8%80%E8%88%AC%E8%B3%87%E6%96%99%E4%BF%9D%E8%AD%B7%E8%A6%8F%E7%AF%84)​，GrowingIO SDK 提供 `disableDataCollect` 接口，当用户不同意数据采集时，调用该接口， 禁止数据采集；在用户同意数据采集时，调用 `enableDataCollect`，开启数据采集。示例代码如下：
