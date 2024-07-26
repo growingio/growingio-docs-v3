@@ -5,7 +5,7 @@ description: iOS SDK更新日志
 # iOS SDK 更新日志
 
 {% hint style="warning" %}
-稳定版本2.9.15
+稳定版本2.9.16
 {% endhint %}
 
 | 2.10.2 | <ol><li>修复预检请求在 SDK 初始化之后再触发</li></ol>                                                                                                                              | 2024-07-18 |

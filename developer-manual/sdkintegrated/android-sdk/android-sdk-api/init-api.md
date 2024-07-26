@@ -94,6 +94,5 @@ public class TestApplication extends Application {
 | setGoogleAdIdEnable  | false                | 默认不采集，设置为 true 则 SDK 采集 `GoogleAdId` ，适用于**海外应用市场**上架的应用。 (SDK版本2.10.1开始，默认值为false)                                        | >=2.7.8    | >=2.7.8   |
 | setOAIDEnable        | false                | 默认不采集，设置为 true 则 SDK 采集 `OAID` ， 国内[移动安全联盟MSA](http://www.msa-alliance.cn/col.jsp?id=120) 联合各大手机制造商推出了 OAID ， 作为唯一广告标识符。 (SDK版本2.10.1开始，默认值为false)       | >=2.8.5    | >=2.8.5   |
 | setOAIDProvideConfig | OaidProvideConfig对象 | OaidProvideConfig.provideOaid() -> 手动提供OAID值 OaidProvideConfig.provideCert() -> 手动提供CERT值     | >=2.9.11   | >=2.9.11  |
-| setRunMode | AccuracyPriorityMode | AccuracyPriorityMode 准确度优先：与老版本逻辑保持一致
-PerformancePriorityMode 性能优先：放弃视图树遍历来标识manifest中gio-tag-相关view的imp采集，放弃未调用setOnFocusChangeListener的change事件采集     | >=2.10.2   | -  |
+| setRunMode | AccuracyPriorityMode | AccuracyPriorityMode 准确度优先：与老版本逻辑保持一致 PerformancePriorityMode 性能优先：放弃视图树遍历来标识manifest中gio-tag-相关view的imp采集，放弃未调用setOnFocusChangeListener的change事件采集     | >=2.10.2   | -  |
 
