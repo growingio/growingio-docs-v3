@@ -1,4 +1,4 @@
-# 鸿蒙原生 SDK
+# 鸿蒙原生埋点 SDK
 
 ## SDK 简介
 **GrowingIO OpenHarmony/HarmonyOS SDK** 自动采集用户访问事件，并支持手动调用相应埋点 APIs 采集埋点事件。
